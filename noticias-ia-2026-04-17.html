@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily AI — Noticias IA · 17 abril 2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+        .container { max-width: 740px; margin: 0 auto; }
+        header { margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+        header h1 { font-size: 1.6rem; color: #fff; margin-bottom: 0.3rem; }
+        header p { color: #888; font-size: 0.9rem; }
+        .news-item { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.4rem; margin-bottom: 1.2rem; transition: border-color 0.2s; }
+        .news-item:hover { border-color: #444; }
+        .news-item h2 { font-size: 1.1rem; color: #fff; margin-bottom: 0.6rem; }
+        .news-item .what { color: #ccc; font-size: 0.92rem; margin-bottom: 0.5rem; }
+        .news-item .why { color: #a78bfa; font-size: 0.88rem; font-style: italic; margin-bottom: 0.5rem; }
+        .news-item .source { font-size: 0.82rem; }
+        .news-item .source a { color: #60a5fa; text-decoration: none; }
+        .news-item .source a:hover { text-decoration: underline; }
+        .tag { display: inline-block; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; margin-right: 6px; font-weight: 600; vertical-align: middle; }
+        .tag-anthropic { background: #d97706; color: #fff; }
+        .tag-mobile { background: #059669; color: #fff; }
+        .tag-tools { background: #7c3aed; color: #fff; }
+        .tag-founders { background: #dc2626; color: #fff; }
+        .tag-sports { background: #2563eb; color: #fff; }
+        footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗞️ Daily AI — 17 abril 2026</h1>
+            <p>10 noticias filtradas para senior devs que construyen producto · Sin hype, sin papers sin aplicación</p>
+        </header>
+
+        <!-- 1 -->
+        <article class="news-item">
+            <h2><span class="tag tag-anthropic">ANTHROPIC</span> Claude Opus 4.7 disponible: mejor en código, visión y tareas largas</h2>
+            <p class="what">Anthropic lanzó Claude Opus 4.7 como su modelo más capaz en general availability. Mejora significativa en software engineering, tareas de codificación largas y complejas, visión de alta resolución, y añade controles de esfuerzo (effort controls) y task budgets — al mismo precio que Opus 4.6.</p>
+            <p class="why">Si usas Claude Code para tu producto, el upgrade es gratis y el salto en tareas de SWE multi-archivo es notable — menos iteraciones para llegar al resultado correcto.</p>
+            <p class="source">Fuente: <a href="https://www.cnbc.com/2026/04/16/anthropic-claude-opus-4-7-model-mythos.html">CNBC</a> · <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/">Anthropic Blog</a></p>
+        </article>
+
+        <!-- 2 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-anthropic">ANTHROPIC</span> Claude Code Routines: automatización cloud sin sesión activa</h2>
+            <p class="what">Routines permite configurar un prompt + repo + conectores que se ejecutan automáticamente por schedule (cron), API call o evento de GitHub (nuevo PR, push, etc.) desde infraestructura cloud de Anthropic. Pro: 5/día, Max: 15/día, Team/Enterprise: 25/día.</p>
+            <p class="why">Esto convierte a Claude Code en un CI/CD inteligente — puedes automatizar triage de issues, verificación post-deploy o detección de drift en docs sin tener tu máquina encendida.</p>
+            <p class="source">Fuente: <a href="https://code.claude.com/docs/en/routines">Claude Code Docs</a> · <a href="https://siliconangle.com/2026/04/14/anthropics-claude-code-gets-automated-routines-desktop-makeover/">SiliconANGLE</a></p>
+        </article>
+
+        <!-- 3 -->
+        <article class="news-item">
+            <h2><span class="tag tag-anthropic">ANTHROPIC</span> Claude Design: diseño visual con IA, powered by Opus 4.7</h2>
+            <p class="what">Anthropic Labs lanzó Claude Design como research preview, disponible para suscriptores Pro, Max, Team y Enterprise. Permite generar y iterar diseños visuales directamente en conversación con Claude, integrando el nuevo modelo Opus 4.7 con capacidades de visión mejoradas.</p>
+            <p class="why">Un founder técnico sin diseñador dedicado ahora puede iterar UI/UX dentro del mismo flujo de trabajo donde escribe código — menos context switching.</p>
+            <p class="source">Fuente: <a href="https://9to5mac.com/2026/04/17/anthropic-launches-claude-design-for-mac-following-opus-4-7-model-upgrade/">9to5Mac</a></p>
+        </article>
+
+        <!-- 4 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-tools">TOOLS</span> Perplexity Personal Computer: agente IA que controla tu Mac</h2>
+            <p class="what">Perplexity lanzó "Personal Computer" para suscriptores Max ($200/mes). Se activa con doble Command y orquesta archivos locales, iMessage, Mail, Calendar y apps nativas. En un Mac mini puede correr 24/7 y recibir instrucciones desde iPhone.</p>
+            <p class="why">Es la primera implementación seria de un "computer use" agent para productividad real — si funciona bien, cambia la forma de interactuar con tu máquina de desarrollo.</p>
+            <p class="source">Fuente: <a href="https://www.macrumors.com/2026/04/16/perplexity-personal-computer-for-mac/">MacRumors</a> · <a href="https://www.techtimes.com/articles/315938/20260416/perplexitys-personal-computer-agentic-ai-assistant-now-available-mac.htm">TechTimes</a></p>
+        </article>
+
+        <!-- 5 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-mobile">ANDROID</span> Google Gemma 4 + AICore Developer Preview: IA agéntica on-device</h2>
+            <p class="what">Google lanzó Gemma 4 en cuatro tamaños (E2B, E4B, 26B MoE, 31B Dense) con el AICore Developer Preview para Android. Los modelos E2B/E4B corren on-device en Pixel 7+ y Samsung Galaxy S, son hasta 4x más rápidos y usan 60% menos batería que la generación anterior. AI Edge Gallery ya está en Play Store para probar modelos offline.</p>
+            <p class="why">Si desarrollas para Android, esto es el momento de integrar IA on-device — el código que escribas hoy con Gemma 4 será compatible con Gemini Nano 4 cuando llegue a producción.</p>
+            <p class="source">Fuente: <a href="https://android-developers.googleblog.com/2026/04/AI-Core-Developer-Preview.html">Android Developers Blog</a> · <a href="https://www.androidauthority.com/gemma-4-ai-edge-gallery-3656199/">Android Authority</a></p>
+        </article>
+
+        <!-- 6 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-tools">TOOLS</span> Roblox Studio se vuelve agéntico: Planning Mode + playtesting automático</h2>
+            <p class="what">Roblox renovó su Assistant con Planning Mode: analiza código y data model del juego, hace preguntas, genera un plan editable y lo ejecuta con herramientas de mesh generation y modelos 3D procedurales. Incluye playtesting automático que captura screenshots, simula inputs y reporta bugs al assistant para auto-fix.</p>
+            <p class="why">El patrón "planificar → ejecutar → testear → corregir" de forma autónoma es exactamente lo que todo AI coding tool debería copiar — Roblox lo implementó end-to-end para game dev.</p>
+            <p class="source">Fuente: <a href="https://techcrunch.com/2026/04/16/robloxs-ai-assistant-gets-new-agentic-tools-to-plan-build-and-test-games/">TechCrunch</a> · <a href="https://about.roblox.com/newsroom/2026/04/roblox-studio-going-agentic">Roblox</a></p>
+        </article>
+
+        <!-- 7 -->
+        <article class="news-item">
+            <h2><span class="tag tag-anthropic">ANTHROPIC</span> Claude Code Desktop rediseñado: sesiones paralelas + terminal integrado</h2>
+            <p class="what">La app de escritorio de Claude Code fue reconstruida con sidebar para múltiples sesiones, terminal integrado para tests y builds, editor de archivos in-app, diff viewer para changesets grandes, y panel de preview para HTML/PDFs. Soporta drag-and-drop para organizar el workspace.</p>
+            <p class="why">Tener terminal + editor + diff + preview en una sola ventana elimina el tab-switching constante cuando estás iterando con Claude en un feature complejo.</p>
+            <p class="source">Fuente: <a href="https://www.macrumors.com/2026/04/15/anthropic-rebuilds-claude-code-desktop-app/">MacRumors</a> · <a href="https://venturebeat.com/orchestration/we-tested-anthropics-redesigned-claude-code-desktop-app-and-routines-heres-what-enterprises-should-know">VentureBeat</a></p>
+        </article>
+
+        <!-- 8 -->
+        <article class="news-item">
+            <h2><span class="tag tag-tools">AI/ROBOTICS</span> Physical Intelligence π0.7: generalización composicional en robots</h2>
+            <p class="what">Physical Intelligence presentó π0.7, un modelo fundacional robótico que demuestra "generalización composicional" — combina habilidades aprendidas en contextos distintos para resolver tareas nunca vistas. Un brazo UR5e dobló camisetas con 80% de éxito sin datos de entrenamiento de doblado para ese robot.</p>
+            <p class="why">El patrón de componer capacidades aprendidas por separado tiene implicaciones directas para agentes de software — es la misma idea detrás de tool-use y function calling llevada al mundo físico.</p>
+            <p class="source">Fuente: <a href="https://techcrunch.com/2026/04/16/physical-intelligence-a-hot-robotics-startup-says-its-new-robot-brain-can-figure-out-tasks-it-was-never-taught/">TechCrunch</a> · <a href="https://www.pi.website/blog/pi07">Physical Intelligence</a></p>
+        </article>
+
+        <!-- 9 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-founders">FOUNDERS</span> MVPs con IA: de idea a producto funcional en 2-6 semanas, 85% menos costo</h2>
+            <p class="what">Múltiples reportes de abril 2026 confirman que startups usando AI-assisted development (Claude Code, Cursor, Copilot) están lanzando MVPs funcionales en 2-6 semanas para productos complejos y 1-3 días para simples, con reducción de hasta 85% en costos de desarrollo. La clave: modelos multimodales que procesan texto, imagen, voz y video permiten UX ricas sin heavy engineering.</p>
+            <p class="why">El moat ya no es "poder construir" sino "saber qué construir" — con estos tiempos, la ventaja competitiva se movió completamente a product-market fit y distribución.</p>
+            <p class="source">Fuente: <a href="https://www.nxcode.io/resources/news/ai-mvp-builder-how-founders-ship-products-2026">NxCode</a> · <a href="https://technijian.com/podcast/the-2026-founders-guide-to-ai-accelerated-mvp-development/">Technijian</a></p>
+        </article>
+
+        <!-- 10 -->
+        <article class="news-item">
+            <h2><span class="tag tag-sports">SPORTS/HEALTH</span> FIBO 2026: IA predictiva, wearables y coaching proactivo dominan fitness tech</h2>
+            <p class="what">FIBO 2026 (Colonia, 16-19 abril) mostró la convergencia de IA + wearables en fitness: plataformas como Athletica.ai y HumanGO usan datos biométricos en tiempo real (HRV, temperatura, sueño) de 100+ dispositivos para ajustar planes de entrenamiento automáticamente. La tendencia clave: coaching proactivo — la app te contacta antes de que la abras, sugiriendo horarios óptimos basados en tu estado fisiológico.</p>
+            <p class="why">Para quien construye un marketplace de servicios deportivos o de coaching, la integración con wearables + IA predictiva ya no es diferenciador sino table stakes.</p>
+            <p class="source">Fuente: <a href="https://www.sgieurope.com/trade-shows/fibo-2026-ai-reshapes-the-fitness-industry/120549.article">SGI Europe</a> · <a href="https://askvora.com/blog/ai-fitness-coaching-2026">Vora Blog</a></p>
+        </article>
+
+        <footer>
+            <p>Curado con IA · Filtrado para senior devs construyendo producto · Daily AI</p>
+        </footer>
+    </div>
+</body>
+</html>
