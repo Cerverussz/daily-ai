@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily AI — Noticias IA · 18 abril 2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+        .container { max-width: 740px; margin: 0 auto; }
+        header { margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+        header h1 { font-size: 1.6rem; color: #fff; margin-bottom: 0.3rem; }
+        header p { color: #888; font-size: 0.9rem; }
+        .news-item { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.4rem; margin-bottom: 1.2rem; transition: border-color 0.2s; }
+        .news-item:hover { border-color: #444; }
+        .news-item h2 { font-size: 1.1rem; color: #fff; margin-bottom: 0.6rem; }
+        .news-item .what { color: #ccc; font-size: 0.92rem; margin-bottom: 0.5rem; }
+        .news-item .why { color: #a78bfa; font-size: 0.88rem; font-style: italic; margin-bottom: 0.5rem; }
+        .news-item .source { font-size: 0.82rem; }
+        .news-item .source a { color: #60a5fa; text-decoration: none; }
+        .news-item .source a:hover { text-decoration: underline; }
+        .tag { display: inline-block; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; margin-right: 6px; font-weight: 600; vertical-align: middle; }
+        .tag-anthropic { background: #d97706; color: #fff; }
+        .tag-mobile { background: #059669; color: #fff; }
+        .tag-tools { background: #7c3aed; color: #fff; }
+        .tag-founders { background: #dc2626; color: #fff; }
+        .tag-sports { background: #2563eb; color: #fff; }
+        footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗞️ Daily AI — 18 abril 2026</h1>
+            <p>10 noticias filtradas para senior devs que construyen producto · Sin hype, sin papers sin aplicación</p>
+        </header>
+
+        <!-- 1 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-tools">TOOLS</span> OpenAI Codex Desktop: computer use en background + 90 plugins nuevos</h2>
+            <p class="what">Codex Desktop ahora permite que agentes controlen tu Mac en background — ven pantalla, hacen clic y escriben con su propio cursor sin interferir con tu trabajo. Incluye browser in-app con comentarios inline y más de 90 plugins nuevos: Atlassian Rovo, GitLab Issues, CircleCI, CodeRabbit, Microsoft Suite y Render, entre otros.</p>
+            <p class="why">Agentes trabajando en paralelo en tu máquina sin interrumpirte es el siguiente paso natural — automatiza tareas repetitivas de DevOps mientras sigues escribiendo código.</p>
+            <p class="source">Fuente: <a href="https://smartscope.blog/en/generative-ai/chatgpt/codex-desktop-major-update-april-2026/">SmartScope</a> · <a href="https://aiautomationglobal.com/blog/openai-codex-computer-use-desktop-automation-april-2026">AI Automation Global</a></p>
+        </article>
+
+        <!-- 2 -->
+        <article class="news-item">
+            <h2><span class="tag tag-tools">TOOLS</span> OpenAI Agents SDK: sandbox nativo y memoria configurable</h2>
+            <p class="what">OpenAI lanzó la nueva versión del Agents SDK con ejecución nativa en sandbox, memoria configurable, snapshotting de workspaces para agentes durables, y herramientas de filesystem estilo Codex. Los primitivos de orquestación están convergiendo con lo que usan los sistemas de agentes de frontera.</p>
+            <p class="why">Si construyes agentes con OpenAI, el sandbox nativo elimina la necesidad de montar tu propia infra de aislamiento — menos código de plomería, más lógica de negocio.</p>
+            <p class="source">Fuente: <a href="https://openai.com/index/the-next-evolution-of-the-agents-sdk/">OpenAI Blog</a> · <a href="https://www.ai-daily.news/articles/openai-updates-agents-sdk-with-enhanced-security-features">AI Daily</a></p>
+        </article>
+
+        <!-- 3 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-founders">FOUNDERS</span> JetBrains AI Pulse: 90% de devs usan IA, Claude Code crece 6x</h2>
+            <p class="what">La encuesta AI Pulse de JetBrains con 10,000+ devs profesionales revela que el 90% usa IA regularmente para coding. Claude Code alcanzó 18% de adopción laboral (6x vs. 2025), empatando con Cursor en segundo lugar. GitHub Copilot lidera con 29% pero su crecimiento se estancó. Claude Code tiene el CSAT más alto del mercado (91%) y NPS de 54.</p>
+            <p class="why">Los datos confirman que IA en coding dejó de ser opcional — si no la usas, compites en desventaja contra el 90% que sí.</p>
+            <p class="source">Fuente: <a href="https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-developers-actually-use-at-work/">JetBrains Research</a></p>
+        </article>
+
+        <!-- 4 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-mobile">ANDROID</span> Google AI Edge Gallery: function calling on-device con FunctionGemma</h2>
+            <p class="what">Google lanzó on-device function calling en AI Edge Gallery con FunctionGemma, un modelo de 270M parámetros diseñado específicamente para tool calling. En Pixel 7 Pro alcanza 1,916 tok/s en prefill y 142 en decode. Agent Skills permite agregar capacidades modulares al modelo sin inflar el system prompt.</p>
+            <p class="why">Un modelo de 270M parámetros haciendo function calling a ~2K tok/s en un Pixel 7 abre la puerta a agentes offline reales en apps Android — sin latencia de red, sin costos de API.</p>
+            <p class="source">Fuente: <a href="https://developers.googleblog.com/on-device-function-calling-in-google-ai-edge-gallery/">Google Developers Blog</a> · <a href="https://github.com/google-ai-edge/gallery">GitHub</a></p>
+        </article>
+
+        <!-- 5 -->
+        <article class="news-item">
+            <h2><span class="tag tag-anthropic">ANTHROPIC</span> Claude Managed Agents en public beta: agentes via REST API</h2>
+            <p class="what">Anthropic lanzó la public beta de Managed Agents con endpoints REST (/v1/agents, /v1/environments, /v1/sessions) que empaquetan agent loop + tool execution + sandbox + persistencia de estado. Se declaran MCP Servers directamente en la definición del agente, y los Skill packages existentes se integran sin modificaciones.</p>
+            <p class="why">Montar un agente de Claude en producción pasa de semanas de infra custom a una llamada API — ideal si eres founder técnico construyendo sin equipo de DevOps.</p>
+            <p class="source">Fuente: <a href="https://releasebot.io/updates/anthropic">Releasebot</a> · <a href="https://help.apiyi.com/en/anthropic-claude-managed-agents-public-beta-launch-en.html">Apiyi</a></p>
+        </article>
+
+        <!-- 6 -->
+        <article class="news-item">
+            <h2><span class="tag tag-anthropic">ANTHROPIC</span> Claude Cowork GA: agente persistente en macOS y Windows</h2>
+            <p class="what">Claude Cowork salió de beta a general availability en la app de escritorio para macOS y Windows, disponible en planes Pro y Max. Ofrece un hilo de agente persistente que mantiene contexto entre tareas, permite gestionar múltiples trabajos en curso, y funciona como un copiloto siempre activo dentro del desktop app.</p>
+            <p class="why">Un agente que mantiene contexto entre sesiones elimina el overhead de re-briefing constante — útil para proyectos largos donde el contexto acumulado es el verdadero valor.</p>
+            <p class="source">Fuente: <a href="https://releasebot.io/updates/anthropic/claude">Releasebot - Claude</a></p>
+        </article>
+
+        <!-- 7 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-mobile">ANDROID</span> Gemma 4 optimizada para Arm: menos de 1.5GB para IA generativa mobile</h2>
+            <p class="what">Arm publicó guías de optimización para Gemma 4 E2B en dispositivos móviles. Con cuantización de 2-bit y 4-bit más embeddings memory-mapped por capa, el modelo corre con menos de 1.5GB de RAM vía LiteRT-LM. Compatible con CPU/GPU en Android e iOS, con aceleración KleidiAI para menor latencia y consumo energético.</p>
+            <p class="why">Gemma 4 E2B con 1.5GB de RAM significa que puedes integrar IA generativa en apps Android sin matar la experiencia del usuario en dispositivos mid-range.</p>
+            <p class="source">Fuente: <a href="https://newsroom.arm.com/blog/gemma-4-on-arm-optimized-on-device-ai">Arm Newsroom</a> · <a href="https://developers.googleblog.com/bring-state-of-the-art-agentic-skills-to-the-edge-with-gemma-4/">Google Developers</a></p>
+        </article>
+
+        <!-- 8 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-mobile">MOBILE</span> ExecuTorch 1.0 GA: PyTorch on-device listo para producción</h2>
+            <p class="what">Meta y Arm lanzaron ExecuTorch 1.0 en general availability — el runtime oficial de PyTorch para IA on-device. Soporta desde microcontroladores hasta smartphones flagship con Arm CPUs, GPUs y Ethos-U NPUs. Las optimizaciones KleidiAI reducen latencia y memoria, y el nuevo backend VGF soportará GPUs Arm 2026 para rendering con ML.</p>
+            <p class="why">Si tu app ya usa PyTorch para ML, ExecuTorch 1.0 es el camino directo a producción on-device sin reescribir modelos — el equivalente mobile de "just deploy".</p>
+            <p class="source">Fuente: <a href="https://pytorch.org/blog/introducing-executorch-1-0/">PyTorch Blog</a> · <a href="https://newsroom.arm.com/news/executorch-1-0-ga-release-edge-ai">Arm Newsroom</a></p>
+        </article>
+
+        <!-- 9 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-sports">SPORTS</span> NYSC lanza MYCO: AI coaching como add-on para retención de miembros</h2>
+            <p class="what">New York Sports Club integró MYCO, un AI coach vía la app Zing Coach, como servicio adicional para sus miembros. Incluye planes de entrenamiento adaptativos, chat con coach IA, body scans, seguimiento de fuerza/flexibilidad/movilidad y guía nutricional. Cuesta $15/mes tras trial de 30 días, separado de la membresía del gym.</p>
+            <p class="why">Un gym chain usando AI coaching como add-on de retención a $15/mes es un modelo replicable para cualquier marketplace de servicios profesionales — el AI coach como upsell, no como reemplazo del servicio humano.</p>
+            <p class="source">Fuente: <a href="https://athletechnews.com/nysc-adds-ai-coaching-in-retention-play/">Athletech News</a> · <a href="https://www.endurancesportswire.com/nysc-adds-ai-coaching-in-retention-play/">Endurance Sports Wire</a></p>
+        </article>
+
+        <!-- 10 -->
+        <article class="news-item">
+            <h2><span class="tag tag-sports">SPORTS</span> Whoop AI Strength Trainer: rutinas completas desde texto + biometría</h2>
+            <p class="what">Whoop actualizó su Strength Trainer con generación de rutinas completas desde prompts de texto o screenshots. El AI factoriza historial de levantamiento, tendencias de volumen y Recovery score actual para personalizar cada sesión. Integrado directamente en el flujo del wearable sin apps externas.</p>
+            <p class="why">La combinación de datos biométricos en tiempo real + generación de contenido personalizado por IA es el patrón que toda app de salud y fitness debería implementar.</p>
+            <p class="source">Fuente: <a href="https://www.wareable.com/fitness-trackers/whoop-coach-ai-strength-trainer-workout-builder-update">Wareable</a></p>
+        </article>
+
+        <footer>
+            <p>Curado con IA · Filtrado para senior devs construyendo producto · Daily AI</p>
+        </footer>
+    </div>
+</body>
+</html>
