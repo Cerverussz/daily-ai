@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily AI — Noticias IA · 19 abril 2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+        .container { max-width: 740px; margin: 0 auto; }
+        header { margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+        header h1 { font-size: 1.6rem; color: #fff; margin-bottom: 0.3rem; }
+        header p { color: #888; font-size: 0.9rem; }
+        .news-item { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.4rem; margin-bottom: 1.2rem; transition: border-color 0.2s; }
+        .news-item:hover { border-color: #444; }
+        .news-item h2 { font-size: 1.1rem; color: #fff; margin-bottom: 0.6rem; }
+        .news-item .what { color: #ccc; font-size: 0.92rem; margin-bottom: 0.5rem; }
+        .news-item .why { color: #a78bfa; font-size: 0.88rem; font-style: italic; margin-bottom: 0.5rem; }
+        .news-item .source { font-size: 0.82rem; }
+        .news-item .source a { color: #60a5fa; text-decoration: none; }
+        .news-item .source a:hover { text-decoration: underline; }
+        .tag { display: inline-block; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; margin-right: 6px; font-weight: 600; vertical-align: middle; }
+        .tag-anthropic { background: #d97706; color: #fff; }
+        .tag-mobile { background: #059669; color: #fff; }
+        .tag-tools { background: #7c3aed; color: #fff; }
+        .tag-founders { background: #dc2626; color: #fff; }
+        .tag-sports { background: #2563eb; color: #fff; }
+        footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗞️ Daily AI — 19 abril 2026</h1>
+            <p>11 noticias filtradas para senior devs que construyen producto · Sin hype, sin papers sin aplicación</p>
+        </header>
+
+        <!-- 1 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-anthropic">ANTHROPIC</span> Claude Code Desktop rediseñado: sesiones paralelas, terminal integrado y Routines</h2>
+            <p class="what">Anthropic lanzó un rediseño completo de Claude Code Desktop con sidebar para múltiples sesiones simultáneas, terminal integrado, editor de archivos in-app, diff viewer optimizado para changesets grandes, y layout drag-and-drop. Además, lanzó Routines en research preview: automatizaciones que corren en la infra de Anthropic sin necesidad de laptop encendida, con triggers por schedule, API o eventos de GitHub.</p>
+            <p class="why">Routines convierte a Claude Code de herramienta de coding a plataforma de automatización — un founder solo puede tener triage de bugs, review de PRs y deploys corriendo 24/7 sin infra propia.</p>
+            <p class="source">Fuente: <a href="https://claude.com/blog/claude-code-desktop-redesign">Claude Blog</a> · <a href="https://9to5mac.com/2026/04/14/anthropic-adds-repeatable-routines-feature-to-claude-code-heres-how-it-works/">9to5Mac</a></p>
+        </article>
+
+        <!-- 2 -->
+        <article class="news-item">
+            <h2><span class="tag tag-anthropic">ANTHROPIC</span> Claude Design: prototipado visual directo desde conversación</h2>
+            <p class="what">Anthropic lanzó Claude Design, un producto experimental que permite crear prototipos, slides, one-pagers y visualizaciones directamente desde chat. Potenciado por Claude Opus 4.7, disponible en research preview para suscriptores Pro, Max, Team y Enterprise.</p>
+            <p class="why">Elimina el salto entre "describir una idea" y "tener un mockup visual" — útil para validar UIs con stakeholders antes de escribir una sola línea de código.</p>
+            <p class="source">Fuente: <a href="https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/">TechCrunch</a></p>
+        </article>
+
+        <!-- 3 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-tools">TOOLS</span> Cursor Composer 2: modelo propio frontier a $0.50/M tokens de input</h2>
+            <p class="what">Cursor lanzó Composer 2, su propio modelo de coding que logra 61.3 en CursorBench (37% sobre Composer 1.5) y 73.7 en SWE-bench Multilingual, superando a Claude Opus 4.6. Incluye resolución de tareas de cientos de acciones, cloud agents con screenshots de verificación, y un nuevo diff view integrado con staging y PR management.</p>
+            <p class="why">Un modelo frontier de coding a $0.50/M input tokens cambia la economía de usar agentes para tareas complejas — más iteraciones por el mismo presupuesto.</p>
+            <p class="source">Fuente: <a href="https://cursor.com/blog/composer-2">Cursor Blog</a> · <a href="https://venturebeat.com/technology/cursors-new-coding-model-composer-2-is-here-it-beats-claude-opus-4-6-but">VentureBeat</a></p>
+        </article>
+
+        <!-- 4 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-founders">FOUNDERS</span> JetBrains AI Pulse: 90% de devs usan IA, el stack ganador es Cursor + Claude Code</h2>
+            <p class="what">La encuesta AI Pulse de JetBrains (10,000+ devs profesionales) confirma que el 90% usa IA regularmente para coding. El combo más común en 2026: Cursor para edición diaria + Claude Code para tareas complejas en terminal. Claude Code alcanzó 18% de adopción laboral con el CSAT más alto del mercado (91%).</p>
+            <p class="why">Si eres founder técnico y aún no integraste IA en tu flujo de desarrollo, estás compitiendo con una mano atada contra el 90% que sí lo hace.</p>
+            <p class="source">Fuente: <a href="https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-developers-actually-use-at-work/">JetBrains Research</a></p>
+        </article>
+
+        <!-- 5 -->
+        <article class="news-item">
+            <h2><span class="tag tag-tools">TOOLS</span> MCP cruza 97M de instalaciones: de protocolo experimental a infraestructura estándar</h2>
+            <p class="what">El Model Context Protocol de Anthropic alcanzó 97 millones de instalaciones en marzo 2026. Todos los proveedores de IA importantes ahora envían tooling compatible con MCP, consolidándolo como el mecanismo estándar para conectar agentes con herramientas externas, APIs y fuentes de datos.</p>
+            <p class="why">MCP como estándar universal significa que las integraciones que construyas hoy funcionarán con cualquier proveedor de IA mañana — invierte en MCP servers, no en integraciones propietarias.</p>
+            <p class="source">Fuente: <a href="https://www.crescendo.ai/news/latest-ai-news-and-updates">Crescendo AI News</a></p>
+        </article>
+
+        <!-- 6 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-mobile">ANDROID</span> On-device AI: modelos sub-1B ya resuelven tareas prácticas en smartphones</h2>
+            <p class="what">El ecosistema de LLMs on-device maduró: Gemma 3 (270M), Llama 3.2 (1B/3B) y FunctionGemma corren tareas reales en dispositivos móviles. La Universidad de Michigan publicó un co-diseño hardware-software que logra procesamiento en tiempo real en edge devices con latencia y consumo energético significativamente menores que hardware digital convencional.</p>
+            <p class="why">Agentes offline funcionales en Android mid-range son ahora viables — cero latencia de red, cero costo de API, y experiencias que funcionan sin conexión.</p>
+            <p class="source">Fuente: <a href="https://news.engin.umich.edu/2026/04/a-hardware-software-co-design-to-efficiently-run-ai-on-edge-devices/">Michigan Engineering</a> · <a href="https://www.edge-ai-vision.com/2026/01/on-device-llms-in-2026-what-changed-what-matters-whats-next/">Edge AI Vision</a></p>
+        </article>
+
+        <!-- 7 -->
+        <article class="news-item">
+            <h2><span class="tag tag-tools">TOOLS</span> Stanford AI Index 2026: agentes alcanzan 66% de rendimiento humano en tareas reales</h2>
+            <p class="what">El AI Index 2026 de Stanford reporta que los agentes de IA saltaron de 12% a 66% de rendimiento humano en tareas reales de computadora (OSWorld benchmark). GPT-5.4 de OpenAI logra 75% en OSWorld-V simulando tareas de productividad en desktop, con ejecución autónoma multi-paso.</p>
+            <p class="why">66% de rendimiento humano en navegación de software real significa que los agentes ya son útiles para automatizar flujos repetitivos — no perfectos, pero económicamente viables.</p>
+            <p class="source">Fuente: <a href="https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report">Stanford HAI</a></p>
+        </article>
+
+        <!-- 8 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-founders">FOUNDERS</span> n8n redefine agent development: workflows visuales con 500+ integraciones y agentes IA</h2>
+            <p class="what">n8n (valorada en $1B, 180k+ GitHub stars) consolidó su posición como plataforma de referencia para construir agentes IA en producción. Permite crear workflows describiendo en lenguaje natural, con integración nativa de OpenAI, Claude, Gemini y Ollama, más aprobaciones humanas en el loop y ejecución en sandbox.</p>
+            <p class="why">Para founders técnicos sin equipo de DevOps, n8n es la forma más rápida de tener agentes IA en producción conectados a tus herramientas reales — sin escribir infra de orquestación desde cero.</p>
+            <p class="source">Fuente: <a href="https://blog.n8n.io/we-need-re-learn-what-ai-agent-development-tools-are-in-2026/">n8n Blog</a></p>
+        </article>
+
+        <!-- 9 -->
+        <article class="news-item">
+            <h2><span class="tag tag-tools">TOOLS</span> Git reimaginado para agentes: rethinking developer tools con IA</h2>
+            <p class="what">Frank's World publicó un análisis sobre cómo los agentes de IA están forzando un replanteamiento de herramientas de desarrollo fundamentales como Git. Con agentes creando branches, haciendo commits y abriendo PRs autónomamente, los flujos de trabajo tradicionales necesitan adaptarse a un mundo donde humanos y agentes colaboran en el mismo repo.</p>
+            <p class="why">Si tu producto involucra developer tools o workflows de código, pensar en agentes como first-class citizens en tu UX ya no es opcional.</p>
+            <p class="source">Fuente: <a href="https://www.franksworld.com/2026/04/17/rethinking-git-the-intersection-of-ai-agents-and-developer-tools/">Frank's World</a></p>
+        </article>
+
+        <!-- 10 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-sports">SPORTS</span> Whoop 5.0 AI Coach: el mejor wearable de IA para health coaching en 2026</h2>
+            <p class="what">Whoop 5.0 se consolidó como el wearable #1 en AI health coaching según Clinical AI Report. Su AI Coach genera rutinas de fuerza desde texto o screenshots, factorizando historial de levantamiento, volumen y Recovery score. Incluye jetlag coaching con guía de luz/cafeína/sueño y batería de 14+ días para tracking ininterrumpido.</p>
+            <p class="why">El patrón biometría en tiempo real + generación personalizada por IA es replicable en cualquier marketplace de servicios de salud o fitness — el dato del usuario como moat.</p>
+            <p class="source">Fuente: <a href="https://clinicalaireport.com/articles/best-ai-health-wearable">Clinical AI Report</a> · <a href="https://exploreaitools.com/whoop-ai-coach-review/">Explore AI Tools</a></p>
+        </article>
+
+        <!-- 11 -->
+        <article class="news-item">
+            <h2>🔥 <span class="tag tag-sports">SPORTS</span> Apple prepara servicio de AI health coaching integrado con Apple Watch</h2>
+            <p class="what">Apple está desarrollando un servicio de AI health coaching que se integrará con la app Health y Apple Watch, con lanzamiento esperado en 2026. Ofrecerá consejo personalizado sobre ejercicio, sueño, dieta, estrés y bienestar mental, combinando los datos de sensores del Watch con modelos de IA propios.</p>
+            <p class="why">Apple entrando en AI coaching con su base instalada de 100M+ Apple Watches valida el mercado y abre oportunidades para integraciones y nichos especializados que Apple no cubrirá.</p>
+            <p class="source">Fuente: <a href="https://www.dualmedia.com/wearables-healthtech-ai-diagnostics-wellness-2026/">DualMedia Innovation</a></p>
+        </article>
+
+        <footer>
+            <p>Curado con IA · Filtrado para senior devs construyendo producto · Daily AI</p>
+        </footer>
+    </div>
+</body>
+</html>
