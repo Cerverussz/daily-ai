@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias IA - 21 de Abril 2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+        .container { max-width: 820px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #222; padding-bottom: 1.5rem; }
+        header h1 { font-size: 1.6rem; color: #fff; margin-bottom: 0.3rem; }
+        header p { color: #888; font-size: 0.95rem; }
+        .news-item { background: #111; border: 1px solid #1a1a1a; border-radius: 10px; padding: 1.4rem 1.6rem; margin-bottom: 1.2rem; transition: border-color 0.2s; }
+        .news-item:hover { border-color: #333; }
+        .news-item h2 { font-size: 1.15rem; color: #fff; margin-bottom: 0.6rem; line-height: 1.4; }
+        .news-item .description { color: #b0b0b0; font-size: 0.92rem; margin-bottom: 0.5rem; }
+        .news-item .why { color: #7eb8da; font-size: 0.88rem; font-style: italic; margin-bottom: 0.5rem; }
+        .news-item .source a { color: #555; font-size: 0.82rem; text-decoration: none; }
+        .news-item .source a:hover { color: #888; text-decoration: underline; }
+        .section-label { color: #444; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; margin: 2rem 0 1rem 0; }
+        .badge { font-size: 0.85rem; margin-right: 0.3rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily AI Briefing</h1>
+            <p>21 de Abril, 2026 &mdash; Resumen curado para senior devs &amp; founders</p>
+        </header>
+
+        <!-- EJE 1: Aplicaciones profesionales -->
+        <div class="section-label">Aplicaciones profesionales de IA</div>
+
+        <article class="news-item">
+            <h2><span class="badge">🔥</span> OpenAI lanza SDK de Agentes con sandbox nativo y soporte MCP</h2>
+            <p class="description">OpenAI actualizó su Agents SDK con entornos sandbox integrados que permiten a los agentes inspeccionar archivos, ejecutar comandos y editar código de forma segura. Incluye memoria configurable, orquestación sandbox-aware, herramientas tipo Codex, tool use vía MCP, instrucciones custom vía AGENTS.md y ejecución shell.</p>
+            <p class="why">Si estás construyendo agentes en producción, ahora tienes sandbox out-of-the-box con soporte para E2B, Modal, Vercel y más — sin montar tu propia infraestructura de aislamiento.</p>
+            <p class="source"><a href="https://openai.com/index/the-next-evolution-of-the-agents-sdk/" target="_blank">openai.com</a></p>
+        </article>
+
+        <article class="news-item">
+            <h2><span class="badge">🔥</span> GitHub Copilot pausa nuevas suscripciones y reestructura planes</h2>
+            <p class="description">GitHub pausó nuevos sign-ups para Copilot Pro, Pro+ y planes estudiantes a partir del 20 de abril. Los workflows agénticos han cambiado radicalmente la demanda de cómputo, con sesiones paralelas de larga duración consumiendo mucho más de lo que los planes originales soportaban.</p>
+            <p class="why">Señal clara de que el modelo "todo incluido a precio fijo" no escala con agentes — si dependes de Copilot en tu stack, empieza a evaluar alternativas o prepárate para billing basado en tokens.</p>
+            <p class="source"><a href="https://github.blog/changelog/2026-04-20-changes-to-github-copilot-plans-for-individuals/" target="_blank">github.blog</a></p>
+        </article>
+
+        <!-- EJE 2: Innovaciones técnicas -->
+        <div class="section-label">Innovaciones técnicas con impacto práctico</div>
+
+        <article class="news-item">
+            <h2>Claude Opus 4.7 ya disponible: SWE-bench 87.6%, visión 2576px y task budgets</h2>
+            <p class="description">Anthropic lanzó Claude Opus 4.7 el 16 de abril, con mejoras significativas en ingeniería de software, tareas de código complejas y de larga duración. Introduce task budgets para controlar el consumo de tokens en loops agénticos y soporte de imágenes en alta resolución (2576px / 3.75MP).</p>
+            <p class="why">87.6% en SWE-bench y task budgets significan agentes de código más precisos y predecibles en costos — pricing sin cambios en $5/$25 por millón de tokens.</p>
+            <p class="source"><a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank">anthropic.com</a></p>
+        </article>
+
+        <article class="news-item">
+            <h2><span class="badge">🔥</span> Cursor lanzó Composer 2: modelo propio de coding con 73.7 en SWE-bench Multilingual</h2>
+            <p class="description">Cursor Composer 2, construido sobre Moonshot AI Kimi K2.5 con entrenamiento extensivo y RL a gran escala, logra 61.3 en CursorBench (37% mejor que v1.5) y 73.7 en SWE-bench Multilingual. Se posiciona como modelo frontier de coding a $0.50 por millón de input tokens.</p>
+            <p class="why">Un IDE con su propio modelo frontier optimizado para código a $0.50/M tokens cambia la ecuación — si tu workflow es Cursor + Claude Code, ahora tienes dos motores especializados complementarios.</p>
+            <p class="source"><a href="https://www.digitalapplied.com/blog/ai-coding-assistants-april-2026-cursor-copilot-claude" target="_blank">digitalapplied.com</a></p>
+        </article>
+
+        <article class="news-item">
+            <h2>Arduino Ventuno Q: Edge AI con 40 TOPS a menos de $300, desafiando a NVIDIA Jetson</h2>
+            <p class="description">Arduino y Qualcomm lanzaron Ventuno Q, una SBC con procesador Dragonwing IQ8 (NPU de 40 TOPS), 16GB RAM y microcontrolador STM32H5 para control en tiempo real. Une cómputo AI de alto rendimiento con control determinístico de actuadores en una sola placa.</p>
+            <p class="why">Si estás prototipando productos con AI on-device (robots, kioscos, dispositivos de fitness), esta placa a menos de $300 baja dramáticamente la barrera de entrada vs. Jetson.</p>
+            <p class="source"><a href="https://blog.arduino.cc/2026/03/09/introducing-arduino-ventuno-q-your-new-ai-robotics-and-actuation-platform/" target="_blank">blog.arduino.cc</a></p>
+        </article>
+
+        <article class="news-item">
+            <h2>JetBrains: 74% de devs ya usan herramientas AI; Claude Code crece 6x en un año</h2>
+            <p class="description">Según el survey de JetBrains (10,000+ devs), el 74% de desarrolladores adopta herramientas AI especializadas. Claude Code alcanzó 18% de uso laboral con 91% de satisfacción y NPS de 54, el más alto del mercado — un crecimiento de 6x desde abril 2025.</p>
+            <p class="why">El stack dominante en 2026 es Cursor para edición diaria + Claude Code para tareas complejas — si no los estás combinando, estás dejando productividad en la mesa.</p>
+            <p class="source"><a href="https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-developers-actually-use-at-work/" target="_blank">blog.jetbrains.com</a></p>
+        </article>
+
+        <!-- EJE 3: Negocios y productos -->
+        <div class="section-label">Creación de negocios y productos con IA</div>
+
+        <article class="news-item">
+            <h2><span class="badge">🔥</span> Claude Design: de prompt a prototipo visual en producción</h2>
+            <p class="description">Anthropic lanzó Claude Design (17 abril), herramienta que convierte conversaciones en prototipos, slides y mockups. Lee tu codebase y archivos de diseño para generar con tus colores, tipografía y componentes. Brilliant reportó que páginas que tomaban 20+ prompts en otras herramientas requieren solo 2 en Claude Design.</p>
+            <p class="why">Si eres founder técnico o solo-dev, esto elimina la dependencia de un diseñador para MVPs — de prompt a prototipo a handoff a Claude Code en un solo flujo.</p>
+            <p class="source"><a href="https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/" target="_blank">techcrunch.com</a></p>
+        </article>
+
+        <article class="news-item">
+            <h2>MIT Technology Review: "10 cosas que importan en IA ahora" — generative coding y AI companions lideran</h2>
+            <p class="description">MIT Tech Review publicó su lista curada de las 10 tendencias AI que importan en 2026, destacando generative coding, AI companions, interpretabilidad mecanística y hyperscale data centers. La lista marca la agenda de cobertura y refleja dónde ven oportunidad real los editores.</p>
+            <p class="why">Generative coding en el top 10 de MIT confirma que construir productos con AI coding assistants no es hype temporal — es la nueva normalidad de desarrollo.</p>
+            <p class="source"><a href="https://www.technologyreview.com/2026/04/21/1135643/10-ai-artificial-intelligence-trends-technologies-research-2026/" target="_blank">technologyreview.com</a></p>
+        </article>
+
+        <!-- EJE 4: Ecosistema Anthropic -->
+        <div class="section-label">Novedades de Claude y ecosistema Anthropic</div>
+
+        <article class="news-item">
+            <h2>Anthropic prueba remover Claude Code del plan Pro ($20/mes) — solo 2% de signups afectados</h2>
+            <p class="description">El 21 de abril, Anthropic removió silenciosamente Claude Code de las páginas de pricing del plan Pro, moviéndolo como exclusivo del plan Max ($100/mes). Tras la confusión pública, aclararon que es un test con solo 2% de nuevos signups "prosumer" y que suscriptores existentes no están afectados.</p>
+            <p class="why">Si tu workflow productivo depende de Claude Code, vigila este movimiento — si se concreta, $100/mes es el nuevo piso para AI coding integrado con Claude.</p>
+            <p class="source"><a href="https://www.wheresyoured.at/news-anthropic-removes-pro-cc/" target="_blank">wheresyoured.at</a></p>
+        </article>
+
+        <article class="news-item">
+            <h2>Claude Mythos Preview: modelo especializado en ciberseguridad + Proyecto Glasswing</h2>
+            <p class="description">Anthropic anunció Claude Mythos Preview, un modelo general con capacidades excepcionales en seguridad informática. Junto a él, lanzaron Project Glasswing, una iniciativa para usar Mythos en la protección del software crítico mundial.</p>
+            <p class="why">Un modelo frontier optimizado para security abre la puerta a auditorías automatizadas de código y detección de vulnerabilidades integrada en tu CI/CD.</p>
+            <p class="source"><a href="https://red.anthropic.com/2026/mythos-preview/" target="_blank">red.anthropic.com</a></p>
+        </article>
+
+        <!-- EJE 5: Sports tech, salud -->
+        <div class="section-label">IA en sports tech, salud y bienestar</div>
+
+        <article class="news-item">
+            <h2><span class="badge">🔥</span> 3EA Global lanza FTS: ecosistema de fitness deportivo con IA conductual en India</h2>
+            <p class="description">3EA Global presentó FTS (Fitness Through Sports) el 20 de abril en Mumbai, posicionándose como el primer ecosistema de fitness deportivo en India impulsado por IA conductual. Perfila usuarios por patrones de vida, tipo corporal, sensibilidades médicas y objetivos, priorizando consistencia sobre rendimiento.</p>
+            <p class="why">Un marketplace de fitness que usa AI para personalización conductual (no solo tracking) es un modelo de negocio replicable — hay oportunidad clara en LatAm con el mismo enfoque.</p>
+            <p class="source"><a href="https://www.business-standard.com/content/press-releases-ani/3ea-global-launches-fts-fitness-through-sports-a-new-habit-based-fitness-model-for-india-126042000529_1.html" target="_blank">business-standard.com</a></p>
+        </article>
+
+    </div>
+</body>
+</html>
