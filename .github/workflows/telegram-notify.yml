@@ -1,0 +1,37 @@
+name: Send daily briefing to Telegram
+
+on:
+  push:
+    branches:
+      - "claude/**"
+    paths:
+      - "noticias-ia-*.html"
+  workflow_dispatch:
+    inputs:
+      news_file:
+        description: "Optional: path to a specific HTML file to send"
+        required: false
+        type: string
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Send briefing
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          NEWS_FILE: ${{ inputs.news_file }}
+        run: python scripts/send_to_telegram.py
