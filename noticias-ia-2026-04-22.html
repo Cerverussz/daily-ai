@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias IA — 22 de Abril 2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.6; padding: 2rem 1rem; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { font-size: 1.5rem; color: #58a6ff; margin-bottom: 0.25rem; }
+        .date { color: #8b949e; font-size: 0.9rem; margin-bottom: 2rem; }
+        .news-item { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+        .news-item h2 { font-size: 1.05rem; color: #f0f6fc; margin-bottom: 0.5rem; }
+        .news-item .tag { display: inline-block; font-size: 0.7rem; padding: 2px 8px; border-radius: 12px; margin-right: 0.4rem; margin-bottom: 0.5rem; font-weight: 600; }
+        .tag-tools { background: #1f3a5f; color: #58a6ff; }
+        .tag-coding { background: #2a1f3f; color: #bc8cff; }
+        .tag-mobile { background: #1f3f2a; color: #56d364; }
+        .tag-startup { background: #3f2a1f; color: #f0883e; }
+        .tag-anthropic { background: #3f1f2a; color: #f778ba; }
+        .tag-health { background: #1f3f3f; color: #39d2c0; }
+        .what { color: #c9d1d9; font-size: 0.9rem; margin-bottom: 0.4rem; }
+        .why { color: #8b949e; font-size: 0.85rem; font-style: italic; margin-bottom: 0.4rem; }
+        .source a { color: #58a6ff; font-size: 0.8rem; text-decoration: none; }
+        .source a:hover { text-decoration: underline; }
+        .section-title { color: #8b949e; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin: 1.5rem 0 0.75rem; }
+        .fire { font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Noticias IA — Daily Briefing</h1>
+        <p class="date">22 de abril de 2026 · Curado para senior devs construyendo producto</p>
+
+        <!-- SECCIÓN 1: Aplicaciones profesionales y herramientas -->
+        <p class="section-title">Herramientas y aplicaciones en producción</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Google lanza Agents CLI dentro de Agent Platform</h2>
+            <span class="tag tag-tools">HERRAMIENTAS</span>
+            <p class="what">Google anunció Agents CLI, una herramienta unificada que permite ir desde scaffolding hasta deploy en producción de agentes AI desde la terminal. Se integra con Gemini Enterprise Agent Platform (la evolución de Vertex AI) y soporta el protocolo A2A con SDKs estables en Python, Go, Java y TypeScript.</p>
+            <p class="why">Si estás construyendo agentes para tu producto, tener un CLI que maneja todo el ciclo de vida reduce drásticamente el tiempo de iteración.</p>
+            <p class="source"><a href="https://developers.googleblog.com/agents-cli-in-agent-platform-create-to-production-in-one-cli/">Google Developers Blog</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Microsoft libera Agent Governance Toolkit como open source</h2>
+            <span class="tag tag-tools">HERRAMIENTAS</span>
+            <p class="what">Microsoft publicó un toolkit de 7 paquetes (Python, TypeScript, Rust, Go, .NET) para gobernar agentes AI autónomos en runtime. Cubre los 10 riesgos del OWASP Agentic Top 10 con enforcement de políticas sub-milisegundo, y se integra nativamente con LangChain, CrewAI y Google ADK.</p>
+            <p class="why">Si tu producto tiene agentes haciendo cosas por el usuario, este toolkit resuelve seguridad y governance sin reescribir tu código — es plug-and-play.</p>
+            <p class="source"><a href="https://github.com/microsoft/agent-governance-toolkit">GitHub — MIT License</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Amazon agrega agentes a OpenSearch Service</h2>
+            <span class="tag tag-tools">HERRAMIENTAS</span>
+            <p class="what">Amazon añadió un Investigation Agent y Agentic Memory a OpenSearch Service, permitiendo automatizar observabilidad sin infraestructura adicional. Los agentes pueden analizar logs, correlacionar eventos y ejecutar diagnósticos de forma autónoma.</p>
+            <p class="why">Para cualquier backend con observabilidad compleja, esto elimina horas de debugging manual — especialmente valioso si eres un equipo pequeño.</p>
+            <p class="source"><a href="https://aws.amazon.com/opensearch-service/">AWS OpenSearch Service</a></p>
+        </div>
+
+        <!-- SECCIÓN 2: Innovaciones técnicas -->
+        <p class="section-title">Innovaciones técnicas con impacto práctico</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Gemma 4 lleva IA agéntica al edge con Apache 2.0</h2>
+            <span class="tag tag-mobile">MOBILE/EDGE</span>
+            <p class="what">Google DeepMind liberó Gemma 4 en 4 tamaños (E2B, E4B, 26B MoE, 31B Dense) bajo licencia Apache 2.0, con capacidades agénticas nativas: planificación multi-paso, generación de código offline y procesamiento audiovisual en-device. El modelo E2B corre a 7.6 tokens/s en una Raspberry Pi 5, y soporta +140 idiomas con entrada nativa de audio.</p>
+            <p class="why">Modelos agénticos open-source que corren en Android sin servidor — esto cambia la ecuación para apps móviles con AI local.</p>
+            <p class="source"><a href="https://android-developers.googleblog.com/2026/04/gemma-4-new-standard-for-local-agentic-intelligence.html">Android Developers Blog</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Google publica algoritmo de compresión que reduce 6x el costo de inferencia</h2>
+            <span class="tag tag-tools">HERRAMIENTAS</span>
+            <p class="what">Google DeepMind anunció un nuevo algoritmo de compresión que reduce los requerimientos de memoria KV-cache en inferencia por un factor de 6. Esto permite correr modelos más grandes en hardware más barato o servir muchos más usuarios concurrentes con la misma GPU.</p>
+            <p class="why">Menos costo de inference = mejores unit economics si tu producto depende de llamadas a modelos propios o self-hosted.</p>
+            <p class="source"><a href="https://www.technologyreview.com/2026/04/21/1135643/10-ai-artificial-intelligence-trends-technologies-research-2026/">MIT Technology Review</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Hardware-software co-design para AI en edge devices (U. Michigan)</h2>
+            <span class="tag tag-mobile">MOBILE/EDGE</span>
+            <p class="what">Investigadores de la U. de Michigan demostraron un co-diseño hardware-software que adapta state space models a arquitectura compute-in-memory, logrando AI en tiempo real en dispositivos como teléfonos y cámaras autónomas. El diseño supera significativamente al hardware digital convencional en latencia y consumo energético.</p>
+            <p class="why">Señal de que el AI on-device está madurando a nivel de silicio — relevante si planeas features de AI offline en tu app móvil.</p>
+            <p class="source"><a href="https://news.engin.umich.edu/2026/04/a-hardware-software-co-design-to-efficiently-run-ai-on-edge-devices/">Michigan Engineering</a></p>
+        </div>
+
+        <!-- SECCIÓN 3: AI Coding & Productividad -->
+        <p class="section-title">AI Coding y productividad para devs</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Cursor 3: interfaz agent-first con ejecución paralela de agentes</h2>
+            <span class="tag tag-coding">CODING</span>
+            <p class="what">Cursor lanzó Cursor 3 con una nueva Agents Window que reemplaza Composer, permitiendo correr múltiples agentes AI en paralelo (local, cloud, SSH, worktrees). Incluye Design Mode para anotar UI directamente en browser integrado, marketplace de 30+ plugins (Datadog, GitLab, Hugging Face), y comparación multi-LLM nativa.</p>
+            <p class="why">Agentes paralelos significan poder refactorizar, testear y documentar simultáneamente — multiplica la velocidad de un solo dev construyendo producto.</p>
+            <p class="source"><a href="https://cursor.com/blog/cursor-3">Cursor Blog</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> OpenAI actualiza Codex: Windows, plugins, marketplace y sandbox</h2>
+            <span class="tag tag-coding">CODING</span>
+            <p class="what">OpenAI lanzó una actualización amplia de Codex con instalador standalone, soporte para Windows e Intel Mac, workflows de Plan Mode mejorados, marketplace con plugins expandidos, y filesystem sandboxing reforzado. También introdujo GPT-Rosalind para ciencias, con acceso a 50+ herramientas científicas.</p>
+            <p class="why">El marketplace de plugins y el sandbox mejorado hacen de Codex una opción más seria para flujos de trabajo de producción reales.</p>
+            <p class="source"><a href="https://releasebot.io/updates/openai">OpenAI Release Notes — Releasebot</a></p>
+        </div>
+
+        <!-- SECCIÓN 4: Ecosistema Anthropic -->
+        <p class="section-title">Novedades de Claude y Anthropic</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Claude Code: caching de 1h, session recap, y Skills nativas</h2>
+            <span class="tag tag-anthropic">ANTHROPIC</span>
+            <p class="what">Claude Code añadió controles de prompt caching de 1 hora (y forzado de 5 min), session recap para retomar contexto tras pausas, y acceso al Skill tool desde slash commands nativos. También mejoró resume, switching de modelos, manejo de plugins/MCP, y redujo uso de memoria.</p>
+            <p class="why">El caching de 1 hora y session recap reducen fricción y costo real cuando usas Claude Code como tu coding assistant principal todo el día.</p>
+            <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Claude Code Release Notes</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Anthropic lanza Claude Managed Agents en beta pública</h2>
+            <span class="tag tag-anthropic">ANTHROPIC</span>
+            <p class="what">Anthropic lanzó Claude Managed Agents en beta pública: un harness completamente gestionado para ejecutar Claude como agente autónomo con sandboxing seguro, herramientas integradas y streaming via server-sent events. También lanzaron el CLI "ant" para interactuar con la API de Claude desde terminal.</p>
+            <p class="why">Si quieres integrar agentes Claude en tu producto sin construir toda la infraestructura de orquestación, esto es exactamente lo que necesitas.</p>
+            <p class="source"><a href="https://releasebot.io/updates/anthropic">Anthropic Release Notes</a></p>
+        </div>
+
+        <!-- SECCIÓN 5: Sports tech / Salud -->
+        <p class="section-title">IA en sports tech, salud y bienestar</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> CMU Draft Week AI Showdown: Perforated AI y Sensi Fit reciben inversión</h2>
+            <span class="tag tag-health">SPORTS/SALUD</span>
+            <p class="what">En el AI Showdown de CMU durante la Draft Week, Perforated AI (señales de riesgo de lesión en tiempo real usando datos de jugadores) recibió $125K de Magarac + Mark Cuban, y Sensi Fit (sistema all-in-one de rendimiento deportivo con feedback instantáneo para coaches) recibió $250K de dos fondos. Peachy Day, una app de prevención de migraña con coaching predictivo, también fue seleccionada.</p>
+            <p class="why">Validación concreta de que AI + sports data es un vertical con tracción real y capital fluyendo — especialmente en coaching y prevención de lesiones.</p>
+            <p class="source"><a href="https://www.cmu.edu/news/stories/archives/2026/april/sports-tech-featured-in-high-stakes-draft-week-ai-showdown">Carnegie Mellon University</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Mercado de avatares AI para coaching de salud alcanzará $6.5B en 2030</h2>
+            <span class="tag tag-health">SPORTS/SALUD</span>
+            <p class="what">Según un nuevo reporte, el mercado de avatares AI para health coaching creció de $1.71B a $2.24B en un año (CAGR 31%) y se proyecta a $6.54B para 2030. El crecimiento lo impulsa la demanda de salud preventiva personalizada y la inversión en terapéutica AI-driven.</p>
+            <p class="why">Si construyes en el vertical de salud/bienestar, el coaching AI personalizado es uno de los mercados de más rápido crecimiento para monetizar.</p>
+            <p class="source"><a href="https://www.globenewswire.com/news-release/2026/04/07/3269508/28124/en/AI-Generated-Digital-Health-Coaching-Avatar-Market-Eyes-6-54-Billion-Valuation-by-2030-Tripling-in-Size-During-2026-2030.html">GlobeNewsWire</a></p>
+        </div>
+
+        <p style="color: #484f58; font-size: 0.75rem; margin-top: 2rem; text-align: center;">
+            Generado automáticamente · Fuentes verificadas al 22/04/2026 · Filtrado para senior devs construyendo producto
+        </p>
+    </div>
+</body>
+</html>
