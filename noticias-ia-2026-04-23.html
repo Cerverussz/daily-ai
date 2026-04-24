@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias IA — 23 de abril 2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.6; padding: 2rem 1rem; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { font-size: 1.5rem; color: #58a6ff; margin-bottom: 0.25rem; }
+        .date { color: #8b949e; font-size: 0.9rem; margin-bottom: 2rem; }
+        .news-item { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+        .news-item h2 { font-size: 1.05rem; color: #f0f6fc; margin-bottom: 0.5rem; }
+        .news-item .tag { display: inline-block; font-size: 0.7rem; padding: 2px 8px; border-radius: 12px; margin-right: 0.4rem; margin-bottom: 0.5rem; font-weight: 600; }
+        .tag-tools { background: #1f3a5f; color: #58a6ff; }
+        .tag-coding { background: #2a1f3f; color: #bc8cff; }
+        .tag-mobile { background: #1f3f2a; color: #56d364; }
+        .tag-startup { background: #3f2a1f; color: #f0883e; }
+        .tag-anthropic { background: #3f1f2a; color: #f778ba; }
+        .tag-health { background: #1f3f3f; color: #39d2c0; }
+        .what { color: #c9d1d9; font-size: 0.9rem; margin-bottom: 0.4rem; }
+        .why { color: #8b949e; font-size: 0.85rem; font-style: italic; margin-bottom: 0.4rem; }
+        .source a { color: #58a6ff; font-size: 0.8rem; text-decoration: none; }
+        .source a:hover { text-decoration: underline; }
+        .section-title { color: #8b949e; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin: 1.5rem 0 0.75rem; }
+        .fire { font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Noticias IA — Daily Briefing</h1>
+        <p class="date">23 de abril de 2026 · Curado para senior devs construyendo producto</p>
+
+        <p class="section-title">Herramientas y aplicaciones en producción</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> OpenAI lanza GPT-5.5: modelo agéntico con contexto de 1M tokens a $5/$30</h2>
+            <span class="tag tag-tools">TOOLS</span>
+            <p class="what">OpenAI presentó GPT-5.5, el primer modelo base completamente reentrenado desde GPT-4.5, con ventana de contexto de 1 millón de tokens y capacidades agénticas nativas para ejecutar workflows multi-paso de forma autónoma. Está disponible desde hoy para usuarios Plus, Pro, Business y Enterprise, y potencia el nuevo Codex para coding agéntico sobre infraestructura NVIDIA.</p>
+            <p class="why">Competencia directa con Opus 4.7 en pricing y contexto — si estás construyendo agentes o pipelines largos, ahora tienes dos opciones serias de 1M tokens para evaluar en tu stack.</p>
+            <p class="source"><a href="https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/">TechCrunch</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Google Cloud Next 2026: Workspace Studio permite crear agentes sin código</h2>
+            <span class="tag tag-tools">TOOLS</span>
+            <p class="what">En Cloud Next (22-24 abril), Google lanzó Workspace Studio, una plataforma no-code que permite a usuarios de negocio construir y desplegar agentes de IA sobre Gmail, Docs, Sheets, Drive y Meet describiendo automatizaciones en lenguaje natural. También anunció el protocolo A2A v1.0 ya en producción en 150 organizaciones, MCP servers gestionados con Apigee, y acceso a 200+ modelos en Model Garden.</p>
+            <p class="why">Si tu producto integra con el ecosistema Google, Workspace Studio y A2A abren un canal de distribución masivo para agentes — tus usuarios podrán invocar tus servicios desde su correo o spreadsheet.</p>
+            <p class="source"><a href="https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era">The Next Web</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>HeyGen open-sourcea HyperFrames: de HTML a video MP4, diseñado para agentes de IA</h2>
+            <span class="tag tag-tools">TOOLS</span>
+            <p class="what">HeyGen liberó HyperFrames bajo Apache 2.0, un framework que convierte HTML, CSS y JS en video MP4 usando Puppeteer headless y FFmpeg. Soporta GSAP 3, Lottie, Three.js y shaders WebGL, con output determinístico y un flag --non-interactive para pipelines automatizados.</p>
+            <p class="why">Si necesitas generar videos programáticamente en tu producto — demos, reportes, contenido dinámico — ahora puedes hacerlo con HTML que ya sabes escribir, integrado directamente con Claude Code o Cursor.</p>
+            <p class="source"><a href="https://github.com/heygen-com/hyperframes">GitHub - HyperFrames</a></p>
+        </div>
+
+        <p class="section-title">Innovaciones técnicas con impacto práctico</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Gemma 4: IA agéntica on-device con Apache 2.0 — desde 2B params en móviles</h2>
+            <span class="tag tag-mobile">MOBILE</span>
+            <p class="what">Google DeepMind lanzó Gemma 4 en 4 tamaños (E2B para phones, E4B para edge, 26B MoE para GPUs, 31B Dense) bajo licencia Apache 2.0, con capacidades multimodales incluyendo audio y visión. Los modelos E2B y E4B corren completamente offline en dispositivos Android, Raspberry Pi y Jetson Orin Nano, con planificación multi-paso y generación de código sin fine-tuning.</p>
+            <p class="why">Para cualquier app Android que necesite IA local — coaching, análisis en tiempo real, procesamiento offline — Gemma 4 E2B es la primera opción seria: open source, optimizado para móvil, y con agentic skills nativos.</p>
+            <p class="source"><a href="https://android-developers.googleblog.com/2026/04/gemma-4-new-standard-for-local-agentic-intelligence.html">Android Developers Blog</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>AMD lanza GAIA SDK: agentes de IA locales sin cloud ni API keys</h2>
+            <span class="tag tag-tools">TOOLS</span>
+            <p class="what">AMD presentó GAIA, un SDK open-source para construir agentes de IA que operan completamente en hardware local, con soporte para Python y C++. Incluye RAG sobre documentos, pipelines de speech-to-speech, generación de código multi-archivo y function calling, todo sin dependencia de servicios cloud.</p>
+            <p class="why">Si estás construyendo herramientas donde la privacidad de datos es crítica o necesitas funcionalidad offline, GAIA te da un framework completo para agentes locales sin costo de API.</p>
+            <p class="source"><a href="https://aitoolly.com/ai-news/article/2026-04-14-amd-launches-gaia-sdk-an-open-source-framework-for-building-local-ai-agents-without-cloud-dependency">AIToolly</a></p>
+        </div>
+
+        <p class="section-title">AI Coding y productividad para devs</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Cursor Composer 2 marca nuevo benchmark en coding IDE-nativo: 61.3 en CursorBench</h2>
+            <span class="tag tag-coding">CODING</span>
+            <p class="what">Cursor lanzó Composer 2, su modelo de tercera generación construido sobre Kimi K2.5 de Moonshot AI con RL personalizado, alcanzando 61.3 en CursorBench (37% mejor que Composer 1.5) y 73.7 en SWE-bench Multilingual. El modelo cuesta $0.50/M input tokens, posicionándose como el más eficiente en su categoría.</p>
+            <p class="why">El stack dominante en 2026 es Cursor para edición diaria + Claude Code para tareas complejas — Composer 2 hace que esa combinación sea aún más potente para el dev día a día.</p>
+            <p class="source"><a href="https://techcrunch.com/2026/03/22/cursor-admits-its-new-coding-model-was-built-on-top-of-moonshot-ais-kimi/">TechCrunch</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Claude Opus 4.7: contexto de 1M, visión de alta resolución y self-verification</h2>
+            <span class="tag tag-anthropic">ANTHROPIC</span>
+            <p class="what">Anthropic lanzó Claude Opus 4.7 con ventana de contexto de 1M tokens, visión de alta resolución (2,576px / ~3.75 megapíxeles) y auto-verificación, manteniendo el mismo pricing que Opus 4.6 ($5/$25 por MTok). Lidera SWE-bench Pro con 64.3% y OSWorld con 78.0%, y la visión pasa de 54.5% a 98.5% en el benchmark XBOW.</p>
+            <p class="why">Mismo precio, mucho más capaz — si ya usas Claude Code con Opus 4.6, el upgrade es inmediato y la mejora en visión abre posibilidades para testing visual y procesamiento de screenshots en tu CI.</p>
+            <p class="source"><a href="https://releasebot.io/updates/anthropic">Anthropic Release Notes</a></p>
+        </div>
+
+        <p class="section-title">Novedades de Claude y Anthropic</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Claude Managed Agents en beta pública: sandbox, checkpoints y trazabilidad completa</h2>
+            <span class="tag tag-anthropic">ANTHROPIC</span>
+            <p class="what">Anthropic lanzó Claude Managed Agents en beta pública, un servicio gestionado para desplegar agentes autónomos con sandboxing seguro, checkpointing, gestión de credenciales, permisos granulares y trazabilidad end-to-end. Cuesta $0.08/hora de sesión + tokens, y Notion, Rakuten y Sentry ya lo usan en producción.</p>
+            <p class="why">Si estás construyendo features agénticas en tu producto, Managed Agents te ahorra meses de infra — sandbox, estado y ejecución de tools resueltos, tú solo escribes la lógica de negocio.</p>
+            <p class="source"><a href="https://claude.com/blog/claude-managed-agents">Anthropic Blog</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Claude Design: de prompt a prototipo visual con tu sistema de diseño</h2>
+            <span class="tag tag-anthropic">ANTHROPIC</span>
+            <p class="what">Anthropic Labs lanzó Claude Design, un producto que permite crear diseños, prototipos interactivos, presentaciones y one-pagers colaborando con Claude via conversación, comentarios inline y edición directa. Durante el onboarding, lee tu codebase y archivos de diseño para generar un sistema de diseño automático con tus colores, tipografía y componentes.</p>
+            <p class="why">Para founders técnicos sin diseñador, esto cambia el juego: de idea a deck de inversión o prototipo clickeable en minutos, sin salir del ecosistema Claude.</p>
+            <p class="source"><a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Anthropic</a></p>
+        </div>
+
+        <p class="section-title">Creación de negocios y productos con IA</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> MVPs con IA en 1-3 días: el nuevo estándar para founders técnicos en 2026</h2>
+            <span class="tag tag-startup">STARTUP</span>
+            <p class="what">Múltiples reportes confirman que startups usando herramientas de IA están lanzando MVPs funcionales en 1 a 3 días para productos simples y 2 a 6 semanas para productos complejos, con reducciones de hasta 85% en costos de desarrollo. El stack más usado por solo founders combina Claude Code o Cursor + Vercel + plataformas no-code con IA integrada.</p>
+            <p class="why">El costo de validar una idea ya no es excusa — con el stack correcto puedes tener un MVP en producción en un fin de semana y empezar a iterar con usuarios reales.</p>
+            <p class="source"><a href="https://www.nxcode.io/resources/news/ai-mvp-builder-how-founders-ship-products-2026">NxCode</a></p>
+        </div>
+
+        <p class="section-title">IA en sports tech, salud y bienestar</p>
+
+        <div class="news-item">
+            <h2>URUNN: app de running con IA y coaching de Mo Farah llega a Android y iOS</h2>
+            <span class="tag tag-health">HEALTH</span>
+            <p class="what">URUNN, co-fundada por el cuádruple campeón olímpico Mo Farah, ofrece planes de entrenamiento ultra-personalizados usando IA que se adapta al ritmo, recuperación, estilo de vida y objetivos de cada corredor. Incluye guía de pace en tiempo real por audio y un asistente de IA llamado Stride disponible 24/7 para soporte y motivación.</p>
+            <p class="why">Un caso real de sports tech que monetiza con suscripción ($13/mes) combinando autoridad deportiva + IA personalizada — un modelo replicable para cualquier marketplace de coaching profesional.</p>
+            <p class="source"><a href="https://athletechnews.com/mo-farahs-urunn-app-gets-runners-race-day-ready/">Athletech News</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Fitbit lanza coach de salud con Gemini AI: guía conversacional en tiempo real</h2>
+            <span class="tag tag-health">HEALTH</span>
+            <p class="what">Fitbit presentó su Personal Health Coach basado en Gemini AI, una interfaz conversacional que entrega orientación personalizada en tiempo real sobre wellness, workouts y recuperación usando el historial completo de salud del usuario. Se integra nativamente con los wearables de Fitbit para contexto continuo.</p>
+            <p class="why">La integración wearable + LLM conversacional está definiendo el estándar de health tech — si construyes en este espacio, la expectativa del usuario ahora incluye coaching contextual 24/7.</p>
+            <p class="source"><a href="https://softprodigy.com/how-ai-is-revolutionizing-the-fitness-industry-2026/">SoftProdigy</a></p>
+        </div>
+
+        <p style="color: #484f58; font-size: 0.75rem; margin-top: 2rem; text-align: center;">
+            Generado automáticamente · Fuentes verificadas al 23/04/2026 · Filtrado para senior devs construyendo producto
+        </p>
+    </div>
+</body>
+</html>
