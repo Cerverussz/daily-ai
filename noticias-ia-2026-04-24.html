@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias IA — 24 de abril 2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.6; padding: 2rem 1rem; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { font-size: 1.5rem; color: #58a6ff; margin-bottom: 0.25rem; }
+        .date { color: #8b949e; font-size: 0.9rem; margin-bottom: 2rem; }
+        .news-item { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+        .news-item h2 { font-size: 1.05rem; color: #f0f6fc; margin-bottom: 0.5rem; }
+        .news-item .tag { display: inline-block; font-size: 0.7rem; padding: 2px 8px; border-radius: 12px; margin-right: 0.4rem; margin-bottom: 0.5rem; font-weight: 600; }
+        .tag-tools { background: #1f3a5f; color: #58a6ff; }
+        .tag-coding { background: #2a1f3f; color: #bc8cff; }
+        .tag-mobile { background: #1f3f2a; color: #56d364; }
+        .tag-startup { background: #3f2a1f; color: #f0883e; }
+        .tag-anthropic { background: #3f1f2a; color: #f778ba; }
+        .tag-health { background: #1f3f3f; color: #39d2c0; }
+        .what { color: #c9d1d9; font-size: 0.9rem; margin-bottom: 0.4rem; }
+        .why { color: #8b949e; font-size: 0.85rem; font-style: italic; margin-bottom: 0.4rem; }
+        .source a { color: #58a6ff; font-size: 0.8rem; text-decoration: none; }
+        .source a:hover { text-decoration: underline; }
+        .section-title { color: #8b949e; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin: 1.5rem 0 0.75rem; }
+        .fire { font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Noticias IA — Daily Briefing</h1>
+        <p class="date">24 de abril de 2026 · Curado para senior devs construyendo producto</p>
+
+        <p class="section-title">Herramientas y aplicaciones en producción</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> DeepSeek lanza V4: modelo open-source con 1M tokens de contexto y capacidades agénticas de nivel frontier</h2>
+            <span class="tag tag-tools">HERRAMIENTAS</span>
+            <p class="what">DeepSeek presentó sus modelos V4 Flash y V4 Pro con un salto de 128K a 1 millón de tokens de contexto, mejoras significativas en razonamiento y capacidades agénticas autónomas. La versión V4 Pro Max iguala o supera a GPT-5.2 y Gemini 3.0-Pro en benchmarks de razonamiento, y se acerca al nivel de Claude Opus 4.5 en tareas agénticas.</p>
+            <p class="why">Modelo open-source con contexto de 1M tokens y capacidades agénticas de producción significa que puedes integrar un modelo potente en tu backend sin depender de APIs propietarias.</p>
+            <p class="source"><a href="https://fortune.com/2026/04/24/deepseek-v4-ai-model-price-performance-china-open-source/">Fortune</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> GPTBots.ai integra DeepSeek-V4 Preview para agentes empresariales no-code</h2>
+            <span class="tag tag-tools">HERRAMIENTAS</span>
+            <p class="what">Aurora Mobile anunció la integración de DeepSeek-V4 Preview en su plataforma GPTBots.ai, combinando el contexto de 1M tokens con despliegue no-code y orquestación inteligente de workflows. La plataforma permite crear agentes empresariales con seguridad enterprise-grade sin necesidad de infraestructura propia.</p>
+            <p class="why">Si estás construyendo un marketplace o SaaS y necesitas agentes AI en producción sin montar infraestructura ML, esto es una alternativa lista para desplegar.</p>
+            <p class="source"><a href="https://www.globenewswire.com/news-release/2026/04/24/3280694/0/en/Aurora-Mobile-s-GPTBots-ai-Integrates-DeepSeek-V4-Preview-Bringing-Million-Token-Context-and-Next-Generation-Agentic-AI-to-Enterprise-Users.html">GlobeNewsWire</a></p>
+        </div>
+
+        <p class="section-title">Innovaciones técnicas con impacto práctico</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Gemma 4 disponible en AICore Developer Preview para Android — on-device AI con soporte agéntico</h2>
+            <span class="tag tag-mobile">MOBILE</span>
+            <p class="what">Google lanzó Gemma 4 en el AICore Developer Preview, permitiendo correr modelos AI directamente en dispositivos Android (Pixel 7+, Samsung Galaxy S). Los modelos E2B y E4B ocupan entre 2-4GB de almacenamiento, son hasta 4x más rápidos que versiones anteriores, y consumen 60% menos batería.</p>
+            <p class="why">Como dev Android puedes empezar a prototipar features con AI on-device hoy, y el código será compatible con Gemini Nano 4 cuando llegue a producción masiva.</p>
+            <p class="source"><a href="https://android-developers.googleblog.com/2026/04/AI-Core-Developer-Preview.html">Android Developers Blog</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Claude Opus 4.7 es ahora el modelo por defecto en Claude Code — 87.6% en SWE-bench Verified</h2>
+            <span class="tag tag-coding">CODING</span>
+            <p class="what">Desde el 23 de abril, Claude Opus 4.7 es el modelo por defecto en Claude Code. El modelo logró 87.6% en SWE-bench Verified (+6.8pp) y 64.3% en SWE-bench Pro, con nuevas features como task budgets para loops agénticos largos y visión 3.3x más detallada.</p>
+            <p class="why">Si usas Claude Code como tu herramienta principal de desarrollo, el salto en calidad de razonamiento y la capacidad de auto-verificación en tareas largas cambia lo que puedes delegar al agente.</p>
+            <p class="source"><a href="https://www.anthropic.com/news/claude-opus-4-7">Anthropic</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>MCP supera 97 millones de instalaciones — todos los principales proveedores de AI ahora son compatibles</h2>
+            <span class="tag tag-tools">HERRAMIENTAS</span>
+            <p class="what">El Model Context Protocol de Anthropic cruzó 97 millones de instalaciones en marzo 2026, consolidándose como el estándar de facto para conectar agentes AI con herramientas externas. Todos los principales proveedores de AI ahora envían tooling compatible con MCP.</p>
+            <p class="why">MCP se convirtió en el estándar para integraciones de agentes — si estás construyendo herramientas o APIs, exponer un servidor MCP ya no es opcional sino esperado.</p>
+            <p class="source"><a href="https://dev.to/aibughunter/ai-agents-in-april-2026-from-research-to-production-whats-actually-happening-55oc">DEV Community</a></p>
+        </div>
+
+        <p class="section-title">AI Coding y productividad para devs</p>
+
+        <div class="news-item">
+            <h2>Anthropic reconoce errores de ingeniería que causaron la caída de rendimiento de Claude Code y aplica correcciones</h2>
+            <span class="tag tag-anthropic">ANTHROPIC</span>
+            <p class="what">Anthropic publicó un post-mortem de los problemas de rendimiento de Claude Code del último mes, identificando tres cambios de ingeniería como causa: un reset del esfuerzo de razonamiento por defecto, un bug de caché que descartaba historial de thinking, y un cambio en el prompt de verbosidad que degradó la calidad de código. Todos los cambios fueron revertidos y los límites de uso reseteados para suscriptores.</p>
+            <p class="why">Transparencia valiosa sobre cómo cambios aparentemente menores en configuración pueden degradar un producto AI completo — lección directa para cualquiera operando modelos en producción.</p>
+            <p class="source"><a href="https://fortune.com/2026/04/24/anthropic-engineering-missteps-claude-code-performance-decline-user-backlash/">Fortune</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>El 51% del código en GitHub es generado o asistido por AI — Stack Overflow confirma 84% de adopción entre devs</h2>
+            <span class="tag tag-coding">CODING</span>
+            <p class="what">GitHub reporta que más de la mitad del código commiteado en su plataforma en Q1 2026 fue generado o sustancialmente asistido por AI. Paralelamente, la encuesta de Stack Overflow muestra que 84% de los desarrolladores ya usan o planean adoptar herramientas de AI coding.</p>
+            <p class="why">El stack dominante en 2026 es Cursor para edición diaria + Claude Code para tareas complejas — si aún no integraste AI coding en tu workflow, estás en franca desventaja competitiva.</p>
+            <p class="source"><a href="https://www.digitalapplied.com/blog/ai-coding-assistants-april-2026-cursor-copilot-claude">Digital Applied</a></p>
+        </div>
+
+        <p class="section-title">Novedades de Claude y Anthropic</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Anthropic lanza App Connectors: Claude se conecta a Spotify, Uber, Instacart y 200+ apps de consumo</h2>
+            <span class="tag tag-anthropic">ANTHROPIC</span>
+            <p class="what">Anthropic expandió su directorio de conectores con 15 nuevas integraciones consumer incluyendo Spotify, Uber, Uber Eats, Instacart, AllTrails, TurboTax, StubHub, Taskrabbit, y Thumbtack, superando los 200 partners. Claude puede ahora orquestar acciones entre estas apps dentro de conversaciones, sin publicidad ni uso de datos para entrenamiento.</p>
+            <p class="why">La integración con Taskrabbit y Thumbtack muestra cómo un marketplace de servicios profesionales puede conectarse al ecosistema de asistentes AI — patrón directamente replicable si construyes un marketplace.</p>
+            <p class="source"><a href="https://www.engadget.com/ai/claude-can-now-connect-to-lifestyle-apps-like-spotify-instacart-and-alltrails-225510552.html">Engadget</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Memory para Claude Managed Agents: agentes que aprenden entre sesiones y comparten conocimiento</h2>
+            <span class="tag tag-anthropic">ANTHROPIC</span>
+            <p class="what">Anthropic lanzó Memory en beta pública para Claude Managed Agents, permitiendo que los agentes aprendan de sesiones pasadas y compartan lo aprendido con otros agentes. Las memorias se almacenan como archivos, dando a los developers control total sobre qué retienen los agentes.</p>
+            <p class="why">Agentes con memoria persistente y controlable cambian fundamentalmente lo que puedes construir — workflows que mejoran con cada ejecución en lugar de empezar de cero.</p>
+            <p class="source"><a href="https://sdtimes.com/anthropic/anthropic-adds-memory-to-claude-managed-agents/">SD Times</a></p>
+        </div>
+
+        <p class="section-title">Creación de negocios y productos con IA</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> MVPs en 2-3 días: founders no técnicos lanzan productos funcionales con Cursor, Lovable y Bolt.new</h2>
+            <span class="tag tag-startup">STARTUPS</span>
+            <p class="what">El ecosistema de herramientas AI para MVP se consolidó: Cursor Composer 2 para devs que necesitan control total, Lovable y Bolt.new para founders no técnicos que generan apps full-stack desde el navegador. Los costos de desarrollo de MVPs cayeron hasta 85% y los tiempos se comprimieron a días en lugar de semanas.</p>
+            <p class="why">Tu competencia ya no es solo otros devs — es gente sin background técnico que puede lanzar un MVP funcional en un fin de semana con estas herramientas.</p>
+            <p class="source"><a href="https://www.nxcode.io/resources/news/ai-mvp-builder-how-founders-ship-products-2026">NxCode</a></p>
+        </div>
+
+        <p class="section-title">IA en sports tech, salud y bienestar</p>
+
+        <div class="news-item">
+            <h2>Fitbit lanza Personal Health Coach con Gemini AI — coaching personalizado basado en historial completo de salud</h2>
+            <span class="tag tag-health">SALUD</span>
+            <p class="what">Fitbit integró un coach de salud personalizado basado en Gemini AI que entrega guía en tiempo real para wellness, workouts y recuperación usando el historial completo de salud del usuario. El coach combina datos de sueño, HRV, actividad y nutrición para recomendaciones holísticas.</p>
+            <p class="why">El patrón de "AI coach que integra datos de múltiples fuentes para recomendaciones personalizadas" es directamente replicable en cualquier plataforma de servicios deportivos o de bienestar.</p>
+            <p class="source"><a href="https://www.feed.fm/2026-digital-fitness-ecosystem-report">Feed.fm — 2026 Digital Fitness Ecosystem Report</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>ASENSEI: computer vision en tiempo real para coaching deportivo con corrección de forma instantánea</h2>
+            <span class="tag tag-health">SALUD</span>
+            <span class="tag tag-mobile">MOBILE</span>
+            <p class="what">ASENSEI usa computer vision para hacer motion capture en tiempo real, entender qué ejercicio hace el usuario, evaluar la calidad de ejecución, y convertir eso en coaching instantáneo. La tecnología funciona con la cámara del dispositivo sin necesidad de hardware adicional.</p>
+            <p class="why">Computer vision on-device para análisis de movimiento deportivo es exactamente el tipo de feature diferenciadora que puede darle moat a una app de fitness o un marketplace de coaches.</p>
+            <p class="source"><a href="https://www.sgieurope.com/trade-shows/fibo-2026-ai-reshapes-the-fitness-industry/120549.article">Sporting Goods Intelligence — FIBO 2026</a></p>
+        </div>
+
+        <p style="color: #484f58; font-size: 0.75rem; margin-top: 2rem; text-align: center;">
+            Generado automáticamente · Fuentes verificadas al 24/04/2026 · Filtrado para senior devs construyendo producto
+        </p>
+    </div>
+</body>
+</html>
