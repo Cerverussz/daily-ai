@@ -170,7 +170,7 @@ def extract_html(text: str) -> str:
 
 def generate_briefing(target_date: str) -> str:
     client = anthropic.Anthropic(
-        timeout=httpx.Timeout(600.0, connect=30.0),
+        timeout=httpx.Timeout(300.0, connect=15.0),
     )
     user_prompt = USER_PROMPT_TEMPLATE.format(
         pretty_date=_pretty_date_es(target_date),
@@ -195,10 +195,16 @@ def generate_briefing(target_date: str) -> str:
     for attempt in range(1, MAX_RETRIES + 1):
         print(f"Calling {MODEL} for briefing {target_date} (attempt {attempt}/{MAX_RETRIES})…", flush=True)
         try:
-            with client.messages.stream(**api_kwargs) as stream:
-                final = stream.get_final_message()
+            final = client.messages.create(**api_kwargs)
             break
-        except (httpx.RemoteProtocolError, httpx.ReadError, httpx.ConnectError, anthropic.APIConnectionError) as exc:
+        except (
+            httpx.RemoteProtocolError,
+            httpx.ReadError,
+            httpx.ReadTimeout,
+            httpx.ConnectError,
+            anthropic.APIConnectionError,
+            anthropic.APITimeoutError,
+        ) as exc:
             if attempt == MAX_RETRIES:
                 raise
             delay = RETRY_BASE_DELAY * (2 ** (attempt - 1))
