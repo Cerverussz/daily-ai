@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate the daily AI news briefing via the Claude API.
 
-Uses Claude Opus 4.7 with adaptive thinking and the server-side
+Uses Claude Sonnet 4.6 with adaptive thinking and the server-side
 web_search tool to research and write a curated HTML briefing for
 the previous day. Output matches the format the user has approved
 (Spanish, dark-theme HTML, 10-12 news items grouped by section).
@@ -24,8 +24,8 @@ from pathlib import Path
 import anthropic
 import httpx
 
-MODEL = "claude-opus-4-7"
-MAX_TOKENS = 16000
+MODEL = "claude-sonnet-4-6"
+MAX_TOKENS = 10000
 MAX_RETRIES = 3
 RETRY_BASE_DELAY = 4
 
@@ -181,8 +181,13 @@ def generate_briefing(target_date: str) -> str:
         model=MODEL,
         max_tokens=MAX_TOKENS,
         thinking={"type": "adaptive"},
-        output_config={"effort": "high"},
-        system=SYSTEM_PROMPT,
+        system=[
+            {
+                "type": "text",
+                "text": SYSTEM_PROMPT,
+                "cache_control": {"type": "ephemeral"},
+            }
+        ],
         tools=[{"type": "web_search_20260209", "name": "web_search"}],
         messages=[{"role": "user", "content": user_prompt}],
     )
