@@ -16,6 +16,7 @@ Optional env:
 
 import os
 import re
+import signal
 import sys
 import time
 from datetime import date, timedelta, timezone, datetime
@@ -27,6 +28,8 @@ import httpx
 MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 10000
 MAX_RETRIES = 3
+RETRY_BASE_DELAY = 4
+CALL_TIMEOUT_SECS = 240
 RETRY_BASE_DELAY = 4
 
 SYSTEM_PROMPT = """Eres un periodista tech senior que cura un briefing diario de IA en español.
@@ -168,9 +171,17 @@ def extract_html(text: str) -> str:
     return match.group(0)
 
 
+class _CallTimeout(Exception):
+    pass
+
+
+def _alarm_handler(_signum, _frame):
+    raise _CallTimeout("API call exceeded wall-clock timeout")
+
+
 def generate_briefing(target_date: str) -> str:
     client = anthropic.Anthropic(
-        timeout=httpx.Timeout(300.0, connect=15.0),
+        timeout=httpx.Timeout(CALL_TIMEOUT_SECS, connect=15.0),
     )
     user_prompt = USER_PROMPT_TEMPLATE.format(
         pretty_date=_pretty_date_es(target_date),
@@ -192,24 +203,33 @@ def generate_briefing(target_date: str) -> str:
         messages=[{"role": "user", "content": user_prompt}],
     )
 
-    for attempt in range(1, MAX_RETRIES + 1):
-        print(f"Calling {MODEL} for briefing {target_date} (attempt {attempt}/{MAX_RETRIES})…", flush=True)
-        try:
-            final = client.messages.create(**api_kwargs)
-            break
-        except (
-            httpx.RemoteProtocolError,
-            httpx.ReadError,
-            httpx.ReadTimeout,
-            httpx.ConnectError,
-            anthropic.APIConnectionError,
-            anthropic.APITimeoutError,
-        ) as exc:
-            if attempt == MAX_RETRIES:
-                raise
-            delay = RETRY_BASE_DELAY * (2 ** (attempt - 1))
-            print(f"Attempt {attempt} failed ({type(exc).__name__}), retrying in {delay}s…", flush=True)
-            time.sleep(delay)
+    prev_handler = signal.signal(signal.SIGALRM, _alarm_handler)
+    try:
+        for attempt in range(1, MAX_RETRIES + 1):
+            print(f"Calling {MODEL} for briefing {target_date} (attempt {attempt}/{MAX_RETRIES})…", flush=True)
+            signal.alarm(CALL_TIMEOUT_SECS)
+            try:
+                final = client.messages.create(**api_kwargs)
+                signal.alarm(0)
+                break
+            except (
+                _CallTimeout,
+                httpx.RemoteProtocolError,
+                httpx.ReadError,
+                httpx.ReadTimeout,
+                httpx.ConnectError,
+                anthropic.APIConnectionError,
+                anthropic.APITimeoutError,
+            ) as exc:
+                signal.alarm(0)
+                if attempt == MAX_RETRIES:
+                    raise
+                delay = RETRY_BASE_DELAY * (2 ** (attempt - 1))
+                print(f"Attempt {attempt} failed ({type(exc).__name__}), retrying in {delay}s…", flush=True)
+                time.sleep(delay)
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, prev_handler)
 
     print(
         "Usage: "
