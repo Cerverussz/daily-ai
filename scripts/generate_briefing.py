@@ -17,13 +17,17 @@ Optional env:
 import os
 import re
 import sys
+import time
 from datetime import date, timedelta, timezone, datetime
 from pathlib import Path
 
 import anthropic
+import httpx
 
 MODEL = "claude-opus-4-7"
 MAX_TOKENS = 16000
+MAX_RETRIES = 3
+RETRY_BASE_DELAY = 4
 
 SYSTEM_PROMPT = """Eres un periodista tech senior que cura un briefing diario de IA en español.
 
@@ -165,14 +169,15 @@ def extract_html(text: str) -> str:
 
 
 def generate_briefing(target_date: str) -> str:
-    client = anthropic.Anthropic()
+    client = anthropic.Anthropic(
+        timeout=httpx.Timeout(600.0, connect=30.0),
+    )
     user_prompt = USER_PROMPT_TEMPLATE.format(
         pretty_date=_pretty_date_es(target_date),
         iso_date=target_date,
     )
 
-    print(f"Calling {MODEL} for briefing {target_date}…", flush=True)
-    with client.messages.stream(
+    api_kwargs = dict(
         model=MODEL,
         max_tokens=MAX_TOKENS,
         thinking={"type": "adaptive"},
@@ -180,8 +185,20 @@ def generate_briefing(target_date: str) -> str:
         system=SYSTEM_PROMPT,
         tools=[{"type": "web_search_20260209", "name": "web_search"}],
         messages=[{"role": "user", "content": user_prompt}],
-    ) as stream:
-        final = stream.get_final_message()
+    )
+
+    for attempt in range(1, MAX_RETRIES + 1):
+        print(f"Calling {MODEL} for briefing {target_date} (attempt {attempt}/{MAX_RETRIES})…", flush=True)
+        try:
+            with client.messages.stream(**api_kwargs) as stream:
+                final = stream.get_final_message()
+            break
+        except (httpx.RemoteProtocolError, httpx.ReadError, httpx.ConnectError, anthropic.APIConnectionError) as exc:
+            if attempt == MAX_RETRIES:
+                raise
+            delay = RETRY_BASE_DELAY * (2 ** (attempt - 1))
+            print(f"Attempt {attempt} failed ({type(exc).__name__}), retrying in {delay}s…", flush=True)
+            time.sleep(delay)
 
     print(
         "Usage: "

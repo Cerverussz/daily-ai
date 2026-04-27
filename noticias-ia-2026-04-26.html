@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 26 de Abril 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>26 de abril de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 DeepSeek V4 ya disponible: open-source con 1M tokens de contexto y precios agresivos</h3>
+      <p class="what">DeepSeek lanzó V4 el 24 de abril con dos variantes MoE: V4-Pro (1.6T params, 49B activos) y V4-Flash (284B params, 13B activos), ambas con contexto nativo de 1 millón de tokens. Es el primer modelo open-source diseñado desde cero para contextos largos, con SOTA en coding agente y razonamiento entre modelos abiertos.</p>
+      <p class="why">A $0.14/M tokens (Flash), es una alternativa real para pipelines de procesamiento masivo de documentos o agentes autónomos en tu backend.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/">TechCrunch</a> &bull; <a href="https://simonwillison.net/2026/Apr/24/deepseek-v4/">Simon Willison</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GPT-5.5 de OpenAI llega a la API con enfoque en agentes autónomos</h3>
+      <p class="what">OpenAI lanzó GPT-5.5 el 23 de abril, disponible en API desde el 24. Logra 88.7% en SWE-bench y reduce alucinaciones un 60% vs GPT-5.4. Su fuerza principal: completa tareas multi-paso planificando, usando herramientas, y autocorrigiéndose antes de entregar resultados.</p>
+      <p class="why">Si estás eligiendo modelo para tu producto, GPT-5.5 sube el piso de calidad en flujos agentes pero a $5/$30 por millón de tokens, conviene comparar con DeepSeek V4 para tareas de alto volumen.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/">TechCrunch</a> &bull; <a href="https://openai.com/index/introducing-gpt-5-5/">OpenAI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft lanza Agent Governance Toolkit: seguridad runtime para agentes AI, open-source</h3>
+      <p class="what">Toolkit open-source (MIT) de 7 paquetes (Python, TypeScript, Rust, Go, .NET) que intercepta cada acción de un agente AI antes de ejecutarla con latencia &lt;0.1ms. Es el primero en cubrir los 10 riesgos OWASP para agentes AI, con integraciones nativas para LangChain, CrewAI, Google ADK y OpenAI Agents SDK.</p>
+      <p class="why">Si estás construyendo agentes autónomos para tu marketplace o plataforma, esto resuelve el problema de gobernanza que antes tenías que armar a mano.</p>
+      <p class="source"><a href="https://github.com/microsoft/agent-governance-toolkit">GitHub</a> &bull; <a href="https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents/">Microsoft Blog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemma 4 llega al AICore Developer Preview de Android: agentes on-device</h3>
+      <p class="what">Google anunció Gemma 4 en Android AICore, permitiendo ejecutar agentes AI multi-paso directamente en dispositivo sin conexión. Los modelos soportan planificación autónoma, generación de código offline, y procesamiento audiovisual en hardware móvil.</p>
+      <p class="why">Esto abre la puerta a features de AI offline en tu app Android sin depender de APIs cloud, reduciendo latencia y costos por request.</p>
+      <p class="source"><a href="https://android-developers.googleblog.com/2026/04/AI-Core-Developer-Preview.html">Android Developers Blog</a> &bull; <a href="https://developers.googleblog.com/bring-state-of-the-art-agentic-skills-to-the-edge-with-gemma-4/">Google Developers</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cursor Composer 2: modelo propietario de coding con 61.3% en CursorBench</h3>
+      <p class="what">Cursor lanzó Composer 2, su tercer modelo propietario de coding construido sobre Moonshot AI Kimi K2.5 con RL a gran escala. Logra 73.7% en SWE-bench Multilingual, una mejora del 37% sobre Composer 1.5.</p>
+      <p class="why">El stack dominante de 2026 es Cursor para edición diaria + Claude Code para tareas complejas en terminal; Composer 2 refuerza esa primera mitad.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/cursor-vs-claude-code-vs-github-copilot-2026-ultimate-comparison">NxCode</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>MCP de Anthropic cruza 97 millones de instalaciones: de experimental a infraestructura</h3>
+      <p class="what">El Model Context Protocol alcanzó 97M installs en marzo 2026. Todos los proveedores principales de AI ahora envían tooling compatible con MCP, consolidándolo como el estándar de facto para conectar agentes AI con herramientas externas.</p>
+      <p class="why">Si no estás exponiendo tu servicio via MCP, estás invisible para la capa de agentes AI que tus usuarios empezarán a usar como interfaz principal.</p>
+      <p class="source"><a href="https://medium.com/@visrow/the-biggest-ai-trends-and-tools-emerging-in-april-2026-8a491e6d546f">Medium</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 MVPs funcionales en 2-6 semanas: el nuevo estándar para founders técnicos</h3>
+      <p class="what">Según datos de Q1 2026, startups usando herramientas AI lanzan MVPs funcionales en 2-6 semanas (productos complejos) o 1-3 días (simples), con reducción de hasta 85% en costos de desarrollo. Capacity.so introduce "Spec Coding" donde defines especificaciones y la AI genera código production-ready.</p>
+      <p class="why">La ventana de oportunidad para lanzar un marketplace o SaaS vertical es ahora semanas, no meses; si todavía estimas en sprints de 2 semanas, estás sobre-estimando.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/ai-mvp-builder-how-founders-ship-products-2026">NxCode</a> &bull; <a href="https://technijian.com/podcast/the-2026-founders-guide-to-ai-accelerated-mvp-development/">Technijian</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta AI Ad Assistant recorta 12% el costo por resultado para small advertisers</h3>
+      <p class="what">El asistente AI de ads de Meta, en su beta, demostró que pequeños anunciantes que siguieron sus recomendaciones redujeron su costo por resultado un 12%. El sistema optimiza automáticamente creativos, audiencias y pujas.</p>
+      <p class="why">Si vendes en un marketplace o tienes un producto digital, esto baja significativamente la barrera de entrada a paid acquisition sin necesitar un media buyer.</p>
+      <p class="source"><a href="https://medium.com/@stephen.stanley777/ai-daily-update-april-25-2026-bd7544cc2758">Medium - AI Daily Update</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Opus 4.7 GA: mejor en coding complejo, visión y tareas creativas</h3>
+      <p class="what">Anthropic lanzó Claude Opus 4.7, con mejoras notables en software engineering avanzado, visión de alta resolución, y calidad en interfaces y documentos. Mismos precios que Opus 4.6: $5/M input, $25/M output.</p>
+      <p class="why">Las mejoras en tareas largas y auto-verificación lo hacen más confiable para agentes de coding en producción sin subir costos.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-opus-4-7">Anthropic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Managed Agents: infraestructura hosted para agentes de larga duración</h3>
+      <p class="what">Nuevo servicio de la Claude Platform para ejecutar agentes AI de larga duración con estado persistente, sandboxing seguro, y arranque rápido. Ofrece interfaces estables para sesiones y harnesses, ideal para tareas que corren minutos u horas.</p>
+      <p class="why">Si estabas armando tu propia infra para agentes con estado (ej. onboarding automatizado, procesamiento de órdenes), esto te ahorra semanas de plumbing.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot - Anthropic Updates</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: Anthropic corrige bugs que degradaban calidad y resetea límites</h3>
+      <p class="what">Anthropic reconoció que tres cambios recientes causaron degradación en Claude Code: menor esfuerzo de razonamiento, un bug de caching que perdía historial de pensamiento, y un cambio de prompt que afectaba calidad. Todo fue corregido al 20 de abril y los límites de uso fueron reseteados.</p>
+      <p class="why">Si notaste que Claude Code empeoró las últimas semanas, ya está arreglado; vale la pena re-evaluar tu workflow actual.</p>
+      <p class="source"><a href="https://fortune.com/2026/04/24/anthropic-engineering-missteps-claude-code-performance-decline-user-backlash/">Fortune</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Playlist (Mindbody + ClassPass + EGYM) completa mega-merger de $7.5B con AI integrada</h3>
+      <p class="what">Playlist completó su fusión con EGYM el 31 de marzo, creando el mayor sistema operativo full-stack de fitness y wellness del mundo: 40K+ negocios Mindbody, 88K+ venues ClassPass, 20K+ employers EGYM. Ya despliegan Messenger AI para bookings, SmartTools de ML para clases, y EGYM Genius.</p>
+      <p class="why">Este es el playbook para marketplaces de servicios profesionales: combinar booking + discovery + AI ops en una sola plataforma; la oportunidad está en los verticales que aún no lo tienen.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/03/31/the-company-behind-classpass-and-mindbody-just-got-a-lot-bigger-with-a-7-5b-merger/">TechCrunch</a> &bull; <a href="https://insider.fitt.co/egym-merges-with-mindbody-classpass-parent-in-7-5b-deal/">Fitt Insider</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 26/04/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
