@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 27 de Abril 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>27 de abril de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI rompe exclusividad con Microsoft: GPT disponible en AWS y Google Cloud</h3>
+      <p class="what">OpenAI y Microsoft anunciaron una reestructuraci&oacute;n total de su acuerdo: OpenAI puede ahora servir todos sus productos en cualquier proveedor cloud, incluyendo AWS y Google Cloud. Microsoft conserva derechos no-exclusivos al IP de OpenAI hasta 2032 y un 20% de revenue share con cap hasta 2030, pero pierde la exclusividad que defin&iacute;a la relaci&oacute;n original.</p>
+      <p class="why">Si tu producto depende de la API de OpenAI y est&aacute;s en AWS o GCP, pronto podr&aacute;s consumir GPT nativamente sin proxies ni workarounds, con mejor latencia y billing unificado.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/microsoft-and-openai-gut-their-exclusive-deal-freeing-openai-to-sell-on-aws-and-google-cloud">VentureBeat</a> &bull; <a href="https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 DeepSeek recorta 75% el precio de V4-Pro y reduce cache hits a 1/10</h3>
+      <p class="what">DeepSeek aplic&oacute; un descuento del 75% en V4-Pro (v&aacute;lido hasta el 5 de mayo) y redujo el precio de cache hits en toda su API a 1/10 del precio original, de forma permanente. Con V4-Flash ya a $0.14/M tokens, el costo de pipelines de alto volumen con DeepSeek se vuelve casi despreciable.</p>
+      <p class="why">Para backends que procesan documentos masivos o agentes con muchas iteraciones, el ahorro en cache hits cambia la econom&iacute;a de build vs buy de tu producto.</p>
+      <p class="source"><a href="https://dataconomy.com/2026/04/27/deepseek-slashes-v4-pro-api-pricing-with-major-discount/">Dataconomy</a> &bull; <a href="https://yournews.com/2026/04/27/6858328/deepseek-slashes-ai-model-prices-by-75-to-attract-developers/">YourNews</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Kite Passport abre acceso p&uacute;blico: identidad y pagos para agentes AI</h3>
+      <p class="what">Kite Passport, la capa de identidad criptogr&aacute;fica y pagos para agentes AI respaldada por PayPal Ventures y General Catalyst ($33M total), abri&oacute; su early access al p&uacute;blico. Los agentes pueden autenticarse, descubrir servicios y pagar APIs o comercio (ya integrado con Shopify y PayPal) de forma aut&oacute;noma.</p>
+      <p class="why">Si est&aacute;s construyendo un marketplace o plataforma de servicios, exponer tu API v&iacute;a Kite significa que agentes AI pueden encontrarte y pagarte sin intervenci&oacute;n humana.</p>
+      <p class="source"><a href="https://docs.gokite.ai/kite-agent-passport/kite-agent-passport">Kite Docs</a> &bull; <a href="https://www.generalcatalyst.com/stories/our-investment-in-kite">General Catalyst</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google TurboQuant: 6x menos memoria para inferencia LLM sin p&eacute;rdida de accuracy</h3>
+      <p class="what">Google Research present&oacute; TurboQuant en ICLR 2026, un algoritmo que comprime el KV cache de LLMs a 3.5 bits por valor (6x reducci&oacute;n) con cero p&eacute;rdida medible de precisi&oacute;n en benchmarks como LongBench. No requiere reentrenamiento y ya hay implementaciones comunitarias para vLLM y llama.cpp.</p>
+      <p class="why">Esto permite correr contextos largos en GPUs modestas o edge devices; si tu app hace RAG o agentes con historial extenso, tus costos de infra bajan dr&aacute;sticamente.</p>
+      <p class="source"><a href="https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/">Google Research</a> &bull; <a href="https://www.infoq.com/news/2026/04/turboquant-compression-kv-cache/">InfoQ</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini CLI v0.38: agente terminal open-source de Google con 1M de contexto</h3>
+      <p class="what">Google actualiz&oacute; Gemini CLI a v0.38.2 con Gemini 3.1 Pro por defecto, soporte nativo de MCP, Google Search grounding, y un free tier de 1,000 requests/d&iacute;a. Es un agente ReAct completo que opera archivos, ejecuta comandos shell y se conecta a servidores MCP externos.</p>
+      <p class="why">Alternativa gratuita y open-source (Apache 2.0) a Claude Code para tareas de terminal; ideal para experimentar con coding agents sin costo o integrar en CI/CD.</p>
+      <p class="source"><a href="https://github.com/google-gemini/gemini-cli">GitHub</a> &bull; <a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-cli-open-source-ai-agent/">Google Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google AI Edge Gallery: Gemma 4 on-device disponible en Play Store</h3>
+      <p class="what">Google public&oacute; AI Edge Gallery en Play Store y App Store, permitiendo ejecutar Gemma 4 localmente en m&oacute;viles. El modelo E2B corre con menos de 1.5GB de RAM gracias a cuantizaci&oacute;n de 2-4 bits, y procesa 4,000 tokens en menos de 3 segundos con optimizaciones GPU via LiteRT.</p>
+      <p class="why">Para apps Android que necesitan AI offline (coaching, an&aacute;lisis, chat), ya puedes distribuir un modelo capaz directamente desde el Play Store sin infra cloud.</p>
+      <p class="source"><a href="https://www.androidauthority.com/gemma-4-ai-edge-gallery-3656199/">Android Authority</a> &bull; <a href="https://developers.googleblog.com/bring-state-of-the-art-agentic-skills-to-the-edge-with-gemma-4/">Google Developers</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub: m&aacute;s del 51% del c&oacute;digo commiteado en 2026 es generado o asistido por AI</h3>
+      <p class="what">GitHub report&oacute; que en el primer trimestre de 2026, m&aacute;s de la mitad de todo el c&oacute;digo subido a la plataforma fue generado o sustancialmente asistido por herramientas de AI coding. El dato marca un punto de inflexi&oacute;n donde la asistencia AI pas&oacute; de ventaja competitiva a norma de la industria.</p>
+      <p class="why">Si eres founder t&eacute;cnico y no est&aacute;s usando coding agents (Claude Code, Cursor, Copilot) para tu MVP, est&aacute;s compitiendo con una mano atada contra quienes s&iacute; lo hacen.</p>
+      <p class="source"><a href="https://medium.com/@visrow/the-biggest-ai-trends-and-tools-emerging-in-april-2026-8a491e6d546f">Medium</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic declara que Claude permanecer&aacute; sin publicidad</h3>
+      <p class="what">Anthropic public&oacute; un compromiso formal de que Claude no mostrar&aacute; anuncios, argumentando que los incentivos publicitarios son incompatibles con un asistente AI genuinamente &uacute;til. El modelo de negocio seguir&aacute; basado exclusivamente en suscripciones y contratos enterprise.</p>
+      <p class="why">Mientras OpenAI prepara ads en ChatGPT Free y Go, Anthropic apuesta por mantener la confianza del usuario; relevante si est&aacute;s eligiendo qu&eacute; API integrar a largo plazo en tu producto.</p>
+      <p class="source"><a href="https://www.eweek.com/news/anthropic-claude-ad-free-ai-chats/">eWeek</a> &bull; <a href="https://www.anthropic.com/news">Anthropic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Nueva Rate Limits API: consulta tus l&iacute;mites de Claude program&aacute;ticamente</h3>
+      <p class="what">Anthropic lanz&oacute; el 25 de abril una Rate Limits API que permite consultar en c&oacute;digo los l&iacute;mites reales de tu organizaci&oacute;n y workspace, reemplazando el m&eacute;todo anterior de revisar la consola manualmente. Adem&aacute;s, la Enterprise Analytics API da acceso program&aacute;tico a datos de uso y engagement agregados por organizaci&oacute;n y d&iacute;a.</p>
+      <p class="why">Si tu producto depende de la API de Claude, ahora puedes implementar auto-scaling y alertas de l&iacute;mites sin scraping manual de la consola.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a> &bull; <a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform Docs</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Apple Health+ con coaching AI: servicio de suscripci&oacute;n en camino para 2026</h3>
+      <p class="what">Seg&uacute;n reportes, Apple sigue en desarrollo de Health+, un servicio de coaching AI de pago que analizar&aacute; datos de Apple Watch e iPhone para dar consejos personalizados de fitness, nutrici&oacute;n y recuperaci&oacute;n en tiempo real. Se espera su lanzamiento con iOS 27 y watchOS 27 m&aacute;s adelante en 2026.</p>
+      <p class="why">Si construyes en el espacio de coaching deportivo o nutrici&oacute;n, Apple va a poner un baseline de expectativas muy alto; tu diferenciador tiene que ir m&aacute;s all&aacute; del tracking b&aacute;sico.</p>
+      <p class="source"><a href="https://www.wareable.com/apple/apple-quartz-health-plus-ai-coaching-service-2026-launch-rumor">Wareable</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Nu Skin lanza Prysm iO: wellness personalizado con AI y escaneo nutricional en 15 segundos</h3>
+      <p class="what">Nu Skin present&oacute; Prysm iO, una plataforma de wellness con un dispositivo que escanea la punta del dedo en 15 segundos para medir carotenoides, usando AI y una base de 20 millones de escaneos para generar un &ldquo;Nutrition Health Score&rdquo; personalizado. La plataforma conecta el score con recomendaciones de suplementos y h&aacute;bitos.</p>
+      <p class="why">Hardware + AI + marketplace de productos de salud es un modelo replicable para verticales como sports nutrition o coaching profesional.</p>
+      <p class="source"><a href="https://nationaltoday.com/us/ut/provo/news/2026/04/02/nu-skin-launches-prysm-io-ai-powered-wellness-platform/">Provo Today</a> &bull; <a href="https://www.directsellingnews.com/2026/04/03/nu-skin-debuts-ai-powered-platform-for-personalized-nutritional-wellness/">Direct Selling News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 27/04/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
