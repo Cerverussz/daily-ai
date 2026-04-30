@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 29 de Abril 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>29 de abril de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI desembarca en AWS: GPT-5.5, Codex y Managed Agents llegan a Amazon Bedrock</h3>
+      <p class="what">OpenAI rompi&oacute; su exclusividad con Microsoft Azure y ahora ofrece GPT-5.5, GPT-5.4 y Codex directamente en Amazon Bedrock en limited preview. Adem&aacute;s lanzan Bedrock Managed Agents powered by OpenAI: agentes con identidad propia, logging de cada acci&oacute;n y ejecuci&oacute;n dentro de tu entorno AWS.</p>
+      <p class="why">Si tu backend ya corre en AWS, ahora puedes usar modelos OpenAI sin salir de Bedrock &mdash; mismo SDK, misma facturaci&oacute;n, sin nuevo vendor lock-in.</p>
+      <p class="source"><a href="https://openai.com/index/openai-on-aws/">OpenAI</a> &bull; <a href="https://aws.amazon.com/about-aws/whats-new/2026/04/bedrock-openai-models-codex-managed-agents/">AWS</a> &bull; <a href="https://www.cnbc.com/2026/04/28/openai-brings-models-to-aws-after-ending-exclusivity-with-microsoft.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Amazon lanza Quick: asistente AI de escritorio que se conecta a todo tu stack</h3>
+      <p class="what">Presentado en el evento "What's Next with AWS", Amazon Quick es un asistente AI de escritorio que se conecta a archivos locales, Google Workspace, Microsoft 365, Slack, Zoom y Salesforce. Genera documentos, presentaciones, dashboards e im&aacute;genes desde chat, y crea apps con lenguaje natural &mdash; sin necesitar cuenta AWS.</p>
+      <p class="why">Es la respuesta de Amazon a los agentes de escritorio; si construyes integraciones o plugins para herramientas de productividad, Quick abre un nuevo canal de distribuci&oacute;n.</p>
+      <p class="source"><a href="https://www.aboutamazon.com/news/aws/amazon-quick-desktop-ai-assistant">About Amazon</a> &bull; <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/">AWS Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Mistral AI lanza Workflows: orquestaci&oacute;n enterprise con Temporal y human-in-the-loop</h3>
+      <p class="what">Mistral liber&oacute; Workflows en public preview dentro de Studio: defines pipelines AI multi-paso en Python combinando modelos, agentes y conectores externos. Construido sobre Temporal, soporta checkpoints humanos donde el workflow pausa sin consumir compute, y cada paso queda auditado. ASML, ABANCA y CMA-CGM ya lo usan en producci&oacute;n.</p>
+      <p class="why">Si necesitas workflows AI con aprobaciones humanas en tu plataforma (ej. onboarding, moderaci&oacute;n), esto es infraestructura lista en vez de armarla con colas y state machines.</p>
+      <p class="source"><a href="https://mistral.ai/news/workflows">Mistral AI</a> &bull; <a href="https://venturebeat.com/technology/mistral-ai-launches-workflows-a-temporal-powered-orchestration-engine-already-running-millions-of-daily-executions">VentureBeat</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 ICLR 2026: "The Reasoning Trap" &mdash; modelos que razonan mejor alucinan m&aacute;s en tool calls</h3>
+      <p class="what">Un paper presentado en ICLR 2026 en R&iacute;o demuestra que entrenar modelos con RL para razonar mejor aumenta las alucinaciones en llamadas a herramientas, no las reduce. OpenAI confirm&oacute; que o3 alucina en 33% de queries (vs. 16% de o1). Ni prompt engineering ni DPO cierran el gap de confiabilidad.</p>
+      <p class="why">Si est&aacute;s construyendo agentes que llaman APIs o tools, no asumas que un modelo m&aacute;s inteligente = menos errores en tool use &mdash; necesitas validaci&oacute;n expl&iacute;cita en cada paso.</p>
+      <p class="source"><a href="https://openreview.net/forum?id=vHKUXkrpVs">OpenReview (ICLR)</a> &bull; <a href="https://asanify.com/blog/news/ai-agent-hallucination-april-29-2026/">Asanify AI Digest</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini CLI v0.38: AI coding en terminal gratis con 1,000 requests/d&iacute;a y memoria entre sesiones</h3>
+      <p class="what">Google actualiz&oacute; Gemini CLI con Gemini 3.1 Pro por defecto, soporte MCP nativo, y un servicio de memoria que extrae patrones de sesiones anteriores. El free tier ofrece 1,000 requests/d&iacute;a &mdash; suficiente para usarlo como coding assistant principal sin pensar en l&iacute;mites.</p>
+      <p class="why">Competencia directa y gratuita para Claude Code y Cursor en terminal; vale la pena probarlo como segundo agente para tareas de coding que no justifican un plan de pago.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-cli-open-source-ai-agent/">Google Blog</a> &bull; <a href="https://github.com/google-gemini/gemini-cli">GitHub</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Avoca: agente de voz AI para plomeros y HVAC alcanza valuaci&oacute;n de $1B</h3>
+      <p class="what">Avoca levant&oacute; m&aacute;s de $125M (Serie B liderada por Meritech y General Catalyst) con valuaci&oacute;n de $1B. Su agente contesta llamadas en segundos, agenda trabajos en el CRM, da seguimiento a presupuestos pendientes y redirige leads seg&uacute;n capacidad del t&eacute;cnico. Est&aacute;n en camino de agendar $1B en trabajos este a&ntilde;o.</p>
+      <p class="why">El playbook es claro: agente vertical entrenado en el workflow real de una industria, vendido a operadores peque&ntilde;os que nunca se vieron como compradores de AI &mdash; replicable en cualquier vertical de servicios.</p>
+      <p class="source"><a href="https://asanify.com/blog/news/ai-agents-enterprise-stack-april-28-2026/">Asanify AI Digest</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google, Microsoft y Meta: +$500B en capex AI &mdash; solo Google convence a Wall Street</h3>
+      <p class="what">Las tres big tech reportaron earnings el 29 de abril con inversiones masivas en AI: Alphabet subi&oacute; su gu&iacute;a de capex a $180-190B, Microsoft super&oacute; $40B/trimestre, y Meta increment&oacute; tambi&eacute;n su gasto. Solo Google subi&oacute; 7% after-hours, gracias a que Cloud creci&oacute; 63% YoY a $20B con Gemini Enterprise creciendo 40% en usuarios pagos.</p>
+      <p class="why">La se&ntilde;al para founders: la infraestructura AI se est&aacute; comoditizando r&aacute;pido &mdash; los ganadores ser&aacute;n quienes construyan aplicaciones verticales, no infraestructura.</p>
+      <p class="source"><a href="https://fortune.com/2026/04/29/microsoft-meta-google-ai-capex-spending-billions/">Fortune</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Mythos Preview: el modelo que descubre miles de zero-days, con acceso restringido</h3>
+      <p class="what">Anthropic present&oacute; Mythos Preview, un modelo capaz de encontrar miles de vulnerabilidades zero-day de alta severidad y generar exploits multi-paso completos. En 89% de 198 reportes revisados manualmente, expertos concordaron exactamente con la evaluaci&oacute;n de severidad del modelo. El acceso est&aacute; limitado a 40+ organizaciones de ciberdefensa.</p>
+      <p class="why">Mythos cambia la ecuaci&oacute;n de seguridad: si mantienes software open source o APIs p&uacute;blicas, asume que modelos as&iacute; ya est&aacute;n escaneando tu c&oacute;digo.</p>
+      <p class="source"><a href="https://red.anthropic.com/2026/mythos-preview/">Anthropic Red Team</a> &bull; <a href="https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code se actualiza: /resume por PR URL, b&uacute;squeda de skills y mejoras MCP</h3>
+      <p class="what">La &uacute;ltima actualizaci&oacute;n de Claude Code permite pegar una URL de PR en /resume para encontrar la sesi&oacute;n que la cre&oacute; (GitHub, GitLab, Bitbucket), agrega b&uacute;squeda type-to-filter en /skills, y mejora velocidad de MCP y plugins. Tambi&eacute;n corrige bugs cr&iacute;ticos como Bash quedando inutilizable si el directorio de inicio se borra mid-sesi&oacute;n.</p>
+      <p class="why">El flujo PR &rarr; sesi&oacute;n de Claude Code ahora es bidireccional &mdash; ideal si usas Claude Code como tu agente principal de desarrollo.</p>
+      <p class="source"><a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md">GitHub Changelog</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>White House prepara gu&iacute;a para esquivar la bandera de riesgo de Anthropic en nuevos modelos</h3>
+      <p class="what">Seg&uacute;n Axios, la Casa Blanca est&aacute; redactando directrices que permitir&iacute;an desplegar modelos AI incluso cuando Anthropic los marque con riesgo elevado. Esto ocurre mientras Anthropic crece a $30B de revenue anualizado con m&aacute;s de 1,000 empresas gastando +$1M/a&ntilde;o en Claude.</p>
+      <p class="why">La tensi&oacute;n regulaci&oacute;n vs. despliegue se intensifica &mdash; si dependes de Claude en producci&oacute;n, mant&eacute;n un plan B multi-modelo.</p>
+      <p class="source"><a href="https://wkzo.com/2026/04/28/white-house-drafts-guidance-to-bypass-anthropics-risk-flag-for-new-ai-models-axios-reports/">WKZO/Axios</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Aidoc levanta $150M Serie E para escalar IA cl&iacute;nica en radiolog&iacute;a &mdash; 60M casos/a&ntilde;o</h3>
+      <p class="what">Aidoc cerr&oacute; $150M Serie E liderada por Goldman Sachs, con participaci&oacute;n de General Catalyst, SoftBank y NVentures (NVIDIA). Su plataforma aiOS analiza 60 millones de casos anuales en casi 2,000 hospitales, detectando hallazgos incidentales en CT y rayos X. Los fondos ir&aacute;n a su modelo fundacional CARE y a generaci&oacute;n autom&aacute;tica de reportes radiol&oacute;gicos.</p>
+      <p class="why">Aidoc demuestra el modelo: AI cl&iacute;nica que ya opera a escala con producto real, no solo paper &mdash; el patr&oacute;n aplica para cualquier vertical de salud con im&aacute;genes o datos estructurados.</p>
+      <p class="source"><a href="https://www.axios.com/2026/04/29/exclusive-clinical-ai-provider-aidoc-raises-150m-series-e">Axios</a> &bull; <a href="https://www.prnewswire.com/news-releases/aidoc-raises-150-million-series-e-led-by-goldman-sachs-to-scale-clinical-ai-for-earlier-safer-diagnoses-302757181.html">PR Newswire</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 29/04/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
