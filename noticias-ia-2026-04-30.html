@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 30 de Abril 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>30 de abril de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google lanza Gemini Enterprise Agent Platform: Vertex AI evoluciona hacia agentes aut&oacute;nomos</h3>
+      <p class="what">Google Cloud rebautiz&oacute; Vertex AI como Gemini Enterprise Agent Platform, una plataforma end-to-end para construir, escalar y gobernar agentes AI que ejecutan workflows multi-paso de forma aut&oacute;noma. Incluye Agent Designer (no-code), soporte para agentes de larga duraci&oacute;n, Inbox para monitorear actividad de agentes, y acceso a 200+ modelos v&iacute;a Model Garden (Gemini 3.1 Pro, Claude, Llama, Gemma 4).</p>
+      <p class="why">Si usas GCP, esta es la se&ntilde;al de que los agentes aut&oacute;nomos son ahora first-class citizens en tu infra &mdash; el Agent Designer no-code puede acelerar prototipos de automatizaci&oacute;n en tu marketplace.</p>
+      <p class="source"><a href="https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform">Google Cloud Blog</a> &bull; <a href="https://siliconangle.com/2026/04/30/google-cloud-bets-big-agentic-enterprise-stack-googlecloudnext/">SiliconANGLE</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Amazon Quick llega a desktop: asistente AI que conecta email, calendario, archivos locales y Slack</h3>
+      <p class="what">AWS lanz&oacute; Amazon Quick como app nativa para macOS y Windows (preview). A diferencia de otros asistentes, Quick monitorea tu trabajo proactivamente y toma acci&oacute;n antes de que preguntes: genera documentos, presentaciones e infograf&iacute;as desde el chat, con integraciones para Google Workspace, Microsoft 365, Salesforce y Zoom.</p>
+      <p class="why">Reduce hasta 80% el tiempo en crear documentos de coordinaci&oacute;n &mdash; si tienes un equipo peque&ntilde;o, este tipo de asistente reemplaza horas de context-switching entre apps.</p>
+      <p class="source"><a href="https://www.aboutamazon.com/news/aws/amazon-quick-desktop-ai-assistant">About Amazon</a> &bull; <a href="https://siliconangle.com/2026/04/28/amazon-revamps-quick-proactive-desktop-app-gets-work-done/">SiliconANGLE</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Mistral Medium 3.5: open weights, 128B denso, self-hostable en 4 GPUs + Vibe Remote Agents</h3>
+      <p class="what">Mistral lanz&oacute; Medium 3.5, un modelo denso de 128B par&aacute;metros con 256K de contexto y licencia MIT modificada en Hugging Face. Logra 77.6% en SWE-Bench Verified y se ejecuta en solo 4 GPUs. Junto al modelo, presentaron Vibe Remote Agents: coding agents asincr&oacute;nicos que corren en la nube y generan pull requests completos en GitHub desde CLI o Le Chat.</p>
+      <p class="why">A $1.5/M input, con open weights y self-hosting real, es la alternativa m&aacute;s seria para pipelines de coding en tu propia infra sin depender de APIs americanas.</p>
+      <p class="source"><a href="https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5">Mistral AI</a> &bull; <a href="https://pulse24.ai/news/2026/4/29/23/mistral-ai-ships-medium-35-model">Pulse24</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 NVIDIA Nemotron 3 Nano Omni: modelo multimodal para edge con 3B par&aacute;metros activos</h3>
+      <p class="what">NVIDIA liber&oacute; Nemotron 3 Nano Omni, un modelo MoE de 30B par&aacute;metros (3B activos por token) que unifica visi&oacute;n, audio y texto con contexto de 256K tokens. Corre en 25GB de RAM, ofrece hasta 9x m&aacute;s throughput que otros modelos omni abiertos, y est&aacute; optimizado para inferencia on-device y baja latencia.</p>
+      <p class="why">Con 3B activos y 25GB de RAM, esto cabe en hardware de edge real &mdash; abre la puerta a features multimodales offline en apps m&oacute;viles o dispositivos embebidos sin cloud.</p>
+      <p class="source"><a href="https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/">NVIDIA Blog</a> &bull; <a href="https://thenextweb.com/news/nvidia-nemotron-nano-omni-multimodal-agent-edge">TNW</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI alerta: actualizar apps macOS urgente tras supply chain attack v&iacute;a Axios</h3>
+      <p class="what">OpenAI emiti&oacute; una alerta urgente requiriendo que todos los usuarios macOS actualicen ChatGPT Desktop, Codex y Atlas antes del 8 de mayo. Una versi&oacute;n comprometida de la librer&iacute;a Axios (v1.14.1) inyect&oacute; un RAT en el workflow de firma de c&oacute;digo. OpenAI rot&oacute; certificados y public&oacute; builds nuevos.</p>
+      <p class="why">Si usas ChatGPT o Codex en Mac, actualiza hoy &mdash; y es un recordatorio de que tus pipelines de CI/CD tambi&eacute;n son superficie de ataque via dependencias de terceros.</p>
+      <p class="source"><a href="https://openai.com/index/axios-developer-tool-compromise/">OpenAI</a> &bull; <a href="https://thehackernews.com/2026/04/openai-revokes-macos-app-certificate.html">The Hacker News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>JetBrains: 90% de devs usan AI en el trabajo, Claude Code lidera satisfacci&oacute;n con 91% CSAT</h3>
+      <p class="what">La encuesta AI Pulse de JetBrains (10,000+ devs, enero 2026) revela que el 90% de desarrolladores usa al menos una herramienta AI regularmente. Claude Code multiplic&oacute; su adopci&oacute;n por 6x en un a&ntilde;o (de 3% a 18%), con la satisfacci&oacute;n m&aacute;s alta del mercado: 91% CSAT y NPS de 54.</p>
+      <p class="why">Los datos confirman que AI coding ya no es opcional &mdash; y si est&aacute;s eligiendo stack, Claude Code tiene el mejor ratio adopci&oacute;n/satisfacci&oacute;n del mercado.</p>
+      <p class="source"><a href="https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-developers-actually-use-at-work/">JetBrains Research Blog</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Mistral Vibe Remote Agents: coding agents async que generan PRs completos desde CLI</h3>
+      <p class="what">Junto con Medium 3.5, Mistral lanz&oacute; Vibe Remote Agents: agentes de coding que corren de forma asincr&oacute;nica en la nube, se lanzan desde CLI o Le Chat, y producen pull requests terminados en GitHub. El flujo es: describes la tarea, el agente trabaja en background, y recibes un PR listo para review.</p>
+      <p class="why">Para un founder t&eacute;cnico que trabaja solo o con equipo peque&ntilde;o, delegar tareas de c&oacute;digo a agentes async mientras haces otras cosas es un multiplicador de productividad real.</p>
+      <p class="source"><a href="https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5">Mistral AI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Cowork: Live Artifacts con datos en tiempo real conectados a tus apps</h3>
+      <p class="what">Anthropic lanz&oacute; Live Artifacts en Claude Cowork: dashboards y trackers que se conectan a tus apps y archivos, y se refrescan autom&aacute;ticamente con datos actuales cada vez que los abres. Puedes compartir artifacts AI-powered con otros usuarios sin necesidad de API keys ni costos adicionales.</p>
+      <p class="why">Esto convierte a Claude en una herramienta para construir dashboards funcionales en minutos &mdash; ideal para MVPs de herramientas internas o demos a clientes sin escribir frontend.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-powered-artifacts">Anthropic</a> &bull; <a href="https://blockchain.news/ainews/claude-cowork-update-live-artifacts-for-real-time-dashboards-and-trackers-2026-analysis">Blockchain News</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Security entra en beta p&uacute;blica: escaneo de vulnerabilidades con Opus 4.7</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Security en beta p&uacute;blica para clientes Enterprise. La herramienta escanea codebases completas razonando como un investigador de ciberseguridad: traza flujos de datos, examina interacciones entre componentes, y genera reportes con impacto, pasos de reproducci&oacute;n y fix recomendado. Incluye escaneos programados, dismissals documentados y exports CSV/Markdown.</p>
+      <p class="why">Si manejas tu propia seguridad de c&oacute;digo, esto es Snyk-level scanning pero con razonamiento contextual de codebase completo &mdash; y se integra directo con Claude Code para aplicar los patches.</p>
+      <p class="source"><a href="https://siliconangle.com/2026/04/30/anthropic-announces-claude-security-public-beta-find-fix-software-vulnerabilities/">SiliconANGLE</a> &bull; <a href="https://thenewstack.io/anthropics-claude-security-beta/">The New Stack</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic retira contexto 1M en Sonnet 4.5 y 4.0 &mdash; migrar a 4.6+ obligatorio</h3>
+      <p class="what">A partir del 30 de abril, Anthropic retir&oacute; la beta de 1M tokens de contexto para Claude Sonnet 4.5 y Sonnet 4.0. Los desarrolladores deben migrar a Sonnet 4.6 u Opus 4.6, que soportan 1M tokens como feature estable sin headers de beta.</p>
+      <p class="why">Si tu producto usa contexto largo con modelos Sonnet anteriores, migra hoy o tus llamadas van a fallar &mdash; Sonnet 4.6 mantiene el mismo pricing.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot - Anthropic Updates</a> &bull; <a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform Docs</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Fitness hiper-personalizado: mercado de $31.1B para 2036 impulsado por AI + wearables + datos cl&iacute;nicos</h3>
+      <p class="what">Un nuevo reporte proyecta que el mercado de fitness hiper-personalizado crecer&aacute; de $5.5B (2026) a $31.1B (2036) a un CAGR de 18.9%. El motor: la fusi&oacute;n de wearable biometrics, AI coaching engines y datos cl&iacute;nicos integrados. Ya hoy, el 78% de features de fitness apps son adaptativas &mdash; ajustan entrenamientos, nutrici&oacute;n y recuperaci&oacute;n en tiempo real seg&uacute;n datos de wearables.</p>
+      <p class="why">Si est&aacute;s construyendo en el vertical de salud/fitness, la oportunidad est&aacute; en la integraci&oacute;n de datos cl&iacute;nicos con coaching AI &mdash; los marketplaces de servicios profesionales de salud son el siguiente paso l&oacute;gico.</p>
+      <p class="source"><a href="https://www.openpr.com/news/4496153/hyper-personalized-fitness-market-to-reach-usd-31-1-billion">OpenPR</a> &bull; <a href="https://www.feed.fm/2026-digital-fitness-ecosystem-report">Feed.fm Report</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 30/04/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
