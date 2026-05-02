@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias IA — 1 de mayo 2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.6; padding: 2rem 1rem; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { font-size: 1.5rem; color: #58a6ff; margin-bottom: 0.25rem; }
+        .date { color: #8b949e; font-size: 0.9rem; margin-bottom: 2rem; }
+        .news-item { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+        .news-item h2 { font-size: 1.05rem; color: #f0f6fc; margin-bottom: 0.5rem; }
+        .news-item .tag { display: inline-block; font-size: 0.7rem; padding: 2px 8px; border-radius: 12px; margin-right: 0.4rem; margin-bottom: 0.5rem; font-weight: 600; }
+        .tag-tools { background: #1f3a5f; color: #58a6ff; }
+        .tag-coding { background: #2a1f3f; color: #bc8cff; }
+        .tag-mobile { background: #1f3f2a; color: #56d364; }
+        .tag-startup { background: #3f2a1f; color: #f0883e; }
+        .tag-anthropic { background: #3f1f2a; color: #f778ba; }
+        .tag-health { background: #1f3f3f; color: #39d2c0; }
+        .what { color: #c9d1d9; font-size: 0.9rem; margin-bottom: 0.4rem; }
+        .why { color: #8b949e; font-size: 0.85rem; font-style: italic; margin-bottom: 0.4rem; }
+        .source a { color: #58a6ff; font-size: 0.8rem; text-decoration: none; }
+        .source a:hover { text-decoration: underline; }
+        .section-title { color: #8b949e; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin: 1.5rem 0 0.75rem; }
+        .fire { font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Noticias IA — Daily Briefing</h1>
+        <p class="date">1 de mayo de 2026 · Curado para senior devs construyendo producto</p>
+
+        <p class="section-title">Herramientas y aplicaciones en produccion</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Microsoft Agent 365 llega a GA con control plane para agentes empresariales</h2>
+            <span class="tag tag-tools">TOOLS</span>
+            <p class="what">Microsoft Agent 365 alcanza disponibilidad general el 1 de mayo como plataforma dedicada para gestionar agentes de IA en entornos enterprise. Soporta agentes first-party de Microsoft, agentes del SDK de M365, y agentes externos de Amazon Bedrock y Google, a $15/usuario/mes o incluido en el SKU E7.</p>
+            <p class="why">Si construyes un producto B2B, Agent 365 marca el estándar de cómo las empresas van a comprar y gobernar agentes — tu producto necesita ser compatible con ese control plane.</p>
+            <p class="source"><a href="https://insights.marvin-42.com/articles/microsoft-unveils-frontier-suite-and-sets-agent-365-ga-for-may-1-as-copilot-adds-claude">Marvin-42 Insights</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Mistral lanza Workflows: orquestación de agentes AI sobre Temporal, ya en producción</h2>
+            <span class="tag tag-tools">TOOLS</span><span class="tag tag-startup">STARTUP</span>
+            <p class="what">Mistral AI lanzó Workflows en public preview el 28 de abril — un motor de orquestación construido sobre Temporal para procesos AI multi-paso con estado, streaming y observabilidad. Empresas como ASML y ABANCA ya lo ejecutan con millones de ejecuciones diarias en producción.</p>
+            <p class="why">Alternativa seria a construir tu propia orquestación de agentes: pocas líneas de Python, durabilidad de Temporal, y no necesitas mantener la infra tú mismo.</p>
+            <p class="source"><a href="https://venturebeat.com/technology/mistral-ai-launches-workflows-a-temporal-powered-orchestration-engine-already-running-millions-of-daily-executions">VentureBeat</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Copilot Cowork trae ejecución autónoma multi-paso a Microsoft 365 (con Claude bajo el capó)</h2>
+            <span class="tag tag-tools">TOOLS</span><span class="tag tag-anthropic">ANTHROPIC</span>
+            <p class="what">Copilot Cowork, construido en colaboración con Anthropic, permite a Copilot descomponer tareas complejas en pasos, razonar entre apps y archivos, y ejecutar trabajo durante minutos u horas con progreso visible. Ya disponible en el programa Frontier de Microsoft.</p>
+            <p class="why">La integración Claude + M365 demuestra que los modelos de Anthropic están entrando en el flujo de trabajo diario de millones de usuarios enterprise — un canal de distribución enorme para el ecosistema.</p>
+            <p class="source"><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/">Microsoft 365 Blog</a></p>
+        </div>
+
+        <p class="section-title">Innovaciones tecnicas con impacto practico</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Gemma 4 ya corre on-device en Android via AICore Developer Preview</h2>
+            <span class="tag tag-mobile">MOBILE</span><span class="tag tag-tools">TOOLS</span>
+            <p class="what">Google lanzó Gemma 4 bajo Apache 2.0 con variantes E2B y E4B optimizadas para móvil que corren completamente offline en Android via AICore. El modelo 31B es el #3 open model mundial en Arena AI, y las variantes móviles logran near-zero latency en dispositivos con Snapdragon 8 Elite y Tensor G4.</p>
+            <p class="why">Por primera vez hay un modelo open-source de nivel frontier que corre nativamente en Android sin cloud — esto cambia la ecuación de costos y latencia para cualquier app mobile con IA.</p>
+            <p class="source"><a href="https://android-developers.googleblog.com/2026/04/AI-Core-Developer-Preview.html">Android Developers Blog</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Microsoft Agent Framework 1.0: orquestación multi-agente production-ready para .NET y Python</h2>
+            <span class="tag tag-tools">TOOLS</span>
+            <p class="what">Microsoft liberó Agent Framework 1.0 con APIs estables, soporte multi-proveedor, e interoperabilidad cross-runtime via A2A y MCP. El framework ofrece orquestación enterprise-grade para construir sistemas multi-agente en .NET y Python con compromiso de soporte a largo plazo.</p>
+            <p class="why">Si necesitas un framework probado para construir agentes en producción sin inventar la plomería desde cero, esta es la opción más madura del ecosistema Microsoft.</p>
+            <p class="source"><a href="https://visualstudiomagazine.com/articles/2026/04/06/microsoft-ships-production-ready-agent-framework-1-0-for-net-and-python.aspx">Visual Studio Magazine</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Stanford AI Index 2026: agentes pasan de 12% a 66% de éxito en tareas reales de computadora</h2>
+            <span class="tag tag-tools">TOOLS</span><span class="tag tag-startup">STARTUP</span>
+            <p class="what">El Stanford AI Index 2026 revela que los agentes AI saltaron de 12% a 66% de éxito en tareas reales de computadora en un año. Los agentes ahora navegan software y sistemas casi tan bien como personas, cortando tiempo y costos reales en infra, diseño de chips y desarrollo de software.</p>
+            <p class="why">El salto de 12% a 66% confirma que los agentes ya no son demos — si tu producto no tiene una estrategia de agentes, estás dejando automatización en la mesa.</p>
+            <p class="source"><a href="https://www.crescendo.ai/news/latest-ai-news-and-updates">Crescendo AI News</a></p>
+        </div>
+
+        <p class="section-title">AI Coding y productividad para devs</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> Claude Code lanza /ultrareview: fleet de agentes de code review en la nube</h2>
+            <span class="tag tag-coding">CODING</span><span class="tag tag-anthropic">ANTHROPIC</span>
+            <p class="what">Claude Code Week 17 trae /ultrareview en public research preview: una flota de agentes de bug-hunting corre en la nube y los hallazgos llegan automáticamente a tu CLI o Desktop. También llegan session recap, custom themes, y rediseño de Claude Code en la web con sidebar de sesiones.</p>
+            <p class="why">Code review automatizado con múltiples agentes en paralelo — esto reduce drásticamente el tiempo entre push y merge para devs solo o equipos pequeños.</p>
+            <p class="source"><a href="https://code.claude.com/docs/en/whats-new">Claude Code Docs — What's New</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Claude Code alcanza 18% de adopción laboral y 91% CSAT — empata con Cursor</h2>
+            <span class="tag tag-coding">CODING</span><span class="tag tag-anthropic">ANTHROPIC</span>
+            <p class="what">Según el estudio de JetBrains, Claude Code alcanzó 18% de adopción en entornos laborales (6x más que hace un año), igualando a Cursor. Con 91% CSAT y NPS de 54, tiene las métricas de lealtad más altas del mercado, mientras Copilot mantiene el liderazgo general (29%) pero su crecimiento se estancó.</p>
+            <p class="why">Los datos confirman que Claude Code ya es mainstream para devs profesionales — invertir en dominarlo es invertir en la herramienta que tu competencia ya está usando.</p>
+            <p class="source"><a href="https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-developers-actually-use-at-work/">JetBrains Research Blog</a></p>
+        </div>
+
+        <p class="section-title">Novedades de Claude y Anthropic</p>
+
+        <div class="news-item">
+            <h2>Claude Managed Agents en public beta: agentes autónomos con sandboxing seguro via API</h2>
+            <span class="tag tag-anthropic">ANTHROPIC</span><span class="tag tag-tools">TOOLS</span>
+            <p class="what">Anthropic lanzó Claude Managed Agents en public beta — un harness completamente gestionado para correr Claude como agente autónomo con sandboxing seguro, herramientas built-in, y streaming via server-sent events. Requiere el header managed-agents-2026-04-01.</p>
+            <p class="why">Si querías construir agentes con Claude sin montar tu propia infra de sandboxing y tool execution, esto te ahorra semanas de trabajo y lo hace production-ready desde día uno.</p>
+            <p class="source"><a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform Release Notes</a></p>
+        </div>
+
+        <div class="news-item">
+            <h2>Anthropic lanza ant CLI: cliente de línea de comandos nativo para la API de Claude</h2>
+            <span class="tag tag-anthropic">ANTHROPIC</span><span class="tag tag-coding">CODING</span>
+            <p class="what">Anthropic presentó ant CLI, un cliente de línea de comandos para interactuar directamente con la API de Claude, con integración nativa con Claude Code y versionado de recursos API en archivos YAML. Permite iterar más rápido sobre prompts y configuraciones sin salir de la terminal.</p>
+            <p class="why">Para founders técnicos que viven en la terminal, ant CLI cierra el gap entre experimentar con la API y tener configuraciones versionadas y reproducibles en tu repo.</p>
+            <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot — Anthropic Updates</a></p>
+        </div>
+
+        <p class="section-title">IA en sports tech, salud y bienestar</p>
+
+        <div class="news-item">
+            <h2><span class="fire">🔥</span> SportsReflector lanza plataforma AI de coaching deportivo con video analysis y AR en móvil</h2>
+            <span class="tag tag-health">HEALTH</span><span class="tag tag-mobile">MOBILE</span>
+            <p class="what">SportsReflector lanzó su app de coaching deportivo con IA que combina análisis de video en tiempo real, entrenamiento AR, y herramientas de coaching remoto en una sola plataforma móvil. Soporta +20 deportes y +300 ejercicios usando computer vision y pose-estimation, con 24,000+ usuarios activos.</p>
+            <p class="why">Un caso real de marketplace de coaching deportivo con IA como core — demuestra que computer vision on-device ya es viable como producto para fitness y sports tech.</p>
+            <p class="source"><a href="https://www.gtehy.com/archives/67288">Gtehy.com</a></p>
+        </div>
+
+        <p style="color: #484f58; font-size: 0.75rem; margin-top: 2rem; text-align: center;">
+            Generado automaticamente · Fuentes verificadas al 01/05/2026 · Filtrado para senior devs construyendo producto
+        </p>
+    </div>
+</body>
+</html>
