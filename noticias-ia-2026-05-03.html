@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 3 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>3 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft Agent 365 en GA: control plane para gobernar agentes AI en la empresa</h3>
+      <p class="what">Desde el 1 de mayo, Microsoft Agent 365 est&aacute; disponible de forma general a $15/usuario/mes. Ofrece visibilidad en tiempo real, gobernanza y seguridad sobre agentes AI &mdash; incluyendo ahora descubrimiento de agentes locales corriendo en endpoints Windows, adem&aacute;s de los cloud. Viene integrado en el nuevo Microsoft 365 E7 ($99/usuario/mes).</p>
+      <p class="why">Si est&aacute;s desplegando agentes AI en tu producto o equipo, esto define el est&aacute;ndar enterprise de gobernanza que tus clientes corporativos van a exigir.</p>
+      <p class="source"><a href="https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/">Microsoft Security Blog</a> &bull; <a href="https://winbuzzer.com/2026/05/02/microsoft-agent-365-general-availability-local-ai-agents-xcxwbn/">WinBuzzer</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI llega a Amazon Bedrock: GPT-5.5, Codex y Managed Agents en AWS</h3>
+      <p class="what">OpenAI lanz&oacute; GPT-5.5 y GPT-5.4 en preview en Amazon Bedrock, junto con Codex (su harness de coding usado por 4M+ personas/semana) y Bedrock Managed Agents powered by OpenAI. Todo hereda controles enterprise de AWS: IAM, PrivateLink, guardrails y el gasto cuenta contra compromisos cloud existentes.</p>
+      <p class="why">Si tu backend ya corre en AWS, ahora puedes usar modelos OpenAI sin salir de Bedrock &mdash; simplifica la arquitectura para equipos que quieren probar varios providers sin rehacer infraestructura.</p>
+      <p class="source"><a href="https://openai.com/index/openai-on-aws/">OpenAI</a> &bull; <a href="https://techcrunch.com/2026/04/28/amazon-is-already-offering-new-openai-products-on-aws/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gu&iacute;a pr&aacute;ctica: monta tu propio coding agent local y deja de pagar por token</h3>
+      <p class="what">The Register public&oacute; una gu&iacute;a detallada (2 de mayo) para armar coding agents locales con Qwen 2.5 Coder 32B + OpenCode + Ollama. El setup corre en hardware consumer, sin cloud, y seg&uacute;n benchmarks, Qwen 2.5 Coder 32B supera a muchos modelos grandes generalistas espec&iacute;ficamente en generaci&oacute;n y debugging de c&oacute;digo.</p>
+      <p class="why">Para tareas de alto volumen (refactoring masivo, generaci&oacute;n de tests), un agent local se paga solo en 2-4 meses y elimina la dependencia de APIs cloud.</p>
+      <p class="source"><a href="https://www.theregister.com/2026/05/02/local_ai_coding_agents/">The Register</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code ultrareview: fleet de agentes bug-hunting en la nube + CLI para CI</h3>
+      <p class="what">Claude Code lanz&oacute; ultrareview como research preview p&uacute;blico. Ejecuta m&uacute;ltiples agentes revisores en paralelo en sandbox remoto, donde cada hallazgo se reproduce y verifica independientemente. Nuevo subcomando <code>claude ultrareview [target]</code> permite correrlo desde CI/scripts con salida JSON.</p>
+      <p class="why">Integrar esto en tu pipeline de CI significa que cada PR pasa por un review automatizado de bugs reales (no solo lint), sin consumir recursos locales.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/ultrareview">Claude Code Docs</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google I/O 2026 el 19 de mayo: Gemini 4, Android 17 con Gemini Nano 3 on-device</h3>
+      <p class="what">Google confirma I/O 2026 para el 19-20 de mayo. Se espera Gemini 4 (84.6% ARC-AGI2, contexto 2M+ tokens, latencia sub-300ms) y Android 17 con Gemini Nano 3 integrado on-device. Android 17 incluye AI Core expandido para apps de salud, legal y finanzas sin enviar datos al cloud.</p>
+      <p class="why">Si desarrollas para Android, Gemini Nano 3 on-device elimina la barrera de compliance para features AI en apps de salud/finanzas y reduce costos de API a cero para inferencia local.</p>
+      <p class="source"><a href="https://android.gadgethacks.com/news/what-to-expect-from-google-io-2026-dates-gemini-android-17/">Gadget Hacks</a> &bull; <a href="https://www.engadget.com/ai/what-to-expect-from-google-io-2026-200252914.html">Engadget</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Vertical AI para workflows de negocio: el nuevo playbook para founders t&eacute;cnicos</h3>
+      <p class="what">An&aacute;lisis de tendencias de mayo 2026 confirma que las startups AI m&aacute;s exitosas no construyen horizontal &mdash; atacan un workflow espec&iacute;fico (legal review, procurement, claims processing, sales ops) con agentes especializados. Los equipos peque&ntilde;os est&aacute;n lanzando con no-code + agentes, validando en semanas y escalando solo lo que funciona.</p>
+      <p class="why">La oportunidad no est&aacute; en &ldquo;otro chatbot&rdquo; sino en resolver UN proceso repetitivo de una industria vertical con un agente que reemplaza horas de trabajo manual.</p>
+      <p class="source"><a href="https://blog.mean.ceo/ai-startup-trends-may-2026/">Mean CEO Blog</a> &bull; <a href="https://www.nxcode.io/resources/news/ai-mvp-builder-how-founders-ship-products-2026">NxCode</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic capta 3x m&aacute;s compradores nuevos que OpenAI seg&uacute;n datos de Ramp</h3>
+      <p class="what">Seg&uacute;n datos de gasto corporativo de Ramp, los negocios que compran AI por primera vez eligen Anthropic a una tasa 3x mayor que OpenAI. 1 de cada 5 empresas en Ramp ya paga por servicios de Anthropic, mientras OpenAI supera los $25B en revenue anualizado y Anthropic se acerca a $19B.</p>
+      <p class="why">Si est&aacute;s eligiendo stack AI para tu producto B2B, la se&ntilde;al del mercado es clara: Claude est&aacute; ganando la conversaci&oacute;n con compradores nuevos.</p>
+      <p class="source"><a href="https://www.aiandnews.com/blog/latest-ai-news-may-2026-2/">AI and News</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Security en public beta: escaneo de vulnerabilidades con Opus 4.7</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Security en beta p&uacute;blica para clientes Enterprise. Escanea codebases completos trazando flujos de datos entre archivos y m&oacute;dulos, genera patches dirigidos, y se integra con Slack, Jira y webhooks. Partners de integraci&oacute;n incluyen CrowdStrike, Palo Alto Networks, SentinelOne y Wiz.</p>
+      <p class="why">Automatizar el security review de tu codebase con un modelo que ya entiende tu c&oacute;digo reduce el ciclo de encontrar→parchear vulnerabilidades de d&iacute;as a minutos.</p>
+      <p class="source"><a href="https://www.helpnetsecurity.com/2026/05/04/anthropic-claude-security-public-beta/">Help Net Security</a> &bull; <a href="https://siliconangle.com/2026/04/30/anthropic-announces-claude-security-public-beta-find-fix-software-vulnerabilities/">SiliconANGLE</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>9 Claude Connectors para herramientas creativas: Adobe, Blender, Ableton, Autodesk</h3>
+      <p class="what">Anthropic lanz&oacute; 9 conectores MCP que integran Claude directamente en Photoshop, Premiere, Blender (interfaz de lenguaje natural a su API Python), Ableton Live, Autodesk Fusion y m&aacute;s. Al ser MCP, los conectores tambi&eacute;n funcionan con otros LLMs. Anthropic tambi&eacute;n don&oacute; fondos al Blender Development Fund.</p>
+      <p class="why">Si tu producto genera assets 3D, audio o dise&ntilde;o, estos conectores son la ruta directa para integrar AI en el workflow creativo de tus usuarios.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-for-creative-work">Anthropic</a> &bull; <a href="https://9to5mac.com/2026/04/28/anthropic-releases-9-new-claude-connectors-for-creative-tools-including-blender-and-adobe/">9to5Mac</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Mythos Preview: el modelo que encuentra zero-days en todos los OS principales</h3>
+      <p class="what">Anthropic present&oacute; Claude Mythos Preview, un modelo especializado en cybersecurity que ha identificado miles de vulnerabilidades zero-day en cada OS y browser principal &mdash; incluyendo un bug de 27 a&ntilde;os en OpenBSD y un RCE de 17 a&ntilde;os en FreeBSD. El acceso est&aacute; restringido a un consorcio de empresas v&iacute;a Project Glasswing.</p>
+      <p class="why">Esto redefine lo que es posible en security automation &mdash; y anticipa que modelos con capacidades similares estar&aacute;n disponibles ampliamente pronto, subiendo la urgencia de asegurar tu c&oacute;digo ahora.</p>
+      <p class="source"><a href="https://red.anthropic.com/2026/mythos-preview/">Anthropic Red</a> &bull; <a href="https://www.infoq.com/news/2026/04/anthropic-claude-mythos/">InfoQ</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple Health+ con AI coaching y nutrici&oacute;n avanzada en camino para 2026</h3>
+      <p class="what">Apple sigue en camino de lanzar Health+, su servicio de suscripci&oacute;n de salud con AI, en 2026. Incluir&aacute; coaching personalizado basado en datos de Apple Watch/iPhone y un revamp mayor de tracking nutricional. Las plataformas como Lumen y NutriSense ya analizan metabolismo, sue&ntilde;o y estr&eacute;s para generar planes alimenticios en tiempo real.</p>
+      <p class="why">Si construyes en el espacio de salud/fitness, Health+ va a definir las expectativas del usuario &mdash; prep&aacute;rate para competir en personalizaci&oacute;n basada en datos biom&eacute;tricos reales.</p>
+      <p class="source"><a href="https://www.wareable.com/apple/apple-quartz-health-plus-ai-coaching-service-2026-launch-rumor">Wareable</a> &bull; <a href="https://orangesoft.co/blog/ai-in-fitness-industry">Orangesoft</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 03/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
