@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 5 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>5 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 DoorDash lanza suite AI para merchants: onboarding 35% más rápido, fotos AI y web builder</h3>
+      <p class="what">DoorDash presentó herramientas AI que permiten a merchants lanzar su presencia online en minutos: el onboarding con AI extrae datos de su web existente (fotos, horarios, menú), el editor de fotos ofrece AI Retouch, AI Replate y Match the Style sin alterar la comida, y el Commerce Platform genera websites branded con AI que logran ~10% de conversión promedio en tests.</p>
+      <p class="why">Es el playbook concreto de cómo AI reduce fricción en onboarding de un marketplace &mdash; directamente aplicable si construyes una plataforma con proveedores.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/04/doordash-adds-ai-tools-to-speed-up-merchant-onboarding-edit-photos-of-dishes/">TechCrunch</a> &bull; <a href="https://about.doordash.com/en-us/news/ai-powered-merchant-tools">DoorDash</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>IBM Think 2026: watsonx Orchestrate se convierte en control plane para agentes AI multi-source</h3>
+      <p class="what">IBM anunció la nueva generación de watsonx Orchestrate (private preview), un control plane agéntico donde puedes desplegar agentes de cualquier fuente con políticas de gobernanza consistentes. También lanzó IBM Bob (GA), un partner de desarrollo agéntico para enterprise con seguridad y control de costos integrados, y Concert Secure Coder que embebe gestión de seguridad directamente en VS Code.</p>
+      <p class="why">Si tu producto orquesta agentes de múltiples proveedores, el pattern de "control plane + policy enforcement" que IBM formaliza es el que necesitas implementar.</p>
+      <p class="source"><a href="https://newsroom.ibm.com/2026-05-05-think-2026-ibm-delivers-the-blueprint-for-the-ai-operating-model-as-the-ai-divide-widens">IBM Newsroom</a> &bull; <a href="https://www.ibm.com/new/announcements/ibm-announcements-at-think-2026">IBM Announcements</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Saperly: el primer carrier telefónico construido para agentes AI con MCP nativo</h3>
+      <p class="what">Saperly es un carrier que da a tus agentes AI un número telefónico real con voz, SMS, routing y compliance listos en segundos. Ofrece un servidor MCP que permite a cualquier agente compatible (Claude Code, Cursor, Codex) hacer y recibir llamadas con caller ID persistente.</p>
+      <p class="why">Si estás construyendo agentes que necesitan comunicarse con usuarios por teléfono (soporte, ventas, scheduling), esto elimina semanas de integración con Twilio y compliance.</p>
+      <p class="source"><a href="https://saperly.com/">Saperly</a> &bull; <a href="https://github.com/Saperly">GitHub</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Unity AI entra en Open Beta: asistente AI integrado en el editor Unity 6</h3>
+      <p class="what">Unity lanzó Unity AI en open beta para todos los developers en Unity 6. Incluye un asistente in-editor que escribe C# scripts, genera escenas desde imágenes, crea assets placeholder (materiales, sonidos, cubemaps, 2D/3D), con Plan Mode y rollback de cambios generados por AI. El 62% de developers ya usan AI para coding según el reporte Unity 2026.</p>
+      <p class="why">Si haces juegos o experiencias interactivas, esto baja dramáticamente la barrera para prototipar &mdash; y el modelo de $10/mes para Personal lo hace accesible para indie devs.</p>
+      <p class="source"><a href="https://gamesbeat.com/unity-launches-unity-ai-into-open-beta/">GamesBeat</a> &bull; <a href="https://discussions.unity.com/t/unity-ai-s-open-beta-now-live-for-unity-6/1718560">Unity Forums</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>TinyFish hace gratis Web Search y Fetch para developers y agentes AI</h3>
+      <p class="what">TinyFish liberó sus features de Web Search y Web Fetch sin costo para todos los developers y agentes AI, con soporte nativo para Claude Code, Cursor, Codex y otros frameworks de agentes. Permite a cualquier agente buscar y extraer información de la web como herramienta integrada.</p>
+      <p class="why">Herramienta gratuita que resuelve el problema de dar a tus agentes acceso a información web actualizada sin construir scrapers custom.</p>
+      <p class="source"><a href="https://www.crescendo.ai/news/latest-ai-news-and-updates">Crescendo AI News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>SAP adquiere Prior Labs por &euro;1B+: lab de AI frontier para datos estructurados</h3>
+      <p class="what">SAP firmó acuerdo definitivo para adquirir Prior Labs, invirtiendo más de €1B en cuatro años para construir un lab de AI frontier especializado en datos estructurados. Prior Labs ya demostró resultados SOTA en tareas de predicción tabular y time-series con sus modelos foundation.</p>
+      <p class="why">Señala que la próxima ola de AI enterprise no es solo LLMs para texto, sino modelos especializados en datos tabulares &mdash; el tipo de datos que domina en backends y marketplaces.</p>
+      <p class="source"><a href="https://www.aiandnews.com/blog/latest-ai-news-may-2026/">AI and News</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 El stack 2026 para founders t&eacute;cnicos: MVP en d&iacute;as, no meses</h3>
+      <p class="what">Rocket.new permite describir tu app en texto y genera un producto funcional. Capacity.so introduce "Spec Coding" donde defines especificaciones y la AI genera código production-ready. Datos de Q1 2026 confirman: MVPs complejos en 2-6 semanas, simples en 1-3 días, con reducción de hasta 85% en costos de desarrollo.</p>
+      <p class="why">Si todavía estimas tu MVP en sprints de 2 semanas, estás sobre-estimando &mdash; la ventana para lanzar un vertical SaaS o marketplace es ahora semanas.</p>
+      <p class="source"><a href="https://www.rocket.new/blog/best-ai-mvp-builders-for-startups">Rocket.new</a> &bull; <a href="https://www.nxcode.io/resources/news/ai-mvp-builder-how-founders-ship-products-2026">NxCode</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Code mayo: tokenizer mejorado, /model picker para gateways, y MCP auto-retry</h3>
+      <p class="what">Opus 4.7 recibió un nuevo tokenizer que mejora comprensión de inputs. El /model picker ahora lista modelos desde el endpoint /v1/models de tu gateway cuando usas ANTHROPIC_BASE_URL. Se añadió "claude project purge" para limpiar estado, MCP servers con errores transitorios hacen auto-retry (hasta 3 veces), y se corrigieron leaks de memoria de ~2GB en transcripts largos.</p>
+      <p class="why">El auto-retry de MCP y el soporte de gateways custom hacen Claude Code más viable para equipos con infra propia.</p>
+      <p class="source"><a href="https://github.com/anthropics/claude-code/releases">GitHub Releases</a> &bull; <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Filtración: Anthropic prepara "Orbit", asistente proactivo en Claude Cowork</h3>
+      <p class="what">Código en builds recientes de Claude web y mobile revelan "Orbit", un asistente proactivo opt-in dentro de Claude Cowork que genera briefings e insights automáticos desde Gmail, Slack, GitHub, Calendar, Drive y Figma sin necesidad de prompting. Los usuarios podrán desplegar "Orbit apps" como accesos rápidos personalizados.</p>
+      <p class="why">Si se confirma, es el primer asistente AI que integra tu contexto profesional completo (código + comunicación + diseño) para actuar proactivamente &mdash; cambio de paradigma para workflows de desarrollo.</p>
+      <p class="source"><a href="https://www.testingcatalog.com/anthropic-is-working-on-orbit-its-upcoming-proactive-assistant/">TestingCatalog</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Fitbit AI Coach en public beta: Gemini integrado con coaching proactivo en tiempo real</h3>
+      <p class="what">Google embebió Gemini en la app Fitbit rediseñada con un AI coach que hace onboarding en 5 minutos (goals, lesiones, horarios), genera un plan multi-semana de movimiento, recuperación y sueño, y lo ajusta diariamente usando datos de sensores en vivo (HRV, frecuencia cardíaca). El coach notifica proactivamente antes de que abras la app.</p>
+      <p class="why">El patrón de coaching proactivo basado en datos de wearables es directamente replicable para cualquier app de servicios profesionales de salud o fitness.</p>
+      <p class="source"><a href="https://www.aicerts.ai/news/fitbit-ai-coach-public-beta-transforms-wearable-wellness/">AI CERTs</a> &bull; <a href="https://www.sensai.fit/blog/best-ai-fitness-apps-2026-fitbod-freeletics-future-trainiac-alternatives">SensAI</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 05/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
