@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 6 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>6 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 CopilotKit levanta $27M y lanza AG-UI: el protocolo open-source para agentes embebidos en apps</h3>
+      <p class="what">CopilotKit cerr&oacute; una Serie A de $27M (Glilot, NFX, SignalFire) para su framework que permite integrar agentes AI directamente dentro de aplicaciones existentes, no como chatbots aparte. Su protocolo AG-UI, ya adoptado por Google, Microsoft, Amazon y Oracle, estandariza c&oacute;mo los agentes comparten estado, hacen streaming y manejan human-in-the-loop con las UIs de las apps.</p>
+      <p class="why">Si est&aacute;s construyendo un marketplace o SaaS, AG-UI te da la infraestructura para meter agentes AI nativos en tu producto sin inventar el protocolo desde cero.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/05/copilotkit-raises-27m-to-help-devs-deploy-app-native-ai-agents/">TechCrunch</a> &bull; <a href="https://www.copilotkit.ai/blog/series-a">CopilotKit Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Jama Connect lanza el primer MCP Server para software de ingenier&iacute;a regulada</h3>
+      <p class="what">Jama Connect 9.35 es el primer software de gesti&oacute;n de ingenier&iacute;a con un MCP Server nativo, permitiendo a ingenieros trabajar desde Claude, Cursor, Codex o GitHub Copilot manteniendo trazabilidad, permisos y auditor&iacute;a. Los agentes AI acceden a specs y requisitos sin romper compliance en industrias reguladas.</p>
+      <p class="why">Es un caso concreto de c&oacute;mo MCP est&aacute; pasando de protocolo experimental a infraestructura enterprise &mdash; si tu producto maneja datos regulados, este es el patr&oacute;n a seguir.</p>
+      <p class="source"><a href="https://www.globenewswire.com/news-release/2026/05/04/3286889/0/en/Jama-Software-Launches-Model-Context-Protocol-MCP-Server.html">GlobeNewsWire</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 TinyFish hace gratuitas sus APIs de Web Search y Fetch para todos los agentes AI</h3>
+      <p class="what">TinyFish abri&oacute; sus APIs de b&uacute;squeda web y fetch sin costo, sin tarjeta de cr&eacute;dito, con rate limits generosos. Funciona via REST API, MCP server, SDKs de Python/TypeScript, y se integra directamente con Claude Code, Cursor, Codex, LangChain y CrewAI.</p>
+      <p class="why">Web search era el cuello de botella de pago en flujos de agentes desde 2024 &mdash; ahora puedes agregar b&uacute;squeda web a tu agente sin costo variable.</p>
+      <p class="source"><a href="https://www.tinyfish.ai/blog/search-and-fetch-are-now-free-for-every-agent-everywhere">TinyFish Blog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>GPT-5.5 Instant es el nuevo modelo default de ChatGPT: 52% menos alucinaciones</h3>
+      <p class="what">OpenAI lanz&oacute; GPT-5.5 Instant como modelo default para todos los usuarios de ChatGPT y disponible en API como <code>chat-latest</code>. Reduce alucinaciones un 52% vs GPT-5.3 en prompts de medicina, derecho y finanzas, y usa 30% menos tokens en respuestas m&aacute;s concisas y naturales.</p>
+      <p class="why">Si usas la API de OpenAI, el switch a <code>chat-latest</code> te da mejor calidad gratis &mdash; pero GPT-5.3 solo estar&aacute; disponible 3 meses m&aacute;s, as&iacute; que planifica la migraci&oacute;n.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/">TechCrunch</a> &bull; <a href="https://openai.com/index/gpt-5-5-instant/">OpenAI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot CLI: plugins enterprise-managed y MCP mejorado (v1.0.43)</h3>
+      <p class="what">GitHub lanz&oacute; enterprise-managed plugins para Copilot CLI en public preview, permitiendo a admins distribuir hooks, skills y configuraciones MCP a toda la organizaci&oacute;n. La v1.0.43 corrige el ciclo de vida de procesos MCP server y a&ntilde;ade controles de seguridad para modo prompt.</p>
+      <p class="why">Si tu equipo usa Copilot CLI, los plugins managed significan que puedes estandarizar herramientas y MCP servers sin que cada dev configure manualmente.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-05-06-enterprise-managed-plugins-in-github-copilot-cli-are-now-in-public-preview/">GitHub Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>IBM Think 2026: watsonx Orchestrate para multi-agente e IBM Bob para devs enterprise</h3>
+      <p class="what">IBM present&oacute; la nueva generaci&oacute;n de watsonx Orchestrate como plano de control para orquestar agentes de cualquier proveedor con pol&iacute;ticas y auditor&iacute;a unificada. Tambi&eacute;n lanz&oacute; IBM Bob (GA), un asistente de desarrollo ag&eacute;ntico con controles de seguridad y costos integrados, disponible en VS Code.</p>
+      <p class="why">El problema real de 2026 ya no es construir un agente sino gobernar cientos &mdash; watsonx Orchestrate ataca ese problema a escala enterprise.</p>
+      <p class="source"><a href="https://newsroom.ibm.com/2026-05-05-think-2026-ibm-delivers-the-blueprint-for-the-ai-operating-model-as-the-ai-divide-widens">IBM Newsroom</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cofounder 2: plataforma para operar una empresa entera con agentes AI organizados en org chart</h3>
+      <p class="what">General Intelligence Company lanz&oacute; Cofounder 2 en research preview: una plataforma donde un solo founder o equipo peque&ntilde;o puede correr ingenier&iacute;a, ventas, marketing, soporte y ops con agentes AI especializados, cada uno con su workspace y herramientas (Linear, Slack, Notion, CRMs). Un agente manager coordina tareas y progreso entre departamentos.</p>
+      <p class="why">Es la versi&oacute;n m&aacute;s concreta hasta ahora de &ldquo;empresa de una persona&rdquo; con AI &mdash; si est&aacute;s bootstrapping, vale la pena probar el fellowship de $1K que ofrecen.</p>
+      <p class="source"><a href="https://cofounder.co/">Cofounder.co</a> &bull; <a href="https://aitoolsclub.com/meet-cofounder-a-platform-that-lets-you-run-an-entire-company-with-ai-agents/">AI Tools Club</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic firma deal con SpaceX por 300MW de compute y duplica l&iacute;mites de Claude Code</h3>
+      <p class="what">Anthropic acceder&aacute; al 100% del datacenter Colossus 1 de SpaceX en Memphis: m&aacute;s de 300MW y 220,000+ GPUs NVIDIA. Como resultado inmediato, duplic&oacute; los rate limits de Claude Code en planes Pro, Max, Team y Enterprise, y elimin&oacute; las reducciones por horas pico en Pro y Max.</p>
+      <p class="why">M&aacute;s capacidad = menos throttling en tus sesiones de Claude Code &mdash; si te frenaban los l&iacute;mites, ahora tienes el doble de runway.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/higher-limits-spacex">Anthropic</a> &bull; <a href="https://www.cnbc.com/2026/05/06/anthropic-spacex-data-center-capacity.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Managed Agents con Memory: agentes que aprenden entre sesiones (public beta)</h3>
+      <p class="what">Anthropic habilit&oacute; Memory en Claude Managed Agents en beta p&uacute;blica, permitiendo que los agentes de larga duraci&oacute;n retengan contexto y aprendizajes entre sesiones con una capa de memoria optimizada. Tambi&eacute;n lanz&oacute; el Advisor Tool en beta nativa en la Claude Platform.</p>
+      <p class="why">Agentes con estado persistente cambian el juego para automatizaciones recurrentes &mdash; onboarding, soporte, procesamiento de &oacute;rdenes &mdash; sin reprogramar contexto cada vez.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot - Anthropic Updates</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health reemplaza Fitbit: AI Health Coach con Gemini llega el 19 de mayo</h3>
+      <p class="what">Google reemplaza la app de Fitbit con &ldquo;Google Health&rdquo;, que incluye un AI Health Coach construido con Gemini. El coach analiza sue&ntilde;o, frecuencia card&iacute;aca, actividad y fotos de comidas para generar planes de fitness personalizados con recomendaciones diarias. Tambi&eacute;n lanz&oacute; Fitbit Air ($99.99), un wearable sin pantalla enfocado en tracking 24/7.</p>
+      <p class="why">Google est&aacute; construyendo el marketplace de salud+AI que conecta datos de cualquier wearable (incluyendo Apple Watch y Garmin) &mdash; la oportunidad est&aacute; en servicios profesionales que se integren a esta plataforma.</p>
+      <p class="source"><a href="https://9to5google.com/2026/05/07/google-health-app-fitbit/">9to5Google</a> &bull; <a href="https://blog.google/products-and-platforms/devices/fitbit/fitbit-personal-health-coach-updates-2026/">Google Blog</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 06/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
