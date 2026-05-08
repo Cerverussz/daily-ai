@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 7 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>7 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI lanza GPT-Realtime-2 y dos modelos de voz: razonamiento, traducci&oacute;n live y transcripci&oacute;n streaming</h3>
+      <p class="what">OpenAI lanz&oacute; tres modelos de audio en la Realtime API: GPT-Realtime-2 (primer modelo de voz con razonamiento nivel GPT-5, context window de 128K y tool calls en paralelo), GPT-Realtime-Translate (traducci&oacute;n live de 70+ idiomas a 13 idiomas de salida) y GPT-Realtime-Whisper (transcripci&oacute;n streaming en tiempo real). Zillow reporta un salto de 26 puntos en tasa de &eacute;xito de llamadas con GPT-Realtime-2 (de 69% a 95%).</p>
+      <p class="why">Si tu producto tiene soporte telef&oacute;nico, onboarding por voz, o usuarios multiidioma, estos modelos eliminan la necesidad de armar pipelines custom de STT + LLM + TTS.</p>
+      <p class="source"><a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/">OpenAI</a> &bull; <a href="https://techcrunch.com/2026/05/07/openai-launches-new-voice-intelligence-features-in-its-api/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza 10 templates de agentes financieros + integraci&oacute;n completa con Microsoft 365</h3>
+      <p class="what">Diez agent templates listos para producci&oacute;n en servicios financieros: pitchbooks, screening KYC, cierres contables mensuales. Se despliegan como plugins en Claude Cowork y Claude Code, o como cookbooks para Managed Agents. Adem&aacute;s, Claude ahora trabaja dentro de Excel, PowerPoint, Word y Outlook v&iacute;a add-ins nativos, con contexto persistente entre apps.</p>
+      <p class="why">El patr&oacute;n de templates verticales + integraci&oacute;n nativa con herramientas existentes es replicable: si construyes agentes para un nicho, esta es la arquitectura a seguir.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/finance-agents">Anthropic</a> &bull; <a href="https://fortune.com/2026/05/05/anthropic-wall-street-financial-services-agents-jamie-dimon/">Fortune</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Managed Agents a&ntilde;ade &ldquo;dreaming&rdquo;, outcomes y orquestaci&oacute;n multiagente</h3>
+      <p class="what">Tres features nuevos en beta p&uacute;blica: Outcomes define r&uacute;bricas de &eacute;xito con un grader que fuerza revisiones (mejora +10pp en tareas dif&iacute;ciles); orquestaci&oacute;n multiagente permite que un agente l&iacute;der delegue tareas a especialistas con su propio modelo, prompt y tools trabajando en paralelo; y webhooks notifican cuando una tarea termina. &ldquo;Dreaming&rdquo; (research preview) permite que un agente revise sesiones pasadas para encontrar patrones y auto-mejorar su memoria.</p>
+      <p class="why">Outcomes + multiagente es exactamente lo que necesitas para construir flujos complejos en tu producto sin orquestar manualmente cada paso.</p>
+      <p class="source"><a href="https://9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/">9to5Mac</a> &bull; <a href="https://thenewstack.io/anthropic-managed-agents-dreaming-outcomes/">The New Stack</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google cierra Project Mariner &mdash; la tech se integra en Gemini Agent y Chrome</h3>
+      <p class="what">Google cerr&oacute; oficialmente Project Mariner el 4 de mayo, su agente experimental de navegaci&oacute;n web de 17 meses. El proyecto pod&iacute;a llenar formularios, buscar vuelos y reservar hoteles usando visi&oacute;n por computadora, pero el costo computacional y la tasa de errores lo hicieron inviable como producto standalone. La tecnolog&iacute;a se integra en Gemini Agent y Chrome auto-browse antes de Google I/O 2026.</p>
+      <p class="why">Validaci&oacute;n de que los agentes web aut&oacute;nomos via screenshot/vision a&uacute;n no escalan en producci&oacute;n &mdash; si est&aacute;s evaluando este approach para tu producto, usa APIs directas o MCP en su lugar.</p>
+      <p class="source"><a href="https://www.androidauthority.com/google-project-mariner-shutdown-3664323/">Android Authority</a> &bull; <a href="https://www.digitaltrends.com/computing/google-pulls-the-plug-on-project-mariner-the-ai-agent-that-browsed-the-web-like-a-human/">Digital Trends</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI abre ChatGPT Ads Manager self-serve: sin m&iacute;nimo de gasto, ahora con CPC y tracking</h3>
+      <p class="what">OpenAI elimin&oacute; el m&iacute;nimo de $50K del piloto y lanz&oacute; un Ads Manager self-serve en beta para anunciantes en EE.UU. Incluye billing por CPC (adem&aacute;s de CPM), conversions API, tracking basado en pixel, y control directo de presupuesto, pujas y creativos. El objetivo de OpenAI: $2.5B en revenue publicitario este a&ntilde;o.</p>
+      <p class="why">Si vendes un producto digital o servicio profesional, ahora puedes hacer paid acquisition dentro de ChatGPT sin agencia ni presupuesto m&iacute;nimo &mdash; un canal nuevo con competencia a&uacute;n baja.</p>
+      <p class="source"><a href="https://openai.com/index/new-ways-to-buy-chatgpt-ads/">OpenAI</a> &bull; <a href="https://www.axios.com/2026/05/05/openai-self-serve-ad-platform">Axios</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Answer Engine Optimization: tu producto necesita ser descubrible por AI, no solo por Google</h3>
+      <p class="what">Con la expansi&oacute;n de ChatGPT Ads y usuarios que piden recomendaciones de software a plataformas AI en lugar de buscar en Google, el descubrimiento de productos se est&aacute; fragmentando. Startups que no optimizan para &ldquo;Answer Engine Optimization&rdquo; (AEO) est&aacute;n invisibles para compradores de alta intenci&oacute;n que ya no usan b&uacute;squeda tradicional.</p>
+      <p class="why">Si tu estrategia de adquisici&oacute;n depende 100% de SEO tradicional, necesitas adaptar tu contenido para ser citado por modelos de lenguaje, no solo indexado por crawlers.</p>
+      <p class="source"><a href="https://semnexus.com/how-to-launch-ai-app-2026/">SEM Nexus</a> &bull; <a href="https://startupnotes.eu/building-an-mvp-with-ai-in-2026/">Startup Notes</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic duplica rate limits de Claude Code y elimina throttling en horas pico</h3>
+      <p class="what">Tras firmar un acuerdo con SpaceX para usar toda la capacidad de Colossus 1 (+300MW, +220K GPUs NVIDIA), Anthropic duplic&oacute; los rate limits de 5 horas de Claude Code para planes Pro, Max, Team y Enterprise. Tambi&eacute;n elimin&oacute; la reducci&oacute;n de l&iacute;mites en horas pico para Pro y Max, y subi&oacute; los rate limits de la API de Opus. El volumen de API creci&oacute; 17x a&ntilde;o-sobre-a&ntilde;o.</p>
+      <p class="why">M&aacute;s capacidad = menos interrupciones durante sesiones largas de coding &mdash; la fricci&oacute;n principal de Claude Code en las &uacute;ltimas semanas queda resuelta.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/higher-limits-spacex">Anthropic</a> &bull; <a href="https://www.engadget.com/2166315/anthropic-is-doubling-claude-code-rate-limits-after-deal-with-spacex/">Engadget</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Nuevos conectores Claude: Adobe, Blender, Spotify, Uber, Instacart y m&aacute;s</h3>
+      <p class="what">Anthropic expandi&oacute; los conectores de Claude a aplicaciones consumer y creativas: Adobe, Blender, Ableton, Affinity, Autodesk Fusion para flujos de dise&ntilde;o, y AllTrails, Instacart, Audible, Tripadvisor, Uber y Spotify como integraciones de apps. Los conectores financieros incluyen Dun &amp; Bradstreet, Moody&rsquo;s, Verisk y otros.</p>
+      <p class="why">Claude se est&aacute; posicionando como la capa de orquestaci&oacute;n universal v&iacute;a MCP &mdash; si tu servicio tiene API, exponer un conector MCP se convierte en canal de distribuci&oacute;n.</p>
+      <p class="source"><a href="https://simonwillison.net/2026/May/6/code-w-claude-2026/">Simon Willison</a> &bull; <a href="https://blakecrosley.com/blog/code-with-claude-sf-2026-recap">Code with Claude Recap</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google lanza Fitbit Air ($99) y Google Health Coach con Gemini AI a $9.99/mes</h3>
+      <p class="what">Google present&oacute; Fitbit Air, un tracker sin pantalla a $99 (edici&oacute;n Stephen Curry a $129) con monitoreo 24/7 de frecuencia card&iacute;aca, SpO2, temperatura, HRV y sue&ntilde;o. Simult&aacute;neamente rebrandearon la app Fitbit a &ldquo;Google Health&rdquo; con un coach AI potenciado por Gemini que combina coaching de fitness, sue&ntilde;o y bienestar personalizado. Disponible el 19 de mayo, compatible con Apple Watch, Oura y Garmin.</p>
+      <p class="why">La estrategia cross-platform de Google Health abre oportunidades para integraciones de terceros: si construyes una app de coaching o marketplace de salud, este ecosistema ser&aacute; el que tus usuarios ya usen.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/">TechCrunch</a> &bull; <a href="https://www.sportstechatlanta.com/sportstechnologyblog/2026/5/7/google-goes-all-in-on-health-fitbit-air-launches-with-a-stephen-curry-edition-as-the-app-gets-a-new-name">Sports Tech Atlanta</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 07/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
