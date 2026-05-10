@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 9 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>9 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Claude Code Routines: automaciones async en la nube que generan PRs mientras duermes</h3>
+      <p class="what">Anthropic lanz&oacute; Routines en Code with Claude 2026: configuraciones guardadas (prompt + repos + conectores) que se ejecutan en infraestructura cloud de Anthropic con triggers por schedule, API HTTP o eventos GitHub. Puedes programar revisiones nocturnas, refactors semanales o respuestas autom&aacute;ticas a PRs sin tener tu laptop encendida.</p>
+      <p class="why">Esto convierte a Claude Code en un CI/CD inteligente: puedes automatizar tareas repetitivas de tu codebase (migraciones, cleanup, code review) sin construir tooling custom.</p>
+      <p class="source"><a href="https://claude.com/blog/introducing-routines-in-claude-code">Anthropic Blog</a> &bull; <a href="https://simonwillison.net/2026/May/6/code-w-claude-2026/">Simon Willison Live Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; GitHub open-sources Spec Kit: spec-driven development para 29+ agentes AI</h3>
+      <p class="what">GitHub liber&oacute; Spec Kit (90K+ stars), un toolkit que invierte el paradigma: escribes una especificaci&oacute;n estructurada (PRD como source of truth) y los agentes AI generan, testean y validan c&oacute;digo contra ella. Compatible con Claude Code, Copilot, Gemini CLI y 26 agentes m&aacute;s.</p>
+      <p class="why">Si est&aacute;s usando AI para coding en producci&oacute;n, esto mata el &ldquo;vibe coding&rdquo; y te da un framework repetible donde la spec gobierna la implementaci&oacute;n, no al rev&eacute;s.</p>
+      <p class="source"><a href="https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/">GitHub Blog</a> &bull; <a href="https://github.com/github/spec-kit">GitHub Repo</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; ServiceNow Build Agent llega a Cursor, Claude Code y GitHub Copilot</h3>
+      <p class="what">ServiceNow hizo GA su Build Agent en ServiceNow Studio y extendi&oacute; sus skills v&iacute;a SDK a Cursor, Windsurf, Claude Code y Copilot. Los desarrolladores pueden construir apps ServiceNow desde cualquier IDE manteniendo gobernanza y contexto de plataforma completo, powered by Claude como modelo default.</p>
+      <p class="why">Patr&oacute;n a seguir para cualquier plataforma enterprise: exponer tus APIs como skills de agentes AI en los IDEs donde ya est&aacute;n los devs, en vez de forzar un IDE propio.</p>
+      <p class="source"><a href="https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Build-Agent-now-works-inside-every-major-AI-coding-tool-governed-by-default/default.aspx">ServiceNow Newsroom</a> &bull; <a href="https://www.cio.com/article/4124222/servicenow-embeds-anthropic-claude-as-its-default-build-agent-model.html">CIO</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Claude Managed Agents: &ldquo;Dreaming&rdquo; permite a agentes aprender de sus errores entre sesiones</h3>
+      <p class="what">Anthropic lanz&oacute; tres features para Managed Agents: Dreaming (research preview) revisa sesiones pasadas para extraer patrones, errores recurrentes y preferencias de equipo, curando memorias autom&aacute;ticamente. Multiagent Orchestration permite que un agente l&iacute;der delegue sub-tareas a especialistas con modelos y tools propios, trabajando en paralelo sobre un filesystem compartido.</p>
+      <p class="why">Si est&aacute;s construyendo agentes con estado para tu producto, esto resuelve el problema de &ldquo;memoria a largo plazo&rdquo; y paralelismo sin tener que armar la orquestaci&oacute;n a mano.</p>
+      <p class="source"><a href="https://claude.com/blog/new-in-claude-managed-agents">Anthropic Blog</a> &bull; <a href="https://9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/">9to5Mac</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Remote Agents en Claude Code: controla tu laptop desde el m&oacute;vil</h3>
+      <p class="what">Anunciado en Code with Claude 2026, Remote Agents permite iniciar y monitorear sesiones de Claude Code en tu computadora desde tu tel&eacute;fono. Combinado con Routines, puedes aprobar PRs, revisar resultados y lanzar tareas mientras est&aacute;s fuera del escritorio.</p>
+      <p class="why">Para founders que trabajan solos, esto cierra el loop de &ldquo;el agente trabaja, t&uacute; supervisas desde cualquier lugar&rdquo; sin necesitar infra adicional.</p>
+      <p class="source"><a href="https://simonwillison.net/2026/May/6/code-w-claude-2026/">Simon Willison</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Spec-Driven Development se consolida como el workflow de producci&oacute;n para founders t&eacute;cnicos</h3>
+      <p class="what">Con 9+ herramientas maduras (Kiro, BMAD, GSD, GitHub Spec Kit), el paradigma de spec-driven development se consolida en mayo 2026: defines qu&eacute; construir en un documento estructurado, y m&uacute;ltiples agentes AI generan implementaci&oacute;n production-ready. Equipos de 2 personas env&iacute;an MVPs funcionales en d&iacute;as, no meses.</p>
+      <p class="why">Si todav&iacute;a est&aacute;s &ldquo;chateando&rdquo; con AI para codear, el salto a spec-driven es el equivalente de pasar de scripts manuales a CI/CD: mismo esfuerzo, resultados 10x m&aacute;s predecibles.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/05/08/9-best-ai-tools-for-spec-driven-development-in-2026-kiro-bmad-gsd-and-more-compare/">MarkTechPost</a> &bull; <a href="https://blogging5317.wordpress.com/2026/05/08/time-to-market-with-ai-powered-mvps/">Time-to-Market AI MVPs</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Code with Claude 2026: Anthropic duplica rate limits y anuncia partnership con SpaceX</h3>
+      <p class="what">En su conferencia de desarrolladores (May 6, SF), Anthropic duplic&oacute; los l&iacute;mites de uso de Claude Code para Pro, Max, Team y Enterprise, elimin&oacute; reducciones en horas pico, y anunci&oacute; el uso de la capacidad completa del datacenter Colossus de SpaceX. El volumen de API creci&oacute; 17x year-over-year.</p>
+      <p class="why">M&aacute;s headroom para sesiones largas de coding sin throttling significa que puedes confiar en Claude Code para refactors grandes sin quedarte sin tokens a mitad de tarea.</p>
+      <p class="source"><a href="https://simonwillison.net/2026/May/6/code-w-claude-2026/">Simon Willison Live Blog</a> &bull; <a href="https://every.to/chain-of-thought/inside-anthropic-s-2026-developer-conference">Every.to</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code Desktop redise&ntilde;ado: sesiones paralelas, SSH y terminal integrada</h3>
+      <p class="what">La app de escritorio de Claude Code recibe un redise&ntilde;o mayor: sidebar de sesiones, workspace con drag-and-drop, terminal y editor de archivos integrados, diffs m&aacute;s r&aacute;pidos, previews expandidos y soporte SSH en Mac. Orientado a correr m&uacute;ltiples tareas en paralelo sin salir de la app.</p>
+      <p class="why">Si usas Claude Code como tu herramienta principal de desarrollo, el multi-session elimina el cuello de botella de &ldquo;un agente a la vez&rdquo; para proyectos con m&uacute;ltiples workstreams.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot - Claude Code Updates</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Design: nueva herramienta visual para prototipos, slides y one-pagers</h3>
+      <p class="what">Anthropic Labs lanz&oacute; Claude Design, un producto que permite colaborar con Claude para crear outputs visuales: dise&ntilde;os de UI, prototipos interactivos, presentaciones y documentos de una p&aacute;gina. Integrado directamente en el ecosistema Claude.</p>
+      <p class="why">Para founders t&eacute;cnicos que necesitan mockups r&aacute;pidos o decks para investors sin depender de un dise&ntilde;ador, esto cierra el gap entre idea y visual.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot - Claude Updates</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Google lanza AI Health Coach con Gemini + Fitbit Air screenless a $9.99/mes</h3>
+      <p class="what">Google rebrandea Fitbit como &ldquo;Google Health&rdquo; y lanza un AI Health Coach powered by Gemini que integra datos de wearables, Health Connect, Apple Health y registros m&eacute;dicos en un solo lugar. El nuevo Fitbit Air ($99, screenless, 7 d&iacute;as de bater&iacute;a) es cross-platform y el coaching AI personalizado sale el 19 de mayo a $9.99/mes.</p>
+      <p class="why">Google est&aacute; consolidando el modelo de &ldquo;hardware barato + suscripci&oacute;n AI premium&rdquo; en salud; si construyes en este espacio, la integraci&oacute;n con Apple Health abre un mercado cross-platform real.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/">TechCrunch</a> &bull; <a href="https://www.cnn.com/2026/05/07/tech/google-ai-health-fitbit">CNN</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 09/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
