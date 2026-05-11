@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 10 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>10 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic lanza 10 agentes pre-construidos para finanzas + integración nativa con Microsoft 365</h3>
+      <p class="what">Anthropic presentó una librería de 10 agentes listos para producción que automatizan los workflows más pesados en finanzas: pitchbooks, KYC, credit memos, cierres mensuales y auditorías. Además, Claude ahora funciona dentro de Excel, PowerPoint y Word vía add-ins nativos de Microsoft 365, con Outlook próximamente.</p>
+      <p class="why">El patrón de "agente vertical + integración con herramientas existentes" es el playbook a copiar si estás construyendo agentes para cualquier industria desde tu producto.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/finance-agents">Anthropic</a> &bull; <a href="https://fortune.com/2026/05/05/anthropic-wall-street-financial-services-agents-jamie-dimon/">Fortune</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Snyk integra Claude para seguridad de código; Opsera lleva DevSecOps agents a Cursor</h3>
+      <p class="what">Snyk anunció la integración de los modelos Claude en su plataforma AI Security, permitiendo escanear y corregir vulnerabilidades con Opus 4.7. En paralelo, Opsera embebe sus DevSecOps Agents dentro de Cursor IDE para que el código generado por IA cumpla estándares enterprise de seguridad y compliance.</p>
+      <p class="why">La capa de seguridad automatizada sobre coding assistants ya no es opcional; si tu producto genera código, necesitas este tipo de guardrails.</p>
+      <p class="source"><a href="https://sdtimes.com/ai/may-8-2026-ai-updates-from-the-past-week-coder-agents-launch-snyk-claude-partnership-opsera-cursor-partnership-and-more/">SD Times</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>IBM Think 2026: watsonx Orchestrate para multi-agente y Concert para operaciones inteligentes</h3>
+      <p class="what">En su conferencia anual Think, IBM presentó la nueva generación de watsonx Orchestrate para orquestación multi-agente enterprise, junto con IBM Concert para operaciones inteligentes y Confluent para datos en tiempo real hacia AI. Son herramientas diseñadas para empresas que ya operan con agentes AI en producción.</p>
+      <p class="why">Si vendes B2B, estos lanzamientos validan que la orquestación multi-agente es el estándar enterprise que viene; tu producto debería hablar ese lenguaje.</p>
+      <p class="source"><a href="https://newsroom.ibm.com/2026-05-05-think-2026-ibm-delivers-the-blueprint-for-the-ai-operating-model-as-the-ai-divide-widens">IBM Newsroom</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini 3.1 Flash-Lite GA: el modelo más barato de Google, 2.5x más rápido</h3>
+      <p class="what">Google lanzó Gemini 3.1 Flash-Lite en disponibilidad general el 7 de mayo. Es multimodal (texto, imagen, video, audio, PDF), 2.5x más rápido que Flash 2.5 en time-to-first-token, con thinking levels configurables, a solo $0.25/M tokens de input.</p>
+      <p class="why">A ese precio y velocidad, es el candidato ideal para endpoints de alto volumen en tu app: clasificación, moderación, extracción de datos, o el tier barato de tu pipeline de agentes.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/">Google Blog</a> &bull; <a href="https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available">Google Cloud</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Prismatic Skills: plugin open-source para integrar APIs externas desde Claude Code</h3>
+      <p class="what">Prismatic lanzó un plugin open-source para Claude Code que permite a los developers construir y desplegar integraciones con APIs externas directamente desde el workflow de Claude Code. Reduce el ciclo de integración de días a minutos para conectores comunes.</p>
+      <p class="why">Si tu producto es un marketplace o SaaS que conecta con terceros, este patrón de "integración como skill de tu coding agent" acelera dramáticamente el shipping.</p>
+      <p class="source"><a href="https://sdtimes.com/ai/may-8-2026-ai-updates-from-the-past-week-coder-agents-launch-snyk-claude-partnership-opsera-cursor-partnership-and-more/">SD Times</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Managed Agents añade "dreaming": auto-mejora entre sesiones</h3>
+      <p class="what">Anthropic introdujo una feature experimental llamada "dreaming" para Managed Agents, que permite a los agentes revisar sesiones pasadas para encontrar patrones, auto-mejorar su comportamiento y extender su memoria de forma autónoma. Está disponible como research preview.</p>
+      <p class="why">Los agentes que aprenden entre sesiones son el paso hacia asistentes que realmente se adaptan a tu codebase o dominio sin re-prompting manual constante.</p>
+      <p class="source"><a href="https://9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/">9to5Mac</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 La nueva realidad del MVP en 2026: una tarde para lo que antes era un mes</h3>
+      <p class="what">Según análisis de Q2 2026, el mismo MVP que tomaba 3-4 semanas en 2018 ahora se construye en una tarde con herramientas como Claude Code, Cursor y Bolt. El mercado se divide en tres tests simultáneos: quién shipea modelos usables más rápido, quién controla compute, y quién convierte lanzamientos en comportamiento de negocio real.</p>
+      <p class="why">El reto ya no es construir el MVP sino encontrar distribución; tu estrategia de go-to-market importa más que tu stack técnico.</p>
+      <p class="source"><a href="https://startupnotes.eu/building-an-mvp-with-ai-in-2026/">Startup Notes</a> &bull; <a href="https://blog.mean.ceo/ai-product-launches-news-may-2026/">Mean CEO</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Answer Engine Optimization: la nueva forma de adquirir usuarios en 2026</h3>
+      <p class="what">Los compradores high-intent están bypasseando buscadores y pidiendo recomendaciones directamente a plataformas AI. Para lanzar un producto tech en 2026, tu marketing debe enfocarse en AEO (Answer Engine Optimization) para aparecer cuando los AI assistants recomienden soluciones.</p>
+      <p class="why">Si tu marketplace o SaaS no es "citeable" por modelos de lenguaje, estás invisible para el canal de descubrimiento que más crece.</p>
+      <p class="source"><a href="https://semnexus.com/how-to-launch-ai-app-2026/">SEM Nexus</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Code w/ Claude 2026: Claude Code duplica límites, nueva desktop app, y Remote Agents</h3>
+      <p class="what">En el evento Code w/ Claude (6 de mayo), Anthropic anunció: límites de uso duplicados para Pro/Max/Team/Enterprise gracias a 220K+ GPUs de SpaceX Colossus, desktop app rediseñada con sesiones paralelas y SSH, Remote Agents para controlar tu laptop desde el teléfono, Code Review integrado, y CI auto-fix para PRs.</p>
+      <p class="why">El doble de capacity + remote agents cambia el workflow diario: ahora puedes lanzar tareas de coding desde el móvil y revisarlas cuando terminen.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/higher-limits-spacex">Anthropic</a> &bull; <a href="https://www.knightli.com/en/2026/05/09/anthropic-claude-code-higher-limits-spacex-compute/">Knightli</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Security: escaneo de vulnerabilidades en beta pública para Enterprise</h3>
+      <p class="what">Claude Security entra en beta pública para clientes Enterprise, permitiendo escanear código, detectar vulnerabilidades, y generar fixes propuestos usando Opus 4.7. Es la primera oferta nativa de security scanning integrada directamente en un AI coding assistant.</p>
+      <p class="why">Security scanning nativo en tu IDE/terminal elimina la fricción de herramientas separadas y reduce el tiempo entre escribir código vulnerable y corregirlo.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Mercado Libre apunta a 90% de coding autónomo con Claude Code para Q3 2026</h3>
+      <p class="what">En el evento Code w/ Claude, se reveló que Mercado Libre (23,000 ingenieros) y Shopify son clientes de Claude Code, con Mercado Libre apuntando a que el 90% de su coding sea autónomo para Q3 2026. La API de Anthropic creció 17x interanual en volumen.</p>
+      <p class="why">Cuando un marketplace de 23K ingenieros apuesta así por AI coding, valida que la automatización de desarrollo no es experimental sino la estrategia dominante para plataformas a escala.</p>
+      <p class="source"><a href="https://www.artiverse.ca/highlights-from-anthropics-code-w-claude-2026-conference/">Artiverse</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health reemplaza a Fitbit app + Fitbit Air con AI coach integrado</h3>
+      <p class="what">Google rebautiza la app de Fitbit como "Google Health" (rollout desde 19 de mayo) y lanza Fitbit Air ($99), un tracker sin pantalla con edición Stephen Curry. La app incluye un AI coach que analiza sueño, fitness y wellness, detecta tendencias y sincroniza datos con Apple Health e historiales médicos en EE.UU.</p>
+      <p class="why">Google entrando fuerte en health data + AI coaching abre el mercado para apps de bienestar que consuman esos datos vía APIs para servicios especializados de nutrición o coaching deportivo.</p>
+      <p class="source"><a href="https://www.sportstechatlanta.com/sportstechnologyblog/2026/5/7/google-goes-all-in-on-health-fitbit-air-launches-with-a-stephen-curry-edition-as-the-app-gets-a-new-name">Sports Tech Atlanta</a> &bull; <a href="https://www.cnn.com/2026/05/07/tech/google-ai-health-fitbit">CNN</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 10/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
