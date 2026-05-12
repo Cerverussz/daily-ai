@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 11 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>11 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Platform llega a AWS: API nativa con billing integrado y Managed Agents</h3>
+      <p class="what">Anthropic lanzó Claude Platform on AWS en disponibilidad general, dando acceso a la experiencia completa de la Claude Platform (Managed Agents, code execution, web tools, Skills, MCP, prompt caching, batch) directamente desde cuentas AWS existentes. Autenticación vía IAM, auditoría por CloudTrail y facturación unificada contra compromisos AWS existentes.</p>
+      <p class="why">Si tu backend ya vive en AWS, puedes integrar Claude Opus 4.7 y agentes managed sin gestionar otra cuenta ni otro billing &mdash; reduce fricción real para poner agentes AI en producción.</p>
+      <p class="source"><a href="https://claude.com/blog/claude-platform-on-aws">Anthropic Blog</a> &bull; <a href="https://aws.amazon.com/about-aws/whats-new/2026/05/claude-platform-aws/">AWS</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Mistral AI lanza Workflows: orquestación durable para AI en producción</h3>
+      <p class="what">Mistral presentó Workflows en public preview dentro de Mistral Studio, un motor de orquestación construido sobre Temporal que permite mover procesos AI de POC a producción con ejecución durable, human-in-the-loop, y observabilidad nativa. Los workflows se escriben en Python y se publican a Le Chat para que cualquiera en la organización los dispare.</p>
+      <p class="why">Si necesitas orquestar agentes AI con pasos de aprobación humana y tolerancia a fallos, esto es infraestructura seria lista para usar en vez de armarla con duct tape.</p>
+      <p class="source"><a href="https://mistral.ai/news/workflows">Mistral AI</a> &bull; <a href="https://venturebeat.com/technology/mistral-ai-launches-workflows-a-temporal-powered-orchestration-engine-already-running-millions-of-daily-executions">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Adobe Firefly AI Assistant entra en beta p&uacute;blica: agente creativo cross-app</h3>
+      <p class="what">Adobe abrió la beta pública de Firefly AI Assistant, un agente que ejecuta workflows multi-paso a través de Photoshop, Lightroom, Premiere y más desde una interfaz conversacional. Incluye Creative Skills (workflows prefabricados para batch editing, retoque, generación de assets sociales) y acceso a 60+ herramientas pro.</p>
+      <p class="why">Si tu producto genera contenido visual o necesitas assets creativos, esto automatiza tareas que antes requerían un diseñador dedicado o horas de trabajo manual.</p>
+      <p class="source"><a href="https://blog.adobe.com/en/publish/2026/04/27/firefly-ai-assistant-public-beta">Adobe Blog</a> &bull; <a href="https://techcrunch.com/2026/04/15/adobes-new-firefly-ai-assistant-can-use-creative-cloud-apps-to-complete-tasks/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Android Show ma&ntilde;ana: Android 17, Gemini 4 y AI on-device como eje central</h3>
+      <p class="what">Google confirma The Android Show: I/O Edition para el 12 de mayo, donde se espera Android 17 con features de AI agéntica nativa, Gemini 4 con razonamiento mejorado e integración profunda en servicios Google, y avances en Android XR. Es la primera mitad de un Google I/O dividido en dos actos (el segundo el 19 de mayo).</p>
+      <p class="why">Si desarrollas para Android, mañana se define el roadmap de AI on-device para el resto del año &mdash; Gemini 4 + AICore podrían cambiar cómo diseñas features offline.</p>
+      <p class="source"><a href="https://easternherald.com/2026/05/11/google-android-show-2026-android-17-gemini-ai/">Eastern Herald</a> &bull; <a href="https://www.androidauthority.com/what-to-expect-from-google-io-2026-3664979/">Android Authority</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot migra a billing por uso el 1 de junio: lo que cambia</h3>
+      <p class="what">GitHub anunció que todos los planes de Copilot migran a AI Credits basados en consumo de tokens el 1 de junio. Code completions y Next Edit Suggestions siguen incluidos sin costo adicional, pero features agénticas (workflows, code review) consumirán créditos. Usar Claude como modelo agota créditos más rápido que Gemini.</p>
+      <p class="why">Si usas Copilot con Claude como modelo, calcula tu consumo real antes del 1 de junio &mdash; heavy users podrían necesitar saltar de Pro ($10) a Pro+ ($39) o considerar Claude Code directamente.</p>
+      <p class="source"><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a> &bull; <a href="https://visualstudiomagazine.com/articles/2026/04/27/devs-sound-off-on-usage-based-copilot-pricing-change-you-will-get-less-but-pay-the-same-price.aspx">Visual Studio Magazine</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google detecta primer zero-day creado con AI: hackers usaron OpenClaw para exploit masivo</h3>
+      <p class="what">Google Threat Intelligence confirmó que un grupo criminal usó modelos AI y el framework agéntico OpenClaw para descubrir y explotar una vulnerabilidad zero-day que bypasea 2FA en una herramienta de administración web. Google cree haber frustrado el ataque masivo planeado antes de su despliegue.</p>
+      <p class="why">El primer zero-day confirmado creado con AI marca un punto de inflexión &mdash; si expones paneles admin, revisa tu 2FA y asume que los atacantes ya usan agentes AI para encontrar vulnerabilidades.</p>
+      <p class="source"><a href="https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access">Google Cloud Blog</a> &bull; <a href="https://www.cnbc.com/2026/05/11/google-thwarts-effort-hacker-group-use-ai-mass-exploitation-event.html">CNBC</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 SnackPro: familia construye app AI para alergias alimentarias que ya ayuda a miles</h3>
+      <p class="what">SnackPro es una app que usa AI para escanear packaging de alimentos, traducir ingredientes en 30+ idiomas, alertar sobre alérgenos cruzados y compartir info entre padres e hijos. Fue creada por una familia tras experiencias reales con reacciones alérgicas, y ya tiene miles de usuarios activos.</p>
+      <p class="why">Caso perfecto de founder técnico resolviendo un problema personal con AI &mdash; nicho específico, funcionalidad clara, y adopción orgánica sin necesidad de gran presupuesto de marketing.</p>
+      <p class="source"><a href="https://hipther.com/latest-news/2026/05/11/111518/ai-dispatch-daily-trends-and-innovations-may-11-2026-nvidia-gmail-rpcs3-and-snackpro/">Hipther / AI Dispatch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code desktop redise&ntilde;ado: sesiones paralelas, terminal integrado y editor de archivos</h3>
+      <p class="what">Anthropic rediseñó la app de escritorio de Claude Code con un sidebar de sesiones para correr múltiples agentes en paralelo, drag-and-drop de workspace, terminal integrado, editor de archivos in-app, visor de diffs más rápido, y previews de HTML/PDF. Las sesiones se archivan automáticamente cuando su PR se mergea.</p>
+      <p class="why">Si usas Claude Code como tu herramienta principal de coding, el nuevo diseño elimina el context-switch constante entre terminal, editor y navegador.</p>
+      <p class="source"><a href="https://claude.com/blog/claude-code-desktop-redesign">Anthropic Blog</a> &bull; <a href="https://venturebeat.com/orchestration/we-tested-anthropics-redesigned-claude-code-desktop-app-and-routines-heres-what-enterprises-should-know">VentureBeat</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Managed Agents: dreaming, outcomes y orquestaci&oacute;n multiagente</h3>
+      <p class="what">Anthropic lanzó tres capacidades para Managed Agents: Dreaming (revisa sesiones pasadas para extraer patrones y auto-mejorar), Outcomes (rubrics de éxito con grader independiente que evalúa y pide correcciones), y orquestación multiagente (un agente líder delega a especialistas con su propio modelo y tools). Harvey reporta 6x mejora en completion rates con dreaming.</p>
+      <p class="why">Dreaming convierte a los agentes en sistemas que aprenden entre sesiones sin fine-tuning &mdash; si construyes agentes para tareas repetitivas (onboarding, procesamiento de órdenes), esto cambia el juego.</p>
+      <p class="source"><a href="https://claude.com/blog/new-in-claude-managed-agents">Anthropic Blog</a> &bull; <a href="https://9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/">9to5Mac</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic firma con SpaceX: 300MW y 220K GPUs de capacidad adicional</h3>
+      <p class="what">Anthropic firmó un acuerdo para usar toda la capacidad compute del data center Colossus 1 de SpaceX: más de 300 megawatts y 220,000+ GPUs NVIDIA disponibles dentro del mes. La capacidad adicional beneficiará directamente a suscriptores de Claude Pro y Claude Max.</p>
+      <p class="why">Más capacidad = menos rate limits y throttling para usuarios Pro/Max, justo cuando los agentes de larga duración empiezan a consumir compute serio.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health + Fitbit Air + AI Health Coach: el ecosistema AI de salud se consolida</h3>
+      <p class="what">Google rebrandea la app Fitbit como Google Health (rollout desde el 19 de mayo) e integra un AI Health Coach powered by Gemini que ofrece planes de fitness personalizados, análisis de datos médicos y chat 24/7 por $9.99/mes. Fitbit Air, el tracker más pequeño hasta ahora ($99), llega el 26 de mayo con 3 meses gratis de Premium.</p>
+      <p class="why">Google está armando el stack completo de health AI (wearable + app + coach) &mdash; si construyes en el espacio de wellness o coaching deportivo, este es el baseline contra el que compites.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/">TechCrunch</a> &bull; <a href="https://blog.google/products-and-platforms/products/google-health/google-health-fitbit/">Google Blog</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 11/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
