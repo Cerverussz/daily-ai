@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 12 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>12 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Alibaba integra Qwen AI en Taobao: shopping conversacional sobre 4B+ productos</h3>
+      <p class="what">Alibaba conectó su plataforma Qwen (300M MAU) con Taobao y Tmall, permitiendo buscar, comparar y comprar productos vía conversación en lugar de keywords. Incluye pruebas virtuales de ropa, tracking de precios a 30 días y gestión de logística post-venta, todo manejado por el agente AI.</p>
+      <p class="why">Es el caso más ambicioso de agentic commerce en producción a escala; si construyes un marketplace, este es el modelo de UX conversacional que tus usuarios van a esperar.</p>
+      <p class="source"><a href="https://technode.com/2026/05/11/alibaba-to-merge-qwen-ai-with-taobao-in-push-for-new-ai-powered-conversational-shopping-experience/">TechNode</a> &bull; <a href="https://thenextweb.com/news/alibaba-integrates-qwen-ai-with-taobao">The Next Web</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI lanza Daybreak: plataforma de ciberdefensa autónoma con Codex Security</h3>
+      <p class="what">Daybreak construye threat models editables desde tu repositorio, analiza attack paths reales, valida vulnerabilidades en entornos aislados y prioriza solo las explotables. Ya corrigió 3,000+ issues críticos en 1,000+ proyectos open-source. Integra con Akamai, Cisco, CrowdStrike, Cloudflare y Palo Alto Networks.</p>
+      <p class="why">Si mantienes un producto en producción, Daybreak puede convertirse en tu primer filtro de seguridad automatizado antes de cada release.</p>
+      <p class="source"><a href="https://openai.com/daybreak/">OpenAI</a> &bull; <a href="https://thehackernews.com/2026/05/openai-launches-daybreak-for-ai-powered.html">The Hacker News</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Circle lanza Agent Stack: infraestructura financiera para agentes AI autónomos</h3>
+      <p class="what">Suite completa para que agentes AI manejen dinero: Agent Wallets (wallets con policy controls), nanopagos USDC desde $0.000001 sin gas fees, un Agent Marketplace donde agentes descubren y pagan servicios de otros agentes, y Circle CLI para automatizar todo programáticamente.</p>
+      <p class="why">Si estás construyendo agentes que necesitan cobrar, pagar o mover dinero entre servicios, esto elimina meses de integración de pagos.</p>
+      <p class="source"><a href="https://www.circle.com/blog/introducing-circle-agent-stack-financial-infrastructure-for-the-agentic-economy">Circle Blog</a> &bull; <a href="https://www.blockhead.co/2026/05/12/circle-launches-agent-stack-to-put-usdc-at-the-centre-of-machine-to-machine-payments/">Blockhead</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Thinking Machines Lab presenta Interaction Models: AI que escucha mientras habla</h3>
+      <p class="what">La startup de Mira Murati lanzó TML-Interaction-Small (276B params MoE, 12B activos), un modelo multimodal que procesa audio, video y texto en chunks de 200ms eliminando el turno-basado tradicional. Latencia de turn-taking bajo 0.4s, superando a Gemini Live (0.57s) y GPT-Realtime (1.18s).</p>
+      <p class="why">Para cualquier producto con interfaz de voz o video en tiempo real, esta arquitectura define el nuevo estándar de responsividad que los usuarios van a demandar.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/11/thinking-machines-wants-to-build-an-ai-that-actually-listens-while-it-talks/">TechCrunch</a> &bull; <a href="https://thinkingmachines.ai/blog/interaction-models/">Thinking Machines Lab</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot migra a facturación por uso con AI Credits el 1 de junio</h3>
+      <p class="what">Todos los planes Copilot cambian a billing basado en GitHub AI Credits (1 credit = $0.01 USD). Pro+ incluye $39/mes en créditos, Business $19/user, Enterprise $39/user. Code completions y next edit suggestions siguen ilimitados; lo que consume créditos es Chat, CLI, cloud agent y Spaces.</p>
+      <p class="why">Si tu equipo usa Copilot intensivamente con modelos premium, revisa tu consumo proyectado antes del 1 de junio para evitar sorpresas en facturación.</p>
+      <p class="source"><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a> &bull; <a href="https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals">GitHub Docs</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Pit (de founders de Voi): AI que aprende cómo opera tu empresa y genera software custom</h3>
+      <p class="what">Pit, fundada por el CEO de Voi (Fredrik Hjelm) y respaldada por a16z con $16M seed, construye AI enterprise que aprende los procesos internos de cada cliente y genera software a medida para automatizarlos. No es un chatbot: es un sistema que entiende la lógica de negocio antes de escribir código.</p>
+      <p class="why">El modelo de "AI que primero entiende tu negocio, después automatiza" es replicable para verticales específicos como fitness, salud o servicios profesionales.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/voi-founders-new-ai-startup-pit-has-become-the-latest-rising-star-out-of-stockholm/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 El mercado de AI coding tools llega a $12.8B: 90% de devs profesionales los usan a diario</h3>
+      <p class="what">El mercado se triplicó desde 2024 ($5.1B). Cursor supera 1M usuarios con ~$2B ARR, Copilot mantiene 42% de market share. El stack dominante es Cursor para edición diaria + Claude Code para refactors complejos en terminal, o Copilot en IDE + Claude Code en terminal.</p>
+      <p class="why">Si estás construyendo developer tools o integraciones, este mercado es la validación de que los devs pagan por AI que los hace más productivos — la oportunidad está en los nichos verticales.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/cursor-vs-claude-code-vs-github-copilot-2026-ultimate-comparison">NxCode</a> &bull; <a href="https://scrimba.com/articles/best-ai-coding-assistants-2026/">Scrimba</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Platform on AWS ya disponible: API nativa de Anthropic con billing y IAM de AWS</h3>
+      <p class="what">AWS es el primer cloud provider en ofrecer acceso directo a la plataforma nativa de Claude. Incluye Messages API, Files API, Managed Agents, code execution, MCP connector, prompt caching y batch processing, todo con autenticación IAM, billing consolidado y CloudTrail para auditoría. Disponible en 17 regiones globales.</p>
+      <p class="why">Si ya estás en AWS, puedes usar Claude sin gestionar cuentas separadas de Anthropic — simplifica enormemente la integración en producción.</p>
+      <p class="source"><a href="https://aws.amazon.com/about-aws/whats-new/2026/05/claude-platform-aws/">AWS</a> &bull; <a href="https://claude.com/blog/claude-platform-on-aws">Claude Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic duplica rate limits de Claude Code y sube límites de API para Opus</h3>
+      <p class="what">Anthropic duplicó los límites de 5 horas para Claude Code en planes Pro, Max, Team y Enterprise, eliminó reducciones en horas pico para Pro y Max, y subió los límites de API para Opus gracias a nueva capacidad de compute con SpaceX Colossus.</p>
+      <p class="why">Si Claude Code se te quedaba corto en sesiones largas de refactoring o debugging, ahora tienes el doble de runway antes de tocar el rate limit.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a> &bull; <a href="https://simonwillison.net/2026/May/6/code-w-claude-2026/">Simon Willison</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Managed Agents: Dreaming, multi-agente y Outcomes en beta pública</h3>
+      <p class="what">Tres nuevas capacidades para agentes gestionados: Dreaming permite al agente revisar sesiones pasadas para auto-mejorarse; multi-agent orchestration delega subtareas a agentes especializados en paralelo con filesystem compartido; Outcomes evalúa si el output del agente cumple una rúbrica de calidad antes de entregarlo.</p>
+      <p class="why">Dreaming + Outcomes resuelven el problema de consistencia en agentes de larga duración — exactamente lo que necesitas si estás automatizando flujos complejos en tu producto.</p>
+      <p class="source"><a href="https://www.mindstudio.ai/blog/code-with-claude-2026-new-agent-features">MindStudio</a> &bull; <a href="https://www.lennysnewsletter.com/p/code-with-claude-the-5-biggest-updates">Lenny's Newsletter</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health reemplaza Fitbit el 19 de mayo: AI coach con Gemini a $9.99/mes</h3>
+      <p class="what">Google rebautiza la app Fitbit como Google Health e integra un AI Health Coach powered by Gemini que analiza datos de wearables, registros médicos e inputs del usuario para dar planes de fitness personalizados, resúmenes de salud y un chatbot 24/7. Compatible con Fitbit, Pixel Watch y pronto otros dispositivos. También lanzó Fitbit Air, tracker modular sin pantalla a $99.</p>
+      <p class="why">Google está convirtiendo el wearable data en una plataforma de AI coaching — si construyes en el espacio de fitness o wellness, este es tu nuevo competidor (o tu plataforma de distribución).</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/">TechCrunch</a> &bull; <a href="https://blog.google/products-and-platforms/products/google-health/google-health-coach/">Google Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>The Collectiv lanza aceleradora AI-native de sports, salud y wellness en Houston</h3>
+      <p class="what">En colaboración con Rice University, The Collectiv abrió una aceleradora en el Ion District de Houston enfocada en founders que construyen tecnología AI validada primero en deportes y luego escalable a salud, enterprise y consumidor. Busca startups en la intersección de AI + rendimiento deportivo + bienestar.</p>
+      <p class="why">Si tienes un MVP en sports tech o wellness con componente AI, este es un pipeline directo a validación, mentoring y capital en el vertical exacto.</p>
+      <p class="source"><a href="https://news.rice.edu/news/2026/collectiv-launches-ai-native-dual-use-sports-health-wellness-accelerator-rices-ion">Rice University</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 12/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
