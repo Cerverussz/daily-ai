@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 13 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>13 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Android Show: Gemini Intelligence convierte Android en un sistema operativo agente</h3>
+      <p class="what">En el Android Show: I/O Edition (12 de mayo), Google presentó Gemini Intelligence: el asistente entiende el contexto de pantalla, ejecuta tareas multi-paso (armar carritos de compra, hacer reservas, rellenar formularios) y llega a Chrome con auto-browse agente. También anunció vibe-coded widgets &mdash; creas widgets con lenguaje natural &mdash; y Gemini en Android Auto con pedidos de comida vía DoorDash.</p>
+      <p class="why">Si desarrollas apps Android, tu superficie de integración con Gemini acaba de multiplicarse: automatización de tareas, widgets generados por AI, y un browser agente son features que tus usuarios van a esperar.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/12/everything-google-announced-at-its-android-show-from-googlebooks-to-vibe-coded-widgets/">TechCrunch</a> &bull; <a href="https://www.cnbc.com/2026/05/12/google-races-put-gemini-at-center-of-android-before-apples-ai-reboot.html">CNBC</a> &bull; <a href="https://android-developers.googleblog.com/2026/05/the-android-show-developers-cut-2026.html">Android Developers Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI lanza Deployment Company: $4B y 150 ingenieros para embeber AI en empresas</h3>
+      <p class="what">OpenAI creó una subsidiaria mayoritaria respaldada por 19 firmas (TPG, Advent, Bain Capital, Brookfield) con $4B de inversión inicial. Adquirió Tomoro, consultora de AI aplicada, para arrancar con 150 Forward Deployed Engineers que se integran en equipos empresariales para redeseñar workflows con AI en producción.</p>
+      <p class="why">El modelo de &ldquo;ingenieros desplegados&rdquo; confirma que el cuello de botella ya no es el modelo sino la implementación &mdash; una oportunidad para consultores técnicos independientes que dominen integraciones AI.</p>
+      <p class="source"><a href="https://openai.com/index/openai-launches-the-deployment-company/">OpenAI</a> &bull; <a href="https://www.axios.com/2026/05/11/openai-deployco-private-equity">Axios</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Palo Alto advierte: exploits AI-driven ser&aacute;n la norma en 3-5 meses; Google detecta primer zero-day generado por AI</h3>
+      <p class="what">El CTO de Palo Alto Networks declaró que las empresas tienen una ventana de 3-5 meses antes de que los ciberataques impulsados por AI se conviertan en la nueva normalidad. Google identificó lo que cree fue el primer exploit zero-day desarrollado por AI, diseñado para un ataque a gran escala que lograron contener preventivamente.</p>
+      <p class="why">Si tu producto maneja datos de usuarios, la ventana para implementar security reviews automatizadas y patching agresivo se está cerrando r&aacute;pido.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/05/13/palo-alto-ai-cyberattacks-mythos-gpt.html">CNBC</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 AWS retira Amazon Q Developer el 15 de mayo; Kiro lo reemplaza con desarrollo basado en specs</h3>
+      <p class="what">AWS bloqueó nuevos signups de Amazon Q Developer desde el 15 de mayo, redirigiendo a Kiro como su IDE agente de cabecera. Kiro trabaja con specs estructuradas en lugar de prompts individuales: defines requisitos en lenguaje natural con criterios EARS, y el agente planifica, implementa y verifica cambios en todo el codebase. Incluye hooks automatizados, steering files y subagentes custom.</p>
+      <p class="why">Si usabas Q Developer, la migración es ahora; y el enfoque spec-driven de Kiro es relevante para cualquier founder que quiera que su AI coding sea reproducible y auditable.</p>
+      <p class="source"><a href="https://aws.amazon.com/blogs/devops/amazon-q-developer-end-of-support-announcement/">AWS Blog</a> &bull; <a href="https://kiro.dev/">Kiro</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot migra a cr&eacute;ditos AI el 1 de junio &mdash; agent mode multiplica el consumo</h3>
+      <p class="what">GitHub Copilot abandona el modelo flat de suscripción por billing basado en AI Credits (1 crédito = $0.01 USD). Copilot Pro+ incluye $39/mes en créditos, Business $19/usuario. El agent mode, que ejecuta múltiples llamadas al modelo por tarea, puede consumir cientos de créditos en una sola sesión de refactoring multi-archivo.</p>
+      <p class="why">Si dependes de Copilot agent mode para tareas pesadas, haz los números antes del 1 de junio &mdash; podrías terminar pagando significativamente más que con la tarifa plana.</p>
+      <p class="source"><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a> &bull; <a href="https://judyailab.com/en/posts/github-copilot-token-billing-2026/">JudyAI Lab</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code a&ntilde;ade Agent View y /goal: sesiones aut&oacute;nomas que trabajan hasta cumplir un objetivo</h3>
+      <p class="what">La última actualización de Claude Code trae Agent View (research preview), un dashboard único para ver todas las sesiones &mdash; activas, bloqueadas o completadas. El nuevo comando /goal permite definir una condición de completado y Claude sigue trabajando across turns hasta cumplirla, con overlay en vivo de tiempo, turnos y tokens consumidos.</p>
+      <p class="why">El /goal convierte a Claude Code en un agente fire-and-forget real &mdash; defines el objetivo, lo dejas correr, y revisas cuando termina.</p>
+      <p class="source"><a href="https://github.com/anthropics/claude-code/releases">Claude Code Releases</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code Desktop redise&ntilde;ado: sesiones paralelas, terminal integrado y editor en una sola ventana</h3>
+      <p class="what">Anthropic rediseñó la app de escritorio de Claude Code para trabajo paralelo real: sidebar con todas las sesiones (activas, archivadas, filtradas por proyecto), side chats con contexto heredado (⌘+;), terminal integrado para tests y builds, editor de archivos in-app, y diff viewer optimizado para changesets grandes. Las sesiones cuyo PR se mergea se archivan automáticamente.</p>
+      <p class="why">Para founders que manejan múltiples repos o features simultáneas, esto elimina el context-switching entre terminal, editor e IDE.</p>
+      <p class="source"><a href="https://claude.com/blog/claude-code-desktop-redesign">Claude Blog</a> &bull; <a href="https://www.macrumors.com/2026/04/15/anthropic-rebuilds-claude-code-desktop-app/">MacRumors</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Design: de prompt a prototipo interactivo, slides o one-pager en minutos</h3>
+      <p class="what">Anthropic Labs lanzó Claude Design, un producto que genera diseños visuales, prototipos interactivos, decks de presentación y one-pagers a través de conversación. Powered by Opus 4.7, permite refinar con comentarios inline, edición directa o sliders custom, y puede aplicar tu design system automáticamente. Exporta a PPTX o envía a Canva.</p>
+      <p class="why">Si eres founder técnico que pierde tiempo armando decks para investors o mockups para validar features, esto te devuelve horas cada semana.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Dreaming y Multi-agent Orchestration para Managed Agents</h3>
+      <p class="what">Tres features nuevos para Managed Agents: Dreaming permite que los agentes revisen sus sesiones pasadas entre trabajos para extraer patrones y auto-mejorar (similar a consolidación de memoria durante el sueño). Multi-agent Orchestration deja que un agente líder delegue subtareas a especialistas que corren en paralelo con filesystem compartido. Outcomes agrega auto-evaluación con rúbricas que mejoran task completion hasta 10 puntos. Harvey reportó un salto de 6x en tasa de completado.</p>
+      <p class="why">Si construyes agentes con la API de Claude, Dreaming y Orchestration te ahorran implementar tu propia capa de memoria persistente y coordinación multi-agente.</p>
+      <p class="source"><a href="https://9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/">9to5Mac</a> &bull; <a href="https://siliconangle.com/2026/05/06/anthropic-letting-claude-agents-dream-dont-sleep-job/">SiliconANGLE</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Platform llega a AWS: API, Managed Agents y billing nativo con IAM</h3>
+      <p class="what">Anthropic lanzó Claude Platform on AWS, llevando toda la API de Claude (Messages, Files, Batches), Managed Agents, Agent Skills, code execution y tool use a infraestructura gestionada por Anthropic pero accesible con billing de AWS e IAM authentication. Es un endpoint nativo de AWS, no un wrapper.</p>
+      <p class="why">Si tu infra ya está en AWS, puedes integrar Claude sin gestionar API keys separadas ni reconciliar facturas &mdash; todo va en tu cuenta de Amazon.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health Coach lanza el 19 de mayo: Gemini como coach 24/7 de fitness, sue&ntilde;o y salud</h3>
+      <p class="what">Google rebautiza la app Fitbit como Google Health el 19 de mayo, integrando un coach AI basado en Gemini que actúa como asesor de fitness, sueño y salud 24/7. Procesa datos biométricos en tiempo real para sugerir cambios de estilo de vida. Precio: $9.99/mes (incluido gratis con Google AI Pro y Ultra). Junto al lanzamiento llega Fitbit Air, un tracker sin pantalla de $99.99 diseñado para uso continuo.</p>
+      <p class="why">Google está convirtiendo health coaching en un commodity a $10/mes &mdash; si construyes en wellness o fitness, tu competidor ya no es otra app sino un modelo foundation con datos de wearable integrados.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/">TechCrunch</a> &bull; <a href="https://blog.google/products-and-platforms/products/google-health/google-health-coach/">Google Blog</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 13/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
