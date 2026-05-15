@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 14 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>14 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Notion lanza Developer Platform: Workers, External Agent API y database sync</h3>
+      <p class="what">Notion present&oacute; su Developer Platform el 13 de mayo con tres pilares: Workers (runtime hosted para c&oacute;digo custom en sandbox seguro), External Agent API (conecta agentes de Claude, Codex, Decagon u otros propios directamente al workspace), y Database Sync para traer datos de Zendesk, Salesforce o Postgres a Notion en tiempo real. Los Workers son gratis durante la beta y a partir de agosto 2026 corren con cr&eacute;ditos Notion.</p>
+      <p class="why">Si tu producto integra con Notion o tus usuarios lo usan como hub, ahora puedes meter tu agente directamente en su workspace sin que salgan de la plataforma.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/">TechCrunch</a> &bull; <a href="https://www.notion.com/blog/introducing-developer-platform">Notion Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Claude for Small Business: 15 workflows agent&iacute;cos con conectores a QuickBooks, PayPal y m&aacute;s</h3>
+      <p class="what">Anthropic lanz&oacute; el 13 de mayo Claude for Small Business con Claude Cowork, 15 workflows listos para usar (payroll, cierre mensual, facturaci&oacute;n, triage de leads, revisi&oacute;n de contratos, creaci&oacute;n de campa&ntilde;as) y conectores a QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, Microsoft 365 y Slack. No tiene costo adicional m&aacute;s all&aacute; de la licencia Team/Enterprise.</p>
+      <p class="why">El patr&oacute;n de &ldquo;AI + conectores a herramientas existentes&rdquo; es exactamente c&oacute;mo puedes agregar valor a tu marketplace o SaaS sin reconstruir la infra de tus usuarios.</p>
+      <p class="source"><a href="https://siliconangle.com/2026/05/13/anthropic-launches-claude-small-business-new-automation-workflows/">SiliconANGLE</a> &bull; <a href="https://www.axios.com/2026/05/13/anthropic-claude-small-business-smb">Axios</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Higgsfield Supercomputer: agente AI cloud-native que ejecuta flujos multi-modelo de punta a punta</h3>
+      <p class="what">Higgsfield Supercomputer sali&oacute; el 13 de mayo como un agente AI cloud-native que recibe instrucciones en lenguaje natural (ej. &ldquo;crea una semana de ads para Instagram + an&aacute;lisis de competencia&rdquo;), selecciona los modelos adecuados, rutea el trabajo, genera los assets y los entrega donde se necesiten. Opera como orquestador multi-modelo aut&oacute;nomo.</p>
+      <p class="why">Esto representa el siguiente paso despu&eacute;s de los wrappers de API: agentes que eligen modelo y workflow seg&uacute;n la tarea, &uacute;til para automatizar operaciones de marketing en tu producto.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Gemini Spark filtrado: el agente AI 24/7 de Google que act&uacute;a en segundo plano</h3>
+      <p class="what">El 14 de mayo se filtraron detalles de Gemini Spark, el nuevo agente AI de Google esperado para I/O 2026. A diferencia de un chatbot, Spark opera en segundo plano 24/7: gestiona inbox, ejecuta tareas en apps conectadas, navega webs donde est&aacute;s logueado, y aprende de tu comportamiento para anticiparse. Puede compartir tu info con terceros para completar tareas, incluyendo compras.</p>
+      <p class="why">Para cualquier app Android, esto significa que los usuarios van a interactuar con servicios a trav&eacute;s de un agente intermedio; si tu app no es &ldquo;agent-friendly&rdquo;, pierde visibilidad.</p>
+      <p class="source"><a href="https://9to5google.com/2026/05/14/gemini-spark-insight/">9to5Google</a> &bull; <a href="https://www.androidauthority.com/gemini-spark-onboarding-screen-leaked-3667118/">Android Authority</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; GitHub Copilot migra a facturaci&oacute;n por AI Credits el 1 de junio</h3>
+      <p class="what">GitHub Copilot elimina el modelo de requests ilimitados y pasa a AI Credits basados en consumo de tokens el 1 de junio. Pro ($10/mes) incluye $10 en cr&eacute;ditos + $5 flex; Pro+ ($39/mes) incluye $39 + $31 flex. Code completions siguen incluidos sin costo, pero Chat, CLI, cloud agent, Spaces y Spark consumen cr&eacute;ditos. Hay cr&eacute;ditos promocionales junio-agosto para Business ($30/mes) y Enterprise ($70/mes).</p>
+      <p class="why">Si usas Copilot intensivamente con modelos premium, tu costo real va a subir; momento de evaluar si Claude Code o Cursor te dan mejor ROI por token.</p>
+      <p class="source"><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Dreaming, Outcomes y Multiagent Orchestration para Managed Agents</h3>
+      <p class="what">Presentados en Code w/ Claude (6-12 mayo), estos tres features transforman Managed Agents: Dreaming revisa sesiones pasadas y cura memorias para que el agente mejore entre ejecuciones. Outcomes permite definir r&uacute;bricas de &eacute;xito que el agente persigue (mejora hasta 10 puntos en tasa de &eacute;xito). Multiagent Orchestration deja que un agente l&iacute;der delegue subtareas a especialistas con su propio modelo y herramientas, trabajando en paralelo.</p>
+      <p class="why">Dreaming + Outcomes es el combo que faltaba para agentes en producci&oacute;n: auto-mejora sin retraining y m&eacute;tricas de &eacute;xito definidas por ti.</p>
+      <p class="source"><a href="https://claude.com/blog/new-in-claude-managed-agents">Claude Blog</a> &bull; <a href="https://thenewstack.io/anthropic-managed-agents-dreaming-outcomes/">The New Stack</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Baidu Create 2026: &ldquo;Daily Active Agents&rdquo; como la m&eacute;trica de la era agente</h3>
+      <p class="what">En la conferencia Create 2026 en Beijing (14 de mayo), Robin Li de Baidu declar&oacute; que la competencia se movi&oacute; de modelos a agentes, y propuso DAA (Daily Active Agents) como la m&eacute;trica clave, reemplazando el DAU de la era m&oacute;vil. Lanzaron DuMate (agente general), Miaoda (coding agent enterprise), y Famou Agent 2.0 (agente auto-evolutivo).</p>
+      <p class="why">DAA como m&eacute;trica te da un framework para pensar en tu producto: no cu&aacute;ntos usuarios tienes, sino cu&aacute;ntos agentes resuelven tareas diarias en tu plataforma.</p>
+      <p class="source"><a href="https://technode.com/2026/05/14/baidu-create-2026-ceo-says-ai-is-moving-from-model-competition-to-ai-agent-era-foresees-rise-of-super-individuals/">TechNode</a> &bull; <a href="https://www.prnewswire.com/news-releases/baidu-advances-agent-portfolio-to-embrace-the-agent-era-champions-daily-active-agents-as-key-metric-302771383.html">PR Newswire</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic arranca SMB Tour en Chicago: llevando AI agents a negocios locales</h3>
+      <p class="what">Desde el 14 de mayo, Anthropic inicia un tour multi-ciudad arrancando en Chicago, orientado a due&ntilde;os de peque&ntilde;os negocios para mostrar los workflows de Claude for Small Business en persona. Es la primera vez que un proveedor de modelos frontier hace road show dirigido a main street, no solo a enterprise.</p>
+      <p class="why">Se&ntilde;al clara de que el mercado SMB es la pr&oacute;xima frontera; si tu producto sirve a negocios locales, la demanda de integraciones AI va a acelerarse.</p>
+      <p class="source"><a href="https://www.fastcompany.com/91540953/anthropic-launches-claude-for-small-business">Fast Company</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Code duplica rate limits y API sube hasta 17x en ciertos tiers</h3>
+      <p class="what">Anunciado en Code w/ Claude, Anthropic duplic&oacute; el l&iacute;mite de 5 horas para Claude Code en planes Pro, Max y Enterprise, elimin&oacute; los l&iacute;mites de hora pico en Pro y Max, y subi&oacute; los rate limits de la API hasta casi 17x para ciertos tiers. No se lanz&oacute; ning&uacute;n modelo nuevo; el foco fue infraestructura y herramientas.</p>
+      <p class="why">M&aacute;s headroom para sesiones largas de coding aut&oacute;nomo sin topar l&iacute;mites a mitad de tarea.</p>
+      <p class="source"><a href="https://www.dotzlaw.com/insights/anthropic-2026-code-with-claude/">Dotzlaw</a> &bull; <a href="https://simonwillison.net/2026/May/6/code-w-claude-2026/">Simon Willison</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Platform llega a AWS y add-ins de Microsoft 365 en GA</h3>
+      <p class="what">Claude Platform ya est&aacute; disponible en AWS con el feature set completo: managed agents, code execution, web tools, skills, prompt caching y modelos recientes. Adem&aacute;s, los add-ins de Claude para Excel, PowerPoint y Word pasaron a GA, con Outlook en beta p&uacute;blica, manteniendo contexto de conversaci&oacute;n entre apps.</p>
+      <p class="why">Si tu stack de deployment es AWS, ya no necesitas salir del ecosistema para usar Managed Agents; y la integraci&oacute;n con Office hace a Claude m&aacute;s viable en entornos enterprise donde tus clientes viven.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude">Releasebot - Claude</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Wearables como plataformas de salud predictiva: de tracker a sistema AI</h3>
+      <p class="what">En 2026, Oura, Whoop, Ultrahuman, Apple y Garmin ya no son empresas de hardware sino plataformas de salud con AI predictiva. Los modelos ahora anticipan fatiga acumulada, riesgo de lesi&oacute;n, deuda de sue&ntilde;o y tendencias cardiovasculares antes de que ocurran, con el 49% de adultos en EE.UU. usando un wearable. ACSM nombra wearable tech como tendencia #1 global de fitness 2026.</p>
+      <p class="why">Si est&aacute;s construyendo en sports tech o coaching, la integraci&oacute;n con estas plataformas v&iacute;a sus APIs te da datos predictivos que antes requer&iacute;an un equipo de data science propio.</p>
+      <p class="source"><a href="https://athletechnews.com/how-wearables-are-evolving-from-fitness-trackers-to-health-systems/">Athletech News</a> &bull; <a href="https://sportsmedicineweekly.com/blog/the-growing-importance-of-digital-health-tools-in-fitness-and-wellness/">Sports Medicine Weekly</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 14/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
