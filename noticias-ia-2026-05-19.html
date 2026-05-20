@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 19 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>19 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 WebMCP: Google propone est&aacute;ndar web abierto para que agentes AI interact&uacute;en con cualquier sitio</h3>
+      <p class="what">Anunciado en Google I/O, WebMCP permite a developers exponer funciones JavaScript y formularios HTML como herramientas estructuradas para agentes AI en el browser, eliminando el scraping visual. Shopify, Booking.com, Instacart, Intuit y Expedia ya experimentan con el est&aacute;ndar, que se incuba en el W3C junto con Microsoft.</p>
+      <p class="why">Si tienes un marketplace o SaaS, exponer tus acciones via WebMCP har&aacute; que agentes AI puedan operar tu plataforma como first-class citizens &mdash; origin trial ya disponible en Chrome 149.</p>
+      <p class="source"><a href="https://developer.chrome.com/blog/chrome-at-io26">Chrome Dev Blog</a> &bull; <a href="https://www.pymnts.com/artificial-intelligence-2/2026/google-introduces-webmcp-to-give-browser-access-for-ai-agents/">PYMNTS</a> &bull; <a href="https://thenewstack.io/webmcp-chrome-ai-agents/">The New Stack</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Android CLI 1.0 + Android Skills open-source: Google abre Android Studio a agentes AI</h3>
+      <p class="what">Google lanz&oacute; Android CLI 1.0 estable, que permite a agentes AI usar Android Studio directamente: descargar SDKs, compilar y ejecutar apps en dispositivos. Adem&aacute;s, open-source&oacute; &ldquo;Android Skills&rdquo;, un conjunto de instrucciones para que LLMs ejecuten migraciones complejas como pasar a Jetpack Compose o Navigation 3.</p>
+      <p class="why">Esto convierte a tu agente de coding favorito (Claude Code, Cursor) en un Android developer asistido que puede compilar y testear directamente en tu pipeline.</p>
+      <p class="source"><a href="https://thenextweb.com/news/google-android-cli-agentic-coding-tools-io-2026">The Next Web</a> &bull; <a href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/">Google Dev Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Android Studio Migration Agent: migra apps React Native, iOS o web a Kotlin nativo con AI</h3>
+      <p class="what">Google preview&oacute; un agente de migraci&oacute;n en Android Studio que analiza c&oacute;digo de React Native, frameworks web o iOS y lo convierte a apps Kotlin nativas. Migraciones que tomaban semanas ahora se reducen a horas seg&uacute;n Google.</p>
+      <p class="why">Si tienes un producto cross-platform y quieres ir nativo en Android para rendimiento o acceso a APIs del sistema, la barrera de entrada acaba de bajar dr&aacute;sticamente.</p>
+      <p class="source"><a href="https://androidguys.com/news/google-i-o-2026-android-developers-get-ai-coding-tools-compose-first-apps-and-android-17-updates/">AndroidGuys</a> &bull; <a href="https://android-developers.googleblog.com/2026/05/whats-new-android-developer-tools.html">Android Developers Blog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini 3.5 Flash: supera a 3.1 Pro en coding y agentes a $1.50/M tokens de input</h3>
+      <p class="what">Google lanz&oacute; Gemini 3.5 Flash en I/O 2026, un modelo que supera a Gemini 3.1 Pro en benchmarks de coding, agentes y multimodal, siendo 4x m&aacute;s r&aacute;pido en output tokens/segundo. Cuesta $1.50/M input y $9/M output (~40% m&aacute;s barato que 3.1 Pro) y es gratis en la app Gemini y en AI Mode de Search.</p>
+      <p class="why">Relaci&oacute;n calidad-precio agresiva para pipelines de agentes en backend &mdash; y gratis para prototipado r&aacute;pido en AI Studio.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html">CNBC</a> &bull; <a href="https://felloai.com/gemini-3-5-review/">FelloAI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Antigravity 2.0: la plataforma agent-first de Google con subagentes y sandboxing nativo</h3>
+      <p class="what">Google actualiz&oacute; Antigravity a 2.0 con un nuevo CLI que permite crear subagentes especializados para workflows complejos, con sandboxing cross-platform integrado, credential masking y pol&iacute;ticas de Git reforzadas. Es la respuesta directa de Google a Claude Code para desarrollo ag&eacute;ntico.</p>
+      <p class="why">Si ya usas Claude Code o Cursor, Antigravity 2.0 compite directamente en el espacio de agentes de coding con la ventaja de integraci&oacute;n nativa con el ecosistema Android y GCP.</p>
+      <p class="source"><a href="https://ppc.land/gemini-3-5-and-antigravity-2-0-headline-google-i-o-2026-reveal/">PPC Land</a> &bull; <a href="https://www.androidheadlines.com/2026/05/google-io-2026-antigravity-developer-tools-ai-studio-mobile-app.html">Android Headlines</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini Spark: agente personal 24/7 que trabaja en background con Google Workspace</h3>
+      <p class="what">Google present&oacute; Gemini Spark, un agente personal que no espera prompts &mdash; gestiona tareas aut&oacute;nomamente en Gmail, Docs y Slides 24/7. Powered by Gemini 3.5, est&aacute; en beta para trusted testers y suscriptores de Google AI Ultra.</p>
+      <p class="why">Es el primer intento serio de Google de un agente aut&oacute;nomo tipo &ldquo;background worker&rdquo; integrado en las herramientas que ya usas a diario.</p>
+      <p class="source"><a href="https://www.republicworld.com/tech/google-io-2026-search-gets-biggest-ai-upgrade-yet-as-google-introduces-smart-agents-and-gemini-spark-2026-05-20-124984">Republic World</a> &bull; <a href="https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html">CNBC</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google AI Studio ahora genera apps Android nativas desde texto y las despliega con un click</h3>
+      <p class="what">Google AI Studio incorpora soporte nativo de Kotlin para generar apps Android completas desde un prompt de texto, con previsualizaci&oacute;n en vivo, integraci&oacute;n con Google Workspace, y deploy con un click a Cloud Run + Firebase. Adem&aacute;s, Managed Agents en la Gemini API elimina la fricci&oacute;n de infraestructura: una sola llamada API te da un agente con sandbox Linux aislado.</p>
+      <p class="why">El tiempo de &ldquo;idea a app Android funcional desplegada&rdquo; se reduce a minutos &mdash; ideal para validar MVPs o prototipos r&aacute;pidos antes de invertir en desarrollo completo.</p>
+      <p class="source"><a href="https://www.developer-tech.com/news/google-gemini-developer-tools-android-managed-agents/">Developer Tech</a> &bull; <a href="https://www.androidheadlines.com/2026/05/google-io-2026-antigravity-developer-tools-ai-studio-mobile-app.html">Android Headlines</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Information Agents en Google Search: agentes que monitorean marketplaces y webs 24/7 por ti</h3>
+      <p class="what">Google introdujo &ldquo;Information Agents&rdquo; en Search: agentes personalizados que trabajan en background rastreando sitios web, redes sociales y marketplaces online, y te notifican cuando encuentran lo que necesitas. AI Mode de Search ya supera los mil millones de usuarios mensuales.</p>
+      <p class="why">Si operas un marketplace, tus usuarios podr&aacute;n crear agentes que monitoreen tu inventario autom&aacute;ticamente &mdash; tu plataforma necesita ser agent-friendly (y WebMCP es el camino).</p>
+      <p class="source"><a href="https://blog.google/products-and-platforms/products/search/search-io-2026/">Google Blog</a> &bull; <a href="https://www.technology.org/2026/05/20/google-io-2026-cheaper-gemini-search-agents/">Technology.org</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza MCP Tunnels y Self-Hosted Sandboxes para Claude Managed Agents</h3>
+      <p class="what">Anunciado en Code with Claude London el 19 de mayo, MCP Tunnels permite a agentes acceder a servidores MCP dentro de tu red privada sin exponer endpoints p&uacute;blicos (research preview). Self-Hosted Sandboxes (public beta) mueve la ejecuci&oacute;n de herramientas a tu propia infra o providers como Cloudflare, Daytona, Modal y Vercel, mientras la orquestaci&oacute;n queda en Anthropic.</p>
+      <p class="why">Si necesitas agentes AI que accedan a tus APIs internas o bases de datos sin exponer nada a internet, esto resuelve el problema de seguridad que frenaba adopci&oacute;n enterprise.</p>
+      <p class="source"><a href="https://the-decoder.com/anthropic-adds-self-hosted-sandboxes-and-mcp-tunnels-to-claude-managed-agents/">The Decoder</a> &bull; <a href="https://www.infoq.com/news/2026/05/claude-mcp-tunnels/">InfoQ</a> &bull; <a href="https://thenewstack.io/anthropic-mcp-tunnels-sandboxes/">The New Stack</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health reemplaza Fitbit hoy: coach AI con Gemini a $9.99/mes</h3>
+      <p class="what">A partir del 19 de mayo, la app Fitbit se convierte en Google Health con un redise&ntilde;o completo. El nuevo Google Health Coach, powered by Gemini, act&uacute;a como entrenador fitness, experto en sue&ntilde;o y asesor de bienestar 24/7. Integra datos de Health Connect, Apple Health y registros m&eacute;dicos. Cuesta $9.99/mes o $99/a&ntilde;o con Google Health Premium.</p>
+      <p class="why">Google acaba de poner un coach AI personalizado en el bolsillo de millones de usuarios Fitbit &mdash; el est&aacute;ndar que cualquier app de wellness o sports tech necesita igualar.</p>
+      <p class="source"><a href="https://gadgetbond.com/google-health-app-launch/">GadgetBond</a> &bull; <a href="https://blog.google/products-and-platforms/products/google-health/google-health-coach/">Google Blog</a> &bull; <a href="https://www.bbntimes.com/science/google-launches-9-99-per-month-gemini-ai-health-coach-on-may-19-rebrands-fitbit-app-to-google-health">BBN Times</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 19/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
