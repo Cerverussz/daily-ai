@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 21 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>21 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google I/O 2026: Gemini Spark, Android Halo y AppFunctions &mdash; agentes AI llegan al nivel de sistema en Android</h3>
+      <p class="what">Google lanzó Gemini Spark, un agente AI 24/7 que ejecuta tareas multi-paso en segundo plano desde VMs dedicadas en Cloud, con aprobación del usuario para acciones críticas. En Android, Halo muestra el progreso del agente en la barra de estado, y AppFunctions permite que cualquier app exponga capacidades a los agentes del sistema.</p>
+      <p class="why">Si desarrollas apps Android, AppFunctions es lo que necesitas implementar ya: las apps que no expongan acciones a agentes quedarán fuera del nuevo flujo de interacción del usuario.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/">Google Blog</a> &bull; <a href="https://9to5google.com/2026/05/19/google-io-2026-news/">9to5Google</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Klarna lanza Shopping Search en ChatGPT &mdash; marketplace de 100M+ productos conectado v&iacute;a MCP</h3>
+      <p class="what">Klarna lanzó una app dentro de ChatGPT que permite buscar productos en lenguaje natural con precios en vivo, disponibilidad y ofertas de múltiples retailers en 13 mercados. Está construida sobre el servidor MCP de Klarna Product Search, conectando el catálogo de 100M+ productos directamente al agente.</p>
+      <p class="why">Este es el caso de uso real de MCP para marketplaces: si tu plataforma no tiene un servidor MCP, estás invisible para el tráfico de agentes AI que ya convierte 31% más que el orgánico.</p>
+      <p class="source"><a href="https://www.pymnts.com/artificial-intelligence-2/2026/klarna-launches-chatgpt-shopping-app-with-live-prices/">PYMNTS</a> &bull; <a href="https://www.digitalcommerce360.com/2026/05/20/klarna-ai-shopping-search-app-openai-chatgpt/">Digital Commerce 360</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Netflix despliega AI agents aut&oacute;nomos para planificar, comprar y optimizar ads</h3>
+      <p class="what">Con 250M de viewers mensuales en su tier con ads, Netflix presentó agentes AI que planifican media, compran inventario y optimizan campañas de forma autónoma, ya testeados con DoorDash, Target y TurboTax. Además, AI adapta creativos existentes a formatos como video vertical y pause ads.</p>
+      <p class="why">Para cualquier marketplace o plataforma con ad inventory, este es el modelo a seguir: agentes que eliminan la fricción entre el anunciante y la conversión.</p>
+      <p class="source"><a href="https://www.adweek.com/media/ai-agents-are-coming-to-netflix-to-grow-its-3-billion-ad-business/">Adweek</a> &bull; <a href="https://ppc.land/netflix-2026-upfront-250m-viewers-ai-agents-and-15-new-ad-markets/">PPC Land</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini 3.5 Flash GA + AI Studio con Kotlin nativo &mdash; apps Android full-stack desde un IDE AI</h3>
+      <p class="what">Gemini 3.5 Flash supera a 3.1 Pro en coding, agentes y multimodal, siendo 4x más rápido en output tokens/segundo que otros modelos frontier. Google AI Studio ahora soporta Kotlin nativo, integraciones con Workspace y deploy one-click a Cloud Run con Firebase, permitiendo construir y lanzar apps full-stack directamente.</p>
+      <p class="why">Para devs Android, esto cambia el flujo: prototipas en AI Studio con Kotlin, conectas Firebase, y despliegas en Cloud Run sin salir del IDE.</p>
+      <p class="source"><a href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/">Google Developers Blog</a> &bull; <a href="https://betanews.com/article/google-io-2026-gemini-flash-omni-spark-search/">BetaNews</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza self-hosted sandboxes y MCP tunnels para Claude Managed Agents</h3>
+      <p class="what">Dos features nuevos anunciados en Code with Claude London: self-hosted sandboxes (public beta) permite ejecutar tool calls de agentes en tu propia infra o proveedores como Cloudflare/Modal/Vercel, mientras MCP tunnels (research preview) conecta agentes a servidores MCP en tu red privada sin exponer endpoints públicos, con cifrado end-to-end.</p>
+      <p class="why">Si descartaste Managed Agents por no poder correr en tu infra o conectar a APIs internas, estas dos features eliminan esos blockers.</p>
+      <p class="source"><a href="https://thenewstack.io/anthropic-mcp-tunnels-sandboxes/">The New Stack</a> &bull; <a href="https://dev.to/devtoolpicks/anthropic-launches-self-hosted-claude-agents-what-indie-hackers-need-to-know-1nee">DEV Community</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude for Legal: 20+ conectores MCP y 12 plugins &mdash; el playbook para construir verticales AI</h3>
+      <p class="what">Anthropic lanzó 20+ conectores MCP (Westlaw, DocuSign, Everlaw, iManage, LexisNexis) y 12 plugins por práctica legal (litigation, compliance, IP, contratos). CoCounsel fue reconstruido sobre Claude Agent SDK con razonamiento, planificación y retrieval de contenido legal autoritativo.</p>
+      <p class="why">Más allá de legal, este es el template para cualquier vertical: conectores MCP a las herramientas del sector + workflows pre-configurados por rol = producto AI verticalmente integrado.</p>
+      <p class="source"><a href="https://www.lawnext.com/2026/05/anthropic-goes-all-in-on-legal-releasing-more-than-20-connectors-and-12-practice-area-plugins-for-claude.html">LawSites</a> &bull; <a href="https://techcrunch.com/2026/05/12/the-ai-legal-services-industry-is-heating-up-anthropic-is-getting-in-on-the-action/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude for Small Business: 15 workflows ag&eacute;nticos listos para usar con herramientas de negocio</h3>
+      <p class="what">Anthropic lanzó un paquete de 15 workflows agénticos, 15 skills reutilizables y conectores a 8 herramientas (QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace, Microsoft 365). Claude ejecuta tareas como payroll, cash flow analysis y reconciliación directamente en QuickBooks, con aprobación humana antes de enviar o pagar.</p>
+      <p class="why">Si construyes SaaS para SMBs, este es tu benchmark: workflows pre-empaquetados que conectan directo a las herramientas que el negocio ya usa, sin onboarding complejo.</p>
+      <p class="source"><a href="https://finance.yahoo.com/news/anthropic-debuts-claude-for-small-business-as-it-continues-its-enterprise-software-push-160500355.html">Yahoo Finance</a> &bull; <a href="https://www.axios.com/2026/05/13/anthropic-claude-small-business-smb">Axios</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Code duplica l&iacute;mites y Anthropic se acerca a primer trimestre rentable</h3>
+      <p class="what">Claude Code duplicó su límite de 5 horas para usuarios Pro, Max y Enterprise. Anthropic proyecta $10.9B en revenue para Q2 2026 (130% más que Q1) y su primer beneficio operativo de ~$559M, mientras prepara un IPO para octubre 2026 con valuación de $900B.</p>
+      <p class="why">Más límite en Claude Code significa menos interrupciones en sesiones largas de desarrollo; la rentabilidad de Anthropic señala estabilidad a largo plazo para quienes construyen sobre su plataforma.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a> &bull; <a href="https://techstartups.com/2026/05/21/top-tech-news-today-may-21-2026/">Tech Startups</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health Coach con Gemini AI lanza a $9.99/mes &mdash; Fitbit se convierte en Google Health</h3>
+      <p class="what">Google rebrandeó la app Fitbit como Google Health (v5.0) y lanzó el Health Coach powered by Gemini AI el 19 de mayo. El coach analiza datos de wearables (Fitbit, Pixel Watch), registros de salud e inputs del usuario para dar coaching personalizado en fitness, sueño y nutrición. Cuesta $9.99/mes o $99/año.</p>
+      <p class="why">Si construyes en el espacio de coaching deportivo o wellness, este es tu competidor directo de Google con Gemini integrado &mdash; la diferencia estará en la especialización vertical que Google no puede ofrecer.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/">TechCrunch</a> &bull; <a href="https://blog.google/products-and-platforms/products/google-health/google-health-coach/">Google Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Predictive Fitness gana Smarter Sports Award 2026 por su motor de analytics FitLogic</h3>
+      <p class="what">Predictive Fitness (creadores de TriDot y RunDot) ganó el Smarter Sports Award en la categoría Data &amp; Analytics el 19 de mayo. Su motor FitLogic analiza datos de entrenamiento para generar planes adaptativos personalizados que ajustan carga, recuperación y periodización en tiempo real.</p>
+      <p class="why">FitLogic es un referente de cómo monetizar analytics de rendimiento deportivo: motor de IA como backend + apps de nicho (triatlón, running) como frontend.</p>
+      <p class="source"><a href="https://www.endurancesportswire.com/predictive-fitness-named-2026-smarter-sports-award-winner-for-smarter-data-and-analytics-technology/">Endurance Sportswire</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 21/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
