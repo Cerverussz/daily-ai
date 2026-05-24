@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 23 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>23 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Antigravity 2.0 de Google: suite ag&eacute;ntica para desarrollo con m&uacute;ltiples agentes en paralelo</h3>
+      <p class="what">Google lanz&oacute; Antigravity 2.0 en I/O 2026 como app desktop standalone que orquesta m&uacute;ltiples agentes simult&aacute;neos: uno codea un sitio, otro genera assets de marca, otro planifica arquitectura. Se desacopla en tres capas: Antigravity SDK, CLI para pipelines ag&eacute;nticos, y la app de escritorio como hub central.</p>
+      <p class="why">Si construyes producto solo o en equipo peque&ntilde;o, esto te permite paralelizar tareas de desarrollo que antes requer&iacute;an cambio de contexto constante.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/">Google Blog</a> &bull; <a href="https://9to5google.com/2026/05/19/google-antigravity-agentic-developer-suite/">9to5Google</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Claude for Small Business: 15 workflows ag&eacute;nticos en QuickBooks, HubSpot y PayPal</h3>
+      <p class="what">Anthropic lanz&oacute; Claude for Small Business con 8 conectores nativos (QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, Microsoft 365, Slack) y 15 workflows listos para usar: payroll, cierre de mes, cobro de facturas, triage de leads, revisi&oacute;n de contratos y monitoreo de cash flow. Sin costo adicional sobre el plan Team o Enterprise.</p>
+      <p class="why">Si tu producto es un marketplace o SaaS vertical, estos conectores son el blueprint de c&oacute;mo integrar AI ag&eacute;ntica en herramientas que tus usuarios ya pagan.</p>
+      <p class="source"><a href="https://www.axios.com/2026/05/13/anthropic-claude-small-business-smb">Axios</a> &bull; <a href="https://the-decoder.com/anthropic-launches-claude-for-small-business-to-embed-ai-into-the-tools-you-forgot-you-pay-for/">The Decoder</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot migra a AI Credits el 1 de junio: facturaci&oacute;n por consumo de tokens</h3>
+      <p class="what">GitHub Copilot cambia de requests premium a AI Credits ($0.01 = 1 cr&eacute;dito) calculados por tokens consumidos seg&uacute;n el modelo usado. Pro incluye $10/mes, Pro+ $39/mes, Business $19/usuario. Los cr&eacute;ditos no se acumulan entre meses.</p>
+      <p class="why">Revisa tu consumo real de Copilot antes del 1 de junio; dependiendo de cu&aacute;nto uses agentes y modelos premium, podr&iacute;as pagar m&aacute;s o ser&iacute;a momento de evaluar alternativas.</p>
+      <p class="source"><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a> &bull; <a href="https://visualstudiomagazine.com/articles/2026/04/27/devs-sound-off-on-usage-based-copilot-pricing-change-you-will-get-less-but-pay-the-same-price.aspx">Visual Studio Magazine</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Gemini 3.5 Flash: 4x m&aacute;s r&aacute;pido que frontier models, co-desarrollado para agentes</h3>
+      <p class="what">Google lanz&oacute; Gemini 3.5 Flash en I/O 2026, superando a Gemini 3.1 Pro en casi todos los benchmarks con velocidad 4x superior. Fue co-desarrollado con el equipo de Antigravity, optimizado espec&iacute;ficamente para tool use, razonamiento en contexto largo y generaci&oacute;n de c&oacute;digo en flujos ag&eacute;nticos.</p>
+      <p class="why">Un modelo frontier a precio Flash que entiende herramientas nativamente es exactamente lo que necesitas para agentes en producci&oacute;n sin quemar presupuesto.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/">TechCrunch</a> &bull; <a href="https://www.marktechpost.com/2026/05/20/google-introduces-gemini-3-5-flash-at-i-o-2026-a-faster-and-cheaper-model-for-ai-agents-and-coding/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Gemini Intelligence en Android: Google transforma el OS en un &ldquo;sistema de inteligencia&rdquo;</h3>
+      <p class="what">En el Android Show 2026, Google present&oacute; Gemini Intelligence: automatizaci&oacute;n multi-app (rides, compras, research), resumen inteligente en Chrome, Rambler para pulir mensajes dictados, y widgets generativos con lenguaje natural. Requiere Gemini Nano v3 en Pixel 10 y Galaxy S26, con expansi&oacute;n a m&aacute;s dispositivos en oto&ntilde;o.</p>
+      <p class="why">Si desarrollas para Android, esto redefine la superficie de interacci&oacute;n: tus features deben ser accesibles para agentes AI que operen tu app en nombre del usuario.</p>
+      <p class="source"><a href="https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/">Google Blog</a> &bull; <a href="https://www.cnbc.com/2026/05/12/google-races-put-gemini-at-center-of-android-before-apples-ai-reboot.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Supply chain attack v&iacute;a Nx Console en VS Code roba credenciales de Claude Code y GitHub</h3>
+      <p class="what">El grupo TeamPCP comprometi&oacute; Nx Console (v18.95.0) en el VS Code Marketplace por 18 minutos el 18 de mayo, exfiltrando ~3,800 repos internos de GitHub. El payload se disfraz&oacute; como &ldquo;setup de MCP&rdquo; y es el primer supply chain attack dise&ntilde;ado para robar configuraciones de AI coding assistants (~/.claude/settings.json), tokens npm, AWS y 1Password.</p>
+      <p class="why">Audita tus extensiones de VS Code y rota credenciales si usaste Nx Console esa semana; la superficie de ataque ahora incluye tus configs de AI.</p>
+      <p class="source"><a href="https://thehackernews.com/2026/05/github-internal-repositories-breached.html">The Hacker News</a> &bull; <a href="https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/">BleepingComputer</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Revenue de AI startups vale 20-30x vs SaaS, pero la ventana f&aacute;cil se cierra</h3>
+      <p class="what">Seg&uacute;n datos de mayo 2026, el revenue de startups AI se valora 20-30x m&aacute;s que SaaS tradicional. Pero la era del hype f&aacute;cil termina: el dinero sigue fluyendo pero el mercado exige producto real, no wrappers. Los founders exitosos est&aacute;n construyendo workflows verticales, no modelos.</p>
+      <p class="why">La oportunidad est&aacute; en verticales espec&iacute;ficos con workflows ag&eacute;nticos (salud, legal, fitness), no en otro chatbot genérico.</p>
+      <p class="source"><a href="https://www.inc.com/brett-farmiloe/ai-startups-are-worth-30-times-saas-key-takeaways-from-humanx-2026/91330170">Inc.</a> &bull; <a href="https://blog.mean.ceo/ai-startup-trends-may-2026/">Mean CEO Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Git pushes +78% YoY a nivel global: AI multiplica devs, no los reemplaza</h3>
+      <p class="what">Los git pushes aumentaron 78% interanual en Q1 2026, y el empleo de desarrolladores de software subi&oacute; ~4% en marzo 2026 vs 2025. La evidencia temprana sugiere que las capacidades de AI coding est&aacute;n aumentando la demanda de developers, no reduci&eacute;ndola.</p>
+      <p class="why">Tu ventaja competitiva como founder t&eacute;cnico se amplifica: con AI produces m&aacute;s c&oacute;digo, pero el mercado tambi&eacute;n se mueve m&aacute;s r&aacute;pido.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-23-2026">Build Fast with AI</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Self-Hosted Sandboxes y MCP Tunnels para Claude Managed Agents</h3>
+      <p class="what">Anunciado en Code with Claude London (19 mayo), self-hosted sandboxes (beta p&uacute;blica) permite ejecutar herramientas de agentes en tu propia infra (Cloudflare, Daytona, Modal, Vercel) mientras Anthropic maneja orquestaci&oacute;n. MCP Tunnels (research preview) conecta agentes a servidores MCP privados sin abrir firewalls, via gateway outbound encriptado.</p>
+      <p class="why">Esto elimina el blocker principal para usar Claude agents en producci&oacute;n con datos sensibles: tu c&oacute;digo y datos nunca salen de tu per&iacute;metro.</p>
+      <p class="source"><a href="https://thenewstack.io/anthropic-mcp-tunnels-sandboxes/">The New Stack</a> &bull; <a href="https://www.infoq.com/news/2026/05/claude-mcp-tunnels/">InfoQ</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Platform expande l&iacute;mites de API y Managed Agents con dreaming y multi-agent</h3>
+      <p class="what">Anthropic subi&oacute; los l&iacute;mites de Claude Code y Opus API, y expandi&oacute; Managed Agents con capacidades de dreaming (ejecuci&oacute;n en background), orquestaci&oacute;n multi-agente, outcomes (objetivos verificables), y webhooks para integraciones event-driven.</p>
+      <p class="why">Si est&aacute;s construyendo sobre la API de Claude, los nuevos webhooks y outcomes te permiten crear flujos ag&eacute;nticos production-ready sin polling.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a> &bull; <a href="https://www.infoq.com/news/2026/05/code-with-claude/">InfoQ</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Google Health Coach ya disponible: coaching AI personalizado con Gemini a $9.99/mes</h3>
+      <p class="what">Google rebrandeo Fitbit como Google Health y lanz&oacute; el Health Coach (desde mayo 19): un asistente Gemini que trackea entrenamientos, analiza sue&ntilde;o, lee registros m&eacute;dicos y adapta planes en tiempo real. Stephen Curry colabor&oacute; en el dise&ntilde;o de goal setting y recuperaci&oacute;n. Disponible en Fitbit y Pixel Watch, $9.99/mes o gratis con Google AI Pro/Ultra.</p>
+      <p class="why">Este es el modelo a seguir para cualquier marketplace de coaching profesional: AI personalizada + datos de wearables + expertos reales como diferenciador.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/">TechCrunch</a> &bull; <a href="https://blog.google/products-and-platforms/products/google-health/google-health-coach/">Google Blog</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 23/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
