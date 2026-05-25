@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 24 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>24 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Google Antigravity 2.0: app de escritorio agent-first con CLI, SDK y orquestación multi-agente</h3>
+      <p class="what">Google lanzó en I/O 2026 Antigravity 2.0, una app standalone para macOS, Linux y Windows que reemplaza al Agent Manager de IDE. Incluye subagentes dinámicos, tareas asíncronas, cron scheduling, comandos de voz nativos, y un nuevo plan AI Ultra a $100/mes con 5x más límites.</p>
+      <p class="why">Competencia directa a Claude Code y Cursor en el espacio de coding agents; si estás eligiendo stack de desarrollo con IA, ahora hay tres plataformas serias para evaluar.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool-at-io-2026/">TechCrunch</a> &bull; <a href="https://www.marktechpost.com/2026/05/19/google-launches-antigravity-2-0-at-i-o-2026-a-standalone-agent-first-platform-with-cli-sdk-managed-execution-and-enterprise-support/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Google AI Studio genera Kotlin con Jetpack Compose y emulador Android en el navegador</h3>
+      <p class="what">AI Studio ahora genera código Kotlin production-quality usando Jetpack Compose, con emulador Android integrado en el navegador y soporte ADB para instalar apps en dispositivos reales. El nuevo Android CLI estable permite a agentes AI descargar el SDK y ejecutar apps directamente.</p>
+      <p class="why">Si desarrollas en Android, esto cambia radicalmente tu loop de prototipado: de idea a app corriendo en emulador sin salir del browser.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-ai-studio-io-2026/">Google Blog</a> &bull; <a href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/">Google Developers</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Camunda lanza ProcessOS: capa de inteligencia AI para automatización de procesos empresariales</h3>
+      <p class="what">ProcessOS es una capa AI que descubre, rediseña y optimiza continuamente procesos de negocio como workflows agénticos. En closed beta desde el 20 de mayo, se integra nativamente con la plataforma de orquestación de Camunda.</p>
+      <p class="why">Si tu producto incluye workflows complejos (ej. marketplace con onboarding multi-paso), vale la pena seguirle la pista como alternativa a armar tu propio motor de procesos.</p>
+      <p class="source"><a href="https://camunda.com/blog/2026/05/process-os/">Camunda</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Cursor Composer 2.5: rinde como Opus 4.7 a 1/10 del costo por tarea</h3>
+      <p class="what">Cursor lanzó Composer 2.5 el 18 de mayo, su modelo propietario construido sobre Kimi K2.5 con 25x más tareas sintéticas de entrenamiento. Logra 79.8% en SWE-Bench Multilingual y 63.2% en CursorBench v3.1, a la par con Claude Opus 4.7 y GPT-5.5. Precio: $0.50/M input, $2.50/M output (standard).</p>
+      <p class="why">A una fracción del costo de los modelos frontier, Composer 2.5 hace viable usar agentes de coding para tareas de alto volumen en tu pipeline de desarrollo.</p>
+      <p class="source"><a href="https://cursor.com/blog/composer-2-5">Cursor Blog</a> &bull; <a href="https://devops.com/cursors-composer-2-5-brings-smarter-more-reliable-ai-coding-agents/">DevOps.com</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini 3.5 Flash: rendimiento frontier para agentes a menos de la mitad del costo</h3>
+      <p class="what">Google presentó Gemini 3.5 Flash en I/O 2026, optimizado para tareas agénticas de largo horizonte. Supera a Gemini 3.1 Pro en benchmarks clave (Terminal-Bench: 76.2%, CharXiv: 84.2%) y es 12x más rápido que otros modelos frontier en su variante optimizada. Potencia los nuevos Managed Agents de la Gemini API.</p>
+      <p class="why">Modelo ideal para agentes en producción donde necesitas velocidad + costo bajo: pipelines de procesamiento, bots de atención, o automatización backend.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/">Google Blog</a> &bull; <a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/">Google I/O Highlights</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Gemma 4 optimizada para Android: agentes on-device sin conexión</h3>
+      <p class="what">Gemma 4 ya corre en Android AICore Developer Preview con optimizaciones ARM SME2 para chips Armv9. Permite ejecutar agentes multi-paso, razonamiento, generación de código y procesamiento audiovisual directamente en el dispositivo sin depender de cloud.</p>
+      <p class="why">On-device AI deja de ser experimental: si tu app Android tiene features que requieren baja latencia o funcionamiento offline, ahora puedes implementarlos con un modelo serio.</p>
+      <p class="source"><a href="https://developers.googleblog.com/bring-state-of-the-art-agentic-skills-to-the-edge-with-gemma-4/">Google Developers</a> &bull; <a href="https://newsroom.arm.com/blog/gemma-4-on-arm-optimized-on-device-ai">ARM Newsroom</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Pit (ex-founders de Voi): $16M seed de a16z para AI que aprende tu negocio y genera software custom</h3>
+      <p class="what">Los cofundadores de la scooter company Voi lanzaron Pit en Estocolmo con $16M seed de Andreessen Horowitz. La plataforma aprende cómo opera tu negocio y genera software personalizado para automatizar procesos, enfocado en enterprise.</p>
+      <p class="why">El modelo de "AI que genera tu herramienta interna" es replicable para verticales específicos: piensa en un Pit para gyms, clínicas o marketplaces de servicios.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/voi-founders-new-ai-startup-pit-has-become-the-latest-rising-star-out-of-stockholm/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; GitHub Copilot pausa sign-ups de Pro/Pro+ y migra a billing por uso desde junio 1</h3>
+      <p class="what">GitHub pausó nuevas suscripciones para Copilot Pro y Pro+, anunciando la transición a facturación basada en uso efectiva el 1 de junio. La cuota de mercado de Copilot cayó de 67% a 51% en el último año, mientras Cursor (18%) y Claude Code (10%) crecen aceleradamente.</p>
+      <p class="why">El shift a usage-based pricing señala que el modelo de suscripción fija para AI coding no escala; planifica tus costos de tooling en consecuencia.</p>
+      <p class="source"><a href="https://pasqualepillitteri.it/en/news/3392/github-copilot-cursor-claude-code-ai-coding-showdown-2026">Pillitteri</a> &bull; <a href="https://earezki.com/ai-news/2026-05-23-the-ai-coding-assistant-landscape-in-2026-cursor-vs-github-copilot-vs-claude-code-vs-jetbrains-ai/">Dev|Journal</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Managed Agents: dreaming, self-hosted sandboxes y orquestación multi-agente</h3>
+      <p class="what">Anthropic lanzó dreaming (research preview), un proceso que revisa sesiones pasadas de tus agentes, extrae patrones y cura memorias para que mejoren con el tiempo. También llegaron self-hosted sandboxes (public beta) para correr agentes en tu propia infra con providers como Cloudflare, Daytona, Modal o Vercel.</p>
+      <p class="why">Self-hosted sandboxes eliminan el blocker de seguridad y compliance que impedía usar Managed Agents con datos sensibles en producción.</p>
+      <p class="source"><a href="https://claude.com/blog/new-in-claude-managed-agents">Anthropic Blog</a> &bull; <a href="https://the-decoder.com/anthropic-adds-self-hosted-sandboxes-and-mcp-tunnels-to-claude-managed-agents/">The Decoder</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code y Opus: límites duplicados + deal con SpaceX/Colossus para más compute</h3>
+      <p class="what">Anthropic duplicó los límites de uso de 5 horas para Claude Code en planes Pro, Max, Team y Enterprise, y eliminó el throttling en horas pico gracias a un acuerdo con SpaceX para usar la capacidad completa de su datacenter Colossus 1.</p>
+      <p class="why">Más headroom para sesiones largas de coding sin interrupciones: el cuello de botella de "se me acabó el límite a mitad de un refactor" debería ser menos frecuente.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> &bull; <a href="https://simonwillison.net/2026/May/6/code-w-claude-2026/">Simon Willison</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Google Health Coach ya disponible: AI personalizada para fitness, sueño y salud a $9.99/mes</h3>
+      <p class="what">Google rebautizó la app Fitbit como Google Health el 19 de mayo, integrando un Health Coach potenciado por Gemini que analiza datos de wearables, historial médico e inputs del usuario para dar recomendaciones personalizadas 24/7. Compatible con Fitbit, Pixel Watch, y pronto otros dispositivos.</p>
+      <p class="why">Google acaba de definir el benchmark para AI health coaching en wearables: si estás construyendo en el espacio de salud/wellness, este es el estándar a superar o el ecosistema al que integrarte.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/">TechCrunch</a> &bull; <a href="https://blog.google/products-and-platforms/products/google-health/google-health-coach/">Google Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>The Collectiv lanza aceleradora AI-native para sports, health &amp; wellness en Houston</h3>
+      <p class="what">The Collectiv Foundation y Rice University abrieron una aceleradora en el Ion District de Houston para founders que construyen tecnologías AI validadas en deportes y escalables a salud, enterprise y consumo. Incluye acceso a infraestructura, mentoring y conexiones con ligas deportivas.</p>
+      <p class="why">Oportunidad concreta si tienes un MVP en sports tech o wellness: aceleradoras especializadas en la intersección AI + deporte empiezan a aparecer con recursos reales.</p>
+      <p class="source"><a href="https://news.rice.edu/news/2026/collectiv-launches-ai-native-dual-use-sports-health-wellness-accelerator-rices-ion">Rice University News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 24/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
