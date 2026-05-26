@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 25 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>25 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Antigravity 2.0: plataforma multi-agente de coding con CLI, SDK y desktop</h3>
+      <p class="what">Google lanz&oacute; Antigravity 2.0 en I/O 2026, una reconstrucci&oacute;n completa de su plataforma de coding que combina un IDE de escritorio, un CLI en Go y un SDK para crear agentes personalizados, todo corriendo sobre Gemini 3.5 Flash a 289 tokens/segundo. Un agente manager descompone tareas en subtareas y m&uacute;ltiples agentes especializados trabajan en paralelo, con soporte para subagentes din&aacute;micos y tareas programadas en background.</p>
+      <p class="why">Es el primer competidor directo que iguala la arquitectura multi-agente de Claude Code en terminal &mdash; gratis en preview para individuos, vale probarlo como alternativa para flujos de desarrollo complejos.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool-at-io-2026/">TechCrunch</a> &bull; <a href="https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/">Google Developers</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>SAP integra Claude en su Business AI Platform via MCP &mdash; 200+ agentes enterprise</h3>
+      <p class="what">En Sapphire 2026, SAP anunci&oacute; que Claude ser&aacute; el modelo principal de razonamiento integrado en toda su suite: agentes que cierran libros contables, responden consultas de RRHH y redirigen &oacute;rdenes a proveedores, coordinando entre S/4HANA, SuccessFactors y Ariba. La integraci&oacute;n usa Model Context Protocol (MCP) para conectar Claude con los sistemas SAP.</p>
+      <p class="why">MCP deja de ser experimental &mdash; si SAP lo usa para conectar agentes AI con ERPs de Fortune 500, cualquier SaaS que exponga su API via MCP gana acceso a esa misma capa de agentes.</p>
+      <p class="source"><a href="https://news.sap.com/2026/05/sap-anthropic-to-bring-claude-sap-business-ai-platform/">SAP News Center</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Claude Mythos aparece brevemente en Claude Code &mdash; se acerca el lanzamiento p&uacute;blico</h3>
+      <p class="what">El 25 de mayo, usuarios detectaron un toggle de &ldquo;Mythos&rdquo; en la interfaz de Claude Code antes de que desapareciera. Mythos es el modelo m&aacute;s avanzado de Anthropic, originalmente restringido al programa Project Glasswing donde ~50 partners descubrieron m&aacute;s de 10,000 vulnerabilidades de alta severidad en software open-source.</p>
+      <p class="why">Cuando Mythos llegue a Claude Code para todos, ser&aacute; un salto significativo en capacidad de razonamiento sobre c&oacute;digo y seguridad &mdash; vale tenerlo en el radar para auditor&iacute;as de tu codebase.</p>
+      <p class="source"><a href="https://winbuzzer.com/2026/05/26/anthropics-mythos-moves-closer-to-claude-code-xcxwbn/">WinBuzzer</a> &bull; <a href="https://cybersecuritynews.com/claude-mythos-moves-toward-public/">Cyber Security News</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot pausa nuevos registros y migra a billing por tokens el 1 de junio</h3>
+      <p class="what">GitHub suspendi&oacute; sign-ups para Copilot Pro, Pro+ y Student mientras prepara la transici&oacute;n a billing basado en consumo de tokens el 1 de junio. Cada plan incluir&aacute; cr&eacute;ditos mensuales de AI ($10 en Pro, $39 en Pro+), y el uso se calcular&aacute; por tokens consumidos incluyendo input, output y cache.</p>
+      <p class="why">Los flujos ag&eacute;nticos consumen mucho m&aacute;s que autocompletado &mdash; si dependes de Copilot, revisa tu consumo proyectado antes del 1 de junio para evitar sorpresas en la factura.</p>
+      <p class="source"><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a> &bull; <a href="https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/">GitHub Blog - Changes</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemma 4 optimizada en ARM: AI multimodal on-device para apps Android</h3>
+      <p class="what">ARM public&oacute; optimizaciones de Gemma 4 usando Scalable Matrix Extension 2 (SME2) en procesadores Arm C1, acelerando cargas de trabajo AI sin salir del presupuesto energ&eacute;tico de un smartphone. El modelo soporta texto, audio e imagen on-device, con capacidades de razonamiento y workflows ag&eacute;nticos sin conexi&oacute;n a cloud.</p>
+      <p class="why">Esto reduce latencia hasta 90% y elimina costos de API en features de AI para tu app Android &mdash; ideal para experiencias offline en mercados con conectividad irregular.</p>
+      <p class="source"><a href="https://newsroom.arm.com/blog/gemma-4-on-arm-optimized-on-device-ai">ARM Newsroom</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Code with Claude: Anthropic presenta Dreaming, Outcomes y Add-ins</h3>
+      <p class="what">En el evento Code with Claude (SF + Londres), Anthropic lanz&oacute; cinco features: Dreaming (agentes escriben notas para otros agentes, acelerando onboarding en el mismo codebase), Outcomes (definir resultados esperados, no solo instrucciones), orquestaci&oacute;n multi-agente, Claude Finance con 10 agentes pre-construidos, y Add-ins para extensiones de terceros.</p>
+      <p class="why">Dreaming y Outcomes cambian c&oacute;mo trabajas con agentes de c&oacute;digo &mdash; en vez de repetir contexto en cada sesi&oacute;n, los agentes aprenden del trabajo previo, lo cual escala tu velocidad de desarrollo individual.</p>
+      <p class="source"><a href="https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/">MIT Technology Review</a> &bull; <a href="https://www.mindstudio.ai/blog/code-with-claude-2026-new-agent-features">MindStudio</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google resetea pricing de AI: Ultra baja de $250 a $100/mes, Antigravity gratis en preview</h3>
+      <p class="what">Google reestructur&oacute; sus planes de AI: AI Plus a $7.99/mes, AI Pro a $19.99/mes, y AI Ultra (antes $250) a $99.99/mes con 5x m&aacute;s l&iacute;mites de Antigravity. Adem&aacute;s, Gemini reemplaz&oacute; l&iacute;mites diarios de prompts por un modelo de compute que se refresca cada 5 horas.</p>
+      <p class="why">Si est&aacute;s comparando costos de herramientas AI para tu stack de desarrollo, la guerra de precios Google vs Anthropic vs GitHub est&aacute; bajando la barrera de entrada cada mes.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/">Google I/O Developer Highlights</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza 28 integraciones de seguridad y compliance para Claude enterprise</h3>
+      <p class="what">El 25 de mayo, Anthropic anunci&oacute; integraciones con 28 proveedores de seguridad incluyendo Cloudflare, CrowdStrike, Datadog, Microsoft Purview, Okta, Palo Alto Networks, Snyk y Wiz. La Claude Compliance API da acceso program&aacute;tico a datos de actividad de Claude para monitoreo continuo y enforcing autom&aacute;tico de pol&iacute;ticas.</p>
+      <p class="why">Si est&aacute;s vendiendo a enterprise y usas Claude internamente, ahora puedes demostrar governance real sobre tu uso de AI &mdash; esto desbloquea deals con equipos de seguridad corporativos.</p>
+      <p class="source"><a href="https://cryptobriefing.com/anthropic-claude-enterprise-security-integrations/">CryptoBriefing</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Vaticano presenta enc&iacute;clica sobre IA junto a co-fundador de Anthropic</h3>
+      <p class="what">El Papa Le&oacute;n XIV present&oacute; personalmente &ldquo;Magnifica Humanitas&rdquo;, su primera enc&iacute;clica sobre protecci&oacute;n de la persona humana en la era de la IA, junto a Chris Olah, co-fundador de Anthropic. Es la primera vez que un pont&iacute;fice presenta personalmente una enc&iacute;clica, y la elecci&oacute;n de Anthropic (no Google, no OpenAI) como partner es una se&ntilde;al deliberada.</p>
+      <p class="why">Anthropic se posiciona como el lab de AI &ldquo;responsable&rdquo; con validaci&oacute;n institucional al m&aacute;s alto nivel &mdash; relevante si tu producto AI necesita narrativa de confianza y seguridad.</p>
+      <p class="source"><a href="https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html">Vatican News</a> &bull; <a href="https://www.anthropic.com/news/chris-olah-pope-leo-encyclical">Anthropic</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health reemplaza Fitbit: AI Coach con Gemini a $9.99/mes</h3>
+      <p class="what">Google rebrandea la app de Fitbit como Google Health (rollout completo el 26 de mayo) con un AI Health Coach basado en Gemini que analiza sue&ntilde;o, actividad f&iacute;sica y datos de salud para crear planes semanales personalizados. Tambi&eacute;n lanzaron Fitbit Air, un tracker sin pantalla a $99.99 dise&ntilde;ado para uso 24/7.</p>
+      <p class="why">Google acaba de validar el modelo de &ldquo;AI coach como suscripci&oacute;n&rdquo; en health/wellness &mdash; si est&aacute;s construyendo un marketplace de servicios profesionales de salud, este es tu benchmark de UX y pricing.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/">TechCrunch</a> &bull; <a href="https://blog.google/products-and-platforms/products/google-health/google-health-coach/">Google Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 The Collectiv + Rice University: aceleradora AI sports/health en Houston pre-Mundial</h3>
+      <p class="what">The Collectiv Foundation y Rice University lanzaron una aceleradora AI nativa enfocada en sports, health y wellness en el Ion District de Houston. Conecta founders con ligas deportivas profesionales, conferencias universitarias, sistemas hospitalarios y VCs, con foco en performance deportiva, fan experience, analytics y plataformas de media.</p>
+      <p class="why">Con el Mundial 2026 en Houston, esta aceleradora crea un pipeline directo entre startups de sports tech y los mayores compradores del sector &mdash; oportunidad concreta para founders en el cruce de AI + deporte.</p>
+      <p class="source"><a href="https://news.rice.edu/news/2026/collectiv-launches-ai-native-dual-use-sports-health-wellness-accelerator-rices-ion">Rice University News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 25/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
