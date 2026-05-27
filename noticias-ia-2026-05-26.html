@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 26 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>26 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft Copilot Studio: Computer-Using Agents ya en GA para empresas</h3>
+      <p class="what">Los agentes que usan computadora en Copilot Studio son ahora GA en todas las regiones comerciales de Power Platform. En lugar de scripts frágiles basados en selectores, estos agentes usan visión + razonamiento para navegar UIs en vivo, adaptándose cuando los layouts cambian. Soporta OpenAI CUA y Claude Sonnet 4.5 como modelos, con Azure Key Vault, Purview audit logging y human-in-the-loop configurable.</p>
+      <p class="why">Si tu producto necesita automatizar flujos en apps sin API (ERPs legacy, portales web de terceros), esto es la infraestructura enterprise que antes tenías que construir a mano.</p>
+      <p class="source"><a href="https://techcommunity.microsoft.com/blog/copilot-studio-blog/computer-using-agents-in-microsoft-copilot-studio-are-now-generally-available/4519427">Microsoft Tech Community</a> &bull; <a href="https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/">Microsoft Copilot Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI Codex Appshots: cualquier ventana de Mac es contexto para tu agente</h3>
+      <p class="what">OpenAI lanzó Appshots en Codex para Mac: con doble pulsación de Command, capturas la ventana activa (screenshot + texto completo incluyendo fuera del scroll) y la inyectas directamente como contexto en tu thread. Además, Codex ahora puede operar tu Mac incluso con la pantalla bloqueada.</p>
+      <p class="why">La dirección es clara: Codex como proceso de fondo, no herramienta de primer plano — si competís con agentes de coding, este es el patrón UX a seguir.</p>
+      <p class="source"><a href="https://9to5mac.com/2026/05/21/codex-for-mac-updated-with-new-appshots-feature-that-instantly-gives-chat-context/">9to5Mac</a> &bull; <a href="https://www.macrumors.com/2026/05/22/codex-use-mac-apps-when-locked/">MacRumors</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Android AppFunctions: tus apps ahora son servidores MCP on-device</h3>
+      <p class="what">Anunciado en Google I/O 2026, Android AppFunctions permite que cualquier app actúe como servidor MCP (Model Context Protocol) on-device, compartiendo herramientas, servicios y datos con el sistema y agentes de forma nativa. Es parte del rebranding de Android como "intelligence system" en vez de solo OS.</p>
+      <p class="why">Si desarrollas apps Android, exponer tus funcionalidades vía AppFunctions es la nueva forma de que agentes AI descubran y usen tu app sin que el usuario la abra.</p>
+      <p class="source"><a href="https://android-developers.googleblog.com/2026/05/android-ai-intelligence-system.html">Android Developers Blog</a> &bull; <a href="https://techcrunch.com/2026/05/12/google-brings-agentic-ai-and-vibe-coded-widgets-to-android/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemma 4 optimizada para ARM: on-device AI acelerada en móviles</h3>
+      <p class="what">ARM publicó optimizaciones específicas de Gemma 4 para sus procesadores móviles, usando ExecuTorch 1.0 GA como runtime. Los benchmarks muestran que apps con AI on-device reducen latencia de respuesta 50%+ vs cloud-first, y eliminan costos de data egress.</p>
+      <p class="why">Para features offline o de baja latencia en tu app móvil (autocompletado, clasificación, búsqueda semántica local), Gemma 4 + ARM es el stack de producción más accesible hoy.</p>
+      <p class="source"><a href="https://newsroom.arm.com/blog/gemma-4-on-arm-optimized-on-device-ai">ARM Newsroom</a> &bull; <a href="https://newsroom.arm.com/news/executorch-1-0-ga-release-edge-ai">ExecuTorch 1.0 GA</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Guardrails de Meta y Google rotos en minutos: la seguridad de AI sigue frágil</h3>
+      <p class="what">Investigadores demostraron que pueden eliminar los safety guardrails de modelos de Meta y Google en minutos, habilitando respuestas sobre armas biológicas, malware y material de explotación infantil. Los experimentos usaron sistemas modificados que bypasearon las protecciones built-in.</p>
+      <p class="why">Si integras modelos open-source en tu producto, necesitas tu propia capa de seguridad — confiar solo en los guardrails del modelo no es suficiente.</p>
+      <p class="source"><a href="https://techstartups.com/2026/05/26/top-tech-news-today-may-26-2026/">Tech Startups</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic cierra ronda de $30B+ a valuación de $900B+: primera ganancia operativa</h3>
+      <p class="what">Anthropic está cerrando esta semana una ronda que supera los $30 mil millones a una valuación superior a $900B, convirtiéndose en la startup de AI más valiosa del mundo, superando a OpenAI. La empresa proyectó $10.9B en ingresos Q2 y su primera ganancia operativa trimestral.</p>
+      <p class="why">Claude como plataforma es ahora financieramente sostenible — esto reduce el riesgo de apostar tu stack de producto en el ecosistema Anthropic a largo plazo.</p>
+      <p class="source"><a href="https://www.bloomberg.com/news/articles/2026-05-22/anthropic-to-close-over-30-billion-round-as-soon-as-next-week">Bloomberg</a> &bull; <a href="https://finance.yahoo.com/sectors/technology/articles/anthropic-set-close-30-billion-203545596.html">Yahoo Finance</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Sam Altman admite: la AI no reemplazará empleos de cuello blanco como predijo</h3>
+      <p class="what">En Sydney el 26 de mayo, el CEO de OpenAI reconoció que estaba equivocado sobre el impacto a corto plazo de AI en el empleo. Los datos reales de adopción muestran que el patrón dominante es augmentation, no sustitución — la interacción humana sigue siendo esencial en muchos roles profesionales.</p>
+      <p class="why">Validación para founders que construyen herramientas de augmentación (AI + humano) en vez de automatización total — el mercado real recompensa esa tesis.</p>
+      <p class="source"><a href="https://techstartups.com/2026/05/26/top-tech-news-today-may-26-2026/">Tech Startups</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Mythos aparece en Claude Code: modelo de ciberseguridad con capacidades extremas</h3>
+      <p class="what">El 25 de mayo, usuarios detectaron un toggle de "Mythos" en Claude Code público antes de que desapareciera. Claude Mythos Preview (claude-mythos-1-preview) es un modelo restringido que supera a Opus 4.7 en code reasoning y autonomía. Bajo Project Glasswing, ya detectó 23,000+ vulnerabilidades en 1,000 proyectos open-source con 10,000 de severidad alta o crítica.</p>
+      <p class="why">Si construyes software open-source o mantienes dependencias críticas, Glasswing podría llegar a encontrar bugs en tu código antes de que lo haga un atacante.</p>
+      <p class="source"><a href="https://winbuzzer.com/2026/05/26/anthropics-mythos-moves-closer-to-claude-code-xcxwbn/">WinBuzzer</a> &bull; <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-restricted-claude-mythos-model-may-be-coming-to-claude-code/">BleepingComputer</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza 28 integraciones de seguridad + Compliance API para Claude Enterprise</h3>
+      <p class="what">Claude ahora se conecta con 28 plataformas de seguridad y compliance: CrowdStrike, Palo Alto Networks, Okta, Zscaler, Cloudflare, Wiz, Snyk, Datadog, entre otras. La nueva Compliance API da acceso programático a contenido de conversaciones y logs de actividad de Claude Enterprise y Claude Platform.</p>
+      <p class="why">Si vendes a enterprise y tus clientes usan Claude internamente, estas integraciones eliminan una objeción común de compliance en el ciclo de venta.</p>
+      <p class="source"><a href="https://www.securityweek.com/anthropic-expands-claudes-enterprise-security-reach-with-28-new-integrations/">SecurityWeek</a> &bull; <a href="https://www.helpnetsecurity.com/2026/05/25/anthropic-security-compliance-integrations-claude/">Help Net Security</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health AI Coach llega al 100% de usuarios: coaching personalizado con Gemini</h3>
+      <p class="what">El rollout del AI Health Coach de Google alcanzó el 100% el 26 de mayo, coincidiendo con la venta del nuevo Fitbit Air ($99.99). El coach Gemini-powered genera planes fitness semanales personalizados, responde preguntas sobre datos médicos y fitness, y se integra con Apple Health para datos cross-platform. Cuesta $9.99/mes como parte de Google Health Premium.</p>
+      <p class="why">El playbook de Google — hardware barato + AI coach por suscripción + datos cross-platform — es exactamente el modelo para marketplaces de servicios de bienestar.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/">TechCrunch</a> &bull; <a href="https://blog.google/products-and-platforms/products/google-health/google-health-coach/">Google Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Plantiga: insoles AI con 4,000 datos por paso, aprobados por la NBA</h3>
+      <p class="what">Plantiga es el único sensor in-shoe aprobado para uso durante partidos NBA. Sus insoles capturan 4,000 datos por paso y su plataforma Norman.ai detecta micro-asimetrías biomecánicas antes de que escalen a lesión. El caso del capitán de la NHL Gabriel Landeskog, que volvió tras 3 años de lesión, demuestra el impacto en rehabilitación.</p>
+      <p class="why">Un caso real de wearable + AI en sports donde los datos biomecánicos en tiempo real generan valor diferencial — el patrón aplica a cualquier vertical de coaching profesional.</p>
+      <p class="source"><a href="https://www.fastcompany.com/91548062/how-wearable-ai-technology-helping-nba-nhl-athletes-everywhere-prevent-injuries">Fast Company</a> &bull; <a href="https://plantiga.com/">Plantiga</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 26/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
