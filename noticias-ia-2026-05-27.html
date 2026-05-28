@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 27 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>27 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 WebMCP en Chrome 149: nuevo est&aacute;ndar abierto para que webs expongan herramientas a agentes AI</h3>
+      <p class="what">Google lanz&oacute; WebMCP como origin trial en Chrome 149, un est&aacute;ndar web abierto que permite a sitios web exponer funciones estructuradas (JavaScript o anotaciones HTML) directamente a agentes AI en el navegador, sin necesidad de un servidor MCP backend. Booking.com, Shopify, Instacart, Expedia y Redfin ya est&aacute;n experimentando con la integraci&oacute;n.</p>
+      <p class="why">Si tienes un marketplace o SaaS web, implementar WebMCP es lo que har&aacute; que tu plataforma sea consumible por agentes AI &mdash; el nuevo canal de adquisici&oacute;n.</p>
+      <p class="source"><a href="https://developer.chrome.com/docs/ai/webmcp">Chrome Developers</a> &bull; <a href="https://scriptwalker.app/blog/webmcp-chrome-149-origin-trial-agentic-web-may-2026">ScriptWalker</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Android Studio Migration Assistant: convierte apps React Native, iOS o web a Kotlin nativo con AI</h3>
+      <p class="what">Google present&oacute; en I/O 2026 un agente de migraci&oacute;n integrado en Android Studio que analiza c&oacute;digo de React Native, frameworks web o iOS y genera una app nativa en Kotlin con Jetpack Compose, convirtiendo storyboards, SVGs y assets autom&aacute;ticamente. Migraciones que tomaban semanas ahora se completan en horas.</p>
+      <p class="why">Si mantienes un proyecto cross-platform y est&aacute;s considerando ir nativo en Android, esta herramienta elimina la mayor barrera de entrada.</p>
+      <p class="source"><a href="https://android-developers.googleblog.com/2026/05/17-things-android-developers-google-io.html">Android Developers Blog</a> &bull; <a href="https://9to5google.com/2026/05/19/google-ai-studio-android-apps/">9to5Google</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Antigravity 2.0: plataforma agent-first con CLI, SDK y subagentes din&aacute;micos</h3>
+      <p class="what">Google relanz&oacute; su herramienta de coding como Antigravity 2.0: una app desktop redise&ntilde;ada, un CLI que reemplaza a Gemini CLI (deprecado el 18 de junio), un SDK p&uacute;blico, subagentes din&aacute;micos, tareas en background programadas, y Gemini 3.5 Flash como modelo por defecto. Comparte el mismo harness entre desktop y terminal.</p>
+      <p class="why">Es el competidor directo de Claude Code desde Google &mdash; si usas Gemini CLI, tienes hasta el 18 de junio para migrar a Antigravity CLI.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool-at-io-2026/">TechCrunch</a> &bull; <a href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/">Google Developers</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Koog 1.0 de JetBrains: framework estable de agentes AI para Kotlin y Java en producci&oacute;n</h3>
+      <p class="what">JetBrains lanz&oacute; Koog 1.0, su framework open-source de agentes AI para JVM con garant&iacute;a de estabilidad de API de 1 a&ntilde;o. Incluye DSL idiom&aacute;tico en Kotlin, API fluida para Java, soporte de OpenTelemetry multiplataforma, transporte HTTP desacoplado, y prompt caching nativo para Anthropic.</p>
+      <p class="why">Si tu backend es Kotlin/Java y quer&iacute;as integrar agentes AI sin migrar a Python, Koog 1.0 es la primera opci&oacute;n production-ready del ecosistema JVM.</p>
+      <p class="source"><a href="https://blog.jetbrains.com/ai/2026/05/koog-1-0-is-out-stable-core-better-interop-and-multiplatform-observability/">JetBrains Blog</a> &bull; <a href="https://github.com/JetBrains/koog">GitHub</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot migra a AI Credits el 1 de junio: nuevo modelo de pricing basado en uso</h3>
+      <p class="what">GitHub Copilot abandona su modelo de suscripci&oacute;n fija y pasa a AI Credits el 1 de junio de 2026, un sistema de cr&eacute;ditos basado en consumo real. Copilot ahora soporta modelos de OpenAI, Anthropic (Claude Haiku/Sonnet/Opus), Google (Gemini 3), y xAI Grok Code, permitiendo elegir modelo por tarea.</p>
+      <p class="why">Revisa tu consumo actual &mdash; seg&uacute;n tu volumen, el cambio a cr&eacute;ditos puede abaratarte o encarecerte significativamente.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/github-copilot-complete-guide-2026-features-pricing-agents">NxCode</a> &bull; <a href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/">Lushbinary</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google AI Studio genera apps Android nativas desde un prompt de texto</h3>
+      <p class="what">Google AI Studio ahora permite describir una app en lenguaje natural y genera una aplicaci&oacute;n Android nativa funcional con Kotlin, Jetpack Compose y patrones recomendados de la plataforma. El c&oacute;digo generado es production-quality y sigue las mejores pr&aacute;cticas del ecosistema Android.</p>
+      <p class="why">Para validar una idea de app Android r&aacute;pidamente, esto reduce el tiempo de prototipo funcional de d&iacute;as a minutos &mdash; ideal para MVPs antes de invertir en arquitectura.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-ai-studio-io-2026/">Google Blog</a> &bull; <a href="https://www.technobezz.com/news/google-ai-studio-now-generates-native-android-apps-from-simple-text-prompts">Technobezz</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 SuperDesign: primer agente open-source de dise&ntilde;o UI que vive dentro del IDE</h3>
+      <p class="what">SuperDesign es un agente de dise&ntilde;o AI open-source que se integra en VS Code, Cursor, Windsurf y Claude Code, generando mockups, wireframes y componentes UI desde prompts en lenguaje natural. Elimina el cambio entre herramientas de dise&ntilde;o y c&oacute;digo, acelerando la fase de prototipado visual.</p>
+      <p class="why">Si eres founder t&eacute;cnico sin dise&ntilde;ador, esto te da UI profesional sin salir del editor &mdash; y al ser open-source, lo adaptas a tu design system.</p>
+      <p class="source"><a href="https://github.com/superdesigndev/superdesign">GitHub</a> &bull; <a href="https://www.superdesign.dev/">superdesign.dev</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Code v2.1.152: claude agents, /usage desglosado y diffs navegables con teclado</h3>
+      <p class="what">La &uacute;ltima versi&oacute;n de Claude Code (26 de mayo) introduce <code>claude agents</code>, una pantalla unificada para ver todas tus sesiones activas, bloqueadas o completadas. Adem&aacute;s, <code>/usage</code> ahora muestra desglose por categor&iacute;a (skills, subagentes, plugins, costo por servidor MCP), y la vista de diffs es navegable por teclado.</p>
+      <p class="why">Si manejas m&uacute;ltiples sesiones de Claude Code en paralelo, <code>claude agents</code> te da visibilidad real sobre qu&eacute; est&aacute; pasando sin cambiar de terminal.</p>
+      <p class="source"><a href="https://github.com/anthropics/claude-code/releases">GitHub Releases</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza MCP Tunnels y Sandboxes self-hosted para Managed Agents</h3>
+      <p class="what">MCP Tunnels permite que Managed Agents se conecten a servidores MCP privados sin exponer puertos al internet, usando una conexi&oacute;n saliente cifrada. Los Sandboxes self-hosted (beta p&uacute;blica) permiten ejecutar herramientas de agentes en infraestructura propia o de providers como Cloudflare, Daytona, Modal y Vercel.</p>
+      <p class="why">Esto desbloquea Managed Agents para empresas que no pod&iacute;an enviar datos a Anthropic &mdash; ahora la ejecuci&oacute;n queda en tu per&iacute;metro.</p>
+      <p class="source"><a href="https://www.infoq.com/news/2026/05/claude-mcp-tunnels/">InfoQ</a> &bull; <a href="https://thenewstack.io/anthropic-mcp-tunnels-sandboxes/">The New Stack</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health Coach ya disponible: coach AI de salud, fitness y sue&ntilde;o por $9.99/mes</h3>
+      <p class="what">Google lanz&oacute; globalmente su Health Coach impulsado por Gemini, que centraliza datos de wearables (Fitbit Air, Pixel Watch), labs m&eacute;dicos, nutrici&oacute;n y ciclo menstrual para dar recomendaciones personalizadas. Funciona como combinaci&oacute;n de coach de fitness, experto en sue&ntilde;o y asesor de bienestar, con plan conversacional que se ajusta en tiempo real.</p>
+      <p class="why">A $9.99/mes, Google est&aacute; definiendo el precio de referencia para coaching AI de salud &mdash; si est&aacute;s en este vertical, tu producto compite contra esto.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/">TechCrunch</a> &bull; <a href="https://blog.google/products-and-platforms/products/google-health/google-health-coach/">Google Blog</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 27/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
