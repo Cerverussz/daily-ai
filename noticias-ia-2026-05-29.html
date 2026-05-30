@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 29 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>29 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Opus 4.8 con Dynamic Workflows: migraciones de codebase completas en una sola sesión</h3>
+      <p class="what">Anthropic lanzó Opus 4.8 el 28 de mayo, con 69.2% en SWE-Bench Pro (vs 64.3% de Opus 4.7 y 58.6% de GPT-5.5). La novedad principal son los Dynamic Workflows en Claude Code: el modelo escribe sus propios scripts de orquestación y lanza hasta 1,000 subagentes en paralelo para ejecutar migraciones, refactors o tareas masivas de codebase de principio a fin.</p>
+      <p class="why">Si tienes una migración pendiente de cientos de archivos o un refactor cross-codebase, ahora puedes lanzarlo en una sola sesión en vez de hacerlo archivo por archivo.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-opus-4-8">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/">TechCrunch</a> &bull; <a href="https://www.marktechpost.com/2026/05/28/anthropic-ships-claude-opus-4-8-alongside-dynamic-workflows-and-cheaper-fast-mode-with-workflows-capped-at-1000-subagents/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Opus 4.8 Fast Mode 3x más barato + controles de esfuerzo para todos</h3>
+      <p class="what">El Fast Mode de Opus 4.8 (2.5x la velocidad normal) cuesta ahora $10/$50 por millón de tokens input/output, tres veces menos que en modelos anteriores. Además, claude.ai y Cowork añaden un control de esfuerzo junto al selector de modelo: sube para razonamiento profundo, baja para respuestas rápidas.</p>
+      <p class="why">El fast mode barato hace viable usar Opus para tareas de alto volumen donde antes solo podías justificar Sonnet o Haiku.</p>
+      <p class="source"><a href="https://thenewstack.io/claude-opus-48-release/">The New Stack</a> &bull; <a href="https://9to5mac.com/2026/05/28/anthropic-upgrades-claude-with-new-opus-4-8-model-heres-whats-new/">9to5Mac</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Managed Agents: sandboxes self-hosted y MCP tunnels en beta pública</h3>
+      <p class="what">Anthropic lanzó self-hosted sandboxes (beta pública) que permiten ejecutar tool calls de agentes en tu propia infra o en Cloudflare/Daytona/Modal/Vercel, y MCP tunnels (research preview) para conectar agentes a servidores MCP privados sin exponerlos a internet. La orquestación sigue en Anthropic, pero la ejecución queda dentro de tu perímetro de seguridad.</p>
+      <p class="why">Si estás construyendo agentes que tocan datos sensibles de usuarios o inventario, esto elimina el blocker de seguridad sin tener que montar tu propia orquestación.</p>
+      <p class="source"><a href="https://claude.com/blog/claude-managed-agents-updates">Claude Blog</a> &bull; <a href="https://thenewstack.io/anthropic-mcp-tunnels-sandboxes/">The New Stack</a></p>
+    </div>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 AWS lanza Agentic Shopping Assistant: la tecnología de Alexa Shopping disponible para cualquier retailer</h3>
+      <p class="what">AWS empaquetó la tecnología de Alexa for Shopping (que generó $12B en ventas incrementales el año pasado) como servicio para retailers externos. Un e-commerce puede tener un asistente conversacional personalizado con su catálogo, reglas de negocio y marca en ~60 días. Kate Spade ya lo usa como concierge de regalos sobre Haiku 4.5 vía Bedrock.</p>
+      <p class="why">Si construyes un marketplace, esto es el playbook: asistente conversacional + catálogo propio + Bedrock, listo para producción sin construir el stack de agentes desde cero.</p>
+      <p class="source"><a href="https://www.aboutamazon.com/news/aws/aws-agentic-shopping-assistant-retailers">About Amazon</a> &bull; <a href="https://siliconangle.com/2026/05/27/aws-launches-aws-agentic-shopping-assistant-help-retailers-build-ai-tools/">SiliconANGLE</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cohere adquiere Aleph Alpha: nace un challenger de IA soberana transatlántica de $20B</h3>
+      <p class="what">Cohere completó la adquisición de Aleph Alpha (Alemania) creando una empresa valorada en $20B enfocada en IA soberana para empresas europeas y gobiernos. La combinación une la infraestructura enterprise de Cohere con la experiencia regulatoria europea de Aleph Alpha.</p>
+      <p class="why">Si tu producto opera en Europa o con datos regulados, esta fusión crea una alternativa real a OpenAI/Anthropic/Google con compliance EU nativo.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-28-2026">BuildFast with AI</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot cambia a facturación por uso el 1 de junio: lo que necesitas saber</h3>
+      <p class="what">Desde el 1 de junio, todos los planes de Copilot migran de requests a AI Credits basados en consumo de tokens ($0.01/crédito). Pro ($10/mes) incluye 1,000 créditos, Pro+ ($39/mes) incluye 3,900. Code completions y Next Edit suggestions siguen incluidas sin costo. Los excedentes se cobran a tarifas de API publicadas.</p>
+      <p class="why">Revisa tu consumo real esta semana: si usas modelos premium frecuentemente, tu factura podría subir significativamente respecto al flat rate anterior.</p>
+      <p class="source"><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a> &bull; <a href="https://docs.github.com/en/copilot/how-tos/manage-and-track-spending/prepare-for-your-move-to-usage-based-billing">GitHub Docs</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Android AppFunctions: tu app como servidor MCP on-device para agentes del sistema</h3>
+      <p class="what">Anunciado en Google I/O, Android AppFunctions permite que cualquier app actúe como servidor MCP on-device, exponiendo sus herramientas, servicios y datos al sistema y a agentes locales. Esto convierte a Android en un "sistema de inteligencia" donde los agentes del OS pueden interactuar con apps de terceros sin APIs cloud.</p>
+      <p class="why">Si desarrollas apps Android, implementar AppFunctions es cómo haces que tu app sea descubrible y accionable por los agentes de IA que Google está integrando en el sistema operativo.</p>
+      <p class="source"><a href="https://android-developers.googleblog.com/2026/05/android-ai-intelligence-system.html">Android Developers Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google Antigravity 2.0: plataforma agent-first con CLI, SDK y Gemini 3.5 Flash</h3>
+      <p class="what">Google relanzó su herramienta de coding como Antigravity 2.0: desktop app con orquestación multi-agente, CLI nueva en Go (más rápida que Gemini CLI), SDK público, y tareas programadas en background. Usa Gemini 3.5 Flash por defecto. Nuevo plan AI Ultra a $100/mes con 5x de límites.</p>
+      <p class="why">Es la respuesta directa de Google a Claude Code; si ya usas Gemini en Android Studio, la integración nativa con el ecosistema Google puede ser razón suficiente para probarlo.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool-at-io-2026/">TechCrunch</a> &bull; <a href="https://www.marktechpost.com/2026/05/19/google-launches-antigravity-2-0-at-i-o-2026-a-standalone-agent-first-platform-with-cli-sdk-managed-execution-and-enterprise-support/">MarkTechPost</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Snap: el 65% de su código nuevo es generado por IA; reestructura y espera ahorrar $500M</h3>
+      <p class="what">Snap reveló que la IA genera más del 65% de su código nuevo y anunció una reestructuración que proyecta más de $500M en ahorro anualizado para el segundo semestre de 2026. Es uno de los primeros casos públicos donde una empresa tech grande cuantifica el impacto directo de AI coding en su estructura de costos.</p>
+      <p class="why">Es la prueba de concepto a escala: si una empresa de miles de ingenieros reduce costos así con AI coding, un equipo pequeño puede multiplicar su output dramáticamente.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-28-2026">BuildFast with AI</a> &bull; <a href="https://unrot.co/blogs/weekly-ai-news-may-24-28-2026">unrot.co</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>KPMG despliega Claude a 276,000 empleados en 138 países con Managed Agents</h3>
+      <p class="what">KPMG anunció el Digital Gateway Powered by Claude, integrando Claude Cowork y Managed Agents en su plataforma de delivery para 276,000+ profesionales globalmente. Es el despliegue enterprise más grande de Claude hasta la fecha, enfocado en automatizar consultoría y auditoría.</p>
+      <p class="why">Valida que Claude Managed Agents está listo para producción enterprise a escala masiva; si estabas esperando señales de madurez del producto, esta es.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-28-2026">BuildFast with AI</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health Coach sale de preview: coaching personalizado con Gemini a $9.99/mes</h3>
+      <p class="what">Google Health Coach ya está disponible globalmente como servicio de suscripción ($9.99/mes). Usa Gemini para actuar como coach de fitness, sueño y salud 24/7, integrando datos de wearables, nutrición, ciclo menstrual y registros médicos (en EE.UU.). Reseñas del Fitbit Air elogian el hardware pero advierten que el coach aún comete errores en recomendaciones.</p>
+      <p class="why">Es el modelo de negocio a estudiar: wearable barato como gateway + suscripción mensual de coaching AI; si construyes en health/wellness, este es tu competidor directo y tu referencia de UX.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/">TechCrunch</a> &bull; <a href="https://9to5google.com/2026/05/28/fitbit-air-review/">9to5Google</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 29/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
