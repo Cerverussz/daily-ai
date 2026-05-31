@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 30 de Mayo 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>30 de mayo de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code Dynamic Workflows: hasta 1,000 subagentes paralelos en una sola sesi&oacute;n</h3>
+      <p class="what">Anthropic lanz&oacute; dynamic workflows en Claude Code (research preview), donde Claude escribe scripts de orquestaci&oacute;n JavaScript que ejecutan cientos de subagentes en paralelo, verificando resultados antes de entregar. Disponible en CLI, Desktop y VS Code para planes Max, Team y Enterprise, as&iacute; como via API, Bedrock, Vertex AI y Foundry.</p>
+      <p class="why">Para migraciones masivas, auditor&iacute;as de seguridad o refactors que tocan cientos de archivos, esto convierte tareas de semanas en d&iacute;as &mdash; cambia c&oacute;mo planificas sprints.</p>
+      <p class="source"><a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code">Anthropic Blog</a> &bull; <a href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Self-Hosted Sandboxes y MCP Tunnels para agentes en infraestructura privada</h3>
+      <p class="what">Self-hosted sandboxes (public beta) permiten ejecutar herramientas de agentes en tu propia infra via Cloudflare, Daytona, Modal o Vercel, mientras Anthropic maneja la orquestaci&oacute;n. MCP tunnels (research preview) conectan agentes a servidores MCP privados sin exponer endpoints p&uacute;blicos, usando una conexi&oacute;n saliente cifrada.</p>
+      <p class="why">Si necesitas agentes AI que accedan a tus bases de datos o APIs internas sin abrir tu firewall, esto resuelve el problema de seguridad que frenaba la adopci&oacute;n empresarial.</p>
+      <p class="source"><a href="https://claude.com/blog/claude-managed-agents-updates">Anthropic Blog</a> &bull; <a href="https://thenewstack.io/anthropic-mcp-tunnels-sandboxes/">The New Stack</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Opus 4.8: effort controls, fast mode 3x m&aacute;s barato y mid-conversation system messages</h3>
+      <p class="what">Anthropic lanz&oacute; Opus 4.8 el 28 de mayo con mejoras en coding ag&eacute;ntico (64.3% &rarr; 69.2%), razonamiento multidisciplinario (54.7% &rarr; 57.9%) y menos comportamiento enga&ntilde;oso. Nuevas features: effort control para ajustar profundidad de razonamiento, fast mode a 2.5x velocidad y 3x m&aacute;s barato, y mensajes de sistema mid-conversation en la API.</p>
+      <p class="why">Los mid-conversation system messages permiten inyectar instrucciones actualizadas sin reiniciar el prompt &mdash; ideal para agentes de larga duraci&oacute;n en tu producto.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-opus-4-8">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Android Studio Agent Mode GA: Gemini construye, despliega y depura apps completas</h3>
+      <p class="what">El Agent Mode de Android Studio ya est&aacute; disponible para todos los desarrolladores. Gemini no solo sugiere c&oacute;digo: crea planes multi-paso, modifica m&uacute;ltiples archivos, despliega al dispositivo conectado, inspecciona Logcat, toma screenshots y verifica cambios autom&aacute;ticamente.</p>
+      <p class="why">Esto reduce dr&aacute;sticamente el ciclo edit-build-test en Android &mdash; el agente hace el loop completo que antes hac&iacute;as manualmente.</p>
+      <p class="source"><a href="https://developer.android.com/studio/gemini/agent-mode">Android Developers</a> &bull; <a href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/">Google Developers Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google Antigravity 2.0: plataforma agent-first reemplaza Gemini CLI</h3>
+      <p class="what">Google lanz&oacute; Antigravity 2.0 en I/O 2026: desktop IDE + CLI (<code>agy</code>) + SDK + Managed Agents en la Gemini API, todos compartiendo el mismo agent harness. El CLI est&aacute; reescrito en Go, optimizado para workflows remotos. Gemini CLI se depreca el 18 de junio.</p>
+      <p class="why">Si usas Gemini CLI, mig&aacute; antes del 18 de junio; el nuevo CLI comparte harness con el desktop, as&iacute; que las mejoras llegan a ambos simult&aacute;neamente.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool-at-io-2026/">TechCrunch</a> &bull; <a href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/">Google Developers</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cursor 3.3: agentes paralelos con grafo de dependencias y PR review integrado</h3>
+      <p class="what">Cursor 3.3 introduce Build in Parallel: analiza dependencias de tareas, construye un grafo de ejecuci&oacute;n y despacha pasos independientes a subagentes simult&aacute;neos (20-30% m&aacute;s r&aacute;pido en codebases desacopladas). Adem&aacute;s, el PR Review Surface embebe threads de review, historial de commits y navegaci&oacute;n de cambios directamente en el IDE.</p>
+      <p class="why">El ciclo completo de escribir c&oacute;digo &rarr; crear PR &rarr; revisar &rarr; mergear ahora vive dentro de tu editor, sin cambiar de contexto.</p>
+      <p class="source"><a href="https://cursor.com/changelog/05-07-26">Cursor Changelog</a> &bull; <a href="https://chatforest.com/builders-log/cursor-3-3-3-5-parallel-agents-pr-review-automations/">ChatForest</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Bun porta 960K l&iacute;neas de Zig a Rust en 11 d&iacute;as con Claude Dynamic Workflows</h3>
+      <p class="what">Jarred Sumner us&oacute; dynamic workflows para migrar todo el runtime de Bun de Zig a Rust: 6,755 commits, 2,188 archivos modificados, ~750K l&iacute;neas de Rust generadas, con 99.8% de los tests pasando en Linux x64. El proceso us&oacute; cientos de agentes en paralelo con dos revisores por archivo y un loop de fixes automatizado.</p>
+      <p class="why">Es el caso m&aacute;s concreto hasta la fecha de que una migraci&oacute;n masiva de c&oacute;digo puede comprimirse de meses a d&iacute;as &mdash; aunque deja 13K bloques <code>unsafe</code> que muestran el trade-off velocidad vs. calidad.</p>
+      <p class="source"><a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code">Anthropic Blog</a> &bull; <a href="https://aiweekly.co/alerts/bun-rewrites-960k-lines-of-zig-to-rust-using-claude">AI Weekly</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic anuncia Claude Mythos y alcanza $47B en revenue anualizado</h3>
+      <p class="what">Anthropic confirm&oacute; que su modelo m&aacute;s avanzado, Claude Mythos, estar&aacute; disponible para todos los clientes &ldquo;en las pr&oacute;ximas semanas&rdquo;. El modelo destaca en coding avanzado y ciberseguridad ofensiva/defensiva. La compa&ntilde;&iacute;a alcanz&oacute; $47B de ARR (vs $10B a fines de 2025) y una valoraci&oacute;n de $965B, superando a OpenAI.</p>
+      <p class="why">El salto de $10B a $47B en ARR en 5 meses confirma que la demanda enterprise de Claude es real &mdash; Mythos ser&aacute; el modelo a evaluar cuando llegue si necesitas capacidades de coding de siguiente nivel.</p>
+      <p class="source"><a href="https://fortune.com/2026/05/29/anthropic-raises-65-billion-at-record-965-billion-valuation-promises-mythos-ai-model-in-wide-release-in-coming-weeks-releases-claude-opus-4-8/">Fortune</a> &bull; <a href="https://www.anthropic.com/news/series-h">Anthropic</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health Coach sale de preview: coaching AI personalizado por $9.99/mes</h3>
+      <p class="what">El Health Coach de Google, impulsado por Gemini, sali&oacute; de preview y es ahora feature central de la app Google Health (antes Fitbit). Ofrece planes de entrenamiento por voz natural, logging de comidas por foto, an&aacute;lisis detallado de sue&ntilde;o y coaching 24/7 integrando datos de Fitbit, Pixel Watch y wearables compatibles.</p>
+      <p class="why">Google est&aacute; construyendo el marketplace de salud AI que combina hardware + datos + coaching &mdash; la oportunidad para devs est&aacute; en los verticales especializados (nutrici&oacute;n deportiva, rehabilitaci&oacute;n) que a&uacute;n no cubre.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/">TechCrunch</a> &bull; <a href="https://blog.google/products-and-platforms/products/google-health/google-health-coach/">Google Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>The Collectiv y Rice University lanzan acelerador AI-native de sports tech en Houston</h3>
+      <p class="what">The Collectiv Foundation y Rice University crearon un acelerador para startups AI-native en sports, salud y wellness en el Ion District de Houston. El programa da acceso a propiedades deportivas globales, sistemas hospitalarios y venture capital, con foco en tecnolog&iacute;as validadas en deporte y escalables a salud y enterprise.</p>
+      <p class="why">Con el Mundial 2026 como catalizador, Houston se posiciona como hub de sports tech AI &mdash; si est&aacute;s construyendo en este vertical, este acelerador conecta con los buyers correctos.</p>
+      <p class="source"><a href="https://news.rice.edu/news/2026/collectiv-launches-ai-native-dual-use-sports-health-wellness-accelerator-rices-ion">Rice University News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 30/05/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
