@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 1 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>1 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot cambia a facturación por tokens: adiós tarifa plana</h3>
+      <p class="what">Desde el 1 de junio, GitHub Copilot migra de suscripción fija a un sistema de GitHub AI Credits basado en consumo de tokens. Las autocompletaciones y Next Edit Suggestions siguen ilimitadas, pero chat, agentes, CLI, Spaces y Spark ahora descuentan créditos (1 crédito = $0.01 USD). Usuarios reportan que facturas de $29/mes podrían escalar a $750/mes con uso intensivo de agentes.</p>
+      <p class="why">Si usas Copilot con agentes en tu flujo diario, necesitas auditar tu consumo real de tokens hoy o considerar alternativas como Claude Code o Cursor.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/">GitHub Changelog</a> &bull; <a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Sysdig documenta el primer ciberataque autónomo con agente LLM en producción</h3>
+      <p class="what">El 10 de mayo, Sysdig observó un agente LLM que explotó CVE-2026-39987 en un notebook marimo, extrajo credenciales cloud, pivotó por AWS Secrets Manager, abrió sesiones SSH paralelas y exfiltró una base de datos PostgreSQL completa en menos de una hora sin intervención humana. El agente improvisó el dump sin conocer el schema previo, razonando desde conocimiento general.</p>
+      <p class="why">Esto cambia el modelo de amenazas para cualquier servicio expuesto a internet: los atacantes con LLMs ya no necesitan expertise técnico profundo para cadenas de ataque complejas.</p>
+      <p class="source"><a href="https://webflow.sysdig.com/blog/ai-agent-at-the-wheel-how-an-attacker-used-llms-to-move-from-a-cve-to-an-internal-database-in-4-pivots">Sysdig Blog</a> &bull; <a href="https://www.securitymagazine.com/articles/102325-ai-agent-conducted-a-cyberattack-on-its-own-it-took-less-than-one-hour">Security Magazine</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Opus 4.8 + Dynamic Workflows: hasta 1,000 subagentes en paralelo</h3>
+      <p class="what">Anthropic lanzó Claude Opus 4.8 (28 de mayo) junto con Dynamic Workflows en Claude Code: un sistema de orquestación que genera scripts JavaScript para coordinar hasta 1,000 subagentes (16 concurrentes) con verificación adversarial integrada. Opus 4.8 mejora coding agéntico de 64.3% a 69.2%, es 4x menos propenso a dejar pasar bugs, y el modo Fast es 3x más barato que en modelos anteriores.</p>
+      <p class="why">Con ultracode activado, tareas que antes tomaban un sprint completo ahora se resuelven en horas con orquestación automática de agentes.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-opus-4-8">Anthropic</a> &bull; <a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code">Claude Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Bun portado de Zig a Rust en 11 días: 750K líneas con Dynamic Workflows</h3>
+      <p class="what">Jarred Sumner, creador de Bun, usó Dynamic Workflows de Claude Code para portar el runtime de Zig a Rust: 750,000 líneas, 11 días desde el primer commit al merge, con 99.8% del test suite pasando. Los workflows mapearon lifetimes, escribieron cada .rs como port idéntico del .zig, y un loop de fix automatizó hasta que build y tests quedaron limpios.</p>
+      <p class="why">Es el caso más concreto de que AI coding agents ya manejan refactors masivos en producción real, no solo demos.</p>
+      <p class="source"><a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code">Claude Blog</a> &bull; <a href="https://digg.com/ai/rb5xj3bt">Digg</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft Build 2026: Windows Local AI Runtime con modelos on-device para NPU</h3>
+      <p class="what">Microsoft abre Build 2026 (2-3 de junio) con Windows Local AI: un runtime a nivel de sistema que permite ejecutar agentes AI directamente en NPUs de PCs Copilot+ (Snapdragon X Elite, Intel Lunar Lake, AMD XDNA). Incluye modelos como Phi-4-mini-silicon (2B), Phi-4-vision (7B) y un modelo speech-to-text de 300M, accesibles via APIs para apps Win32, UWP y WinUI 3 sin conexión a cloud.</p>
+      <p class="why">Si desarrollas para desktop o estás evaluando edge AI, esto abre una plataforma de distribución masiva con modelos pre-instalados y fine-tuning via LoRA empaquetable en la Microsoft Store.</p>
+      <p class="source"><a href="https://windowsnews.ai/article/build-2026-how-microsoft-plans-to-turn-windows-11-into-a-local-ai-powerhouse-for-developers.421248">Windows News</a> &bull; <a href="https://windowsnews.ai/article/build-2026-microsofts-windows-ai-models-copilot-super-app-and-dev-setup-reset.421337">Windows News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft presenta MAI-Thinking-1: su primer modelo de razonamiento propio para Copilot</h3>
+      <p class="what">En Build 2026, Mustafa Suleyman revela MAI-Thinking-1, el primer modelo de razonamiento dedicado de Microsoft, junto con modelos de imagen (MAI-Image-2.5) y un modelo de coding propio para GitHub Copilot. Microsoft busca reducir su dependencia de OpenAI con modelos internos especializados por tarea.</p>
+      <p class="why">La fragmentación de modelos por tarea es la tendencia: espera que Copilot mejore en coding específico pero que el ecosistema se vuelva más complejo de evaluar.</p>
+      <p class="source"><a href="https://www.business-standard.com/technology/tech-news/microsoft-build-2026-what-to-expect-new-reasoning-ai-model-surface-laptop-ultra-126060200686_1.html">Business Standard</a> &bull; <a href="https://windowsforum.com/threads/microsoft-build-2026-homegrown-ai-models-to-power-github-copilot.420887/">Windows Forum</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI llega a AWS: acceso a modelos frontier con billing y IAM de Amazon</h3>
+      <p class="what">OpenAI expande su disponibilidad a entornos AWS, permitiendo a empresas usar modelos frontier de OpenAI con el modelo operativo familiar de AWS: billing consolidado, autenticación IAM y cumplimiento enterprise. Esto se suma a Claude ya disponible en Microsoft Foundry y AWS Bedrock.</p>
+      <p class="why">La guerra de distribución multi-cloud de los proveedores de AI te beneficia directamente: puedes elegir modelo por tarea sin cambiar de infra ni negociar contratos separados.</p>
+      <p class="source"><a href="https://releasebot.io/updates/openai">Releasebot - OpenAI Updates</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic divide facturación el 15 de junio: Agent SDK tendrá pool de créditos separado</h3>
+      <p class="what">A partir del 15 de junio, el uso programático de Claude (Agent SDK, claude -p, GitHub Actions, apps third-party como Zed) se moverá a un pool de créditos independiente facturado a precios de API. Los créditos mensuales son: $20 (Pro), $100 (Max 5x), $200 (Max 20x). Las suscripciones previamente subsidiaban uso de agentes a 15-30x menos que API.</p>
+      <p class="why">Si tu workflow depende de herramientas third-party con Claude (Zed, scripts con claude -p), calcula tu consumo real ya: el aumento de costo puede ser significativo.</p>
+      <p class="source"><a href="https://devtoolpicks.com/blog/anthropic-splits-claude-subscriptions-agent-sdk-credit-june-2026">DevToolPicks</a> &bull; <a href="https://codersera.com/blog/anthropic-june-2026-billing-change-claude-code/">Codersera</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude disponible en Microsoft Foundry (Azure) con controles enterprise</h3>
+      <p class="what">Claude Opus 4.6 y otros modelos de Anthropic ya están disponibles en Microsoft Foundry, haciendo de Azure la única nube con acceso a Claude y GPT en una sola plataforma. Soporta Azure Consumption Commitment (MACC), billing consolidado y zero data retention.</p>
+      <p class="why">Si tu empresa ya está en Azure, ahora puedes usar Claude sin aprobación de vendor separada ni cambiar de plataforma.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-in-microsoft-foundry">Anthropic</a> &bull; <a href="https://azure.microsoft.com/en-us/blog/introducing-anthropics-claude-models-in-microsoft-foundry-bringing-frontier-intelligence-to-azure/">Azure Blog</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health reemplaza Fitbit con Gemini AI Coach: entrenador personal con IA por $99</h3>
+      <p class="what">Google reemplazó la app de Fitbit por Google Health (19 de mayo) con coaching AI basado en Gemini que analiza datos en tiempo real y ofrece recomendaciones personalizadas de entrenamiento, sueño y nutrición. El nuevo Fitbit Air ($99) es un tracker sin pantalla diseñado para uso 24/7, aunque reviewers reportan problemas de precisión y alucinaciones del coach AI.</p>
+      <p class="why">El modelo de AI coach integrado en wearable a $99 marca el precio de entrada para competir en este vertical; si estás construyendo algo en coaching deportivo, este es tu benchmark.</p>
+      <p class="source"><a href="https://gadgetbond.com/google-health-app-launch/">GadgetBond</a> &bull; <a href="https://easternherald.com/2026/05/26/google-fitbit-air-review-ai-health-coach-problems/">Eastern Herald</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 01/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
