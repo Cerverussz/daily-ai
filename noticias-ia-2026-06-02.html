@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 2 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>2 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft Build 2026: Project Polaris reemplaza GPT-4 en GitHub Copilot con modelo propio</h3>
+      <p class="what">Microsoft presentó Project Polaris, su modelo de coding propietario basado en arquitectura mixture-of-experts con módulos especializados por lenguaje, que reemplazará a GPT-4 Turbo como motor por defecto de Copilot desde agosto 2026. Corre sobre los aceleradores Maia 200 de Microsoft, reduciendo latencia y costo por inferencia.</p>
+      <p class="why">Microsoft cortando dependencia de OpenAI en su producto de coding más grande señala que el modelo commodity ya no es diferenciador — lo que importa es la integración con el toolchain.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/317596/20260602/github-copilot-replaces-gpt-4-project-polaris-ships-multi-agent-vs-code-build.htm">TechTimes</a> &bull; <a href="https://chatforest.com/builders-log/microsoft-build-2026-recap-windows-agent-platform-project-polaris-copilot-workspace/">ChatForest</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Copilot multi-agent en VS Code: subagentes paralelos para lint, tests, docs y security</h3>
+      <p class="what">GitHub Copilot en VS Code ahora soporta modo multi-agente con arquitectura planner-specialist: un orquestador descompone la tarea y delega a subagentes especializados que corren en paralelo (linting, testing, documentación, security review). Copilot Workspace también llegó a GA con Fleet Mode y Autopilot.</p>
+      <p class="why">Si tu workflow de CI es lento, este patrón de agentes paralelos en el IDE reduce el feedback loop antes de pushear — vale la pena probarlo contra tu pipeline actual.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/317596/20260602/github-copilot-replaces-gpt-4-project-polaris-ships-multi-agent-vs-code-build.htm">TechTimes</a> &bull; <a href="https://byteiota.com/github-copilot-workspace-ga-fleet-mode-autopilot/">ByteIota</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft MXC: sandbox a nivel de kernel para agentes AI en Windows</h3>
+      <p class="what">Microsoft lanzó MXC (Microsoft Execution Containers), una capa de ejecución con aislamiento enforced a nivel de OS que permite declarar qué puede acceder un agente AI (archivos, red, apps). Ofrece un espectro de aislamiento desde process isolation hasta micro-VMs, con OpenAI y Nvidia como partners de lanzamiento.</p>
+      <p class="why">Si estás construyendo agentes que ejecutan código o acceden a recursos del sistema, MXC resuelve el sandboxing que antes tenías que implementar a mano.</p>
+      <p class="source"><a href="https://venturebeat.com/security/microsoft-launches-mxc-an-os-level-sandbox-for-ai-agents-with-openai-and-nvidia-already-on-board">VentureBeat</a> &bull; <a href="https://blogs.windows.com/windowsdeveloper/2026/06/02/windows-platform-security-for-ai-agents/">Windows Dev Blog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Opus 4.8: dynamic workflows con cientos de subagentes paralelos en Claude Code</h3>
+      <p class="what">Anthropic lanzó Opus 4.8 con dynamic workflows en Claude Code: el modelo planifica el trabajo y ejecuta cientos de subagentes en paralelo en una sola sesión, permitiendo migraciones de codebase a escala (cientos de miles de líneas) de kickoff a merge. También incluye Fast mode, esfuerzo alto por defecto, y código 4x menos propenso a dejar pasar errores.</p>
+      <p class="why">Para tareas grandes como migrar un proyecto Android a Kotlin 2 o refactorizar un monolito, esto convierte un trabajo de semanas en horas — si tienes plan Max o Enterprise.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-opus-4-8">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Azure Agent Mesh: orquestación federada de agentes multi-cloud</h3>
+      <p class="what">Microsoft anunció Azure Agent Mesh, un control plane que federa la ejecución de agentes AI entre Azure, AWS, Google Cloud, sistemas on-premise (via Arc) y Windows 365 Cloud PCs. Usa las mismas APIs del Windows Agent Framework y rutea tareas al nodo más cercano por latencia y disponibilidad de GPU.</p>
+      <p class="why">Si tu producto necesita agentes que toquen múltiples entornos (cloud + edge + on-prem), esto elimina la necesidad de armar tu propio mesh de orquestación.</p>
+      <p class="source"><a href="https://aitoolsrecap.com/Blog/microsoft-build-2026-windows-agent-framework-wsl3-azure-mesh">AI Tools Recap</a> &bull; <a href="https://chatforest.com/builders-log/microsoft-build-2026-recap-windows-agent-platform-project-polaris-copilot-workspace/">ChatForest</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Windows Agent Framework 1.0 open-source (MIT) y Windows Agent Store</h3>
+      <p class="what">Microsoft open-sourced Windows Agent Framework (WAF) v1.0 bajo licencia MIT en Build 2026. Los agentes se definen en YAML y corren en Windows local, Windows 365 Cloud PCs y Azure Arc. Además anunció Windows Agent Store para distribución de agentes.</p>
+      <p class="why">Un framework MIT para agentes desktop abre la puerta a distribuir tu producto como agente nativo de Windows — un canal de distribución nuevo para devs independientes.</p>
+      <p class="source"><a href="https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026/">Microsoft Dev Blog</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic sale a bolsa: filing confidencial de IPO con $47B de revenue anualizado</h3>
+      <p class="what">Anthropic presentó su prospecto de IPO confidencial ante la SEC, con Goldman Sachs, JPMorgan y Morgan Stanley como underwriters, apuntando a octubre 2026. La compañía reporta revenue anualizado de $47B (5x vs diciembre 2025) y proyecta su primer trimestre rentable en Q2 2026 con $559M de profit operativo.</p>
+      <p class="why">Anthropic rentable y público cambia la dinámica: más presión por monetizar agentes, lo que puede significar mejores herramientas para devs pero también pricing más agresivo — planifica tu presupuesto de API.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html">CNBC</a> &bull; <a href="https://www.cbsnews.com/news/anthropic-ipo-confidential-filing-claude-ai/">CBS News</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic separa billing de agentes: créditos independientes desde junio 15</h3>
+      <p class="what">A partir del 15 de junio, el uso programático de Claude (Agent SDK, claude -p, Claude Code GitHub Actions, apps third-party) se mueve a un pool de créditos separado: $20/mes en Pro, $100 en Max 5x, $200 en Max 20x, a tasas de API estándar. El uso interactivo (chat, Claude Code terminal, Cowork) no cambia.</p>
+      <p class="why">Si usas Claude Code en CI/CD o tienes agentes automatizados, revisa tu consumo ahora — $20 en Pro se acaba rápido con workflows pesados y necesitarás planificar overflow billing.</p>
+      <p class="source"><a href="https://devtoolpicks.com/blog/anthropic-splits-claude-subscriptions-agent-sdk-credit-june-2026">DevToolPicks</a> &bull; <a href="https://thenewstack.io/anthropic-agent-sdk-credits/">The New Stack</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Mythos se expande a 150 organizaciones de infraestructura cr&iacute;tica en 15+ pa&iacute;ses</h3>
+      <p class="what">Anthropic expandió Project Glasswing, llevando su modelo Mythos (especializado en encontrar vulnerabilidades de software) a 150 nuevas organizaciones en más de 15 países. La expansión cubre sectores que no estaban en la cohorte inicial: energía, agua, salud, comunicaciones y hardware.</p>
+      <p class="why">Mythos encontrando vulns en infraestructura crítica valida que los modelos frontier ya son herramientas de seguridad en producción — si mantienes código sensible, considera integrar scanning con AI en tu pipeline.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/">TechCrunch</a> &bull; <a href="https://www.cnbc.com/2026/06/02/anthropic-mythos-ai-project-glasswing.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude sufre outage el d&iacute;a del IPO filing</h3>
+      <p class="what">Claude AI experimentó una interrupción de servicio el 2 de junio con tasas de error elevadas en múltiples servicios, justo el día del anuncio del IPO. Anthropic confirmó el problema y trabajó en la corrección.</p>
+      <p class="why">Un recordatorio de que si Claude es parte crítica de tu stack de producción, necesitas fallbacks — considera tener un modelo secundario configurado.</p>
+      <p class="source"><a href="https://www.theregister.com/ai-and-ml/2026/06/02/claude-celebrates-anthropics-stock-market-float-with-blockbuster-outage/5250071">The Register</a> &bull; <a href="https://www.techradar.com/news/live/claude-outage-june-2026">TechRadar</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 AI coaching adaptativo alcanza 78% de features inteligentes en apps fitness</h3>
+      <p class="what">Según el Digital Fitness Ecosystem Report 2026, el 78% de las features de inteligencia en apps fitness ya son adaptativas (aprenden y evolucionan con el usuario). Apps que integran AI con wearables reportan 3x más engagement, y plataformas como Budy combinan workout planning, nutrición, voice coaching y gamificación en un solo contexto engine.</p>
+      <p class="why">Si estás construyendo un marketplace de servicios deportivos o de coaching, el diferenciador ya no es tener AI — es tener AI que conecte datos de wearables, nutrición y entrenamiento en una sola experiencia adaptativa.</p>
+      <p class="source"><a href="https://www.feed.fm/2026-digital-fitness-ecosystem-report">Feed.fm Report</a> &bull; <a href="https://softprodigy.com/how-ai-is-revolutionizing-the-fitness-industry-2026/">SoftProdigy</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Trump firma orden ejecutiva de seguridad AI: revisi&oacute;n voluntaria pre-lanzamiento de modelos</h3>
+      <p class="what">El presidente Trump firmó una orden ejecutiva que pide a las empresas de AI someter voluntariamente sus modelos más potentes a pruebas gubernamentales hasta 30 días antes de su lanzamiento público. También establece un clearinghouse de ciberseguridad AI para identificar y remediar vulnerabilidades de software a escala.</p>
+      <p class="why">Aunque es voluntario hoy, marca la dirección regulatoria — si construyes productos con AI, monitorea cómo evoluciona esto porque puede afectar timelines de lanzamiento de los modelos que usas.</p>
+      <p class="source"><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">White House</a> &bull; <a href="https://www.npr.org/2026/06/02/nx-s1-5844347/ai-safety-trump-executive-order">NPR</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 02/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
