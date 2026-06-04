@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 3 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>3 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft lanza MAI-Code-1-Flash en GitHub Copilot: modelo propio de 5B params para coding</h3>
+      <p class="what">En Build Day 2, Microsoft presentó MAI-Code-1-Flash, un modelo de 5 mil millones de parámetros construido internamente y optimizado para el harness de GitHub Copilot y VS Code. Supera a Claude Haiku 4.5 en SWE-Bench Verified, Pro y Multilingual, con +16 puntos en SWE-Bench Pro (51.2% vs 35.2%), e incluye pensamiento adaptativo que ajusta su presupuesto de razonamiento según la complejidad de la tarea.</p>
+      <p class="why">Microsoft ya no depende solo de OpenAI para Copilot &mdash; este modelo propio es más rápido y barato para autocompletado diario, lo que debería mejorar la experiencia sin costo extra.</p>
+      <p class="source"><a href="https://microsoft.ai/news/introducingmai-code-1-flash/">Microsoft AI</a> &bull; <a href="https://github.blog/changelog/2026-06-02-mai-code-1-flash-is-now-available-for-github-copilot/">GitHub Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot migra a facturación por uso con AI Credits desde el 1 de junio</h3>
+      <p class="what">Todos los planes de Copilot pasaron a facturación basada en créditos AI, reemplazando las premium request units (PRUs). El plan Pro ($10/mes) incluye 1,000 créditos base + 500 flex; Pro+ ($39) incluye 3,900 + 3,100; y el nuevo plan Max ofrece 10,000 + 10,000 créditos mensuales.</p>
+      <p class="why">Si usas agentes de Copilot intensivamente, ahora pagas proporcional al compute real &mdash; calcula tu consumo actual antes de que termine el periodo de gracia flex en septiembre.</p>
+      <p class="source"><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a> &bull; <a href="https://findskill.ai/blog/github-copilot-ai-credits-billing-june-2026/">FindSkill.ai</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Visual Studio 2026: agentes Copilot para debugging, profiling y modernización .NET</h3>
+      <p class="what">Microsoft anunció que GitHub Copilot en Visual Studio evoluciona hacia agentes que participan activamente en el ciclo de desarrollo: debugging, profiling y testing junto al dev. También llega Copilot modernization agent para upgrades automáticos de aplicaciones al último stack .NET.</p>
+      <p class="why">Si mantienes un backend .NET, el agente de modernización puede ahorrarte semanas de migración manual entre versiones de framework.</p>
+      <p class="source"><a href="https://devblogs.microsoft.com/visualstudio/whats-coming-next-in-visual-studio-our-microsoft-build-2026-announcements/">Visual Studio Blog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>MAI-Thinking-1: Microsoft presenta su primer modelo de razonamiento, rivaliza con Opus 4.6 en coding</h3>
+      <p class="what">Anunciado en Build Day 2, MAI-Thinking-1 es un modelo de 35 mil millones de parámetros activos con 256K de contexto, diseñado para razonamiento multi-paso complejo y generación de código. En tests ciegos, evaluadores independientes lo prefieren a Sonnet 4.6, y empata con Opus 4.6 en SWE-Bench Pro.</p>
+      <p class="why">Un modelo de razonamiento competitivo a bajo costo de tokens amplía tus opciones para pipelines que requieren planificación compleja sin pagar precios de modelo frontier.</p>
+      <p class="source"><a href="https://news.microsoft.com/build-2026-live-blog/microsoft-build-2026-live/">Microsoft Build Live</a> &bull; <a href="https://www.gizbot.com/features/microsoft-build-2026-highlights-the-biggest-announcements-you-need-to-know-126021.html">GizBot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Opus 4.8 + Dynamic Workflows: orquesta cientos de subagentes en paralelo desde Claude Code</h3>
+      <p class="what">Anthropic lanzó Opus 4.8 el 28 de mayo (41 días después de Opus 4.7), con 88.6% en SWE-Bench Verified y un nuevo research preview de Dynamic Workflows que permite a Claude Code dividir tareas grandes en cientos de subagentes paralelos en una sola sesión. Ya puede ejecutar migraciones a escala de codebase completo, usando la test suite existente como barra de calidad.</p>
+      <p class="why">Si estás haciendo refactors o migraciones grandes, Dynamic Workflows convierte lo que antes era un proyecto de semanas en algo que corre en una sesión de Claude Code.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-opus-4-8">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cursor Composer 2.5: modelo propio que iguala Opus 4.7 a $0.50/M tokens de input</h3>
+      <p class="what">Cursor lanzó Composer 2.5, un modelo in-house de horizonte largo que empata con Opus 4.7 y GPT-5.5 en benchmarks, a $0.50/M input y $2.50/M output. Incluye Build in Parallel para ejecutar múltiples tareas simultáneamente y review de PRs integrado.</p>
+      <p class="why">Para edición diaria de código, Composer 2.5 ofrece calidad frontier a una fracción del precio &mdash; el combo Cursor + Claude Code terminal se consolida como el stack dominante.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/cursor-vs-claude-code-vs-github-copilot-2026-ultimate-comparison">NxCode</a> &bull; <a href="https://thenewstack.io/claude-code-vs-cursor-vs-codex-vs-antigravity-2026/">The New Stack</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 MiniMax M3: modelo open-weight que supera a GPT-5.5 al 5-10% del costo</h3>
+      <p class="what">El laboratorio chino MiniMax lanzó M3 el 1 de junio, un modelo open-weight con 1M tokens de contexto, visión nativa de imagen/video y coding agente. Usa la arquitectura MSA (MiniMax Sparse Attention) que reduce el compute por token a 1/20 del estándar. Resultados: 59.0% en SWE-Bench Pro (superando a GPT-5.5 y Gemini 3.1 Pro) y 83.5 en BrowseComp (vs 79.3 de Opus 4.7).</p>
+      <p class="why">Un modelo open-weight con rendimiento frontier a 5-10% del costo cambia fundamentalmente la economía de correr features AI-heavy en producción si eres founder bootstrapped.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/minimax-m3-debuts-eclipsing-gpt-5-5-and-gemini-3-1-pro-on-key-benchmark-performance-for-just-5-10-of-the-cost/">VentureBeat</a> &bull; <a href="https://www.minimax.io/blog/minimax-m3">MiniMax Blog</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 KPMG despliega Claude a 276,000 empleados integrado en Digital Gateway con Managed Agents</h3>
+      <p class="what">KPMG y Anthropic firmaron alianza global: Claude queda embebido en Digital Gateway (la plataforma de trabajo real de KPMG), no como chatbot aparte. Usan Claude Cowork para asistencia colaborativa y Managed Agents API para ejecución autónoma multi-paso, empezando por herramientas para clientes de tax y legal.</p>
+      <p class="why">Este es el template para vender AI a enterprise: no un chat genérico sino agentes integrados en el workflow existente del cliente &mdash; patrón replicable si construyes SaaS B2B.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/anthropic-kpmg">Anthropic</a> &bull; <a href="https://kpmg.com/xx/en/media/press-releases/2026/05/kpmg-and-anthropic-sign-global-alliance-and-launch-digital-gateway-powered-by-claude.html">KPMG</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google reimagina Search con ads conversacionales: Bloomberg reporta alarma entre anunciantes</h3>
+      <p class="what">Google anunció el cambio más grande en Search en 25 años: el buscador será "completamente reimaginado" con IA, incluyendo "conversational discovery ads" dentro de las respuestas de Gemini donde un agente chat puede cerrar la venta sin que el usuario visite la web del anunciante. Marcas como Chewy, Gap y L'Oréal ya participan en el piloto Direct Offers.</p>
+      <p class="why">Si dependes de SEO o Google Ads para adquisición, tu funnel cambia radicalmente &mdash; el tráfico orgánico a tu sitio va a caer y necesitas estar dentro del ecosistema de agentes.</p>
+      <p class="source"><a href="https://www.bloomberg.com/opinion/articles/2026-06-03/google-gemini-ai-search-shift-is-freaking-out-the-online-ad-world">Bloomberg</a> &bull; <a href="https://blog.google/products/ads-commerce/google-marketing-live-search-ads/">Google Blog</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic escala Claude Mythos a infraestructura crítica en 15+ países via Project Glasswing</h3>
+      <p class="what">Anthropic expandió Project Glasswing a 150 organizaciones nuevas incluyendo Samsung, SK Hynix, NATO y ENISA (agencia de ciberseguridad de la UE). Claude Mythos, descrito como su modelo más poderoso, ha identificado más de 10,000 vulnerabilidades de severidad alta o crítica en los codebases de los partners iniciales.</p>
+      <p class="why">Mythos validado en infraestructura crítica posiciona a Anthropic en el mercado de ciberseguridad enterprise &mdash; y establece un nuevo estándar de lo que un modelo AI puede hacer en auditoría de código.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/">TechCrunch</a> &bull; <a href="https://www.anthropic.com/news/expanding-project-glasswing">Anthropic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic presenta filing confidencial para IPO: $47B de revenue anualizado, valoración $965B</h3>
+      <p class="what">Anthropic presentó ante la SEC un filing confidencial para salir a bolsa el 1 de junio. La compañía reporta $47 mil millones de revenue anualizado por suscripciones de Claude a empresas e individuos, tras una ronda de $65B que la valoró en $965 mil millones.</p>
+      <p class="why">El IPO consolida a Anthropic como empresa permanente del ecosistema &mdash; si construyes sobre Claude, la estabilidad financiera de tu proveedor de modelo ya no es una preocupación.</p>
+      <p class="source"><a href="https://www.cbsnews.com/news/anthropic-ipo-confidential-filing-claude-ai/">CBS News</a> &bull; <a href="https://www.washingtonpost.com/technology/2026/06/01/anthropic-maker-claude-files-with-sec-go-public-an-ipo/">Washington Post</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 The Collectiv + Rice University lanzan aceleradora AI para sports, health & wellness en Houston</h3>
+      <p class="what">The Collectiv Foundation y Rice University lanzaron una aceleradora AI-native en el Ion District de Houston enfocada en startups que desarrollan AI validada en deportes y escalable a salud, enterprise y consumidor. Los verticales incluyen performance y salud, fan experience, analytics y plataformas de medios, con apoyo del Rice-Houston Methodist Center y el Texas Medical Center.</p>
+      <p class="why">Con el Mundial 2026 en Houston, este acelerador llega en el momento exacto &mdash; si tienes un MVP en sports/wellness tech, hay capital y red de validación listos.</p>
+      <p class="source"><a href="https://news.rice.edu/news/2026/collectiv-launches-ai-native-dual-use-sports-health-wellness-accelerator-rices-ion">Rice University</a> &bull; <a href="https://houston.innovationmap.com/collectiv-rice-sports-ai-accelerator-2675230450.html">InnovationMap</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 03/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
