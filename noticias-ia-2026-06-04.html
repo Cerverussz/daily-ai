@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 4 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>4 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google lanza Gemma 4 12B: agentes multimodales on-device que corren en 16 GB de RAM</h3>
+      <p class="what">Google DeepMind liberó Gemma 4 12B bajo Apache 2.0, un modelo encoder-free que procesa texto, imagen, audio y video nativamente. Corre workflows agénticos completos en laptops y dispositivos móviles sin conexión, incluyendo planificación multi-paso, generación de código y uso de herramientas.</p>
+      <p class="why">Si desarrollas para Android, esto te da agentes AI offline reales en dispositivo sin pagar APIs cloud ni depender de conectividad.</p>
+      <p class="source"><a href="https://developers.googleblog.com/bringing-gemma-4-12b-to-your-laptop-unlocking-local-agentic-workflows-with-google-ai-edge/">Google Developers Blog</a> &bull; <a href="https://www.marktechpost.com/2026/06/03/google-deepmind-releases-gemma-4-12b-an-encoder-free-multimodal-model-with-native-audio-that-runs-on-a-16-gb-laptop/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft Scout: agente personal always-on integrado en Microsoft 365</h3>
+      <p class="what">Presentado en Build 2026, Scout es un agente autónomo basado en OpenClaw que opera across Teams, Outlook, OneDrive y SharePoint. Resuelve conflictos de agenda, prepara reuniones y ejecuta tareas proactivamente sin que se lo pidas, con sistema de auditoría de conformidad incluido.</p>
+      <p class="why">El patrón de agente personal persistent que Scout implementa es el template que toda plataforma SaaS va a necesitar ofrecer en los próximos 12 meses.</p>
+      <p class="source"><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/">Microsoft Blog</a> &bull; <a href="https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 ZoomMate: AI teammate que convierte reuniones en trabajo ejecutado por $20/mes</h3>
+      <p class="what">Zoom lanzó ZoomMate, un agente AI que participa en reuniones en vivo y después ejecuta acciones automáticas: actualiza Salesforce, crea tickets en Jira, agenda follow-ups en Calendar y genera presentaciones a partir de transcripciones. Incluye búsqueda agéntica cross-system.</p>
+      <p class="why">A $20/usuario, es un caso de estudio de cómo monetizar agentes AI como "teammates" — un modelo replicable para cualquier plataforma de servicios profesionales.</p>
+      <p class="source"><a href="https://news.zoom.com/zoom-launches-zoommate/">Zoom Newsroom</a> &bull; <a href="https://www.uctoday.com/productivity-automation/zoom-launches-zoommate-ai-agent-meetings-workflows/">UC Today</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 MiniMax M3: modelo open-weights con rendimiento frontier a 5-10% del costo de GPT-5.5</h3>
+      <p class="what">MiniMax lanzó M3, el primer modelo open-weights que combina rendimiento frontier (59% SWE-Bench Pro, supera a GPT-5.5 en varios benchmarks), contexto de 1M tokens y multimodalidad nativa. Su arquitectura Sparse Attention reduce el costo por token a 1/20 del modelo anterior: $0.60/M input, $2.40/M output.</p>
+      <p class="why">Para pipelines de alto volumen en tu backend — procesamiento de documentos, agentes autónomos, RAG masivo — esto cambia radicalmente la ecuación de costos.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/minimax-m3-debuts-eclipsing-gpt-5-5-and-gemini-3-1-pro-on-key-benchmark-performance-for-just-5-10-of-the-cost">VentureBeat</a> &bull; <a href="https://openrouter.ai/minimax/minimax-m3">OpenRouter</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Opus 4.8 GA: subagentes paralelos, fast mode 2.5x y 4x menos bugs en código</h3>
+      <p class="what">Anthropic liberó Opus 4.8 como modelo por defecto en Max, Team y API. Introduce workflows con cientos de subagentes paralelos en una sesión de Claude Code, fast mode a 2.5x de velocidad, y caching desde 1,024 tokens. Es 4x menos probable que deje pasar errores en código que escribe.</p>
+      <p class="why">El combo de subagentes paralelos + menor tasa de bugs hace que tareas de refactoring masivo o migración de codebase sean viables en una sola sesión.</p>
+      <p class="source"><a href="https://www.anthropic.com/claude/opus">Anthropic</a> &bull; <a href="https://www.macrumors.com/2026/05/28/anthropic-claude-opus-4-8/">MacRumors</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>UK ordena a Google: publishers pueden bloquear AI search sin perder ranking orgánico</h3>
+      <p class="what">La CMA británica ordenó a Google separar el consentimiento de contenido para AI del ranking de búsqueda tradicional. Los publishers pueden ahora bloquear que Google use su contenido en AI Overviews y entrenamiento de modelos sin desaparecer de los resultados orgánicos.</p>
+      <p class="why">Si tu producto hace RAG o scraping de contenido web, prepárate: esta regulación va a expandirse a más jurisdicciones y reducir la disponibilidad de datos de entrenamiento.</p>
+      <p class="source"><a href="https://theaitrack.com/ai-news-june-2026-in-depth-and-concise/">The AI Track</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Emergent: construye marketplaces completos con prompts en lenguaje natural</h3>
+      <p class="what">Emergent es una plataforma full-stack de "vibe coding" donde un sistema multi-agente construye automáticamente toda la arquitectura de un marketplace: autenticación, listings, pagos, búsqueda, dashboards y admin. Compite directamente con Sharetribe y Arcadier pero usando AI para generar código production-ready.</p>
+      <p class="why">Si estás evaluando construir un marketplace de servicios, esto reduce el time-to-MVP de meses a días — el costo de validar una idea vertical acaba de caer drásticamente.</p>
+      <p class="source"><a href="https://emergent.sh/learn/best-no-code-marketplace-builder">Emergent</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Executive Order de Trump: revisión voluntaria de 30 días para modelos AI frontier</h3>
+      <p class="what">El presidente firmó una orden ejecutiva que pide a desarrolladores de AI enviar modelos frontier al gobierno para hasta 30 días de revisión antes de publicación, enfocada en riesgos de ciberseguridad y seguridad nacional. Es voluntario pero establece el framework para regulación futura.</p>
+      <p class="why">Aunque es voluntario hoy, marca la dirección regulatoria — si construyes sobre modelos frontier, monitorea cómo esto afecta timelines de release de tus proveedores.</p>
+      <p class="source"><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">White House</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic presenta filing confidencial para IPO con valuación de $965B</h3>
+      <p class="what">Anthropic registró confidencialmente su prospecto de IPO ante la SEC el 1 de junio, tras una ronda Serie H de $65B que elevó su valuación a $965B — superando a OpenAI ($852B). Revenue anualizado alcanza $47B y la empresa espera reportar su primer trimestre rentable en junio 2026.</p>
+      <p class="why">Un Anthropic público y rentable significa más estabilidad como proveedor a largo plazo — pero también más presión por monetización que podría afectar pricing y límites.</p>
+      <p class="source"><a href="https://fortune.com/2026/06/01/anthropic-confidentially-files-ipo-965-billion-valuation/">Fortune</a> &bull; <a href="https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: guardrails de versión, listing de plugins y mejoras en sesiones</h3>
+      <p class="what">Claude Code recibió actualizaciones que incluyen guardrails de versión para evitar incompatibilidades, un sistema de listing de plugins para descubrir extensiones, y mejoras en manejo de hooks, sesiones y shortcuts. También corrigieron problemas de startup, tareas en background y permisos en Windows.</p>
+      <p class="why">Los plugins y guardrails de versión hacen que Claude Code sea más viable como herramienta estándar de equipo, no solo para early adopters individuales.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot - Claude Code Updates</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 AI health apps dominan como coaches personales: el mercado de $46B para 2034</h3>
+      <p class="what">Las apps de fitness con AI se consolidan como coaches personales en 2026, con algoritmos que ajustan entrenamientos en tiempo real, análisis de movimiento 3D, y planificación nutricional adaptativa. El mercado global de AI en fitness y wellness ($9.8B en 2024) se proyecta a $46B para 2034, con plataformas como VASA integrando body composition + AI program design.</p>
+      <p class="why">El vertical de coaching deportivo personalizado con AI es uno de los pocos donde aún puedes diferenciarte — la mayoría de apps existentes usan modelos genéricos, no fine-tuned para dominios específicos.</p>
+      <p class="source"><a href="https://orangesoft.co/blog/ai-in-fitness-industry">Orangesoft</a> &bull; <a href="https://athletechnews.com/the-most-innovative-fitness-wellness-companies-of-2026/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 04/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
