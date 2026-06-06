@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 5 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>5 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 MAI-Code-1-Flash llega a GitHub Copilot: el primer modelo de coding propio de Microsoft</h3>
+      <p class="what">Anunciado en Build 2026 (junio 2), MAI-Code-1-Flash es un modelo de 5B par&aacute;metros entrenado directamente sobre los harnesses de producci&oacute;n de Copilot. Supera a Claude Haiku 4.5 en benchmarks de coding con un 16 puntos de ventaja en SWE-Bench Pro, usando hasta 60% menos tokens.</p>
+      <p class="why">Un modelo peque&ntilde;o, r&aacute;pido y gratuito en Copilot Free cambia la ecuaci&oacute;n para autocompletado y tareas ligeras de coding &mdash; reserva los modelos grandes para agentes complejos.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-06-02-mai-code-1-flash-is-now-available-for-github-copilot/">GitHub Blog</a> &bull; <a href="https://microsoft.ai/news/introducingmai-code-1-flash/">Microsoft AI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI Codex y GPT-5.5 ya est&aacute;n en Amazon Bedrock (GA)</h3>
+      <p class="what">Desde el 1 de junio, GPT-5.5, GPT-5.4 y Codex est&aacute;n disponibles como GA en Amazon Bedrock para regiones comerciales y GovCloud. Los precios igualan las tarifas directas de OpenAI sin recargos, y el consumo cuenta contra compromisos AWS existentes.</p>
+      <p class="why">Si tu infra ya vive en AWS, ahora puedes integrar Codex como agente de coding sin salir de Bedrock &mdash; misma facturaci&oacute;n, misma gobernanza.</p>
+      <p class="source"><a href="https://aws.amazon.com/blogs/machine-learning/openai-models-and-codex-on-amazon-bedrock-are-now-generally-available/">AWS Blog</a> &bull; <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/">OpenAI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI Daybreak: seguridad de c&oacute;digo con IA para developers</h3>
+      <p class="what">Daybreak integra revisi&oacute;n de c&oacute;digo seguro, threat modeling, validaci&oacute;n de parches y an&aacute;lisis de dependencias directamente en el loop de desarrollo. Construido sobre GPT-5.5-Cyber, genera y testea parches en tus repos con acceso controlado y monitoreo.</p>
+      <p class="why">Reduce horas de an&aacute;lisis de seguridad a minutos &mdash; &uacute;til si eres un equipo peque&ntilde;o sin security engineer dedicado.</p>
+      <p class="source"><a href="https://openai.com/daybreak/">OpenAI Daybreak</a> &bull; <a href="https://thehackernews.com/2026/05/openai-launches-daybreak-for-ai-powered.html">The Hacker News</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 NVIDIA Nemotron 3 Ultra: el mejor modelo open-weights de EE.UU. con 550B par&aacute;metros</h3>
+      <p class="what">Lanzado el 4 de junio, Nemotron 3 Ultra es un MoE de 550B par&aacute;metros (55B activos) dise&ntilde;ado para agentes de larga duraci&oacute;n. Logra 48 en el Artificial Analysis Intelligence Index &mdash; el m&aacute;s alto de cualquier modelo abierto en EE.UU. &mdash; y sirve m&aacute;s de 300 tokens/segundo en DeepInfra.</p>
+      <p class="why">Un modelo abierto que corre 3-6x m&aacute;s r&aacute;pido con 30% menos costos es una alternativa real para agentes en producci&oacute;n donde no quieres vendor lock-in.</p>
+      <p class="source"><a href="https://nvidianews.nvidia.com/news/nvidia-debuts-nemotron-3-family-of-open-models">NVIDIA Newsroom</a> &bull; <a href="https://artificialanalysis.ai/articles/nvidia-nemotron-3-ultra-launch-announced">Artificial Analysis</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft Build 2026: Windows se convierte en un OS para agentes AI</h3>
+      <p class="what">Microsoft present&oacute; su visi&oacute;n &quot;agent-first&quot; en Build 2026 (junio 2-4), con 7 modelos MAI propios incluyendo MAI-Thinking-1 (35B, razonamiento, 256K contexto). Los agentes AI son ahora ciudadanos de primera clase en Windows con su propio runtime, sandbox y capa de gobernanza.</p>
+      <p class="why">La plataforma Windows como runtime de agentes significa que apps de escritorio con AI agents integrados ser&aacute;n un canal de distribuci&oacute;n viable para tu producto.</p>
+      <p class="source"><a href="https://techjournal.org/microsoft-build-2026-windows-ai-agents">Tech Journal</a> &bull; <a href="https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/">Microsoft Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI Dreaming V3: ChatGPT ahora sintetiza memoria en segundo plano</h3>
+      <p class="what">Desde el 4 de junio, ChatGPT Plus y Pro en EE.UU. reciben Dreaming V3, un proceso que sintetiza memoria autom&aacute;ticamente entre conversaciones sin que el usuario pida &quot;recordar&quot;. El recall factual subi&oacute; de 41.5% (2024) a 82.8% (2026) seg&uacute;n evals internos.</p>
+      <p class="why">El patr&oacute;n de memoria persistente entre sesiones es lo que har&aacute; que los asistentes AI sean realmente &uacute;tiles para workflows recurrentes &mdash; toma nota del dise&ntilde;o para tu propio producto.</p>
+      <p class="source"><a href="https://openai.com/index/chatgpt-memory-dreaming/">OpenAI</a> &bull; <a href="https://gigazine.net/gsc_news/en/20260605-chatgpt-memory-dreaming-v3/">Gigazine</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini 3.5 Flash GA: inteligencia frontier a 4x de velocidad</h3>
+      <p class="what">Gemini 3.5 Flash est&aacute; disponible en Google AI Studio, Gemini API, Android Studio y desde el 8 de junio ser&aacute; el modelo por defecto en Gemini Enterprise. Ofrece rendimiento a nivel frontier con pricing de $1.50/$9 por mill&oacute;n de tokens.</p>
+      <p class="why">Para features de AI en apps Android, Gemini 3.5 Flash v&iacute;a Android Studio es la opci&oacute;n m&aacute;s integrada y r&aacute;pida del ecosistema Google.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/">Google Blog</a> &bull; <a href="https://ai.google.dev/gemini-api/docs/interactions/whats-new-gemini-3.5">Google AI for Developers</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot migra a facturaci&oacute;n por AI Credits &mdash; impacto real en costos</h3>
+      <p class="what">Desde el 1 de junio, todos los planes de Copilot usan AI Credits (1 credit = $0.01 USD) basados en consumo de tokens. Autocompletado y Next Edit Suggestions siguen siendo ilimitados, pero chat, agentes y code review ahora consumen cr&eacute;ditos con hasta 24x de diferencia entre modelos.</p>
+      <p class="why">Si usas Copilot como agente de coding, ahora necesitas elegir modelo por tarea &mdash; MAI-Code-1-Flash para lo r&aacute;pido, modelos premium solo cuando el problema lo justifica.</p>
+      <p class="source"><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a> &bull; <a href="https://dev.to/tokenmixai/i-did-the-math-on-github-copilots-new-ai-credits-billing-the-24x-price-gap-changes-everything-5h99">Dev.to An&aacute;lisis</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Sonnet 4 y Opus 4 se retiran el 15 de junio &mdash; migra ahora</h3>
+      <p class="what">Anthropic retira claude-sonnet-4-20250514 y claude-opus-4-20250514 el 15 de junio a las 9AM PT. Las aplicaciones que a&uacute;n llamen esos model IDs recibir&aacute;n errores de API. Opus 4.8 es 67% m&aacute;s barato que el Opus 4 original.</p>
+      <p class="why">Quedan 10 d&iacute;as &mdash; si tienes model IDs hardcodeados en producci&oacute;n, actualiza a claude-sonnet-4-6 y claude-opus-4-8 hoy.</p>
+      <p class="source"><a href="https://platform.claude.com/docs/en/about-claude/model-deprecations">Claude API Docs</a> &bull; <a href="https://tygartmedia.com/claude-4-deprecation/">Tygart Media</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>MCP Tunnels: agentes Claude acceden a redes privadas sin abrir firewalls</h3>
+      <p class="what">En research preview, MCP Tunnels permite que Managed Agents y la Messages API se conecten a servidores MCP dentro de redes privadas mediante un gateway ligero con conexi&oacute;n saliente cifrada. Bases de datos internas, APIs privadas y sistemas de tickets se convierten en herramientas que tus agentes pueden llamar.</p>
+      <p class="why">Esto resuelve el blocker principal para desplegar agentes Claude en entornos enterprise donde los datos no pueden salir del per&iacute;metro.</p>
+      <p class="source"><a href="https://www.infoq.com/news/2026/05/claude-mcp-tunnels/">InfoQ</a> &bull; <a href="https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/overview">Claude API Docs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: plugins auto-cargados desde .claude/skills y modelo de fallback</h3>
+      <p class="what">Claude Code ahora carga autom&aacute;ticamente plugins desde directorios .claude/skills sin necesidad de marketplace. Se a&ntilde;adi&oacute; fallbackModel para configurar hasta 3 modelos de respaldo cuando el primario est&aacute; sobrecargado, y se endurecieron los permisos de mensajer&iacute;a cross-session.</p>
+      <p class="why">Los plugins locales y el fallback autom&aacute;tico hacen que Claude Code sea m&aacute;s confiable para sesiones largas de desarrollo sin interrupciones.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 VASA Fitness lanza app de personal training con IA y an&aacute;lisis de movimiento 3D</h3>
+      <p class="what">VASA Fitness y Demotu lanzaron una app que integra an&aacute;lisis de movimiento 3D, datos de composici&oacute;n corporal InBody y programaci&oacute;n de entrenamiento con IA. Es la primera app de este tipo en la categor&iacute;a HVLP (high-value, low-price), con coaching inteligente desde $14.99/mes.</p>
+      <p class="why">El playbook es claro: AI + sensores + precio accesible democratiza el coaching personalizado &mdash; el mismo modelo aplica para cualquier marketplace de servicios profesionales.</p>
+      <p class="source"><a href="https://athletechnews.com/vasa-unveils-ai-powered-personal-training-app/">Athletech News</a> &bull; <a href="https://vasafitness.com/press/vasa-fitness-launches-industry-first-personal-training-app-in-hvlp-category-redefining-coaching-at-scale/">VASA Fitness</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 05/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
