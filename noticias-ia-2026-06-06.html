@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 6 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>6 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft lanza MAI-Code-1-Flash: modelo de coding de 5B params integrado en Copilot</h3>
+      <p class="what">Microsoft presentó en Build 2026 su primer modelo propio de coding, MAI-Code-1-Flash, con solo 5B de parámetros pero 51% en SWE-bench Pro. Entrenado directamente con los harnesses de producción de GitHub Copilot, supera a Claude Haiku 4.5 en relación precio/rendimiento y ya está rolling out en VS Code.</p>
+      <p class="why">Un modelo pequeño y barato optimizado para coding agéntico es exactamente lo que necesitas para tareas repetitivas de tu pipeline donde Opus o Sonnet son overkill.</p>
+      <p class="source"><a href="https://microsoft.ai/news/introducingmai-code-1-flash/">Microsoft AI</a> &bull; <a href="https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Windsurf se convierte en Devin Desktop: de IDE a command center de agentes</h3>
+      <p class="what">Cognition rebrandeó Windsurf como Devin Desktop el 2 de junio, pasando de un IDE con agente a un hub de gestión de agentes con IDE integrado. Introduce Devin Local (30% más eficiente en tokens, reescrito en Rust), y el Agent Client Protocol (ACP) abierto que soporta Codex, Claude Agent y OpenCode.</p>
+      <p class="why">ACP es el estándar abierto que faltaba para orquestar múltiples agentes de coding desde un solo entorno; si construyes herramientas dev, vale la pena integrarlo.</p>
+      <p class="source"><a href="https://devin.ai/blog/windsurf-is-now-devin-desktop/">Devin Blog</a> &bull; <a href="https://cognition.ai/blog/introducing-devin-desktop">Cognition</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>OpenAI lanza Dreaming V3: memoria persistente que sintetiza años de conversaciones</h3>
+      <p class="what">Dreaming V3, lanzado el 4 de junio, reemplaza la lista manual de memorias de ChatGPT con un proceso de síntesis automática que lee conversaciones históricas y construye comprensión contextual del usuario. El sistema actualiza memorias con el tiempo (frescura, continuidad, relevancia) y ya llega a usuarios gratuitos.</p>
+      <p class="why">Si estás diseñando personalización en tu producto, este es el benchmark de UX: memoria que se actualiza sola sin que el usuario haga nada.</p>
+      <p class="source"><a href="https://openai.com/index/chatgpt-memory-dreaming/">OpenAI</a> &bull; <a href="https://en.cryptonomist.ch/2026/06/05/openai-chatgpt-dreaming-v3-memory/">Cryptonomist</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Qwen 3.7 Max y Plus: Alibaba apuesta por modelos agénticos de larga duración</h3>
+      <p class="what">Alibaba lanzó Qwen3.7-Max (texto, 1M tokens de contexto, 35h de operación autónoma con 1,000+ tool calls consecutivos) y Qwen3.7-Plus (multimodal con visión, $0.4/$1.6 por 1M tokens). Ambos compiten directamente con los frontier models en coding y razonamiento agéntico.</p>
+      <p class="why">A ese precio y con 35h de autonomía, Qwen 3.7 Max es una opción seria para agentes de backend que procesan tareas largas donde la latencia no es crítica.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/06/02/alibabas-qwen-team-launches-qwen3-7-plus-adding-vision-deep-reasoning-tool-invocation-and-autonomous-iteration-on-the-bailian-platform/">MarkTechPost</a> &bull; <a href="https://www.analyticsvidhya.com/blog/2026/05/qwen3-7-max/">Analytics Vidhya</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google ofrece pagar a devs Android por su código fuente para entrenar Gemini</h3>
+      <p class="what">Google está contactando desarrolladores del Play Store bajo NDA para comprar acceso a su código fuente (incluyendo versiones históricas) a cambio de pago único o regalías. El acuerdo incluye licencia no exclusiva para crear "obras derivadas" y entrenar modelos de ML sin compensación adicional.</p>
+      <p class="why">Si publicas en Play Store, revisa bien los términos antes de firmar: la cláusula de obras derivadas significa que tu código podría entrenar al competidor que te reemplace.</p>
+      <p class="source"><a href="https://www.androidauthority.com/google-buying-play-store-app-code-access-3673737/">Android Authority</a> &bull; <a href="https://www.neowin.net/reports/google-wants-to-pay-play-store-developers-for-code-to-train-its-ai/">Neowin</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot cambia a billing por tokens: devs reportan agotar créditos en horas</h3>
+      <p class="what">Desde el 1 de junio, GitHub Copilot usa AI Credits con precio dinámico por modelo y complejidad del request. Desarrolladores reportan consumir 8-16% de su cuota mensual en 2 horas, y un solo cambio complejo puede costar $6+; muchos amenazan migrar a Claude Code, OpenRouter o RooCode.</p>
+      <p class="why">Si dependías de Copilot con tarifa plana, es momento de evaluar alternativas: Claude Code Max a $100/mes o acceso directo a APIs te da más predictibilidad de costos.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/">TechCrunch</a> &bull; <a href="https://www.theregister.com/ai-and-ml/2026/06/02/github-copilot-users-threaten-exit-as-metered-billing-kicks-in/5249826">The Register</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 El mercado de AI coding se fragmenta: 7 herramientas compiten por el workflow del dev</h3>
+      <p class="what">En junio 2026, siete herramientas dominan la conversación: Claude Code, Devin Desktop, Cursor, Kiro, GitHub Copilot, Google Antigravity 2.0, y OpenAI Codex. Cursor reestructuró Teams en Standard ($32/seat) y Premium ($96/seat), mientras Copilot Max sube a $100/mes.</p>
+      <p class="why">La ventaja competitiva ya no es "usar AI para codear" sino elegir la combinación correcta: un IDE agent para edición diaria + un CLI agent para tareas complejas en tu stack específico.</p>
+      <p class="source"><a href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/">Lushbinary</a> &bull; <a href="https://scrimba.com/articles/best-ai-coding-assistants-2026/">Scrimba</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Opus 4.8: Dynamic Workflows con subagentes paralelos y modo ultracode</h3>
+      <p class="what">Opus 4.8 (lanzado 28 mayo) sube a 88.6% en SWE-bench Verified y 69.2% en SWE-bench Pro, con mejora 4x en honestidad sobre defectos de código. Claude Code añade Dynamic Workflows que orquestan cientos de subagentes en paralelo, y un nuevo nivel "ultracode" que combina esfuerzo máximo con decisión automática de workflow.</p>
+      <p class="why">Dynamic Workflows convierte tareas que tomaban horas en minutos; si tu flujo involucra refactors grandes o migraciones, esto cambia la ecuación de "vale la pena automatizarlo".</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-opus-4-8">Anthropic</a> &bull; <a href="https://computingforgeeks.com/claude-opus-4-8-released-features-benchmarks/">ComputingForGeeks</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic presenta IPO confidencial y depreca Opus 4.1</h3>
+      <p class="what">Anthropic presentó filing confidencial de IPO el 1 de junio, compitiendo con OpenAI que también prepara oferta pública. En paralelo, Opus 4.1 entra en deprecación con retiro programado para el 5 de agosto; Anthropic recomienda migrar a Opus 4.8.</p>
+      <p class="why">Si usas Opus 4.1 en producción, tienes dos meses para migrar; aprovecha para saltar directo a 4.8 y sus Dynamic Workflows.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a> &bull; <a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Kinotek levanta $2M: análisis de movimiento AI usado por MLB y gyms en 8 países</h3>
+      <p class="what">Kinotek, plataforma B2B SaaS de análisis funcional de movimiento con AI, cerró una ronda post-seed de $2M liderada por Maine Venture Fund. Su tecnología crea evaluaciones de salud de movimiento en 30 segundos con escaneo 3D, usada por los Cincinnati Reds (MLB) y cadenas como Life Time.</p>
+      <p class="why">Es el tipo de vertical SaaS que funciona: tecnología de motion-capture simplificada + modelo B2B recurrente en un mercado de $7.8B que apenas se digitaliza.</p>
+      <p class="source"><a href="https://kinotek.com/2026-funding-announcement">Kinotek</a> &bull; <a href="https://athletechnews.com/kinotek-2-million-funding-movement-analytics/">Athletech News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>VASA Fitness lanza portal de Personal Training con análisis 3D + AI</h3>
+      <p class="what">VASA Fitness anunció un nuevo portal de Personal Training que integra análisis de movimiento 3D, datos de composición corporal InBody, y diseño de programas de entrenamiento con AI. El sistema genera planes personalizados combinando datos biomecánicos reales con objetivos del usuario.</p>
+      <p class="why">El patrón "datos biométricos + AI = programa personalizado" es replicable para cualquier marketplace de servicios profesionales de salud y fitness.</p>
+      <p class="source"><a href="https://athletechnews.com/the-most-innovative-fitness-wellness-companies-of-2026/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 06/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
