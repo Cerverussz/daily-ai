@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 7 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>7 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI Codex Sites: apps internas desde un prompt, sin escribir frontend</h3>
+      <p class="what">OpenAI lanz&oacute; &ldquo;Codex for every role, tool, and workflow&rdquo; con Sites (mini-apps web generadas por Codex y compartibles por URL), Annotations (revisi&oacute;n AI inline), y 6 plugins de rol que integran 62 apps empresariales como Salesforce, Jira y Figma. Los no-developers ya son el 20% de los 5 millones de usuarios semanales de Codex y adoptan 3x m&aacute;s r&aacute;pido que los ingenieros.</p>
+      <p class="why">Si vendes B2B o construyes herramientas internas, Codex Sites es competencia directa: tus usuarios pueden generar su propio tooling sin tu producto.</p>
+      <p class="source"><a href="https://openai.com/index/codex-for-every-role-tool-workflow/">OpenAI</a> &bull; <a href="https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft y Google entran agresivamente al mercado de AI coding contra Anthropic y OpenAI</h3>
+      <p class="what">Seg&uacute;n CNBC, la guerra del AI coding se intensifica: Anthropic lidera con Claude Code, OpenAI gira Codex hacia enterprise, y Microsoft/Google usan sus nubes y balances masivos para atraer desarrolladores. GitHub Copilot migr&oacute; a facturaci&oacute;n por uso (AI Credits) desde junio 1.</p>
+      <p class="why">M&aacute;s competencia significa mejores herramientas y precios para ti; el momento de evaluar y fijar tu stack de AI coding es ahora.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html">CNBC</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Grok Build 0.1: xAI abre su modelo de coding agente v&iacute;a API a $1/M tokens</h3>
+      <p class="what">xAI lanz&oacute; Grok Build 0.1 en beta p&uacute;blica: modelo especializado en coding ag&eacute;ntico con 256K tokens de contexto, MCP nativo, y 100+ tokens/seg de velocidad. Disponible por API sin necesitar suscripci&oacute;n X Premium, a $1/$2 por mill&oacute;n de tokens input/output.</p>
+      <p class="why">A ese precio y velocidad, es una alternativa real para pipelines de generaci&oacute;n de c&oacute;digo de alto volumen donde la latencia importa.</p>
+      <p class="source"><a href="https://x.ai/news/grok-build-0-1">xAI</a> &bull; <a href="https://devops.com/xai-opens-grok-build-0-1-to-developers-via-api/">DevOps.com</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Android Studio Agent Mode: Gemini construye, testea y debuggea apps completas</h3>
+      <p class="what">El Agent Mode de Gemini en Android Studio puede hacer deploy a un dispositivo conectado, tomar screenshots, leer Logcat, interactuar con la app v&iacute;a adb, y corregir bugs iterativamente. Con tu propia API key de Gemini 2.5 Pro obtienes 1 mill&oacute;n de tokens de contexto para tareas complejas.</p>
+      <p class="why">Esto cambia el flujo diario de desarrollo Android: describes el objetivo y el agente ejecuta el ciclo completo build-deploy-test-fix por ti.</p>
+      <p class="source"><a href="https://developer.android.com/studio/gemini/agent-mode">Android Developers</a> &bull; <a href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/">Google I/O 2026</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini 3.5 Flash GA: Google apuesta por agentes r&aacute;pidos, no chatbots</h3>
+      <p class="what">Gemini 3.5 Flash ya est&aacute; en disponibilidad general como el modelo m&aacute;s fuerte de Google para tareas ag&eacute;nticas y coding, con 76.2% en Terminal-Bench 2.1. Google tambi&eacute;n lanz&oacute; Managed Agents en la Gemini API: agentes aut&oacute;nomos con estado persistente en sandbox Linux hospedado por Google.</p>
+      <p class="why">Managed Agents de Gemini compite directamente con Managed Agents de Anthropic; si necesitas agentes con estado, ahora tienes dos opciones serias.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/">TechCrunch</a> &bull; <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/">Google</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Grok Web adopta MCP: el protocolo de Anthropic se consolida como est&aacute;ndar universal</h3>
+      <p class="what">xAI habilit&oacute; &ldquo;Bring Your Own MCP&rdquo; en Grok, permitiendo conectar cualquier servidor MCP personalizado. Con esto, todos los proveedores principales de AI (Claude, Gemini, Codex, Grok) ya soportan MCP como protocolo de integraci&oacute;n de herramientas.</p>
+      <p class="why">MCP es ahora infraestructura, no experimento; si tu producto no expone un servidor MCP, est&aacute;s fuera del alcance de los agentes AI que tus usuarios van a usar.</p>
+      <p class="source"><a href="https://docs.x.ai/developers/tools/remote-mcp">xAI Docs</a> &bull; <a href="https://docs.x.ai/grok/connectors">xAI Connectors</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>NVIDIA Cosmos 3: modelo abierto de Physical AI que reduce ciclos de meses a d&iacute;as</h3>
+      <p class="what">NVIDIA lanz&oacute; Cosmos 3, el primer omnimodelo abierto que genera y entiende texto, imagen, video, audio y acciones f&iacute;sicas. Disponible en Hugging Face y como NIM microservices, reduce los ciclos de entrenamiento de rob&oacute;tica y veh&iacute;culos aut&oacute;nomos de meses a d&iacute;as.</p>
+      <p class="why">Si trabajas en IoT, rob&oacute;tica, o simulaci&oacute;n, Cosmos 3 abierto es un game-changer para prototipar sin infraestructura propia.</p>
+      <p class="source"><a href="https://blogs.nvidia.com/blog/open-models-data-tools-accelerate-ai/">NVIDIA Blog</a> &bull; <a href="https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai">NVIDIA Newsroom</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Codex democratiza el internal tooling: el 20% de usuarios ya son no-developers</h3>
+      <p class="what">Los plugins por rol de OpenAI Codex empaquetan skills espec&iacute;ficas (Sales, Data Analytics, Product Design, Creative Production) con integraciones a 62 apps y 110 habilidades automatizadas. Un analista financiero puede convertir un spreadsheet est&aacute;tico en un scenario planner interactivo compartible por URL, sin escribir c&oacute;digo.</p>
+      <p class="why">Para founders t&eacute;cnicos, esto reduce dr&aacute;sticamente la necesidad de contratar frontend para herramientas internas; tu equipo de 3 personas opera como uno de 10.</p>
+      <p class="source"><a href="https://openai.com/index/codex-for-every-role-tool-workflow/">OpenAI</a> &bull; <a href="https://thenextweb.com/news/openai-codex-enterprise-plugins-sites-non-developers">The Next Web</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Alerta: el 15 de junio cambia el billing de Claude Code y Agent SDK</h3>
+      <p class="what">Desde el 15 de junio, Claude Agent SDK, claude -p, Claude Code GitHub Actions y agentes de terceros salen del pool de suscripci&oacute;n a un cr&eacute;dito mensual separado ($20 Pro / $100 Max 5x / $200 Max 20x) facturado a precios API completos, sin rollover. Anthropic env&iacute;a email el 8 de junio para activar cr&eacute;ditos.</p>
+      <p class="why">Si usas Claude Code en CI/CD o agentes automatizados, calcula tu consumo ahora: el subsidio de suscripci&oacute;n era 15-30x m&aacute;s barato que API, y se acaba en una semana.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/317625/20260602/anthropic-ends-subscription-subsidy-agents-june-15-credit-pool-replaces-flat-rate-access.htm">TechTimes</a> &bull; <a href="https://the-decoder.com/claude-subscriptions-get-separate-budgets-for-programmatic-use-billed-at-full-api-prices/">The Decoder</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: fallback models, seguridad cross-session y nuevos comandos</h3>
+      <p class="what">Las &uacute;ltimas actualizaciones de Claude Code incluyen fallbackModel (hasta 3 modelos de respaldo cuando el principal est&aacute; sobrecargado), seguridad reforzada en mensajes cross-session (ya no llevan autoridad de usuario), y nuevos comandos como /plugin list y /btw con copia al clipboard.</p>
+      <p class="why">El fallbackModel es clave si dependes de Claude Code en producci&oacute;n: evita interrupciones por sobrecarga sin intervenci&oacute;n manual.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot &mdash; Claude Code Updates</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic Advanced Tool Use: Tool Search reduce 85% el consumo de tokens</h3>
+      <p class="what">Nueva beta en la API de Claude: Tool Search permite descubrir herramientas din&aacute;micamente con defer_loading: true en vez de cargar todas las definiciones upfront. Preserva 191K tokens de contexto vs 122K del m&eacute;todo tradicional, una reducci&oacute;n del 85% en uso de tokens para agentes con muchas herramientas.</p>
+      <p class="why">Si tu agente tiene 50+ tools, esto baja costos y mejora calidad de respuesta al liberar contexto para lo que realmente importa.</p>
+      <p class="source"><a href="https://www.anthropic.com/engineering/advanced-tool-use">Anthropic Engineering</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Samsung Health se reinventa con IA: Energy Score, Vitals y coaching proactivo</h3>
+      <p class="what">Samsung anunci&oacute; una renovaci&oacute;n total de Samsung Health con rollout el 8 de junio. La app se organiza en 5 pilares (Sleep, Activity, Nutrition, Mindfulness, Vitals) con Energy Score AI en la pantalla principal, Heart Health Score combinando bio-se&ntilde;ales con composici&oacute;n corporal, y notificaciones solo cuando detecta desviaciones significativas de tu baseline.</p>
+      <p class="why">Es el est&aacute;ndar a batir si construyes una app de salud/coaching: Samsung est&aacute; haciendo que el health tracking proactivo con AI sea el default para millones de usuarios Galaxy.</p>
+      <p class="source"><a href="https://news.samsung.com/global/samsung-introduces-next-gen-galaxy-watch-features-for-ai-powered-everyday-health-companion">Samsung Newsroom</a> &bull; <a href="https://www.newsweek.com/samsung-is-turning-galaxy-watch-into-an-ai-powered-health-coach-12033865">Newsweek</a></p>
+    </div>
+
+    <footer>
+      <p>Generado el 08/06/2026 &middot; Filtrado para senior devs construyendo producto</p>
+    </footer>
+  </div>
+</body>
+</html>
