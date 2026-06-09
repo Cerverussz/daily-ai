@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 8 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>8 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple lanza Foundation Models framework con soporte multi-proveedor: Claude, Gemini y modelos on-device con la misma API Swift</h3>
+      <p class="what">En WWDC 2026, Apple present&oacute; una expansi&oacute;n mayor del Foundation Models framework con un nuevo protocolo LanguageModel que permite a los desarrolladores usar modelos on-device de Apple, Claude de Anthropic o Gemini de Google a trav&eacute;s de la misma API Swift, intercambiando proveedores cambiando solo una dependencia en SPM. Anthropic ya public&oacute; un Swift package oficial que soporta razonamiento multi-paso, generaci&oacute;n de c&oacute;digo, b&uacute;squeda web y ejecuci&oacute;n de c&oacute;digo con streaming en SwiftUI.</p>
+      <p class="why">Si desarrollas para iOS, ahora puedes prototipar con el modelo on-device gratuito y escalar a Claude para tareas complejas sin reescribir l&oacute;gica &mdash; el framework se open-sourcea este verano.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/318039/20260609/wwdc-2026-developer-tools-foundation-models-now-swaps-ai-providers-without-code-changes.htm">TechTimes</a> &bull; <a href="https://claude.com/blog/claude-for-foundation-models">Anthropic</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 MCP se vuelve nativo en todo el ecosistema Apple: Siri AI y Xcode 27 lo integran a nivel de sistema</h3>
+      <p class="what">Apple extendi&oacute; el soporte de Model Context Protocol &mdash; que hab&iacute;a llegado a Xcode en febrero &mdash; a iOS 27 y macOS 27 como capacidad del sistema completo. Siri AI y la nueva capa Core AI pueden conectarse a servidores MCP, y Xcode 27 permite a los agentes de coding usar herramientas MCP para buscar documentaci&oacute;n, conectar con Figma, GitHub y m&aacute;s.</p>
+      <p class="why">MCP pas&oacute; de est&aacute;ndar emergente a infraestructura de plataforma &mdash; si tu servicio no expone un servidor MCP, eres invisible para la capa de agentes de Apple y de todos los dem&aacute;s.</p>
+      <p class="source"><a href="https://chatforest.com/builders-log/wwdc-2026-keynote-confirmed-apple-ai-platform-builder-guide/">ChatForest</a> &bull; <a href="https://www.mindstudio.ai/blog/apple-wwdc-ai-strategy-siri-app-intents-mcp">MindStudio</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Siri AI: Apple revela asistente conversacional con Gemini como motor y sistema de AI Extensions</h3>
+      <p class="what">Tim Cook present&oacute; en su &uacute;ltima keynote como CEO un Siri completamente renovado, potenciado por Google Gemini, con conversaciones multi-turno, app dedicada con historial, y comprensi&oacute;n contextual visual. El nuevo sistema de AI Extensions permite a los usuarios elegir entre Claude, Gemini y ChatGPT como proveedores de IA en iPhone por primera vez.</p>
+      <p class="why">El sistema de Extensions multi-AI crea un nuevo canal de distribuci&oacute;n para tu producto si ofreces funcionalidad via estos modelos &mdash; el usuario elige su proveedor, no Apple.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/">TechCrunch</a> &bull; <a href="https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/">Apple Newsroom</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Opus 4.8 llega a Microsoft Foundry: cat&aacute;logo de 11,000 modelos ahora incluye el mejor modelo de coding</h3>
+      <p class="what">Microsoft finaliz&oacute; su cat&aacute;logo de 11,000 modelos en AI Foundry con la inclusi&oacute;n de Claude Opus 4.8, el modelo m&aacute;s capaz de Anthropic con 1M tokens de contexto y 128K de output. Opus 4.8 logra 88.6% en SWE-Bench Verified y est&aacute; dise&ntilde;ado para coding ag&eacute;ntico, an&aacute;lisis financiero y workflows empresariales de larga duraci&oacute;n.</p>
+      <p class="why">Poder acceder a Opus 4.8 via Azure APIs significa que puedes integrarlo en tu backend empresarial existente sin migrar infraestructura.</p>
+      <p class="source"><a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-4-8-is-now-available-in-microsoft-foundry/4523367">Microsoft Tech Community</a> &bull; <a href="https://www.anthropic.com/claude/opus">Anthropic</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot cambia a billing por cr&eacute;ditos y desarrolladores reportan costos hasta 25x mayores</h3>
+      <p class="what">Desde el 1 de junio, GitHub Copilot reemplaz&oacute; requests ilimitados por AI Credits basados en consumo de tokens. Desarrolladores reportan facturas saltando de $29 a $750/mes y de $50 a $3,000 con uso intensivo de agentes. Las completions de c&oacute;digo y Next Edit siguen incluidas, pero las sesiones ag&eacute;nticas pueden consumir hasta $40 por tarea.</p>
+      <p class="why">La era del &ldquo;AI coding ilimitado por $10/mes&rdquo; termin&oacute; &mdash; si dependes de agentes de coding, necesitas calcular tu costo real por feature y comparar con Claude Code o Cursor.</p>
+      <p class="source"><a href="https://www.ghacks.net/2026/06/02/github-copilot-usage-based-billing-takes-effect-drawing-developer-backlash-over-rapid-credit-depletion/">gHacks</a> &bull; <a href="https://visualstudiomagazine.com/articles/2026/06/04/copilot-billing-shock-hits-developers.aspx">Visual Studio Magazine</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google open-sourcea Android Skills para LLMs y estabiliza Android CLI para agentes de coding</h3>
+      <p class="what">Google liber&oacute; &ldquo;Android Skills&rdquo; open-source que ense&ntilde;an a LLMs best practices para workflows complejos como migraci&oacute;n a Jetpack Compose y Navigation 3. El Android CLI estable permite a agentes de coding (Claude Code, Cursor, Copilot) descargar SDKs, correr apps en dispositivos y acceder a capacidades de Android Studio directamente.</p>
+      <p class="why">Si usas Claude Code para desarrollo Android, estas skills y el CLI mejoran directamente la calidad del c&oacute;digo generado &mdash; adem&aacute;s Google preview&oacute; migraci&oacute;n autom&aacute;tica de React Native/iOS a Kotlin nativo.</p>
+      <p class="source"><a href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/">Google Developers Blog</a> &bull; <a href="https://android-developers.googleblog.com/2026/05/whats-new-android-developer-tools.html">Android Developers Blog</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple abre AI Extensions como canal de distribuci&oacute;n: tu producto puede ser opci&oacute;n en cada iPhone</h3>
+      <p class="what">El nuevo sistema de AI Extensions de iOS 27 permite que servicios de terceros se integren directamente en el flujo de Siri AI. Los usuarios eligen su proveedor preferido de IA (Claude, Gemini, ChatGPT u otros) como extension del sistema, creando un canal de distribuci&oacute;n completamente nuevo para productos AI-powered.</p>
+      <p class="why">Si est&aacute;s construyendo un producto con capa de IA, el sistema de Extensions de Apple es un canal de adquisici&oacute;n orgánico que antes no exist&iacute;a &mdash; hay que empezar a construir para &eacute;l ahora.</p>
+      <p class="source"><a href="https://www.digitalapplied.com/blog/apple-siri-ios-27-extensions-claude-gemini-chatgpt-guide">Digital Applied</a> &bull; <a href="https://www.cnbc.com/2026/06/08/apple-wwdc-2026-live-updates.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 MWM AI + Google Cloud lanzan &ldquo;AI Mobile Squad&rdquo;: de prompt a app nativa iOS/Android en producci&oacute;n en menos de 3 minutos</h3>
+      <p class="what">MWM y Google Cloud lanzaron AI Mobile Squad: un equipo coordinado de 3 agentes AI especializados (Dise&ntilde;ador, Product Manager, Developer) que toma un prompt de texto y genera una app nativa lista para producci&oacute;n con monetizaci&oacute;n, analytics y A/B testing integrados. Construido sobre Gemini Enterprise y 14 a&ntilde;os de datos de 70+ apps con 1B de descargas.</p>
+      <p class="why">Esto es lo m&aacute;s concreto que existe en &ldquo;AI reemplaza al equipo de desarrollo de apps&rdquo; &mdash; si eres founder t&eacute;cnico, tu ciclo de validaci&oacute;n de ideas en mobile se reduce de meses a minutos.</p>
+      <p class="source"><a href="https://www.googlecloudpresscorner.com/2026-06-04-MWM-AI-Partners-with-Google-Cloud-to-Launch-New-Mobile-Agents-for-App-Creators-and-Entrepreneurs">Google Cloud Press</a> &bull; <a href="https://www.prnewswire.com/news-releases/mwm-ai-partners-with-google-cloud-to-launch-new-mobile-agents-for-app-creators-and-entrepreneurs-302790646.html">PR Newswire</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Code lanza Dynamic Workflows: sub-agentes paralelos para migraciones y tareas complejas</h3>
+      <p class="what">Anthropic introdujo Dynamic Workflows en Claude Code como research preview, permitiendo dividir tareas complejas en sub-agentes paralelos que trabajan simult&aacute;neamente en diferentes partes del codebase con verificaci&oacute;n integrada y progreso guardado. Disponible en CLI, Desktop, VS Code, API y plataformas cloud principales.</p>
+      <p class="why">Para migraciones grandes o refactors cross-codebase, esto reduce dr&aacute;sticamente el tiempo &mdash; lo que antes era secuencial ahora corre en paralelo con verificaci&oacute;n autom&aacute;tica.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic presenta IPO confidencial ante la SEC con valoraci&oacute;n de $965B</h3>
+      <p class="what">Anthropic present&oacute; documentaci&oacute;n confidencial para salir a bolsa el 1 de junio, tras levantar $65B en su ronda m&aacute;s reciente que la valor&oacute; en $965B. Claude ya escribe m&aacute;s del 80% de su propio c&oacute;digo, igualando la calidad del c&oacute;digo humano seg&uacute;n m&eacute;tricas internas.</p>
+      <p class="why">Una Anthropic p&uacute;blica da m&aacute;s previsibilidad sobre la continuidad del ecosistema Claude para quienes lo usan como pieza central de su stack.</p>
+      <p class="source"><a href="https://www.washingtonpost.com/technology/2026/06/01/anthropic-maker-claude-files-with-sec-go-public-an-ipo/">Washington Post</a> &bull; <a href="https://www.cbsnews.com/news/anthropic-ipo-confidential-filing-claude-ai/">CBS News</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Microsoft y Mayo Clinic construyen modelo frontier de IA espec&iacute;fico para salud</h3>
+      <p class="what">Mayo Clinic y Microsoft anunciaron una colaboraci&oacute;n para desarrollar un modelo de IA frontier dise&ntilde;ado espec&iacute;ficamente para healthcare, combinando datos cl&iacute;nicos desidentificados de Mayo con la infraestructura de Azure. El modelo ser&aacute; propiedad de Mayo Clinic y estar&aacute; disponible via Azure Foundry APIs para otras instituciones, con un asistente para pacientes integrado en el portal del hospital.</p>
+      <p class="why">El modelo de licenciamiento (Mayo lo posee, Azure lo distribuye) es un blueprint para cualquiera construyendo IA vertical en salud &mdash; el dominio experto como moat, cloud como canal.</p>
+      <p class="source"><a href="https://news.microsoft.com/source/2026/06/02/mayo-clinic-and-microsoft-collaborate-to-develop-a-frontier-ai-model-for-healthcare/">Microsoft News</a> &bull; <a href="https://www.cnn.com/2026/06/02/tech/ai-for-healthcare-microsoft-mayo-clinic">CNN</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Samsung Health lanza actualizaci&oacute;n mayor con IA: Fitness Index, Vitals y Energy Score para millones de Galaxy Watch</h3>
+      <p class="what">Samsung despleg&oacute; el 8 de junio una actualizaci&oacute;n masiva de Samsung Health con Fitness Index (compara tus m&eacute;tricas contra peers v&iacute;a IA), monitoreo de Vitals (5 biose&ntilde;ales nocturnas), Daily Cardio Load y AI Energy Score. La app fue redise&ntilde;ada en 5 pilares: Sue&ntilde;o, Actividad, Nutrici&oacute;n, Mindfulness y Vitals.</p>
+      <p class="why">La arquitectura de Samsung (datos biom&eacute;tricos → gu&iacute;a accionable v&iacute;a IA + comparaci&oacute;n social) es el blueprint exacto para plataformas de coaching y fitness marketplaces.</p>
+      <p class="source"><a href="https://news.samsung.com/global/samsung-introduces-next-gen-galaxy-watch-features-for-ai-powered-everyday-health-companion">Samsung Newsroom</a> &bull; <a href="https://www.tomsguide.com/wellness/smartwatches/samsung-announces-ai-health-tools-ahead-of-galaxy-watch-9-launch-including-a-fitness-index-rated-against-your-peers">Tom's Guide</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 08/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
