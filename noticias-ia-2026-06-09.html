@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 9 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>9 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple abre Foundation Models framework a modelos externos: Claude y Gemini via Swift API</h3>
+      <p class="what">En el State of the Union de WWDC 2026, Apple anunci&oacute; que su Foundation Models framework ahora soporta modelos de terceros como Claude y Gemini a trav&eacute;s del mismo Swift API nativo. Cualquier proveedor que conforme el protocolo LanguageModel puede integrarse, y el acceso a Apple Foundation Models en Private Cloud Compute es gratuito para apps con menos de 2 millones de descargas.</p>
+      <p class="why">Si desarrollas apps iOS/macOS, ahora puedes usar el modelo on-device de Apple para tareas r&aacute;pidas y escalar a Claude para razonamiento complejo, todo con una sola API Swift &mdash; sin montar infraestructura cloud propia.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/318039/20260609/wwdc-2026-developer-tools-foundation-models-now-swaps-ai-providers-without-code-changes.htm">TechTimes</a> &bull; <a href="https://developer.apple.com/videos/play/wwdc2026/241/">Apple Developer</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft Edge expande AI on-device: modelo Aion-1.0, traducci&oacute;n y speech para web devs</h3>
+      <p class="what">Microsoft lanz&oacute; en Edge el modelo Aion-1.0-Instruct (developer preview), APIs de traducci&oacute;n on-device con soporte para 145+ idiomas, y reconocimiento de voz local via Web Speech API. Todo corre en el navegador sin necesidad de APIs cloud, incluyendo dispositivos sin GPU dedicada.</p>
+      <p class="why">Para web apps que necesitan traducci&oacute;n, transcripci&oacute;n o procesamiento de texto, esto elimina el costo por request de APIs cloud y funciona offline.</p>
+      <p class="source"><a href="https://blogs.windows.com/msedgedev/2026/06/02/expanding-on-device-ai-in-microsoft-edge-new-models-and-apis-for-the-web/">Microsoft Edge Blog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Siri AI redise&ntilde;ado con Google Gemini: asistente conversacional con contexto de pantalla</h3>
+      <p class="what">Apple present&oacute; Siri AI en el keynote de WWDC 2026: un asistente completamente redise&ntilde;ado con motor Gemini que entiende contexto de pantalla, mantiene conversaciones multi-turno, ejecuta acciones entre apps, y tiene una app dedicada con historial. Tambi&eacute;n incluye agentes aut&oacute;nomos: la app Passwords usa Apple Intelligence para cambiar contrase&ntilde;as inseguras autom&aacute;ticamente.</p>
+      <p class="why">La nueva Siri redefine qu&eacute; esperan los usuarios de una app m&oacute;vil &mdash; si tu producto no expone acciones via intents o App Intents, te vuelves invisible para el asistente que todos van a usar.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/06/08/apple-wwdc-2026-live-updates.html">CNBC</a> &bull; <a href="https://www.business-standard.com/amp/technology/tech-news/wwdc-2026-apple-unveils-siri-ai-gemini-powered-apple-intelligence-more-126060900042_1.html">Business Standard</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cursor Composer 2.5: modelo propio que iguala Opus 4.7 a fracci&oacute;n del costo</h3>
+      <p class="what">Cursor lanz&oacute; Composer 2.5, su modelo in-house de coding de largo horizonte que iguala a Claude Opus 4.7 y GPT-5.5 en benchmarks, a $0.50/M input y $2.50/M output tokens. Incluye Build in Parallel para ejecutar m&uacute;ltiples tareas simult&aacute;neamente y PR review integrado.</p>
+      <p class="why">El combo emergente de 2026 es Cursor para edici&oacute;n diaria + Claude Code para tareas complejas en terminal; Composer 2.5 hace que la primera mitad sea a&uacute;n m&aacute;s competitiva en precio.</p>
+      <p class="source"><a href="https://thenewstack.io/ai-coding-tool-stack/">The New Stack</a> &bull; <a href="https://www.nxcode.io/resources/news/cursor-vs-claude-code-vs-github-copilot-2026-ultimate-comparison">NxCode</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Atacantes comprometen herramientas open source de Microsoft para robar credenciales de devs AI</h3>
+      <p class="what">Se divulg&oacute; un ataque donde actores maliciosos comprometieron herramientas open source de Microsoft para robar contrase&ntilde;as y credenciales de desarrolladores de AI. El ataque fue revelado el 8 de junio y afecta a quienes usan tooling de ML/AI del ecosistema Microsoft.</p>
+      <p class="why">Recordatorio cr&iacute;tico: audita tus dependencias de AI tooling y rota credenciales si usas paquetes del ecosistema Microsoft para ML.</p>
+      <p class="source"><a href="https://techstartups.com/2026/06/09/top-tech-news-today-june-9-2026/">Tech Startups</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 AWS Startup Advisor: asesor AI gratuito para founders con plugin para Claude Code y Cursor</h3>
+      <p class="what">AWS lanz&oacute; Startup Advisor, un asistente AI entrenado con insights de 350K+ startups que personaliza recomendaciones seg&uacute;n tu stack, etapa y presupuesto. Est&aacute; disponible como plugin para Claude Code, Cursor, VS Code y Kiro, y tambi&eacute;n incluye herramientas de migraci&oacute;n AI-powered que mueven workloads de OpenAI/Gemini a Amazon Bedrock en d&iacute;as.</p>
+      <p class="why">Si est&aacute;s lanzando un producto en AWS, tener un asesor contextual que evoluciona de MVP a enterprise &mdash; gratis y dentro de tu IDE &mdash; reduce decisiones de infraestructura que antes requer&iacute;an un Solutions Architect.</p>
+      <p class="source"><a href="https://yourstory.com/2026/06/aws-unveils-new-ai-tools-focused-on-startup-founders">YourStory</a> &bull; <a href="https://theaiinsider.tech/2026/06/04/aws-launches-two-new-tools-for-startups/">The AI Insider</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot migra a billing por uso: share cae a 51% mientras Claude Code y Cursor crecen</h3>
+      <p class="what">Desde el 1 de junio, GitHub Copilot usa AI Credits basados en consumo real en vez de requests. Los precios base se mantienen ($10 Pro, $39 Pro+) pero ahora representan una asignaci&oacute;n mensual de cr&eacute;ditos. Seg&uacute;n Stack Overflow, Copilot cay&oacute; de 67% a 51% de adopci&oacute;n, mientras Cursor debut&oacute; en 18% y Claude Code en 10%.</p>
+      <p class="why">El mercado de AI coding se fragment&oacute; oficialmente &mdash; ya no hay un ganador por defecto, lo que significa m&aacute;s opciones pero tambi&eacute;n m&aacute;s fricci&oacute;n al elegir stack de desarrollo.</p>
+      <p class="source"><a href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/">Lushbinary</a> &bull; <a href="https://scrimba.com/articles/best-ai-coding-assistants-2026/">Scrimba</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Fable 5: Anthropic lanza al p&uacute;blico su modelo m&aacute;s capaz, clase Mythos</h3>
+      <p class="what">Anthropic lanz&oacute; hoy Claude Fable 5, el primer modelo Mythos-class disponible para uso general. Es SOTA en pr&aacute;cticamente todos los benchmarks probados (software engineering, visi&oacute;n, investigaci&oacute;n cient&iacute;fica), con 1M tokens de contexto y 128K de output. Incluye safeguards que derivan a Opus 4.8 en &lt;5% de sesiones para temas sensibles.</p>
+      <p class="why">A $10/$50 por mill&oacute;n de tokens, es el nuevo techo de calidad para agentes de coding y procesamiento complejo &mdash; gratis en Pro/Max/Team hasta el 22 de junio para que lo pruebes.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cambio de billing Anthropic el 15 de junio: Agent SDK y Claude Code con cr&eacute;ditos separados</h3>
+      <p class="what">A partir del 15 de junio, el uso program&aacute;tico de Claude (Agent SDK, Claude Code GitHub Actions, claude -p, apps de terceros) sale del pool de suscripci&oacute;n y pasa a un cr&eacute;dito mensual separado a precios API: $20 en Pro, $100 en Max 5x, $200 en Max 20x. Sin rollover ni overflow autom&aacute;tico.</p>
+      <p class="why">Si usas Claude Code como motor principal de desarrollo, calcula tu consumo real ahora &mdash; usuarios heavy pasaban de $300-600/mes en valor API subsidiado a un cap de $20-200, lo que podr&iacute;a cambiar tu workflow completamente.</p>
+      <p class="source"><a href="https://thenewstack.io/anthropic-agent-sdk-credits/">The New Stack</a> &bull; <a href="https://codersera.com/blog/anthropic-june-2026-billing-change-claude-code/">Codersera</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude llega a Apple: Swift package oficial para Foundation Models framework</h3>
+      <p class="what">Anthropic public&oacute; un paquete Swift que integra Claude directamente en el Foundation Models framework de Apple. Los developers pueden usar modelos on-device de Apple para tareas r&aacute;pidas (resumen, extracci&oacute;n) y escalar a Claude para razonamiento multi-paso, generaci&oacute;n de c&oacute;digo y tareas complejas, todo con la misma API.</p>
+      <p class="why">Para devs iOS, esto simplifica dr&aacute;sticamente a&ntilde;adir AI a tu app: una sola API, sin gestionar m&uacute;ltiples SDKs, con routing autom&aacute;tico entre local y cloud.</p>
+      <p class="source"><a href="https://claude.com/blog/claude-for-foundation-models">Claude Blog</a> &bull; <a href="https://ofox.ai/blog/apple-foundation-models-3-wwdc-2026-developer-read/">Ofox.ai</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple Workout Buddy: coaching AI en tiempo real con datos de wearables</h3>
+      <p class="what">Como parte de watchOS 27, Apple present&oacute; Workout Buddy, que usa Apple Intelligence para combinar historial de entrenamientos con datos de sensores en vivo y entregar coaching por voz durante la sesi&oacute;n. El sistema adapta intensidad, sugiere ajustes, y monitorea recuperaci&oacute;n en tiempo real.</p>
+      <p class="why">Es el benchmark de lo que los usuarios van a esperar de cualquier app de fitness &mdash; si est&aacute;s construyendo en sports tech, tu producto necesita este nivel de personalizaci&oacute;n contextual con datos de wearables.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/06/08/apple-wwdc-2026-live-updates.html">CNBC - WWDC 2026</a> &bull; <a href="https://www.sensai.fit/blog/best-ai-fitness-apps-2026-fitbod-freeletics-future-trainiac-alternatives">SensAI Fit</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Samsung lanza suite de salud AI para Galaxy Watch: coaching, sue&ntilde;o y biom&eacute;trica avanzada</h3>
+      <p class="what">Samsung despleg&oacute; el 8 de junio una actualizaci&oacute;n mayor de Samsung Health con an&aacute;lisis AI de bio-se&ntilde;ales nocturnas (ox&iacute;geno, HRV, frecuencia respiratoria, temperatura), un Energy Score con AI, Fitness Index que compara contra pares, y monitoreo de salud auditiva. Cubre 5 pilares: actividad, mindfulness, nutrici&oacute;n, sue&ntilde;o y signos vitales.</p>
+      <p class="why">Samsung est&aacute; convirtiendo el Galaxy Watch en una plataforma de coaching AI con datos biom&eacute;tricos reales &mdash; si construyes en health/wellness, la API de Samsung Health data es una plataforma sobre la cual construir.</p>
+      <p class="source"><a href="https://news.samsung.com/global/samsung-introduces-next-gen-galaxy-watch-features-for-ai-powered-everyday-health-companion">Samsung Newsroom</a> &bull; <a href="https://www.sammobile.com/news/major-samsung-health-update-revamped-ui-new-ai-features/">SamMobile</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 09/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
