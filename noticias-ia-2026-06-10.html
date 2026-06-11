@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 10 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>10 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Xcode 27: coding agente dual con completado on-device y Claude/Gemini en la nube</h3>
+      <p class="what">Apple presentó en WWDC 2026 (día 3, 10 de junio) un sistema de coding agente en Xcode 27 con doble motor: completado inline 100% on-device via Neural Engine (sin enviar código a ningún servidor) y un routing cloud para análisis pesado vía Claude, Gemini u OpenAI. Incluye un bridge MCP que convierte Xcode en host universal de agentes.</p>
+      <p class="why">Si desarrollas para iOS/macOS, Xcode 27 convierte tu IDE en un nodo MCP completo donde puedes orquestar agentes externos sin salir del editor.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/318110/20260610/wwdc-2026-day-3-xcode-27-neural-engine-completes-code-without-sending-source-any-server.htm">TechTimes</a> &bull; <a href="https://developer.apple.com/videos/play/wwdc2026/258/">Apple Developer</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple Foundation Models: Claude y Gemini intercambiables sin cambiar código en iOS 27</h3>
+      <p class="what">El nuevo protocolo LanguageModel en el framework Foundation Models de Apple permite a desarrolladores usar modelos on-device, Claude o Gemini con la misma API Swift. Cambiar de proveedor es actualizar una dependencia en Swift Package Manager, sin tocar lógica de sesión ni UI.</p>
+      <p class="why">Esto elimina el vendor lock-in en apps móviles: puedes prototipar con el modelo on-device y escalar a Claude para queries complejas con una línea de config.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/318039/20260609/wwdc-2026-developer-tools-foundation-models-now-swaps-ai-providers-without-code-changes.htm">TechTimes</a> &bull; <a href="https://claude.com/blog/claude-for-foundation-models">Claude Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot App: desktop nativo para orquestar múltiples agentes en paralelo</h3>
+      <p class="what">GitHub lanzó Copilot App en preview para macOS, Windows y Linux, un cliente standalone que orquesta múltiples sesiones de agentes AI en paralelo, cada una en su propio git worktree aislado. Incluye Canvases (superficies bidireccionales humano-agente), Agent Merge para PRs, y sandboxes seguros locales o en cloud.</p>
+      <p class="why">Si manejas varios repos o features simultáneas, esto reemplaza tu setup de múltiples terminales con agentes coordinados que no se pisan entre sí.</p>
+      <p class="source"><a href="https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/">GitHub Blog</a> &bull; <a href="https://www.helpnetsecurity.com/2026/06/08/github-copilot-app-ai-coding-agents/">Help Net Security</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemma 4 on-device: inferencia sub-20ms en Android con soporte multimodal y agentes</h3>
+      <p class="what">Gemma 4 sobre Arm alcanza inferencia sub-20ms en dispositivos móviles, con soporte para razonamiento, workflows agénticos y procesamiento de visión+audio on-device. Google AI Edge y LiteRT con NPU hacen que modelos de producción corran sin cloud.</p>
+      <p class="why">Sub-20ms en móvil significa que puedes poner AI en el hot path de tu app Android sin que el usuario perciba latencia, eliminando costos de API para features de alto volumen.</p>
+      <p class="source"><a href="https://newsroom.arm.com/blog/gemma-4-on-arm-optimized-on-device-ai">Arm Newsroom</a> &bull; <a href="https://developers.googleblog.com/building-real-world-on-device-ai-with-litert-and-npu/">Google Developers</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Qwen 3.7-Max: modelo agente con 35 horas de autonomía y compatible con API de Anthropic</h3>
+      <p class="what">Alibaba lanzó Qwen 3.7-Max, un modelo agent-first con 1M tokens de contexto, capaz de operar autónomamente hasta 35 horas y ejecutar 1,000+ tool calls consecutivas. Soporta nativamente la API de Anthropic, funcionando directamente con Claude Code.</p>
+      <p class="why">Un modelo que habla el protocolo de Claude y aguanta 35 horas de autonomía es una alternativa seria para tareas agénticas de larga duración a menor costo.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/05/21/qwen-introduces-qwen3-7-max-a-reasoning-agent-model-with-a-1m-token-context-window/">MarkTechPost</a> &bull; <a href="https://www.analyticsvidhya.com/blog/2026/05/qwen3-7-max/">Analytics Vidhya</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI Codex: web search nativo en code mode y soporte MCP enriquecido</h3>
+      <p class="what">Codex de OpenAI añade búsqueda web standalone en code mode (incluyendo desde tool calls anidadas en JS), schemas MCP más ricos con soporte de oneOf/allOf, y workspace agents compartidos para equipos en Enterprise/EDU.</p>
+      <p class="why">La búsqueda web nativa dentro de Codex cierra la brecha más molesta: poder investigar documentación o APIs sin salir del flujo de coding.</p>
+      <p class="source"><a href="https://developers.openai.com/codex/changelog">OpenAI Codex Changelog</a> &bull; <a href="https://releasebot.io/updates/openai">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios y productos -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Stripe: Fable 5 comprimió meses de ingeniería en días en codebase de 50M líneas Ruby</h3>
+      <p class="what">Durante el early access de Claude Fable 5, Stripe reportó que el modelo completó una migración codebase-wide en un día sobre 50 millones de líneas de Ruby, una tarea que hubiera tomado a un equipo completo más de dos meses manualmente.</p>
+      <p class="why">Esto no es un benchmark sintético: es una empresa real con un codebase masivo demostrando que las migraciones técnicas dejaron de ser proyectos de trimestres.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic</a> &bull; <a href="https://www.cnbc.com/2026/06/09/anthropic-mythos-claude-fable-5.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google + Kaggle: curso gratuito de 5 días de AI Agents con Vibe Coding (15-19 junio)</h3>
+      <p class="what">Google y Kaggle relanzaron su curso intensivo gratuito de AI Agents, ahora con enfoque en vibe coding: natural language como interfaz principal de programación. Cubre desde agentes básicos hasta deployment a producción, con capstone project y certificado.</p>
+      <p class="why">Cinco días para ir de cero a un agente AI desplegado en producción, gratis y con certificado de Kaggle: ideal si quieres validar un MVP basado en agentes.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/">Google Blog</a> &bull; <a href="https://www.kaggle.com/learn-guide/5-day-agents">Kaggle</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y ecosistema Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Fable 5 GA: primer modelo Mythos-class disponible al público, 80.3% SWE-bench Pro</h3>
+      <p class="what">Anthropic lanzó Claude Fable 5 el 9 de junio, su primer modelo de clase Mythos para uso general. Logra 80.3% en SWE-bench Pro, 88.0% en Terminal-Bench 2.1, contexto de 1M tokens, y 128K de output. Su memoria persistente basada en archivos triplica la mejora de rendimiento vs Opus 4.8 en tareas largas.</p>
+      <p class="why">A $10/$50 por millón de tokens (el doble de Opus 4.8), la pregunta real es si tus tareas son lo suficientemente complejas para justificar el upgrade; para migraciones o refactors masivos, claramente sí.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic</a> &bull; <a href="https://www.cnbc.com/2026/06/09/anthropic-mythos-claude-fable-5.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code con Opus 4.8: dynamic workflows con cientos de subagentes en paralelo</h3>
+      <p class="what">Claude Code estableció Opus 4.8 como modelo default y lanzó dynamic workflows: un orquestador que puede crear cientos de subagentes paralelos, cada uno con su propio contexto, y agregar resultados en una salida coherente. También añade fast mode a 2.5x de velocidad y threshold de caching reducido a 1,024 tokens.</p>
+      <p class="why">Dynamic workflows convierte a Claude Code en un sistema de procesamiento distribuido: ideal para auditorías de seguridad, refactors multi-archivo, o análisis de codebases grandes.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> &bull; <a href="https://www.anthropic.com/news/claude-opus-4-8">Anthropic</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud y bienestar -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Google Health Coach GA: coaching AI 24/7 con Gemini para fitness, sueño y salud</h3>
+      <p class="what">Google Health Coach alcanzó disponibilidad global, integrado en la nueva app Google Health (ex-Fitbit). Usa Gemini para ofrecer planes de entrenamiento personalizados, insights de sueño y resúmenes de historial médico, cruzando datos de wearables, Health Connect y Apple HealthKit en un solo dashboard.</p>
+      <p class="why">Un coach AI 24/7 a $9.99/mes que cruza datos de múltiples dispositivos marca el estándar que cualquier startup de wellness tiene que superar o complementar con un nicho específico.</p>
+      <p class="source"><a href="https://blog.google/products-and-platforms/products/google-health/google-health-coach/">Google Blog</a> &bull; <a href="https://www.techrepublic.com/article/news-google-health-fitbit-ai-coach-fitbit-air/">TechRepublic</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 10/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
