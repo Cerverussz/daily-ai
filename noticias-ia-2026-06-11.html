@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 11 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>11 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI adquiere Ona: ejecuci&oacute;n cloud persistente para agentes Codex</h3>
+      <p class="what">OpenAI anunci&oacute; la adquisici&oacute;n de Ona, plataforma de ejecuci&oacute;n cloud segura usada por 2 millones de desarrolladores. La tecnolog&iacute;a permitir&aacute; que los agentes de Codex trabajen en tareas de horas o d&iacute;as con estado persistente, sin depender de un dispositivo activo.</p>
+      <p class="why">Si est&aacute;s evaluando c&oacute;mo delegar tareas complejas a agentes AI en tu producto, esto confirma que la infraestructura de ejecuci&oacute;n persistente es el cuello de botella que todos est&aacute;n resolviendo.</p>
+      <p class="source"><a href="https://openai.com/index/openai-to-acquire-ona/">OpenAI</a> &bull; <a href="https://www.pymnts.com/acquisitions/2026/openai-plans-ona-purchase-transform-coding-agents/">PYMNTS</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Xcode 27: coding ag&eacute;ntico con Claude, Gemini y GPT integrados</h3>
+      <p class="what">Apple present&oacute; Xcode 27 con agentes AI que pueden explorar codebases, planificar features, ejecutar tests, interactuar con el simulador y diagnosticar crashes autom&aacute;ticamente. El autocompletado corre on-device en el Neural Engine; los agentes usan modelos de Anthropic, Google y OpenAI con opt-in expl&iacute;cito.</p>
+      <p class="why">Si desarrollas para iOS/macOS, ahora tienes Claude Code-level de capacidad agente directamente en Xcode, con soporte MCP y Agent Client Protocol para extender con tus propios plugins.</p>
+      <p class="source"><a href="https://www.apple.com/newsroom/2026/06/apple-aids-app-development-with-new-intelligence-frameworks-and-advanced-tools/">Apple Newsroom</a> &bull; <a href="https://9to5mac.com/2026/06/10/xcode-27-expands-agentic-coding-toolset-with-gemini-integration/">9to5Mac</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple Foundation Models: open source, multimodal y gratis para devs peque&ntilde;os</h3>
+      <p class="what">Apple anunci&oacute; que su Foundation Models framework ser&aacute; open source este verano, con soporte multimodal (im&aacute;genes + texto) on-device y un nuevo Python SDK. Anthropic y Google ya ofrecen Swift SDKs para llamar Claude y Gemini desde la misma API, y es gratis en Private Cloud Compute para apps con menos de 2M descargas.</p>
+      <p class="why">Si lanzas una app m&oacute;vil, puedes integrar AI on-device sin costo de infraestructura y con la misma interfaz Swift para modelos locales o cloud.</p>
+      <p class="source"><a href="https://developer.apple.com/videos/play/wwdc2026/241/">Apple Developer</a> &bull; <a href="https://techresearchonline.com/news/apple-foundation-models-wwdc-2026-ai-framework-update/">TechResearchOnline</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenCode llega a #1 en coding agents: 172K stars, 7.5M devs, open source</h3>
+      <p class="what">OpenCode se posicion&oacute; como el agente de coding open source m&aacute;s adoptado del mundo con 172K+ GitHub stars, 900 contribuidores y 7.5M devs activos mensuales. Es provider-agnostic (Claude, Gemini, GPT, modelos locales en la misma sesi&oacute;n) con integraci&oacute;n LSP real para types, signatures y diagn&oacute;sticos en 18+ lenguajes.</p>
+      <p class="why">Como alternativa gratuita a Claude Code con soporte multi-modelo, vale la pena probarlo si quieres flexibilidad de proveedor sin lock-in.</p>
+      <p class="source"><a href="https://opencode.ai/">OpenCode</a> &bull; <a href="https://github.com/anomalyco/opencode">GitHub</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft Edge: modelo on-device Aion-1.0, traducci&oacute;n local en 145+ idiomas y speech recognition</h3>
+      <p class="what">Microsoft liber&oacute; en preview el SLM Aion-1.0-Instruct que corre on-device en Edge, incluyendo m&aacute;quinas sin GPU dedicada. Tambi&eacute;n lanz&oacute; APIs de traducci&oacute;n local (145+ idiomas) y reconocimiento de voz on-device en espa&ntilde;ol, ingl&eacute;s, alem&aacute;n, italiano, portugu&eacute;s y coreano.</p>
+      <p class="why">Traducci&oacute;n y speech sin servidor significa cero costo por request y cero dependencia externa para features de internacionalizaci&oacute;n en tu web app.</p>
+      <p class="source"><a href="https://blogs.windows.com/msedgedev/2026/06/02/expanding-on-device-ai-in-microsoft-edge-new-models-and-apis-for-the-web/">Microsoft Edge Blog</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Windsurf muere, nace Devin Desktop: Agent Client Protocol abre el mercado de IDEs</h3>
+      <p class="what">Windsurf se transform&oacute; en Devin Desktop el 2 de junio, reescribiendo su agente local en Rust (30% m&aacute;s eficiente en tokens). El cambio real: soporta Agent Client Protocol (ACP), un protocolo abierto que permite correr Codex, Claude Agent u OpenCode dentro del mismo editor.</p>
+      <p class="why">ACP es para IDEs lo que MCP es para herramientas: si est&aacute;s construyendo un agente AI, soportar ACP te da distribuci&oacute;n instant&aacute;nea en cualquier editor compatible.</p>
+      <p class="source"><a href="https://devin.ai/blog/windsurf-is-now-devin-desktop/">Devin Blog</a> &bull; <a href="https://www.digitalapplied.com/blog/windsurf-becomes-devin-desktop-ide-migration-2026">DigitalApplied</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot billing shock: devs reportan facturas de $180 en d&iacute;a 1</h3>
+      <p class="what">El cambio a billing por uso de GitHub Copilot (1 AI credit = $0.01 USD) entr&oacute; en vigor el 1 de junio y los reportes de costos disparados no paran. Un dev en plan Pro+ ($39/mes) consumi&oacute; 8% de sus cr&eacute;ditos mensuales en 2 horas; otro estima que su factura subir&aacute; de $29 a $750/mes.</p>
+      <p class="why">&Eacute;sta es la se&ntilde;al definitiva para evaluar alternativas como OpenCode (gratis), Claude Code, o modelos locales para tareas de alto volumen.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/">TechCrunch</a> &bull; <a href="https://visualstudiomagazine.com/articles/2026/06/02/slammed-by-copilot-usage-based-billing-on-day-1-facing-180-bill-for-june.aspx">Visual Studio Magazine</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5: el modelo Mythos-class llega al p&uacute;blico general</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Fable 5 el 9 de junio, su modelo m&aacute;s potente de acceso general. Excede a todo modelo previo de Anthropic en software engineering, visi&oacute;n y trabajo aut&oacute;nomo prolongado. Stripe report&oacute; que comprimi&oacute; meses de ingenier&iacute;a en d&iacute;as, migrando un codebase de 50M l&iacute;neas Ruby en un d&iacute;a.</p>
+      <p class="why">A $10/$50 por mill&oacute;n de tokens (menos de la mitad del precio de Mythos Preview), es el mejor modelo disponible para tareas de coding agente complejas y de larga duraci&oacute;n.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: sub-agentes anidados y sandboxes auto-hospedados en beta</h3>
+      <p class="what">Claude Code agreg&oacute; soporte para sub-agentes anidados (nested sub-agents), mejor selecci&oacute;n de modelo/regi&oacute;n, y b&uacute;squeda de plugins. Paralelamente, Managed Agents ahora soporta sandboxes auto-hospedados (Cloudflare, Daytona, Modal, Vercel) con MCP tunnels en research preview.</p>
+      <p class="why">Sub-agentes anidados permiten descomponer tareas complejas sin salir de Claude Code, y los sandboxes propios te dan control total sobre d&oacute;nde corre tu agente.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> &bull; <a href="https://releasebot.io/updates/anthropic">Anthropic Updates</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple Workout Buddy: coaching AI en espa&ntilde;ol, ahora sin depender del iPhone</h3>
+      <p class="what">watchOS 27 expande Workout Buddy con soporte en espa&ntilde;ol, insights de progreso (pace, distancia, duraci&oacute;n) basados en historial fitness, y funcionamiento independiente sin iPhone cercano. Es el primer coaching AI nativo de Apple que funciona completamente on-wrist.</p>
+      <p class="why">Si est&aacute;s construyendo en el espacio de fitness/coaching, Apple acaba de establecer el est&aacute;ndar m&iacute;nimo: coaching personalizado, on-device, multi-idioma y sin fricci&oacute;n.</p>
+      <p class="source"><a href="https://appleinsider.com/articles/26/06/08/coaching-wellness-features-ai-make-the-biggest-impact-in-watchos-27">AppleInsider</a> &bull; <a href="https://9to5mac.com/2026/06/09/top-watchos-27-features-that-will-enhance-your-apple-watch/">9to5Mac</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 11/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
