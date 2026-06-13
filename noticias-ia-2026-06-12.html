@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 12 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>12 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Chrome auto-browse llega a Android: agentes Gemini completan tareas por ti</h3>
+      <p class="what">Google confirma el lanzamiento de Gemini auto-browse en Chrome para Android a finales de junio, permitiendo que agentes AI llenen formularios, reserven citas, comparen opciones y completen transacciones multi-paso desde la barra de direcciones. Requiere suscripci&oacute;n AI Pro o Ultra y pide confirmaci&oacute;n manual antes de acciones sensibles como compras.</p>
+      <p class="why">Si tu producto tiene flujos web (checkout, onboarding, booking), prep&aacute;rate: los usuarios empezar&aacute;n a interactuar con tu UI a trav&eacute;s de agentes, no de clicks manuales.</p>
+      <p class="source"><a href="https://blog.google/products-and-platforms/products/chrome/bringing-chrome-ai-to-android/">Google Blog</a> &bull; <a href="https://gadgets.beebom.com/news/chrome-on-android-is-getting-gemini-ai-features-that-can-auto-browse-complete-tasks-for-you">Beebom</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google AI Studio genera apps Android nativas desde prompts de texto</h3>
+      <p class="what">Google AI Studio permite generar apps Android completas (Kotlin + Jetpack Compose) desde un prompt de texto, con emulador Android en el navegador, instalaci&oacute;n directa por USB y publicaci&oacute;n one-click a Google Play internal testing. Se puede exportar a GitHub o continuar en Android Studio con Gemini.</p>
+      <p class="why">El loop de &ldquo;idea a APK instalable&rdquo; se reduce a minutos para apps utilitarias y prototipos&mdash;un acelerador masivo para founders validando ideas mobile.</p>
+      <p class="source"><a href="https://developer.android.com/blog/posts/build-native-android-apps-in-google-ai-studio">Android Developers Blog</a> &bull; <a href="https://androidguys.com/news/google-i-o-2026-android-developers-get-ai-coding-tools-compose-first-apps-and-android-17-updates/">AndroidGuys</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple lanza Core AI: framework nativo para modelos on-device en iOS/macOS</h3>
+      <p class="what">En WWDC 2026 (sesiones finales el 12 de junio), Apple present&oacute; Core AI, un framework para ejecutar modelos custom on-device con compilaci&oacute;n ahead-of-time, herramientas Python para convertir PyTorch a Apple Silicon, y API Swift nativa. Incluye modelos open-source optimizados (Qwen, Mistral, SAM3) y acceso gratuito a Foundation Models en Private Cloud Compute para devs con menos de 2M descargas.</p>
+      <p class="why">Si desarrollas para iOS, Core AI es la v&iacute;a oficial para AI on-device sin APIs cloud&mdash;latencia cero, privacidad por defecto, y gratis para indie devs.</p>
+      <p class="source"><a href="https://developer.apple.com/videos/play/wwdc2026/324/">Apple Developer</a> &bull; <a href="https://www.macrumors.com/2026/06/09/apple-outlines-major-ai-and-developer-tool-updates/">MacRumors</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 SLMs corren a velocidad interactiva en Android: sub-20ms en Snapdragon 8 Elite</h3>
+      <p class="what">Benchmarks de junio 2026 confirman que Llama 3.2 1B y Qwen2.5 0.5B corren a velocidades interactivas en Android flagship con delegado QNN NPU, con detecci&oacute;n de objetos INT8 en 12-15ms. Analistas proyectan que m&aacute;s del 70% de inferencias AI ocurrir&aacute;n on-device para fin de 2026.</p>
+      <p class="why">On-device AI en Android ya no es experimental&mdash;puedes integrar features inteligentes con latencia imperceptible y sin costos de API por request.</p>
+      <p class="source"><a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms/">AlephZero Labs</a> &bull; <a href="https://blog.mean.ceo/on-device-ai-news-june-2026/">On-Device AI News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot migra a cr&eacute;ditos: adiós al pricing fijo desde el 1 de junio</h3>
+      <p class="what">Todos los planes de GitHub Copilot migraron a billing basado en AI Credits ($0.01/cr&eacute;dito) el 1 de junio. Los cr&eacute;ditos no se acumulan y desarrolladores reportan variaciones de costo de 10x a 100x en cargas agente intensivas.</p>
+      <p class="why">Si tu equipo usa Copilot para trabajo agente pesado, audita el consumo real ahora&mdash;podr&iacute;a ser m&aacute;s barato migrar a Claude Code o OpenCode para alto volumen.</p>
+      <p class="source"><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a> &bull; <a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/">GitHub Changelog</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google &times; Kaggle: curso gratuito de AI Agents + Vibe Coding arranca el 15 de junio</h3>
+      <p class="what">Google y Kaggle abren inscripciones para la segunda edici&oacute;n del curso intensivo de 5 d&iacute;as sobre AI Agents con enfoque en vibe coding, donde el lenguaje natural reemplaza c&oacute;digo tradicional para construir agentes. Cubre desde context engineering hasta deployment en producci&oacute;n; la primera edici&oacute;n alcanz&oacute; 1.5M+ participantes.</p>
+      <p class="why">Cinco d&iacute;as para ir de prototipo a producci&oacute;n con agentes AI, gratis y con el respaldo de Google&mdash;ideal si est&aacute;s explorando agentes para tu producto.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/">Google Blog</a> &bull; <a href="https://www.kaggle.com/learn-guide/5-day-agents">Kaggle</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenCode #1 en rankings con 172K stars: agente de coding open-source sin vendor lock-in</h3>
+      <p class="what">OpenCode supera a Cursor en el ranking de LogRocket de junio como el agente de coding l&iacute;der. Soporta 75+ proveedores de modelos, integraci&oacute;n LSP nativa con diagn&oacute;sticos del compilador en 20+ lenguajes, sub-agentes background, y deployment air-gapped. En pruebas de DataCamp gener&oacute; 21 tests m&aacute;s en promedio que Claude Code con el mismo modelo.</p>
+      <p class="why">Si buscas un coding agent sin vendor lock-in que corra local v&iacute;a Ollama y permita BYOK, OpenCode es la alternativa open-source m&aacute;s madura con 7.5M MAU.</p>
+      <p class="source"><a href="https://blog.logrocket.com/ai-dev-tool-power-rankings/">LogRocket</a> &bull; <a href="https://byteiota.com/opencode-open-source-ai-coding-agent-guide-2026/">ByteIota</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5 disponible: el modelo Mythos llega al p&uacute;blico general</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Fable 5 el 9 de junio, su primer modelo Mythos accesible al p&uacute;blico, con capacidades superiores en coding, visi&oacute;n, investigaci&oacute;n y ejecuci&oacute;n ag&eacute;ntica de largo horizonte. Disponible en Claude API, Bedrock, Vertex AI y Microsoft Foundry a $10/$50M tokens, incluido gratis en planes Pro/Max/Team hasta el 23 de junio.</p>
+      <p class="why">Tienes hasta el 23 de junio para probar Fable 5 sin costo extra&mdash;eval&uacute;a si sus capacidades ag&eacute;nticas justifican el upgrade en tus workflows de producci&oacute;n.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: sub-agentes anidados, plugins y mejoras en Fable 5</h3>
+      <p class="what">Las actualizaciones del 11-12 de junio a&ntilde;aden sub-agentes anidados (hasta 5 niveles), manejo inteligente de modelos y regiones, b&uacute;squeda de plugins, y mejoras en flujos de Chrome, VSCode y terminal. Se corrigi&oacute; la normalizaci&oacute;n de Fable 5 y el model picker ahora muestra Opus como fila separada en planes premium.</p>
+      <p class="why">Sub-agentes anidados permiten que Claude Code delegue subtareas a agentes especializados&mdash;refactors complejos y auditor&iacute;as multi-archivo son ahora mucho m&aacute;s confiables.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Alerta: Claude Sonnet 4 y Opus 4 se retiran el 15 de junio &mdash; quedan 3 d&iacute;as</h3>
+      <p class="what">Anthropic retira permanentemente los model IDs claude-sonnet-4-20250514 y claude-opus-4-20250514 el 15 de junio a las 9AM PT. Despu&eacute;s de esa fecha, las llamadas API a esos IDs retornar&aacute;n errores; los reemplazos son claude-sonnet-4-5 y claude-opus-4-7.</p>
+      <p class="why">Si tienes c&oacute;digo en producci&oacute;n o pipelines CI pinneados a esos model IDs, es un cambio de una l&iacute;nea pero tienes 3 d&iacute;as para hacerlo.</p>
+      <p class="source"><a href="https://platform.claude.com/docs/en/about-claude/model-deprecations">Claude API Docs</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Skelcore Guru Vitals: AI coach que conecta wearables con equipos de gym</h3>
+      <p class="what">Skelcore lanza Guru Vitals, una plataforma que ingiere datos de wearables y body composition scans, los alimenta a un AI coach que genera entrenamientos personalizados, y los env&iacute;a directamente a las m&aacute;quinas conectadas del gimnasio. Monitorea sue&ntilde;o, VO2 max y m&eacute;tricas de recuperaci&oacute;n para ajustar programaci&oacute;n continuamente.</p>
+      <p class="why">Ejemplo concreto del loop completo datos&rarr;inteligencia&rarr;acci&oacute;n en fitness&mdash;modelo directamente aplicable a marketplaces que conectan coaches, atletas y servicios.</p>
+      <p class="source"><a href="https://athletechnews.com/the-most-innovative-fitness-wellness-companies-of-2026/">Athletech News</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Output Sports lanza Program Uploader: IA transforma programas de entrenamiento en minutos</h3>
+      <p class="what">Output Sports presenta Program Uploader, herramienta AI que convierte programas de entrenamiento existentes en planes estructurados dentro de su plataforma en minutos, eliminando horas de trabajo manual para coaches profesionales. Apunta a la automatizaci&oacute;n del flujo de trabajo de entrenadores en el segmento de alto rendimiento.</p>
+      <p class="why">Mismo patr&oacute;n aplicable a cualquier marketplace donde profesionales crean planes personalizados&mdash;AI como reductor de fricci&oacute;n en la creaci&oacute;n de contenido experto.</p>
+      <p class="source"><a href="https://www.healthclubmanagement.co.uk/health-club-management-press-releases/output-sports-launches-program-uploader-to-give-coaches-their-time-back/363013">Health Club Management</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 12/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
