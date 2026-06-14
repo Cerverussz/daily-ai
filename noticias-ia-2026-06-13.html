@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 13 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>13 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Xcode 27 integra Claude, Gemini y ChatGPT: coding ag&eacute;ntico multi-modelo en tu IDE</h3>
+      <p class="what">Apple lanz&oacute; la beta de Xcode 27 con un sistema dual: un modelo local en el Neural Engine para sugerencias Swift en tiempo real y un routing cloud hacia Claude, Gemini u OpenAI para an&aacute;lisis pesado y refactors multi-archivo. El agente puede simular apps completas, escribir y correr tests, e inspeccionar cambios en el iOS Simulator v&iacute;a Device Hub.</p>
+      <p class="why">Si desarrollas para iOS/macOS, tu IDE ahora habla con los mismos modelos que usas en terminal &mdash; sin API keys ni suscripciones extra si calificas para el Small Business Program de Apple.</p>
+      <p class="source"><a href="https://9to5mac.com/2026/06/10/xcode-27-expands-agentic-coding-toolset-with-gemini-integration/">9to5Mac</a> &bull; <a href="https://www.techtimes.com/articles/318039/20260609/wwdc-2026-developer-tools-foundation-models-now-swaps-ai-providers-without-code-changes.htm">TechTimes</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenCode supera 172K estrellas en GitHub: el agente de coding open-source m&aacute;s adoptado</h3>
+      <p class="what">OpenCode se consolid&oacute; como el agente de coding open-source #1 con 7.5 millones de desarrolladores activos mensuales. Es terminal-native, soporta 75+ proveedores de modelos, tiene integraci&oacute;n LSP con informaci&oacute;n de tipos real para 20+ lenguajes, y permite correr m&uacute;ltiples agentes en paralelo sobre el mismo proyecto.</p>
+      <p class="why">Es la alternativa MIT-licensed a Claude Code donde pagas solo por tokens &mdash; ideal si quieres un agente de coding en tu pipeline CI/CD sin vendor lock-in.</p>
+      <p class="source"><a href="https://www.developersdigest.tech/blog/opencode-developer-guide-2026">Developers Digest</a> &bull; <a href="https://byteiota.com/opencode-open-source-ai-coding-agent-guide-2026/">ByteIota</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5: Anthropic lanza su modelo m&aacute;s capaz para uso general</h3>
+      <p class="what">Claude Fable 5, lanzado el 9 de junio, es un modelo Mythos-class con safety classifiers para uso general. Tiene ventana de contexto de 1M tokens, hasta 128K tokens de output, y logra SOTA en software engineering, visi&oacute;n, investigaci&oacute;n cient&iacute;fica y knowledge work. Claude Mythos 5, la versi&oacute;n sin restricciones, queda limitada a partners verificados.</p>
+      <p class="why">A $10/$50 por mill&oacute;n de tokens es caro para alto volumen, pero para tareas complejas de coding y razonamiento largo es el nuevo techo de calidad disponible v&iacute;a API.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini 3.5 Flash: inteligencia frontier a velocidad Flash en Google I/O 2026</h3>
+      <p class="what">Google present&oacute; Gemini 3.5 Flash, el primer modelo de la serie 3.5 que combina inteligencia comparable a modelos flagship grandes con la velocidad y eficiencia de la l&iacute;nea Flash. Tambi&eacute;n anunci&oacute; Gemini Omni para generaci&oacute;n multimodal y Anti-Gravity 2.0 con auto-scaling predictivo que reduce costos de infra un 30-40%.</p>
+      <p class="why">Flash 3.5 es la opci&oacute;n a evaluar para features de AI en producci&oacute;n donde necesitas calidad alta sin pagar precios de modelo flagship.</p>
+      <p class="source"><a href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/">Google Developers</a> &bull; <a href="https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/">Google Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Inferencia on-device cruza el umbral: sub-20ms en Android con NPUs est&aacute;ndar</h3>
+      <p class="what">Benchmarks de producci&oacute;n muestran que la inferencia AI on-device en m&oacute;viles ya logra latencia sub-20ms para modelos de computer vision. Con NPUs ahora est&aacute;ndar en tel&eacute;fonos y t&eacute;cnicas de cuantizaci&oacute;n (32-bit a 4-bit) que reducen tama&ntilde;o 4-8x manteniendo 95%+ de precisi&oacute;n, edge AI es viable en producci&oacute;n.</p>
+      <p class="why">Para features offline en tu app Android &mdash; clasificaci&oacute;n de im&aacute;genes, detecci&oacute;n de movimiento, NLP b&aacute;sico &mdash; ya no necesitas llamar a un API: corre en el dispositivo con latencia imperceptible.</p>
+      <p class="source"><a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms/">AlephZero Labs</a> &bull; <a href="https://sumitagrawal.dev/blog/edge-ai-on-device-intelligence-2026/">Sumit Agrawal</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic supera a OpenAI en adopci&oacute;n empresarial por primera vez (Ramp AI Index)</h3>
+      <p class="what">El Ramp AI Index de junio 2026 muestra a Anthropic en 41% de empresas estadounidenses con suscripciones AI pagadas, superando a OpenAI. En el &uacute;ltimo a&ntilde;o, Anthropic cuadruplic&oacute; su adopci&oacute;n empresarial mientras OpenAI creci&oacute; solo 0.3%, basado en datos reales de gasto corporativo de decenas de miles de empresas.</p>
+      <p class="why">Si est&aacute;s eligiendo stack de AI para tu producto, el mercado enterprise est&aacute; votando con la billetera por Claude &mdash; eso significa mejor soporte, m&aacute;s integraciones y un ecosistema m&aacute;s robusto a mediano plazo.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead">VentureBeat</a> &bull; <a href="https://ramp.com/leading-indicators/ai-index-may-2026">Ramp</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Universal Cart: commerce ag&eacute;ntico para desarrolladores de marketplaces</h3>
+      <p class="what">Google anunci&oacute; Universal Cart en I/O 2026 como developer preview: un carrito de compras unificado que permite a agentes AI ejecutar transacciones cross-merchant. Los merchants pueden integrarse v&iacute;a Google Merchant Center, con disponibilidad general esperada en Q3 2026.</p>
+      <p class="why">Si construyes un marketplace, esto es infraestructura de checkout que Google est&aacute; subsidiando &mdash; tu agente AI podr&aacute; completar compras sin que construyas tu propio flujo de pago multi-vendor.</p>
+      <p class="source"><a href="https://developer.chrome.com/blog/chrome-at-io26">Chrome Developers</a> &bull; <a href="https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/">Google Blog</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Code: sub-agentes anidados, &ldquo;Dreaming&rdquo; y Opus 4.8 como default</h3>
+      <p class="what">Claude Code subi&oacute; a Opus 4.8 como modelo por defecto, duplic&oacute; l&iacute;mites de rate, y lanz&oacute; sub-agentes anidados (agentes que generan sus propios sub-agentes para descomponer tareas). La nueva feature &ldquo;Dreaming&rdquo; revisa sesiones pasadas autom&aacute;ticamente para mejorar memoria y detectar patrones recurrentes entre sesiones.</p>
+      <p class="why">Dreaming convierte a Claude Code de herramienta stateless a un asistente que aprende de tu proyecto &mdash; menos repetici&oacute;n de contexto en cada sesi&oacute;n.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> &bull; <a href="https://blog.mean.ceo/claude-code-news-june-2026/">Mean CEO</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude integrado en iOS 27: Apple Foundation Models permite elegir proveedor AI</h3>
+      <p class="what">iOS 27 introduce un protocolo LanguageModel que permite a las apps intercambiar entre Apple Foundation Models, Claude, Gemini u otros proveedores v&iacute;a Swift Package Manager sin cambiar c&oacute;digo de sesi&oacute;n. Los usuarios podr&aacute;n elegir su proveedor AI preferido a nivel de sistema para Siri, Writing Tools e Image Playground.</p>
+      <p class="why">Tu app iOS puede ahora ofrecer Claude como backend de AI sin manejar API keys del usuario &mdash; Apple abstrae la autenticaci&oacute;n y el routing por ti.</p>
+      <p class="source"><a href="https://apple.gadgethacks.com/news/ios-27-apple-intelligence-claude-vs-gemini-ai-options/">Gadget Hacks</a> &bull; <a href="https://www.techtimes.com/articles/318039/20260609/wwdc-2026-developer-tools-foundation-models-now-swaps-ai-providers-without-code-changes.htm">TechTimes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic presenta S-1 confidencial para IPO con valoraci&oacute;n de ~$965B</h3>
+      <p class="what">Anthropic present&oacute; su S-1 confidencial ante la SEC el 1 de junio, con una valoraci&oacute;n objetivo de $965B tras levantar $65B en su Serie H. La compa&ntilde;&iacute;a reporta un run-rate de $47B en mayo (5x vs enero) y espera su primer trimestre rentable en junio 2026, con listing estimado para octubre.</p>
+      <p class="why">Un Anthropic p&uacute;blico y rentable significa m&aacute;s presi&oacute;n competitiva en precios de API y m&aacute;s estabilidad como proveedor a largo plazo para tu stack.</p>
+      <p class="source"><a href="https://fortune.com/2026/06/01/anthropic-confidentially-files-ipo-965-billion-valuation/">Fortune</a> &bull; <a href="https://www.cbsnews.com/news/anthropic-ipo-confidential-filing-claude-ai/">CBS News</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Output Sports lanza AI Program Uploader: convierte PDFs de entrenamiento en programas estructurados</h3>
+      <p class="what">Output Sports lanz&oacute; Program Uploader, una herramienta AI que convierte PDFs y CSVs de planes de entrenamiento en programas completamente estructurados en minutos. El sistema matchea ejercicios autom&aacute;ticamente contra su biblioteca y asigna scores de confianza a cada sugerencia.</p>
+      <p class="why">Es el patr&oacute;n de producto a copiar: tomar datos no estructurados de un dominio profesional (planes de entrenamiento, recetas, protocolos) y convertirlos en datos accionables con AI.</p>
+      <p class="source"><a href="https://wellnation.uk/blog/2026/06/01/output-sports-launches-ai-program-uploader-for-coaches/">WellNation</a> &bull; <a href="https://www.ucd.ie/innovation/news-and-events/2026/output-launches-new-performance-coaching-platform/">NovaUCD</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Fitbit lanza Personal Health Coach con Gemini AI: gu&iacute;a personalizada en tiempo real</h3>
+      <p class="what">Fitbit integr&oacute; Gemini AI en un nuevo Personal Health Coach que entrega gu&iacute;a personalizada de wellness, workouts y recuperaci&oacute;n basada en el historial completo de salud del usuario. El coach analiza datos de sue&ntilde;o, actividad y frecuencia card&iacute;aca para generar recomendaciones contextuales.</p>
+      <p class="why">Demuestra que wearables + LLM es un combo viable en producci&oacute;n &mdash; si construyes en health/wellness, el benchmark de UX ahora incluye coaching conversacional basado en datos reales del usuario.</p>
+      <p class="source"><a href="https://www.feed.fm/2026-digital-fitness-ecosystem-report">Feed.fm</a> &bull; <a href="https://athletechnews.com/the-most-innovative-fitness-wellness-companies-of-2026/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 13/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
