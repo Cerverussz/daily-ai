@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 14 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>14 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple abre Foundation Models gratis a pequeños devs y anuncia open-source del framework</h3>
+      <p class="what">En WWDC 2026, Apple anunció que desarrolladores con menos de 2 millones de descargas en App Store pueden usar Apple Foundation Models en Private Cloud Compute sin costo. Además, el framework será open-source con soporte para Linux, permitiendo usarlo en backends no-Apple con Swift.</p>
+      <p class="why">Si construyes para iOS, esto elimina el costo de API cloud para features de AI en tu app &mdash; y el soporte Linux lo hace viable para tu backend también.</p>
+      <p class="source"><a href="https://www.macrumors.com/2026/06/09/apple-outlines-major-ai-and-developer-tool-updates/">MacRumors</a> &bull; <a href="https://aitechconnect.in/news/apple-wwdc-2026-foundation-models-ios-builders">AI Tech Connect</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Xcode 27 trae coding agéntico multi-modelo: Claude, Gemini y GPT en tu IDE vía MCP</h3>
+      <p class="what">Xcode 27 incluye un sistema de coding dual: un modelo local en Neural Engine para sugerencias Swift en tiempo real y una capa cloud que ruteará a Claude, Gemini u OpenAI para análisis pesado. A través de mcpbridge, cualquier agente MCP (Claude Code, Cursor, Codex) se conecta a diagnósticos live de Xcode, previews SwiftUI y el REPL de Swift.</p>
+      <p class="why">El protocolo MCP en Xcode convierte a tu IDE en un hub universal de agentes &mdash; puedes cambiar de modelo sin tocar código, lo que reduce vendor lock-in drásticamente.</p>
+      <p class="source"><a href="https://9to5mac.com/2026/06/10/xcode-27-expands-agentic-coding-toolset-with-gemini-integration/">9to5Mac</a> &bull; <a href="https://www.techtimes.com/articles/318039/20260609/wwdc-2026-developer-tools-foundation-models-now-swaps-ai-providers-without-code-changes.htm">TechTimes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot migra a AI Credits: billing por tokens activo desde junio 1</h3>
+      <p class="what">GitHub reemplazó las PRUs por AI Credits ($0.01 = 1 crédito) basados en tokens consumidos por modelo. Code completions y Next Edit Suggestions siguen ilimitados, pero todo lo demás (chat, PR review, agent mode) ahora se mide. Los planes Pro incluyen 1,500 créditos, Pro+ 7,000 y Max 20,000 mensuales.</p>
+      <p class="why">Si dependes de Copilot en tu workflow diario, necesitas auditar cuántos créditos consume cada feature para evitar sorpresas en la factura.</p>
+      <p class="source"><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a> &bull; <a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/">GitHub Changelog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemma 4 optimizada para Arm: inferencia on-device sub-20ms en Android</h3>
+      <p class="what">Google y Arm anunciaron Gemma 4 optimizada para chipsets Arm, logrando inferencia de producción por debajo de 20ms en dispositivos móviles. Las mejoras incluyen zero-copy buffer sharing entre la cámara HAL y el motor de inferencia, eliminando 3-5ms de overhead en pipelines de visión por computadora.</p>
+      <p class="why">Sub-20ms en device abre la puerta a features de AI en tiempo real (cámara, AR, UX adaptativa) sin round-trip a la nube en tu app Android.</p>
+      <p class="source"><a href="https://newsroom.arm.com/blog/gemma-4-on-arm-optimized-on-device-ai">Arm Newsroom</a> &bull; <a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms/">AlephZero Labs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>7 contendientes serios en AI coding: el mercado se fragmenta y se especializa</h3>
+      <p class="what">En junio 2026 hay 7 herramientas de coding AI relevantes: Claude Code (80.8% SWE-bench, mejor razonamiento), Cursor (favorito por UX), GitHub Copilot (líder enterprise), más Antigravity 2.0, Codex, Kiro y Windsurf/Devin Desktop. Gemini Code Assist ofrece 2M tokens de contexto con integración nativa a Google Cloud.</p>
+      <p class="why">La fragmentación significa que puedes armar un stack especializado por tarea: Cursor para edición rápida, Claude Code para refactors complejos, Copilot si vives en GitHub.</p>
+      <p class="source"><a href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/">Lushbinary</a> &bull; <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Ramp AI Index: Anthropic supera a OpenAI en adopción empresarial por primera vez (41% vs 32%)</h3>
+      <p class="what">Según el índice de junio 2026 de Ramp (50K+ empresas US), Anthropic alcanzó 41% de adopción empresarial vs 32.3% de OpenAI. Anthropic cuadruplicó su adopción en un año mientras OpenAI creció apenas 0.3%, impulsado por Claude Code y la plataforma de agentes.</p>
+      <p class="why">Si estás evaluando qué API usar para tu producto, el ecosistema Claude es ahora el estándar de facto en empresas tech US &mdash; eso significa mejor soporte, más integraciones y más talento familiarizado.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead">VentureBeat</a> &bull; <a href="https://ramp.com/leading-indicators/ai-index-may-2026">Ramp</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Lovable y Bolt.new: apps full-stack desde prompts, viable para MVPs reales</h3>
+      <p class="what">Lovable genera interfaces, workflows y backend completo describiendo tu app en lenguaje natural. Bolt.new permite desarrollo full-stack directo desde prompts. Ambas herramientas están siendo usadas por founders para lanzar MVPs funcionales en días en lugar de semanas.</p>
+      <p class="why">El costo de validar una idea con un producto real bajó a prácticamente cero &mdash; si todavía haces discovery sin prototipo funcional, estás perdiendo velocidad.</p>
+      <p class="source"><a href="https://samueljwoods.com/ai-workflow-automation-tools/">Samuel J Woods</a> &bull; <a href="https://www.smiletotalk.com/blog/top-ai-trends-shaping-mvp-development-for-startups-in-2026">SmileToTalk</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>EE.UU. ordena suspender Fable 5 y Mythos 5: primer recall de un modelo AI comercial</h3>
+      <p class="what">El 12 de junio, el gobierno de EE.UU. emitió una directiva de control de exportaciones que obligó a Anthropic a desactivar Fable 5 y Mythos 5 para todos los usuarios globalmente, sin previo aviso ni periodo de migración. El motivo: una vulnerabilidad de jailbreak descubierta en Fable 5. Agentes, coding assistants y deploys enterprise construidos sobre Fable 5 en sus 3 días de vida quedaron inoperativos simultáneamente.</p>
+      <p class="why">Este precedente cambia las reglas: si dependes de un solo modelo frontier, necesitas un fallback plan real &mdash; Opus 4.8 funciona pero no es drop-in replacement.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html">CNBC</a> &bull; <a href="https://www.anthropic.com/news/fable-mythos-access">Anthropic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Tras Fable 5: el movimiento de &ldquo;soberanía de hardware&rdquo; en AI gana tracción</h3>
+      <p class="what">La suspensión de Fable 5 detonó un debate sobre dependencia de modelos cloud que pueden desaparecer por directiva gubernamental. VentureBeat reporta que empresas están acelerando inversiones en infraestructura AI propia y modelos on-premise como respuesta directa al incidente.</p>
+      <p class="why">Si construyes producto sobre APIs de modelos, este es el momento de evaluar seriamente alternativas open-source o self-hosted como plan B.</p>
+      <p class="source"><a href="https://news.bitcoin.com/fable-5-shutdown-us-export-controls-force-anthropic-offline-pre-ipo-speculators-bleed/">Bitcoin News</a> &bull; <a href="https://www.infoq.com/news/2026/06/claude-5-release/">InfoQ</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code v2.1: /goal es &ldquo;la feature más subestimada de 2026&rdquo;</h3>
+      <p class="what">Claude Code v2.1.139 introdujo el comando /goal, que permite definir objetivos de alto nivel que el agente persigue autónomamente a través de múltiples pasos. La comunidad de desarrolladores lo está señalando como un cambio fundamental en cómo se interactúa con agentes de coding.</p>
+      <p class="why">Si usas Claude Code para tareas complejas de refactoring o features multi-archivo, /goal puede reemplazar tu workflow de prompts encadenados.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health reemplaza Fitbit con AI Coach impulsado por Gemini a $9.99/mes</h3>
+      <p class="what">Google rebrandeó la app Fitbit como Google Health, con un AI Coach basado en Gemini que sintetiza datos de sueño, nutrición, workouts y registros médicos para dar coaching personalizado. La suscripción es $9.99/mes e incluye integración con Health Connect, Apple HealthKit y registros clínicos en un solo dashboard.</p>
+      <p class="why">El modelo de suscripción de AI coaching sobre datos de wearables es el playbook que puedes replicar en cualquier vertical de servicios profesionales o bienestar.</p>
+      <p class="source"><a href="https://www.techrepublic.com/article/news-google-health-fitbit-ai-coach-fitbit-air/">TechRepublic</a> &bull; <a href="https://www.androidcentral.com/wearables/fitbit/the-old-fitbit-app-is-becoming-google-health">Android Central</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 14/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
