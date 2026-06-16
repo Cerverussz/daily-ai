@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 15 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>15 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item">
+      <h3>EE.UU. suspende Claude Fable 5 a nivel mundial por orden de control de exportaciones</h3>
+      <p class="what">El Departamento de Comercio de EE.UU. emiti&oacute; una directiva de emergencia el 12 de junio que oblig&oacute; a Anthropic a desactivar Fable 5 y Mythos 5 globalmente, alegando una vulnerabilidad de jailbreak. Anthropic argumenta que se trata de bypasses menores ya conocidos, no un jailbreak completo; las negociaciones del 15 de junio entre Anthropic y la administraci&oacute;n no lograron resoluci&oacute;n.</p>
+      <p class="why">Cualquier producto en producci&oacute;n que depend&iacute;a de Fable 5 qued&oacute; ca&iacute;do sin aviso &mdash; lecci&oacute;n brutal sobre la necesidad de multi-provider fallback en tu arquitectura de LLM.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/fable-mythos-access">Anthropic</a> &bull; <a href="https://www.ibtimes.co.uk/us-government-halts-anthropics-ai-model-1802917">IBTimes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>HHS usa ChatGPT para escanear auditor&iacute;as Medicaid de los 50 estados buscando fraude</h3>
+      <p class="what">El Departamento de Salud de EE.UU. despleg&oacute; su primer workflow interno con LLM para analizar m&aacute;s de 5 a&ntilde;os de auditor&iacute;as estatales, identificando entre $100B y $200B en posible fraude. Es el mayor despliegue de AI generativa en una agencia federal, reemplazando el modelo &ldquo;pagar y perseguir&rdquo; por detecci&oacute;n en tiempo real.</p>
+      <p class="why">Demuestra que el gobierno ya es cliente real de LLMs en producci&oacute;n &mdash; el mercado de GovTech con AI est&aacute; abri&eacute;ndose para builders que entiendan compliance.</p>
+      <p class="source"><a href="https://www.healthcaredive.com/news/hhs-ai-fraud-state-audit-aero/820989/">Healthcare Dive</a> &bull; <a href="https://www.onhealthcare.tech/p/hhs-goes-all-in-on-chatgpt-for-state">On Healthcare Tech</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>&iexcl;Android MCP: AppFunctions convierte cada app en un servidor MCP on-device</h3>
+      <p class="what">Anunciado en Google I/O 2026, AppFunctions es una nueva API que permite a cualquier app Android actuar como servidor MCP local. Los agentes AI (Gemini u otros) descubren las funciones en runtime, las ejecutan on-device sin red, y el sistema maneja permisos y seguridad.</p>
+      <p class="why">Esto cambia el juego para Android devs: tu app ya no necesita pantallas para cada acci&oacute;n &mdash; puedes exponer capabilities que agentes AI consumen directamente.</p>
+      <p class="source"><a href="https://android-developers.googleblog.com/2026/05/android-ai-intelligence-system.html">Android Developers Blog</a> &bull; <a href="https://medium.com/@debajyotighosh200017/android-appfunctions-is-the-on-device-mcp-nobody-saw-coming-9f3a66e64431">Medium</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&iexcl;Google AI Studio genera apps Android nativas con Kotlin + Compose desde prompts</h3>
+      <p class="what">Google AI Studio ahora soporta &ldquo;vibe coding&rdquo; de apps Android completas: genera proyectos Kotlin + Jetpack Compose, los previsualiza en emulador web, instala v&iacute;a adb en dispositivo f&iacute;sico, y exporta a Android Studio o Play Store internal testing. Soporta sensores como GPS, Bluetooth y NFC.</p>
+      <p class="why">Para prototipar ideas de apps Android, esto reduce el ciclo de &ldquo;idea a APK en el tel&eacute;fono&rdquo; a minutos &mdash; ideal para validar features r&aacute;pido antes de invertir en c&oacute;digo real.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/19/googles-ai-studio-now-lets-anyone-build-android-apps-in-minutes/">TechCrunch</a> &bull; <a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-ai-studio-io-2026/">Google Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot App: experiencia desktop agent-native con worktrees paralelos</h3>
+      <p class="what">GitHub lanz&oacute; la Copilot App en technical preview para Windows, Mac y Linux. Cada sesi&oacute;n corre en su propio git worktree aislado, permite m&uacute;ltiples agentes paralelos, y ofrece una vista &ldquo;My Work&rdquo; con PRs, issues y automatizaciones. Incluye Canvas para inspeccionar y dirigir el trabajo de los agentes.</p>
+      <p class="why">Compite directamente con Claude Code en el espacio de coding agente &mdash; la carrera por ser el &ldquo;IDE agent-native&rdquo; se intensifica y como dev, tener opciones es bueno.</p>
+      <p class="source"><a href="https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/">GitHub Blog</a> &bull; <a href="https://www.thurrott.com/dev/336962/build-2026-microsoft-announces-github-copilot-app">Thurrott</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft presenta MAI-Code-1: modelo de coding propio para GitHub y VS Code</h3>
+      <p class="what">En Build 2026, Microsoft present&oacute; MAI (Microsoft AI), una familia de 7 modelos in-house separados de OpenAI GPT. MAI-Code-1 est&aacute; optimizado espec&iacute;ficamente para GitHub y VS Code, mientras MAI-Thinking-1 cubre razonamiento general.</p>
+      <p class="why">Microsoft construyendo sus propios modelos de coding se&ntilde;ala que el lock-in con un solo proveedor de LLM se est&aacute; rompiendo &mdash; m&aacute;s competencia significa mejores herramientas para todos.</p>
+      <p class="source"><a href="https://www.tomsguide.com/news/live/microsoft-build-2026">Tom&rsquo;s Guide</a> &bull; <a href="https://developer.microsoft.com/blog/build-recap">Microsoft Developers</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>&iexcl;OpenAI cierra Sora: $15M/d&iacute;a en costos vs $2.1M en ingresos totales</h3>
+      <p class="what">OpenAI discontinu&oacute; Sora oficialmente. La app y web cerraron el 26 de abril; la API se apaga en septiembre 2026. La raz&oacute;n: costos de $15M diarios contra $2.1M de revenue total acumulado, con recursos redirigidos a modelos de texto, razonamiento y coding.</p>
+      <p class="why">Caso de estudio perfecto para founders: un producto puede ser tecnol&oacute;gicamente impresionante y ser un desastre de unit economics &mdash; siempre modela tus costos de inference antes de lanzar.</p>
+      <p class="source"><a href="https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation">OpenAI</a> &bull; <a href="https://www.mindstudio.ai/blog/why-openai-killed-sora-ai-video-generation-future">MindStudio</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&iexcl;94% de CIOs aumentaron gasto en AI pero 51% creen que la adopci&oacute;n va demasiado r&aacute;pido</h3>
+      <p class="what">Una encuesta global a m&aacute;s de 1,000 CIOs revela la tensi&oacute;n central de la industria: pr&aacute;cticamente todos est&aacute;n invirtiendo m&aacute;s en AI, pero la mitad siente que la velocidad de adopci&oacute;n supera la capacidad de sus organizaciones para absorberla de forma segura.</p>
+      <p class="why">Si vendes herramientas AI a empresas, la oportunidad real no es &ldquo;m&aacute;s AI&rdquo; sino &ldquo;AI que se adopta sin fricci&oacute;n&rdquo; &mdash; onboarding, governance y observabilidad son el moat.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-15-2026">BuildFast with AI</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Managed Agents: sandboxes self-hosted y MCP Tunnels en preview</h3>
+      <p class="what">Anthropic lanz&oacute; self-hosted sandboxes (public beta) y MCP Tunnels (research preview) para Managed Agents. Los sandboxes permiten ejecutar herramientas en tu propia infra (Cloudflare, Vercel, Modal), y los tunnels conectan agentes a servidores MCP privados sin exponer endpoints p&uacute;blicos.</p>
+      <p class="why">Esto elimina el blocker principal para usar Claude agents en producci&oacute;n enterprise: ahora puedes mantener datos y ejecuci&oacute;n dentro de tu per&iacute;metro de seguridad.</p>
+      <p class="source"><a href="https://claude.com/blog/claude-managed-agents-updates">Claude Blog</a> &bull; <a href="https://thenewstack.io/anthropic-mcp-tunnels-sandboxes/">The New Stack</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5: el modelo m&aacute;s capaz jam&aacute;s liberado al p&uacute;blico, ahora suspendido</h3>
+      <p class="what">Lanzado el 9 de junio, Fable 5 es un modelo Mythos-class con 1M tokens de contexto, 128K de output, y SOTA en casi todos los benchmarks de coding, visi&oacute;n e investigaci&oacute;n. A $10/$50 por mill&oacute;n de tokens, es el doble de precio que Opus 4.8. Tres d&iacute;as despu&eacute;s fue suspendido por orden gubernamental.</p>
+      <p class="why">Si lograste probarlo, sabes que el salto de calidad es real &mdash; mant&eacute;n tu integraci&oacute;n lista con fallback a Opus 4.8 para cuando se restaure.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic</a> &bull; <a href="https://simonwillison.net/2026/Jun/9/claude-fable-5/">Simon Willison</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>&iexcl;Fitbit Health Coach sale de beta: coaching AI con Gemini para 500K+ usuarios</h3>
+      <p class="what">El Health Coach de Fitbit powered by Gemini sali&oacute; de public preview tras ser probado por m&aacute;s de 500,000 usuarios. Genera planes semanales personalizados basados en m&eacute;tricas de wearable, funciona como entrenador virtual, asesor de sue&ntilde;o y gu&iacute;a de bienestar, disponible para suscriptores Premium en Android e iOS.</p>
+      <p class="why">Es el blueprint para cualquier marketplace de servicios de salud: AI personalizada + datos de wearable + suscripci&oacute;n = retenci&oacute;n predecible.</p>
+      <p class="source"><a href="https://blog.google/products-and-platforms/devices/fitbit/fitbit-personal-health-coach-updates-2026/">Google Blog</a> &bull; <a href="https://www.androidpolice.com/fitbits-ai-coach-way-more-personal-useful/">Android Police</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 15/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
