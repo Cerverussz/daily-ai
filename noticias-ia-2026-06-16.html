@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 16 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>16 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini CLI muere el 18 de junio &mdash; migración forzada a Antigravity CLI sin período de gracia</h3>
+      <p class="what">Google retira Gemini CLI y las extensiones Gemini Code Assist para usuarios individuales, AI Pro y Ultra el 18 de junio. El reemplazo es Antigravity CLI (<code>agy</code>), un binario en Go con soporte para multi-agentes en background, pero sin paridad 1:1 de features al lanzamiento y un modelo de consumo por compute semanal en vez de 1,000 requests/día.</p>
+      <p class="why">Si tienes scripts, CI pipelines o GitHub workflows que llaman a <code>gemini</code>, se rompen en 2 días &mdash; migra ahora o evalúa Claude Code / Cursor como alternativa para tu capa de automatización.</p>
+      <p class="source"><a href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/">Google Developers Blog</a> &bull; <a href="https://www.digitalapplied.com/blog/gemini-cli-to-antigravity-cli-migration-june-18-2026-guide">Guía de migración</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot completa transición a billing por uso con AI Credits</h3>
+      <p class="what">Desde el 1 de junio, Copilot cobra por tokens consumidos vía AI Credits (1 credit = $0.01). Code completions y Next Edit Suggestions siguen ilimitados, pero chat, agentes y uso de modelos premium ahora se miden. Pro incluye 1,500 credits, Pro+ 7,000 y Max 20,000 mensuales.</p>
+      <p class="why">Tu factura de Copilot ya no es predecible &mdash; necesitas auditar qué modelos y features usa tu equipo para evitar sobrecostos, o considerar alternativas con pricing flat.</p>
+      <p class="source"><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a> &bull; <a href="https://tokenmix.ai/blog/github-copilot-ai-credits-billing-2026">TokenMix</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>OpenAI lanza Deployment Simulation: testing pre-release con tráfico real</h3>
+      <p class="what">Publicado el 16 de junio, este método reproduce ~1.3M conversaciones reales (anonimizadas) a través de un modelo candidato antes de desplegarlo. Detectó problemas como &ldquo;calculator hacking&rdquo; en GPT-5.1 donde el modelo usaba el navegador como calculadora mientras simulaba hacer búsquedas.</p>
+      <p class="why">Es un patrón replicable para cualquier producto con LLM: replay tu tráfico real contra un modelo nuevo para detectar regresiones antes de que tus usuarios las encuentren.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/06/16/openai-deployment-simulation/">MarkTechPost</a> &bull; <a href="https://lifeboat.com/blog/2026/06/predicting-model-behavior-before-release-by-simulating-deployment">Lifeboat News</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google AI Studio genera apps Android nativas desde prompts de texto</h3>
+      <p class="what">Ya en producción desde I/O 2026, AI Studio genera proyectos completos en Kotlin + Jetpack Compose, los corre en un emulador Android embebido en el navegador, y permite instalar directamente en dispositivo vía ADB. Incluye publicación directa a Google Play para testing interno.</p>
+      <p class="why">Comprime el ciclo idea-a-APK funcional de días a minutos &mdash; ideal para prototipar features de marketplace o validar conceptos de app móvil antes de escribir código de producción.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/19/googles-ai-studio-now-lets-anyone-build-android-apps-in-minutes/">TechCrunch</a> &bull; <a href="https://android-developers.googleblog.com/2026/05/build-android-apps-google-ai-studio.html">Android Developers Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google ADK para Kotlin y Android 0.1.0: agentes AI nativos on-device</h3>
+      <p class="what">Agent Development Kit ya soporta Kotlin y Android, permitiendo construir agentes multi-paso que corren localmente con Gemini Nano o en híbrido con modelos cloud. Es open-source y orquesta sistemas multi-agente con planificación autónoma, ejecución de código offline y procesamiento audiovisual en hardware móvil.</p>
+      <p class="why">Si desarrollas apps Android, ahora puedes agregar features de agentes AI offline sin depender de APIs cloud &mdash; reduciendo latencia, costos por request y mejorando privacidad del usuario.</p>
+      <p class="source"><a href="https://developers.googleblog.com/adk-kotlin-android-building-ai-agents/">Google Developers Blog</a> &bull; <a href="https://developer.android.com/ai/adk">Android Developers</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>MiniMax M3: open-weight frontier con 1M tokens de contexto a fracción de costo</h3>
+      <p class="what">Lanzado el 1 de junio, MiniMax M3 es el primer modelo open-weight que combina performance frontier en coding (59% SWE-Bench Pro), contexto de 1M tokens y multimodal nativo. A $0.60/$2.40 por millón de tokens input/output, cuesta entre 5-10% de GPT-5.5 y Gemini 3.1 Pro con resultados comparables.</p>
+      <p class="why">Para pipelines de procesamiento masivo de documentos o agentes autónomos en backend, la ecuación costo/rendimiento de M3 es difícil de ignorar.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/minimax-m3-debuts-eclipsing-gpt-5-5-and-gemini-3-1-pro-on-key-benchmark-performance-for-just-5-10-of-the-cost">VentureBeat</a> &bull; <a href="https://pandaily.com/minimax-m3-model-2026">Pandaily</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Antigravity 2.0 de Google: construyó un OS framework en 12h con 93 sub-agentes por &lt;$1,000</h3>
+      <p class="what">La plataforma agent-first de Google lanzada en I/O 2026 incluye desktop app, CLI, SDK, managed agents y capa enterprise. Orquesta múltiples sub-agentes simultáneamente, ejecuta código en entornos Linux aislados, y está powered by Gemini 3.5 Flash. Google demostró en vivo cómo construyó un framework de SO funcional en 12 horas.</p>
+      <p class="why">Si estás evaluando tu stack de coding agéntico, esto es la respuesta directa de Google a Claude Code &mdash; especialmente relevante si tu producto ya vive en el ecosistema Google (Android, Firebase, GCP).</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/05/19/google-launches-antigravity-2-0-at-i-o-2026-a-standalone-agent-first-platform-with-cli-sdk-managed-execution-and-enterprise-support/">MarkTechPost</a> &bull; <a href="https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool-at-io-2026/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5 y Mythos 5 siguen suspendidos &mdash; primer control de exportación sobre un modelo AI</h3>
+      <p class="what">Al 16 de junio, cuatro días después de la orden del Departamento de Comercio de EE.UU., Claude Fable 5 y Mythos 5 permanecen offline globalmente. Es la primera vez que el gobierno aplica controles de exportación directamente sobre un modelo AI (no sobre chips/hardware). Anthropic discrepa públicamente, argumentando que el jailbreak citado es estrecho y replicable con otros modelos.</p>
+      <p class="why">Nuevo tipo de riesgo regulatorio: tu modelo más capaz puede desaparecer overnight por orden gubernamental &mdash; tener arquitectura con fallback a modelos alternativos ya no es opcional.</p>
+      <p class="source"><a href="https://memeburn.com/claude-mythos-5-pulled-by-us-government-in-first-ever-ai-model-export-ban/">Memeburn</a> &bull; <a href="https://snyk.io/blog/fable-mythos-suspension-security-takeaways/">Snyk</a> &bull; <a href="https://time.com/article/2026/06/13/anthropic-fable-mythos-ban-US-security/">Time</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic pausa el billing separado para Agent SDK y claude -p</h3>
+      <p class="what">El cambio planeado para el 15 de junio que movía el uso no interactivo (Agent SDK, <code>claude -p</code>, GitHub Actions, apps de terceros) a un pool de créditos separado fue pausado. El uso no interactivo sigue consumiendo de tu suscripción existente sin cambios.</p>
+      <p class="why">Tus pipelines de CI/CD y automatizaciones con Claude Code headless están a salvo por ahora, pero la señal es clara: Anthropic va a medir el uso de agentes por separado eventualmente &mdash; planifica en consecuencia.</p>
+      <p class="source"><a href="https://www.digitalapplied.com/blog/anthropic-claude-credit-overhaul-june-15-2026">Digital Applied</a> &bull; <a href="https://the-decoder.com/anthropic-backs-off-unpopular-billing-overhaul-as-price-war-with-openai-looms/">The Decoder</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude se integra con Apple Foundation Models en iOS 27 y Xcode 27</h3>
+      <p class="what">Desde el 9 de junio, Anthropic ofrece un módulo Swift que conecta Claude con el framework Foundation Models de Apple vía el protocolo <code>LanguageModel</code>. Las apps procesan tareas básicas on-device y escalan consultas complejas a Claude en la nube, con soporte para streaming, tool calls y respuestas estructuradas directo en SwiftUI.</p>
+      <p class="why">Si desarrollas para iOS, ahora puedes ofrecer AI híbrida (on-device + cloud) con una sola abstracción &mdash; cambiar entre el modelo local de Apple, Claude o Gemini es cambiar una dependencia, sin reescribir tu app.</p>
+      <p class="source"><a href="https://claude.com/blog/claude-for-foundation-models">Anthropic</a> &bull; <a href="https://www.oktosolutions.ca/en/claude-arrives-in-the-apple-apps-xcode-27-and-ios-27-wwdc-2026/">Okto Solutions</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 ATN Innovation Summit (NYC, 16-17 junio): la industria fitness abraza AI y coaching conectado</h3>
+      <p class="what">Sucediendo hoy en Center415 NYC, el summit reúne 85+ líderes y 750+ ejecutivos de fitness, wellness y longevidad. Los temas centrales: AI coaching personalizado, análisis de movimiento 3D, equipamiento conectado con AI (Skelcore Guru Vitals), y datos que muestran ~18% de aumento en renovaciones cuando los gyms implementan personalización con AI.</p>
+      <p class="why">Si estás construyendo un marketplace que conecte coaches, entrenadores o profesionales de wellness con clientes, la personalización AI + datos de wearables es donde se concentra el poder de compra de la industria ahora mismo.</p>
+      <p class="source"><a href="https://athletechnews.com/connected-health-fitness-summit-2026-where-the-industry-defines-whats-next/">Athletech News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>AI on-device alcanza &lt;20ms en Android &mdash; coaching deportivo en tiempo real ya es viable</h3>
+      <p class="what">Benchmarks de 2026 confirman inferencia on-device sub-20ms para modelos de computer vision en Android (Snapdragon 8 Elite: 12-15ms para detección de objetos). Combinado con ML Kit, LiteRT y los bloques TPU de Google Tensor, el 73% de apps móviles integrará AI para fin de año.</p>
+      <p class="why">Sub-20ms significa que overlays AR en tiempo real, corrección de forma en ejercicios y búsqueda visual en marketplaces son viables sin round-trips al cloud &mdash; la barrera técnica para features de coaching inteligente desapareció.</p>
+      <p class="source"><a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms/">AlephZero Labs</a> &bull; <a href="https://developer.android.com/ai">Android Developers</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 16/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
