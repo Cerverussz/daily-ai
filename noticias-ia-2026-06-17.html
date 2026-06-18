@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 17 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>17 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 SpaceX adquiere Cursor (Anysphere) por $60B en acciones: la mayor adquisici&oacute;n AI de la historia</h3>
+      <p class="what">SpaceX confirm&oacute; la adquisici&oacute;n de Anysphere, creadora de Cursor, por $60 mil millones en acciones tres d&iacute;as despu&eacute;s de su IPO r&eacute;cord de $80B. Cursor tiene $2.6B en ingresos anualizados y m&aacute;s de 150K devs de pago; la divisi&oacute;n xAI de Musk busca competir directamente en el mercado de coding agente contra Anthropic y OpenAI.</p>
+      <p class="why">Si usas Cursor diariamente, prep&aacute;rate para cambios en integraci&oacute;n de modelos y pricing una vez que xAI meta mano; eval&uacute;a alternativas como OpenCode o Claude Code para no depender de un solo vendor.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/">TechCrunch</a> &bull; <a href="https://fortune.com/2026/06/16/elon-musk-spacex-ipo-ai-coding-startup-cursor-acquisition/">Fortune</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub colapsa bajo agentes AI: Microsoft recurre a AWS para mantener la plataforma en pie</h3>
+      <p class="what">Microsoft confirm&oacute; que est&aacute; enrutando tr&aacute;fico de GitHub a AWS porque los agentes de coding AI desbordaron la infraestructura de Azure. Los commits pasaron de 1B en 2025 a un ritmo de 14B en 2026, los PRs de agentes crecieron 325% en seis meses, y la disponibilidad cay&oacute; al 88.4% en junio, muy por debajo del SLA empresarial de 99.9%.</p>
+      <p class="why">Si tu pipeline de CI/CD depende de GitHub Actions, ten un plan B: los nueve incidentes de mayo y diez de abril significan que las interrupciones ser&aacute;n frecuentes hasta que la expansi&oacute;n de infra se complete en 18-24 meses.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/318481/20260616/githubs-ai-agent-crisis-forces-microsoft-tap-aws-outages-break-enterprise-slas.htm">TechTimes</a> &bull; <a href="https://byteiota.com/github-ai-infrastructure-crisis/">byteiota</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenCode supera 172K estrellas en GitHub: el agente open-source de coding m&aacute;s adoptado de la historia</h3>
+      <p class="what">OpenCode, el agente de coding de terminal creado por el equipo de SST/Anomaly, alcanz&oacute; 7.5M de desarrolladores activos mensuales y 172K+ estrellas en GitHub. Se conecta a 75+ proveedores de AI, corre 100% local con SQLite, integra LSP para contexto de c&oacute;digo real, y permite usar modelos locales v&iacute;a Ollama sin llamadas API.</p>
+      <p class="why">Para founders t&eacute;cnicos que quieren un coding agent sin lock-in y con control total sobre qu&eacute; modelo procesa su c&oacute;digo, OpenCode es la opci&oacute;n que deber&iacute;as probar esta semana.</p>
+      <p class="source"><a href="https://opencode.ai/">OpenCode</a> &bull; <a href="https://www.abhs.in/blog/opencode-160k-github-stars-7-5m-developers-ai-coding-agent-june-2026">Abhishek Gautam</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot migra a facturaci&oacute;n por uso con AI Credits desde el 1 de junio</h3>
+      <p class="what">GitHub reemplaz&oacute; los Premium Request Units por AI Credits basados en consumo de tokens por modelo. Code completions y Next Edit Suggestions siguen ilimitados, pero todo lo dem&aacute;s (chat, agentes, reviews) ahora se mide y factura seg&uacute;n tokens consumidos. Copilot Pro+ cuesta $39/mes con $39 en cr&eacute;ditos incluidos.</p>
+      <p class="why">Revisa tu consumo real de Copilot: si usas mucho el chat o agentes, podr&iacute;as terminar pagando significativamente m&aacute;s que antes con el modelo flat.</p>
+      <p class="source"><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a> &bull; <a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/">Changelog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>NVIDIA Blackwell barre MLPerf Training 6.0: DeepSeek-V3 671B entrenado en 2 minutos</h3>
+      <p class="what">NVIDIA domin&oacute; todas las categor&iacute;as de MLPerf Training 6.0 con su plataforma Blackwell, incluyendo dos nuevos benchmarks MoE (DeepSeek-V3 671B y GPT-OSS-20B). CoreWeave entren&oacute; DeepSeek-V3 completo en 2.02 minutos a escala de 8,192 GPUs con GB300 NVL72, y los GB300 mostraron hasta 60% m&aacute;s rendimiento que GB200 en la misma configuraci&oacute;n.</p>
+      <p class="why">Los tiempos de entrenamiento bajando a minutos significan que el fine-tuning de modelos grandes se vuelve accesible para equipos m&aacute;s peque&ntilde;os que alquilen compute por horas.</p>
+      <p class="source"><a href="https://blogs.nvidia.com/blog/blackwell-mlperf-training-6-0/">NVIDIA Blog</a> &bull; <a href="https://developer.nvidia.com/blog/nvidia-blackwell-tops-mlperf-training-6-0-with-industry-leading-scale-and-performance/">NVIDIA Developer</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 El 51% del c&oacute;digo en GitHub ya es generado o asistido por AI</h3>
+      <p class="what">Seg&uacute;n datos de GitHub de inicios de 2026, m&aacute;s de la mitad de todo el c&oacute;digo commiteado en la plataforma fue generado o sustancialmente asistido por herramientas de AI. El 84% de los desarrolladores ya usan o planean adoptar AI coding tools, y el 75% usa AI para al menos la mitad de su trabajo de ingenier&iacute;a.</p>
+      <p class="why">Si eres founder t&eacute;cnico construyendo solo o con equipo peque&ntilde;o, esta es la confirmaci&oacute;n de que no usar AI coding tools ya no es una opci&oacute;n competitiva.</p>
+      <p class="source"><a href="https://blog.logrocket.com/ai-dev-tool-power-rankings/">LogRocket</a> &bull; <a href="https://newsletter.pragmaticengineer.com/p/ai-tooling-2026">Pragmatic Engineer</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code es el #1 en coding tools: de cero a l&iacute;der en 8 meses</h3>
+      <p class="what">Seg&uacute;n el LogRocket AI Dev Tool Power Rankings de junio 2026, Claude Code desplaz&oacute; a GitHub Copilot y Cursor como la herramienta de coding AI m&aacute;s usada, apenas 8 meses despu&eacute;s de su lanzamiento en mayo 2025. El Stack Overflow Developer Survey confirma que el 95% de los devs usa herramientas AI al menos semanalmente.</p>
+      <p class="why">Si todav&iacute;a no integraste Claude Code en tu workflow diario, est&aacute;s dejando en la mesa la herramienta que la mayor&iacute;a de devs ya adopt&oacute; como principal.</p>
+      <p class="source"><a href="https://blog.logrocket.com/ai-dev-tool-power-rankings/">LogRocket</a> &bull; <a href="https://www.cortex.io/post/the-engineering-leaders-guide-to-ai-tools-for-developers-in-2026">Cortex</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic abre oficina en Se&uacute;l con despliegues enterprise masivos: Samsung, NAVER, LG, Nexon</h3>
+      <p class="what">Anthropic inaugur&oacute; oficialmente su tercera oficina en Asia-Pac&iacute;fico (tras Tokio y Bangalore) el 17 de junio en Se&uacute;l, liderada por KiYoung Choi (ex-Snowflake, Google Cloud, Microsoft Korea). Anunci&oacute; despliegues de Claude Code y Claude Cowork en NAVER (toda su org de ingenier&iacute;a), Samsung SDS (Samsung Electronics completo), LG CNS, Nexon (desarrollo de juegos live-service), y Hanwha Solutions.</p>
+      <p class="why">La adopci&oacute;n enterprise a esta escala en Corea valida que Claude Code ya es infraestructura de producci&oacute;n, no solo una herramienta de productividad individual.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem">Anthropic</a> &bull; <a href="https://www.koreatimes.co.kr/amp/business/tech-science/20260618/anthropic-opens-seoul-office-to-expand-ties-with-korean-ai-ecosystem">Korea Times</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5 gratis en planes Pro/Max/Team hasta el 22 de junio</h3>
+      <p class="what">Claude Fable 5, el modelo m&aacute;s capaz de Anthropic lanzado el 9 de junio con 1M tokens de contexto y 128K de output, est&aacute; disponible sin costo adicional en planes Pro, Max, Team y Enterprise hasta el 22 de junio. En API cuesta $10/$50 por mill&oacute;n de tokens (el doble que Opus 4.8) y lidera en benchmarks de coding largo y razonamiento complejo.</p>
+      <p class="why">Tienes hasta el domingo para probar el modelo frontier de Anthropic sin costo extra; &uacute;salo para evaluar si justifica el premium de 2x sobre Opus 4.8 en tus tareas reales.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health reemplaza Fitbit con coaching AI de Gemini a $9.99/mes</h3>
+      <p class="what">Google termin&oacute; la transici&oacute;n de Fitbit a Google Health el 19 de mayo, con un Health Coach conversacional potenciado por Gemini que act&uacute;a como entrenador personal, coach de sue&ntilde;o y asesor de bienestar 24/7. El coach genera planes de entrenamiento personalizados, analiza sue&ntilde;o, y monitorea signos vitales, todo integrado con Pixel Watch y dispositivos Fitbit.</p>
+      <p class="why">El modelo de AI coach como servicio de suscripci&oacute;n ($9.99/mes) es un blueprint replicable para cualquier marketplace de servicios profesionales: coaching automatizado con upgrade a humano.</p>
+      <p class="source"><a href="https://blog.google/products-and-platforms/products/google-health/google-health-coach/">Google Blog</a> &bull; <a href="https://gadgets.beebom.com/news/google-health-app-officially-replaces-fitbit-app-with-gemini-ai-coaching-medical-records-support">Beebom</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Mercado de AI en fitness y wellness alcanza $10.7B con crecimiento de 19.3% anual</h3>
+      <p class="what">El mercado global de AI en fitness y wellness cerr&oacute; 2025 en $10.68B y se proyecta a $57.8B para 2035. Las plataformas l&iacute;deres integran reinforcement learning para ajustar intensidad, volumen y progresi&oacute;n en tiempo real, convirtiendo apps de fitness en hubs completos de wellness con wearables, h&aacute;bitos y engagement social.</p>
+      <p class="why">El crecimiento de 19.3% CAGR confirma que hay espacio masivo para nuevos productos verticales en sports tech, especialmente si combinas datos de wearables con coaching AI personalizado.</p>
+      <p class="source"><a href="https://www.insightaceanalytic.com/report/ai-in-fitness-and-wellness-market/2744">InsightAce Analytic</a> &bull; <a href="https://athletechnews.com/the-most-innovative-fitness-wellness-companies-of-2026/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 17/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
