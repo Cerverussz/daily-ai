@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 18 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>18 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google mata Gemini CLI: Antigravity CLI llega con free tier recortado a ~20 requests/d&iacute;a</h3>
+      <p class="what">El 18 de junio Google cerr&oacute; definitivamente Gemini CLI para usuarios free, Pro y Ultra. El reemplazo es Antigravity CLI, un binario cerrado en Go que reduce el free tier de 1,000 a ~20 requests diarios. Los pipelines CI/CD que depend&iacute;an del comando <code>gemini</code> dejaron de funcionar inmediatamente.</p>
+      <p class="why">Si ten&iacute;as scripts o automatizaciones con Gemini CLI, migra hoy a Antigravity o eval&uacute;a Claude Code / Codex CLI como alternativas con mejores l&iacute;mites.</p>
+      <p class="source"><a href="https://github.com/google-gemini/gemini-cli/discussions/27274">GitHub Discussion</a> &bull; <a href="https://chatforest.com/builders-log/gemini-cli-dead-june-18-antigravity-cli-agy-migration/">ChatForest</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cognizant lanza orquestaci&oacute;n cross-platform de AI Agents con ServiceNow v&iacute;a MCP</h3>
+      <p class="what">Cognizant anunci&oacute; que los AI Agents de ServiceNow ahora interoperan con Cognizant Neuro AI Multi-Agent Accelerator, una plataforma open-source que usa MCP para descubrir e invocar agentes de m&uacute;ltiples vendors sin conectores custom. La integraci&oacute;n permite orquestar agentes de ServiceNow junto con sistemas propios y de terceros desde un solo panel.</p>
+      <p class="why">Valida que MCP se est&aacute; convirtiendo en el est&aacute;ndar real para interoperabilidad entre agentes enterprise; si construyes servicios B2B, exponer via MCP ya no es opcional.</p>
+      <p class="source"><a href="https://news.cognizant.com/2026-06-18-Cognizant-expands-cross-platform-agentic-AI-with-new-ServiceNow-AI-Agent-interoperability">Cognizant News</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple abre Foundation Models a terceros: Claude y Gemini via Swift API + PCC gratis para devs peque&ntilde;os</h3>
+      <p class="what">En WWDC 2026, Apple anunci&oacute; que open-sourcea su Foundation Models framework y da acceso gratuito a Private Cloud Compute para desarrolladores con menos de 2M descargas en App Store. El framework ahora soporta modelos de terceros (Claude, Gemini) via la misma Swift API, y a&ntilde;ade Dynamic Profiles para workflows multi-agente.</p>
+      <p class="why">Si desarrollas para iOS/macOS, ahora tienes AI on-device + cloud gratis con acceso a los mejores modelos del mercado desde una sola API nativa.</p>
+      <p class="source"><a href="https://www.macrumors.com/2026/06/09/apple-outlines-major-ai-and-developer-tool-updates/">MacRumors</a> &bull; <a href="https://developer.apple.com/videos/play/wwdc2026/241/">Apple Developer</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code semana 24: sub-agentes recursivos, /cd mid-session y safe mode</h3>
+      <p class="what">Las &uacute;ltimas actualizaciones de Claude Code incluyen sub-agentes que pueden crear sus propios sub-agentes (hasta 5 niveles de profundidad), el comando /cd para cambiar de directorio sin perder contexto, --safe-mode para troubleshooting, y configuraci&oacute;n de fallbackModel con hasta 3 modelos de respaldo.</p>
+      <p class="why">Los sub-agentes recursivos cambian c&oacute;mo puedes atacar refactors grandes o migraciones multi-m&oacute;dulo desde la terminal.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/whats-new">Claude Code Docs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Codex CLI y Claude Code empatan en Terminal-Bench 2.1: 83.4% vs 83.1%</h3>
+      <p class="what">El benchmark Terminal-Bench 2.1 muestra a Codex CLI (GPT-5.5) liderando con 83.4% y Claude Code (Fable 5) en 83.1%, un empate t&eacute;cnico. Sin embargo, con la suspensi&oacute;n de Fable 5, Codex CLI es temporalmente el &uacute;nico coding agent disponible operando en el tope del ranking.</p>
+      <p class="why">La paridad real entre coding agents significa que tu elecci&oacute;n debe basarse en integraciones y workflow, no en benchmarks; hoy la disponibilidad de Fable 5 pesa m&aacute;s.</p>
+      <p class="source"><a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Rocket.new: de prompt a MVP con billing, auth e integraciones reales desde el primer build</h3>
+      <p class="what">Rocket.new (respaldado por Salesforce Ventures y Accel, $15M) combina investigaci&oacute;n estrat&eacute;gica, construcci&oacute;n de apps y competitive intelligence en un solo producto. Alcanz&oacute; $4.5M ARR en 3 meses de beta, y se diferencia con 25+ integraciones nativas (billing, auth, email, push) funcionales desde el primer deploy.</p>
+      <p class="why">Para founders t&eacute;cnicos validando ideas, tener pagos y autenticaci&oacute;n funcionales desde el d&iacute;a uno elimina semanas de plumbing antes de poner el producto frente a usuarios reales.</p>
+      <p class="source"><a href="https://www.rocket.new/blog/best-ai-mvp-builders-for-startups">Rocket.new Blog</a> &bull; <a href="https://www.dnaindia.com/insights/report-rocketnew-is-the-best-ai-app-builder-for-mvps-in-2026-3209159">DNA India</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Modelos open-weight ganan tracci&oacute;n enterprise post-Fable 5: Kimi K2.7 Code, GLM-5.2 y Llama 4</h3>
+      <p class="what">Con la suspensi&oacute;n de Fable 5, empresas est&aacute;n evaluando activamente alternativas open-weight. MiniMax, Zhipu AI (GLM-5.2), Moonshot (Kimi K2.7 Code) y Meta (Llama 4) reportan picos de inter&eacute;s enterprise. La lecci&oacute;n: depender de un solo proveedor de modelos propietarios tiene riesgo regulatorio real.</p>
+      <p class="why">Es buen momento para dise&ntilde;ar tu producto con abstracci&oacute;n de modelo desde el inicio; un fallback a open-weight ya no es nice-to-have sino continuidad de negocio.</p>
+      <p class="source"><a href="https://blog.mean.ceo/new-ai-model-releases-news-june-2026/">Mean CEO Blog</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic abre oficina en Se&uacute;l y firma MOU con gobierno de Corea del Sur</h3>
+      <p class="what">El 18 de junio, Anthropic inaugur&oacute; su oficina en Se&uacute;l y firm&oacute; un Memorando de Entendimiento con el Ministerio de Ciencia y TIC de Corea del Sur. Tambi&eacute;n anunci&oacute; partnerships con SK Telecom, LG CNS y Naver Cloud, y colaboraci&oacute;n con el National AI Research Lab (KAIST, Korea University, Yonsei).</p>
+      <p class="why">Corea del Sur es clave para adopci&oacute;n enterprise de Claude en Asia; m&aacute;s partnerships significan mejor soporte regional si construyes producto para ese mercado.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem">Anthropic</a> &bull; <a href="https://www.upi.com/Top_News/World-News/2026/06/18/korea-Anthropic-Seoul-office-Korea-partnerships-Washington-AI-export-controls/4641781769900/">UPI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Fable 5 y Mythos 5 siguen suspendidos: Anthropic negocia restauraci&oacute;n &ldquo;en d&iacute;as&rdquo;</h3>
+      <p class="what">D&iacute;a 6 de la suspensi&oacute;n por export control de EE.UU. El director internacional de Anthropic declar&oacute; en Se&uacute;l estar &ldquo;muy confiado&rdquo; en que ambos modelos volver&aacute;n &ldquo;en los pr&oacute;ximos d&iacute;as.&rdquo; Kalshi da 57% de probabilidad de restauraci&oacute;n antes del 1 de julio. Opus 4.8 sigue disponible como alternativa.</p>
+      <p class="why">Si tu producto depende de Fable 5, ten un plan B con Opus 4.8 o modelos open-weight; la primera prohibici&oacute;n de exportaci&oacute;n de un modelo AI sienta un precedente regulatorio importante.</p>
+      <p class="source"><a href="https://news.kalshi.com/p/fable-5-odds-anthropic-access-restored-july-57-percent">Kalshi</a> &bull; <a href="https://www.koreajoongangdaily.com/business/anthropic-confident-of-reenabling-mythos-fable-5-access-in-coming-days-executive/12727522">Korea JoongAng Daily</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>MCP Enterprise Auth con Okta: zero-touch access para equipos corporativos</h3>
+      <p class="what">Anthropic lanz&oacute; autenticaci&oacute;n administrada para MCP connectors via Okta. Los admins provisionan acceso una vez y los empleados lo heredan autom&aacute;ticamente al hacer login en Claude. Asana, Atlassian, Figma, Supabase y otros ya soportan el est&aacute;ndar; Slack viene pronto. Ramp ya provision&oacute; 2,000 empleados sin pasos adicionales.</p>
+      <p class="why">Elimina la fricci&oacute;n de onboarding de herramientas AI en equipos grandes; si vendes a enterprise, tu integraci&oacute;n MCP ahora puede desplegarse con un click del admin.</p>
+      <p class="source"><a href="https://aiweekly.co/alerts/anthropic-introduces-admin-managed-mcp-auth-for-claude-enterprise">AI Weekly</a> &bull; <a href="https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/">MCP Blog</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Fitbit Air ($99) + Gemini Health Coach ($10/mes): Google entra a competir con WHOOP</h3>
+      <p class="what">Google lanz&oacute; globalmente el Fitbit Air, una banda sin pantalla de $99 con sensor de 5g que trackea HR, sue&ntilde;o, SpO2 y HRV, acompa&ntilde;ado de un coach AI Gemini por $9.99/mes. El coach personaliza planes usando datos biom&eacute;tricos en tiempo real, historial de salud y datos de dispositivos conectados. WHOOP respondi&oacute; al d&iacute;a siguiente a&ntilde;adiendo consultas con cl&iacute;nicos licenciados.</p>
+      <p class="why">El precio agresivo de Google valida el modelo AI coach + wearable barato; si construyes en sports/wellness tech, la oportunidad est&aacute; en nichos verticales (running, cycling, rehab) donde el coaching gen&eacute;rico no llega.</p>
+      <p class="source"><a href="https://thenextweb.com/news/google-fitbit-air-screenless-whoop-health-coach">The Next Web</a> &bull; <a href="https://thenextweb.com/news/whoop-doctors-fitbit-air-google-health-ai">TNW - WHOOP</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 18/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
