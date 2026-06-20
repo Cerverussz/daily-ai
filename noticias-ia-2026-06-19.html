@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 19 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>19 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google mata Gemini CLI y Code Assist para individuales: migración forzada a Antigravity</h3>
+      <p class="what">Desde el 18 de junio, Gemini CLI y las extensiones de Gemini Code Assist dejaron de funcionar para usuarios individuales, Google AI Pro y Ultra. La alternativa es Antigravity CLI (binario <code>agy</code>), closed-source y basado en Go, con un free tier reducido de 1,000 a solo 20 requests/día.</p>
+      <p class="why">Si tenías scripts, pipelines CI o automatizaciones con <code>gemini</code>, se rompieron ayer — evalúa Claude Code o Cursor como reemplazo antes de migrar a un ecosistema cerrado.</p>
+      <p class="source"><a href="https://9to5google.com/2026/06/17/gemini-cli-code-assist-shutting-down/">9to5Google</a> &bull; <a href="https://www.theregister.com/ai-ml/2026/05/20/bye-bye-gemini-cli-google-nudges-devs-toward-antigravity/5243605">The Register</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic abre oficina en Seúl con despliegues masivos: NAVER, Samsung, LG y Nexon adoptan Claude</h3>
+      <p class="what">Anthropic inauguró su tercera oficina en Asia-Pacífico y anunció despliegues enterprise simultáneos: NAVER despliega Claude Code en toda su ingeniería, Samsung SDS activa Claude Cowork para Samsung Electronics, LG CNS lo extiende al grupo LG, y Nexon lo usa para desarrollo de juegos live-service. Channel Corp lo integra en su plataforma de 230K+ negocios.</p>
+      <p class="why">Es la validación más grande de Claude Code en producción enterprise a escala — si estás evaluando herramientas de coding AI para tu equipo, estos despliegues masivos son la referencia real.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem">Anthropic</a> &bull; <a href="https://www.techtimes.com/articles/318637/20260619/anthropic-opens-its-seoul-office-even-us-export-ban-cuts-korean-access-its-top-models.htm">TechTimes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI lanza Partner Network con $150M para certificar 300K consultores AI</h3>
+      <p class="what">OpenAI formalizó su primer programa global de partners con tres tiers (Select, Advanced, Elite) y $150M de inversión. Los partners de lanzamiento incluyen Accenture, BCG, McKinsey y PwC, con un piloto de Forward Deployed Experts que embebe practitioners junto al equipo de ingeniería de OpenAI.</p>
+      <p class="why">Señal clara de que la batalla AI se mueve de "mejor modelo" a "mejor implementación" — si ofreces servicios de desarrollo AI, certificarte en estos programas abre un canal de distribución real.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/318436/20260615/openai-launches-partner-network-150m-bet-that-implementation-beats-model-power.htm">TechTimes</a> &bull; <a href="https://memeburn.com/openai-partner-network-launches-with-150-million/">Memeburn</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot con billing por uso: developers reportan aumentos de costos de 10x a 50x</h3>
+      <p class="what">Desde junio 1, GitHub Copilot usa AI Credits basados en tokens consumidos (1 crédito = $0.01). Los precios base de suscripción no cambiaron, pero developers reportan saltos de $29 a $750/mes y sesiones agénticas individuales que cuestan $38. Un developer vio desaparecer el 82% de su allowance mensual en el primer día.</p>
+      <p class="why">Si usas Copilot con flujos agénticos intensivos, audita tu consumo ahora — Claude Code con su modelo de suscripción fija puede ser más predecible para tu presupuesto.</p>
+      <p class="source"><a href="https://techjournal.org/github-copilot-token-billing-backlash">TechJournal</a> &bull; <a href="https://visualstudiomagazine.com/articles/2026/06/04/copilot-billing-shock-hits-developers.aspx">Visual Studio Magazine</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI completa adquisición de Astral: uv, ruff y ty se integran en Codex</h3>
+      <p class="what">OpenAI cerró la adquisición de Astral, el equipo detrás de uv (package manager), ruff (linter/formatter) y ty (type checker) para Python. Las herramientas se integrarán directamente en Codex, que ya tiene 2M+ usuarios activos semanales. OpenAI se comprometió a mantener los proyectos open-source.</p>
+      <p class="why">Toda tu toolchain Python (deps, linting, types) ahora pertenece a OpenAI — vigila si la promesa open-source se mantiene y considera diversificar dependencias críticas.</p>
+      <p class="source"><a href="https://openai.com/index/openai-to-acquire-astral/">OpenAI</a> &bull; <a href="https://simonwillison.net/2026/mar/19/openai-acquiring-astral/">Simon Willison</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>On-device AI en Android rompe barrera de 20ms en producción</h3>
+      <p class="what">La inferencia AI on-device en Android alcanzó latencias sub-20ms para modelos de computer vision en producción, habilitada por Gemini Nano, AICore y ML Kit GenAI. Combinado con Gemma 4 en el AICore Developer Preview, los developers pueden ejecutar agentes multi-paso offline directamente en el dispositivo.</p>
+      <p class="why">Con &lt;20ms de latencia on-device, features como detección visual en tiempo real o procesamiento offline son viables en tu app Android sin costos de API cloud.</p>
+      <p class="source"><a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms/">AlephZero Labs</a> &bull; <a href="https://developer.android.com/studio/gemini/code-completion">Android Developers</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 La economía de los AI coding tools se fractura: suscripción fija vs. pago por token</h3>
+      <p class="what">El mercado de herramientas de coding AI se divide en dos modelos: pago por token (Copilot AI Credits, APIs por uso) vs. suscripción predecible (Cursor Pro a $20/mes, Claude Code en Max). El shock de billing de Copilot está empujando a founders y equipos pequeños a re-evaluar su stack completo de desarrollo.</p>
+      <p class="why">Para un founder técnico, el riesgo de un modelo por token no es el precio promedio sino la varianza — una sesión de debugging agéntica puede costar más que todo tu mes de herramientas.</p>
+      <p class="source"><a href="https://getdx.com/blog/ai-coding-assistant-pricing/">GetDX</a> &bull; <a href="https://www.digitalapplied.com/blog/github-copilot-ai-credits-billing-2026-cost-audit-playbook">Digital Applied</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Superengineer.ai: de idea a codebase production-ready con agentes especializados</h3>
+      <p class="what">Superengineer.ai opera como un project manager AI que orquesta múltiples agentes especializados (frontend, backend, base de datos). Le das un requerimiento de alto nivel y la plataforma asigna tareas a agentes que ensamblan una aplicación cohesiva. Startups reportan MVPs funcionales en 2-6 semanas con reducción del 85% en costos.</p>
+      <p class="why">Si estás construyendo un MVP de marketplace o SaaS vertical, este tipo de herramientas comprimen tu timeline de meses a semanas — la ventaja competitiva ya no es código sino velocidad de validación.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/ai-mvp-builder-how-founders-ship-products-2026">NxCode</a> &bull; <a href="https://www.rocket.new/blog/best-ai-mvp-builders-for-startups">Rocket</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>US Government ordena a Anthropic suspender Fable 5 y Mythos 5 por control de exportaciones</h3>
+      <p class="what">El 12 de junio, Anthropic desactivó Claude Fable 5 y Mythos 5 globalmente tras una directiva del gobierno de EE.UU. que prohíbe acceso a cualquier nacional extranjero, incluyendo empleados de Anthropic. La razón: se descubrió un método de jailbreak que podía acceder a las capacidades de ciberseguridad de Mythos. Más de 100 expertos en ciberseguridad han pedido levantar la restricción.</p>
+      <p class="why">Si dependías de Fable 5 en producción, esto es un recordatorio de riesgo regulatorio — diseña tu stack AI con fallback a modelos alternativos (Opus 4.8, Sonnet 4.6) siempre.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/fable-mythos-access">Anthropic</a> &bull; <a href="https://time.com/article/2026/06/13/anthropic-fable-mythos-ban-US-security/">TIME</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Platform on AWS: API nativa de Anthropic con billing e IAM de AWS</h3>
+      <p class="what">Anthropic lanzó Claude Platform on AWS, que trae la API completa de Claude (Messages, Files, Batch, Managed Agents, MCP connectors) a infraestructura gestionada por Anthropic pero con autenticación IAM/SigV4 y billing consolidado de AWS. Es distinto a Bedrock: aquí Anthropic opera el stack de inferencia.</p>
+      <p class="why">Si ya estás en AWS y quieres acceso a features de Claude que no están en Bedrock (managed agents, code execution), esto elimina la fricción de una segunda cuenta de billing.</p>
+      <p class="source"><a href="https://www.infoq.com/news/2026/05/anthropic-claude-aws/">InfoQ</a> &bull; <a href="https://platform.claude.com/docs/en/build-with-claude/claude-platform-on-aws">Claude Docs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code mejora seguridad: bloquea comandos destructivos de git y terraform/pulumi</h3>
+      <p class="what">Claude Code ahora bloquea automáticamente comandos destructivos de git (force push, reset --hard) y terraform/pulumi destroy a menos que el usuario lo solicite explícitamente. También añade títulos de sesión en el idioma de la conversación, mejores badges de links, y recuperación más robusta de streaming.</p>
+      <p class="why">Menos riesgo de que un agente de coding borre tu branch o destruya infraestructura — mejora directa en confiabilidad para uso en producción.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Les Mills + Hyperhuman: contenido fitness premium disponible vía API con AI</h3>
+      <p class="what">Les Mills y Hyperhuman anunciaron una alianza donde programas como BODYPUMP, BODYCOMBAT y BODYBALANCE están disponibles dentro de la infraestructura AI de Hyperhuman. Los equipos con suscripción pueden licenciar clases premium e integrarlas en sus productos digitales vía app, web, embeds o API — sin filmar ni crear contenido desde cero.</p>
+      <p class="why">Si construyes una plataforma de fitness o wellness, ahora puedes ofrecer contenido de clase mundial via API sin el costo de producción — modelo de negocio listo para un marketplace de servicios deportivos.</p>
+      <p class="source"><a href="https://www.lesmills.com/us/articles/les-mills-and-hyperhuman-bring-premium-fitness-content-into-the-ai-powered-platform-era">Les Mills</a> &bull; <a href="https://athletechnews.com/les-mills-embraces-ai-generated-content-hyperhuman/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 19/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
