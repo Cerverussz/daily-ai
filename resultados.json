@@ -1,0 +1,27 @@
+{
+  "eleccion": "Elecciones Presidenciales de Colombia 2026 — Segunda Vuelta",
+  "fecha": "2026-06-21",
+  "fuente": "Datos de demostración — reemplazar con cifras oficiales de la Registraduría Nacional del Estado Civil",
+  "actualizado": "2026-06-21T20:00:00-05:00",
+  "mesas_informadas": 0,
+  "mesas_totales": 0,
+  "porcentaje_escrutado": 0.0,
+  "votos_totales": 0,
+  "candidatos": [
+    {
+      "nombre": "Candidato/a A",
+      "partido": "Coalición A",
+      "color": "#1d4ed8",
+      "votos": 0
+    },
+    {
+      "nombre": "Candidato/a B",
+      "partido": "Coalición B",
+      "color": "#dc2626",
+      "votos": 0
+    }
+  ],
+  "votos_blanco": 0,
+  "votos_nulos": 0,
+  "votos_no_marcados": 0
+}

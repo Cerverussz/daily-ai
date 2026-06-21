@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resultados Segunda Vuelta — Elecciones Colombia 2026</title>
+  <meta name="description" content="Resultados en vivo de la segunda vuelta de las elecciones presidenciales de Colombia 2026. Actualización automática cada 5 segundos." />
+  <style>
+    :root {
+      --amarillo: #FCD116;
+      --azul: #003893;
+      --rojo: #CE1126;
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+    .flag-bar { height: 6px; display: flex; }
+    .flag-bar div { flex: 1; }
+    .flag-bar .a { background: var(--amarillo); flex: 2; }
+    .flag-bar .b { background: var(--azul); }
+    .flag-bar .c { background: var(--rojo); }
+    .container { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
+    header { text-align: center; margin-bottom: 24px; }
+    header h1 { font-size: clamp(1.3rem, 4vw, 2rem); line-height: 1.2; }
+    header .subtitle { color: var(--muted); margin-top: 6px; font-size: 0.95rem; }
+    .status {
+      display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+      align-items: center; margin: 18px 0;
+    }
+    .pill {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 999px; padding: 6px 14px; font-size: 0.85rem;
+      display: inline-flex; align-items: center; gap: 7px;
+    }
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: #22c55e; }
+    .dot.live { animation: pulse 1.4s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
+    .progress-wrap { margin: 8px 0 28px; }
+    .progress-label { display:flex; justify-content:space-between; font-size:0.85rem; color:var(--muted); margin-bottom:6px; }
+    .progress-track { background: var(--border); border-radius: 999px; height: 10px; overflow: hidden; }
+    .progress-fill { background: linear-gradient(90deg, var(--amarillo), var(--azul)); height: 100%; width: 0%; transition: width .6s ease; }
+    .candidate {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 18px 20px; margin-bottom: 16px; position: relative; overflow: hidden;
+    }
+    .candidate.leader { box-shadow: 0 0 0 2px var(--amarillo); }
+    .cand-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+    .cand-name { font-size: 1.15rem; font-weight: 700; }
+    .cand-party { font-size: 0.85rem; color: var(--muted); }
+    .cand-pct { font-size: 1.8rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+    .cand-votes { font-size: 0.85rem; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+    .bar-track { background: var(--border); border-radius: 999px; height: 14px; margin-top: 12px; overflow: hidden; }
+    .bar-fill { height: 100%; width: 0%; border-radius: 999px; transition: width .6s ease; }
+    .leader-badge {
+      display:inline-block; font-size:0.7rem; font-weight:700; text-transform:uppercase;
+      letter-spacing:0.05em; color:#0f172a; background:var(--amarillo);
+      padding:2px 8px; border-radius:6px; margin-left:8px; vertical-align:middle;
+    }
+    .secondary { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-top: 8px; }
+    .stat { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; text-align: center; }
+    .stat .num { font-size: 1.3rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .stat .lbl { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+    footer { margin-top: 32px; text-align: center; font-size: 0.8rem; color: var(--muted); }
+    footer a { color: var(--amarillo); }
+    .source-note {
+      background: rgba(252,209,22,0.08); border:1px solid rgba(252,209,22,0.3);
+      border-radius:10px; padding:12px 14px; font-size:0.82rem; color:#fde68a;
+      margin-top:24px; text-align:center;
+    }
+    .error { color: var(--rojo); text-align:center; margin: 16px 0; }
+  </style>
+</head>
+<body>
+  <div class="flag-bar"><div class="a"></div><div class="b"></div><div class="c"></div></div>
+  <div class="container">
+    <header>
+      <h1 id="title">Elecciones Presidenciales de Colombia 2026</h1>
+      <div class="subtitle" id="subtitle">Segunda Vuelta — Resultados en vivo</div>
+    </header>
+
+    <div class="status">
+      <span class="pill"><span class="dot live"></span> En vivo · actualiza cada 5 s</span>
+      <span class="pill" id="updated">Cargando…</span>
+      <span class="pill" id="next">Próxima actualización: 5 s</span>
+    </div>
+
+    <div id="error" class="error" style="display:none;"></div>
+
+    <div class="progress-wrap">
+      <div class="progress-label">
+        <span>Mesas escrutadas</span>
+        <span id="mesas-text">—</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+    </div>
+
+    <div id="candidates"></div>
+
+    <div class="secondary">
+      <div class="stat"><div class="num" id="blanco">—</div><div class="lbl">Voto en blanco</div></div>
+      <div class="stat"><div class="num" id="nulos">—</div><div class="lbl">Votos nulos</div></div>
+      <div class="stat"><div class="num" id="nomarcados">—</div><div class="lbl">No marcados</div></div>
+      <div class="stat"><div class="num" id="total">—</div><div class="lbl">Total votos</div></div>
+    </div>
+
+    <div class="source-note" id="source-note"></div>
+
+    <footer>
+      Página de seguimiento ciudadano. Los datos oficiales son los publicados por la
+      <a href="https://www.registraduria.gov.co" target="_blank" rel="noopener">Registraduría Nacional del Estado Civil</a>.
+      <br />Actualización automática cada 5 segundos · Publicado con GitHub Pages.
+    </footer>
+  </div>
+
+  <script>
+    const REFRESH_MS = 5000;
+    const fmt = new Intl.NumberFormat('es-CO');
+    let countdown = REFRESH_MS / 1000;
+
+    function pct(part, total) {
+      if (!total) return 0;
+      return (part / total) * 100;
+    }
+
+    async function cargar() {
+      try {
+        const res = await fetch('resultados.json?_=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const d = await res.json();
+        render(d);
+        document.getElementById('error').style.display = 'none';
+      } catch (e) {
+        const err = document.getElementById('error');
+        err.style.display = 'block';
+        err.textContent = 'No se pudieron cargar los resultados (' + e.message + '). Reintentando…';
+      }
+    }
+
+    function render(d) {
+      if (d.eleccion) document.getElementById('title').textContent = d.eleccion;
+      document.getElementById('subtitle').textContent =
+        'Segunda Vuelta · ' + (d.fecha || '');
+
+      // Total de votos a candidatos para calcular porcentaje sobre votos válidos
+      const cands = (d.candidatos || []).slice().sort((a, b) => b.votos - a.votos);
+      const votosCandidatos = cands.reduce((s, c) => s + (c.votos || 0), 0);
+      const totalGeneral = d.votos_totales ||
+        (votosCandidatos + (d.votos_blanco||0) + (d.votos_nulos||0) + (d.votos_no_marcados||0));
+
+      // Progreso de mesas
+      const pmesas = d.porcentaje_escrutado != null
+        ? d.porcentaje_escrutado
+        : pct(d.mesas_informadas, d.mesas_totales);
+      document.getElementById('progress-fill').style.width = Math.min(pmesas, 100) + '%';
+      document.getElementById('mesas-text').textContent =
+        (d.mesas_totales
+          ? fmt.format(d.mesas_informadas) + ' / ' + fmt.format(d.mesas_totales) + '  '
+          : '') + '(' + pmesas.toFixed(2) + '%)';
+
+      // Candidatos
+      const cont = document.getElementById('candidates');
+      cont.innerHTML = '';
+      cands.forEach((c, i) => {
+        const p = pct(c.votos, votosCandidatos);
+        const el = document.createElement('div');
+        el.className = 'candidate' + (i === 0 && c.votos > 0 ? ' leader' : '');
+        el.innerHTML = `
+          <div class="cand-top">
+            <div>
+              <div class="cand-name">${c.nombre}${i === 0 && c.votos > 0 ? '<span class="leader-badge">Adelante</span>' : ''}</div>
+              <div class="cand-party">${c.partido || ''}</div>
+            </div>
+            <div style="text-align:right">
+              <div class="cand-pct" style="color:${c.color || '#fff'}">${p.toFixed(2)}%</div>
+              <div class="cand-votes">${fmt.format(c.votos || 0)} votos</div>
+            </div>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:${p}%; background:${c.color || '#888'}"></div>
+          </div>`;
+        cont.appendChild(el);
+      });
+
+      document.getElementById('blanco').textContent = fmt.format(d.votos_blanco || 0);
+      document.getElementById('nulos').textContent = fmt.format(d.votos_nulos || 0);
+      document.getElementById('nomarcados').textContent = fmt.format(d.votos_no_marcados || 0);
+      document.getElementById('total').textContent = fmt.format(totalGeneral);
+
+      if (d.actualizado) {
+        const fecha = new Date(d.actualizado);
+        document.getElementById('updated').textContent =
+          'Datos: ' + (isNaN(fecha) ? d.actualizado : fecha.toLocaleString('es-CO'));
+      }
+      if (d.fuente) document.getElementById('source-note').textContent = d.fuente;
+    }
+
+    // Cuenta regresiva visible
+    setInterval(() => {
+      countdown -= 1;
+      if (countdown <= 0) countdown = REFRESH_MS / 1000;
+      document.getElementById('next').textContent =
+        'Próxima actualización: ' + countdown + ' s';
+    }, 1000);
+
+    cargar();
+    setInterval(cargar, REFRESH_MS);
+  </script>
+</body>
+</html>
