@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 20 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>20 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI adquiere Astral: uv, Ruff y ty se integran a Codex</h3>
+      <p class="what">OpenAI anunci&oacute; la adquisici&oacute;n de Astral, creador de las herramientas open-source m&aacute;s usadas del ecosistema Python: uv (gesti&oacute;n de dependencias), Ruff (linting ultra-r&aacute;pido) y ty (type checking). Se integrar&aacute;n directamente en Codex, que ya tiene 2M+ usuarios semanales activos y creci&oacute; 5x este a&ntilde;o.</p>
+      <p class="why">Si tu backend es Python, tu toolchain de desarrollo pasa a estar controlada por OpenAI &mdash; eval&uacute;a qu&eacute; dependencia tomas de ese lock-in o mant&eacute;n alternativas.</p>
+      <p class="source"><a href="https://openai.com/index/openai-to-acquire-astral/">OpenAI Blog</a> &bull; <a href="https://thenewstack.io/openai-astral-acquisition/">The New Stack</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft Scout: agente personal always-on para Microsoft 365</h3>
+      <p class="what">Lanzado en Build 2026, Scout es un agente aut&oacute;nomo que opera proactivamente sobre Teams, Outlook, OneDrive y SharePoint: agenda reuniones cross-timezone, genera materiales de preparaci&oacute;n, identifica entregables y detecta riesgos. Cada agente opera bajo su propia identidad Entra con credenciales end-to-end.</p>
+      <p class="why">Es el template de c&oacute;mo se ve un agente AI gobernado en enterprise &mdash; el patr&oacute;n de identidad por agente es replicable en tu propia plataforma.</p>
+      <p class="source"><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/">Microsoft Blog</a> &bull; <a href="https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Noam Shazeer deja Google y se une a OpenAI</h3>
+      <p class="what">El co-autor de "Attention Is All You Need" y co-l&iacute;der de Gemini dej&oacute; Google para unirse a OpenAI. Google pag&oacute; $2.7B en 2024 para traerlo de vuelta desde Character.AI &mdash; ahora pierde al arquitecto m&aacute;s influyente de la era transformer.</p>
+      <p class="why">Esto se&ntilde;ala que OpenAI est&aacute; compitiendo agresivamente por talento de research &mdash; espera aceleraci&oacute;n en sus modelos de pr&oacute;xima generaci&oacute;n.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html">CNBC</a> &bull; <a href="https://www.fastcompany.com/91562193/google-ai-leader-noam-shazeer-leaves-company-for-openai">Fast Company</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Windsurf es ahora Devin Desktop: Agent Client Protocol como est&aacute;ndar abierto</h3>
+      <p class="what">Cognition rebrandeo Windsurf como Devin Desktop con migraci&oacute;n autom&aacute;tica OTA. El cambio clave: soporte nativo para Agent Client Protocol (ACP), un est&aacute;ndar abierto JSON-RPC para conectar cualquier editor con cualquier agente de coding. Cascade (el agente local) muere el 1 de julio &mdash; reemplazado por Devin Local.</p>
+      <p class="why">ACP es el LSP de los agentes de c&oacute;digo &mdash; si construyes herramientas dev, implementar ACP te hace compatible con Zed, JetBrains, y ahora Devin de una sola vez.</p>
+      <p class="source"><a href="https://devin.ai/blog/windsurf-is-now-devin-desktop/">Devin Blog</a> &bull; <a href="https://github.com/agentclientprotocol/agent-client-protocol">GitHub ACP</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google AI Studio construye apps Android nativas desde un prompt</h3>
+      <p class="what">El Antigravity Agent en Google AI Studio genera proyectos completos en Kotlin + Jetpack Compose desde lenguaje natural, con acceso a sensores (GPS, Bluetooth, NFC), emulador en el navegador, e integraci&oacute;n directa con Google Workspace. Tambi&eacute;n migra c&oacute;digo de React Native o iOS a Android nativo en horas.</p>
+      <p class="why">Para prototipar features Android o migrar tu app de otra plataforma, esto comprime semanas de trabajo en horas &mdash; ideal para validar ideas r&aacute;pido.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/">Google Blog</a> &bull; <a href="https://techcrunch.com/2026/05/19/googles-ai-studio-now-lets-anyone-build-android-apps-in-minutes/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GLM-5.2 de Z.ai (ex-Zhipu): China alcanza nivel Opus 4.7-4.8</h3>
+      <p class="what">Lanzado el 16 de junio, GLM-5.2 rinde comparable a Claude Opus 4.7-4.8 en benchmarks publicados. Jie Tang (fundador de Z.ai) respondi&oacute; a Musk diciendo que China tendr&aacute; un modelo clase Fable 5 "antes de lo que predicen" &mdash; sin depender de chips estadounidenses.</p>
+      <p class="why">La paridad de modelos chinos open-weight significa m&aacute;s opciones para self-hosting si necesitas soberan&iacute;a de datos o costos ultra-bajos.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-20-2026">BuildFastWithAI</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item">
+      <h3>China prepara plan de $295B para infraestructura AI dom&eacute;stica</h3>
+      <p class="what">China est&aacute; preparando un plan de 5 a&ntilde;os y $295 mil millones para construir una red nacional de data centers interconectados, operados por China Mobile y China Telecom, con mandato de usar 80% chips dom&eacute;sticos (Huawei). Buscan eliminar dependencia de Nvidia.</p>
+      <p class="why">Esto crea un ecosistema AI paralelo &mdash; si tu producto tiene usuarios en Asia, empieza a evaluar qu&eacute; modelos y proveedores funcionar&aacute;n en ambos lados del muro.</p>
+      <p class="source"><a href="https://www.bloomberg.com/news/articles/2026-06-09/china-prepares-295-billion-plan-to-fund-nationwide-ai-buildout">Bloomberg</a> &bull; <a href="https://thenextweb.com/news/china-295-billion-ai-data-centre-plan">TNW</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Design se renueva: imports de design systems y handoff directo a Claude Code</h3>
+      <p class="what">Anthropic lanz&oacute; una actualizaci&oacute;n mayor de Claude Design el 17 de junio: ahora importas tu design system desde GitHub, archivos de dise&ntilde;o o uploads, y Claude construye respetando esos componentes con auto-correcci&oacute;n. El handoff a Claude Code es directo (sin screenshots ni rebuilds), y el comando /design permite dise&ntilde;ar desde terminal.</p>
+      <p class="why">Esto cierra el loop dise&ntilde;o&rarr;c&oacute;digo para equipos peque&ntilde;os: dise&ntilde;as con tus componentes reales y el c&oacute;digo generado ya los usa correctamente.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem">VentureBeat</a> &bull; <a href="https://www.techrepublic.com/article/news-anthropic-claude-design-overhaul-enterprise-teams/">TechRepublic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code Ultracode: orquestaci&oacute;n multi-agente autom&aacute;tica con Opus 4.8</h3>
+      <p class="what">Disponible desde v2.1.154 (28 de mayo), Ultracode setea esfuerzo xhigh y a&ntilde;ade una capa de workflow din&aacute;mico que planifica, delega a sub-agentes y auto-verifica. Elimina los problemas de early quitting y goal drift en tareas grandes que un solo context window no puede resolver.</p>
+      <p class="why">Para migraciones de codebase, auditor&iacute;as de seguridad o refactors masivos, Ultracode convierte tareas de d&iacute;as en horas &mdash; activa con /effort ultracode.</p>
+      <p class="source"><a href="https://claudefa.st/blog/guide/development/ultracode">ClaudeFast</a> &bull; <a href="https://www.developersdigest.tech/blog/ultracode-effort-level-explained">Developers Digest</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Fable 5 sigue suspendido: hoy vence el plazo de reembolsos</h3>
+      <p class="what">El 20 de junio es la fecha l&iacute;mite para procesar reembolsos a suscriptores que pagaron cr&eacute;ditos de Fable 5 entre el 9 y 14 de junio, antes del ban de control de exportaciones. El modelo lleva 8 d&iacute;as offline sin fecha oficial de restauraci&oacute;n, aunque Anthropic dice estar "muy confiados" de restaurarlo pronto.</p>
+      <p class="why">Lecci&oacute;n clara: no dependas de un solo proveedor de modelo &mdash; ten siempre un fallback configurado (multi-provider gateway) para tu producto en producci&oacute;n.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/fable-mythos-access">Anthropic</a> &bull; <a href="https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/">Fortune</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Les Mills + Hyperhuman: clases premium de fitness llegan a plataformas AI</h3>
+      <p class="what">Les Mills (BODYPUMP, BODYCOMBAT, BODYBALANCE) se integr&oacute; con Hyperhuman, la plataforma AI que genera entrenamientos adaptativos. Los contenidos premium ahora est&aacute;n disponibles dentro del motor de personalizaci&oacute;n AI de Hyperhuman, combinando calidad de contenido profesional con adaptaci&oacute;n inteligente al usuario.</p>
+      <p class="why">El modelo content-as-a-service + AI personalization es replicable en cualquier marketplace de servicios profesionales &mdash; el contenido premium se monetiza mejor cuando la AI lo adapta al usuario.</p>
+      <p class="source"><a href="https://www.healthandfitness.org/les-mills-and-hyperhuman-bring-premium-fitness-classes-into-the-ai-powered-platform-era/">Health &amp; Fitness Association</a></p>
+    </div>
+
+    <footer>
+      <p>Generado el 21/06/2026 &middot; Filtrado para senior devs construyendo producto</p>
+    </footer>
+  </div>
+</body>
+</html>
