@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 21 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>21 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GLM-5.2: modelo open-weight supera a GPT-5.5 en coding &mdash; entrenado sin chips Nvidia</h3>
+      <p class="what">Z.ai (ex Zhipu AI) lanz&oacute; GLM-5.2, un modelo MoE de 744B par&aacute;metros (40B activos) entrenado 100% en chips Huawei Ascend 910B, con contexto de 1M tokens y licencia MIT sin restricciones geogr&aacute;ficas. Alcanza 62.1 en SWE-bench Pro (superando el 58.6 de GPT-5.5) y ya tiene soporte nativo en OpenCode v1.17.9.</p>
+      <p class="why">A $1.40/M input tokens, es la alternativa open-weight m&aacute;s seria para pipelines de coding y agentes en producci&oacute;n &mdash; especialmente si la saga Fable 5 te ense&ntilde;&oacute; a no depender de un solo proveedor.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/318810/20260621/china-ai-parity-glm-52-tops-open-rankings-huawei-chips-fable-5-stays-banned.htm">TechTimes</a> &bull; <a href="https://decrypt.co/371613/china-z-ai-glm-5-2-model-rivals-claude-opus">Decrypt</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>LiteLLM: vulnerabilidad cr&iacute;tica CVSS 9.9 explotada activamente &mdash; parche&aacute; ya</h3>
+      <p class="what">Obsidian Security revel&oacute; una cadena de 3 CVEs en LiteLLM (el popular proxy open-source para m&uacute;ltiples LLMs) que permite escalar de usuario b&aacute;sico a admin con ejecuci&oacute;n remota de c&oacute;digo. CISA confirm&oacute; explotaci&oacute;n activa; todas las versiones anteriores a v1.83.14-stable son vulnerables.</p>
+      <p class="why">Si usas LiteLLM como gateway multi-proveedor, cada API key almacenada est&aacute; expuesta &mdash; actualiza a v1.83.14 hoy.</p>
+      <p class="source"><a href="https://thehackernews.com/2026/06/litellm-vulnerability-chain-lets-low.html">The Hacker News</a> &bull; <a href="https://latesthackingnews.com/2026/06/16/litellm-vulnerability-chain-ai-gateway-patch/">Latest Hacking News</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cursor 3.8: comando /automate, triggers GitHub/Slack y Computer Use por defecto</h3>
+      <p class="what">Cursor 3.8 introduce el comando /automate que genera configuraciones de automatizaci&oacute;n completas desde lenguaje natural, cinco nuevos triggers de GitHub (comentarios en issues, reviews de PRs) y triggers de Slack. Los agentes cloud ahora tienen Computer Use habilitado por defecto, generando screenshots y videos como prueba de trabajo.</p>
+      <p class="why">Cursor est&aacute; evolucionando de editor de c&oacute;digo a agente CI/CD &mdash; si ya lo usas, /automate elimina la fricci&oacute;n de configurar triage autom&aacute;tico de PRs e issues.</p>
+      <p class="source"><a href="https://cursor.com/changelog/06-18-26">Cursor Changelog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI Codex lanza "Record &amp; Replay": automatizaci&oacute;n por demostraci&oacute;n en macOS</h3>
+      <p class="what">Codex app v26.616 para macOS permite grabar un workflow una vez &mdash; clicks, comandos de terminal, formularios &mdash; y convertirlo en un "skill" reutilizable que combina Computer Use, acciones de browser y plugins. Disponible para usuarios Business, Plus, Pro y Enterprise.</p>
+      <p class="why">Programa por demostraci&oacute;n en vez de scripting: ideal para automatizar tareas repetitivas de ops que no justifican escribir c&oacute;digo.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/318759/20260620/openai-codex-automation-gains-record-replay-show-it-once-skip-script.htm">TechTimes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google Home Speaker con Gemini Nano on-device por $99: respuestas en &lt;100ms sin internet</h3>
+      <p class="what">El primer smart speaker nuevo de Google en 6 a&ntilde;os incluye un NPU dedicado que ejecuta Gemini Nano localmente, logrando tiempos de respuesta de voz inferiores a 100ms sin conexi&oacute;n. Soporta comandos multi-paso en lenguaje natural y se env&iacute;a el 25 de junio.</p>
+      <p class="why">IA on-device a $99 en el tier de smart home demuestra que la inferencia local ya escal&oacute; m&aacute;s all&aacute; de phones &mdash; referencia &uacute;til si est&aacute;s evaluando edge AI para tu producto.</p>
+      <p class="source"><a href="https://blog.google/products-and-platforms/devices/google-nest/google-home-speaker-gemini-features/">Google Blog</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 SpaceX adquiere Cursor (Anysphere) por $60B &mdash; el editor AI m&aacute;s popular cambia de manos</h3>
+      <p class="what">SpaceX acord&oacute; la adquisici&oacute;n de Anysphere en un deal all-stock de $60B, la mayor adquisici&oacute;n de una startup VC-backed en la historia. Cursor genera ~$4B en ARR y la operaci&oacute;n lo integra al ecosistema SpaceX/xAI tras la fusi&oacute;n con xAI este a&ntilde;o.</p>
+      <p class="why">Si usas Cursor, la direcci&oacute;n estrat&eacute;gica de tu herramienta ahora la controla Musk/xAI &mdash; vigila cambios en integraci&oacute;n de modelos y privacidad de datos.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/">TechCrunch</a> &bull; <a href="https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Atoms: la plataforma "Vibe Business" que construye, despliega y marketea tu app con agentes AI</h3>
+      <p class="what">Atoms, financiada con $31M de Ant Group, super&oacute; 1 mill&oacute;n de usuarios con un enfoque radical: agentes especializados (Product Manager, Arquitecto, Ingeniero, SEO, Data Analyst) colaboran para planificar, construir, testear, desplegar y marketear tu app desde una descripci&oacute;n en lenguaje natural, incluyendo Stripe, auth y hosting.</p>
+      <p class="why">Va m&aacute;s all&aacute; del vibe coding &mdash; cubre el ciclo completo de idea a revenue, colapsando el timeline de meses a d&iacute;as para un solo founder.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/06/16/meet-atoms-a-vibe-coding-tool-that-uses-ai-agents-to-build-deploy-and-market-your-app-no-code/">MarkTechPost</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>John Jumper (Nobel de Qu&iacute;mica 2024) deja DeepMind por Anthropic</h3>
+      <p class="what">El creador de AlphaFold y co-ganador del Nobel de Qu&iacute;mica 2024 anunci&oacute; su salida de Google DeepMind tras casi 9 a&ntilde;os para unirse a Anthropic. Es el movimiento de talento cient&iacute;fico m&aacute;s significativo del a&ntilde;o en IA.</p>
+      <p class="why">Refuerza a Anthropic en razonamiento cient&iacute;fico &mdash; relevante si est&aacute;s construyendo productos en biotech, salud o deep-tech sobre Claude.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code v2.1.183: guardrails de seguridad bloquean comandos destructivos en auto mode</h3>
+      <p class="what">La actualizaci&oacute;n a&ntilde;ade protecci&oacute;n autom&aacute;tica que bloquea git reset --hard, git clean -fd, terraform destroy y git commit --amend en sesiones que el agente no cre&oacute;, a menos que el usuario lo solicite expl&iacute;citamente. Incluye 15+ bug fixes en subagents, WebSearch y notificaciones.</p>
+      <p class="why">Auto mode es ahora significativamente m&aacute;s seguro para flujos desatendidos &mdash; menos riesgo de que el agente destruya trabajo local o infraestructura.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Fable 5 reaparece en la app Android de Claude &mdash; Trump suaviza postura en G7</h3>
+      <p class="what">Claude Fable 5 volvi&oacute; a aparecer en el selector de modelos de la app Android, mostrando "server is temporarily rate-limiting" en vez del anterior "model unavailable". Coincide con que Trump declar&oacute; en el G7 que ya no considera a Anthropic una amenaza de seguridad nacional y que las negociaciones "van bien".</p>
+      <p class="why">Primera se&ntilde;al de que Fable 5 podr&iacute;a restaurarse pronto &mdash; si construyes sobre Claude, prep&aacute;rate para tener acceso al modelo m&aacute;s capaz de Anthropic de nuevo.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/318783/20260621/claude-fable-5-resurfaces-android-app-nsa-breach-testimony-reshapes-ban.htm">TechTimes</a> &bull; <a href="https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 FIFA World Cup 2026: avatares 3D con IA explican decisiones arbitrales en vivo</h3>
+      <p class="what">El sistema de Lenovo genera r&eacute;plicas 3D hiperrealistas de los jugadores a partir de escaneos corporales de 1 segundo, reconstruyendo jugadas pol&eacute;micas como offsides en tiempo real para transmisi&oacute;n en estadio y TV. Se us&oacute; por primera vez en el Argentina-Argelia para explicar visualmente una decisi&oacute;n de fuera de juego.</p>
+      <p class="why">IA pasa de analytics back-office a interfaz fan-facing en el evento deportivo m&aacute;s visto del planeta &mdash; el playbook para cualquier marketplace de sports tech.</p>
+      <p class="source"><a href="https://news.lenovo.com/pressroom/press-releases/lenovo-technology-powers-fifa-world-cup-2026-operations-and-strengthens-ai-driven-broadcast/">Lenovo</a> &bull; <a href="https://inside.fifa.com/media-releases/lenovo-tech-world-ai-powered-innovations-world-cup-2026">FIFA</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Football AI Pro: asistente GenAI t&aacute;ctico disponible para las 48 selecciones del Mundial</h3>
+      <p class="what">FIFA y Lenovo desplegaron Football AI Pro, un asistente de IA generativa que ingiere cientos de millones de datos FIFA y produce insights t&aacute;cticos v&iacute;a texto, video, gr&aacute;ficos y simulaciones 3D. Es la primera vez que una plataforma GenAI &uacute;nica se ofrece a todos los participantes de un torneo internacional mayor.</p>
+      <p class="why">Democratizar analytics de &eacute;lite con GenAI es exactamente el modelo que aplica a marketplaces de coaching y servicios profesionales deportivos.</p>
+      <p class="source"><a href="https://inside.fifa.com/media-releases/lenovo-tech-world-ai-powered-innovations-world-cup-2026">FIFA</a> &bull; <a href="https://www.foxbusiness.com/sports/lenovos-ai-powered-3d-avatars-referee-view-more-set-transform-2026-fifa-world-cup">Fox Business</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 21/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
