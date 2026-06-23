@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 22 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>22 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; codebase-memory-mcp: Knowledge graph que hace que tu agente AI entienda tu repo de verdad</h3>
+      <p class="what">DeusData lanz&oacute; un servidor MCP de alto rendimiento escrito en C que indexa codebases en grafos de conocimiento persistentes con SQLite. Soporta 158 lenguajes, logra queries sub-milisegundo y reduce el consumo de tokens un 99% comparado con exploraci&oacute;n archivo por archivo, compatible con Claude Code, Cursor, Codex CLI y 8 agentes m&aacute;s.</p>
+      <p class="why">Si usas agentes AI para coding diario, esto elimina el problema de contexto limitado y respuestas gen&eacute;ricas por no entender la arquitectura de tu proyecto.</p>
+      <p class="source"><a href="https://github.com/DeusData/codebase-memory-mcp">GitHub</a> &bull; <a href="https://arxiv.org/html/2603.27277v1">arXiv</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft Work IQ APIs en GA: capa de contexto empresarial para agentes AI</h3>
+      <p class="what">Las Work IQ APIs ya est&aacute;n en disponibilidad general desde el 16 de junio. Ofrecen acceso gobernado a datos de Microsoft 365 &mdash; emails, reuniones, chats, archivos y patrones de colaboraci&oacute;n &mdash; a trav&eacute;s de 4 dominios (Chat, Context, Tools, Workspaces) para que agentes AI custom operen con contexto organizacional real.</p>
+      <p class="why">Si construyes herramientas B2B o agentes para empresas, esta API te da el contexto que antes requer&iacute;a integraciones custom con cada servicio de Microsoft.</p>
+      <p class="source"><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/announcing-the-new-work-iq-apis/">Microsoft 365 Blog</a> &bull; <a href="https://devblogs.microsoft.com/microsoft365dev/work-iq-production-ready-intelligence-for-every-agent/">Microsoft Dev Blog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Agentjacking: un fake bug report en Sentry puede secuestrar tu agente AI de coding</h3>
+      <p class="what">Tenet Security descubri&oacute; que atacantes pueden inyectar comandos maliciosos a trav&eacute;s de reportes de error en Sentry usando DSNs p&uacute;blicos, logrando ejecuci&oacute;n arbitraria de c&oacute;digo en m&aacute;quinas de desarrolladores con 85% de &eacute;xito en Claude Code, Cursor y Codex. Afecta a 2,388 organizaciones; Sentry reconoci&oacute; la vulnerabilidad pero declin&oacute; implementar un fix estructural.</p>
+      <p class="why">Si usas Sentry + agentes AI en tu flujo de desarrollo, necesitas revisar tus DSNs expuestos y a&ntilde;adir validaci&oacute;n manual antes de que el agente act&uacute;e sobre errores externos.</p>
+      <p class="source"><a href="https://www.scworld.com/brief/agentjacking-attack-exploits-ai-coding-tools-with-fake-error-reports">SC Media</a> &bull; <a href="https://hackread.com/agentjacking-fake-bug-report-hijack-ai-coding-agents/">Hackread</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Nvidia RTX Spark: superchip que corre LLMs de 120B par&aacute;metros en tu laptop</h3>
+      <p class="what">Nvidia y Microsoft presentaron RTX Spark, un chip ARM+Blackwell GPU con hasta 128GB de RAM unificada, 1 PFLOP de rendimiento AI y 6,144 CUDA cores. Puede correr modelos de 120B par&aacute;metros con 1M tokens de contexto localmente, editar video 12K y renderizar escenas 3D de 90GB+.</p>
+      <p class="why">Cuando llegue en oto&ntilde;o a laptops de ASUS, Dell, HP y Surface, podr&aacute;s correr agentes AI complejos 100% local sin costos de API ni dependencia de cloud.</p>
+      <p class="source"><a href="https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark">NVIDIA Newsroom</a> &bull; <a href="https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Claude llega a iOS 27 via Apple Foundation Models: un solo protocol para on-device + cloud</h3>
+      <p class="what">Desde WWDC 2026, Apple abri&oacute; el framework Foundation Models con un nuevo LanguageModel protocol que permite a cualquier proveedor (Claude, Gemini, etc.) exponerse con la misma API. Tu app maneja tareas b&aacute;sicas on-device y escala a Claude en la nube para lo complejo, sin reescribir c&oacute;digo.</p>
+      <p class="why">Para devs iOS/Android que quieren AI en su app, esto unifica el acceso a modelos locales y cloud con una sola integraci&oacute;n &mdash; reduce semanas de plumbing a horas.</p>
+      <p class="source"><a href="https://www.apple.com/newsroom/2026/06/apple-aids-app-development-with-new-intelligence-frameworks-and-advanced-tools/">Apple Newsroom</a> &bull; <a href="https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models">Claude Docs</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item">
+      <h3>Noam Shazeer deja Google DeepMind por OpenAI: la guerra de talento AI se intensifica</h3>
+      <p class="what">El co-autor de &ldquo;Attention Is All You Need&rdquo; y co-l&iacute;der de Gemini abandon&oacute; Google el 18 de junio para unirse a OpenAI como Lead de Architecture Research. Google hab&iacute;a pagado $2.7B para repatriarlo desde Character.AI apenas dos a&ntilde;os antes.</p>
+      <p class="why">Se&ntilde;al clara de que el talento fundacional est&aacute; migrando hacia donde se construyen los productos m&aacute;s ambiciosos &mdash; la competencia por modelos next-gen se decide por personas, no solo por compute.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html">CNBC</a> &bull; <a href="https://www.axios.com/2026/06/18/noam-shazeer-google-openai-characterai">Axios</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; OpenMontage: primer sistema &ldquo;ag&eacute;ntico&rdquo; de producci&oacute;n de video, open-source</h3>
+      <p class="what">Se lanz&oacute; OpenMontage como el primer sistema open-source de producci&oacute;n de video donde agentes AI manejan el flujo completo de creaci&oacute;n: desde scripting hasta edici&oacute;n final. Marca un hito en la evoluci&oacute;n de contenido generado por AI con control program&aacute;tico.</p>
+      <p class="why">Si necesitas generar video para tu producto o marketplace (demos, onboarding, marketing), ahora hay una base open-source para automatizarlo en vez de pagar herramientas SaaS cerradas.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-22-2026">BuildFastWithAI</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic presenta S-1 confidencial ante la SEC: IPO apuntando a octubre 2026</h3>
+      <p class="what">Anthropic present&oacute; su registro en Form S-1 ante la SEC el 1 de junio tras levantar $65B en Serie H con valoraci&oacute;n de $965B. El revenue run rate lleg&oacute; a $47B (vs $10B el a&ntilde;o pasado), con Goldman Sachs, JPMorgan y Morgan Stanley liderando una oferta que busca levantar m&aacute;s de $60B en Nasdaq.</p>
+      <p class="why">El IPO de Anthropic valida que el mercado de AI generativa es un negocio real, no solo hype &mdash; y anticipa mayor inversi&oacute;n en el ecosistema Claude que usas a diario.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/confidential-draft-s1-sec">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: broad release con agent teams, nested skills y permisos mejorados</h3>
+      <p class="what">Claude Code liber&oacute; una actualizaci&oacute;n amplia en junio que habilita equipos de agentes coordinados, skills anidados para workflows complejos, y un sistema de permisos y auto mode review m&aacute;s granular. Tambi&eacute;n mejora el control remoto, /doctor y /bug para debugging.</p>
+      <p class="why">Agent teams + nested skills significa que ahora puedes orquestar m&uacute;ltiples agentes especializados desde un solo comando &mdash; el workflow de &ldquo;un humano supervisando N agentes&rdquo; ya es viable.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Design se integra al sidebar de Claude Desktop con sync a Claude Code</h3>
+      <p class="what">Claude Design ahora vive en el sidebar de la app de escritorio con edici&oacute;n directa en canvas, sincronizaci&oacute;n con Claude Code, y controles de layout m&aacute;s robustos. Mantiene alineaci&oacute;n con design systems a trav&eacute;s de proyectos.</p>
+      <p class="why">Cerrar el loop dise&ntilde;o&rarr;c&oacute;digo en una sola herramienta reduce fricci&oacute;n significativa si eres founder t&eacute;cnico que dise&ntilde;a y codea su propio producto.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; The Collectiv lanza aceleradora AI-native para sports, salud y wellness en Houston</h3>
+      <p class="what">The Collectiv Foundation, en colaboraci&oacute;n con Rice University, cre&oacute; una aceleradora en el Ion District de Houston para founders early-stage que construyen tecnolog&iacute;as AI validadas en deportes y escalables a salud, empresa y consumidor. El modelo dual-use busca que innovaciones probadas en alto rendimiento deportivo se trasladen a wellness masivo.</p>
+      <p class="why">Si est&aacute;s en la intersecci&oacute;n de AI + sports/health, esta aceleradora es una ruta directa a validaci&oacute;n y escala con respaldo acad&eacute;mico e institucional.</p>
+      <p class="source"><a href="https://news.rice.edu/news/2026/collectiv-launches-ai-native-dual-use-sports-health-wellness-accelerator-rices-ion">Rice University News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Wearables 2026: coaching AI generativo y diagn&oacute;stico no invasivo ya son mainstream</h3>
+      <p class="what">Los dispositivos de gama alta de 2026 ya integran asistentes de AI generativa que analizan sue&ntilde;o, estr&eacute;s y entrenamiento para dar intervenciones personalizadas en tiempo real. La tendencia clave es monitoreo no invasivo de glucosa, presi&oacute;n arterial, lactato y cortisol con sensores miniaturizados y electr&oacute;nica flexible.</p>
+      <p class="why">Para quien construya plataformas de coaching o marketplaces de salud, los wearables ya generan datos accionables &mdash; la oportunidad est&aacute; en la capa de interpretaci&oacute;n y recomendaci&oacute;n.</p>
+      <p class="source"><a href="https://science-technology.news-articles.net/content/2026/06/22/2026-wearable-tech-trends-ai-coaching-health-diagnostics.html">Science &amp; Technology News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 22/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
