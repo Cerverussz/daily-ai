@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 23 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>23 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item">
+      <h3>OpenAI lanza GPT-5.5-Cyber y &ldquo;Patch the Planet&rdquo; para parchear vulnerabilidades open-source a escala</h3>
+      <p class="what">OpenAI present&oacute; GPT-5.5-Cyber, un modelo especializado en detecci&oacute;n y remediaci&oacute;n autom&aacute;tica de vulnerabilidades que alcanza 85.6% en CyberGym (vs 81.8% del GPT-5.5 base). Junto con Trail of Bits y HackerOne, lanz&oacute; &ldquo;Patch the Planet&rdquo;: una iniciativa que ya opera sobre 30+ proyectos open-source incluyendo cURL, Go, Python y Sigstore.</p>
+      <p class="why">Si mantienes dependencias open-source o corres auditor&iacute;as de seguridad, esto se integra directo en tu CI/CD para automatizar escaneo de vulnerabilidades hoy.</p>
+      <p class="source"><a href="https://cybersecuritynews.com/gpt-5-5-cyber/">CybersecurityNews</a> &bull; <a href="https://openai.com/index/patch-the-planet/">OpenAI Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Xcode 27 unifica Claude, Gemini y OpenAI con LanguageModel Protocol</h3>
+      <p class="what">Apple abri&oacute; su Framework Foundation Models con un protocolo p&uacute;blico LanguageModel que permite cambiar entre modelos AI (on-device, Claude, Gemini, OpenAI) con solo cambiar una dependencia de Swift Package Manager, sin tocar l&oacute;gica de app. El coding agent de Xcode 27 ya puede simular apps, correr tests y operar el iOS Simulator.</p>
+      <p class="why">Si desarrollas para iOS/Android, la API unificada de Apple para m&uacute;ltiples modelos es el patr&oacute;n a seguir: abstracci&oacute;n de proveedor con cero lock-in.</p>
+      <p class="source"><a href="https://www.macrumors.com/2026/06/09/apple-outlines-major-ai-and-developer-tool-updates/">MacRumors</a> &bull; <a href="https://www.developersdigest.tech/blog/apple-languagemodel-protocol-xcode-27-model-lock-in">Developers Digest</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot migra a billing por uso con AI Credits &mdash; costos variables para todo equipo</h3>
+      <p class="what">GitHub movi&oacute; todos los planes de Copilot a facturaci&oacute;n por uso: 1 cr&eacute;dito = $0.01, consumido por tokens (input, cached, output) a tasas publicadas por modelo. Equipos internos de Microsoft reportaron consumos de ~$2,000/ingeniero/mes.</p>
+      <p class="why">Tu presupuesto de tooling AI ya no es predecible; necesitas auditar consumo de tokens por desarrollador y configurar l&iacute;mites antes de que la factura sorprenda.</p>
+      <p class="source"><a href="https://www.morphllm.com/ai-coding-costs">Morph LLM</a> &bull; <a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-23-2026">BuildFastWithAI</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Gemini 3.5 Pro en ventana de GA: 2M tokens de contexto y modo Deep Think</h3>
+      <p class="what">Google tiene a Gemini 3.5 Pro en su ventana de disponibilidad general (junio 23-30), con el contexto m&aacute;s grande de cualquier modelo frontier en producci&oacute;n: 2 millones de tokens. Incluye modo Deep Think de razonamiento avanzado, aunque restringido al tier Ultra ($250/mes). Pricing estimado: $15/$60 por mill&oacute;n de tokens.</p>
+      <p class="why">2M de contexto nativo abre posibilidades reales para procesar codebases completos o documentaci&oacute;n masiva sin chunking, aunque el precio lo posiciona para tareas de alto valor.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/317919/20260606/google-gemini-35-pro-nears-june-launch-2-million-token-context-deep-think-reasoning.htm">TechTimes</a> &bull; <a href="https://codersera.com/blog/gemini-3-5-pro-launch-guide-2026/">Codersera</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>MiniMax M3: modelo open-weight frontier con 1M de contexto y 20x menos compute</h3>
+      <p class="what">MiniMax M3 usa una arquitectura Sparse Attention (MSA) que reduce el compute por token a 1/20 del costo anterior en contextos de 1M tokens, con 9.7x prefill m&aacute;s r&aacute;pido y 15.6x decode m&aacute;s r&aacute;pido. Open-weight, soporta input multimodal (imagen/video) y compite en benchmarks de coding frontier.</p>
+      <p class="why">Un modelo open-weight con 1M de contexto que es econ&oacute;mico de correr cambia los n&uacute;meros para RAG y procesamiento de documentos largos en tu propio backend.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/06/01/minimax-releases-minimax-m3-with-msa-architecture-supporting-1m-token-context-native-multimodality-and-agentic-coding/">MarkTechPost</a> &bull; <a href="https://venturebeat.com/technology/minimax-teases-upcoming-m3-model-with-new-sparse-attention-mechanism-and-15-6x-response-speed-boost/">VentureBeat</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Design: /design-sync bidireccional con Claude Code y edici&oacute;n canvas WYSIWYG</h3>
+      <p class="what">La actualizaci&oacute;n de junio de Claude Design a&ntilde;ade importaci&oacute;n de design systems desde GitHub, edici&oacute;n WYSIWYG directa en canvas, y sync bidireccional con Claude Code v&iacute;a /design-sync. M&aacute;s de un mill&oacute;n de personas lo usaron en su primera semana. Disponible en Pro, Max, Team y Enterprise.</p>
+      <p class="why">Cierra el loop dise&ntilde;o-c&oacute;digo para builders solos: de design system a c&oacute;digo funcional sin salir del ecosistema Anthropic, impacto directo en velocidad de MVP.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem/">VentureBeat</a> &bull; <a href="https://www.explainx.ai/blog/claude-design-june-2026-update-design-sync-2026">Explainx.ai</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 AI Coding entra en fase de Agent Engineering: 110 productos, 279% de crecimiento desde 2023</h3>
+      <p class="what">La categor&iacute;a de generaci&oacute;n de c&oacute;digo con AI en G2 alcanz&oacute; 110 productos (vs 29 en 2023). El paradigma cambi&oacute; de autocompletado a delegar issues completos, tests, migraciones y refactors. Claude Code + Fable 5 marca 83.1% en Terminal-Bench 2.1, justo detr&aacute;s de Codex + GPT-5.5 con 83.4%.</p>
+      <p class="why">La econom&iacute;a de construir software cambi&oacute; fundamentalmente; un dev solo con Claude Code o Codex puede delegar tareas sustanciales de ingenier&iacute;a.</p>
+      <p class="source"><a href="https://learn.g2.com/ai-coding-assistants">G2</a> &bull; <a href="https://www.morphllm.com/best-ai-coding-agents-2026">Morph LLM</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5 termina per&iacute;odo gratuito: ahora requiere cr&eacute;ditos de uso</h3>
+      <p class="what">A partir del 23 de junio, Fable 5 ya no est&aacute; incluido en suscripciones Pro, Max, Team o Enterprise. Requiere cr&eacute;ditos a $10/$50 por mill&oacute;n de tokens (input/output), el doble que Opus 4.8. Debido a la suspensi&oacute;n por control de exportaciones (junio 12-18), los suscriptores solo tuvieron ~5 d&iacute;as de acceso gratuito de los 13 anunciados.</p>
+      <p class="why">Eval&uacute;a si Fable 5 justifica el premium vs Opus 4.8 para tu caso de uso espec&iacute;fico; la diferencia de costo es 2x.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-23-2026">BuildFastWithAI</a> &bull; <a href="https://www.developersdigest.tech/blog/claude-fable-5-june-22-deadline">Developers Digest</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code junio: sub-agentes anidados, /cd, modelos fallback y rate limits duplicados</h3>
+      <p class="what">Actualizaciones clave de junio: comando /cd para cambiar directorio sin reconstruir prompt cache, sub-agentes que pueden spawnearse entre s&iacute; (hasta 5 niveles), --safe-mode para troubleshooting, fallbackModel para configurar hasta 3 modelos de respaldo, y rate limits duplicados.</p>
+      <p class="why">Sub-agentes anidados y fallback models hacen workflows automatizados m&aacute;s robustos; el rate limit duplicado elimina la fricci&oacute;n principal para usuarios heavy.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/whats-new">Claude Code Docs</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic WIF GA: credenciales ef&iacute;meras reemplazan API keys est&aacute;ticas</h3>
+      <p class="what">Workload Identity Federation (WIF) entr&oacute; en GA el 17 de junio. Los workloads ahora se autentican con identidades existentes: AWS IAM roles, GCP service accounts, Azure managed identities, GitHub Actions tokens u cualquier proveedor OIDC. Credenciales de corta duraci&oacute;n emitidas por request.</p>
+      <p class="why">Si corres Claude en producci&oacute;n, esto elimina la rotaci&oacute;n de API keys y el riesgo de credenciales filtradas de un solo paso.</p>
+      <p class="source"><a href="https://claude.com/blog/workload-identity-federation">Claude Blog</a> &bull; <a href="https://releasebot.io/updates/anthropic">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Perplexity Health: dashboard AI que unifica registros m&eacute;dicos, wearables y datos de salud</h3>
+      <p class="what">Perplexity Health conecta Apple Health, registros m&eacute;dicos electr&oacute;nicos de m&aacute;s de 1.7 millones de proveedores, y plataformas como Fitbit, Ultrahuman y Withings en un dashboard unificado con consultas en lenguaje natural. Datos encriptados, no usados para entrenamiento, con Health Advisory Board de m&eacute;dicos e investigadores.</p>
+      <p class="why">Es el template de producto para marketplaces de salud: unificar datos fragmentados, capa AI de consultas encima, y diferenciarse por garant&iacute;as de privacidad.</p>
+      <p class="source"><a href="https://www.techrepublic.com/article/news-perplexity-health-ai/">TechRepublic</a> &bull; <a href="https://www.perplexity.ai/hub/blog/introducing-perplexity-health">Perplexity Blog</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 23/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
