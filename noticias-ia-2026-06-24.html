@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 24 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>24 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item">
+      <h3>OpenAI y Broadcom presentan Jalape&ntilde;o, su primer chip custom de inferencia IA</h3>
+      <p class="what">OpenAI y Broadcom revelaron Jalape&ntilde;o, un procesador de inferencia dise&ntilde;ado desde cero para LLMs y co-desarrollado en solo 9 meses. En pruebas iniciales iguala el rendimiento de los chips Blackwell de Nvidia con un ahorro estimado del 50% en costo por token de inferencia.</p>
+      <p class="why">La competencia en chips custom (OpenAI, Google TPU, Amazon Trainium) apunta a una reducci&oacute;n sostenida de costos de inferencia &mdash; si tu producto depende de LLMs, la econom&iacute;a mejora cada trimestre.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/">TechCrunch</a> &bull; <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenCode supera 160K stars: el agente de coding open source con 7.5M devs/mes</h3>
+      <p class="what">OpenCode alcanz&oacute; 160K+ estrellas en GitHub y 7.5 millones de desarrolladores activos mensuales, con soporte para 75+ proveedores de LLM e integraci&oacute;n nativa con LSP para autocorrecci&oacute;n en tiempo real. Creado por el equipo detr&aacute;s de SST, funciona en terminal, desktop e IDE con licencia MIT.</p>
+      <p class="why">Es la alternativa open source real a Claude Code y Cursor sin lock-in de proveedor, y su integraci&oacute;n LSP (feedback de errores en tiempo real al modelo) es algo que ninguna herramienta comercial ofrece a&uacute;n.</p>
+      <p class="source"><a href="https://opencode.ai/">OpenCode</a> &bull; <a href="https://github.com/anomalyco/opencode/">GitHub</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cursor bajo SpaceX lanza Bugbot, /automate y cloud subagents paralelos</h3>
+      <p class="what">Tras la adquisici&oacute;n de Anysphere por SpaceX ($60B), Cursor lanz&oacute; una ola de features: Bugbot revisa PRs en ~90 segundos (3x m&aacute;s r&aacute;pido, 22% m&aacute;s barato), /automate conecta agentes con lenguaje natural, y cloud subagents permiten hasta 8 agentes trabajando en paralelo en branches aisladas via Git worktrees.</p>
+      <p class="why">El modelo de &ldquo;flota de agentes paralelos en tu IDE&rdquo; define el nuevo est&aacute;ndar de productividad &mdash; si tu workflow de desarrollo a&uacute;n es secuencial, est&aacute;s dejando velocidad en la mesa.</p>
+      <p class="source"><a href="https://cursor.com/blog/cursor-3">Cursor Blog</a> &bull; <a href="https://the-decoder.com/new-cursor-3-ditches-the-classic-ide-layout-for-an-agent-first-interface-built-around-parallel-ai-fleets/">The Decoder</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI GPT-5.5-Cyber: modelo especializado para ciberseguridad</h3>
+      <p class="what">OpenAI lanz&oacute; GPT-5.5-Cyber el 22 de junio, un modelo fine-tuned que logra 85.6% en CyberGym y 39.5% en ExploitGym (vs 25.95% del GPT-5.5 est&aacute;ndar). Est&aacute; disponible solo para organizaciones verificadas como Cisco, CrowdStrike y Cloudflare a trav&eacute;s del programa Trusted Access for Cyber.</p>
+      <p class="why">Demuestra que modelos especializados por vertical superan significativamente a los generalistas &mdash; si tu producto toca seguridad, el fine-tuning vertical ya no es opcional.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-24-2026">BuildFastWithAI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 DiffusionGemma de Google: generaci&oacute;n de texto 4x m&aacute;s r&aacute;pida, ideal para on-device</h3>
+      <p class="what">Google lanz&oacute; DiffusionGemma, un modelo open-source de 26B par&aacute;metros (MoE) que genera texto mediante difusi&oacute;n en bloques de 256 tokens simult&aacute;neos en vez de uno por uno. Alcanza +1,000 tokens/s en H100 y +700 tokens/s en RTX 5090, con licencia Apache 2.0.</p>
+      <p class="why">Para loops ag&eacute;nticos y asistentes on-device donde la latencia mata la UX, 4x de velocidad es la diferencia entre un feature que se usa y uno que nadie activa.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/">Google Blog</a> &bull; <a href="https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/">MarkTechPost</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Getty Images pivota: de demandar empresas de IA a monetizar 400M im&aacute;genes v&iacute;a API con ChatGPT</h3>
+      <p class="what">Getty Images firm&oacute; un acuerdo multi-a&ntilde;o con OpenAI para que ChatGPT muestre im&aacute;genes licenciadas de su biblioteca de 400M+ assets en resultados de b&uacute;squeda. Las im&aacute;genes se sirven desde servidores de Getty v&iacute;a API en tiempo real, sin usarse para entrenar modelos. La acci&oacute;n subi&oacute; +90% en un d&iacute;a.</p>
+      <p class="why">Es un modelo de negocio replicable: si tienes un marketplace con contenido visual o profesional, puedes monetizarlo como proveedor de contexto para IA en vez de competir contra ella.</p>
+      <p class="source"><a href="https://newsroom.gettyimages.com/en/getty-images/getty-images-announces-display-partnership-with-openai">Getty Images Newsroom</a> &bull; <a href="https://www.engadget.com/2198633/openai-signs-deal-with-getty-to-show-images-in-chatgpt-results/">Engadget</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Tag: Anthropic lanza agente de equipo integrado en Slack</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Tag el 23 de junio, un agente AI que vive dentro de Slack como miembro del equipo. Cualquiera puede tagear @Claude para delegar tareas; el agente construye contexto de los canales donde participa y planifica tareas as&iacute;ncronas. Internamente, Anthropic reporta que el 65% de su c&oacute;digo se genera con su versi&oacute;n interna de Claude Tag.</p>
+      <p class="why">Si tu equipo ya vive en Slack, esto elimina la fricci&oacute;n de &ldquo;ir a otra herramienta para usar IA&rdquo; &mdash; el agente est&aacute; donde ya trabajan.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/introducing-claude-tag">Anthropic</a> &bull; <a href="https://fortune.com/2026/06/23/anthropic-claude-tag-virtual-employee-tool-slack/">Fortune</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>&Eacute;xodo de talento en Google: John Jumper (Nobel) a Anthropic, Noam Shazeer a OpenAI</h3>
+      <p class="what">Bloomberg report&oacute; el 24 de junio que m&aacute;s investigadores de Google planean irse a Anthropic, sum&aacute;ndose a John Jumper (Nobel de Qu&iacute;mica por AlphaFold, a Anthropic el 20 de junio) y Noam Shazeer (co-autor de Transformers, a OpenAI el 18 de junio). Las acciones de Alphabet cayeron 7.2% en la sesi&oacute;n.</p>
+      <p class="why">La concentraci&oacute;n de talento en Anthropic y OpenAI se&ntilde;ala d&oacute;nde estar&aacute;n los avances m&aacute;s significativos los pr&oacute;ximos 12-18 meses &mdash; sigue de cerca las releases de ambas.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5: fin del acceso gratuito en suscripciones Pro, Max y Team</h3>
+      <p class="what">A partir del 23 de junio, Claude Fable 5 dej&oacute; de estar incluido sin costo adicional en planes Pro, Max, Team y Enterprise, cerrando la ventana de 13 d&iacute;as que Anthropic abri&oacute; con el lanzamiento el 9 de junio. Adem&aacute;s, Fable 5 y Mythos 5 contin&uacute;an bajo restricciones de exportaci&oacute;n del gobierno de EE.UU. desde el 12 de junio.</p>
+      <p class="why">Si hab&iacute;as integrado Fable 5 en tu workflow asumiendo acceso ilimitado, es momento de evaluar si el costo adicional justifica mantenerlo frente a Opus 4.8.</p>
+      <p class="source"><a href="https://enterprisedna.co/resources/news/anthropic-claude-june-15-retirements-billing-2026/">Enterprise DNA</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Samsung Health AI: Galaxy Watch se convierte en coach de salud proactivo</h3>
+      <p class="what">Samsung lanz&oacute; una actualizaci&oacute;n mayor de Samsung Health que reorganiza la app en 5 pilares (Sleep, Activity, Nutrition, Mindfulness, Vitals) con inteligencia proactiva. Nuevos features como Heart Health Score, Daily Cardio Load y Fitness Index traducen datos biom&eacute;tricos complejos en gu&iacute;as accionables autom&aacute;ticas.</p>
+      <p class="why">Samsung est&aacute; convirtiendo el wearable en un copiloto de salud &mdash; si construyes en el espacio sports/wellness, esta es la experiencia de referencia que tus usuarios van a esperar.</p>
+      <p class="source"><a href="https://news.samsung.com/global/samsung-introduces-next-gen-galaxy-watch-features-for-ai-powered-everyday-health-companion">Samsung Newsroom</a> &bull; <a href="https://9to5google.com/2026/06/04/samsung-health-ai-redesign-galaxy-watch-9/">9to5Google</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Les Mills + Hyperhuman: contenido fitness premium disponible v&iacute;a plataforma AI</h3>
+      <p class="what">Les Mills se ali&oacute; con Hyperhuman para llevar sus programas premium (BODYPUMP&trade;, BODYCOMBAT&trade;, BODYBALANCE&trade;) a la plataforma de IA de Hyperhuman. Los equipos pueden integrar contenido fitness de clase mundial en sus productos digitales de forma program&aacute;tica.</p>
+      <p class="why">Si construyes una plataforma de fitness o wellness, este modelo de &ldquo;content-as-a-service&rdquo; v&iacute;a AI abre la puerta a ofrecer clases premium sin producirlas t&uacute;.</p>
+      <p class="source"><a href="https://www.healthandfitness.org/les-mills-and-hyperhuman-bring-premium-fitness-classes-into-the-ai-powered-platform-era/">Health &amp; Fitness Association</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 24/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
