@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 26 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>26 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Tag en Slack: AI como teammate multiplayer que aprende de tu equipo</h3>
+      <p class="what">Anthropic lanzó Claude Tag, una integración donde @Claude se une a canales de Slack como un miembro más del equipo. Es multiplayer (todos ven lo que hace), aprende contexto del canal progresivamente, y puede actuar proactivamente si se habilita el modo "ambient". En Anthropic, el 65% del código de su equipo de producto ya se genera con su versión interna.</p>
+      <p class="why">Si coordinas un equipo pequeño por Slack, esto elimina el cuello de botella de copiar/pegar contexto a Claude — el AI ya sabe de qué habla tu canal.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/introducing-claude-tag">Anthropic</a> &bull; <a href="https://fortune.com/2026/06/23/anthropic-claude-tag-virtual-employee-tool-slack/">Fortune</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GPT-5.5-Cyber: OpenAI lanza modelo de ciberseguridad defensiva con acceso controlado</h3>
+      <p class="what">OpenAI presentó GPT-5.5-Cyber bajo el programa Daybreak, un modelo especializado en leer codebases grandes, trazar rutas de ataque, validar vulnerabilidades en sandbox, escribir parches y testearlos. Logra 85.6% en CyberGym y 39.5% en ExploitGym, superando al GPT-5.5 base. Solo disponible para empresas de seguridad verificadas.</p>
+      <p class="why">Si manejas infraestructura propia o tu producto procesa datos sensibles, este modelo automatiza el ciclo completo de detección-parche que antes requería un equipo dedicado.</p>
+      <p class="source"><a href="https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/">OpenAI</a> &bull; <a href="https://thehackernews.com/2026/06/openai-expands-daybreak-with-gpt-55.html">The Hacker News</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini 2.5 Pro Deep Think: razonamiento paralelo que supera a Fable 5 y GPT-5.5</h3>
+      <p class="what">Google activó Deep Think en Gemini 2.5 Pro, un modo de razonamiento que genera múltiples cadenas de pensamiento en paralelo antes de converger en una respuesta. Alcanza 82.4% en GPQA Diamond (vs 79.1% Fable 5, 76.3% GPT-5.5), 89.8% en MMLU-Pro y 94.1% en HumanEval+. Disponible en API, AI Studio y Vertex AI con ventana de 2M tokens.</p>
+      <p class="why">Con Fable 5 offline, este es el modelo de razonamiento más capaz disponible hoy — ideal si necesitas resolver problemas complejos de arquitectura o debugging multi-paso.</p>
+      <p class="source"><a href="https://blog.google/products-and-platforms/products/gemini/gemini-2-5-deep-think/">Google Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 DeepSeek V4-Pro: recorte de 75% en precios ahora es permanente</h3>
+      <p class="what">DeepSeek convirtió en permanente la promoción de 75% de descuento en V4-Pro, fijando precios en $0.44/M input y $0.87/M output — 5x más barato que GPT-5.5 en input y 17x en output. No es un descuento sino una ganancia de eficiencia: V4-Pro corre a un cuarto del compute y un décimo de la memoria de su predecesor en contextos largos.</p>
+      <p class="why">Para pipelines de alto volumen (procesamiento de documentos, agentes batch, RAG masivo), esto cambia la economía de lo que puedes construir sin levantar capital.</p>
+      <p class="source"><a href="https://www.engadget.com/2180062/deepseek-permanently-reduces-the-price-of-its-flagship-v4-model-by-75-percent/">Engadget</a> &bull; <a href="https://www.infoworld.com/article/4176709/deepseeks-steep-v4-pro-price-cut-escalates-ai-pricing-war.html">InfoWorld</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI y Broadcom revelan Jalapeño: primer chip custom de inferencia AI</h3>
+      <p class="what">OpenAI presentó Jalapeño, su primer procesador de inferencia diseñado con Broadcom en solo 9 meses — usando modelos de OpenAI para acelerar el propio diseño del chip. Es un ASIC de tamaño reticle optimizado para servir LLMs, con rendimiento por watt "sustancialmente mejor" que el estado del arte actual. Despliegue inicial previsto para fin de 2026.</p>
+      <p class="why">OpenAI construyendo su propio silicon señala que los costos de inferencia van a seguir bajando — lo que valida apostar por features AI-heavy en tu producto sin preocuparte por el unit economics a largo plazo.</p>
+      <p class="source"><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI</a> &bull; <a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google retrasa Gemini 3.5 Pro de junio a julio por problemas de calidad</h3>
+      <p class="what">Google pospuso la disponibilidad general de Gemini 3.5 Pro de junio a julio 2026 para refinar token efficiency y rendimiento en tareas de largo horizonte, según reportes de testers tempranos y datos de Polymarket. La decisión llega mientras Gemini 2.5 Pro con Deep Think acapara la atención como su modelo más capaz.</p>
+      <p class="why">Si estabas planificando migrar a 3.5 Pro, ajusta tu roadmap — Gemini 2.5 Pro Deep Think es la opción estable de Google por ahora.</p>
+      <p class="source"><a href="https://unrot.co/blogs/today-top-10-ai-news-june-26-2026">Unrot.co</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Mercado de AI coding tools: $9.3B en 2026 — Claude Code captura ~40%</h3>
+      <p class="what">Mordor Intelligence estima el mercado de herramientas de AI coding en $9.3B para 2026, con crecimiento anual del 26% hacia ~$30B en 2031. Claude Code lidera con aproximadamente 40% del mercado generativo de coding, mientras Anthropic se encamina a su primer profit operativo (~$559M en Q2) con revenue anualizado de $47B.</p>
+      <p class="why">El AI coding no es un nicho — es un mercado de $9B creciendo al 26%. Si estás construyendo herramientas para developers, este es el TAM que importa.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-26-2026">Build Fast with AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic acusa a Alibaba/Qwen del mayor ataque de destilación conocido</h3>
+      <p class="what">En carta al Senado de EE.UU., Anthropic denunció que operadores afiliados al lab Qwen de Alibaba ejecutaron 28.8 millones de exchanges con Claude a través de 25,000 cuentas fraudulentas entre abril y junio 2026, extrayendo capacidades de software engineering y razonamiento agente. La escala supera los ataques combinados de DeepSeek, MiniMax y Moonshot AI.</p>
+      <p class="why">Si expones un modelo o API valiosa, esto es un recordatorio de que necesitas monitoring de patrones de uso anómalos y rate limiting por cuenta desde el día uno.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html">CNBC</a> &bull; <a href="https://thenextweb.com/news/anthropic-accuses-alibaba-distillation-claude-qwen">The Next Web</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Fable 5 y Mythos 5 siguen offline: día 14 del bloqueo por exportaciones</h3>
+      <p class="what">Los modelos más avanzados de Anthropic cumplen dos semanas fuera de servicio tras la directiva del Departamento de Comercio de EE.UU. que exigió suspender acceso a extranjeros por una vulnerabilidad de jailbreak. Ingenieros senior de Anthropic se reunieron con funcionarios desde el 16 de junio, pero no hay fecha de retorno confirmada.</p>
+      <p class="why">Si tu producto depende de Fable 5, necesitas un fallback activo — Opus 4.8 o Gemini 2.5 Pro Deep Think son las alternativas más capaces disponibles hoy.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/fable-mythos-access">Anthropic</a> &bull; <a href="https://explainx.ai/blog/is-fable-5-back-2026">ExplainX</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Éxodo de Google: 4 investigadores clave salen hacia Anthropic y OpenAI en 6 días</h3>
+      <p class="what">John Jumper (Nobel de Química, creador de AlphaFold), Jonas Adler (coding de Gemini), Alexander Pritzel (training de AI) y Arthur Conmy (AI safety) dejaron Google DeepMind para unirse a Anthropic. Noam Shazeer (co-lead de Gemini) se fue a OpenAI. Analistas señalan que equity pre-IPO y acceso limitado a TPUs internos son factores clave.</p>
+      <p class="why">Anthropic sumando al creador de AlphaFold señala una apuesta fuerte en AI para ciencias — si construyes en biotech o health, estate atento a lo que lancen.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/">TechCrunch</a> &bull; <a href="https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Managed Agents: ahora con sandboxes auto-hospedados y Enterprise MCP Auth</h3>
+      <p class="what">Anthropic lanzó dos capacidades enterprise: sandboxes self-hosted para Managed Agents (el agente ejecuta herramientas dentro de tu infraestructura, no la de Anthropic) y Enterprise-Managed Authorization para MCP con Okta, donde admins provisionan conectores MCP centralizadamente y los usuarios obtienen acceso automático al login.</p>
+      <p class="why">Si estás construyendo agentes que tocan datos sensibles o APIs internas, esto elimina la objeción #1 de seguridad: "nuestros datos no pueden salir de nuestra infra".</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a> &bull; <a href="https://aiweekly.co/alerts/anthropic-introduces-admin-managed-mcp-auth-for-claude-enterprise">AI Weekly</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 VASA Fitness lanza app de coaching AI con análisis 3D de movimiento a $14.99/mes</h3>
+      <p class="what">VASA Fitness, cadena HVLP (high-value low-price), lanzó una app de personal training powered by Demotu que integra análisis 3D de movimiento, datos de composición corporal InBody, y programación AI adaptativa. Es la primera app en el segmento HVLP que combina estas tres capas en una experiencia de coaching continua entre sesiones presenciales.</p>
+      <p class="why">Este es el modelo a seguir para marketplaces de servicios profesionales: combinar hardware (scanner), AI (programación adaptativa) y relación humana (trainer) a un precio masivo.</p>
+      <p class="source"><a href="https://athletechnews.com/vasa-unveils-ai-powered-personal-training-app/">Athletech News</a> &bull; <a href="https://www.prnewswire.com/news-releases/vasa-fitness-launches-industry-first-personal-training-app-in-hvlp-category-redefining-coaching-at-scale-302737242.html">PR Newswire</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 26/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
