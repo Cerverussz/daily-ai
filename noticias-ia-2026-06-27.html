@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 27 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>27 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GPT-4.5 se retira de ChatGPT: OpenAI consolida su lineup en GPT-5.x</h3>
+      <p class="what">El 27 de junio OpenAI retir&oacute; definitivamente GPT-4.5 de ChatGPT tras un periodo de sunset de 30 d&iacute;as. Las conversaciones existentes migran autom&aacute;ticamente a GPT-5.5. El modelo sigui&oacute; disponible v&iacute;a API, pero en ChatGPT desaparece por completo &mdash; apenas 4 meses despu&eacute;s de su lanzamiento en febrero.</p>
+      <p class="why">Si tu producto depende de la API de OpenAI, la se&ntilde;al es clara: el ciclo de vida de los modelos se acorta dr&aacute;sticamente. Dise&ntilde;a tu integraci&oacute;n con abstracciones que soporten migraciones r&aacute;pidas.</p>
+      <p class="source"><a href="https://witho2.com/news/openai-gpt-4-5-retirement-june-2026-migration-guide">WithO2</a> &bull; <a href="https://www.ghacks.net/2026/06/03/openai-upgrades-gpt-5-5-instant-and-confirms-retirement-of-o3-and-gpt-4-5-models/">gHacks</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenCode supera 160K estrellas en GitHub y 7.5M de desarrolladores activos</h3>
+      <p class="what">OpenCode, el agente de coding open-source y model-agnostic creado en Toronto, alcanz&oacute; 178K estrellas en GitHub con 8 millones de usuarios y ~$25M en revenue anualizado. Soporta 75+ proveedores de modelos, integraci&oacute;n LSP que alimenta diagn&oacute;sticos del compilador al modelo, y corre en terminal, IDE o desktop.</p>
+      <p class="why">Es la alternativa open-source real a Claude Code y Cursor: sin vendor lock-in, sin suscripci&oacute;n obligatoria, y con la comunidad m&aacute;s grande del espacio. Si buscas un agente de coding para tu equipo peque&ntilde;o, eval&uacute;alo.</p>
+      <p class="source"><a href="https://www.abhs.in/blog/opencode-160k-github-stars-7-5m-developers-ai-coding-agent-june-2026">Abhishek Gautam</a> &bull; <a href="https://beststartup.ca/opencode-canada-2026-toronto-ai-startup/">BestStartup.ca</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini 3 Pro disponible en Android Studio Otter con Agent Mode mejorado</h3>
+      <p class="what">Google lanz&oacute; Gemini 3 Pro (18 de junio) optimizado para coding y experiencias ag&eacute;nticas, ya disponible en Android Studio Otter. Agent Mode ahora maneja tareas multi-archivo complejas: describes un objetivo de alto nivel y el agente planifica, ejecuta herramientas, modifica m&uacute;ltiples archivos e itera para corregir bugs autom&aacute;ticamente.</p>
+      <p class="why">Para desarrolladores Android, esto cambia el flujo de trabajo diario: Agent Mode con Gemini 3 Pro puede generar y depurar UIs Compose, resolver errores de Gradle y analizar crashes desde Logcat en sesi&oacute;n continua.</p>
+      <p class="source"><a href="https://developer.android.com/blog/posts/gemini-3-is-now-available-for-ai-assistance-in-android-studio">Android Developers Blog</a> &bull; <a href="https://developer.android.com/studio/gemini/agent-mode">Android Studio Agent Mode</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Apple Core AI: nuevo framework on-device para modelos generativos en iOS 20</h3>
+      <p class="what">Presentado en WWDC 2026, Core AI reemplaza a Core ML como el framework nativo para ejecutar modelos generativos en Apple Silicon. Incluye herramientas Python para convertir modelos PyTorch, una colecci&oacute;n curada de modelos open-source (Qwen, Mistral, SAM3) optimizados para el chip, y un Swift API unificado que tambi&eacute;n puede llamar a Claude y Gemini del lado servidor.</p>
+      <p class="why">Gratis para apps con menos de 2M de descargas. Si desarrollas para iOS, puedes enviar features de AI on-device sin costos de API &mdash; un diferencial real para apps independientes.</p>
+      <p class="source"><a href="https://developer.apple.com/videos/play/wwdc2026/324/">Apple WWDC26 - Meet Core AI</a> &bull; <a href="https://appcircle.io/blog/wwdc26-apple-core-ai-framework-explained">Appcircle</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Patronus AI lanza Digital World Models para stress-testing de agentes AI</h3>
+      <p class="what">Patronus AI (Serie B de $50M, 25 de junio) present&oacute; Digital World Models: entornos de simulaci&oacute;n a gran escala que replican sitios web y sistemas internos para entrenar y evaluar agentes AI en workflows digitales complejos. Usan reinforcement learning para premiar completaci&oacute;n exitosa y penalizar errores antes de poner agentes en producci&oacute;n.</p>
+      <p class="why">Si est&aacute;s construyendo agentes aut&oacute;nomos para tu producto (onboarding, soporte, procesamiento de &oacute;rdenes), ahora hay infraestructura dedicada para testearlos system&aacute;ticamente antes del deploy.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/">TechCrunch</a> &bull; <a href="https://www.patronus.ai/announcements/announcing-our-50m-series-b">Patronus AI</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 &Eacute;xodo de talento en Google DeepMind: Shazeer a OpenAI, Jumper (Nobel) a Anthropic</h3>
+      <p class="what">En 6 d&iacute;as (18-24 junio), cuatro investigadores senior dejaron DeepMind: Noam Shazeer (co-autor de Transformers, co-l&iacute;der de Gemini) se fue a OpenAI; John Jumper (Nobel de Qu&iacute;mica, l&iacute;der de AlphaFold) y dos colegas se unieron a Anthropic. Alphabet perdi&oacute; $269B en capitalizaci&oacute;n y el lanzamiento de GPT-5.6 se movi&oacute; a julio.</p>
+      <p class="why">La guerra de talento redefine qu&eacute; labs tendr&aacute;n los mejores modelos en 6-12 meses. Para founders que eligen proveedor de AI, Anthropic sale fortalecida con Jumper &mdash; se&ntilde;al de que su roadmap cient&iacute;fico se expande m&aacute;s all&aacute; del texto.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/">TechCrunch</a> &bull; <a href="https://fortune.com/2026/06/23/google-deepmind-ai-researcher-departures-raise-doubts-about-ability-to-win-the-ai-race-shazeer-jumper-eye-on-ai/">Fortune</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google AI Studio permite crear apps Android completas en minutos</h3>
+      <p class="what">Anunciado en Google I/O 2026, AI Studio ahora genera apps Android funcionales desde una descripci&oacute;n en lenguaje natural. El proceso que antes tomaba semanas de setup y c&oacute;digo se reduce a minutos, produciendo proyectos con UI, l&oacute;gica y estructura listos para iterar.</p>
+      <p class="why">Esto baja radicalmente la barrera para prototipar ideas en Android. Para founders t&eacute;cnicos, es la v&iacute;a m&aacute;s r&aacute;pida para validar un concepto m&oacute;vil antes de invertir en desarrollo completo.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/19/googles-ai-studio-now-lets-anyone-build-android-apps-in-minutes/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>EE.UU. autoriza a Anthropic liberar Mythos 5 a ~100 empresas e instituciones</h3>
+      <p class="what">El 27 de junio, el gobierno de EE.UU. concedi&oacute; a Anthropic permiso parcial para distribuir Claude Mythos 5 (su modelo m&aacute;s potente, sin safety classifiers) a aproximadamente 100 empresas de infraestructura cr&iacute;tica y agencias federales. El acceso se limita a organizaciones listadas en el Anexo A de la carta Lutnick. Fable 5 (la versi&oacute;n p&uacute;blica con classifiers) sigue suspendida sin fecha de retorno.</p>
+      <p class="why">Fable 5 fue brevemente el mejor modelo p&uacute;blico del mundo. Su suspensi&oacute;n continuada significa que Opus 4.x sigue siendo tu techo pr&aacute;ctico con Anthropic. Monitorea la situaci&oacute;n &mdash; cuando Fable 5 vuelva, ser&aacute; un salto significativo.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html">CNBC</a> &bull; <a href="https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies">Semafor</a> &bull; <a href="https://9to5mac.com/2026/06/26/anthropic-cleared-to-release-claude-mythos-5-to-over-100-us-institutions/">9to5Mac</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code 2.1.191: /rewind, MCP m&aacute;s robusto y 37% menos CPU en streaming</h3>
+      <p class="what">La actualizaci&oacute;n del 25 de junio a&ntilde;ade <code>/rewind</code> para restaurar contexto despu&eacute;s de <code>/clear</code>, mejora la autenticaci&oacute;n MCP con re-auth autom&aacute;tica en errores 401/403, y reduce el uso de CPU durante streaming en ~37%. Tambi&eacute;n incluye <code>claude mcp login/logout</code> desde la terminal.</p>
+      <p class="why">El /rewind resuelve un dolor real: ya no pierdes contexto al limpiar el chat. Las mejoras de MCP hacen m&aacute;s viable usar Claude Code como hub central conectado a tus herramientas.</p>
+      <p class="source"><a href="https://www.explainx.ai/blog/claude-code-2-1-191-rewind-mcp-background-agents-2026">ExplainX</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Wearables 2026: de trackers pasivos a coaches AI con diagn&oacute;sticos avanzados</h3>
+      <p class="what">El ecosistema de wearables en junio 2026 consolida el salto de tracking pasivo a coaching activo con AI. WHOOP lanz&oacute; Advanced Labs con Quest Diagnostics: ~60 biomarcadores sangu&iacute;neos integrados con datos de strain, recovery y sue&ntilde;o en la app. Los dispositivos de gama alta ahora incluyen asistentes generativos que analizan datos fisiol&oacute;gicos y dan intervenciones personalizadas en tiempo real.</p>
+      <p class="why">La integraci&oacute;n wearable + biomarkers + AI coaching define el modelo de negocio para plataformas de salud y fitness. Si est&aacute;s construyendo un marketplace de servicios de bienestar, la API de datos de estos dispositivos es tu capa de diferenciaci&oacute;n.</p>
+      <p class="source"><a href="https://science-technology.news-articles.net/content/2026/06/22/2026-wearable-tech-trends-ai-coaching-health-diagnostics.html">Science &amp; Technology News</a> &bull; <a href="https://athletechnews.com/how-wearables-are-evolving-from-fitness-trackers-to-health-systems/">Athletech News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OxeFit supera 1M de sesiones B2B con AI biom&eacute;canica en tiempo real</h3>
+      <p class="what">OxeFit, con m&aacute;s de $100M recaudados, super&oacute; el mill&oacute;n de sesiones activas en B2B con OxeAI, su plataforma de entrenamiento de fuerza inteligente. El sistema mide fuerza, rango de movimiento, balance y output en cada repetici&oacute;n usando puntos de datos etiquetados con AI para personalizar el entrenamiento en tiempo real, operando en healthcare, deportes, seguridad p&uacute;blica y consumo.</p>
+      <p class="why">Es el caso de referencia para AI + hardware en fitness B2B: datos biom&eacute;canicos por repetici&oacute;n generan un moat de personalizaci&oacute;n que el software puro no puede replicar. Modelo a estudiar si est&aacute;s en el espacio de sports tech.</p>
+      <p class="source"><a href="https://athletechnews.com/the-most-innovative-fitness-wellness-companies-of-2026/">Athletech News - Most Innovative 2026</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 27/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
