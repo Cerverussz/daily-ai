@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 27 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>27 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Design se renueva: /design-sync con Claude Code, design systems y fix al consumo de tokens</h3>
+      <p class="what">Anthropic lanz&oacute; una actualizaci&oacute;n mayor de Claude Design con importaci&oacute;n de design systems desde GitHub o archivos de dise&ntilde;o, y un comando <code>/design-sync</code> bidireccional que conecta prototipos directamente con tu codebase en Claude Code. Tambi&eacute;n resolvi&oacute; el problema de consumo excesivo de tokens que hac&iacute;a inviable la herramienta para usuarios Pro &mdash; ahora comparte l&iacute;mites con chat y Claude Code en lugar de usar un pool separado.</p>
+      <p class="why">Si est&aacute;s construyendo producto, ahora puedes prototipar UI en Claude Design y hacer handoff directo a tu codebase sin reconstruir componentes ni quemar tu cuota semanal.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem">VentureBeat</a> &bull; <a href="https://chatforest.com/builders-log/claude-design-june-2026-design-system-imports-code-sync-token-fix-builder-guide/">ChatForest</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Snowflake adquiere Natoma: gateway MCP gobernado para agentes AI empresariales</h3>
+      <p class="what">Snowflake firm&oacute; acuerdo definitivo para adquirir Natoma, plataforma enterprise de Model Context Protocol que act&uacute;a como gateway centralizado de MCP servers. Natoma verifica identidad, aplica pol&iacute;ticas de acceso y audita cada tool call de agentes AI antes de ejecutarla.</p>
+      <p class="why">MCP se consolida como infra cr&iacute;tica para agentes &mdash; si expones servicios via MCP, ahora hay una capa de governance enterprise que tus clientes corporativos van a exigir.</p>
+      <p class="source"><a href="https://www.snowflake.com/en/news/press-releases/snowflake-announces-intent-to-acquire-natoma-providing-secure-connectivity-for-the-agentic-enterprise/">Snowflake</a> &bull; <a href="https://www.cio.com/article/4178160/snowflake-to-acquire-mcp-focused-natoma-to-boost-governance-for-ai-agents.html">CIO</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic lanza Workload Identity Federation: API keys est&aacute;ticas ahora son opcionales</h3>
+      <p class="what">WIF ya est&aacute; GA en la Claude Platform. Reemplaza las API keys <code>sk-ant-...</code> con credenciales OIDC de corta duraci&oacute;n emitidas por tu identity provider: AWS IAM, GCP, GitHub Actions, Kubernetes, Azure Entra ID u Okta. Las API keys tradicionales siguen funcionando para migraci&oacute;n gradual.</p>
+      <p class="why">Si tienes agentes en producci&oacute;n con API keys rotando manualmente, WIF elimina ese problema y alinea tu infra AI con el modelo de seguridad que ya usas para tus servicios cloud.</p>
+      <p class="source"><a href="https://claude.com/blog/workload-identity-federation">Anthropic</a> &bull; <a href="https://platform.claude.com/docs/en/manage-claude/workload-identity-federation">Claude Platform Docs</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>GPT-4.5 se retira de ChatGPT: migraci&oacute;n autom&aacute;tica a GPT-5.5</h3>
+      <p class="what">OpenAI complet&oacute; el sunset de GPT-4.5 en ChatGPT el 27 de junio tras un periodo de transici&oacute;n de 30 d&iacute;as. Las conversaciones existentes migran autom&aacute;ticamente al modelo GPT-5.5 correspondiente, aunque la API sigue soportando GPT-4.5 por separado.</p>
+      <p class="why">Si tu producto depende de GPT-4.5 via API todav&iacute;a tienes tiempo, pero es hora de testear GPT-5.5 para verificar que no rompe tu prompt engineering actual.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-27-2026">BuildFastWithAI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GPT-5.6 se retrasa a julio: predicci&oacute;n Polymarket colapsa del 83% al 18%</h3>
+      <p class="what">La semana del 22-27 de junio pas&oacute; sin anuncio de OpenAI sobre GPT-5.6. El mercado de predicci&oacute;n Polymarket para lanzamiento antes del 28 de junio colaps&oacute; del 83% al ~18%, moviendo la ventana esperada hacia julio.</p>
+      <p class="why">La incertidumbre sobre GPT-5.6 favorece consolidar tu stack con Claude Fable 5 o GPT-5.5 que ya est&aacute;n disponibles y probados en producci&oacute;n.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-27-2026">BuildFastWithAI</a> &bull; <a href="https://www.geeky-gadgets.com/gpt-5-6-ai-price-war/">Geeky Gadgets</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Inferencia on-device cruza el umbral sub-20ms en Android: production-ready</h3>
+      <p class="what">La inferencia AI on-device en smartphones cruz&oacute; el umbral cr&iacute;tico de sub-20ms para modelos de computer vision en producci&oacute;n. El NPU del Snapdragon 8 Elite alcanza 45 TOPS y ejecuta modelos 7B a 20+ tokens/seg, con zero-copy buffer sharing entre el camera HAL y el inference engine.</p>
+      <p class="why">El threshold de 20ms hace viable features AI en tiempo real dentro de tu app Android &mdash; desde AR hasta procesamiento de c&aacute;mara &mdash; sin round-trip al cloud.</p>
+      <p class="source"><a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms/">AlephZero Labs</a> &bull; <a href="https://www.qualcomm.com/news/releases/2026/01/qualcomm-s-ie_iot-expansion-is-complete--edge-ai-unleashed-for-d">Qualcomm</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Guerra de precios OpenAI vs Anthropic: tokens m&aacute;s baratos en v&iacute;speras de IPOs hist&oacute;ricos</h3>
+      <p class="what">OpenAI eval&uacute;a recortes significativos de precios de tokens ante la competencia de Anthropic, cuyo revenue anualizado creci&oacute; de $1B a $47B en 15 meses. Ambas presentaron IPOs confidenciales esta semana &mdash; OpenAI a $852B de valoraci&oacute;n, Anthropic a $965B &mdash; en lo que ser&aacute; la mayor prueba de qu&eacute; modelo de negocio AI sobrevive una guerra de precios.</p>
+      <p class="why">Una guerra de precios entre los dos grandes es la mejor noticia si construyes sobre LLMs &mdash; tus costos de inference van a bajar significativamente en los pr&oacute;ximos meses.</p>
+      <p class="source"><a href="https://www.bloomberg.com/news/articles/2026-06-11/openai-weighs-major-price-cuts-to-win-anthropic-users-wsj-says">Bloomberg</a> &bull; <a href="https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html">CNBC</a> &bull; <a href="https://www.entrepreneur.com/business-news/a-price-war-is-brewing-between-openai-and-anthropic">Entrepreneur</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>&Eacute;xodo de talento en Google DeepMind: 4 investigadores senior salen en 6 d&iacute;as</h3>
+      <p class="what">Cuatro salidas de alto perfil de Google DeepMind en una semana: Noam Shazeer (co-autor de &ldquo;Attention Is All You Need&rdquo;) a OpenAI; John Jumper (Nobel de Qu&iacute;mica 2024 por AlphaFold) a Anthropic; Jonas Adler y Alexander Pritzel tambi&eacute;n a Anthropic. Las acciones de Google cayeron m&aacute;s de 5%, borrando $269B en valor de mercado.</p>
+      <p class="why">El talento migra hacia las IPOs y los recursos de c&oacute;mputo &mdash; una se&ntilde;al clara de qu&eacute; labs van a tener los mejores modelos en los pr&oacute;ximos 12-18 meses.</p>
+      <p class="source"><a href="https://fortune.com/2026/06/23/google-deepmind-ai-researcher-departures-raise-doubts-about-ability-to-win-the-ai-race-shazeer-jumper-eye-on-ai/">Fortune</a> &bull; <a href="https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/">TechCrunch</a> &bull; <a href="https://www.bloomberg.com/news/articles/2026-06-24/google-poised-to-lose-two-more-high-profile-ai-staffers-to-anthropic">Bloomberg</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>EE.UU. desbloquea Claude Mythos 5 para m&aacute;s de 100 instituciones</h3>
+      <p class="what">El Departamento de Comercio de EE.UU. levant&oacute; parcialmente el bloqueo sobre Claude Mythos 5 el 26 de junio, autorizando acceso a m&aacute;s de 100 instituciones estadounidenses. El secretario Howard Lutnick cit&oacute; &ldquo;progreso significativo&rdquo; en negociaciones diarias con Anthropic. La carta es silenciosa sobre Fable 5, que sigue sin fecha de regreso.</p>
+      <p class="why">Mythos 5 vuelve al juego para enterprise y gobierno, pero Fable 5 sigue bloqueado &mdash; si tu producto depende de Fable, mant&eacute;n un fallback a Opus 4.8 listo.</p>
+      <p class="source"><a href="https://9to5mac.com/2026/06/26/anthropic-cleared-to-release-claude-mythos-5-to-over-100-us-institutions/">9to5Mac</a> &bull; <a href="https://fortune.com/2026/06/27/anthropic-mythos-5-ai-model-us-commerce-department-clearance-fable/">Fortune</a> &bull; <a href="https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies">Semafor</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic acusa a Alibaba de distillation masiva: 25,000 cuentas falsas y 29M de conversaciones</h3>
+      <p class="what">Anthropic denunci&oacute; ante el Senado de EE.UU. que operadores vinculados a Alibaba Qwen usaron ~25,000 cuentas fraudulentas para extraer 28.8 millones de intercambios de Claude entre abril y junio de 2026. El ataque apunt&oacute; espec&iacute;ficamente a las capacidades de software engineering y razonamiento ag&eacute;ntico de los modelos.</p>
+      <p class="why">Si ofreces un servicio AI via API, este caso es un recordatorio de que la distillation es un vector de ataque real &mdash; implementa rate limiting y abuse monitoring desde el d&iacute;a uno.</p>
+      <p class="source"><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-claims-that-chinas-alibaba-illicitly-distilled-its-models-from-april-to-june-2026-says-effort-involved-25-000-fake-accounts-and-28-8-million-exchanges-on-claude">Tom's Hardware</a> &bull; <a href="https://www.bloomberg.com/news/articles/2026-06-24/anthropic-accuses-alibaba-of-illicitly-accessing-its-ai-models">Bloomberg</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Les Mills + Hyperhuman: clases premium de fitness disponibles dentro de plataformas AI</h3>
+      <p class="what">Les Mills y Hyperhuman anunciaron una alianza que integra clases premium como BODYPUMP&trade;, BODYCOMBAT&trade; y BODYBALANCE&trade; directamente dentro de la plataforma AI de Hyperhuman. Equipos con suscripci&oacute;n paid pueden incorporar este contenido premium en sus propios productos digitales de fitness.</p>
+      <p class="why">Es el modelo que viene para marketplaces de servicios profesionales: contenido premium + AI personalizada embebida en la plataforma de terceros, no como silo separado.</p>
+      <p class="source"><a href="https://www.healthandfitness.org/les-mills-and-hyperhuman-bring-premium-fitness-classes-into-the-ai-powered-platform-era/">Health &amp; Fitness Association</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Wearables fitness evolucionan de trackers a coaches AI con diagn&oacute;sticos avanzados</h3>
+      <p class="what">En 2026 los wearables de fitness cruzaron el umbral de tracking pasivo a coaching activo con AI. Plataformas como SensAI funcionan como LLM coaches con memoria persistente: leen HRV, sue&ntilde;o y frecuencia card&iacute;aca en reposo, recuerdan lesiones y preferencias entre sesiones, y reescriben planes de entrenamiento en respuesta a datos biom&eacute;tricos.</p>
+      <p class="why">El patr&oacute;n LLM + memoria + datos de sensores es replicable en cualquier vertical de coaching profesional &mdash; desde nutrici&oacute;n hasta rehabilitaci&oacute;n o entrenamiento deportivo.</p>
+      <p class="source"><a href="https://www.sensai.fit/blog/best-ai-workout-app">SensAI</a> &bull; <a href="https://science-technology.news-articles.net/content/2026/06/22/2026-wearable-tech-trends-ai-coaching-health-diagnostics.html">Science &amp; Technology News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 27/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
