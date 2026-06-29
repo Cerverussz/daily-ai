@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 28 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>28 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenCode alcanza 160K stars y 7.5M devs/mes: el coding agent open-source dominante</h3>
+      <p class="what">OpenCode se posiciona como el agente de coding open-source m&aacute;s adoptado, con acceso model-agnostic a 75+ proveedores e integraci&oacute;n LSP que alimenta al modelo con diagn&oacute;sticos del compilador, tipos y firmas de funciones. Funciona en terminal, IDE o desktop y soporta TypeScript, Python, Rust, Go, Java y 18+ lenguajes.</p>
+      <p class="why">Cero vendor lock-in y gratis: si eres founder solo, es una alternativa seria a los $32+/mes de Cursor sin sacrificar calidad.</p>
+      <p class="source"><a href="https://opencode.ai/">OpenCode</a> &bull; <a href="https://www.developersdigest.tech/blog/opencode-developer-guide-2026">Developers Digest</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Figma lanza Motion + Code Layers en Config 2026: del dise&ntilde;o al c&oacute;digo sin fricci&oacute;n</h3>
+      <p class="what">Figma Motion es una herramienta nativa de animaci&oacute;n con keyframes, spring physics y curvas b&eacute;zier integrada directamente en el canvas. Las animaciones exportan a CSS, JSON, React, MP4, GIF y SVG animado, y Code Layers sincroniza en vivo con GitHub.</p>
+      <p class="why">Si est&aacute;s construyendo un marketplace o producto con frontend, tu pipeline dise&ntilde;o-producci&oacute;n se acorta dr&aacute;sticamente: anima una vez en tu design system, exporta a React.</p>
+      <p class="source"><a href="https://www.figma.com/blog/config-2026-recap/">Figma Blog</a> &bull; <a href="https://www.cmswire.com/digital-experience/figma-launches-code-layers-motion-at-config-2026/">CMSWire</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot migra a billing por uso con AI Credits</h3>
+      <p class="what">Desde junio, todos los planes de Copilot usan AI Credits: Pro ($10/mes, $15 en cr&eacute;ditos), Pro+ ($39/mes, $70), Max ($200 en cr&eacute;ditos). Fable 5 fue habilitado en Copilot el mismo d&iacute;a de su lanzamiento en Anthropic.</p>
+      <p class="why">La era del flat-rate en coding AI termin&oacute;; trackea tu consumo real y compara costo por tarea entre Copilot, Cursor, Claude Code y el gratuito OpenCode.</p>
+      <p class="source"><a href="https://www.developersdigest.tech/blog/ai-coding-tools-pricing-june-2026">Developers Digest</a> &bull; <a href="https://www.cosmicjs.com/blog/claude-code-vs-github-copilot-vs-cursor-which-ai-coding-agent-should-you-use-2026">CosmicJS</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple abre Foundation Models a desarrolladores: AI on-device gratis para indie devs</h3>
+      <p class="what">AFM 3 Core Advanced es un modelo sparse de 20B par&aacute;metros que activa solo 1-4B por inferencia, corriendo enteramente on-device. Acceso gratuito a Apple Foundation Models en Private Cloud Compute para devs con &lt;2M descargas first-time en App Store. Anthropic y Google extender&aacute;n el framework con Swift packages para Claude y Gemini.</p>
+      <p class="why">AI on-device gratis para indies elimina la mayor barrera; desarrolladores Android: esto es una se&ntilde;al competitiva directa, esperen respuesta de Google con Gemini Nano.</p>
+      <p class="source"><a href="https://developer.apple.com/wwdc26/guides/apple-intelligence/">Apple Developer</a> &bull; <a href="https://www.macrumors.com/2026/06/09/apple-outlines-major-ai-and-developer-tool-updates/">MacRumors</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini 3.5 Pro se acerca a GA con contexto de 2M tokens y Deep Think</h3>
+      <p class="what">Google prepara el GA de Gemini 3.5 Pro con ventana de contexto de 2 millones de tokens &mdash; la m&aacute;s grande en cualquier modelo frontier en producci&oacute;n &mdash; m&aacute;s modo Deep Think de razonamiento. El Gemini CLI fue descontinuado el 18 de junio; la migraci&oacute;n a Antigravity CLI es obligatoria.</p>
+      <p class="why">2M tokens habilita razonamiento a escala de codebase completo; si est&aacute;s en Android/Kotlin, este es tu modelo nativo de ecosistema.</p>
+      <p class="source"><a href="https://www.developersdigest.tech/blog/ai-coding-tools-pricing-june-2026">Developers Digest</a> &bull; <a href="https://thenewstack.io/claude-code-vs-cursor-vs-codex-vs-antigravity-2026/">The New Stack</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 &ldquo;Agentjacking&rdquo;: la nueva amenaza de seguridad para AI coding agents</h3>
+      <p class="what">Emerge un vector de ataque de prompt injection dirigido espec&iacute;ficamente a agentes de coding AI. Los atacantes crean reportes de error falsos con instrucciones ocultas en markdown que los agentes interpretan como gu&iacute;a leg&iacute;tima, inyectando potencialmente c&oacute;digo malicioso en proyectos.</p>
+      <p class="why">Si usas cualquier AI coding agent, revisa el c&oacute;digo generado con el mismo escepticismo que PRs de terceros; nunca permitas auto-commit a ramas de producci&oacute;n sin revisi&oacute;n humana.</p>
+      <p class="source"><a href="https://blog.logrocket.com/ai-dev-tool-power-rankings/">LogRocket</a> &bull; <a href="https://aiforesight360.com/biggest-ai-developments-june-2026/">AI Foresight 360</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Startup Slash quema $81K en tokens de Claude en un d&iacute;a: lecci&oacute;n de &ldquo;vibe coding&rdquo;</h3>
+      <p class="what">Un empleado de la fintech Slash gast&oacute; $81,267 en tokens de Anthropic Claude en un solo d&iacute;a construyendo un juego (&ldquo;Brainrot Shooter&rdquo;), forzando a la empresa a revertir su iniciativa de AI coding. El incidente se viraliz&oacute; como advertencia sobre el uso no monitoreado de AI.</p>
+      <p class="why">Si eres founder y tu equipo hace &ldquo;vibe coding&rdquo;, pon caps duros de gasto y l&iacute;mites por API key HOY; el billing por uso de AI escala m&aacute;s r&aacute;pido que cualquier factura de cloud.</p>
+      <p class="source"><a href="https://finance.yahoo.com/technology/ai/articles/fintech-company-said-employee-burned-044045883.html">Yahoo Finance</a> &bull; <a href="https://www.ibtimes.co.uk/fintech-ai-coding-blunder-viral-success-1805135">IBTimes</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>EE.UU. levanta parcialmente el ban de exportaci&oacute;n de Anthropic: Mythos 5 vuelve para ~100 organizaciones</h3>
+      <p class="what">El 26 de junio, la administraci&oacute;n Trump otorg&oacute; permiso a Anthropic para liberar Mythos 5 a ~100 empresas y agencias federales verificadas, tras la directiva del 12 de junio que suspendi&oacute; acceso a extranjeros a Fable 5 y Mythos 5. El ban original fue por un jailbreak reportado sobre capacidades de ciberseguridad de Mythos.</p>
+      <p class="why">Los controles de exportaci&oacute;n son ahora un riesgo operacional concreto: arquitectura tu producto para que pueda caer a modelos no restringidos (Opus 4, Sonnet) sin romperse.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html">CNBC</a> &bull; <a href="https://www.anthropic.com/news/fable-mythos-access">Anthropic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5 sale del tier gratuito: ahora requiere suscripci&oacute;n paga</h3>
+      <p class="what">Desde el 23 de junio, Fable 5 ya no est&aacute; incluido sin costo extra en suscripciones Pro, Max, Team y Enterprise, terminando la ventana de 13 d&iacute;as gratuitos desde su lanzamiento el 9 de junio. Fable 5 tiene 95% en SWE-bench, destrozando el r&eacute;cord anterior del 88%.</p>
+      <p class="why">Fable 5 es un salto genuino en coding capability, pero el free ride termin&oacute;; eval&uacute;a si el uplift justifica el costo para tu caso espec&iacute;fico vs. Opus 4.</p>
+      <p class="source"><a href="https://llm-stats.com/llm-updates">LLM Stats</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic acusa a Alibaba/Qwen del mayor ataque de destilaci&oacute;n conocido: 28.8M interacciones</h3>
+      <p class="what">Anthropic envi&oacute; una carta al Comit&eacute; Bancario del Senado de EE.UU. alegando que operadores afiliados al lab Qwen de Alibaba ejecutaron el mayor ataque de destilaci&oacute;n conocido contra modelos Claude, usando ~25,000 cuentas fraudulentas y generando 28.8M interacciones entre abril y junio de 2026.</p>
+      <p class="why">Los ataques de destilaci&oacute;n son ahora una preocupaci&oacute;n a nivel industria; tu ventaja competitiva por elecci&oacute;n de modelo enfrenta riesgo sist&eacute;mico de extracci&oacute;n.</p>
+      <p class="source"><a href="https://medium.com/@davidakpovi/ai-news-week-of-june-22-to-june-28-2026-ed7b09829a67">Medium</a> &bull; <a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026">BuildFastWithAI</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple Health+ AI Coach: de trackear datos a coaching automatizado</h3>
+      <p class="what">Apple Health+ AI Coach correlaciona comidas con frecuencia card&iacute;aca, sue&ntilde;o y datos de entrenamiento para entregar gu&iacute;a personalizada de nutrici&oacute;n y ejercicio dentro de la app Health. El 80% de usuarios de wearables revisa datos diariamente pero &lt;10% act&uacute;a, creando una oportunidad masiva para intervenci&oacute;n impulsada por AI.</p>
+      <p class="why">Si construyes un marketplace de coaching o plataforma deportiva, el est&aacute;ndar se movi&oacute; de &ldquo;mostrar datos&rdquo; a &ldquo;actuar sobre datos&rdquo; con ajustes en tiempo real basados en wearables.</p>
+      <p class="source"><a href="https://apple.gadgethacks.com/news/apple-health-ai-coach-launches-2026-what-to-expect/">Gadget Hacks</a> &bull; <a href="https://yourhealthmagazine.net/article/health-technology/how-personalized-fitness-and-nutrition-apps-are-transforming-health-outcomes-in-2026/">Your Health Magazine</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 28/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
