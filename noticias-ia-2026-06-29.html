@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 29 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>29 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft Scout: agente personal always-on integrado en todo M365</h3>
+      <p class="what">Microsoft lanz&oacute; Scout, un agente AI aut&oacute;nomo con identidad Entra propia que monitorea proactivamente Teams, Outlook, OneDrive y SharePoint. Identifica tareas pendientes, surfacea contexto y prepara borradores antes de que lo pidas, incluido en M365 E7 a $99/usuario/mes.</p>
+      <p class="why">Esto establece el est&aacute;ndar de lo que los usuarios esperan de agentes aut&oacute;nomos &mdash; si est&aacute;s construyendo un SaaS o marketplace, tus usuarios pronto exigir&aacute;n este nivel de proactividad.</p>
+      <p class="source"><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/">Microsoft Blog</a> &bull; <a href="https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenCode supera 178K estrellas en GitHub: agente de coding open-source se consolida</h3>
+      <p class="what">OpenCode, agente de coding MIT-licensed y model-agnostic (terminal, IDE, desktop), alcanz&oacute; 178K estrellas y 7.5M+ devs activos mensuales. Incluye integraci&oacute;n LSP con type info real en 18+ lenguajes, modos plan/build, multi-agente, y soporte para 75+ proveedores incluyendo Claude, GPT y Gemini.</p>
+      <p class="why">Si no quieres vendor lock-in en tu tooling de coding, OpenCode te da un agente clase Cursor/Claude Code que puedes apuntar a cualquier modelo y controlar completamente.</p>
+      <p class="source"><a href="https://opencode.ai/">OpenCode</a> &bull; <a href="https://www.developersdigest.tech/blog/opencode-developer-guide-2026">Developer&apos;s Digest</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google I/O 2026: crea apps Android con prompts + Android CLI para agentes AI</h3>
+      <p class="what">Google permite construir apps Android nativas directamente en AI Studio seleccionando &ldquo;Build an Android app&rdquo; y escribiendo un prompt, con soporte nativo de Kotlin. El nuevo Android CLI estable habilita a agentes AI para descargar SDKs, ejecutar apps en dispositivos y automatizar builds.</p>
+      <p class="why">El ciclo de prototipado Android pasa de d&iacute;as a minutos, y el CLI significa que tus agentes de coding pueden ahora construir, testear y deployar apps Android end-to-end.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/">Google Blog</a> &bull; <a href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/">Google Developers</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple abre Foundation Models a todos los devs &mdash; tier gratuito para apps peque&ntilde;as</h3>
+      <p class="what">En WWDC 2026, Apple expandi&oacute; su framework Foundation Models a una plataforma h&iacute;brida: modelos on-device con input de imagen, integraci&oacute;n server-side (Claude y Gemini v&iacute;a la misma Swift API), y Dynamic Profiles para workflows multi-agente. Devs con menos de 2M descargas de primera vez acceden gratis a Private Cloud Compute.</p>
+      <p class="why">Si est&aacute;s construyendo una app iOS, ahora tienes AI on-device + cloud gratis con una sola API Swift &mdash; la barrera de costo para devs indie desaparece.</p>
+      <p class="source"><a href="https://www.apple.com/newsroom/2026/06/apple-aids-app-development-with-new-intelligence-frameworks-and-advanced-tools/">Apple Newsroom</a> &bull; <a href="https://www.mindstudio.ai/blog/apple-wwdc-2026-ai-strategy-what-it-means-for-builders">MindStudio</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini Nano 4 + AICore: AI on-device para apps Android sin conexi&oacute;n</h3>
+      <p class="what">Las ML Kit GenAI APIs de Google (actualizadas el 19 de junio) ejecutan Gemini Nano on-device para summarization, proofreading y rewriting sin red. El AICore Developer Preview da acceso anticipado a modelos Gemini Nano 4 con c&oacute;digo forward-compatible que se actualiza autom&aacute;ticamente con nuevo hardware.</p>
+      <p class="why">Para apps Android de marketplace o servicios, AI on-device significa procesamiento de texto instant&aacute;neo, cero costos cloud y features que funcionan offline.</p>
+      <p class="source"><a href="https://developer.android.com/ai/gemini-nano">Android Developers</a> &bull; <a href="https://android-developers.googleblog.com/2026/04/AI-Core-Developer-Preview.html">Android Developers Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI presenta GPT-5.6 en tres tiers: Sol, Terra, Luna</h3>
+      <p class="what">OpenAI present&oacute; GPT-5.6 con tres niveles: Sol (flagship para problemas complejos), Terra (competitivo con GPT-5.5 a mitad de precio) y Luna (r&aacute;pido y econ&oacute;mico para volumen). La Casa Blanca solicit&oacute; release limitado a partners aprobados por el gobierno primero.</p>
+      <p class="why">La estructura tiered refleja c&oacute;mo los sistemas en producci&oacute;n necesitan modelos diferentes para tareas diferentes, pero el gating gubernamental genera incertidumbre de acceso para builders independientes.</p>
+      <p class="source"><a href="https://openai.com/index/previewing-gpt-5-6-sol/">OpenAI</a> &bull; <a href="https://www.cnbc.com/2026/06/26/openai-anthropic-new-ai-spending-reality-as-users-shift-to-efficiency.html">CNBC</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot migra a billing por uso; Cursor alcanza $2B ARR</h3>
+      <p class="what">GitHub cambi&oacute; Copilot a facturaci&oacute;n basada en uso el 1 de junio, eliminando el precio fijo por seat. Cursor alcanz&oacute; $2B+ de revenue anualizado (duplic&aacute;ndose en 3 meses), y Claude Code empat&oacute; a Cursor con 18% de market share entre coding assistants.</p>
+      <p class="why">Las herramientas de AI coding se convierten en infraestructura medida, no suscripciones &mdash; planifica tus costos de desarrollo como utility, no como licencia.</p>
+      <p class="source"><a href="https://tech-insider.org/ie/ai-coding-assistants-2026/">Tech Insider</a> &bull; <a href="https://www.morphllm.com/best-ai-coding-agents-2026">Morphllm</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>DeepSeek recorta precios permanentemente: $0.44/M tokens de input</h3>
+      <p class="what">DeepSeek hizo permanente su rebaja del 75% en V4-Pro: $0.44/M input y $0.87/M output, undercut de 5x a GPT-5.5 en input y 17x en output. Lindy AI migr&oacute; 100% de su tr&aacute;fico de producci&oacute;n de Claude a DeepSeek por la curva de costos.</p>
+      <p class="why">Para founders bootstrapped, los precios de DeepSeek hacen viables features AI-heavy a escalas donde Claude/GPT romper&iacute;an el presupuesto, a cambio de tradeoffs en confianza y soberan&iacute;a de datos.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/06/26/openai-anthropic-new-ai-spending-reality-as-users-shift-to-efficiency.html">CNBC</a> &bull; <a href="https://llm-stats.com/llm-updates">LLM Stats</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5: el modelo m&aacute;s capaz de Anthropic en disponibilidad general</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Fable 5, modelo clase Mythos con thinking adaptativo always-on, ventana de contexto de 1M tokens y 128K tokens de output. Alcanza 80.3% en benchmarks de coding ag&eacute;ntico con capacidades s&oacute;lidas en tool-calling, visi&oacute;n y planificaci&oacute;n multi-paso, a $10/$50 por mill&oacute;n de tokens.</p>
+      <p class="why">Si construyes productos con Claude, Fable 5 es ahora el mejor modelo GA para workflows ag&eacute;nticos que planifican, editan archivos, corren tests e iteran aut&oacute;nomamente.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic</a> &bull; <a href="https://simonwillison.net/2026/Jun/9/claude-fable-5/">Simon Willison</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic se prepara para IPO y lanza Claude Skills Marketplace</h3>
+      <p class="what">Anthropic registr&oacute; confidencialmente su IPO tras una Serie H de $65B a $965B de valuaci&oacute;n. Paralelamente, lanz&oacute; Anthropic Marketplace (Claude Skills) como canal de distribuci&oacute;n para aplicaciones de terceros construidas sobre Claude, con Snowflake, Harvey y Replit entre los primeros vendors.</p>
+      <p class="why">El marketplace de Claude Skills es un nuevo canal de distribuci&oacute;n &mdash; si est&aacute;s construyendo herramientas AI-powered, esto es un storefront que debes considerar para llegar a la base de usuarios de Claude.</p>
+      <p class="source"><a href="https://www.bloomberg.com/news/articles/2026-03-06/anthropic-unveils-amazon-inspired-marketplace-for-ai-software">Bloomberg</a> &bull; <a href="https://valueaddvc.com/pulse/june-2026-biggest-ai-model-launch-month-ever">Value Add VC</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 AI sports coaching evoluciona de tracking pasivo a agentes coach activos</h3>
+      <p class="what">El mercado de sports tech ($38.9B, proyectado a $104B para 2033) migra de recolecci&oacute;n pasiva de datos wearable a coaches AI agentes. CUDIS lanz&oacute; anillos de salud con un &ldquo;Agent Coach&rdquo; generativo que crea tareas diarias personalizadas, protocolos de recuperaci&oacute;n y planes de suplementaci&oacute;n. Zone7 reporta ~72% de precisi&oacute;n en predicci&oacute;n de lesiones en 50+ clubes profesionales.</p>
+      <p class="why">Si est&aacute;s construyendo un marketplace de salud o plataforma de coaching, el stack para personalizaci&oacute;n AI-driven est&aacute; maduro para producci&oacute;n &mdash; data de wearable entra, planes accionables salen.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/02/25/wearable-startup-cudis-launches-a-new-health-ring-line-with-an-ai-fueled-coach/">TechCrunch</a> &bull; <a href="https://wsc-sports.com/blog/industry-insights/the-2-5b-secret-how-ai-coaching-is-transforming-elite-sports-performance/">WSC Sports</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 29/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
