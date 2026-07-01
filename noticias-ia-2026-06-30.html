@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 30 de Junio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>30 de junio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot cierra su primer mes con AI Credits: desarrolladores reportan costos hasta 25x mayores</h3>
+      <p class="what">Hoy se cumple el primer ciclo completo de facturaci&oacute;n por uso de GitHub Copilot desde que reemplaz&oacute; la tarifa plana por AI Credits el 1 de junio. Desarrolladores reportan que flujos de trabajo ag&eacute;nticos consumen hasta $40 por tarea, con costos mensuales saltando de $29 a $750 en casos extremos.</p>
+      <p class="why">Si usas Copilot en modo agente para tu producto, necesitas auditar tu consumo de cr&eacute;ditos ya &mdash; la alternativa es migrar esos flujos pesados a Claude Code o herramientas con pricing m&aacute;s predecible.</p>
+      <p class="source"><a href="https://memeburn.com/github-copilots-new-pricing-shock-some-developers-say-their-ai-coding-bills-jumped-25x-overnight/">Memeburn</a> &bull; <a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 X lanza servidor MCP oficial: 200+ endpoints de API accesibles para herramientas AI</h3>
+      <p class="what">X (Twitter) lanz&oacute; un servidor MCP hosted que expone m&aacute;s de 200 endpoints de su API a herramientas como Claude, Cursor y Grok Build. Los usuarios se autentican con sus propios permisos de cuenta X; por ahora solo lectura, los endpoints de escritura a&uacute;n no est&aacute;n soportados.</p>
+      <p class="why">MCP se consolida como protocolo est&aacute;ndar de integraci&oacute;n AI &mdash; si tienes una plataforma o marketplace, ofrecer un servidor MCP se est&aacute; volviendo table stakes para compatibilidad con herramientas AI.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/30/x-now-offers-an-mcp-server-to-make-its-platform-easier-for-ai-tools-to-use/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 SpaceX adquiere Cursor (Anysphere) por $60B: la mayor adquisici&oacute;n de una startup en la historia</h3>
+      <p class="what">SpaceX cerr&oacute; la compra de Anysphere, la empresa detr&aacute;s de Cursor, por $60B en acciones apenas 4 d&iacute;as despu&eacute;s de su IPO r&eacute;cord. Cursor alcanz&oacute; ~$4B en revenue anualizado con $2.6B de clientes enterprise, y pasar&aacute; a ser subsidiaria de SpaceX en Q3 2026.</p>
+      <p class="why">Cursor como subsidiaria de SpaceX cambia el tablero de AI coding tools &mdash; eval&uacute;a si tu dependencia del IDE justifica el riesgo de lock-in con un nuevo due&ntilde;o corporativo.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/">TechCrunch</a> &bull; <a href="https://www.forbes.com/sites/sandycarter/2026/06/16/spacex-buys-cursor-in-largest-startup-acquisition-ever-at-60-billion/">Forbes</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Qualcomm adquiere Modular por $3.9B: deploy de modelos AI cross-chip sin reescribir c&oacute;digo</h3>
+      <p class="what">Qualcomm confirm&oacute; la compra de Modular, cuya plataforma permite desplegar modelos AI en diferentes chips (GPU, NPU, CPU) sin reescribir c&oacute;digo. La adquisici&oacute;n refuerza la estrategia de Qualcomm para AI on-device en m&oacute;viles y edge computing.</p>
+      <p class="why">Si desarrollas para Android con features de AI on-device, Modular dentro de Qualcomm significa mejor tooling para correr modelos en Snapdragon sin optimizaci&oacute;n manual.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-30-2026">BuildFastWithAI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Meituan open-sourcea LongCat-2.0: 1.6T par&aacute;metros entrenados 100% en chips chinos</h3>
+      <p class="what">La tech china Meituan lanz&oacute; LongCat-2.0, un modelo MoE de 1.6 trillones de par&aacute;metros (48B activos) con contexto de 1M tokens, entrenado en un cl&uacute;ster de 50,000 chips dom&eacute;sticos. Es el primer modelo a esta escala entrenado completamente sin hardware occidental y ya est&aacute; disponible open-source.</p>
+      <p class="why">Otro modelo open-source masivo que compite con DeepSeek V4 &mdash; m&aacute;s opciones para self-hosting y fine-tuning sin dependencia de proveedores US.</p>
+      <p class="source"><a href="https://siliconangle.com/2026/06/30/chinas-meituan-open-sources-massive-longcat-2-0-ai-model-saying-trained-domestic-chips/">SiliconANGLE</a> &bull; <a href="https://www.geopolitechs.org/p/longcat-20-chinas-most-unexpected">Geopolitechs</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenClaw, el agente AI open-source, llega a Android e iOS con acceso a hardware del dispositivo</h3>
+      <p class="what">OpenClaw lanz&oacute; apps nativas en Android e iOS que act&uacute;an como companion de un OpenClaw Gateway, permitiendo al agente AI acceder a c&aacute;mara, ubicaci&oacute;n, contactos y calendario del dispositivo. La recepci&oacute;n inicial en Android es &aacute;spera (2.2 estrellas), pero establece el patr&oacute;n de agentes m&oacute;viles con acceso a hardware.</p>
+      <p class="why">Agentes AI con acceso nativo al hardware del tel&eacute;fono est&aacute;n llegando &mdash; aunque la v1 sea tosca, el patr&oacute;n de interacci&oacute;n agente-dispositivo es el que tus usuarios esperar&aacute;n pronto.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/30/openclaw-is-finally-available-on-android-and-ios/">TechCrunch</a> &bull; <a href="https://www.techradar.com/pro/openclaw-reveals-ios-and-android-mobile-apps-at-last-but-initial-reviews-make-for-tough-reading">TechRadar</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Junio 2026 cierra como el mes m&aacute;s transformador en la historia de la industria AI</h3>
+      <p class="what">Entre el IPO de SpaceX ($86.2B), la compra de Cursor ($60B), el equity raise de Alphabet ($84.7B para infra AI), la suspensi&oacute;n y restauraci&oacute;n de Fable 5 por control de exportaciones, y el cambio de billing de Copilot, junio 2026 redefini&oacute; las reglas del mercado. Los productos AI est&aacute;n pasando de demos a control de dispositivos, automatizaci&oacute;n real y workflows completos.</p>
+      <p class="why">La ventana de construir con APIs baratas y sin regulaci&oacute;n se est&aacute; cerrando &mdash; el momento de lanzar tu producto es ahora, no el pr&oacute;ximo trimestre.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-30-2026">BuildFastWithAI</a> &bull; <a href="https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/">WaveSpeed</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic lanza Claude Sonnet 5: agentes aut&oacute;nomos a 1/5 del costo de Opus</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Sonnet 5, un modelo mid-tier con capacidades ag&eacute;nticas s&oacute;lidas (planificaci&oacute;n, uso de herramientas, ejecuci&oacute;n aut&oacute;noma) a $2/$10 por mill&oacute;n de tokens (precio introductorio hasta agosto). Logra 63.2% en benchmarks de coding ag&eacute;ntico vs 69.2% de Opus 4.8, y lo supera en tareas de knowledge work.</p>
+      <p class="why">Ahora puedes correr agentes en producci&oacute;n a una fracci&oacute;n del costo de Opus &mdash; esto hace viable econ&oacute;micamente automatizar flujos que antes eran demasiado caros por volumen.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>EE.UU. levanta controles de exportaci&oacute;n sobre Claude Fable 5 y Mythos 5: acceso global desde el 1 de julio</h3>
+      <p class="what">La administraci&oacute;n Trump levant&oacute; los controles de exportaci&oacute;n sobre los modelos m&aacute;s potentes de Anthropic (Fable 5 y Mythos 5), suspendidos desde el 12 de junio tras descubrirse una vulnerabilidad de jailbreak. Anthropic entren&oacute; un nuevo clasificador de seguridad que bloquea el exploit en 99%+ de intentos.</p>
+      <p class="why">Fable 5 vuelve a estar disponible &mdash; si tu producto depende de capacidad frontier, puedes retomar el desarrollo con el modelo m&aacute;s potente disponible.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Claude Science: workbench AI con 60+ bases de datos para investigaci&oacute;n</h3>
+      <p class="what">Claude Science integra m&aacute;s de 60 bases de datos cient&iacute;ficas y herramientas de computaci&oacute;n en un workspace para investigadores. Usa un agente coordinador que delega a sub-agentes especializados, con un agente revisor que verifica citas y c&aacute;lculos. Disponible para todos los suscriptores pagos de Claude.</p>
+      <p class="why">El patr&oacute;n &ldquo;workbench vertical&rdquo; (Claude Code para devs, Claude Science para ciencia) muestra c&oacute;mo Anthropic monetiza por industria &mdash; si construyes para un nicho, este es el modelo a replicar.</p>
+      <p class="source"><a href="https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/">MIT Technology Review</a> &bull; <a href="https://www.statnews.com/2026/06/30/anthropic-release-claude-science-ceo-dario-amodei/">STAT News</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 HYBRD Brain (YC-backed): coaching AI para atletas que se adapta con datos de wearables</h3>
+      <p class="what">HYBRD, respaldada por Y Combinator, lanz&oacute; HYBRD Brain, un agente AI de coaching que ajusta din&aacute;micamente planes de entrenamiento multi-deporte usando datos de Garmin, WHOOP, Strava, Apple Health y Wahoo. El agente adapta planes seg&uacute;n lesiones, adherencia real y cambios de agenda, a ~$18-22/mes.</p>
+      <p class="why">Template concreto para marketplaces de servicios profesionales: un agente AI sobre contenido creado por expertos (planes de coaching), personalizado con datos en tiempo real.</p>
+      <p class="source"><a href="https://www.ycombinator.com/launches/QAV-hybrd-agentic-coaching-for-athletes">Y Combinator</a> &bull; <a href="https://www.trendhunter.com/amp/trends/athletes-training-plan">TrendHunter</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 30/06/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
