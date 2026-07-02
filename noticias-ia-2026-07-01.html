@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 1 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>1 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Sonnet 5 es ahora el modelo por defecto: agentes a precio de Sonnet con calidad casi-Opus</h3>
+      <p class="what">Anthropic lanzó Claude Sonnet 5 el 30 de junio y desde el 1 de julio es el modelo por defecto para usuarios Free y Pro. Es el Sonnet más agéntico hasta la fecha, con mejoras sustanciales en razonamiento, tool use y coding, acercándose al rendimiento de Opus 4.8 en muchas tareas a una fracción del costo.</p>
+      <p class="why">A precio introductorio de $2/$10 por millón de tokens (hasta agosto 31), puedes correr workflows agénticos de larga duración con calidad near-Opus sin reventar tu presupuesto de API.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-sonnet-5">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5 regresa globalmente tras 19 días de bloqueo por controles de exportación</h3>
+      <p class="what">El Departamento de Comercio de EE.UU. levantó los controles de exportación sobre Fable 5 y Mythos 5 el 30 de junio. Anthropic redeployó Fable 5 el 1 de julio con un nuevo clasificador de ciberseguridad que bloquea la técnica de jailbreak reportada por Amazon en más del 99% de los casos.</p>
+      <p class="why">La caída de 19 días es una lección real sobre riesgo de dependencia en un solo modelo frontier — si tu producto corre sobre una sola API, necesitas una estrategia de fallback.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/redeploying-fable-5">Anthropic</a> &bull; <a href="https://www.marktechpost.com/2026/07/01/anthropic-redeploys-claude-fable-5-on-july-1-after-us-export-controls-lift-adds-new-cybersecurity-classifier/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Science: Anthropic lanza workbench de IA dedicado para investigadores</h3>
+      <p class="what">Anthropic introdujo Claude Science, una app que integra herramientas y paquetes que investigadores usan comúnmente, produce artefactos auditables y da acceso flexible a recursos de cómputo. Las aplicaciones para proyectos están abiertas hasta el 15 de julio.</p>
+      <p class="why">Valida el patrón de "workbench vertical con IA" como producto — la misma arquitectura aplica para legal, salud, deportes o cualquier vertical donde puedas empaquetar herramientas de dominio + modelo.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-science-ai-workbench">Anthropic</a></p>
+    </div>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 California firma acuerdo histórico con Anthropic: Claude para todas sus agencias al 50% de descuento</h3>
+      <p class="what">El gobernador Newsom anunció un acuerdo que pone a Claude disponible para todas las agencias estatales, ciudades y condados de California a mitad de precio, con entrenamiento gratuito y asistencia técnica de Anthropic. Es el despliegue gubernamental de IA más grande de EE.UU.</p>
+      <p class="why">Abre un canal B2G concreto para desarrolladores que construyan herramientas de workflow sobre Claude — el gobierno estatal más grande del país ahora es cliente.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Apps Gateway: SSO corporativo, políticas centralizadas y atribución de costos para Claude Code</h3>
+      <p class="what">Anthropic lanzó Claude Apps Gateway para Amazon Bedrock y Google Cloud, un control plane self-hosted que agrega login SSO corporativo, políticas centralizadas, roles y atribución de costos por usuario para Claude Code. Disponible para planes Team y Enterprise.</p>
+      <p class="why">Si estás vendiendo a empresas o gestionando un equipo, esto elimina la fricción de compliance y gobernanza que bloqueaba la adopción de Claude Code en entornos corporativos.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google lanza Nano Banana 2 Lite y Gemini Omni Flash: imágenes a $0.034 y video conversacional</h3>
+      <p class="what">Google DeepMind lanzó el 30 de junio Nano Banana 2 Lite (imagen en 4 segundos a $0.034/imagen) y Gemini Omni Flash (generación y edición conversacional de video a $0.10/segundo). El workflow recomendado: generar imagen con Nano Banana, animarla con Omni Flash.</p>
+      <p class="why">A este precio, la generación de imágenes es viable como feature nativo en cualquier app o marketplace — thumbnails, imágenes de producto o contenido visual a costo marginal cero.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/">Google Blog</a> &bull; <a href="https://cloud.google.com/blog/products/ai-machine-learning/nano-banana-2-lite-and-gemini-omni-flash-available/">Google Cloud</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Android AppFunctions: cada app se convierte en servidor MCP on-device para agentes AI</h3>
+      <p class="what">El framework AppFunctions de Google permite que apps Android actúen como servidores MCP on-device, compartiendo herramientas, servicios y datos con la capa de inteligencia del sistema y agentes AI. Actualmente en preview privado con disponibilidad pública próxima.</p>
+      <p class="why">Si construyes una app de marketplace o servicios en Android, AppFunctions es cómo tu app será descubierta e integrada por Gemini y otros agentes on-device — es el nuevo canal de distribución.</p>
+      <p class="source"><a href="https://developer.android.com/ai/appfunctions">Android Developers</a> &bull; <a href="https://www.infoq.com/news/2026/03/android-appfunctions-agents/">InfoQ</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Apple Foundation Models en iOS 26: IA on-device gratis para desarrolladores pequeños</h3>
+      <p class="what">Apple Foundation Models llega con iOS 26, ofreciendo una API Swift nativa para IA on-device con visión. Desarrolladores con menos de 2 millones de descargas obtienen acceso gratuito a Private Cloud Compute, y el framework soporta modelos de terceros (Claude, Gemini) vía un protocolo LanguageModel unificado.</p>
+      <p class="why">IA on-device + cloud gratuita para indie devs reduce costos drásticamente — y el soporte multi-modelo significa que puedes integrar Claude en tu app iOS sin infraestructura propia.</p>
+      <p class="source"><a href="https://developer.apple.com/videos/play/wwdc2026/241/">Apple Developer</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Lindy AI migra 100% de Claude a DeepSeek V4-Pro: ahorra millones en costos de agentes</h3>
+      <p class="what">La startup de agentes AI Lindy movió todo su tráfico de Claude a DeepSeek V4-Pro después de que los costos de IA superaran los de personal. El mismo benchmark corre a $1,071 con DeepSeek vs $4,811 con Claude Opus 4.7 — más de 4x más barato. El CEO dijo que volvería si Anthropic baja precios.</p>
+      <p class="why">Lección directa para cualquier founder escalando productos con agentes AI: a alto volumen de tokens, el modelo más barato que cumpla tu quality bar gana — el costo de modelo se convierte en tu gasto operativo dominante.</p>
+      <p class="source"><a href="https://the-decoder.com/ai-startup-lindy-ditched-claude-entirely-for-deepseek-saving-millions-as-cost-pressure-mounts-on-anthropic/">The Decoder</a> &bull; <a href="https://www.cnbc.com/2026/06/26/openai-anthropic-new-ai-spending-reality-as-users-shift-to-efficiency.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot migra a facturación por uso con AI Credits</h3>
+      <p class="what">Desde junio, GitHub Copilot abandonó las suscripciones de tarifa plana por un sistema de "AI Credits" ($0.01/crédito) donde el consumo varía según modelo y tokens usados. El cambio afecta Individual, Business y Enterprise.</p>
+      <p class="why">El shift de precio fijo a variable en herramientas de coding AI significa que tu presupuesto de tooling ahora es impredecible — conviene trackear consumo y comparar alternativas como Claude Code Max.</p>
+      <p class="source"><a href="https://www.analyticsinsight.net/coding/top-ai-coding-subscription-plans-in-2026-best-value-picks-for-every-developer">Analytics Insight</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 The Collectiv lanza aceleradora AI para sports, health y wellness en Houston</h3>
+      <p class="what">The Collectiv Foundation anunció una aceleradora AI native dual-use en el Ion District de Rice University, diseñada para founders construyendo tecnologías de IA validadas en deportes y escalables a salud, enterprise y consumidor. Es el primer programa que conecta explícitamente sports tech con aplicaciones de salud via IA.</p>
+      <p class="why">Si estás en la intersección de sports tech y marketplaces de servicios profesionales, este es el tipo de programa que valida la tesis y te conecta con el ecosistema correcto.</p>
+      <p class="source"><a href="https://news.rice.edu/news/2026/collectiv-launches-ai-native-dual-use-sports-health-wellness-accelerator-rices-ion">Rice University</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>IA en medicina deportiva supera el rendimiento promedio de radiólogos en diagnóstico por imagen</h3>
+      <p class="what">La interpretación asistida por IA de MRI y ultrasonido en medicina deportiva ya supera el rendimiento promedio de radiólogos humanos, con lecturas preliminares disponibles en segundos. Combinada con wearables y datos biomecánicos, la predicción de lesiones está pasando de equipos pro a atletas de todos los niveles.</p>
+      <p class="why">El mercado global de IA en deportes crece de $8.9B a $27.6B para 2030 — hay oportunidad concreta para plataformas que conecten coaches, atletas y servicios AI de entrenamiento y recuperación.</p>
+      <p class="source"><a href="https://sports-today.top/article/sports-medicine-technology-2026-diagnostics-treatment-impossible-five-years-ago">Sports Today</a> &bull; <a href="https://www.ibtimes.com/why-2026-marks-turning-point-ai-sports-beyond-3797829">IBTimes</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 01/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
