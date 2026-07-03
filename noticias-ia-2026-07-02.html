@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 2 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>2 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 xAI lanza Voice Agent Builder: agentes telef&oacute;nicos no-code a $0.05/min</h3>
+      <p class="what">xAI lanz&oacute; en beta el Grok Voice Agent Builder, una plataforma no-code que convierte una descripci&oacute;n en lenguaje natural en un agente de voz telef&oacute;nico funcional en ~2 minutos. Incluye telefon&iacute;a, retrieval de documentos, tool-calling, guardrails, 80+ voces en 25+ idiomas y observabilidad de llamadas en una sola interfaz speech-to-speech.</p>
+      <p class="why">Colapsa el stack t&iacute;pico de 3 vendors (STT + LLM + TTS) en una sola API call &mdash; viable para que un founder solo a&ntilde;ada soporte telef&oacute;nico, ventas o scheduling a su producto en una tarde.</p>
+      <p class="source"><a href="https://x.ai/news/grok-voice-agent-builder">xAI</a> &bull; <a href="https://www.eesel.ai/blog/grok-voice-agent-builder">eesel AI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Mistral OCR 4: Document AI con bounding boxes y 170 idiomas</h3>
+      <p class="what">Mistral lanz&oacute; OCR 4, que retorna bounding boxes a nivel p&aacute;rrafo, clasificaci&oacute;n tipada de bloques (t&iacute;tulos, tablas, ecuaciones, firmas) y scores de confianza inline junto al texto extra&iacute;do. Disponible via API, Amazon SageMaker y Microsoft Foundry, o self-hosted en un solo contenedor, a $4/1K p&aacute;ginas ($2 en batch).</p>
+      <p class="why">Si est&aacute;s construyendo un marketplace o sistema de facturaci&oacute;n, OCR 4 colapsa el pipeline de OCR + clasificaci&oacute;n + extracci&oacute;n en una sola llamada con output estructurado y ubicaci&oacute;n exacta &mdash; clave para RAG que necesita citar fuentes.</p>
+      <p class="source"><a href="https://mistral.ai/news/ocr-4/">Mistral AI</a> &bull; <a href="https://venturebeat.com/data/mistral-launches-ocr-4-turning-document-extraction-into-a-full-enterprise-ai-play">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Apps Gateway: control plane self-hosted para Claude Code en enterprise</h3>
+      <p class="what">Anthropic lanz&oacute; el Claude Apps Gateway, un contenedor stateless que se despliega en tu infra (con PostgreSQL) para centralizar SSO (OIDC via Okta/Entra/Google Workspace), pol&iacute;ticas, tracking por usuario y l&iacute;mites de gasto para Claude Code sobre Amazon Bedrock y Google Cloud. El tr&aacute;fico de inferencia no pasa por Anthropic a menos que lo configures expl&iacute;citamente.</p>
+      <p class="why">Si est&aacute;s escalando Claude Code m&aacute;s all&aacute; de un pu&ntilde;ado de devs, esto elimina el credential sprawl y da visibilidad real de costos &mdash; prerequisito para adopci&oacute;n enterprise seria.</p>
+      <p class="source"><a href="https://claude.com/blog/introducing-the-claude-apps-gateway">Claude Blog</a> &bull; <a href="https://devops.com/anthropic-adds-enterprise-gateway-to-simplify-claude-code-access-on-aws-and-google-cloud/">DevOps.com</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google ADK 2.0 para Go: motor de workflows basado en grafos para agentes</h3>
+      <p class="what">Google lanz&oacute; ADK 2.0 para Go en GA, con un motor de workflows basado en grafos, human-in-the-loop como primitiva nativa, orquestaci&oacute;n din&aacute;mica, y modos de agente LLM (Chat, Task, SingleTurn). Los workflows persisten estado y pueden pausarse/reanudarse incluso entre reinicios de proceso.</p>
+      <p class="why">Si construyes agentes en Go o TypeScript para backend/Android, esto es la opci&oacute;n m&aacute;s integrada del ecosistema Google &mdash; workflows deterministas con HITL sin armar plumbing propio.</p>
+      <p class="source"><a href="https://developers.googleblog.com/announcing-adk-go-20/">Google Developers Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini Omni Flash llega a la API: generaci&oacute;n y edici&oacute;n de video conversacional</h3>
+      <p class="what">Google abri&oacute; Gemini Omni Flash en preview p&uacute;blico via Google AI Studio y la Gemini API. Genera clips de 3-10 segundos en 720p con audio sincronizado a partir de texto e im&aacute;genes, y permite editar iterativamente con lenguaje natural. Cada clip lleva watermark SynthID y credenciales C2PA. Precio: ~$0.10/segundo de video.</p>
+      <p class="why">Generaci&oacute;n program&aacute;tica de video via API desbloquea pipelines automatizados de demos de producto, clips para redes y onboarding &mdash; a un costo que tiene sentido para startups.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/googles-gemini-omni-flash-hits-the-api-turning-enterprise-video-production-into-a-conversation">VentureBeat</a> &bull; <a href="https://ai.google.dev/gemini-api/docs/models/gemini-omni-flash">Google AI Developers</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>NVIDIA Nemotron-Labs-TwoTower: modelo de difusi&oacute;n que logra 2.42x throughput</h3>
+      <p class="what">NVIDIA public&oacute; Nemotron-Labs-TwoTower, un modelo de lenguaje por difusi&oacute;n (open weights) construido sobre Nemotron-3-Nano-30B. Separa generaci&oacute;n en dos torres: una mantiene contexto (frozen) mientras la otra escribe tokens en paralelo via difusi&oacute;n por bloques. Retiene 98.7% de calidad del baseline autoregresivo con 2.42x m&aacute;s throughput.</p>
+      <p class="why">Si operas inferencia propia, la arquitectura two-tower ofrece un camino concreto para duplicar throughput sin reentrenar &mdash; especialmente relevante para endpoints de alto volumen.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/07/01/nvidia-releases-nemotron-labs-twotower/">MarkTechPost</a> &bull; <a href="https://www.techtimes.com/articles/319531/20260702/nvidia-diffusion-llm-hits-242x-throughput-without-retraining-nemotron-twotower-released.htm">TechTimes</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Nano Banana 2 Lite: im&aacute;genes a $0.017 por imagen para builders</h3>
+      <p class="what">Google lanz&oacute; Nano Banana 2 Lite, su modelo de generaci&oacute;n de im&aacute;genes r&aacute;pido y econ&oacute;mico, disponible via Gemini API y AI Studio. Genera im&aacute;genes en ~4 segundos a $0.034/imagen (est&aacute;ndar) o $0.017 en batch &mdash; reemplaza al modelo original con mejor calidad, mayor velocidad y menor costo.</p>
+      <p class="why">A menos de 2 centavos por imagen en batch, la generaci&oacute;n de im&aacute;genes deja de ser un costo relevante &mdash; viable para generar thumbnails, variantes de ads o assets de producto a escala.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/">Google Blog</a> &bull; <a href="https://www.ghacks.net/2026/07/02/google-launches-nano-banana-2-lite-for-low-cost-high-throughput-ai-image-generation/">gHacks</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Sonnet 5 es ahora el modelo default: rendimiento cercano a Opus a precio reducido</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Sonnet 5 y lo hizo default para todos los usuarios Free y Pro. Es el Sonnet m&aacute;s ag&eacute;ntico hasta ahora: contexto nativo de 1M tokens, 128K tokens de output, y rendimiento cercano a Opus 4.8 en razonamiento, tool use y coding. Precio introductorio hasta agosto 31: $2/$10 por mill&oacute;n de tokens (input/output).</p>
+      <p class="why">Dos meses de pricing con descuento en un modelo near-Opus es la ventana ideal para prototipar y shipear features con agentes antes de que suba el precio.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-sonnet-5">Anthropic</a> &bull; <a href="https://www.macrumors.com/2026/06/30/anthropic-claude-sonnet-5/">MacRumors</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Fable 5 restaurado tras 19 d&iacute;as de restricciones &mdash; con trade-offs en debugging</h3>
+      <p class="what">Anthropic redespleg&oacute; Claude Fable 5 globalmente el 1 de julio tras el levantamiento de controles de exportaci&oacute;n por el Departamento de Comercio de EE.UU. A&ntilde;adieron un clasificador de ciberseguridad que bloquea el exploit original en 99%+ de los casos. Sin embargo, reportes del 2 de julio indican que el clasificador eleva los falsos positivos en requests leg&iacute;timos de debugging.</p>
+      <p class="why">Si tu producto depende de Fable 5 para an&aacute;lisis de c&oacute;digo o debugging, testea a fondo &mdash; el clasificador de seguridad puede degradar silenciosamente el rendimiento en workflows leg&iacute;timos de desarrollo.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/07/01/anthropic-redeploys-claude-fable-5-on-july-1-after-us-export-controls-lift-adds-new-cybersecurity-classifier/">MarkTechPost</a> &bull; <a href="https://thehackernews.com/2026/07/anthropic-restores-claude-fable-5-after.html">The Hacker News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Science: workbench AI para investigadores con 60+ bases de datos cient&iacute;ficas</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Science, una app que conecta con 60+ bases de datos y herramientas especializadas en gen&oacute;mica, prote&oacute;mica, biolog&iacute;a estructural y quimioinform&aacute;tica. Produce artefactos auditables con trazabilidad completa. Disponible en beta para Pro, Max, Team y Enterprise, con cr&eacute;ditos de hasta $30K para 50 proyectos (aplicaciones abiertas hasta julio 15).</p>
+      <p class="why">Si construyes en health-tech o biotech, Claude Science ofrece un pipeline listo para literature reviews y an&aacute;lisis de datos que antes requer&iacute;a meses de setup.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-science-ai-workbench">Anthropic</a> &bull; <a href="https://www.forbes.com/sites/johndrake/2026/06/30/anthropics-new-ai-workbench-mapped-my-field-for-26-now-imagine-it-aimed-at-the-rest-of-science/">Forbes</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 The Collectiv + Rice University lanzan acelerador de sports tech con AI en Houston</h3>
+      <p class="what">The Collectiv Foundation y Rice University abrieron un acelerador AI-native en el Ion District de Houston, dise&ntilde;ado para founders que construyen tecnolog&iacute;as de IA validadas en deportes y escalables a salud, enterprise y consumo. Conecta founders con ligas profesionales, universidades, hospitales y VCs, con timing estrat&eacute;gico ante el Mundial 2026 en Houston.</p>
+      <p class="why">El modelo dual-use (validar en sports, escalar a health/enterprise) es un playbook replicable para cualquier founder construyendo en verticales de servicios profesionales.</p>
+      <p class="source"><a href="https://news.rice.edu/news/2026/collectiv-launches-ai-native-dual-use-sports-health-wellness-accelerator-rices-ion">Rice University</a> &bull; <a href="https://houston.innovationmap.com/collectiv-rice-sports-ai-accelerator-2675230450.html">InnovationMap</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 02/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
