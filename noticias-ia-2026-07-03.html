@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 3 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>3 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 X lanza servidor MCP oficial: 200+ endpoints accesibles para agentes AI</h3>
+      <p class="what">X (Twitter) lanz&oacute; un servidor MCP hosted en api.x.com/mcp que expone m&aacute;s de 200 endpoints de su API a cualquier cliente compatible con Model Context Protocol &mdash; Claude, Cursor, Grok y otros. Los desarrolladores ya no necesitan armar su propia integraci&oacute;n: autentican con sus credenciales de X y el servidor maneja auth, rate limits y formatos.</p>
+      <p class="why">Si tu producto tiene una API p&uacute;blica y no ofreces un servidor MCP, est&aacute;s invisible para la capa de agentes AI que tus usuarios ya est&aacute;n adoptando como interfaz principal.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/30/x-now-offers-an-mcp-server-to-make-its-platform-easier-for-ai-tools-to-use/">TechCrunch</a> &bull; <a href="https://theaiinsider.tech/2026/07/01/x-launches-hosted-mcp-server-to-connect-ai-assistants-directly-to-its-platform/">The AI Insider</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft lanza Frontier Company: $2.5B y 6,000 ingenieros para despliegue enterprise AI</h3>
+      <p class="what">Microsoft anunci&oacute; el 2 de julio una nueva unidad operativa con $2.5B de inversi&oacute;n que embebe 6,000 ingenieros y expertos de industria directamente en empresas clientes para co-dise&ntilde;ar, desplegar y mejorar sistemas AI en producci&oacute;n. Va m&aacute;s all&aacute; del modelo Forward Deployed Engineering: mide resultados de negocio, no solo entrega de software.</p>
+      <p class="why">La se&ntilde;al clara es que enterprise AI ya no se vende como producto sino como servicio de implementaci&oacute;n &mdash; modelo replicable si ofreces soluciones AI verticales.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/">TechCrunch</a> &bull; <a href="https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/">Microsoft Blog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Sonnet 5 ya es default en Claude Code: 1M tokens de contexto a $2/$10 por Mtok</h3>
+      <p class="what">Anthropic hizo de Claude Sonnet 5 el modelo default en Claude Code con ventana nativa de 1 mill&oacute;n de tokens y pricing promocional de $2/$10 por mill&oacute;n de tokens hasta el 31 de agosto. Es el Sonnet m&aacute;s ag&eacute;ntico hasta ahora: planifica, usa herramientas (browsers, terminales) y ejecuta aut&oacute;nomamente con rendimiento cercano a Opus 4.8.</p>
+      <p class="why">Si usas Claude Code a diario, el salto en capacidad ag&eacute;ntica + 1M de contexto cambia lo que puedes delegar &mdash; y el pricing promocional hace que experimentar sea barato.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-sonnet-5">Anthropic</a> &bull; <a href="https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5">Claude Platform Docs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI y Broadcom revelan Jalape&ntilde;o: primer chip custom de inferencia para LLMs</h3>
+      <p class="what">OpenAI y Broadcom presentaron Jalape&ntilde;o, un ASIC dise&ntilde;ado espec&iacute;ficamente para inferencia de LLMs con rendimiento-por-watt significativamente superior al estado del arte. El chip alcanz&oacute; tape-out en solo 9 meses (usando modelos AI propios en el dise&ntilde;o) y ya ejecuta workloads ML en laboratorio, con deployment previsto para finales de 2026.</p>
+      <p class="why">Chips custom de inferencia significan costos de API m&aacute;s bajos a mediano plazo &mdash; la guerra de precios entre providers beneficia directamente a quien construye sobre sus APIs.</p>
+      <p class="source"><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI</a> &bull; <a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic supera a OpenAI en ingresos: run-rate de $47B vs $25B</h3>
+      <p class="what">Anthropic super&oacute; a OpenAI en ingresos anualizados con un run-rate superior a $47B, frente a los $24-25B de OpenAI. La trayectoria fue explosiva: de $1B en enero 2025 a $9B a fin de a&ntilde;o, $19B en marzo 2026 y $47B en mayo. La diferencia clave: Anthropic se enfoc&oacute; en enterprise y desarrolladores, mientras OpenAI prioriz&oacute; consumidores con ChatGPT.</p>
+      <p class="why">La lecci&oacute;n para founders: vender a developers y empresas (API-first) puede escalar m&aacute;s r&aacute;pido que vender a consumidores, incluso en AI.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html">CNBC</a> &bull; <a href="https://epoch.ai/data-insights/anthropic-openai-revenue">Epoch AI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 California firma acuerdo con Anthropic: Claude al 50% para todo el gobierno estatal</h3>
+      <p class="what">El gobernador Newsom firm&oacute; el mayor despliegue gubernamental de AI en EE.UU.: todas las agencias estatales, ciudades y condados de California tendr&aacute;n acceso a Claude con 50% de descuento, m&aacute;s capacitaci&oacute;n gratuita y asistencia t&eacute;cnica de Anthropic. El acceso se centraliza en un nuevo portal estatal (SITeS) con pricing transparente por caso de uso.</p>
+      <p class="why">B2G es un canal masivo que pocos founders t&eacute;cnicos consideran &mdash; este deal muestra que AI en gobierno ya no es piloto sino infraestructura, y el modelo de pricing con descuento + training es replicable.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/">TechCrunch</a> &bull; <a href="https://www.gov.ca.gov/2026/06/29/governor-newsom-announces-a-first-of-its-kind-partnership-providing-anthropic-tools-to-state-agencies-and-improving-services-for-californians/">Gov.ca.gov</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Fable 5 regresa globalmente tras 19 d&iacute;as de bloqueo por controles de exportaci&oacute;n</h3>
+      <p class="what">El Departamento de Comercio de EE.UU. levant&oacute; el 30 de junio los controles de exportaci&oacute;n que hab&iacute;a impuesto el 12 de junio sobre Fable 5. Anthropic lo redeploy&oacute; el 1 de julio con un nuevo clasificador de seguridad que bloquea el jailbreak reportado en &gt;99% de los casos. Disponible en Claude.ai, API, Claude Code y Cowork, con uso incluido en suscripci&oacute;n hasta el 7 de julio.</p>
+      <p class="why">El episodio es una lecci&oacute;n de riesgo de plataforma: si tu producto depende de un modelo frontier, ten siempre un fallback listo para activar en horas.</p>
+      <p class="source"><a href="https://www.axios.com/2026/07/01/anthropic-fable-5-back-online-trump-export-controls-lifted">Axios</a> &bull; <a href="https://www.marketscale.com/industries/software-and-technology/fable-5-and-mythos-5-are-back-what-the-19-day-shutdown-taught-every-enterprise-about-ai-as-infrastructure">MarketScale</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude apps gateway GA para Amazon Bedrock y Google Cloud</h3>
+      <p class="what">Anthropic lanz&oacute; un control plane self-hosted para Claude Code en Bedrock y Google Cloud con SSO corporativo, pol&iacute;ticas centralizadas, control de acceso por rol, tracking de costos por usuario y l&iacute;mites de gasto. Permite a empresas desplegar Claude Code internamente con gobernanza enterprise sin depender de la infraestructura de Anthropic.</p>
+      <p class="why">Si est&aacute;s vendiendo soluciones AI a enterprise, este es el patr&oacute;n a seguir: control plane self-hosted que resuelve compliance y costos desde d&iacute;a uno.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a> &bull; <a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform Docs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Enterprise a&ntilde;ade analytics avanzados, entitlements por modelo y alertas de gasto</h3>
+      <p class="what">Nuevas herramientas de admin para Claude Enterprise: dashboards de uso y productividad, control granular de qu&eacute; modelos puede usar cada equipo, y alertas autom&aacute;ticas de gasto para evitar sorpresas en facturaci&oacute;n. Tambi&eacute;n se a&ntilde;ade Trusted Devices para Remote Control en planes Team y Enterprise.</p>
+      <p class="why">Las features de gobernanza y cost management son las que desbloquean adopci&oacute;n enterprise real &mdash; si construyes un producto SaaS con AI, necesitas estas mismas primitivas.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 VASA Fitness lanza portal de coaching AI con an&aacute;lisis 3D de movimiento y composici&oacute;n corporal</h3>
+      <p class="what">VASA Fitness present&oacute; un nuevo Personal Training Portal que integra an&aacute;lisis de movimiento 3D, datos de composici&oacute;n corporal InBody y dise&ntilde;o de programas con AI para crear experiencias de coaching personalizadas a escala. El sistema adapta rutinas en tiempo real basado en biom&eacute;trica individual.</p>
+      <p class="why">El patr&oacute;n de combinar sensores + AI + personalizaci&oacute;n es directamente aplicable a cualquier marketplace de servicios profesionales de fitness o salud.</p>
+      <p class="source"><a href="https://athletechnews.com/the-most-innovative-fitness-wellness-companies-of-2026/">Athletech News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Wearables AI pasan de trackers pasivos a coaches activos: mercado smartwatch alcanza $49B</h3>
+      <p class="what">El mercado de smartwatches alcanza $49B en 2026, impulsado por la transici&oacute;n de tracking pasivo a coaching activo con AI. Los dispositivos ya no solo registran: analizan HRV, simetr&iacute;a de marcha y temperatura para decidir si necesitas sprints o yoga restaurativo. La convergencia fitness-salud cl&iacute;nica acelera con features como ECG aprobado por FDA e integraci&oacute;n con telemedicina.</p>
+      <p class="why">La oportunidad para devs est&aacute; en la capa de software que conecta datos de wearables con decisiones accionables &mdash; los SDKs de salud de Apple y Google son el punto de entrada.</p>
+      <p class="source"><a href="https://athletechnews.com/how-wearables-are-evolving-from-fitness-trackers-to-health-systems/">Athletech News</a> &bull; <a href="https://thewellproven.com/fitness-wearables-2026/">The Well Proven</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 03/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
