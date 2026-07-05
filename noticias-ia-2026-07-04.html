@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 4 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>4 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cursor lanza app nativa para iOS: agentes de coding desde el celular</h3>
+      <p class="what">Cursor (Anysphere) lanzó su primera app nativa para iOS en beta pública para todos los planes de pago. Permite lanzar agentes de coding en la nube, controlar remotamente agentes del desktop, revisar diffs, mergear PRs y usar input de voz desde iPhone o iPad.</p>
+      <p class="why">Es la primera interfaz mobile-first seria para agentes de coding — si estás on-call o lejos de tu laptop, puedes lanzar un agente para investigar y fixear issues con un PR listo al volver.</p>
+      <p class="source"><a href="https://cursor.com/blog/ios-mobile-app">Cursor Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Tesla limita gasto en IA a $200/semana por ingeniero, Uber y Meta siguen la tendencia</h3>
+      <p class="what">A partir del 6 de julio, ingenieros de Tesla necesitan aprobación para exceder $200/semana en tokens de herramientas AI, tras detectar consumos de miles de dólares semanales. Uber agotó su presupuesto anual de AI en abril e impuso un cap de $1,500/mes; Meta, Amazon y Walmart implementaron controles similares.</p>
+      <p class="why">Si estás construyendo herramientas o servicios AI, tus clientes enterprise van a exigir transparencia de uso, controles de gasto y métricas de costo-por-resultado.</p>
+      <p class="source"><a href="https://electrek.co/2026/07/02/tesla-caps-employee-ai-spending-200-week/">Electrek</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Vulnerabilidad cr&iacute;tica en LiteLLM (CVE-2026-42271) expone API keys de todos los proveedores AI</h3>
+      <p class="what">Un fallo de command injection en el MCP server preview de LiteLLM (v1.74.2–1.83.6) permite ejecución remota sin autenticación con score CVSS 10.0, exponiendo todas las API keys configuradas (OpenAI, Anthropic, Gemini, Azure, Bedrock). CISA lo agregó al catálogo de vulnerabilidades explotadas activamente.</p>
+      <p class="why">Si usas LiteLLM como proxy multi-modelo (setup común), actualiza a v1.83.7+ inmediatamente y rota cada API key que haya pasado por instancias afectadas.</p>
+      <p class="source"><a href="https://thehackernews.com/2026/06/litellm-flaw-cve-2026-42271-exploited.html">The Hacker News</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google AI Studio genera apps Android nativas (Kotlin + Compose) desde texto</h3>
+      <p class="what">Anunciado en Google I/O 2026, AI Studio ahora genera apps Android production-quality en Kotlin + Jetpack Compose desde descripciones en lenguaje natural, con emulador Android en el browser y publicación one-click al Internal Test Track de Google Play. Soporta integración con sensores (GPS, Bluetooth, NFC).</p>
+      <p class="why">Para devs Android y founders técnicos, esto colapsa el pipeline prototipo-a-Play-Store a minutos — ideal para validar conceptos de app antes de invertir en desarrollo completo.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/05/19/googles-ai-studio-now-lets-anyone-build-android-apps-in-minutes/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemma 4 disponible en Android AICore Developer Preview: AI on-device real</h3>
+      <p class="what">Google lanzó Gemma 4 (Apache 2.0) en cuatro tamaños (E2B, E4B, 26B MoE, 31B Dense) via AICore Developer Preview, corriendo on-device en Pixel 7+ y Galaxy S-series. Los modelos son hasta 4x más rápidos y usan 60% menos batería, con comprensión multimodal (texto, imagen, audio) y soporte para 140+ idiomas.</p>
+      <p class="why">Si estás construyendo apps Android que necesitan inferencia local (features offline, procesamiento sensible a privacidad, latencia sub-20ms), este es el on-ramp más práctico — el código será compatible con Gemini Nano 4 al lanzar.</p>
+      <p class="source"><a href="https://android-developers.googleblog.com/2026/04/AI-Core-Developer-Preview.html">Android Developers Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meituan open-sourcea LongCat-2.0: modelo de coding de 1.6T par&aacute;metros bajo licencia MIT</h3>
+      <p class="what">Meituan publicó LongCat-2.0 bajo MIT — un modelo MoE de 1.6 trillones de parámetros con contexto nativo de 1M tokens que activa solo 48B parámetros por token. Alcanza 59.5 en SWE-bench Pro (superando GPT-5.5) y 77.3 en SWE-bench Multilingual, entrenado enteramente en chips chinos sin hardware Nvidia.</p>
+      <p class="why">Un modelo de coding near-frontier bajo MIT señala que el open-source está alcanzando a los modelos cerrados — cuando se publiquen los pesos, será una alternativa potente para pipelines de generación de código self-hosted.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/meituan-open-sources-longcat-2-0-the-1-6t-near-frontier-agentic-coding-model-thats-been-leading-openrouter-trained-entirely-on-chinese-chips">VentureBeat</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Agent Marketplaces emergen como el nuevo App Store para servicios aut&oacute;nomos</h3>
+      <p class="what">En Q2 2026, ocho marketplaces de agentes han consolidado ecosistemas distintos: Claude Skills, GPT Store, MCP Hubs, Hugging Face Spaces, Replit Agent Market, LangChain Hub, Vercel Agent Gallery y Cloudflare AI Marketplace. A diferencia de los marketplaces SaaS tradicionales, estos venden outcomes que agentes entregan autónomamente, cada uno con economías, reglas y dinámicas de distribución diferentes.</p>
+      <p class="why">Esta es la capa de distribución emergente para productos AI-nativos — entender qué marketplace se alinea con la audiencia y economía de tu agente es tan importante hoy como elegir app store lo fue en 2008.</p>
+      <p class="source"><a href="https://www.digitalapplied.com/blog/ai-agent-marketplaces-2026-discovery-distribution">Digital Applied</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic lanza Claude Apps Gateway para Amazon Bedrock y Google Cloud</h3>
+      <p class="what">Lanzado el 2 de julio, el Claude Apps Gateway es un contenedor self-hosted y stateless que provee SSO corporativo, políticas centralizadas, control de acceso por roles, atribución de costos por usuario y caps de gasto para Claude Code en entornos enterprise. Rutea inferencia a la Claude API, Amazon Bedrock o Google Cloud con failover opcional entre proveedores.</p>
+      <p class="why">Si estás armando un equipo de producto alrededor de Claude Code, este gateway resuelve los mayores puntos de fricción (onboarding, control de costos, policies) sin requerir infraestructura custom.</p>
+      <p class="source"><a href="https://claude.com/blog/introducing-the-claude-apps-gateway">Claude Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Sonnet 5 es ahora el modelo default para todos los usuarios Free y Pro</h3>
+      <p class="what">Lanzado el 30 de junio y default desde el 1 de julio, Claude Sonnet 5 es el Sonnet más agéntico de Anthropic con mejoras sustanciales en razonamiento, tool use, coding y trabajo de conocimiento. Ofrece ventana de 1M tokens de contexto, 128K max output, y pricing introductorio de $2/M input y $10/M output (precio estándar de $3/$15 desde septiembre 1).</p>
+      <p class="why">El pricing introductorio lo convierte en la mejor relación costo-rendimiento del lineup de Claude — si estás construyendo sobre la API, asegurar workflows a estas tarifas antes del 1 de septiembre te da ventaja significativa en costos.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-sonnet-5">Anthropic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5 restaurado globalmente tras levantamiento de controles de exportaci&oacute;n de EE.UU.</h3>
+      <p class="what">Tras el levantamiento de controles de exportación del Departamento de Comercio de EE.UU. el 30 de junio, Anthropic redesplegó Claude Fable 5 mundialmente el 1 de julio con un nuevo clasificador de seguridad entrenado para bloquear la técnica de jailbreak descubierta por investigadores de Amazon, deteniéndola en más del 99% de intentos.</p>
+      <p class="why">El ciclo rápido de ban-y-restauración muestra que el riesgo regulatorio es ahora un factor real en la planificación de disponibilidad de modelos — si tu producto depende de un tier específico, necesitas estrategias de fallback.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/07/01/anthropic-redeploys-claude-fable-5-on-july-1-after-us-export-controls-lift-adds-new-cybersecurity-classifier/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 MCP Protocol Major Revision: core stateless, OAuth 2.1 y UIs server-rendered</h3>
+      <p class="what">El release candidate MCP 2026-07-28 (la revisión más grande desde el lanzamiento) trae core stateless que corre detrás de load balancers round-robin estándar, MCP Apps para UIs server-rendered, extensión Tasks para trabajo de larga duración, alineación con OAuth 2.1 / OpenID Connect, y una política formal de deprecación.</p>
+      <p class="why">Si estás construyendo o consumiendo integraciones MCP, esta revisión lo hace viable en producción a escala — la arquitectura stateless elimina la complejidad de infra que era la barrera principal para deployar MCP servers reales.</p>
+      <p class="source"><a href="https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/">MCP Blog</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>VASA lanza Portal de Personal Training con an&aacute;lisis 3D de movimiento y composici&oacute;n corporal AI</h3>
+      <p class="what">VASA anunció un nuevo Personal Training Portal que integra análisis de movimiento 3D, datos de composición corporal InBody y diseño de programas con IA para crear experiencias de coaching hiperpersonalizadas a escala. El mercado de AI fitness/wellness ($10.68B en 2025) se proyecta a $57.8B para 2035, con plataformas como NuraLogix usando imagen óptica transdérmica para evaluar salud cardiovascular desde patrones de flujo sanguíneo facial.</p>
+      <p class="why">La convergencia de computer vision, datos de wearables y generación de programas con IA está creando una nueva categoría de productos de coaching escalables — si estás construyendo en el espacio de marketplaces de salud/fitness, este es el stack tecnológico a seguir.</p>
+      <p class="source"><a href="https://athletechnews.com/the-most-innovative-fitness-wellness-companies-of-2026/">AthletechNews</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 04/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
