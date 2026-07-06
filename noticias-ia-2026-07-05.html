@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 5 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>5 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>&iexcl;Cursor lanza app nativa para iOS: agentes de coding desde el m&oacute;vil</h3>
+      <p class="what">Cursor public&oacute; su primera app nativa para iPhone y iPad en beta p&uacute;blica para todos los planes de pago. Permite lanzar agentes de coding en la nube o controlar agentes corriendo en tu m&aacute;quina local desde el tel&eacute;fono, con input por voz, slash commands, revisi&oacute;n de diffs y merge de PRs.</p>
+      <p class="why">Si eres founder t&eacute;cnico, ahora puedes lanzar un agente para investigar un bug o iterar c&oacute;digo mientras est&aacute;s fuera de tu escritorio &mdash; el coding as&iacute;ncrono desde mobile es real.</p>
+      <p class="source"><a href="https://cursor.com/blog/ios-mobile-app">Cursor Blog</a> &bull; <a href="https://www.techrepublic.com/article/news-spacex-cursor-ai-coding-agents-iphone/">TechRepublic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Devin Desktop reemplaza a Windsurf: el IDE evoluciona a hub de agentes</h3>
+      <p class="what">Cognition complet&oacute; la transici&oacute;n de Windsurf a Devin Desktop, con Cascade (el agente local de Windsurf) oficialmente deprecado desde el 1 de julio. El nuevo Devin Local es 30% m&aacute;s eficiente en tokens y soporta el Agent Client Protocol abierto (Apache 2.0) para correr Codex, Claude Agent o Gemini CLI dentro del mismo editor.</p>
+      <p class="why">Si usabas Windsurf, migra ahora &mdash; Cascade dej&oacute; de funcionar; y el soporte ACP convierte a Devin Desktop en el primer IDE agn&oacute;stico de agentes.</p>
+      <p class="source"><a href="https://devin.ai/desktop">Devin Desktop</a> &bull; <a href="https://aitooltier.com/tools/windsurf">AIToolTier</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Enterprise suma analytics avanzados, entitlements por modelo y alertas de gasto</h3>
+      <p class="what">Anthropic lanz&oacute; el 3 de julio controles administrativos mejorados para Claude Enterprise: analytics detallados de uso por equipo, restricci&oacute;n de acceso por modelo espec&iacute;fico, y alertas proactivas de gasto para evitar sorpresas en la factura.</p>
+      <p class="why">Si tu equipo usa Claude en producci&oacute;n, ahora puedes controlar costos y acceso modelo por modelo sin herramientas externas.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot &mdash; Anthropic Updates</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>&iexcl;Claude Sonnet 5 ya es el default en Claude Code: 1M tokens de contexto a $2/M</h3>
+      <p class="what">Desde el 30 de junio, Claude Sonnet 5 reemplaza a Sonnet 4.6 como modelo por defecto en Claude Code (v2.1.197+). Ofrece 1M tokens de contexto nativo, adaptive thinking activado por defecto, y pricing introductorio de $2/$10 por mill&oacute;n de tokens hasta el 31 de agosto. Rinde cerca de Opus 4.8 en coding ag&eacute;ntico.</p>
+      <p class="why">El modelo m&aacute;s capaz en su rango de precio para coding &mdash; si no actualizaste Claude Code, est&aacute;s dejando rendimiento sobre la mesa.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-sonnet-5">Anthropic</a> &bull; <a href="https://simonwillison.net/2026/Jun/30/claude-sonnet-5/">Simon Willison</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&iexcl;GLM-5.2 de Z.ai: open-source chino rivaliza con Opus 4.8 a 1/6 del costo</h3>
+      <p class="what">Zhipu AI lanz&oacute; GLM-5.2, un modelo open-source con 1M tokens de contexto y 131K de output. Queda a 1% de Claude Opus 4.8 en FrontierSWE (coding de largo horizonte) y supera a GPT-5.5 en el mismo benchmark. Cuesta $1.40/$4.40 por mill&oacute;n de tokens &mdash; un sexto del precio de los modelos frontier cerrados.</p>
+      <p class="why">Para pipelines de alto volumen o tareas de coding ag&eacute;ntico donde el costo importa m&aacute;s que el &uacute;ltimo 1% de calidad, esto es una alternativa seria y sin restricciones geogr&aacute;ficas.</p>
+      <p class="source"><a href="https://www.euronews.com/next/2026/07/03/what-is-glm-52-the-new-chinese-ai-model-thats-rivalling-anthropic">Euronews</a> &bull; <a href="https://www.infoworld.com/article/4186136/z-ai-pitches-glm-5-2-for-long-running-software-engineering-tasks.html">InfoWorld</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GPT-5.6 Sol/Terra/Luna en preview restringido: el modelo m&aacute;s fuerte de OpenAI a&uacute;n no es p&uacute;blico</h3>
+      <p class="what">OpenAI anunci&oacute; GPT-5.6 en tres variantes: Sol ($5/$30), Terra ($2.50/$15) y Luna ($1/$6) por mill&oacute;n de tokens. Sol logra nuevo SOTA en coding y ciberseguridad. El acceso est&aacute; limitado a ~20 organizaciones selectas mientras se cumplen requisitos del gobierno de EE.UU.</p>
+      <p class="why">Sol promete ser el modelo m&aacute;s fuerte disponible, pero no puedes usarlo a&uacute;n &mdash; si necesitas frontier hoy, Sonnet 5 o GLM-5.2 son tus opciones reales.</p>
+      <p class="source"><a href="https://openai.com/index/previewing-gpt-5-6-sol/">OpenAI</a> &bull; <a href="https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov/">VentureBeat</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>&iexcl;Claude Fable 5 restaurado globalmente tras levantamiento de controles de exportaci&oacute;n</h3>
+      <p class="what">El Departamento de Comercio de EE.UU. levant&oacute; los controles de exportaci&oacute;n sobre Claude Fable 5 y Mythos 5. Anthropic restaur&oacute; acceso global el 1 de julio en Claude.ai, la API, Claude Code y Cowork. Incluye un nuevo clasificador de ciberseguridad que bloquea el jailbreak original que provoc&oacute; la restricci&oacute;n.</p>
+      <p class="why">Si tu producto depend&iacute;a de Fable 5, ya puedes integrar sin restricciones &mdash; pero el episodio es un recordatorio de que depender de un solo proveedor tiene riesgo regulatorio real.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html">CNBC</a> &bull; <a href="https://thehackernews.com/2026/07/anthropic-restores-claude-fable-5-after.html">The Hacker News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Meta admite estancamiento de 4 meses en agentes AI; acci&oacute;n cae 4.9%</h3>
+      <p class="what">En el town hall del 2 de julio, Zuckerberg reconoci&oacute; que el desarrollo de agentes AI de Meta se estanc&oacute; durante cuatro meses. Minutos despu&eacute;s, su jefe de AI afirm&oacute; que el modelo no-lanzado &ldquo;Watermelon&rdquo; ya alcanza a GPT-5.5. La acci&oacute;n cay&oacute; 4.9% tras la noticia.</p>
+      <p class="why">La brecha entre discurso y ejecuci&oacute;n en AI es real &mdash; si est&aacute;s evaluando la plataforma de Meta para tu producto, espera resultados concretos antes de apostar tu roadmap.</p>
+      <p class="source"><a href="https://www.briefs.co/news/meta-predicts-ai-gains-in-coming-months-despite-internal-challenges/">Briefs.co</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Science: workbench con 60+ herramientas para investigadores y programa de f&aacute;rmacos</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Science en beta, un workbench que integra m&aacute;s de 60 herramientas de gen&oacute;mica, prote&oacute;mica, biolog&iacute;a estructural y quimioinform&aacute;tica con agentes revisores que verifican citas y c&aacute;lculos. Adem&aacute;s, anunci&oacute; un programa interno de descubrimiento de f&aacute;rmacos enfocado en enfermedades desatendidas.</p>
+      <p class="why">Aunque no sea tu vertical, Claude Science muestra la direcci&oacute;n de Anthropic: workbenches verticales con herramientas preconstruidas &mdash; un patr&oacute;n replicable para cualquier dominio profesional.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-science-ai-workbench">Anthropic</a> &bull; <a href="https://www.cnbc.com/2026/06/30/anthropic-launches-ai-drug-discovery-program-claude-science.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>California da acceso a Claude a todas sus agencias estatales con 50% de descuento</h3>
+      <p class="what">El gobernador Gavin Newsom firm&oacute; un acuerdo que otorga acceso a Claude a todas las agencias estatales, ciudades y condados de California a mitad de precio. Es el primer acuerdo gobierno-AI de esta escala en Estados Unidos.</p>
+      <p class="why">Esto valida a Claude como herramienta institucional y abre un canal masivo B2G &mdash; si vendes servicios al gobierno, la integraci&oacute;n con Claude ya es un diferenciador competitivo.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-4-2026">Build Fast with AI</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>&iexcl;Oura Ring 5 comienza env&iacute;os: IA predictiva de salud con labs integrados y tracking de GLP-1</h3>
+      <p class="what">El Oura Ring 5 ya est&aacute; en manos de usuarios con un dise&ntilde;o 40% m&aacute;s peque&ntilde;o y funciones de IA como Health Radar (escaneo continuo cardiovascular y respiratorio), detecci&oacute;n de patrones de presi&oacute;n arterial, y la primera integraci&oacute;n comercial que combina resultados de laboratorio cl&iacute;nico con datos biom&eacute;tricos de wearable. Desde el 30 de junio, los usuarios importan an&aacute;lisis de sangre directamente en la app.</p>
+      <p class="why">Si est&aacute;s construyendo en health tech o marketplaces de bienestar, la API de Oura con datos cl&iacute;nicos + wearable es la nueva baseline para personalizaci&oacute;n de servicios de salud.</p>
+      <p class="source"><a href="https://ouraring.com/blog/introducing-oura-ring-5/">Oura Blog</a> &bull; <a href="https://www.mobihealthnews.com/news/oura-unveils-ai-enabled-oura-ring-5-predictive-health-features">MobiHealthNews</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 05/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
