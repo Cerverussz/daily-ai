@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 6 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>6 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gobierno de Alberta escanea 466M de l&iacute;neas de c&oacute;digo con Claude Code en 20 horas</h3>
+      <p class="what">El Ministerio de Tecnolog&iacute;a e Innovaci&oacute;n de Alberta us&oacute; Claude y Claude Code para escanear 466 millones de l&iacute;neas de c&oacute;digo, remediando brechas de seguridad y construyendo nuevas herramientas de an&aacute;lisis automatizado. Es el caso de uso a mayor escala documentado p&uacute;blicamente de Claude Code en producci&oacute;n gubernamental.</p>
+      <p class="why">Prueba concreta de que Claude Code escala para an&aacute;lisis masivo de c&oacute;digo &mdash; el patr&oacute;n es replicable para construir herramientas de auditor&iacute;a o seguridad como producto.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/alberta-government-claude-cybersecurity">Anthropic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft lanza &ldquo;Frontier Company&rdquo;: $2.5B y 6,000 ingenieros desplegados en clientes</h3>
+      <p class="what">Microsoft cre&oacute; una nueva unidad operativa con $2.5B y 6,000 empleados para integrar ingenieros de IA directamente dentro de empresas clientes. Sigue el modelo de AWS ($1B anunciado d&iacute;as antes) y unidades similares de Anthropic y OpenAI &mdash; el modelo pionero de Palantir ahora es est&aacute;ndar.</p>
+      <p class="why">La demanda masiva de ingenieros que sepan desplegar IA en producci&oacute;n es una oportunidad real para consultoras boutique y founders t&eacute;cnicos que ofrezcan implementaci&oacute;n.</p>
+      <p class="source"><a href="https://www.geekwire.com/2026/microsoft-announces-2-5b-frontier-company-to-embed-ai-engineers-inside-customers/">GeekWire</a> &bull; <a href="https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Illinois firma la primera ley estatal de seguridad en IA de EE.UU.</h3>
+      <p class="what">El gobernador Pritzker firm&oacute; el 6 de julio la Artificial Intelligence Safety Measures Act, dirigida a desarrolladores con +$500M de ingresos anuales. Exige auditor&iacute;as anuales de terceros, frameworks de seguridad publicados, reporte de incidentes en 72h y multas de hasta $3M por violaci&oacute;n; entra en vigor en enero 2028.</p>
+      <p class="why">Aunque apunta a grandes labs, los requisitos de transparencia y auditor&iacute;a van a cascadear a productos construidos sobre modelos frontier &mdash; empieza a pensar en documentaci&oacute;n de compliance ahora.</p>
+      <p class="source"><a href="https://chicago.suntimes.com/politics/2026/07/06/ai-regulations-illinois-law-pritzker-signed">Chicago Sun-Times</a> &bull; <a href="https://www.nprillinois.org/illinois/2026-07-06/pritzker-signs-landmark-ai-regulation-bill-that-aims-to-mitigate-risks">NPR Illinois</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>OpenAI presenta GPT-5.6: tres modelos tiered &mdash; Sol, Terra y Luna</h3>
+      <p class="what">OpenAI introdujo tres nuevos modelos: Sol (flagship, $5/$30 por M tokens), Terra (balanced, $2.50/$15) y Luna (fast/cheap, $1/$6). Sol incluye &ldquo;ultra mode&rdquo; con subagentes para tareas complejas. Disponibilidad general en las pr&oacute;ximas semanas; Sol corre en Cerebras a 750 tokens/segundo.</p>
+      <p class="why">La familia tiered permite routear tareas a modelos por costo &mdash; cr&iacute;tico para proteger m&aacute;rgenes si tu producto depende de LLMs en cada request.</p>
+      <p class="source"><a href="https://openai.com/index/previewing-gpt-5-6-sol/">OpenAI</a> &bull; <a href="https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov/">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot migra a cr&eacute;ditos por uso; Cursor reestructura pricing</h3>
+      <p class="what">Todos los planes de GitHub Copilot ahora usan AI Credits (1 cr&eacute;dito = $0.01): Pro $15/mes, Pro+ $70, Max $200. Cursor se dividi&oacute; en Standard ($32/seat/mes) y Premium ($96/seat/mes) con pools separados para modelos propios vs terceros. Google Gemini CLI dej&oacute; de funcionar el 18 de junio.</p>
+      <p class="why">El cambio a consumo variable cambia la econom&iacute;a para devs independientes y equipos peque&ntilde;os &mdash; m&aacute;s barato experimentar, potencialmente caro a escala.</p>
+      <p class="source"><a href="https://www.developersdigest.tech/blog/ai-coding-tools-pricing-june-2026">Developers Digest</a> &bull; <a href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/">Lushbinary</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code lidera calidad en coding; OpenCode supera en adopci&oacute;n open-source</h3>
+      <p class="what">Claude Code mantiene 80.8% en SWE-bench con 1M de contexto por defecto, liderando en calidad entre agentes de coding. OpenCode lo super&oacute; en adopci&oacute;n con 160K+ GitHub stars y 7.5M usuarios mensuales. En Terminal-Bench 2.1, Codex CLI lidera con 83.4%, Claude Code con Fable 5 le sigue con 83.1%.</p>
+      <p class="why">La competencia real entre agentes de coding significa que elegir la herramienta correcta para cada fase de tu workflow tiene impacto medible en productividad.</p>
+      <p class="source"><a href="https://newsletter.pragmaticengineer.com/p/ai-tooling-2026">Pragmatic Engineer</a> &bull; <a href="https://blog.logrocket.com/ai-dev-tool-power-rankings/">LogRocket</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Startups de IA pivotan a agentes verticales y orquestaci&oacute;n de workflows</h3>
+      <p class="what">An&aacute;lisis de mercado de julio 2026 muestra que las startups ganadoras construyen agentes verticales para industrias espec&iacute;ficas en vez de herramientas generalistas. &Aacute;reas clave: seguridad, coding, operaciones, rob&oacute;tica e infraestructura. Ejemplos: Harvey (legal), Willow.ai Atlas-1 (speech-to-text para ventas), y OpenAI Flex para task routing.</p>
+      <p class="why">El playbook ganador para founders t&eacute;cnicos est&aacute; claro: elige un vertical, construye un agente que orqueste un workflow real end-to-end, y usa routing entre tiers de modelos para proteger m&aacute;rgenes.</p>
+      <p class="source"><a href="https://blog.mean.ceo/ai-startup-trends-july-2026/">AI Startup Trends</a> &bull; <a href="https://blog.mean.ceo/ai-product-launches-news-july-2026/">AI Product Launches</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Tesla Robotaxi se expande a Miami &mdash; quinta ciudad, sin monitor de seguridad</h3>
+      <p class="what">Tesla lanz&oacute; su servicio de ride-hailing aut&oacute;nomo en Miami el 3 de julio, cubriendo 10-14 millas cuadradas sin monitor humano en el veh&iacute;culo. Es la quinta ciudad (tras Austin, Houston, Dallas, SF Bay Area) y la primera fuera de Texas y California. El Cybercab sin volante se unir&aacute; a la flota este a&ntilde;o.</p>
+      <p class="why">La expansi&oacute;n geogr&aacute;fica acelerada de servicios aut&oacute;nomos valida el modelo on-device AI + despliegue f&iacute;sico &mdash; patr&oacute;n relevante para productos AI que operan en espacios reales.</p>
+      <p class="source"><a href="https://www.engadget.com/2207974/tesla-expands-robotaxi-service-to-small-section-of-miami/">Engadget</a> &bull; <a href="https://www.fool.com/investing/2026/07/07/teslas-robotaxi-just-launched-in-miami-its-first-c/">Motley Fool</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Sonnet 5 es ahora el modelo por defecto; Fable 5 restaurado globalmente</h3>
+      <p class="what">Desde el 1 de julio, Claude Sonnet 5 es el modelo por defecto para todos los usuarios Free y Pro, con mejoras sustanciales en razonamiento, tool use y coding. Precio introductorio en API: $2/$10 por M tokens hasta el 31 de agosto. Adem&aacute;s, el Departamento de Comercio de EE.UU. levant&oacute; restricciones de exportaci&oacute;n sobre Fable 5 y Mythos 5, restaur&aacute;ndolos globalmente.</p>
+      <p class="why">El modelo mid-tier m&aacute;s capaz ahora es gratuito por defecto y Fable 5 vuelve para todos &mdash; impacto directo en tus workflows diarios de desarrollo.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/redeploying-fable-5">Anthropic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Claude Science: workbench multi-agente para investigaci&oacute;n cient&iacute;fica</h3>
+      <p class="what">Claude Science conecta a Claude (incluyendo Opus 4.8) con 60+ bases de datos cient&iacute;ficas de gen&oacute;mica, prote&oacute;mica, qu&iacute;mica y ensayos cl&iacute;nicos. Un agente coordinador descompone pedidos de investigaci&oacute;n en subtareas delegadas a sub-agentes especializados por dominio. Disponible en beta para suscriptores de pago.</p>
+      <p class="why">Es una arquitectura de referencia concreta para construir workbenches multi-agente verticales &mdash; el patr&oacute;n es directamente replicable para cualquier vertical (deportes, salud, legal).</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/">TechCrunch</a> &bull; <a href="https://www.anthropic.com/news/claude-science-ai-workbench">Anthropic</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 The Collectiv lanza aceleradora de IA para sports, salud y wellness en Houston</h3>
+      <p class="what">The Collectiv inaugur&oacute; una aceleradora AI-native en el Ion District de Rice University, enfocada en founders construyendo tecnolog&iacute;as de IA validadas en deportes y escaladas a salud, enterprise y consumidor. Foco: rendimiento deportivo, prevenci&oacute;n de lesiones, nutrici&oacute;n y wellness. En paralelo, Smartan report&oacute; 42% de reducci&oacute;n en lesiones deportivas con su plataforma AI en pilotos en India.</p>
+      <p class="why">Capital real fluyendo a IA + sports/health/wellness como vertical dedicado &mdash; directamente relevante para founders construyendo plataformas de coaching o marketplaces en este espacio.</p>
+      <p class="source"><a href="https://news.rice.edu/news/2026/collectiv-launches-ai-native-dual-use-sports-health-wellness-accelerator-rices-ion">Rice University</a> &bull; <a href="https://finance.yahoo.com/news/smartan-launches-revolutionary-ai-injury-043000651.html">Yahoo Finance</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 06/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
