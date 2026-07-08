@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 7 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>7 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta lanza Muse Image: generaci&oacute;n de im&aacute;genes con AI integrada en Instagram, WhatsApp y ads</h3>
+      <p class="what">Meta present&oacute; Muse Image, su primer modelo de generaci&oacute;n de im&aacute;genes construido por Superintelligence Labs. Genera im&aacute;genes desde texto, modifica fotos existentes, crea im&aacute;genes con amigos basadas en posts p&uacute;blicos de Instagram, y potencia las herramientas Advantage Plus de publicidad.</p>
+      <p class="why">Si vendes en marketplaces o manejas ads, Muse integrado en Advantage Plus significa creativos generados autom&aacute;ticamente dentro del ecosistema Meta sin herramientas externas.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/">TechCrunch</a> &bull; <a href="https://www.cnbc.com/2026/07/07/meta-ai-muse-image.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft Dataverse expande su plugin de coding agents a Claude, Cursor y Copilot con MCP</h3>
+      <p class="what">Dataverse ahora funciona como sustrato gobernado para agentes AI en Claude, Cursor y GitHub Copilot, enrutando requests a trav&eacute;s de su servidor MCP con seguridad least-privilege y RBAC existente. Los coding agents pueden leer, escribir y consultar datos empresariales directamente desde el IDE.</p>
+      <p class="why">Si tu producto se integra con datos enterprise, exponer tu API como servidor MCP compatible con Dataverse te pone en el flujo de trabajo de miles de equipos que ya usan estos agentes.</p>
+      <p class="source"><a href="https://www.microsoft.com/en-us/power-platform/blog/2026/07/06/dataverse-july2026/">Microsoft Power Platform Blog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>OpenAI anuncia GPT-5.6 Sol, Terra y Luna &mdash; lanzamiento p&uacute;blico el 9 de julio</h3>
+      <p class="what">OpenAI inici&oacute; preview limitado de la familia GPT-5.6: Sol (flagship, $5/$30 por 1M tokens), Terra (balanceado, $2.50/$15) y Luna (r&aacute;pido, $1/$6). Sol establece nuevo SOTA en Terminal-Bench 2.1 y corre en Cerebras a 750 tokens/segundo.</p>
+      <p class="why">Tres tiers de precio y capacidad en una sola familia simplifica la decisi&oacute;n de model routing en producci&oacute;n: Luna para volumen, Sol para tareas cr&iacute;ticas.</p>
+      <p class="source"><a href="https://openai.com/index/previewing-gpt-5-6-sol/">OpenAI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Kimi K2.7 Code llega a GitHub Copilot: primer modelo open-weight en un IDE enterprise</h3>
+      <p class="what">GitHub hizo GA el modelo open-weight de Moonshot AI (1T par&aacute;metros totales, 32B activos, 256K contexto) dentro del picker de Copilot para VS Code, JetBrains, Xcode y CLI. Solo 19 d&iacute;as pasaron entre la publicaci&oacute;n de pesos en Hugging Face y la disponibilidad en plataforma enterprise.</p>
+      <p class="why">Un modelo open-weight competitivo dentro de Copilot valida que puedes auditar y self-hostear el mismo modelo que usas en tu IDE, clave para empresas con requisitos de compliance.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/319556/20260702/open-weight-ai-enters-github-copilot-kimi-k27-code-costs-less-audits-differently.htm">TechTimes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>JADEPUFFER: primer ransomware 100% aut&oacute;nomo operado por un agente AI documentado</h3>
+      <p class="what">Sysdig public&oacute; el an&aacute;lisis de JADEPUFFER, un atacante que us&oacute; un agente LLM aut&oacute;nomo para explotar una vulnerabilidad de Langflow, robar credenciales, moverse lateralmente, escalar privilegios y encriptar 1,342 configuraciones de Nacos &mdash; todo sin intervenci&oacute;n humana. El agente incluso documentaba su priorizaci&oacute;n de objetivos por ROI en lenguaje natural.</p>
+      <p class="why">Si expones APIs o servicios, el modelo de amenaza cambi&oacute;: los ataques automatizados por agentes AI son reales y se autocorrigen en 31 segundos.</p>
+      <p class="source"><a href="https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion">Sysdig</a> &bull; <a href="https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/">BleepingComputer</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Edge AI alcanza punto de inflexi&oacute;n: modelos sub-billion en producci&oacute;n real</h3>
+      <p class="what">La industria convergi&oacute; en una &ldquo;zona Goldilocks&rdquo; de modelos on-device (sub-billion a single-digit-billion par&aacute;metros) con chipsets de Qualcomm, NVIDIA, AMD y Apple. Las aplicaciones ya corren en producci&oacute;n: QA industrial en tiempo real, kioscos retail, monitoreo de salud y asistentes locales sin dependencia cloud.</p>
+      <p class="why">Para apps Android o mobile-first, los SLMs on-device eliminan latencia de red y costos de API &mdash; features como autocompletado inteligente o an&aacute;lisis local ya son viables en hardware actual.</p>
+      <p class="source"><a href="https://www.wevolver.com/article/the-2026-edge-ai-technology-report/future-of-edge-ai">Wevolver</a> &bull; <a href="https://www.dell.com/en-us/blog/the-power-of-small-edge-ai-predictions-for-2026/">Dell</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 SnapLogic MCP Builder GA: convierte APIs existentes en herramientas para agentes AI sin c&oacute;digo</h3>
+      <p class="what">SnapLogic lanz&oacute; MCP Builder en GA, que transforma autom&aacute;ticamente pipelines de integraci&oacute;n, specs OpenAPI y servicios de API Management en servidores MCP listos para agentes. Las organizaciones publican herramientas agent-ready sin escribir c&oacute;digo ni reconstruir workflows.</p>
+      <p class="why">Si tienes una API o servicio, esto es el camino m&aacute;s r&aacute;pido para que agentes AI de tus clientes puedan interactuar con tu producto &mdash; distribuci&oacute;n via MCP es el nuevo SEO.</p>
+      <p class="source"><a href="https://www.globenewswire.com/news-release/2026/07/01/3320652/0/en/SnapLogic-Launches-MCP-Builder-to-Accelerate-Enterprise-AI-Adoption-Through-Simplified-MCP-Creation.html">GlobeNewsWire</a> &bull; <a href="https://www.infoworld.com/article/4191862/snaplogic-mcp-builder-eases-creation-of-mcp-servers.html">InfoWorld</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Layoffs tech 2026: 120K empleos cortados, AI es la raz&oacute;n m&aacute;s citada por cuarto mes consecutivo</h3>
+      <p class="what">Se han eliminado ~120,000 roles tech en 2026, con AI citada expl&iacute;citamente en 101,743 anuncios de despidos en EE.UU. &mdash; un aumento del 83% sobre 2025. Cortes recientes incluyen Oracle (21K), Microsoft (4,800 el 6 de julio), GitLab (350, 14% del staff) y Coinbase (700).</p>
+      <p class="why">La ventana para founders t&eacute;cnicos que construyen con equipos peque&ntilde;os + AI se est&aacute; ampliando: hay talento disponible y las empresas est&aacute;n validando que equipos m&aacute;s chicos con AI producen m&aacute;s.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Cowork llega a web y mobile con escritura en Microsoft 365</h3>
+      <p class="what">Anthropic comenz&oacute; el rollout de Claude Cowork en web y mobile (beta para usuarios Max), expandiendo su asistente de trabajo delegado m&aacute;s all&aacute; del desktop. Simult&aacute;neamente agreg&oacute; capacidades de escritura al conector Microsoft 365: redactar/enviar emails, gestionar calendario, y crear/actualizar archivos en OneDrive y SharePoint.</p>
+      <p class="why">M&aacute;s del 90% del uso de Cowork es no-desarrollo (ops y contenido) &mdash; si est&aacute;s construyendo un producto, Cowork desde el celular significa que puedes delegar tareas operativas mientras est&aacute;s fuera del escritorio.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5 restaurado globalmente &mdash; transici&oacute;n a cr&eacute;ditos de uso extendida al 12 de julio</h3>
+      <p class="what">Fable 5 volvi&oacute; el 1 de julio tras 19 d&iacute;as suspendido por controles de exportaci&oacute;n de EE.UU. Anthropic agreg&oacute; un clasificador de seguridad que bloquea el exploit reportado en 99%+ de casos. El acceso incluido en planes Pro/Max se extendi&oacute; al 12 de julio; despu&eacute;s pasa a $10/$50 por mill&oacute;n de tokens.</p>
+      <p class="why">Con ~95% en SWE-bench Verified, Fable 5 es el modelo m&aacute;s capaz para coding &mdash; pero a $10/$50 por M tokens necesitas model routing inteligente para no quemar presupuesto.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/redeploying-fable-5">Anthropic</a> &bull; <a href="https://www.forbes.com/sites/sandycarter/2026/07/07/claude-fable-5-extends-by-five-more-days-10-moves-to-make-now/">Forbes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Science: workbench multi-agente para investigadores con 60+ skills cient&iacute;ficos</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Science en beta: un entorno de investigaci&oacute;n donde un agente coordinador accede a 60+ skills curados de gen&oacute;mica, prote&oacute;mica, biolog&iacute;a estructural y quimioinform&aacute;tica. Tambi&eacute;n anunci&oacute; un programa interno de descubrimiento de f&aacute;rmacos para enfermedades desatendidas.</p>
+      <p class="why">El patr&oacute;n de &ldquo;agente coordinador + skills especializados&rdquo; es replicable: si tu producto tiene m&uacute;ltiples dominios, esta arquitectura multi-agente es la referencia a seguir.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-science-ai-workbench">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Genius Sports despliega GeniusIQ en toda la liga suiza: AI full-stack para f&uacute;tbol</h3>
+      <p class="what">Genius Sports firmar&aacute; con la Swiss Football League para desplegar GeniusIQ en todos los estadios de primera divisi&oacute;n desde la temporada 2026/27. La plataforma AI unifica tracking de datos, cobertura broadcast, activaciones de sponsorship basadas en datos y tecnolog&iacute;a de offside semi-autom&aacute;tico.</p>
+      <p class="why">El modelo de &ldquo;plataforma AI full-stack por vertical deportivo&rdquo; es replicable para ligas menores o deportes sin esta infraestructura &mdash; una oportunidad de marketplace para servicios de analytics deportivo.</p>
+      <p class="source"><a href="https://www.geniussports.com/newsroom/genius-sports-strikes-long-term-tech-and-ai-partnership-with-the-swiss-football-league/">Genius Sports</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 07/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
