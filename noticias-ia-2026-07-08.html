@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 8 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>8 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI lanza GPT-Live: voz full-duplex que escucha y habla al mismo tiempo</h3>
+      <p class="what">OpenAI present&oacute; GPT-Live, una nueva generaci&oacute;n de modelos de voz con arquitectura full-duplex que permite escuchar y hablar simult&aacute;neamente, con backchannels naturales (&ldquo;mhmm&rdquo;, &ldquo;s&iacute;&rdquo;) y delegaci&oacute;n autom&aacute;tica a GPT-5.5 para consultas complejas. GPT-Live-1 ser&aacute; el modelo de voz por defecto en ChatGPT para usuarios de pago; GPT-Live-1 mini para usuarios gratuitos, disponible en iOS, Android y web.</p>
+      <p class="why">Si tu producto tiene cualquier capa conversacional (coaching, soporte, marketplace de servicios), ahora tienes un competidor de voz en tiempo real contra el que construir o que integrar.</p>
+      <p class="source"><a href="https://openai.com/index/introducing-gpt-live/">OpenAI</a> &bull; <a href="https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/">TechCrunch</a> &bull; <a href="https://venturebeat.com/technology/openai-launches-gpt-live-a-full-duplex-voice-upgrade-that-lets-chatgpt-talk-more-like-a-person">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft comienza a reemplazar OpenAI y Anthropic con modelos MAI propios en Office</h3>
+      <p class="what">Microsoft est&aacute; enrutando decenas de miles de prompts semanales en Excel y Outlook a trav&eacute;s de sus propios modelos MAI en lugar de OpenAI y Anthropic. La estrategia es selectiva: tareas rutinarias de alto volumen van a MAI, mientras tareas complejas siguen con modelos externos.</p>
+      <p class="why">Se&ntilde;al clara de que las grandes plataformas internalizan costos de AI &mdash; si tu producto depende de una sola API, construye valor defensible por encima de la capa del modelo.</p>
+      <p class="source"><a href="https://www.bloomberg.com/news/articles/2026-07-07/microsoft-replaces-openai-anthropic-with-own-ai-in-some-apps">Bloomberg</a> &bull; <a href="https://the-decoder.com/copilot-goes-cheap-as-microsoft-phases-out-openai-and-anthropic-models-to-cut-costs/">The Decoder</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 SpaceXAI lanza Grok 4.5 con Cursor: modelo de coding &ldquo;clase Opus&rdquo; a mitad de precio</h3>
+      <p class="what">SpaceXAI present&oacute; Grok 4.5, el primer modelo co-desarrollado con Cursor tras la adquisici&oacute;n de $60B. Entrenado en datasets de coding, ciencia e ingenier&iacute;a, se posiciona como &ldquo;Opus-class pero m&aacute;s r&aacute;pido y eficiente&rdquo; a $2/$6 por mill&oacute;n de tokens (input/output). Disponible en Grok Build, Cursor y la consola de SpaceXAI.</p>
+      <p class="why">Otro modelo fuerte de coding a precios agresivos que presiona los costos de API hacia abajo &mdash; ideal para pipelines de coding agente o dev tools que necesitan volumen.</p>
+      <p class="source"><a href="https://x.ai/news/grok-4-5">SpaceXAI</a> &bull; <a href="https://cursor.com/blog/grok-4-5">Cursor</a> &bull; <a href="https://venturebeat.com/technology/spacexs-grok-4-5-launches-at-half-the-price-of-rivals-heres-why-that-could-rattle-anthropic-and-openai">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot integra Kimi K2.7 Code: primer modelo open-weight en el ecosistema</h3>
+      <p class="what">GitHub hizo GA de Kimi K2.7 Code de Moonshot AI en el model picker de Copilot (Pro/Pro+/Max desde julio 1, Business/Enterprise desde julio 7). Es un modelo MoE de 1T par&aacute;metros que activa solo 32B por token, hosteado en Azure. Los admins deben habilitar la pol&iacute;tica para su org.</p>
+      <p class="why">Modelos open-weight entrando al tooling mainstream de IDE significa que puedes elegir entre propietario y auditable/self-hostable dentro del mismo workflow.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/">GitHub Changelog</a> &bull; <a href="https://www.techtimes.com/articles/319556/20260702/open-weight-ai-enters-github-copilot-kimi-k27-code-costs-less-audits-differently.htm">TechTimes</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI Flex Processing: 50% de reducci&oacute;n en costos de API para tareas as&iacute;ncronas</h3>
+      <p class="what">OpenAI lanz&oacute; en beta Flex Processing, que ofrece precios de Batch API para uso per-request a cambio de tiempos de respuesta m&aacute;s lentos. Para GPT-5.5 esto significa ~$2.50/$15 por mill&oacute;n de tokens en lugar de $5/$30 &mdash; un recorte del 50% para cargas que toleran latencia.</p>
+      <p class="why">Si tu producto tiene cualquier pipeline as&iacute;ncrono (enriquecimiento de datos, generaci&oacute;n de contenido batch, agentes en background), puedes cortar tu factura de API a la mitad sin cambiar de proveedor.</p>
+      <p class="source"><a href="https://developers.openai.com/api/docs/guides/flex-processing">OpenAI Docs</a> &bull; <a href="https://developers.openai.com/api/docs/pricing">OpenAI Pricing</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios y productos -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Modelos chinos alcanzan 30-46% del uso de API en plataformas de EEUU</h3>
+      <p class="what">Una investigaci&oacute;n de CNBC confirm&oacute; que los modelos AI chinos (open-source) representan entre 30% y 46% del uso de tokens de API enterprise a trav&eacute;s de plataformas de desarrolladores en EEUU, consistentemente arriba del 30% cada semana desde febrero. Estos modelos cuestan 60-90% menos que los l&iacute;deres de Anthropic y OpenAI.</p>
+      <p class="why">El arbitraje de costos es real y se acelera &mdash; una estrategia multi-modelo donde ruteas tareas no-cr&iacute;ticas a modelos baratos y reservas frontier para lo dif&iacute;cil ya es table stakes.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-8-2026">Build Fast with AI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Akeneo lanza Agentic Ziggy: orquestaci&oacute;n de agentes para datos de producto</h3>
+      <p class="what">Akeneo anunci&oacute; Agentic Ziggy, una capa de orquestaci&oacute;n ag&eacute;ntica dentro de Akeneo Product Cloud que coordina agentes especializados para modelado de datos, mapeo de esquemas, enriquecimiento y control de calidad continuo. Automatiza flujos que antes requer&iacute;an intervenci&oacute;n manual constante.</p>
+      <p class="why">Si est&aacute;s construyendo un marketplace, la gesti&oacute;n de cat&aacute;logo de producto con agentes AI elimina uno de los cuellos de botella m&aacute;s costosos del negocio.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-8-2026">Build Fast with AI</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y ecosistema Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Sonnet 5 es ahora el modelo default: 1M de contexto a $2/$10 por Mtok</h3>
+      <p class="what">Anthropic hizo de Claude Sonnet 5 el modelo por defecto para todos los usuarios Free y Pro, con ventana de contexto nativa de 1M tokens y pricing promocional de $2/$10 por Mtok hasta el 31 de agosto (luego $3/$15). Est&aacute; dise&ntilde;ado para trabajo ag&eacute;ntico sostenido: coding multi-archivo, debugging, tool use y workflows aut&oacute;nomos.</p>
+      <p class="why">Un modelo ag&eacute;ntico de 1M de contexto a $2 input es la opci&oacute;n frontier m&aacute;s barata para construir agentes de coding y workflow &mdash; ideal para bootstrappear desarrollo de producto con Claude Code.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-sonnet-5">Anthropic</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Cowork se expande a web y m&oacute;vil: sesiones que corren en la nube</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Cowork en web (claude.ai) y m&oacute;vil (iOS/Android), con sesiones ejecut&aacute;ndose remotamente en la nube. Puedes iniciar una tarea en tu escritorio, revisar el progreso desde tu tel&eacute;fono, y el trabajo contin&uacute;a aunque cierres tu laptop. Disponible primero para usuarios Max, con l&iacute;mites de uso duplicados hasta el 5 de agosto.</p>
+      <p class="why">Para un founder solo o equipo peque&ntilde;o, esto convierte a Claude en un worker as&iacute;ncrono siempre activo &mdash; lanza un code review o an&aacute;lisis de datos y monitorea desde tu tel&eacute;fono.</p>
+      <p class="source"><a href="https://www.nbcnews.com/tech/tech-news/anthropic-will-make-claude-cowork-available-users-cloud-rcna353218">NBC News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5 extiende acceso gratuito hasta el 12 de julio tras backlash</h3>
+      <p class="what">Anthropic extendi&oacute; el acceso incluido de Fable 5 en planes de pago hasta el 12 de julio (originalmente terminaba el 7). A partir del 13 de julio, Fable 5 pasa a usage credits a $10/$50 por mill&oacute;n de tokens (input/output). Tambi&eacute;n anunciaron verificaci&oacute;n de identidad con ID gubernamental y biom&eacute;tricos para acceder al modelo.</p>
+      <p class="why">Si est&aacute;s evaluando Fable 5 para tareas de razonamiento complejo en tu producto, la ventana para benchmarkear sin costo extra cierra el 12 de julio.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/redeploying-fable-5">Anthropic</a> &bull; <a href="https://www.forbes.com/sites/sandycarter/2026/07/07/claude-fable-5-extends-by-five-more-days-10-moves-to-make-now/">Forbes</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Universidad de Chicago crea parche AI on-body que diagnostica arritmias con 99.6% de precisi&oacute;n</h3>
+      <p class="what">Investigadores de UChicago desarrollaron un parche flexible con computaci&oacute;n AI integrada que analiza datos de salud directamente en el cuerpo sin enviarlos a la nube, entregando diagn&oacute;sticos en milisegundos. Logra 99.6% de precisi&oacute;n identificando arritmias card&iacute;acas potencialmente mortales.</p>
+      <p class="why">Edge AI en wearables m&eacute;dicos con precisi&oacute;n cl&iacute;nica abre oportunidades para plataformas de monitoreo de salud que no dependen de conectividad.</p>
+      <p class="source"><a href="https://openloophealth.com/blog/digital-health-trends-and-news-July-2026">Open Loop Health</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 AI fitness en 2026: entrenamientos que se ajustan diario con datos de sue&ntilde;o, HRV y recuperaci&oacute;n</h3>
+      <p class="what">El mercado de AI fitness ($10.68B en 2025, proyectado a $57.8B en 2035) alcanz&oacute; el punto donde las plataformas construyen y ajustan planes de entrenamiento diarios bas&aacute;ndose en datos de wearables: calidad de sue&ntilde;o, readiness muscular, HRV y m&eacute;tricas de recuperaci&oacute;n. Lanzamientos recientes incluyen Oura Ring 5 y m&uacute;ltiples plataformas de coaching AI.</p>
+      <p class="why">Para quien construye en el espacio de marketplace de salud/wellness/coaching, el valor defensible est&aacute; en la capa de integraci&oacute;n de datos entre wearables y personalizaci&oacute;n AI &mdash; el coaching AI puro sin datos biom&eacute;tricos ya es commodity.</p>
+      <p class="source"><a href="https://boxlifemagazine.com/future-fitness-ai-strength-recovery-mental-health-shifts/">BoxLife Magazine</a> &bull; <a href="https://athletechnews.com/the-most-innovative-fitness-wellness-companies-of-2026/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 08/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
