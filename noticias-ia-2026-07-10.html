@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 10 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>10 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI lanza GPT-5.6: Sol, Terra y Luna ya disponibles en API y ChatGPT</h3>
+      <p class="what">OpenAI liber&oacute; el 9 de julio la familia GPT-5.6 tras aprobar la revisi&oacute;n del gobierno de EE.UU.: Sol (flagship, SOTA en coding y razonamiento), Terra (balanced, rendimiento de GPT-5.5 a mitad de precio) y Luna (el m&aacute;s r&aacute;pido y barato). Precios: Sol $5/$30, Terra $2.50/$15, Luna $1/$6 por mill&oacute;n de tokens.</p>
+      <p class="why">Tres tiers de precio con un solo proveedor simplifica la arquitectura de routing de modelos en tu producto &mdash; Luna para tareas de volumen, Sol para las cr&iacute;ticas.</p>
+      <p class="source"><a href="https://openai.com/index/gpt-5-6/">OpenAI</a> &bull; <a href="https://www.neowin.net/news/openai-to-release-gpt-56-sol-terra-and-luna-on-july-9/">Neowin</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta lanza Muse Spark 1.1 y el Meta Model API para desarrolladores</h3>
+      <p class="what">Meta present&oacute; Muse Spark 1.1, un modelo multimodal de razonamiento optimizado para tareas ag&eacute;nticas, tool use, computer use y coding, con procesamiento nativo de im&aacute;genes, video, audio y PDFs. Disponible via el nuevo Meta Model API a $1.25/$4.25 por mill&oacute;n de tokens con $20 en cr&eacute;ditos gratis.</p>
+      <p class="why">Otra opci&oacute;n multimodal competitiva en precio para integrar en tu backend &mdash; el computer use nativo lo hace interesante para automatizaciones de scraping o testing.</p>
+      <p class="source"><a href="https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/">Meta AI</a> &bull; <a href="https://aiweekly.co/alerts/meta-prices-muse-spark-11-api-at-125425-per-m-tokens">AI Weekly</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI fusiona Codex y ChatGPT en una super app: nace ChatGPT Work</h3>
+      <p class="what">OpenAI integr&oacute; Codex dentro de la app de escritorio de ChatGPT y lanz&oacute; ChatGPT Work, un agente que conecta tus apps, descompone objetivos en pasos y entrega resultados terminados (hojas de c&aacute;lculo, slides, documentos, web apps). Disponible gratis en todos los planes desde julio 9.</p>
+      <p class="why">La convergencia chat + coding + agentes en una sola superficie reduce fricci&oacute;n, pero ata m&aacute;s tu workflow al ecosistema OpenAI &mdash; eval&uacute;a el lock-in antes de migrar.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/320087/20260710/chatgpt-work-free-every-plan-what-openais-codex-merger-changes-you.htm">TechTimes</a> &bull; <a href="https://byteiota.com/chatgpt-work-live-openai-merges-codex-desktop-app/">ByteIota</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Grok 4.5 debuta con benchmarks independientes que sacuden el ranking</h3>
+      <p class="what">Tras 24 horas de pruebas independientes, Grok 4.5 se posicion&oacute; 4to en el Intelligence Index de Artificial Analysis (54 puntos) detr&aacute;s de Claude Fable 5, GPT-5.5 y Claude Opus 4.8. Destaca en razonamiento profesional: 40% en legal, 58% en educaci&oacute;n y 35% en healthcare seg&uacute;n Snorkel GDPval+, superando a GPT-5.5 y Opus 4.8.</p>
+      <p class="why">El dato clave es la eficiencia de tokens &mdash; si tu producto procesa alto volumen de tareas ag&eacute;nticas, Grok 4.5 cambia la matem&aacute;tica de costos.</p>
+      <p class="source"><a href="https://snorkel.ai/blog/grok-4-5-testing-results-how-spacexais-new-model-performs-on-real-professional-work/">Snorkel AI</a> &bull; <a href="https://artificialanalysis.ai/models/grok-4-5">Artificial Analysis</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI lanza GPT-Live-1: voz full-duplex con interrupciones naturales</h3>
+      <p class="what">OpenAI liber&oacute; GPT-Live-1 y GPT-Live-1 mini, modelos de voz full-duplex que escuchan y hablan simult&aacute;neamente con turn-taking natural, interrupciones y backchanneling ("mhmm", "s&iacute;"). Para queries complejas, delegan razonamiento a GPT-5.5 en background. GPT-Live-1 es el modelo por defecto para usuarios de pago.</p>
+      <p class="why">Si est&aacute;s construyendo features de voz en tu app (coaching, soporte, onboarding), full-duplex elimina la latencia artificial que hace que los voice bots suenen robóticos.</p>
+      <p class="source"><a href="https://openai.com/index/introducing-gpt-live/">OpenAI</a> &bull; <a href="https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini 3.5 Pro se retrasa al 17 de julio: Google rehace la arquitectura completa</h3>
+      <p class="what">Google DeepMind pospuso Gemini 3.5 Pro al 17 de julio tras descartar la arquitectura existente para un rebuild completo, buscando mejorar razonamiento matem&aacute;tico y eficiencia en tareas ag&eacute;nticas largas. Incluir&aacute; contexto de 2M tokens y un Deep Think Reasoning Layer. El retraso viene acompa&ntilde;ado de una fuga de talento con 4 investigadores senior saliendo en una semana.</p>
+      <p class="why">Si depend&iacute;as de Gemini 3.5 Pro para tu roadmap, el retraso es una se&ntilde;al de que la ventana de 2M tokens a&uacute;n no est&aacute; lista para producci&oacute;n &mdash; planifica con alternativas.</p>
+      <p class="source"><a href="https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a">BigGo Finance</a> &bull; <a href="https://blog.getbind.co/gemini-3-5-pro-slips-to-july-and-four-senior-google-researchers-just-left-for-anthropic/">Bind AI</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 ChatGPT Sites: construye y hostea websites directamente desde el chat</h3>
+      <p class="what">OpenAI lanz&oacute; ChatGPT Sites en beta p&uacute;blica para suscriptores de pago: describes lo que necesitas (dashboards, trackers, prototipos, portales internos) y ChatGPT genera, previsualiza y despliega en {nombre}.openai.chatgpt.site sobre Cloudflare Workers, con soporte para dominios custom.</p>
+      <p class="why">Para founders t&eacute;cnicos, esto reduce el tiempo de landing page o herramienta interna de horas a minutos &mdash; ideal para validar ideas antes de invertir en desarrollo real.</p>
+      <p class="source"><a href="https://stacktr.ee/blog/what-is-chatgpt-sites">StackTree</a> &bull; <a href="https://nerova.ai/news/chatgpt-codex-sites-preview-business-enterprise-july-2026">Nerova AI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Ranking AI coding tools: Claude Code #1 entre devs senior, Copilot cae a 51%</h3>
+      <p class="what">Seg&uacute;n la encuesta JetBrains 2026, el market share de GitHub Copilot cay&oacute; de 67% a 51% entre devs profesionales. Cursor debut&oacute; con 18% y Claude Code con 10%. Entre devs con 10+ a&ntilde;os de experiencia, 46% eligen Claude Code vs 9% Copilot. El stack dominante: Cursor para edici&oacute;n diaria + Claude Code para tareas complejas en terminal.</p>
+      <p class="why">Si eres senior dev construyendo producto, el dato confirma que el stack dual Cursor+Claude Code es el est&aacute;ndar de facto &mdash; invertir en dominar ambos tiene el mayor ROI.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/cursor-vs-claude-code-vs-github-copilot-2026-ultimate-comparison">NxCode</a> &bull; <a href="https://thenewstack.io/ai-coding-tool-stack/">The New Stack</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Cowork llega a m&oacute;vil y web: sesiones ag&eacute;nticas desde cualquier dispositivo</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Cowork en iOS, Android y web, unificando Chat y Cowork en una sola vista. Ahora puedes iniciar tareas ag&eacute;nticas (documentos, hojas de c&aacute;lculo, presentaciones) desde el escritorio, monitorear desde el m&oacute;vil, y Claude sigue trabajando en background incluso con el dispositivo cerrado. Disponible para Max users con l&iacute;mites duplicados hasta agosto 5.</p>
+      <p class="why">La killer feature es que Claude te pregunta desde el m&oacute;vil cuando llega a una decisi&oacute;n que solo t&uacute; puedes tomar &mdash; agentes aut&oacute;nomos con human-in-the-loop real.</p>
+      <p class="source"><a href="https://claude.com/blog/cowork-web-mobile">Claude Blog</a> &bull; <a href="https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Reflect: dashboard de uso y bienestar digital para Claude</h3>
+      <p class="what">Anthropic present&oacute; Reflect el 9 de julio, un dashboard integrado que muestra c&oacute;mo usas Claude: temas m&aacute;s frecuentes, d&iacute;as m&aacute;s activos, horas pico, y un resumen mensual. Incluye funciones de bienestar digital como recordatorios de pausa, horas de silencio, y prompts de reflexi&oacute;n intencional. Disponible en beta para Free, Pro y Max.</p>
+      <p class="why">M&aacute;s all&aacute; del wellness, el monthly recap es oro para entender d&oacute;nde realmente gastas tiempo con AI y optimizar tu workflow de desarrollo.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/reflect-with-claude">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Football AI Pro: FIFA y Lenovo despliegan asistente AI para las 48 selecciones del Mundial</h3>
+      <p class="what">FIFA y Lenovo desplegaron Football AI Pro, un asistente de coaching con IA generativa disponible para las 48 selecciones del Mundial 2026. Construido sobre el modelo Football Language de FIFA, analiza cientos de millones de data points y genera insights en texto, video, gr&aacute;ficos y visualizaciones 3D para an&aacute;lisis t&aacute;ctico pre y post-partido.</p>
+      <p class="why">Es el blueprint de c&oacute;mo construir un AI coaching assistant para un vertical deportivo: datos propietarios + modelo especializado + visualizaci&oacute;n multimodal.</p>
+      <p class="source"><a href="https://news.lenovo.com/pressroom/press-releases/football-ai-pro-powers-intelligence-across-the-game/">Lenovo</a> &bull; <a href="https://www.espn.com/soccer/story/_/id/49083534/world-cup-smart-ball-adidas-trionda-charge-balls-sam-borden">ESPN</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Wearables predictivos: la industria pasa de tracking a predicci&oacute;n de salud con AI</h3>
+      <p class="what">Julio 2026 marca la consolidaci&oacute;n de wearables predictivos: Oura Ring 5 despliega Health Radar con detecci&oacute;n proactiva de anomal&iacute;as cardiovasculares, WHOOP integra AI para optimizaci&oacute;n del d&iacute;a completo, y sensores bioqu&iacute;micos no invasivos monitorizan cortisol y glucosa en tiempo real. La industria ya no solo trackea &mdash; predice y recomienda.</p>
+      <p class="why">Si construyes en el vertical de salud o coaching deportivo, la API de datos predictivos de wearables es la capa de datos que antes no exist&iacute;a para personalizar recomendaciones.</p>
+      <p class="source"><a href="https://science-technology.news-articles.net/content/2026/07/10/predictive-wellness-and-proactive-health-wearables.html">Science &amp; Technology News</a> &bull; <a href="https://ouraring.com/blog/new-software-features/">Oura Blog</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 10/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
