@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 12 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>12 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GPT-5.6 Sol ya disponible: 54% m&aacute;s eficiente en coding ag&eacute;ntico</h3>
+      <p class="what">OpenAI lanz&oacute; GPT-5.6 el 9 de julio con tres variantes: Sol (flagship), Terra (equilibrado) y Luna (r&aacute;pido y barato). Sol logra SOTA en Terminal-Bench 2.1 para workflows de CLI, introduce un modo &ldquo;ultra&rdquo; con sub-agentes, y corre a 750 tokens/s en Cerebras. Disponible en ChatGPT, Codex y la API.</p>
+      <p class="why">Si tu producto usa agentes aut&oacute;nomos en backend, Sol reduce costos de tokens un 54% en tareas de coding &mdash; evaluar migraci&oacute;n desde GPT-5.5 es directo.</p>
+      <p class="source"><a href="https://openai.com/index/gpt-5-6/">OpenAI</a> &bull; <a href="https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 AgentPrizm lanza memoria persistente para agentes AI con MCP y auditor&iacute;a enterprise</h3>
+      <p class="what">AgentPrizm lanz&oacute; el 9 de julio AgentMemory y AgentSkills: una capa de memoria persistente para agentes AI con REST API y MCP server. Incluye confidence scores, ventanas de validez, manejo de contradicciones, aislamiento por contenedor y controles GDPR de derecho al olvido verificable.</p>
+      <p class="why">Pega un bloque de config en Claude Code o Cursor y tu agente tiene memoria entre sesiones &mdash; resuelve el problema de p&eacute;rdida de contexto sin armar infra propia.</p>
+      <p class="source"><a href="https://www.digitaljournal.com/pr/news/access-newswire/agentprizm-launches-governed-ai-agent-1203883901.html">Digital Journal</a> &bull; <a href="https://agentprizm.com/">AgentPrizm</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Meta Muse Image: generaci&oacute;n de im&aacute;genes con razonamiento y previsualizaci&oacute;n en Marketplace</h3>
+      <p class="what">Meta lanz&oacute; Muse Image el 7 de julio, un generador de im&aacute;genes gratuito que opera como agente: invoca b&uacute;squeda y c&oacute;digo para mejorar precisi&oacute;n, genera QR funcionales e infograf&iacute;as con texto legible. Ya permite previsualizar c&oacute;mo quedar&iacute;a un mueble de Facebook Marketplace en tu espacio.</p>
+      <p class="why">La integraci&oacute;n con Marketplace es la se&ntilde;al: si operas un marketplace de productos f&iacute;sicos, la previsualizaci&oacute;n AI en contexto va a ser table stakes.</p>
+      <p class="source"><a href="https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/">Meta Blog</a> &bull; <a href="https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Gemini 3.5 Pro se confirma para el 17 de julio: 2M tokens de contexto y Deep Think</h3>
+      <p class="what">Google DeepMind confirm&oacute; que Gemini 3.5 Pro llega el 17 de julio con ventana de 2 millones de tokens (el doble de cualquier modelo frontier actual) y un modo Deep Think de razonamiento extendido. Llega seis semanas tarde, pero aterriza en la semana m&aacute;s competitiva de la historia de AI.</p>
+      <p class="why">2M de contexto nativo cambia el juego para RAG sobre codebases grandes o procesamiento de documentos largos &mdash; vale la pena preparar benchmarks propios antes del 17.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/">Google Blog</a> &bull; <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-12-2026">BuildFast</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot App en GA + Autonomous Agent Mode para Enterprise</h3>
+      <p class="what">La app de escritorio de GitHub Copilot alcanz&oacute; GA en junio y en julio a&ntilde;ade Autonomous Agent Mode para clientes Enterprise: escribe, testea y commitea branches completas a partir de issues. Cada cambio aut&oacute;nomo requiere aprobaci&oacute;n humana antes del merge.</p>
+      <p class="why">Issue-to-PR automatizado con revisi&oacute;n humana es el workflow que todo founder t&eacute;cnico quiere; eval&uacute;a si tu repo est&aacute; listo para adoptarlo.</p>
+      <p class="source"><a href="https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/">GitHub Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>On-device AI en 2026: del tracking pasivo a agentes que act&uacute;an en el dispositivo</h3>
+      <p class="what">El mercado de edge AI cruz&oacute; un punto de inflexi&oacute;n: con NPUs est&aacute;ndar en m&oacute;viles y laptops, y formatos de modelo optimizados, los LLMs ya corren on-device. La pregunta ya no es &ldquo;&iquest;puede AI correr local?&rdquo; sino &ldquo;&iquest;qu&eacute; workloads van local vs. cloud?&rdquo;</p>
+      <p class="why">Si tu app Android tiene features de AI, mover inference a on-device reduce costos de servidor y mejora UX en mercados con conectividad variable.</p>
+      <p class="source"><a href="https://sumitagrawal.dev/blog/edge-ai-on-device-intelligence-2026/">Sumit Agrawal</a> &bull; <a href="https://blog.mean.ceo/on-device-ai-news-july-2026/">Mean CEO</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple demanda a OpenAI por robo de secretos comerciales: 400+ ex-empleados y hardware propio</h3>
+      <p class="what">Apple demand&oacute; a OpenAI el 11 de julio en California, alegando que el jefe de hardware de OpenAI (ex-VP de Apple) dirig&iacute;a un esquema donde candidatos tra&iacute;an &ldquo;partes reales&rdquo; de Apple a entrevistas de &ldquo;show and tell&rdquo;. El ingeniero Chang Liu supuestamente descarg&oacute; dise&ntilde;os de hardware y procedimientos de manufactura ya desde OpenAI.</p>
+      <p class="why">Esto confirma que OpenAI est&aacute; construyendo hardware propio y que la guerra por talento en AI/silicon tiene consecuencias legales reales para cualquier startup que contrate de big tech.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html">CNBC</a> &bull; <a href="https://fortune.com/2026/07/11/openai-engineers-legal-fight-apple-ai-product-poaching/">Fortune</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>ChatGPT Work: OpenAI lleva Codex a usuarios no t&eacute;cnicos para crear apps y documentos</h3>
+      <p class="what">Anunciado el 9 de julio, ChatGPT Work combina ChatGPT con Codex para que usuarios no t&eacute;cnicos construyan documentos, hojas de c&aacute;lculo, presentaciones y web apps desde lenguaje natural. Apunta a reemplazar la capa de productividad de oficina tradicional.</p>
+      <p class="why">Esto compite directamente con Claude Cowork y Google Workspace AI &mdash; la capa de &ldquo;apps generadas por prompt&rdquo; se est&aacute; convirtiendo en el nuevo campo de batalla para retenci&oacute;n de usuarios.</p>
+      <p class="source"><a href="https://www.axios.com/2026/07/09/ai-openai-gpt-release">Axios</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Cowork llega a web y m&oacute;vil: tareas en background sin dispositivo conectado</h3>
+      <p class="what">Desde el 7 de julio, Claude Cowork est&aacute; disponible en web y m&oacute;vil para suscriptores Max. Las tareas programadas ahora corren en background sin necesidad de tener un dispositivo online: puedes programar un briefing para las 6am y Claude procesa emails, transcripciones y noticias mientras duermes.</p>
+      <p class="why">Ejecutar agentes en background sin infra propia es exactamente lo que un founder solo necesita para automatizar ops de su producto.</p>
+      <p class="source"><a href="https://claude.com/blog/cowork-web-mobile">Claude Blog</a> &bull; <a href="https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Fable 5 incluido en planes Pro/Max se extiende hasta el 12 de julio</h3>
+      <p class="what">Anthropic extendi&oacute; el acceso incluido a Fable 5 en planes Pro, Max, Team y Enterprise del 7 al 12 de julio a las 11:59 PM PT. Fable 5 cubre hasta el 50% de los l&iacute;mites semanales sin costo extra; despu&eacute;s se cobra con cr&eacute;ditos de uso.</p>
+      <p class="why">Hoy es el &uacute;ltimo d&iacute;a con Fable 5 incluido &mdash; si no lo has probado para tus workflows de coding, aprovecha antes de que pase a cr&eacute;ditos.</p>
+      <p class="source"><a href="https://www.digitalapplied.com/blog/anthropic-fable-5-access-extended-july-12-2026">Digital Applied</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Wearables predictivos en 2026: de tracking a coaching activo con AI</h3>
+      <p class="what">Los wearables de fitness evolucionaron de rastreo pasivo a coaching activo con AI. WHOOP 5.0 genera recomendaciones diarias basadas en HRV, calidad de sue&ntilde;o y recovery scores. Los biosensores no invasivos ahora monitorean cortisol y glucosa en tiempo real para detectar sobreentrenamiento temprano.</p>
+      <p class="why">Si est&aacute;s construyendo una plataforma de sports tech o coaching, integrar datos de wearables via API para personalizar entrenamientos es ahora el m&iacute;nimo viable.</p>
+      <p class="source"><a href="https://thewellproven.com/fitness-wearables-2026/">The Well Proven</a> &bull; <a href="https://science-technology.news-articles.net/content/2026/07/10/predictive-wellness-and-proactive-health-wearables.html">Science Technology News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 12/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
