@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 13 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>13 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenCode supera a Cursor y Claude Code como herramienta #1 de AI coding</h3>
+      <p class="what">OpenCode, un agente de coding open-source y terminal-native, alcanz&oacute; 160K+ estrellas en GitHub y 7.5 millones de developers activos mensuales. Soporta 75+ proveedores de LLM, integraci&oacute;n LSP para informaci&oacute;n de tipos en tiempo real, y no almacena ning&uacute;n c&oacute;digo del usuario.</p>
+      <p class="why">Una alternativa gratuita, privada y sin vendor lock-in que funciona con cualquier modelo (incluyendo Ollama local) es oro para founders que quieren control total sobre su stack de desarrollo.</p>
+      <p class="source"><a href="https://blog.logrocket.com/ai-dev-tool-power-rankings/">LogRocket &mdash; AI Dev Tool Power Rankings July 2026</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Grok 4.5 se lanza con Grok Build: coding, voice y modo aut&oacute;nomo</h3>
+      <p class="what">xAI lanz&oacute; Grok 4.5 el 8 de julio, disponible en Grok Build y en Cursor. Es un modelo clase Opus pero m&aacute;s r&aacute;pido y eficiente en tokens. Grok Build agrega speech-to-text nativo, comando /goal para trabajo aut&oacute;nomo dirigido por objetivos, y mejor manejo de sesiones.</p>
+      <p class="why">Otro competidor serio en el espacio de coding agents con pricing agresivo; vale la pena benchmarkearlo contra tu stack actual si buscas reducir costos de API.</p>
+      <p class="source"><a href="https://www.axios.com/2026/07/08/spacexai-grok-new-model">Axios</a> &bull; <a href="https://releasebot.io/updates/xai/grok-build">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Big tech acuerda est&aacute;ndar compartido para conectar agentes AI a software empresarial</h3>
+      <p class="what">Google, Microsoft, Salesforce, Snowflake y ServiceNow acordaron soportar un est&aacute;ndar t&eacute;cnico com&uacute;n para conectar agentes AI con software de negocio. La especificaci&oacute;n final del protocolo A2A (Agent-to-Agent) se cierra el 28 de julio bajo la Linux Foundation, convergiendo con MCP de Anthropic.</p>
+      <p class="why">Si est&aacute;s construyendo un producto que expone servicios, implementar MCP + A2A ahora te posiciona para ser consumido por la capa de agentes que tus usuarios empezar&aacute;n a usar como interfaz principal.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026">BuildFastWithAI</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Gemini 3.5 Pro apunta al 17 de julio tras reconstrucci&oacute;n completa de arquitectura</h3>
+      <p class="what">Google DeepMind descart&oacute; la arquitectura original de Gemini 3.5 Pro tras encontrar fallos estructurales en tool-calling recursivo y generaci&oacute;n SVG. El modelo reconstruido tendr&iacute;a ventana de 2 millones de tokens y un modo Deep Think de razonamiento, aunque ni fecha, specs ni pricing est&aacute;n confirmados oficialmente.</p>
+      <p class="why">Si se confirma la ventana de 2M tokens, cambia lo que es posible en una sola llamada a la API para procesar codebases completos o documentaci&oacute;n extensa.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/320308/20260713/gemini-35-pro-targets-july-17-after-full-rebuild-every-spec-remains-unconfirmed.htm">TechTimes</a> &bull; <a href="https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a">BigGo Finance</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Kimi K2.7 Code: primer modelo open-weight disponible en GitHub Copilot</h3>
+      <p class="what">Moonshot AI logr&oacute; que Kimi K2.7 Code (1T params MoE, 32B activos, licencia MIT) sea el primer modelo open-weight en el model picker de GitHub Copilot, hosteado en Azure. La transici&oacute;n de publicaci&oacute;n de pesos en Hugging Face a plataforma enterprise tom&oacute; solo 19 d&iacute;as.</p>
+      <p class="why">Demuestra que modelos open-weight compiten en plataformas enterprise &mdash; acceso a coding potente con costos inferiores y la posibilidad de auditar los pesos.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/">GitHub Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GPT-Live de OpenAI: voz full-duplex con delegaci&oacute;n a agentes en background</h3>
+      <p class="what">Lanzado el 8 de julio, GPT-Live usa arquitectura full-duplex (escucha y habla simult&aacute;neamente) y puede delegar a GPT-5.5 en background para b&uacute;squedas web, razonamiento complejo o tareas multi-paso, devolviendo el resultado a la conversaci&oacute;n. Disponible en iOS, Android y web.</p>
+      <p class="why">La arquitectura de delegaci&oacute;n a agentes durante una conversaci&oacute;n de voz es un patr&oacute;n de dise&ntilde;o replicable: interfaz simple al frente, agentes especializados detr&aacute;s.</p>
+      <p class="source"><a href="https://openai.com/index/introducing-gpt-live/">OpenAI</a> &bull; <a href="https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Nubia presenta el primer smartphone con agente IA a nivel de sistema operativo</h3>
+      <p class="what">Nubia confirma que presentar&aacute; en WAIC Shanghai (17-20 julio) el primer smartphone donde un agente IA (impulsado por Doubao de ByteDance) opera a nivel del SO: abre apps, compara precios entre servicios, llena formularios y procesa pagos de forma aut&oacute;noma. El modelo anterior vendi&oacute; 30,000 unidades el primer d&iacute;a.</p>
+      <p class="why">Para developers de Android y marketplaces, anticipa un paradigma donde los usuarios interact&uacute;an con apps a trav&eacute;s de agentes intermediarios, no directamente con tu UI.</p>
+      <p class="source"><a href="https://www.gizmochina.com/2026/07/08/nubia-world-first-ai-agent-smartphone-waic-2026/">Gizmochina</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 54% de smartphones vendidos ya ejecutan IA generativa local &mdash; on-device AI es baseline</h3>
+      <p class="what">Seg&uacute;n IDC, m&aacute;s del 54% de smartphones vendidos en Q1 2026 ejecutan modelos generativos localmente (vs. 11% en 2023), con proyecci&oacute;n del 70% para fin de a&ntilde;o. Apple envi&oacute; Foundation Models framework en iOS 26 y Google Gemini Nano en Android, ambos accesibles desde c&oacute;digo nativo.</p>
+      <p class="why">Para cualquier developer mobile construyendo marketplace o servicios profesionales, la IA on-device (b&uacute;squeda sem&aacute;ntica, procesamiento de imagen sin servidor) ya no es diferenciador sino requisito m&iacute;nimo.</p>
+      <p class="source"><a href="https://newly.app/guides/on-device-ai-mobile-apps">Newly App</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini en Android Studio: Agent Mode genera apps completas desde prompts y mockups</h3>
+      <p class="what">Gemini en Android Studio ahora incluye Agent Mode para tareas multi-archivo (tests, UI, debugging con plan autom&aacute;tico) y Project Assistant que genera apps completas desde cero con prompts y mockups de dise&ntilde;o. Edici&oacute;n gratuita incluye versi&oacute;n ligera; business a $45/usuario/mes.</p>
+      <p class="why">Generar un MVP Android funcional desde un prompt + mockup reduce dr&aacute;sticamente el tiempo de iteraci&oacute;n &mdash; especialmente valioso si eres un solo developer construyendo tu producto.</p>
+      <p class="source"><a href="https://android-developers.googleblog.com/2026/03/supercharge-your-android-development.html">Android Developers Blog</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Sonnet 5 es ahora el modelo default con pricing introductorio agresivo</h3>
+      <p class="what">Desde el 1 de julio, Claude Sonnet 5 es el modelo default para usuarios Free y Pro. Es el Sonnet m&aacute;s agente construido hasta la fecha, con rendimiento cercano a Opus 4.8. Pricing introductorio hasta el 31 de agosto: $2/M input, $10/M output &mdash; menos que Sonnet 4.6.</p>
+      <p class="why">El mejor ratio calidad/precio disponible ahora mismo para tareas ag&eacute;nticas como generaci&oacute;n de c&oacute;digo, debugging multi-paso y automatizaci&oacute;n de workflows en tu producto.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot &mdash; Claude Updates</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5 extiende acceso gratuito para usuarios de pago hasta el 19 de julio</h3>
+      <p class="what">Anthropic extendi&oacute; el periodo promocional de Fable 5 (modelo clase Mythos) hasta el 19 de julio. Fable 5 fue suspendido 19 d&iacute;as por controles de exportaci&oacute;n tras un reporte de jailbreak y regres&oacute; el 1 de julio con un clasificador de seguridad que bloquea la t&eacute;cnica en &gt;99% de los casos.</p>
+      <p class="why">Quedan 6 d&iacute;as para experimentar con el modelo m&aacute;s potente de Anthropic sin costo adicional &mdash; ideal para evaluar si justifica ajustar tus workflows antes de que entre el pricing definitivo.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/redeploying-fable-5">Anthropic</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 13/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
