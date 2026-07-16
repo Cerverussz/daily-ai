@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 15 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>15 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta lanza API p&uacute;blica de Muse Spark 1.1: modelo agente multimodal a $4.25/M tokens output</h3>
+      <p class="what">Meta abri&oacute; la Meta Model API en preview p&uacute;blica con Muse Spark 1.1, un modelo multimodal dise&ntilde;ado para tareas ag&eacute;nticas con tool use, computer use, y ventana de contexto de 1M tokens. A $1.25/$4.25 por mill&oacute;n de tokens (input/output), es 6-7x m&aacute;s barato que GPT-5.6 Sol o Claude Opus 4.8 para pipelines de alto volumen.</p>
+      <p class="why">Si est&aacute;s construyendo agentes o automatizaciones para tu marketplace, Muse Spark es la opci&oacute;n m&aacute;s barata de un tier frontier para orquestaci&oacute;n de herramientas en producci&oacute;n.</p>
+      <p class="source"><a href="https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/">Meta AI Blog</a> &bull; <a href="https://www.techtimes.com/articles/320609/20260715/meta-builds-ai-revenue-stack-developer-api-launches-advertiser-automation-goes-global.htm">TechTimes</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 ChatGPT Work: OpenAI lanza agente aut&oacute;nomo que ejecuta tareas completas sin supervisi&oacute;n</h3>
+      <p class="what">OpenAI lanz&oacute; ChatGPT Work junto con GPT-5.6, un agente enterprise que descompone objetivos en pasos, coordina herramientas (docs, sheets, slides, web apps) y trabaja horas en background. Incluye Plan mode donde apruebas el plan antes de ejecutar, check-ins configurables y control de autonom&iacute;a.</p>
+      <p class="why">Es la se&ntilde;al de que los agentes aut&oacute;nomos ya no son demos &mdash; si tu producto compite por la atenci&oacute;n del knowledge worker, compite contra esto.</p>
+      <p class="source"><a href="https://www.forbes.com/sites/madhulika-pathak/2026/07/09/openai-debuts-chatgpt-work-workplace-ai-agent-with-gpt-56/">Forbes</a> &bull; <a href="https://www.progressiverobot.com/2026/07/12/chatgpt-work-autonomous-agents/">Progressive Robot</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones tecnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GPT-5.6 Sol/Terra/Luna ya en GA: tres tiers de $1 a $30 por mill&oacute;n de tokens</h3>
+      <p class="what">La familia GPT-5.6 lleg&oacute; a disponibilidad general el 9 de julio con tres modelos: Sol (flagship, $5/$30), Terra (balanced, $2.50/$15) y Luna (eficiente, $1/$6). Los tres tienen 1M de contexto, 128K output, y modo &ldquo;ultra&rdquo; que coordina m&uacute;ltiples agentes en paralelo. Terra y Luna superan a Fable 5 a ~1/16 del costo.</p>
+      <p class="why">Luna a $1/$6 es un game-changer para backends con alto volumen de requests &mdash; eval&uacute;alo contra DeepSeek V4 Flash antes de comprometerte con un solo proveedor.</p>
+      <p class="source"><a href="https://openai.com/index/gpt-5-6/">OpenAI</a> &bull; <a href="https://simonwillison.net/2026/Jul/9/gpt-5-6/">Simon Willison</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Kimi K2.7 Code en GitHub Copilot: primer modelo open-weight en el model picker</h3>
+      <p class="what">Moonshot AI&#39;s Kimi K2.7 Code (1T params, 32B activos por token, MoE) est&aacute; disponible en Copilot Pro, Pro+, Max, Business y Enterprise desde julio. Es el primer modelo open-weight integrado en Copilot, hosted en Azure, con pesos en Hugging Face bajo licencia comercial.</p>
+      <p class="why">Open-weight en el IDE que ya usas diario significa que puedes auditar, fine-tunear, o self-hostear el mismo modelo con el que codeas &mdash; ideal si tu producto maneja datos sensibles.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/">GitHub Changelog</a> &bull; <a href="https://www.techtimes.com/articles/319556/20260702/open-weight-ai-enters-github-copilot-kimi-k27-code-costs-less-audits-differently.htm">TechTimes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini 3.5 Pro apunta al 17 de julio: 2M tokens de contexto y workflows aut&oacute;nomos</h3>
+      <p class="what">Google prepara el lanzamiento de Gemini 3.5 Pro para el 17 de julio, con contexto de 2 millones de tokens, capa de razonamiento Deep Think, y capacidades de workflows aut&oacute;nomos que descomponen tareas complejas en subtareas con intervenci&oacute;n m&iacute;nima. A&uacute;n sin specs oficiales confirmadas.</p>
+      <p class="why">Si tu app procesa documentos largos o necesita razonamiento multi-paso, el contexto de 2M duplica lo que ofrece cualquier competidor hoy.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/320308/20260713/gemini-35-pro-targets-july-17-after-full-rebuild-every-spec-remains-unconfirmed.htm">TechTimes</a> &bull; <a href="https://nokiapoweruser.com/gemini-3-5-pro-launch-tomorrow-leak/">NPowerUser</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Pixel On-Device AI con Gemma: procesamiento offline en dispositivo</h3>
+      <p class="what">Google introdujo Pixel On-Device AI usando modelos Gemma compactos para procesar requests localmente en Pixel 10 sin enviar datos a servidores. Soporta trip planning, transcripci&oacute;n, reconocimiento de im&aacute;genes y controles hands-free, todo offline. Gemma 4 est&aacute; optimizado para NPUs m&oacute;viles v&iacute;a AICore.</p>
+      <p class="why">On-device AI en Android ya es mainstream &mdash; si desarrollas apps Android, integrar Gemma v&iacute;a AICore te da features inteligentes sin costo por request ni dependencia de red.</p>
+      <p class="source"><a href="https://www.squaredtech.co/pixel-on-device-ai-is-googles-latest-privacy-push">SquaredTech</a> &bull; <a href="https://newsroom.arm.com/blog/gemma-4-on-arm-optimized-on-device-ai">ARM Newsroom</a></p>
+    </div>
+
+    <!-- EJE 3: Creacion de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Cowork se expande a m&oacute;vil y web: agentes que trabajan sin tu dispositivo encendido</h3>
+      <p class="what">Anthropic expandi&oacute; Cowork a claude.ai y iOS/Android (beta, Max plan). Las sesiones ahora corren en servidores de Anthropic con estado persistente, tareas programadas que se ejecutan sin dispositivo online, y l&iacute;mites de uso duplicados hasta agosto 5. Chat y Cowork se unifican en una sola interfaz.</p>
+      <p class="why">Background agents + scheduled tasks server-side convierte a Claude en infraestructura, no solo en un chat &mdash; puedes automatizar onboarding, reportes, o monitoreo sin mantener tu propio servidor.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/">TechCrunch</a> &bull; <a href="https://9to5mac.com/2026/07/13/anthropic-expanding-claude-cowork-to-mobile-and-web-details-here/">9to5Mac</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Design supera 1M de usuarios en su primera semana: de prompt a prototipo interactivo</h3>
+      <p class="what">Claude Design, lanzado con Opus 4.7, convierte prompts, im&aacute;genes o codebases en prototipos interactivos, slides, mockups y landing pages aplicando autom&aacute;ticamente tu sistema de dise&ntilde;o. M&aacute;s de 1 mill&oacute;n de personas lo usaron en su primera semana, movi&eacute;ndose de novedad a herramienta diaria para pitch decks y conceptos de producto.</p>
+      <p class="why">Validar una idea visualmente antes de escribir c&oacute;digo ahora toma minutos, no d&iacute;as &mdash; ideal para testear conceptos de marketplace o SaaS con usuarios reales.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Anthropic</a> &bull; <a href="https://venturebeat.com/technology/anthropic-just-launched-claude-design-an-ai-tool-that-turns-prompts-into-prototypes-and-challenges-figma">VentureBeat</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Sonnet 5 disponible como modelo default: performance ag&eacute;ntica near-Opus a $2/$10</h3>
+      <p class="what">Claude Sonnet 5 (lanzado 30 de junio) es ahora el modelo default en Free y Pro, con 1M de contexto, 128K output y adaptive thinking. Mejora sustancial en planning, tool use y tareas multi-paso vs Sonnet 4.6. Precio introductorio de $2/$10 por mill&oacute;n de tokens hasta agosto 31.</p>
+      <p class="why">Performance de agente cercana a Opus a un quinto del precio &mdash; re-eval&uacute;a qu&eacute; tareas de tu producto realmente necesitan Opus vs Sonnet 5.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-sonnet-5">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lidera el AI Safety Index 2026 con C+ &mdash; ning&uacute;n lab supera esa nota</h3>
+      <p class="what">El Future of Life Institute public&oacute; su AI Safety Index evaluando 9 labs en riesgo, transparencia, gobernanza y seguridad existencial. Anthropic obtuvo C+ (el m&aacute;s alto), seguido de OpenAI y Google DeepMind con C, Meta con D+, y xAI/DeepSeek/Mistral con F. El informe critica que todos los labs han debilitado compromisos de pausa ante riesgos.</p>
+      <p class="why">Si est&aacute;s eligiendo proveedor de AI para tu producto, este ranking es el benchmark m&aacute;s serio disponible sobre qu&eacute; empresa se toma la seguridad en serio.</p>
+      <p class="source"><a href="https://futureoflife.org/ai-safety-index-summer-2026/">Future of Life Institute</a> &bull; <a href="https://time.com/article/2026/07/07/ai-safety-rankings-openai-anthropic-meta/">Time</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Oura lanza modelo propietario de IA para salud femenina integrado en Oura Advisor</h3>
+      <p class="what">Oura introdujo su primer LLM propietario dise&ntilde;ado espec&iacute;ficamente para salud femenina dentro de Oura Advisor, entrenado sobre est&aacute;ndares m&eacute;dicos y revisado por cuerpo cl&iacute;nico interno. Junto con el Ring 5 y su capa de software predictivo, Advisor ya muestra 60% de usuarios reportando mejor comprensi&oacute;n de sus m&eacute;tricas de salud.</p>
+      <p class="why">Un wearable con IA vertical especializada en salud femenina es el modelo a seguir para cualquier marketplace de servicios profesionales que quiera diferenciarse con coaching personalizado.</p>
+      <p class="source"><a href="https://ouraring.com/blog/oura-advisor/">Oura Blog</a> &bull; <a href="https://insider.fitt.co/oura-launches-ai-health-coach/">Fitt Insider</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Fitbit Air con Gemini AI Coach: $99 y desaf&iacute;a a Whoop en coaching deportivo</h3>
+      <p class="what">Google&#39;s Fitbit Air elimina pantalla y usa un AI Coach powered by Gemini para planes de fitness personalizados, insights de sue&ntilde;o y recomendaciones proactivas de salud, todo a $99. Trackea HRV, SpO2, temperatura y sue&ntilde;o, compitiendo directamente con Whoop ($30/mes) sin suscripci&oacute;n obligatoria.</p>
+      <p class="why">Un wearable con AI coach integrado a $99 sin suscripci&oacute;n demuestra que la capa de coaching AI se est&aacute; comoditizando &mdash; la oportunidad est&aacute; en la especializaci&oacute;n vertical, no en el hardware.</p>
+      <p class="source"><a href="https://www.bloomberg.com/news/features/2026-05-26/google-fitbit-air-review-100-device-with-ai-health-coach-challenges-whoop">Bloomberg</a> &bull; <a href="https://www.androidpolice.com/fitbit-air-review/">Android Police</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 15/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
