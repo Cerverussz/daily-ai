@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 17 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>17 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Kimi K3 de Moonshot AI: 2.8 billones de par&aacute;metros open-weight a $3/$15 por mill&oacute;n de tokens</h3>
+      <p class="what">Moonshot AI present&oacute; Kimi K3 en la World AI Conference de Shanghai, un modelo MoE con 2.8T par&aacute;metros totales (solo 16 de 896 expertos activos por token), 1M tokens de contexto, visi&oacute;n nativa y razonamiento always-on. Disponible como K3 Max y K3 Swarm Max a $3/$15 por mill&oacute;n de tokens, supera a Opus 4.8 y GPT-5.5 en benchmarks de coding y agentes.</p>
+      <p class="why">Con pesos abiertos prometidos para el 27 de julio y pricing que compite con DeepSeek, es una alternativa real para agentes aut&oacute;nomos y procesamiento masivo en tu backend.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html">CNBC</a> &bull; <a href="https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 DeepSeek retira APIs legacy el 24 de julio &mdash; migraci&oacute;n obligatoria en 7 d&iacute;as</h3>
+      <p class="what">DeepSeek eliminar&aacute; los endpoints deepseek-chat y deepseek-reasoner el 24 de julio a las 15:59 UTC. La migraci&oacute;n es un cambio de una l&iacute;nea: actualizar el par&aacute;metro model a deepseek-v4-pro o deepseek-v4-flash. Nota clave: deepseek-reasoner mapea a v4-flash (thinking mode), no a V4-Pro.</p>
+      <p class="why">Si tienes pipelines, agentes o procesos automatizados usando los nombres legacy, fallar&aacute;n en 7 d&iacute;as &mdash; busca y reemplaza en tu c&oacute;digo hoy.</p>
+      <p class="source"><a href="https://enterprisedna.co/resources/news/deepseek-api-migration-july-24-deadline-2026/">Enterprise DNA</a> &bull; <a href="https://dev.to/agdex_ai/deepseek-v4-api-migration-guide-everything-before-the-july-24-2026-deadline-4m30">DEV Community</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Gemini 3.5 Pro: Google no cumple la fecha del 17 de julio</h3>
+      <p class="what">Gemini 3.5 Pro estaba previsto para el 17 de julio pero no lleg&oacute;. Reportes indican que Google descart&oacute; el modelo base original y reinici&oacute; el preentrenamiento tras descubrir fallos estructurales en tool-calling recursivo y generaci&oacute;n SVG. No hay fecha confirmada ni specs oficiales.</p>
+      <p class="why">Si bloqueaste tu roadmap esperando Gemini 3.5, desbl&oacute;quealo &mdash; Kimi K3 y DeepSeek V4 ya est&aacute;n disponibles hoy.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/320308/20260713/gemini-35-pro-targets-july-17-after-full-rebuild-every-spec-remains-unconfirmed.htm">TechTimes</a> &bull; <a href="https://startupfortune.com/google-delays-gemini-3-5-pro-launch-to-july-17-after-scrapping-its-base-model/">Startup Fortune</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Grok Build: xAI open-sourcea su CLI tras esc&aacute;ndalo masivo de privacidad</h3>
+      <p class="what">Investigadores descubrieron que Grok Build sub&iacute;a repositorios Git completos a Google Cloud &mdash; incluyendo historial de commits, SSH keys y secretos &mdash; sin consentimiento y con el toggle de privacidad inactivo. Un test mostr&oacute; 5.1 GiB subidos desde un repo de 11.2 GiB cuando solo necesitaba 192 KiB. xAI respondi&oacute; open-sourceando el c&oacute;digo bajo Apache 2.0.</p>
+      <p class="why">Antes de darle acceso a tu codebase a cualquier AI coding agent, audita qu&eacute; datos env&iacute;a &mdash; la confianza se verifica en el wire level, no en la UI.</p>
+      <p class="source"><a href="https://thehackernews.com/2026/07/grok-build-uploads-entire-git.html">The Hacker News</a> &bull; <a href="https://cybernews.com/ai-news/grok-build-git-repository-upload/">Cybernews</a> &bull; <a href="https://simonwillison.net/2026/Jul/15/grok-build/">Simon Willison</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Inkling de Thinking Machines: Murati apuesta por open-weight + fine-tuning como servicio</h3>
+      <p class="what">Thinking Machines, la startup de Mira Murati (ex-CTO de OpenAI), lanz&oacute; Inkling: un modelo MoE de 975B par&aacute;metros (41B activos), multimodal (texto, imagen, audio, video), bajo Apache 2.0. No busca ser el m&aacute;s fuerte sino el m&aacute;s customizable, con ingresos v&iacute;a Tinker, su herramienta de fine-tuning usada por Bridgewater y otros enterprise.</p>
+      <p class="why">El playbook &ldquo;open-weight base + fine-tuning premium&rdquo; es un modelo de negocio replicable si construyes un producto AI donde la diferenciaci&oacute;n viene de la customizaci&oacute;n.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/">TechCrunch</a> &bull; <a href="https://fortune.com/2026/07/15/what-is-mira-murati-thinking-machines-first-ai-model-inkling/">Fortune</a> &bull; <a href="https://www.axios.com/2026/07/15/mira-murati-thinking-machines-open-weight-model-inkling">Axios</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>China lanza WAICO: alianza de 29 naciones para IA con implicaciones regulatorias</h3>
+      <p class="what">Xi Jinping inaugur&oacute; la World Artificial Intelligence Cooperation Organisation (WAICO) en la World AI Conference de Shanghai, una coalici&oacute;n de 29 pa&iacute;ses con presencia del secretario general de la ONU. Es la primera organizaci&oacute;n multilateral de IA liderada por China, presentada el mismo d&iacute;a que Kimi K3.</p>
+      <p class="why">Para founders construyendo productos globales, esto acelera la bifurcaci&oacute;n regulatoria en IA &mdash; revisa si tus mercados objetivo caer&aacute;n bajo est&aacute;ndares WAICO o regulaci&oacute;n occidental.</p>
+      <p class="source"><a href="https://www.aljazeera.com/news/2026/7/17/chinas-xi-jinping-launches-new-ai-alliance-what-is-it">Al Jazeera</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code: promoci&oacute;n de +50% en l&iacute;mites semanales termina el 19 de julio</h3>
+      <p class="what">Anthropic extendi&oacute; la promoci&oacute;n que aumenta un 50% los l&iacute;mites semanales de Claude Code hasta el 19 de julio a las 11:59 PM PT. Aplica autom&aacute;ticamente a planes Pro, Max, Team y Enterprise legacy en CLI, IDE, desktop y web.</p>
+      <p class="why">Tienes 48 horas para aprovechar el boost &mdash; ideal para atacar ese refactor grande o migraci&oacute;n que ven&iacute;as postergando.</p>
+      <p class="source"><a href="https://www.helpnetsecurity.com/2026/07/13/claude-code-weekly-limits-promotion-extended/">Help Net Security</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Reflect: dashboard para analizar tus h&aacute;bitos de IA</h3>
+      <p class="what">Reflect es un dashboard en beta que muestra c&oacute;mo usas Claude: temas, horarios pico, categor&iacute;as de tareas (coding, drafts, research), con vistas de 1 a 12 meses. Incluye un framework de &ldquo;AI Fluency&rdquo; con 4 dimensiones (Delegation, Description, Discernment, Diligence) y elementos de bienestar digital desarrollados con MIT Media Lab.</p>
+      <p class="why">Si vendes un producto AI, este tipo de meta-analytics sobre uso es un feature que tus usuarios tambi&eacute;n van a esperar &mdash; buen benchmark de UX.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/reflect-with-claude">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Cowork llega a web y m&oacute;vil: sesiones en la nube desde cualquier dispositivo</h3>
+      <p class="what">Cowork &mdash; antes solo en desktop &mdash; ya est&aacute; disponible en claude.ai y en iOS/Android en beta para suscriptores Max. Las sesiones corren en la nube de Anthropic, contin&uacute;an aunque cierres el laptop, y puedes monitorear progreso desde el m&oacute;vil. Dato: m&aacute;s del 90% del uso de Cowork no es desarrollo de software.</p>
+      <p class="why">Delegar tareas largas a Claude desde el m&oacute;vil y que sigan corriendo en la nube cambia c&oacute;mo puedes integrar AI agents en tu workflow diario.</p>
+      <p class="source"><a href="https://claude.com/blog/cowork-web-mobile">Anthropic</a> &bull; <a href="https://www.infoworld.com/article/4194472/anthropic-expands-claude-cowork-to-web-and-mobile-as-enterprise-use-broadens.html">InfoWorld</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 URUNN de Mo Farah: AI coaching para runners con ronda de siete cifras</h3>
+      <p class="what">URUNN, la app de running con AI fundada por el campe&oacute;n ol&iacute;mpico Mo Farah, cerr&oacute; una ronda de siete cifras tras alcanzar usuarios en m&aacute;s de 110 pa&iacute;ses. Su AI &ldquo;Stride&rdquo; crea planes adaptativos en tiempo real seg&uacute;n pace, recuperaci&oacute;n y objetivos, con coaching de Charlotte Purdue y partnerships con Huawei, Puma y Adidas.</p>
+      <p class="why">Es un caso real de marketplace de servicios deportivos con AI integrada como diferenciador &mdash; exactamente el tipo de producto donde la personalizaci&oacute;n AI justifica un premium.</p>
+      <p class="source"><a href="https://athletechnews.com/mo-farahs-urunn-lands-seven-figure-raise-running-boom/">Athletech News</a> &bull; <a href="https://insider.fitt.co/press-release/4x-olympic-gold-medalist-sir-mo-farah-launches-urunn-running-app/">Fitt Insider</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 17/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
