@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 18 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>18 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <h2 class="section-title">Innovaciones T&eacute;cnicas</h2>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Kimi K3: el modelo open-weight m&aacute;s grande del mundo lidera benchmarks de c&oacute;digo</h3>
+      <p class="what">Moonshot AI lanz&oacute; Kimi K3, un modelo mixture-of-experts de 2.8 trillones de par&aacute;metros con visi&oacute;n nativa y 1M tokens de contexto. Obtuvo #1 en Arena Frontend Code (1,679 puntos, superando a Claude Fable 5) y 81.2 en FrontierSWE; pesos completos disponibles el 27 de julio.</p>
+      <p class="why">Si el mejor modelo de coding se vuelve gratuito y open-weight, el costo de integrar generaci&oacute;n de c&oacute;digo en tu producto colapsa &mdash; puedes self-hostear sin costos por token.</p>
+      <p class="source"><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/moonshot-releases-2-8-trillion-parameter-kimi-k3">Tom's Hardware</a> &bull; <a href="https://simonwillison.net/2026/Jul/16/kimi-k3/">Simon Willison</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GPT-5.6 (Sol/Terra/Luna) llega a disponibilidad general con ChatGPT Work</h3>
+      <p class="what">OpenAI lanz&oacute; GPT-5.6 en tres tiers: Sol (m&aacute;xima capacidad, $5/$30M tokens), Terra (balanceado) y Luna (optimizado para velocidad). ChatGPT Work es un agente que conecta herramientas de equipo para convertir borradores en entregables finales.</p>
+      <p class="why">El tiering Sol/Terra/Luna te da control granular costo-rendimiento &mdash; usa Luna para features real-time, Sol para razonamiento complejo, y Terra como workhorse.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Apple Foundation Models abre su framework a cualquier proveedor LLM (WWDC26)</h3>
+      <p class="what">El framework Foundation Models de iOS 26 ahora funciona con cualquier LLM, local o en servidor. Los desarrolladores obtienen structured outputs, visi&oacute;n, e inferencia on-device gratuita en chips A17 Pro+ y M-series.</p>
+      <p class="why">Puedes enviar features de IA en tu app iOS que funcionen offline, sin costo por inferencia, usando el mismo sistema de outputs estructurados de Apple o tu propio modelo.</p>
+      <p class="source"><a href="https://developer.apple.com/videos/play/wwdc2026/241/">Apple Developer</a> &bull; <a href="https://hackernoon.com/a-developers-guide-to-apples-foundation-models-framework-in-ios-26">HackerNoon</a></p>
+    </div>
+
+    <h2 class="section-title">Aplicaciones Profesionales</h2>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; UE ordena a Google abrir acceso system-level de IA en Android a competidores</h3>
+      <p class="what">La Comisi&oacute;n Europea orden&oacute; a Google dar a asistentes de IA de terceros el mismo acceso a nivel de sistema que Gemini en Android &mdash; voice-wake, in-app actions y datos de b&uacute;squeda compartidos. Plazo: features de software abiertos para julio 2027.</p>
+      <p class="why">Si construyes asistentes o agentes para Android, esta regulaci&oacute;n crea un campo nivelado donde tu producto accede a los mismos hooks del OS que Gemini &mdash; oportunidad masiva de distribuci&oacute;n.</p>
+      <p class="source"><a href="https://www.androidauthority.com/eu-android-ai-google-search-mandates-3688186/">Android Authority</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft prepara &ldquo;Project Perception&rdquo; &mdash; scanner de vulnerabilidades multi-modelo</h3>
+      <p class="what">Microsoft est&aacute; por lanzar Project Perception, una plataforma de ciberseguridad con IA que rutea tareas de scanning al mejor modelo entre Anthropic, OpenAI y sistemas propios. Se posiciona como alternativa m&aacute;s barata a Mythos de Anthropic.</p>
+      <p class="why">Un scanner de vulnerabilidades multi-modelo con routing inteligente y menor costo podr&iacute;a convertirse en la capa de seguridad por defecto de tu CI/CD pipeline.</p>
+      <p class="source"><a href="https://www.techrepublic.com/article/news-microsoft-project-perception-ai-security-tool/">TechRepublic</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Anaconda adquiere Kilo Code &mdash; agente de coding open-source con 3M+ devs</h3>
+      <p class="what">Anaconda adquiri&oacute; Kilo Code (cofundado por el ex-CEO de GitLab), un agente de coding model-agnostic que rutea entre 500+ modelos de 60+ proveedores, procesando ~10 trillones de tokens/mes. Funciona en VS Code, JetBrains y CLI.</p>
+      <p class="why">Un agente de coding enterprise-backed, open-source y sin vendor lock-in que soportar&aacute; cualquier modelo frontier que salga &mdash; integraci&oacute;n sin riesgo de obsolescencia.</p>
+      <p class="source"><a href="https://www.anaconda.com/blog/anaconda-acquires-kilo-code">Anaconda Blog</a> &bull; <a href="https://sdtimes.com/agentic-engineering/anaconda-acquires-kilo-code-to-power-the-trillion-token-enterprise/">SD Times</a></p>
+    </div>
+
+    <h2 class="section-title">Ecosistema Claude / Anthropic</h2>
+
+    <div class="news-item">
+      <h3>Claude Fable 5 incluido en planes termina el 19 de julio; cr&eacute;ditos desde el 20</h3>
+      <p class="what">Anthropic extendi&oacute; acceso incluido de Fable 5 en planes Pro, Max y Team hasta el 19 de julio, con rate limits 50% mayores en Claude Code. Desde el 20 de julio, todo uso de Fable 5 pasa a cr&eacute;ditos prepagados ($10/$50M tokens input/output).</p>
+      <p class="why">Si dependes de Fable 5 para workflows de coding en producci&oacute;n, presupuesta el pricing por cr&eacute;ditos desde ma&ntilde;ana o decide qu&eacute; tareas justifican el premium sobre Sonnet 5/Opus 4.6.</p>
+      <p class="source"><a href="https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-stays-free-for-paid-users-until-july-19-as-anthropic-buys-more-time/">BleepingComputer</a> &bull; <a href="https://www.forbes.com/sites/sandycarter/2026/07/13/claude-fable-5-extends-to-july-19-7-days-7-power-moves/">Forbes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: update de estabilidad + MCP Connectors live en Artifacts</h3>
+      <p class="what">Claude Code recibi&oacute; permisos m&aacute;s estrictos, manejo seguro de Bash/PowerShell, limpieza de sesiones background, y la herramienta EndConversation. Tambi&eacute;n agreg&oacute; conectores MCP en vivo para artifacts publicados y modo screen reader.</p>
+      <p class="why">MCP connectors en artifacts significa que tus outputs publicados de Claude Code ahora pueden hacer pull de datos en tiempo real de servicios conectados &mdash; artifacts est&aacute;ticos se vuelven dashboards vivos.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza configuraci&oacute;n HIPAA self-serve para Enterprise</h3>
+      <p class="what">Las organizaciones Claude Enterprise y API ahora pueden auto-configurar HIPAA: un admin revisa el BAA, descarga la gu&iacute;a de implementaci&oacute;n, y habilita uso HIPAA-compliant en un solo flujo sin llamada de ventas.</p>
+      <p class="why">Si construyes productos de salud o coaching con Claude, puedes ir de cero a API HIPAA-compliant en minutos en vez de semanas de intercambio legal.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a></p>
+    </div>
+
+    <h2 class="section-title">Negocios &amp; Producto</h2>
+
+    <div class="news-item">
+      <h3>SpaceX/xAI adquiere Cursor (Anysphere) por $60B &mdash; la mayor adquisici&oacute;n VC-backed</h3>
+      <p class="what">SpaceX acord&oacute; adquirir Anysphere (Cursor) en un deal all-stock de $60B, cierre esperado Q3 2026. Cursor se convierte en subsidiaria con acceso al compute Colossus de xAI; alcanz&oacute; ~$4B de revenue anualizado en menos de 4 a&ntilde;os.</p>
+      <p class="why">La consolidaci&oacute;n de Cursor bajo xAI se&ntilde;ala que AI coding tools son infraestructura estrat&eacute;gica &mdash; espera integraci&oacute;n agresiva con Grok y guerra de precios contra Claude Code y Copilot.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html">CNBC</a> &bull; <a href="https://www.forbes.com/sites/siladityaray/2026/06/16/spacex-will-buy-ai-coding-firm-cursor-for-60-billion/">Forbes</a></p>
+    </div>
+
+    <h2 class="section-title">Sports Tech &amp; Salud</h2>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; AI Sports Analytics se democratiza &mdash; video analysis accesible para organizaciones peque&ntilde;as</h3>
+      <p class="what">El an&aacute;lisis de video deportivo con IA, antes solo para franquicias profesionales, ahora es accesible para organizaciones de cualquier tama&ntilde;o en 2026. Ligas europeas autorizan wearables in-competition para monitoreo biom&eacute;trico en tiempo real.</p>
+      <p class="why">Si construyes un marketplace de sports tech o plataforma de coaching, la barrera de costo para AI video analysis baj&oacute; lo suficiente para servir mercados semi-pro y amateur &mdash; un segmento antes bloqueado que ahora vale atacar.</p>
+      <p class="source"><a href="https://wsc-sports.com/blog/industry-insights/ai-sports-revolution-12-innovations-changing-everything/">WSC Sports</a> &bull; <a href="https://www.ibtimes.com/why-2026-marks-turning-point-ai-sports-beyond-3797829">IBTimes</a></p>
+    </div>
+
+    <footer>
+      <p>Generado autom&aacute;ticamente &mdash; Daily AI Briefing para founders t&eacute;cnicos</p>
+    </footer>
+  </div>
+</body>
+</html>
