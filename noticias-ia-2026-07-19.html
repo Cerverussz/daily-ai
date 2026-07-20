@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 19 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>19 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft prepara Project Perception: seguridad AI multi-modelo para encontrar vulnerabilidades</h3>
+      <p class="what">Microsoft est&aacute; desarrollando Project Perception, una plataforma enterprise que usa modelos de Anthropic, OpenAI y Microsoft para escanear c&oacute;digo, identificar vulnerabilidades y recomendar fixes autom&aacute;ticamente. El sistema ruteado inteligente reserva modelos frontier para pasos cr&iacute;ticos y usa modelos baratos para escaneos masivos, posicion&aacute;ndose como alternativa m&aacute;s accesible a Mythos 5 de Anthropic.</p>
+      <p class="why">Si mantienes un producto en producci&oacute;n, esto promete security scanning con AI de nivel enterprise sin necesitar acceso a programas exclusivos como Glasswing.</p>
+      <p class="source"><a href="https://www.techrepublic.com/article/news-microsoft-project-perception-ai-security-tool/">TechRepublic</a> &bull; <a href="https://www.techtimes.com/articles/320958/20260719/microsoft-project-perception-ai-bug-hunter-set-rival-mythos-wider-access-lower-cost.htm">TechTimes</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 La UE obliga a Google a abrir Android a asistentes AI rivales con acceso de sistema</h3>
+      <p class="what">La Comisi&oacute;n Europea adopt&oacute; dos decisiones vinculantes bajo la DMA que obligan a Google a dar a asistentes AI rivales las mismas 11 integraciones de sistema que Gemini tiene en Android (activaci&oacute;n por voz, acciones cross-app, etc.). Los cambios deben implementarse en Android 18 antes de agosto 2027.</p>
+      <p class="why">Si est&aacute;s construyendo cualquier app Android con AI, pronto tendr&aacute;s acceso a nivel de sistema que antes era exclusivo de Gemini &mdash; esto abre una superficie competitiva enorme para AI de terceros en m&oacute;vil.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/320760/20260716/eu-gives-rival-ai-assistants-system-level-android-access-google-reserved-gemini.htm">TechTimes</a> &bull; <a href="https://fortune.com/2026/07/17/europe-two-new-rules-google-change-way-ai-assistants-work-android-devices/">Fortune</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones tecnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 PrismML lanza Bonsai 27B: el primer modelo de 27B par&aacute;metros que corre en un tel&eacute;fono</h3>
+      <p class="what">PrismML lanz&oacute; Bonsai 27B en variantes de 1-bit (3.9GB) y 1.58-bit (5.9GB), un modelo multimodal capaz de razonamiento, coding y workflows ag&eacute;nticos que corre a 11 tokens/s en un iPhone 17 Pro. La variante de 1-bit retiene el 90% del rendimiento del modelo full-precision en 15 benchmarks, bajo licencia Apache 2.0.</p>
+      <p class="why">Un modelo de 27B corriendo on-device con capacidad multimodal abre la puerta a features de AI offline reales en tu app Android o iOS sin pagar por API.</p>
+      <p class="source"><a href="https://prismml.com/news/prismml-releases-bonsai-27b">PrismML</a> &bull; <a href="https://9to5mac.com/2026/07/14/prismml-releases-bonsai-27b-claiming-first-major-ai-model-of-its-size-fit-for-iphone/">9to5Mac</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Kimi K3 de Moonshot AI: 2.8T par&aacute;metros open-weight, #1 en coding Arena</h3>
+      <p class="what">Moonshot AI lanz&oacute; Kimi K3, el modelo open-weight m&aacute;s grande hasta la fecha con 2.8T par&aacute;metros, contexto de 1M tokens y visi&oacute;n nativa. Alcanz&oacute; el #1 en Arena.ai Frontend Code con 76% win rate y 88.3 en Terminal-Bench 2.1, superando a Fable 5 en coding frontend. Pesos abiertos disponibles el 27 de julio.</p>
+      <p class="why">A $3/$15 por mill&oacute;n de tokens y con pesos abiertos en camino, es la opci&oacute;n m&aacute;s seria para self-hosting de un modelo frontier para coding.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html">CNBC</a> &bull; <a href="https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini 3.5 Pro se retrasa otra vez: Google no logra que pase benchmarks de coding</h3>
+      <p class="what">Google retras&oacute; nuevamente Gemini 3.5 Pro, originalmente anunciado en I/O 2026 para junio, despu&eacute;s de que el modelo fallara en benchmarks internos de coding y razonamiento complejo. Seg&uacute;n Bloomberg, un intento de reentrenamiento con nuevos datos en junio dio resultados decepcionantes. Alphabet perdi&oacute; ~$200B en capitalizaci&oacute;n.</p>
+      <p class="why">Si depend&iacute;as de Gemini 3.5 Pro para tu stack, reeval&uacute;a: GPT-5.6 Sol, Kimi K3, o Claude Fable 5 ya est&aacute;n disponibles y probados en producci&oacute;n.</p>
+      <p class="source"><a href="https://9to5google.com/2026/07/16/gemini-3-5-pro-delays/">9to5Google</a> &bull; <a href="https://www.androidheadlines.com/2026/07/google-gemini-3-5-pro-model-delayed-coding-issues.html">Android Headlines</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GPT-5.6 ya en GA: tres tiers (Sol, Terra, Luna) con pricing agresivo desde $1/M tokens</h3>
+      <p class="what">La familia GPT-5.6 de OpenAI est&aacute; completamente disponible tras su rollout del 9 de julio: Sol (flagship, $5/$30), Terra (balance, $2.50/$15), y Luna (eficiencia, $1/$6). Sol logra 53.6 en Agents' Last Exam superando a Fable 5 por 13 puntos, con 54% m&aacute;s eficiencia en tokens para coding ag&eacute;ntico.</p>
+      <p class="why">Luna a $1/M input es imbatible para tareas de volumen alto en tu backend; Sol compite cabeza a cabeza con Fable 5 para tareas complejas.</p>
+      <p class="source"><a href="https://openai.com/index/gpt-5-6/">OpenAI</a> &bull; <a href="https://simonwillison.net/2026/Jul/9/gpt-5-6/">Simon Willison</a></p>
+    </div>
+
+    <!-- EJE 3: Creacion de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Thinking Machines (Mira Murati) lanza Inkling: modelo open-weight para customizaci&oacute;n enterprise</h3>
+      <p class="what">La startup de Mira Murati lanz&oacute; Inkling, un modelo MoE de 975B par&aacute;metros (41B activos por query) entrenado en 45T tokens de texto, imagen, audio y video. Es open-weight en Hugging Face y est&aacute; dise&ntilde;ado para fine-tuning via Tinker, su plataforma de customizaci&oacute;n. Thinking Machines apuesta a que las empresas prefieren un modelo que puedan hacer suyo sobre el m&aacute;s inteligente del mercado.</p>
+      <p class="why">Si est&aacute;s construyendo un producto vertical, un modelo de 41B activos que puedes fine-tunear y hostear t&uacute; mismo es m&aacute;s &uacute;til que un frontier que no puedes tocar.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/">TechCrunch</a> &bull; <a href="https://fortune.com/2026/07/15/what-is-mira-murati-thinking-machines-first-ai-model-inkling/">Fortune</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Grok 4.5 + Grok Build: coding-first AI a $2/M tokens integrado con Cursor</h3>
+      <p class="what">xAI lanz&oacute; Grok 4.5, entrenado junto a Cursor, enfocado en coding ag&eacute;ntico y tareas de ingenier&iacute;a. Sirve a 80 TPS con el doble de eficiencia por token que modelos comparables, a $2/$6 por mill&oacute;n de tokens. Grok Build es su IDE con el modelo integrado, disponible tambi&eacute;n en Cursor en todos los planes.</p>
+      <p class="why">A $2/M input con integraci&oacute;n nativa en Cursor, es el competidor m&aacute;s agresivo en precio para tu workflow diario de coding.</p>
+      <p class="source"><a href="https://x.ai/news/grok-4-5">xAI</a> &bull; <a href="https://www.axios.com/2026/07/08/spacexai-grok-new-model">Axios</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Fable 5 deja de ser gratis: desde hoy requiere cr&eacute;ditos de uso</h3>
+      <p class="what">El acceso gratuito a Fable 5 en planes Pro, Max, Team y Enterprise expir&oacute; el 19 de julio tras tres extensiones. A partir de hoy, usar Fable 5 requiere cr&eacute;ditos prepagados a $10/M input y $50/M output. Anthropic advirti&oacute; que Fable 5 consume el l&iacute;mite semanal significativamente m&aacute;s r&aacute;pido que otros modelos Claude.</p>
+      <p class="why">Si Fable 5 era tu modelo por defecto, toca decidir: pagar cr&eacute;ditos para tareas cr&iacute;ticas o migrar tu flujo diario a Opus 4.8 o Sonnet 5 que siguen incluidos en tu plan.</p>
+      <p class="source"><a href="https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-stays-free-for-paid-users-until-july-19-as-anthropic-buys-more-time/">BleepingComputer</a> &bull; <a href="https://www.androidauthority.com/claude-fable-5-access-extended-3686668/">Android Authority</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Cowork llega a m&oacute;vil y web: tareas en background desde cualquier dispositivo</h3>
+      <p class="what">Anthropic expandi&oacute; Claude Cowork a web y m&oacute;vil para suscriptores Max, con continuidad cross-device, tareas en background que corren sin laptop encendida, y notificaciones de aprobaci&oacute;n al tel&eacute;fono. M&aacute;s del 90% del uso de Cowork no es desarrollo de software sino operaciones de negocio y creaci&oacute;n de contenido.</p>
+      <p class="why">Poder aprobar tareas de un agente AI desde el tel&eacute;fono cambia c&oacute;mo delegas trabajo repetitivo de tu negocio, no solo coding.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/">TechCrunch</a> &bull; <a href="https://claude.com/blog/cowork-web-mobile">Claude Blog</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Football AI Pro de FIFA/Lenovo: los 48 equipos del Mundial usan agentes AI multi-modelo</h3>
+      <p class="what">Football AI Pro, construido sobre la plataforma xIQ de Lenovo, es un &ldquo;Knowledge Super Agent&rdquo; que orquesta m&uacute;ltiples agentes AI para analizar 2,000+ m&eacute;tricas y millones de data points, entregando insights, reportes y animaciones a cuerpos t&eacute;cnicos. Los 48 equipos del Mundial 2026 lo adoptaron, junto con avatares 3D de los 1,248 jugadores escaneados para offside semiautom&aacute;tico.</p>
+      <p class="why">Es el deployment de multi-agent AI m&aacute;s grande en deportes hasta la fecha &mdash; el patr&oacute;n de &ldquo;agentes especializados orquestados&rdquo; es directamente replicable para cualquier vertical de servicios profesionales.</p>
+      <p class="source"><a href="https://news.lenovo.com/pressroom/press-releases/football-ai-pro-powers-intelligence-across-the-game/">Lenovo</a> &bull; <a href="https://news.lenovo.com/pressroom/press-releases/all-48-teams-use-fifa-ai-pro-world-cup-2026/">Lenovo News</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Budy lanza plataforma de fitness con AI adaptativo, nutrici&oacute;n y accesibilidad</h3>
+      <p class="what">Budy lanz&oacute; su plataforma de fitness con AI en iOS y Android, usando un motor de contexto unificado que genera planes de entrenamiento personalizados, gu&iacute;a nutricional y coaching por voz. Incluye soporte para discapacidades, lesiones y poblaciones desatendidas en fitness, diferenci&aacute;ndose como accessibility-first.</p>
+      <p class="why">El approach de contexto unificado (entrenamiento + nutrici&oacute;n + voz + accesibilidad en un solo motor AI) es un template replicable para cualquier marketplace de servicios profesionales de salud.</p>
+      <p class="source"><a href="https://insider.fitt.co/press-release/budy-launches-ai-fitness-platform-with-adaptive-training-nutrition-and-accessibility-first-design/">Fitt Insider</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 19/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
