@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 20 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>20 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 UE ordena a Google abrir Android 18 a asistentes AI rivales bajo la DMA</h3>
+      <p class="what">La Comisi&oacute;n Europea emiti&oacute; dos medidas vinculantes bajo la Digital Markets Act: Google debe abrir 11 funciones de Android a proveedores AI de terceros (plazo: Android 18, agosto 2027) y compartir datos de b&uacute;squeda con competidores desde enero 2027. Google ya dijo p&uacute;blicamente que no est&aacute; de acuerdo con ambas decisiones.</p>
+      <p class="why">Si construyes features de AI en Android, esto significa que tu asistente podr&aacute; tener el mismo acceso que Gemini a funciones del sistema &mdash; cambia completamente el landscape competitivo.</p>
+      <p class="source"><a href="https://digital-markets-act.ec.europa.eu/commission-provides-guidance-google-ai-interoperability-android-and-sharing-google-search-data-under-2026-07-16_en">European Commission</a> &bull; <a href="https://thenextweb.com/news/eu-google-android-ai-search-data-digital-markets-act">The Next Web</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Replit presenta el &ldquo;Self-Driving Company&rdquo;: agentes AI que triplican output de ingenier&iacute;a</h3>
+      <p class="what">Replit public&oacute; m&eacute;tricas de su modelo operativo con agentes AI: output por ingeniero casi se triplic&oacute; en 6 meses, code review con agente redujo 30% del tiempo humano, y soporte cierra tickets escalados 60% m&aacute;s r&aacute;pido. Los agentes investigan incidentes, revisan PRs, analizan datos de negocio y mejoran sus propios sistemas.</p>
+      <p class="why">Es el caso m&aacute;s concreto de c&oacute;mo un equipo peque&ntilde;o escala con agentes AI sin contratar &mdash; el playbook que todo founder t&eacute;cnico deber&iacute;a estudiar.</p>
+      <p class="source"><a href="https://replit.com/blog/self-driving-company">Replit Blog</a> &bull; <a href="https://www.forbes.com/sites/johnsviokla/2026/07/20/the-self-driving-company-is-ais-next-business-model/">Forbes</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Kimi K2.7 Code en GitHub Copilot: primer modelo open-weight en la plataforma</h3>
+      <p class="what">Moonshot AI logr&oacute; que su modelo Kimi K2.7 Code (1T params total, 32B activos, MoE, 256K contexto, licencia MIT) sea el primer modelo open-weight disponible en el picker de GitHub Copilot. Microsoft hostea la inferencia en Azure &mdash; los datos no fluyen a Moonshot. Disponible en VS Code, JetBrains, Xcode, CLI y m&oacute;vil.</p>
+      <p class="why">Modelo auditable, open-weight y m&aacute;s barato dentro de tu IDE habitual &mdash; ideal si necesitas compliance o quieres evitar vendor lock-in en tu pipeline de coding.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/">GitHub Changelog</a> &bull; <a href="https://www.techtimes.com/articles/319556/20260702/open-weight-ai-enters-github-copilot-kimi-k27-code-costs-less-audits-differently.htm">TechTimes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>On-device AI en Android cruza la barrera de sub-20ms de latencia en producci&oacute;n</h3>
+      <p class="what">Benchmarks reales muestran que modelos de visi&oacute;n por computadora en Android ya corren en menos de 20ms con NPUs. Frameworks como ExecuTorch (Meta) y MediaPipe lideran el despliegue, con soporte nativo para aceleraci&oacute;n por hardware en Snapdragon y otros chipsets.</p>
+      <p class="why">La inferencia on-device ya no es un compromiso &mdash; es viable para features de tiempo real en tu app Android sin round-trip al servidor.</p>
+      <p class="source"><a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms/">AlephZero Labs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>WAIC 2026 cierra en Shanghai: 29 pa&iacute;ses fundan organizaci&oacute;n mundial de cooperaci&oacute;n en IA</h3>
+      <p class="what">La World AI Conference 2026 cerr&oacute; el 20 de julio con la firma del acuerdo fundacional de WAICO (World AI Cooperation Organization) por 29 pa&iacute;ses, con sede en Shanghai. M&aacute;s de 1,100 empresas exhibieron 3,000+ productos en la conferencia m&aacute;s grande de AI del a&ntilde;o.</p>
+      <p class="why">Se&ntilde;al clara de que la gobernanza global de IA se est&aacute; formalizando &mdash; si tu producto escala internacionalmente, empieza a seguir estos frameworks.</p>
+      <p class="source"><a href="https://english.news.cn/20260720/e2550c55ecfd413188eb965e304c8be2/c.html">Xinhua</a> &bull; <a href="https://news.cgtn.com/news/2026-07-20/New-coordinates-for-global-AI-governance-and-China-s-contributions-1OW4UqtQrQc/p.html">CGTN</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 SpaceX compra Cursor por $60B: incertidumbre para developers</h3>
+      <p class="what">SpaceX cerr&oacute; la adquisici&oacute;n de Anysphere (Cursor) por $60B en acciones. La reacci&oacute;n del mercado fue brutal: SpaceX perdi&oacute; ~$600B en 4 d&iacute;as. La pregunta clave para developers es si Cursor seguir&aacute; siendo model-agnostic o quedar&aacute; atado a Grok.</p>
+      <p class="why">Si Cursor es tu editor principal, es momento de tener un plan B &mdash; Claude Code y Copilot cubren la mayor&iacute;a de workflows cr&iacute;ticos.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/">TechCrunch</a> &bull; <a href="https://finance.yahoo.com/markets/stocks/article/spacex-announces-60-billion-cursor-deal-to-boost-ai-coding-125509159.html">Yahoo Finance</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>59% de developers usan 3+ herramientas AI en paralelo: la era del &ldquo;best fit&rdquo;</h3>
+      <p class="what">Datos de julio 2026 muestran que la mayor&iacute;a de developers combinan m&uacute;ltiples herramientas AI: Cursor para edici&oacute;n, Claude Code para arquitectura y debugging, Copilot para completions. El mercado se mueve de &ldquo;mejor modelo gana&rdquo; a &ldquo;mejor fit gana&rdquo; donde precio, velocidad y acceso importan tanto como raw scores.</p>
+      <p class="why">No elijas una sola herramienta &mdash; dise&ntilde;a tu workflow combinando lo mejor de cada una seg&uacute;n la tarea espec&iacute;fica.</p>
+      <p class="source"><a href="https://blog.logrocket.com/ai-dev-tool-power-rankings/">LogRocket</a> &bull; <a href="https://marissaharcourt.substack.com/p/the-best-ai-coding-tools-in-july">Marissa Harcourt</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Sonnet 5 ya es el modelo default para todos los usuarios Free y Pro</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Sonnet 5 como el modelo default global, trayendo inteligencia casi-Opus a tareas de coding y agentes al costo de Sonnet. Junto con Fable 5 (redesplegado el 1 de julio con mejoras en ciberseguridad), Anthropic refresc&oacute; toda la l&iacute;nea de modelos.</p>
+      <p class="why">Si usas la API, Sonnet 5 como default significa mejor calidad sin cambiar pricing &mdash; re-eval&uacute;a si realmente necesitas Opus para todos tus casos de uso.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot - Claude Updates</a> &bull; <a href="https://www.anthropic.com/news/redeploying-fable-5">Anthropic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: artifacts con datos live v&iacute;a MCP y nuevo sistema de sesiones</h3>
+      <p class="what">Claude Code ahora permite que artifacts publicados llamen conectores MCP para mostrar datos en tiempo real. Adem&aacute;s, /fork crea sesiones en background (antes eran subagentes in-session) y el nuevo /subtask reemplaza la funci&oacute;n anterior. Tambi&eacute;n se agreg&oacute; EndConversation tool y heartbeats de progreso.</p>
+      <p class="why">Artifacts con datos live convierten a Claude Code en una herramienta de dashboarding r&aacute;pido &mdash; &uacute;til para demos internas o monitoreo ligero sin construir un frontend.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot - Claude Code</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza HIPAA self-serve y Admin API para Enterprise</h3>
+      <p class="what">Las organizaciones Enterprise y API ahora pueden activar configuraci&oacute;n HIPAA directamente desde el panel de admin, sin proceso manual. Tambi&eacute;n se lanz&oacute; Admin API para gestionar miembros, roles, invitaciones y grupos program&aacute;ticamente. Y la memoria de Claude ahora usa entradas individuales categorizadas en vez de res&uacute;menes diarios.</p>
+      <p class="why">Si est&aacute;s en healthtech o servicios profesionales regulados, HIPAA self-serve elimina semanas de tr&aacute;mites para integrar Claude en tu producto.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot - Anthropic</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Technogym + Google Cloud: coaching AI con Gemini llega al fitness profesional</h3>
+      <p class="what">Technogym anunci&oacute; colaboraci&oacute;n multi-a&ntilde;o con Google Cloud para integrar Gemini en su ecosistema AI. El Technogym AI Coach ofrece entrenamiento predictivo personalizado (texto, imagen y voz), mientras el AI Assistant automatiza operaciones para gimnasios: programaci&oacute;n de workouts, detecci&oacute;n de se&ntilde;ales de abandono y retenci&oacute;n de clientes.</p>
+      <p class="why">Es el blueprint para cualquier marketplace de servicios de salud/fitness: AI que personaliza la experiencia del usuario Y optimiza las operaciones del proveedor.</p>
+      <p class="source"><a href="https://www.prnewswire.com/news-releases/technogym-partners-with-google-cloud-to-pioneer-the-next-generation-of-ai-powered-health-and-wellness-302741458.html">PR Newswire</a> &bull; <a href="https://athletechnews.com/technogym-google-cloud-team-to-supercharge-ai-powered-training/">Athletech News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>AI genera entrenamientos diarios personalizados seg&uacute;n sue&ntilde;o, recuperaci&oacute;n y datos card&iacute;acos</h3>
+      <p class="what">Plataformas de fitness en 2026 ya integran datos de sue&ntilde;o, readiness muscular y variabilidad card&iacute;aca para generar y ajustar entrenamientos diarios autom&aacute;ticamente. Los wearables predicen enfermedades, detectan arritmias y proveen coaching personalizado en tiempo real.</p>
+      <p class="why">Si est&aacute;s en sports tech, la diferenciaci&oacute;n ya no es &ldquo;tener AI&rdquo; sino la profundidad de integraci&oacute;n con datos biom&eacute;tricos reales del usuario.</p>
+      <p class="source"><a href="https://boxlifemagazine.com/future-fitness-ai-strength-recovery-mental-health-shifts/">BoxLife Magazine</a> &bull; <a href="https://www.jointcorp.com/fitness-tracker-market-trends-2026-whats-next-in-wearable-health-technology/">JointCorp</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 20/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
