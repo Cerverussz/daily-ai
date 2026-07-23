@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 22 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>22 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google lanza Gemini 3.6 Flash: workhorse model m&aacute;s barato y eficiente</h3>
+      <p class="what">Google DeepMind lanz&oacute; Gemini 3.6 Flash, su modelo de trabajo diario que usa 17% menos tokens de salida que 3.5 Flash y baja el precio de output de $9 a $7.50 por mill&oacute;n de tokens. El knowledge cutoff avanza de enero 2025 a marzo 2026, con mejoras notables en coding, conocimiento y rendimiento multimodal.</p>
+      <p class="why">Si usas Gemini en producci&oacute;n para procesamiento de datos o agentes, esto reduce tu factura autom&aacute;ticamente sin cambiar una l&iacute;nea de c&oacute;digo.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/">TechCrunch</a> &bull; <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/">Google Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini 3.5 Flash Cyber: modelo de ciberseguridad que encuentra y parchea vulnerabilidades solo</h3>
+      <p class="what">Google lanz&oacute; Flash Cyber, un modelo fine-tuned sobre 3.5 Flash que aut&oacute;nomamente construye exploits para verificar vulnerabilidades en sandbox y genera parches. En evaluaciones sobre el motor V8 de Chrome, descubri&oacute; 55 issues, 10 de los cuales fueron ignorados por otros modelos incluyendo Opus 4.6.</p>
+      <p class="why">Aunque por ahora es acceso limitado para gobiernos y partners, marca la direcci&oacute;n: modelos especializados y baratos para security scanning continuo en tu CI/CD.</p>
+      <p class="source"><a href="https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/">Google DeepMind</a> &bull; <a href="https://www.helpnetsecurity.com/2026/07/22/google-gemini-3-5-flash-cyber-model/">Help Net Security</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>HCLTech: 90% de empresas adoptan AI pero solo 18% ve impacto real en revenue</h3>
+      <p class="what">El estudio &ldquo;Blueprint for AI Leadership&rdquo; de HCLTech con 500 decision-makers enterprise revela que aunque el 91% reporta mejor acceso a datos y 90% ganancias de productividad, solo el 18% ve impacto significativo en ingresos. Los AI Leaders que s&iacute; escalan son 4x m&aacute;s propensos a tener use cases medibles y sponsorship ejecutivo.</p>
+      <p class="why">Dato clave si vendes B2B: las empresas est&aacute;n comprando AI tools pero no saben medir ROI; el producto que resuelva esa brecha de medici&oacute;n tiene mercado.</p>
+      <p class="source"><a href="https://www.hcltech.com/de-de/press-releases/hcltech-report-exposes-widening-ai-divide-only-18-enterprises-seeing-revenue-impact">HCLTech</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini 3.5 Flash-Lite: el modelo m&aacute;s barato de Google para alto volumen</h3>
+      <p class="what">Lanzado junto con 3.6 Flash, Flash-Lite es el modelo m&aacute;s cost-effective de la familia Gemini, dise&ntilde;ado para tareas de alto volumen y baja latencia. Disponible para clientes enterprise y usuarios de Gemini app a nivel global.</p>
+      <p class="why">Ideal para features de AI en tu app donde cada request cuenta: clasificaci&oacute;n, extracci&oacute;n de datos, o respuestas r&aacute;pidas donde no necesitas el modelo m&aacute;s grande.</p>
+      <p class="source"><a href="https://9to5google.com/2026/07/21/gemini-3-6-flash-launch/">9to5Google</a> &bull; <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/">Google Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>xAI open-sources Grok Build: coding agent CLI escrito en Rust</h3>
+      <p class="what">SpaceXAI liber&oacute; el c&oacute;digo fuente de Grok Build, su CLI de coding agente que soporta hasta 8 sub-agentes paralelos trabajando en ramas distintas del codebase. El release lleg&oacute; tras una controversia de privacidad donde se descubri&oacute; que el tool sub&iacute;a repos completos a servidores cloud sin consentimiento.</p>
+      <p class="why">El open-source te deja auditar exactamente qu&eacute; hace el agente con tu c&oacute;digo, algo que deber&iacute;a ser est&aacute;ndar para cualquier coding CLI que toque tu repo.</p>
+      <p class="source"><a href="https://x.ai/news/grok-build-open-source">SpaceXAI</a> &bull; <a href="https://simonwillison.net/2026/Jul/15/grok-build/">Simon Willison</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Managed Agents: effort settings, webhooks expandidos y session seeding</h3>
+      <p class="what">Anthropic actualiz&oacute; Claude Managed Agents con control de esfuerzo por modelo, webhooks para eventos de entorno y memory store, seeding de sesiones con eventos iniciales, y version checks opcionales en updates. Los SDKs en 8 lenguajes ya env&iacute;an el nuevo header agent-memory-2026-07-22.</p>
+      <p class="why">Si est&aacute;s construyendo agentes de larga duraci&oacute;n sobre Claude, session seeding y effort settings te dan control fino sobre costo y comportamiento sin armar tu propio orchestrator.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot</a> &bull; <a href="https://platform.claude.com/docs/en/release-notes/overview.md">Claude Platform Docs</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Framer 3.0 con AI Agents: edita tu sitio en producci&oacute;n desde el canvas con branching</h3>
+      <p class="what">Framer lanz&oacute; AI Agents que trabajan directamente dentro de proyectos live: editan p&aacute;ginas, componentes, estilos, CMS, SEO y flujos de publicaci&oacute;n. A diferencia de generadores de mockups, todo cambio es nativo de Framer y se puede inspeccionar. Incluye branching tipo Git y MCP para que Claude Code, Cursor o Codex editen tu sitio.</p>
+      <p class="why">Para founders t&eacute;cnicos, esto elimina el cuello de botella de actualizar tu landing o marketing site: la AI edita directamente en producci&oacute;n con undo seguro.</p>
+      <p class="source"><a href="https://www.framer.com/">Framer</a> &bull; <a href="https://fullstackcreators.com/framer-3-ai-agents-branching-creators/">Full Stack Creators</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GPT-5.6 Sol, Terra y Luna: OpenAI lanza tres tiers de precio para API</h3>
+      <p class="what">OpenAI despleg&oacute; GPT-5.6 en tres niveles: Sol ($5/$30M tokens) para tareas dif&iacute;ciles con razonamiento Max, Terra ($2.50/$15) como modelo balanceado, y Luna ($1/$6) para velocidad. Sol corre a 750 tokens/s en Cerebras, e introduce Multi-agent beta y Programmatic Tool Calling en la Responses API.</p>
+      <p class="why">Tres tiers de un mismo modelo simplifica la arquitectura: Sol para tu pipeline cr&iacute;tico, Luna para el resto, sin cambiar prompts.</p>
+      <p class="source"><a href="https://www.latent.space/p/ainews-openai-launches-gpt-56-solterraluna">Latent Space</a> &bull; <a href="https://techjournal.org/openai-gpt-5-6-sol-terra-luna">Tech Journal</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Sonnet 5 es el modelo default: 1M contexto, pricing agresivo</h3>
+      <p class="what">Claude Sonnet 5 es ahora el modelo default para Pro, Team y Enterprise. Ofrece contexto nativo de 1M tokens, adaptive thinking activado por defecto, y pricing introductorio de $2/$10 por mill&oacute;n de tokens hasta agosto 31. Logra 80.5% en Terminal-bench 2.1 para coding ag&eacute;ntico.</p>
+      <p class="why">A $2/M input con 1M de contexto, Sonnet 5 es probablemente el mejor valor calidad-precio para agentes en producci&oacute;n ahora mismo.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-sonnet-5">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Reflect: dashboard que analiza c&oacute;mo usas AI con framework 4D</h3>
+      <p class="what">Anthropic lanz&oacute; Reflect en beta, un dashboard dentro de Claude que muestra patrones de uso, temas clave, y picos de actividad. Eval&uacute;a h&aacute;bitos con el framework 4D (Delegaci&oacute;n, Descripci&oacute;n, Discernimiento, Diligencia) y permite configurar quiet hours y recordatorios de descanso.</p>
+      <p class="why">M&aacute;s all&aacute; del wellness, los datos de Reflect te muestran d&oacute;nde realmente usas AI en tu workflow y d&oacute;nde hay oportunidades que est&aacute;s ignorando.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/reflect-with-claude">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Fitbit AI Coach con Gemini en beta p&uacute;blica: de tracking pasivo a coaching activo</h3>
+      <p class="what">Google integra Gemini en la app Fitbit redise&ntilde;ada con un coach AI que, tras 5 minutos de onboarding, genera planes multi-semana de movimiento, recuperaci&oacute;n y sue&ntilde;o que se ajustan diariamente con datos reales de HRV, SpO2 y temperatura. Funciona con Fitbit Air ($100, sin pantalla), Pixel Watch y otros wearables.</p>
+      <p class="why">Este es el modelo a seguir para sports tech: wearable barato + AI coaching personalizado; si est&aacute;s construyendo algo en fitness, esta es tu competencia directa.</p>
+      <p class="source"><a href="https://www.mobihealthnews.com/news/google-debuts-gemini-powered-ai-health-coach-fitbit-and-pixel-watch-users">MobiHealthNews</a> &bull; <a href="https://www.aicerts.ai/news/fitbit-ai-coach-public-beta-transforms-wearable-wellness/">AI CERTs</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 22/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
