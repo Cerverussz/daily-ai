@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 27 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>27 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Kimi K3 libera pesos abiertos: 2.8T params, el modelo open-weight m&aacute;s grande de la historia</h3>
+      <p class="what">Moonshot AI liber&oacute; los pesos de Kimi K3 el 27 de julio: un modelo MoE de 2.8 trillones de par&aacute;metros (104B activos por token) con ventana de 1M tokens, input multimodal (texto, imagen, video) y licencia Modified MIT para uso comercial. Introduce &ldquo;Kimi Delta Attention&rdquo;, que reduce el costo de inferencia en contextos largos hasta 6x.</p>
+      <p class="why">Si est&aacute;s evaluando self-hosting para evitar dependencia de APIs propietarias (o riesgo de datos con proveedores chinos), este es el primer modelo open-weight que compite a nivel frontier en coding y razonamiento.</p>
+      <p class="source"><a href="https://qz.com/moonshot-ai-kimi-k3-open-weights-download-072726">Quartz</a> &bull; <a href="https://www.techi.com/kimi-k3-open-weights-inference-economics/">TECHi</a> &bull; <a href="https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation">Interconnects</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 MCP se convierte en est&aacute;ndar en herramientas creativas: Blender, Unreal, Adobe y m&aacute;s</h3>
+      <p class="what">En SIGGRAPH 2026, Blender, Unreal Engine, Adobe Creative Cloud, SideFX Houdini 22 y Foundry anunciaron integraciones MCP server, permitiendo que agentes AI operen directamente dentro de las herramientas donde se crean assets, escenas y timelines. Adobe lanz&oacute; un MCP Server para Express que permite automatizar tareas como renombrar capas, redimensionar assets y preparar archivos para entrega.</p>
+      <p class="why">MCP pas&oacute; de protocolo experimental a infraestructura de producci&oacute;n; si tu producto genera o manipula contenido visual, exponer un MCP server es la forma de ser consumible por agentes AI.</p>
+      <p class="source"><a href="https://blogs.nvidia.com/blog/siggraph-news-2026/">NVIDIA Blog</a> &bull; <a href="https://explainx.ai/blog/nvidia-siggraph-2026-cosmos-edge-mcp-physical-ai-july-2026">Explainx</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>AgentForger: vulnerabilidad cr&iacute;tica en ChatGPT Workspace Agents (ya parcheada)</h3>
+      <p class="what">Zenity Labs descubri&oacute; &ldquo;AgentForger&rdquo;, un fallo CSRF que permit&iacute;a con un solo link de phishing crear, autorizar y desplegar un agente AI aut&oacute;nomo dentro de una organizaci&oacute;n v&iacute;ctima, heredando la identidad completa del usuario. OpenAI corrigi&oacute; el fallo en 4 d&iacute;as tras el reporte.</p>
+      <p class="why">Si usas agentes AI en producci&oacute;n con acceso a datos internos, este caso es un recordatorio de que la superficie de ataque de los agentes es fundamentalmente distinta a la de APIs tradicionales.</p>
+      <p class="source"><a href="https://thehackernews.com/2026/07/chatgpt-agentforger-flaw-could-deploy.html">The Hacker News</a> &bull; <a href="https://www.securityweek.com/openai-fixes-chatgpt-agent-flaw-that-could-let-attackers-forge-an-ai-insider/">SecurityWeek</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>NVIDIA Cosmos 3 Edge: modelos de mundo f&iacute;sico en una sola GPU</h3>
+      <p class="what">NVIDIA present&oacute; Cosmos 3 Edge en SIGGRAPH, un modelo de 4B par&aacute;metros optimizado para hardware edge (Jetson, RTX PRO, GeForce RTX) que procesa 5 modalidades (texto, imagen, video, audio ambiental, acciones f&iacute;sicas) en tiempo real. Usa una arquitectura mixture-of-transformers con sub-redes especializadas por modalidad.</p>
+      <p class="why">Si trabajas en rob&oacute;tica, simulaci&oacute;n o apps que necesitan entender el mundo f&iacute;sico, esto baja la barrera de &ldquo;necesitas un cluster&rdquo; a &ldquo;necesitas una GPU&rdquo;.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/321401/20260723/nvidia-siggraph-cosmos-3-edge-brings-physical-ai-pipeline-single-gpu.htm">TechTimes</a> &bull; <a href="https://blogs.nvidia.com/blog/siggraph-news-2026/">NVIDIA Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Antigravity reemplaza Gemini CLI: coding agent en Go con multi-agentes</h3>
+      <p class="what">Google complet&oacute; la transici&oacute;n de Gemini CLI a Antigravity CLI, su coding agent de nueva generaci&oacute;n escrito en Go. Soporta workflows as&iacute;ncronos en background, orquestaci&oacute;n multi-agente, y comparte arquitectura unificada entre CLI, app de escritorio (Antigravity 2.0) e IDE.</p>
+      <p class="why">El ecosistema de AI coding agents se consolida en tres players: Claude Code, Cursor y ahora Antigravity; si est&aacute;s eligiendo stack de desarrollo, este es el nuevo competidor de Google.</p>
+      <p class="source"><a href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/">Google Developers</a> &bull; <a href="https://ostechnix.com/google-is-replacing-gemini-cli-with-google-antigravity/">OSTechNix</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Nvidia-OpenAI negocian respaldo de $250B para data center de $500B en Ohio</h3>
+      <p class="what">Nvidia est&aacute; en conversaciones para garantizar $250B en financiamiento para que OpenAI arriende un data center de 10 gigawatts en Piketon, Ohio, desarrollado por SB Energy (SoftBank). En paralelo, negocian hasta $350B adicionales en financiamiento de chips.</p>
+      <p class="why">Esto marca el punto donde OpenAI busca controlar su propia infra en vez de depender de Microsoft/AWS/Oracle &mdash; la econom&iacute;a de escala de la inferencia est&aacute; redefiniendo qui&eacute;n puede competir.</p>
+      <p class="source"><a href="https://www.forbes.com/sites/tylerroush/2026/07/27/nvidia-and-openai-discussing-500-billion-data-center-heres-what-we-know/">Forbes</a> &bull; <a href="https://www.aljazeera.com/economy/2026/7/27/nvidia-plans-250bn-push-to-bolster-openais-infrastructure-ambitions">Al Jazeera</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 monday.com recorta 20% del staff y pivotea a AI Work Platform con MCP Block</h3>
+      <p class="what">monday.com anunci&oacute; reestructuraci&oacute;n cortando ~630 empleados (20%) para pivotar agresivamente hacia su &ldquo;AI Work Platform&rdquo;. Lanz&oacute; un MCP Block que permite a cualquier app con MCP server disparar acciones dentro de monday.com, y report&oacute; +50% de throughput en desarrollo interno usando AI agents.</p>
+      <p class="why">Es el caso de estudio en tiempo real de c&oacute;mo un SaaS maduro restructura operaciones alrededor de AI &mdash; la lecci&oacute;n para founders: los incumbents se mueven r&aacute;pido cuando apuestan por agentes.</p>
+      <p class="source"><a href="https://techstartups.com/2026/07/27/monday-com-lays-off-20-of-workforce-as-ai-restructuring-cuts-620-jobs/">Tech Startups</a> &bull; <a href="https://ir.monday.com/news-and-events/news-releases/news-details/2026/monday-com-Goes-All-In-on-AI-From-Work-Management-Platform-to-AI-Work-Platform/default.aspx">monday.com IR</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Open Secure AI Alliance: Nvidia, Microsoft, Adobe y otros forman alianza de seguridad AI</h3>
+      <p class="what">Nvidia, Microsoft, Adobe, CrowdStrike, Dell, Hugging Face y otras empresas formaron la Open Secure AI Alliance para compartir herramientas de seguridad AI y establecer defensas comunes contra amenazas a sistemas de IA en producci&oacute;n.</p>
+      <p class="why">Si est&aacute;s desplegando agentes AI en tu producto, los est&aacute;ndares de seguridad que salgan de esta alianza probablemente se conviertan en requisitos de compliance para enterprise.</p>
+      <p class="source"><a href="https://blogs.nvidia.com/blog/siggraph-news-2026/">NVIDIA Blog</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Opus 5: rendimiento near-frontier a mitad de precio que Fable 5</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Opus 5 el 24 de julio con 1M tokens de contexto, 128K max output, y pricing id&eacute;ntico a Opus 4.8 ($5/$25 por MTok). Duplica el score de Opus 4.8 en Frontier-Bench, iguala a Fable 5 en CursorBench 3.2, y triplica al siguiente mejor modelo en ARC-AGI 3.</p>
+      <p class="why">El sweet spot para producci&oacute;n: rendimiento de frontier con costos controlados y el modelo m&aacute;s alineado de Anthropic hasta la fecha.</p>
+      <p class="source"><a href="https://www.explainx.ai/blog/claude-opus-5-launch-july-2026">Explainx</a> &bull; <a href="https://benchlm.ai/models/claude-opus-5">BenchLM</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Cowork llega a mobile y web: sesiones remotas, tareas programadas y M365</h3>
+      <p class="what">Anthropic expandi&oacute; Cowork a web (claude.ai) y mobile (iOS/Android) en beta para suscriptores Max. Las sesiones corren en servidores de Anthropic, pueden ejecutar tareas programadas sin dispositivo conectado, y se agreg&oacute; integraci&oacute;n con Microsoft 365 (email, calendario, OneDrive, SharePoint).</p>
+      <p class="why">Cowork pasa de herramienta de coding a plataforma de automatizaci&oacute;n de trabajo completa &mdash; el 90% del uso ya no es desarrollo de software sino operaciones y creaci&oacute;n de contenido.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/">TechCrunch</a> &bull; <a href="https://claude.com/blog/cowork-web-mobile">Anthropic Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude voice mode ahora permite elegir entre Opus, Sonnet y Haiku</h3>
+      <p class="what">Anthropic actualiz&oacute; el modo de voz de Claude para permitir selecci&oacute;n de modelo (Opus, Sonnet, Haiku). Por defecto usa la versi&oacute;n r&aacute;pida del &uacute;ltimo modelo utilizado en el chat de texto.</p>
+      <p class="why">Si est&aacute;s construyendo interfaces de voz sobre Claude, ahora puedes balancear costo vs calidad por caso de uso sin cambiar de proveedor.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Ultrahuman Emerald: motor de decisiones de salud on-device con 60+ acciones personalizadas</h3>
+      <p class="what">Ultrahuman lanz&oacute; su actualizaci&oacute;n Emerald con &ldquo;UltraSphere&rdquo;, el primer motor de decisiones para wearables que procesa todo on-device sin conexi&oacute;n. Genera 60+ acciones personalizadas basadas en datos fisiol&oacute;gicos, ubicaci&oacute;n, clima, ritmo circadiano y perfil del usuario, con VO&#8322; Max mejorado y detecci&oacute;n de fibrilaci&oacute;n auricular.</p>
+      <p class="why">El patr&oacute;n &ldquo;AI on-device + datos de salud + acciones contextuales&rdquo; es el blueprint para cualquier app de coaching o wellness que quiera diferenciarse sin depender de la nube.</p>
+      <p class="source"><a href="https://www.androidcentral.com/wearables/ultrahuman/ultrahuman-emerald-update-is-massive-ultrasphere-decision-engine-is-the-star-for-us">Android Central</a> &bull; <a href="https://www.engadget.com/2220780/ultrahuman-overhauls-app-brings-all-of-its-analysis-on-device/">Engadget</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 27/07/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
