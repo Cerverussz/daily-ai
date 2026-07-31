@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 30 de Julio 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>30 de julio de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Gemini Spark ya navega Chrome con tus cuentas y passwords guardados</h3>
+      <p class="what">Google lanz&oacute; la integraci&oacute;n de Gemini Spark con Chrome auto-browse: el agente personal puede usar tus sesiones logueadas y contrase&ntilde;as guardadas para ejecutar tareas web (agendar visitas, buscar vuelos, iniciar reservas). Incluye protecci&oacute;n contra prompt injection y handoff al usuario para acciones sensibles como pagos.</p>
+      <p class="why">Es el primer agente mainstream que opera sobre sesiones reales del navegador &mdash; un referente de UX para cualquiera construyendo flujos agentes que interact&uacute;an con servicios web externos.</p>
+      <p class="source"><a href="https://9to5google.com/2026/07/30/gemini-spark-chrome-auto-browse/">9to5Google</a> &bull; <a href="https://blog.google/innovation-and-ai/products/gemini-app/gemini-spark-updates-july-2026/">Google Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Nscale adquiere Anyscale (Ray) por $1.65B para full-stack AI cloud</h3>
+      <p class="what">Nscale firm&oacute; la adquisici&oacute;n de Anyscale, la empresa detr&aacute;s del framework open-source Ray para distribuir workloads de IA (training, inference, RL) en miles de GPUs. Ray fue donado al PyTorch Foundation en 2025 y sigue open-source. Los 200 empleados de Anyscale se integran a Nscale.</p>
+      <p class="why">Si usas Ray para entrenar o servir modelos, la consolidaci&oacute;n infra+software puede simplificar tu stack de deployment, pero vigila posibles cambios en la capa comercial.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/">TechCrunch</a> &bull; <a href="https://www.nscale.com/press-releases/nscale-acquires-anyscale">Nscale</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Oracle integra Gemini en Fusion Apps y NetSuite via AI Agent Studio</h3>
+      <p class="what">Oracle expandi&oacute; su partnership con Google Cloud para llevar modelos Gemini a Oracle Fusion Applications y NetSuite a trav&eacute;s de AI Agent Studio. Los clientes enterprise podr&aacute;n usar Gemini como motor de IA embebido en sus flujos ERP y CRM existentes.</p>
+      <p class="why">Se&ntilde;al clara de que los modelos de IA se est&aacute;n convirtiendo en componentes embebidos de plataformas empresariales &mdash; si construyes sobre marketplaces B2B, esta tendencia define c&oacute;mo tus clientes esperar&aacute;n IA integrada.</p>
+      <p class="source"><a href="https://www.bloomberg.com/news/articles/2026-07-30/oracle-gains-after-expanding-google-gemini-ai-partnership">Bloomberg</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; MCP 2026-07-28: el protocolo se vuelve stateless y rompe con sesiones</h3>
+      <p class="what">La nueva spec de Model Context Protocol elimina sesiones por completo: cada request lleva versi&oacute;n, identidad y capabilities en _meta. Agrega Multi Round-Trip Requests, header-based routing, resultados cacheables, OAuth/OIDC reforzado, y un framework formal de extensiones. Roots, Sampling y Logging quedan deprecados (12 meses de soporte).</p>
+      <p class="why">Si mantienes un MCP server, esta migraci&oacute;n es obligatoria &mdash; el modelo stateless simplifica scale-out pero requiere reescribir el handshake y adoptar la nueva auth.</p>
+      <p class="source"><a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/">MCP Blog</a> &bull; <a href="https://www.scalekit.com/blog/mcp-spec-update-july-2026">ScaleKit</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini Robotics 2: tres modelos para control full-body en humanoides</h3>
+      <p class="what">Google DeepMind present&oacute; Gemini Robotics 2 con tres modelos: un VLA, un VLM de razonamiento embodied, y un VLA on-device. Demostrado en el robot Apptronik Apollo 2, logra 92% de &eacute;xito en tareas de destreza fina como desenroscar una bombilla, coordinando movimientos de cuerpo completo en tiempo real.</p>
+      <p class="why">El VLA on-device marca la direcci&oacute;n de inferencia local para rob&oacute;tica &mdash; la misma arquitectura que eventualmente llegar&aacute; a dispositivos m&oacute;viles y edge para tareas de visi&oacute;n-acci&oacute;n.</p>
+      <p class="source"><a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/">Google DeepMind</a> &bull; <a href="https://siliconangle.com/2026/07/30/google-deepmind-debuts-gemini-robotics-2-model-series-humanoid-robots/">SiliconANGLE</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Cursor v3.11 agrega Side Chats: agentes paralelos en el editor</h3>
+      <p class="what">Cursor lanz&oacute; Side Chats, permitiendo ejecutar m&uacute;ltiples conversaciones con agentes IA en paralelo dentro del editor. Esto cierra la brecha de multi-tarea que Claude Code ten&iacute;a como ventaja, permitiendo refactorizar un m&oacute;dulo mientras debuggeas otro simult&aacute;neamente.</p>
+      <p class="why">Si usas Cursor como editor principal, esto elimina el context-switching entre tareas &mdash; eval&uacute;a si reduce tu necesidad de alternar con Claude Code para trabajo paralelo.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/cursor-vs-claude-code-vs-github-copilot-2026-ultimate-comparison">NxCode</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios y productos -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Google Gemini Notebook lanza "App" artifact: genera apps HTML interactivas desde prompt</h3>
+      <p class="what">Google est&aacute; desarrollando un nuevo artifact tipo "App" en Gemini Notebook que genera dashboards, juegos y aplicaciones HTML interactivas directamente desde tus fuentes y prompts. Similar a los Artifacts de Claude pero integrado en el ecosistema Notebook de Google.</p>
+      <p class="why">Otra se&ntilde;al de que generar MVPs funcionales desde un prompt se est&aacute; convirtiendo en feature est&aacute;ndar &mdash; si construyes herramientas de prototipado, este es tu benchmark de UX.</p>
+      <p class="source"><a href="https://www.cryptointegrat.com/p/ai-news-july-30-2026">Crypto Integrated</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>China implementa la primera regulaci&oacute;n vinculante del mundo para agentes IA</h3>
+      <p class="what">China puso en vigencia las "Opiniones de Implementaci&oacute;n sobre la Aplicaci&oacute;n Estandarizada y Desarrollo Innovador de Agentes Inteligentes", el primer marco regulatorio mundial enfocado exclusivamente en agentes aut&oacute;nomos de IA. Establece est&aacute;ndares de responsabilidad y l&iacute;mites operativos.</p>
+      <p class="why">Si tu producto usa agentes que toman acciones aut&oacute;nomas, esta regulaci&oacute;n anticipa lo que vendr&aacute; en otros mercados &mdash; dise&ntilde;a tus guardrails ahora.</p>
+      <p class="source"><a href="https://techmaniacs.com/2026/07/30/ai-security-daily-briefing-july-30-2026/">TechManiacs</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y ecosistema Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Claude Opus 5: rendimiento Fable 5 a mitad de precio, con toggle de esfuerzo</h3>
+      <p class="what">Anthropic lanz&oacute; Opus 5 el 24 de julio a $5/$25 por mill&oacute;n de tokens (igual que Opus 4.8), con 1M de contexto y 128K de output m&aacute;ximo. Duplica el score de Opus 4.8 en Frontier-Bench, triplica al siguiente modelo en ARC-AGI 3, y supera a Fable 5 en OSWorld 2.0 a un tercio del costo. Incluye toggle "xhigh" de esfuerzo de razonamiento por turno.</p>
+      <p class="why">El toggle de esfuerzo por request es game-changer para costos: puedes usar "low" en clasificaciones simples y "xhigh" solo en razonamiento complejo, optimizando tu spend sin cambiar de modelo.</p>
+      <p class="source"><a href="https://fortune.com/2026/07/24/anthropic-debuts-claude-opus-5-with-feature-that-lets-users-toggle-between-cost-and-capability/">Fortune</a> &bull; <a href="https://www.axios.com/2026/07/24/anthropic-releases-new-model-opus-5">Axios</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>MCP supera 400M de descargas mensuales de SDK &mdash; 4x vs inicio de a&ntilde;o</h3>
+      <p class="what">El Model Context Protocol alcanz&oacute; 400 millones de descargas mensuales de SDK, cuadruplicando las cifras de enero 2026. Con la spec 2026-07-28, MCP se posiciona como el est&aacute;ndar de facto para conectar modelos de IA con herramientas y datos externos.</p>
+      <p class="why">400M de descargas confirma que MCP ya no es experimental &mdash; si a&uacute;n no expones tu servicio via MCP, est&aacute;s fuera del ecosistema donde los agentes buscan herramientas.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a> &bull; <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/">MCP Blog</a></p>
+    </div>
+
+    <!-- EJE 5: IA + Sports Tech / Salud -->
+    <div class="section-title">IA aplicada a sports tech y salud</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Ultrahuman Emerald: toda la inteligencia de salud ahora corre on-device</h3>
+      <p class="what">Ultrahuman liber&oacute; su actualizaci&oacute;n Emerald para todos los usuarios el 23 de julio: ahora todo el procesamiento de insights de salud (sue&ntilde;o, actividad, biomarcadores) corre directamente en el tel&eacute;fono o wearable, sin enviar datos al cloud. Samsung tambi&eacute;n empuj&oacute; un nuevo asistente de salud con IA.</p>
+      <p class="why">On-device health AI resuelve el problema #1 de confianza en health tech &mdash; si construyes un marketplace de servicios de salud o coaching, este es el est&aacute;ndar de privacidad que tus usuarios van a esperar.</p>
+      <p class="source"><a href="https://athletechnews.com/best-new-fitness-wellness-product-launches-spring-summer-2026/">Athletech News</a> &bull; <a href="https://www.artiverse.ca/next-gen-health-tech-hits-hard-with-on-device-ai-and-extreme-watches/">Artiverse</a></p>
+    </div>
+
+    <footer>
+      <p>Generado con Claude Code &mdash; Curado para devs construyendo producto con IA</p>
+    </footer>
+  </div>
+</body>
+</html>
