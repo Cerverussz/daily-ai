@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 2 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>2 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item">
+      <h3>EU AI Act entra en vigor: obligaciones de transparencia ya son ejecutables</h3>
+      <p class="what">Desde el 2 de agosto, la Comisi&oacute;n Europea comenz&oacute; a aplicar el AI Act. Chatbots deben avisar que el usuario habla con IA, los deepfakes requieren etiquetado, y el contenido generado por IA debe llevar marcas legibles por m&aacute;quina. Multas de hasta 15M EUR o 3% de facturaci&oacute;n global.</p>
+      <p class="why">Si tu producto usa IA y tiene usuarios en Europa, necesitas revisar tu UX hoy: disclosure expl&iacute;cito en chatbots y marcado de contenido generado ya no son opcionales.</p>
+      <p class="source"><a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714">European Commission</a> &bull; <a href="https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august">Digital Strategy EU</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Hacker usa DeepSeek + Hermes Agent para lanzar ataques aut&oacute;nomos v&iacute;a Telegram</h3>
+      <p class="what">Palo Alto Networks (Unit 42) document&oacute; un actor chino que conect&oacute; DeepSeek al framework Hermes Agent, controlado via Telegram, para escanear y atacar 460+ servidores expuestos de forma aut&oacute;noma. El agente descarg&oacute; exploits p&uacute;blicos, evalu&oacute; targets y ejecut&oacute; ataques con m&iacute;nima intervenci&oacute;n humana.</p>
+      <p class="why">Primer caso documentado de ataque cibern&eacute;tico completamente agente: si expones APIs o servicios, el atacante ya no es un humano con scripts sino un LLM que decide qu&eacute; explotar.</p>
+      <p class="source"><a href="https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/">Unit 42</a> &bull; <a href="https://www.forbes.com/sites/zakdoffman/2026/08/02/deepseek-powered-ai-used-to-launch-attacks---agentic-threats-may-go-beyond-one-offs/">Forbes</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>OpenAI anuncia Astra: modelo multi-agente que resolvi&oacute; 10 problemas matem&aacute;ticos abiertos por $2,000</h3>
+      <p class="what">OpenAI present&oacute; Astra, su pr&oacute;xima familia de modelos, dise&ntilde;ada como sistema multi-agente que trabaja horas o d&iacute;as en problemas complejos. Una versi&oacute;n interna resolvi&oacute; 10 problemas abiertos por d&eacute;cadas en matem&aacute;ticas y CS te&oacute;rico, incluyendo la existencia de grupos no-s&oacute;ficos, publicando pruebas verificables en Lean 4.</p>
+      <p class="why">El patr&oacute;n multi-agente con verificaci&oacute;n formal es el blueprint para agentes de producci&oacute;n confiables; si construyes agentes, estudia c&oacute;mo Astra encadena razonamiento + validaci&oacute;n.</p>
+      <p class="source"><a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI</a> &bull; <a href="https://www.forbes.com/sites/jonmarkman/2026/08/03/openais-astra-solved-10-decades-old-math-problems-for-just-2000/">Forbes</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google cancela app AI Studio para m&oacute;vil y mete todo en Gemini</h3>
+      <p class="what">Google cancel&oacute; la app m&oacute;vil de AI Studio (800K+ pre-orders desde I/O 2026) y decidi&oacute; integrar sus features de creaci&oacute;n de apps directamente en la app de Gemini para m&oacute;vil y desktop. La web de AI Studio se mantiene para desktop.</p>
+      <p class="why">Para devs Android, la se&ntilde;al es clara: Gemini es el &uacute;nico punto de entrada de Google para IA generativa en m&oacute;vil; consolida tu integraci&oacute;n ah&iacute;.</p>
+      <p class="source"><a href="https://9to5google.com/2026/07/31/gemini-ai-studio-app/">9to5Google</a> &bull; <a href="https://www.androidauthority.com/google-ai-studio-mobile-app-canceled-3693645/">Android Authority</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cursor v3.11: Side Chats paralelos, b&uacute;squeda de conversaciones y Cloud Agent Hooks</h3>
+      <p class="what">Cursor lanz&oacute; la v3.11 con Side Chats que permiten correr m&uacute;ltiples agentes en paralelo dentro del IDE, b&uacute;squeda de historial de conversaciones, y Cloud Agent Hooks para ejecutar l&oacute;gica personalizada en agentes cloud.</p>
+      <p class="why">Side Chats + Cloud Hooks habilitan workflows donde un agente refactoriza mientras otro escribe tests, acelerando tareas complejas sin cambiar de contexto.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/cursor-vs-claude-code-vs-github-copilot-2026-ultimate-comparison">NxCode</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios y productos -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot cae al 51% de mercado; Claude Code preferido por 46% de senior devs</h3>
+      <p class="what">Seg&uacute;n el Stack Overflow Developer Survey 2026, Copilot baj&oacute; de 67% a 51% mientras Cursor debut&oacute; con 18% y Claude Code con 10%. En la encuesta de JetBrains, 46% de devs con 10+ a&ntilde;os de experiencia eligieron Claude Code como su herramienta principal vs. 9% para Copilot.</p>
+      <p class="why">El mercado de coding AI ya no es monopolio; si est&aacute;s construyendo herramientas dev o integraciones, debes soportar m&uacute;ltiples asistentes, no solo Copilot.</p>
+      <p class="source"><a href="https://pasqualepillitteri.it/en/news/3392/github-copilot-cursor-claude-code-ai-coding-showdown-2026">Pasquale Pillitteri</a> &bull; <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 El foco de productos AI en agosto: coding agents, wearables y rob&oacute;tica industrial</h3>
+      <p class="what">Los lanzamientos de agosto 2026 se concentran en tres &aacute;reas: herramientas de coding agente (Claude Code, Cursor 3, Windsurf), workflows manos-libres via wearables (Meta glasses + sEMG de mu&ntilde;eca), y rob&oacute;tica industrial (Boston Dynamics + DeepMind). El mercado premia tools que funcionan, no demos.</p>
+      <p class="why">Si buscas vertical para tu pr&oacute;ximo producto, la demanda real est&aacute; en agentes especializados por industria, no en chatbots gen&eacute;ricos.</p>
+      <p class="source"><a href="https://blog.mean.ceo/ai-product-launches-news-august-2026/">Mean CEO Blog</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y ecosistema Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code sube a Opus 5: 1M de contexto, mejor coding agente, mismo precio</h3>
+      <p class="what">Claude Code ahora usa Opus 5 como modelo default (desde julio 24). Ofrece 1M tokens de contexto, 128K de output, mejor memoria en tareas largas y auto-verificaci&oacute;n mejorada. Mantiene precio de $5/$25 por mill&oacute;n de tokens. Fast mode a 2.5x disponible.</p>
+      <p class="why">M&aacute;s contexto + mejor auto-verificaci&oacute;n significa menos errores en refactors grandes y migraciones; ideal si usas Claude Code para tareas de arquitectura.</p>
+      <p class="source"><a href="https://dev.classmethod.jp/en/articles/20260725-cc-updates-v2-1-219/">DevelopersIO</a> &bull; <a href="https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot/">GitHub Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic extiende boost de uso de Claude Code hasta el 19 de agosto</h3>
+      <p class="what">El boost temporal del 50% en l&iacute;mites semanales de Claude Code para suscriptores se extendi&oacute; hasta el 19 de agosto de 2026. Adem&aacute;s, el pricing promocional de Sonnet 5 ($2/$10 por mill&oacute;n de tokens) termina el 31 de agosto, subiendo a $3/$15 en septiembre.</p>
+      <p class="why">Tienes hasta fin de mes para aprovechar el pricing barato de Sonnet 5 en tus pipelines de producci&oacute;n; planifica la migraci&oacute;n de costos ahora.</p>
+      <p class="source"><a href="https://www.explainx.ai/blog/claude-usage-limits-2026-timeline-explained">ExplainX</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cowork de Claude se expande a m&oacute;vil y web: sesiones y archivos siguen entre dispositivos</h3>
+      <p class="what">Anthropic expandi&oacute; Cowork (Claude Code para uso general) a m&oacute;vil y web. Las sesiones, archivos y trabajo en background se sincronizan entre dispositivos, con tareas programadas, proyectos compartidos y aprobaciones desde el m&oacute;vil.</p>
+      <p class="why">Si ya usas Claude Code en terminal, Cowork te deja aprobar y monitorear tareas largas desde el tel&eacute;fono, habilitando workflows verdaderamente async.</p>
+      <p class="source"><a href="https://blog.mean.ceo/anthropic-claude-news-august-2026/">Mean CEO Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude for Open Source: Max 20x gratis para mantenedores (10K cupos)</h3>
+      <p class="what">Anthropic lanz&oacute; un programa que da 6 meses de Claude Max 20x (~$1,200 de valor) a mantenedores open-source con repos de 5K+ stars o 1M+ downloads mensuales en npm. 10,000 cupos totales, aplicaciones cerradas el 30 de junio.</p>
+      <p class="why">Si mantienes un proyecto open-source popular, verifica si a&uacute;n hay cupos; es acceso completo a Opus 5 y Claude Code sin l&iacute;mite por 6 meses.</p>
+      <p class="source"><a href="https://alphasignal.ai/news/anthropic-gives-10-000-open-source-maintainers-1-200-of-free-claude-max">AlphaSignal</a> &bull; <a href="https://www.verdent.ai/guides/claude-max-20x-open-source">Verdent</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Wearables como tendencia #1 en fitness 2026; NPUs habilitan coaching AI on-device</h3>
+      <p class="what">El American College of Sports Medicine nombr&oacute; a los wearables como tendencia fitness #1 de 2026, con casi la mitad de adultos en EE.UU. usando uno. Los NPUs de Snapdragon 8 Gen 4 y Tensor G5 ya corren modelos de estimaci&oacute;n de fatiga, coaching personalizado y an&aacute;lisis de movimiento 3D directamente en el dispositivo.</p>
+      <p class="why">La oportunidad est&aacute; en apps de coaching que corran inferencia on-device: menor latencia, funciona offline, y diferenciaci&oacute;n real frente a apps cloud-only.</p>
+      <p class="source"><a href="https://athletechnews.com/ces-2026-top-fitness-wellness-health-tech-trends/">Athletech News</a> &bull; <a href="https://orangesoft.co/blog/ai-in-fitness-industry">Orangesoft</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 02/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
