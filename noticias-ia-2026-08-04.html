@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 4 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>4 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anaconda adquiere Enkrypt AI: seguridad y compliance integrados para todo el stack de agentes</h3>
+      <p class="what">Anaconda anunci&oacute; el 4 de agosto la adquisici&oacute;n de Enkrypt AI, plataforma de seguridad que ofrece red-teaming automatizado en 300+ categor&iacute;as de ataque, guardrails en runtime y automatizaci&oacute;n de compliance (NIST, EU AI Act). Enkrypt ha detectado 143,000 vulnerabilidades en el 73% de servidores MCP escaneados.</p>
+      <p class="why">Si est&aacute;s exponiendo tu producto via MCP o construyendo agentes, ahora tienes una herramienta integrada en el ecosistema Python para auditar seguridad antes de producir.</p>
+      <p class="source"><a href="https://www.anaconda.com/blog/anaconda-acquires-enkrypt-ai">Anaconda Blog</a> &bull; <a href="https://www.hpcwire.com/aiwire/2026/08/04/anaconda-acquires-enkrypt-ai-to-secure-the-trillion-token-enterprise/">AIwire</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Qwen 3.8-Max: modelo open-weight de 2.4T par&aacute;metros con 1M tokens de contexto a $2/MTok</h3>
+      <p class="what">Alibaba lanz&oacute; Qwen3.8-Max el 3 de agosto: un MoE de 2.4 trillones de par&aacute;metros (95B activos), multimodal (texto, imagen, video), con ventana de 1 mill&oacute;n de tokens. Los pesos abiertos y una variante Qwen3.8-27B se liberan la pr&oacute;xima semana. API disponible ya en QwenCloud a $2/$6 por mill&oacute;n de tokens.</p>
+      <p class="why">A $2/MTok input con 1M de contexto y pesos abiertos pr&oacute;ximamente, es una alternativa seria para agentes de coding y procesamiento masivo en tu backend sin vendor lock-in.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/08/03/alibaba-qwen-releases-qwen3-8-max/">MarkTechPost</a> &bull; <a href="https://qz.com/alibaba-qwen38-max-ai-model-launch-080326">Quartz</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>OpenAI anuncia Astra: su pr&oacute;ximo modelo resuelve 10 problemas abiertos de matem&aacute;ticas</h3>
+      <p class="what">OpenAI revel&oacute; el 1 de agosto que una versi&oacute;n interna de Astra, su siguiente modelo mayor, resolvi&oacute; 10 problemas abiertos en 8 campos de matem&aacute;ticas y ciencias de la computaci&oacute;n te&oacute;rica, incluyendo la primera construcci&oacute;n expl&iacute;cita de un grupo no-s&oacute;fico. Publicaron 249 p&aacute;ginas de manuscrito con pruebas verificables en Lean 4 en GitHub, por un costo total de ~$2,000 en tokens.</p>
+      <p class="why">M&aacute;s all&aacute; del hype matem&aacute;tico, la se&ntilde;al importante es que el siguiente salto de GPT viene con capacidad de razonamiento formal verificable &mdash; eso impactar&aacute; directamente la calidad de agentes de coding.</p>
+      <p class="source"><a href="https://www.forbes.com/sites/jonmarkman/2026/08/03/openais-astra-solved-10-decades-old-math-problems-for-just-2000/">Forbes</a> &bull; <a href="https://www.neowin.net/news/openais-next-major-model-astra-claims-breakthroughs-on-10-long-standing-math-problems/">Neowin</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI baja 80% el precio de GPT-5.6 Luna: $0.20/MTok input</h3>
+      <p class="what">Desde el 30 de julio, GPT-5.6 Luna baj&oacute; de $1/$6 a $0.20/$1.20 por mill&oacute;n de tokens. Terra tambi&eacute;n baj&oacute; 20% a $2/$12. Luna ofrece ~85% de la calidad de Sol ($5/$30) a una fracci&oacute;n del costo. La jugada responde a que modelos chinos ya capturan el 46% del uso empresarial de tokens en OpenRouter.</p>
+      <p class="why">Para tu producto, Luna a $0.20/MTok es viable para tareas de alto volumen (clasificaci&oacute;n, extracci&oacute;n, chat) reservando Sol solo para razonamiento complejo &mdash; la arquitectura multi-tier es ahora obligatoria para costos sanos.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/ai-price-wars-openai-cuts-gpt-5-6-luna-prices-by-80-as-model-competition-shifts-toward-cost">VentureBeat</a> &bull; <a href="https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/">OpenAI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>MCP 2026-07-28: el protocolo se vuelve stateless y supera 400M de descargas mensuales del SDK</h3>
+      <p class="what">La quinta revisi&oacute;n del Model Context Protocol elimina el handshake y session ID, permitiendo desplegar servidores MCP en infraestructura serverless y edge con cualquier load balancer. Agrega autorizaci&oacute;n OAuth 2.1/OIDC reforzada y extensiones oficiales para Apps y Tasks. El soporte se est&aacute; desplegando en todos los productos Claude.</p>
+      <p class="why">Si mantienes un servidor MCP, el cambio a stateless simplifica tu arquitectura de deployment y reduce costos de infraestructura dr&aacute;sticamente.</p>
+      <p class="source"><a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/">MCP Blog</a> &bull; <a href="https://mpost.io/anthropic-releases-largest-mcp-update-yet-moving-protocol-to-stateless-core-for-enterprise-scale/">Metaverse Post</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 La guerra de precios AI baja el piso: arquitectura multi-modelo ya no es opcional</h3>
+      <p class="what">Con Luna a $0.20/MTok, DeepSeek V4 Flash a $0.14/MTok y Qwen 3.8-Max a $2/MTok para tareas pesadas, el costo de inferencia cay&oacute; 5-10x en 6 meses. Los founders t&eacute;cnicos que usan routing inteligente entre modelos baratos (alto volumen) y premium (razonamiento) est&aacute;n reportando costos de AI inferiores al 5% de sus unit economics.</p>
+      <p class="why">Si todav&iacute;a usas un solo modelo para todo en tu producto, est&aacute;s pagando 5-10x m&aacute;s de lo necesario &mdash; implementar un router de modelos es el quick win m&aacute;s rentable hoy.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/07/30/open-ai-price-cut-gpt.html">CNBC</a> &bull; <a href="https://xenospectrum.com/en/openai-gpt-5-6-luna-price-cut/">XenoSpectrum</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cursor 3 consolida la transici&oacute;n de IDE a plataforma de agentes con Cloud Agents</h3>
+      <p class="what">Cursor 3 (v3.11, julio 2026) ya no es un editor con AI &mdash; es una plataforma donde m&uacute;ltiples agentes corren en paralelo en VMs aisladas, con acceso SSH, worktrees, y ejecuci&oacute;n en cloud. Integra Composer 2 como modelo propietario y un ecosistema MCP creciente. Compite directamente con Google Antigravity 2.0 que ofrece lo mismo gratis.</p>
+      <p class="why">El stack de desarrollo 2026 es Cursor/Antigravity para edici&oacute;n diaria + Claude Code para tareas complejas en terminal; elegir tu combo y dominarlo es m&aacute;s productivo que saltar entre herramientas.</p>
+      <p class="source"><a href="https://www.infoq.com/news/2026/04/cursor-3-agent-first-interface/">InfoQ</a> &bull; <a href="https://www.buildfastwithai.com/blogs/cursor-3-vs-antigravity-ai-ide-2026">BuildFastWithAI</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Opus 5: inteligencia near-frontier a mitad de precio ya disponible</h3>
+      <p class="what">Lanzado el 24 de julio a $5/$25 por MTok (mismo precio que Opus 4.8), Claude Opus 5 trae contexto de 1M tokens, output de hasta 128K tokens, nivel de esfuerzo &quot;xhigh&quot;, y mejoras sustanciales en coding ag&eacute;ntico, computer use y razonamiento cient&iacute;fico. Es el cuarto modelo Claude nuevo en dos meses (tras Sonnet 5, Fable 5 y Mythos 5).</p>
+      <p class="why">Upgrade directo sin costo adicional sobre Opus 4.8 &mdash; si usas Claude en producci&oacute;n, el switch es inmediato y los benchmarks muestran el doble de score en Frontier-Bench.</p>
+      <p class="source"><a href="https://www.axios.com/2026/07/24/anthropic-releases-new-model-opus-5">Axios</a> &bull; <a href="https://fortune.com/2026/07/24/anthropic-debuts-claude-opus-5-with-feature-that-lets-users-toggle-between-cost-and-capability/">Fortune</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code agosto: Focus View en VSCode y credential masking mejorado</h3>
+      <p class="what">Claude Code a&ntilde;ade Focus View para VSCode &mdash; un toggle (Ctrl+Alt+F) que oculta la actividad de herramientas detr&aacute;s de res&uacute;menes colapsables con indicador de herramienta activa. Tambi&eacute;n agrega modo &quot;mask&quot; para credenciales en sandbox (Linux/WSL) y mejora el manejo de plugins, MCP y permisos.</p>
+      <p class="why">Focus View resuelve el problema de &quot;demasiado ruido&quot; en sesiones largas de Claude Code, haci&eacute;ndolo m&aacute;s viable como herramienta de pair-programming diaria.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> &bull; <a href="https://www.gradually.ai/en/changelogs/claude-code/">Gradually.ai</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Wearables AI-first dominan el fitness: entrenamientos adaptativos basados en sue&ntilde;o, HRV y recuperaci&oacute;n</h3>
+      <p class="what">El mercado de AI en fitness alcanza $10.68B en 2025 y proyecta $57.8B para 2035 (19.3% CAGR). Plataformas como Oura, WHOOP y Samsung Galaxy Ring ahora ajustan entrenamientos en tiempo real bas&aacute;ndose en HRV, calidad de sue&ntilde;o, temperatura cut&aacute;nea y fatiga muscular. ACSM nombra wearable tech como la tendencia #1 global de fitness 2026.</p>
+      <p class="why">Si construyes en el vertical de salud/fitness, la integraci&oacute;n con datos de wearables v&iacute;a sus APIs es el feature differentiator que los usuarios ya esperan.</p>
+      <p class="source"><a href="https://athletechnews.com/how-wearables-are-evolving-from-fitness-trackers-to-health-systems/">Athletech News</a> &bull; <a href="https://boxlifemagazine.com/future-fitness-ai-strength-recovery-mental-health-shifts/">BoxLife Magazine</a></p>
+    </div>
+
+    <footer>
+      <p>Generado el 05/08/2026 &middot; Filtrado para senior devs construyendo producto</p>
+    </footer>
+  </div>
+</body>
+</html>
