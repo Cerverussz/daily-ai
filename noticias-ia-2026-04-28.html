@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 28 de Abril 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>28 de abril de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta lanza Muse Spark con modo "Contemplating" y orquestación multi-agente</h3>
+      <p class="what">Meta desplegó la versión más avanzada de Muse Spark, su modelo nativo multimodal construido bajo Superintelligence Labs (Alexandr Wang). Incluye razonamiento visual chain-of-thought, tool-use nativo, y un modo "Contemplating" que despliega múltiples agentes para investigar y sintetizar respuestas complejas. Alcanza rendimiento competitivo con Opus 4.7 y GPT-5.5 usando 10x menos compute que Llama 4 Maverick.</p>
+      <p class="why">Si tu producto necesita multimodal + agentes, Muse Spark es una alternativa real con costos de inferencia significativamente menores que los frontier models actuales.</p>
+      <p class="source"><a href="https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/">Meta Blog</a> &bull; <a href="https://www.cnbc.com/video/2026/04/28/metas-new-ai-model-muse-spark-is-here-with-contemplating-mode.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft Foundry Agent Service en public preview: sandboxes aislados para agentes multi-framework</h3>
+      <p class="what">Microsoft lanzó hosted agents en Foundry Agent Service con sandboxes aislados a nivel de hypervisor. Soporta LangGraph, OpenAI Agents SDK, Claude Agent SDK y Microsoft Agent Framework v1.0 en una sola plataforma gestionada.</p>
+      <p class="why">Si estás evaluando dónde hostear agentes autónomos para tu plataforma, esto te da sandboxing seguro sin armar infra propia, con libertad de elegir framework.</p>
+      <p class="source"><a href="https://medium.com/@visrow/the-biggest-ai-trends-and-tools-emerging-in-april-2026-8a491e6d546f">Medium - AI Trends April 2026</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini 3.1 Flash-Lite: modelo ultra-eficiente de Google a $0.25/M tokens input</h3>
+      <p class="what">Google lanzó Gemini 3.1 Flash-Lite con 2.5x más velocidad de respuesta y 45% más rápido en output vs Gemini 2.5 Flash, manteniendo calidad similar. Soporta 1M tokens de contexto, multimodal completo (imagen, audio, video), y modos de "thinking" configurables.</p>
+      <p class="why">A $0.25/M input tokens con ventana de 1M, es el modelo más barato para tareas de alto volumen como moderación de contenido, traducción o generación de UI en tu app.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/">Google Blog</a> &bull; <a href="https://venturebeat.com/technology/google-releases-gemini-3-1-flash-lite-at-1-8th-the-cost-of-pro">VentureBeat</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Copilot Agent Mode GA en VS Code y JetBrains + Agentic Code Review</h3>
+      <p class="what">GitHub Copilot activó Agent Mode en general availability para VS Code y JetBrains, con code review agéntico lanzado en marzo. El plan Pro+ ($39/mes) ahora incluye Claude Opus 4 y OpenAI o3 como modelos alternativos al GPT-4o por defecto.</p>
+      <p class="why">El stack dominante se consolida: Copilot/Cursor para edición diaria + Claude Code en terminal para tareas complejas; ahora Copilot cierra la brecha con acceso a modelos frontier.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/github-copilot-vs-cursor-2026-which-to-pay-for">NxCode</a> &bull; <a href="https://www.digitalapplied.com/blog/ai-coding-assistants-april-2026-cursor-copilot-claude">Digital Applied</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemma 4 on-device en Android AICore: agentes offline con &lt;1.5GB RAM</h3>
+      <p class="what">Google lanzó Gemma 4 en el AICore Developer Preview de Android. El modelo E2B corre con menos de 1.5GB de RAM gracias a soporte de pesos de 2-bit y 4-bit en LiteRT, habilitando agentes multi-paso, generación de código y procesamiento audiovisual completamente offline.</p>
+      <p class="why">Para apps Android que necesitan AI sin conexión (coaching, traducción, asistentes de campo), esto elimina la dependencia de APIs cloud y sus costos recurrentes.</p>
+      <p class="source"><a href="https://android-developers.googleblog.com/2026/04/AI-Core-Developer-Preview.html">Android Developers Blog</a> &bull; <a href="https://newsroom.arm.com/blog/gemma-4-on-arm-optimized-on-device-ai">ARM Newsroom</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>JetBrains publica estudio: qué herramientas AI usan realmente los developers en producción</h3>
+      <p class="what">JetBrains publicó su investigación de abril 2026 sobre adopción real de herramientas AI de coding en entornos profesionales. El consenso: los developers están abandonando el enfoque de "una sola herramienta" y adoptando workflows con múltiples tools especializados según la tarea.</p>
+      <p class="why">Confirma que invertir en dominar 2-3 herramientas complementarias (editor AI + agente terminal + revisión) es más efectivo que buscar la herramienta única perfecta.</p>
+      <p class="source"><a href="https://blog.jetbrains.com/research/2026/04/which-ai-coding-tools-do-developers-actually-use-at-work/">JetBrains Research Blog</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Design: de prompt a prototipo interactivo, disponible para suscriptores Pro</h3>
+      <p class="what">Anthropic lanzó Claude Design (Anthropic Labs), un workspace visual donde describes lo que quieres y Claude genera diseños, prototipos interactivos, slides y one-pagers. Usa Opus 4.7 con visión de alta resolución (3.75MP), lee tu codebase para generar un design system con tus colores, tipografía y componentes.</p>
+      <p class="why">Para founders técnicos sin diseñador, esto reemplaza horas de Figma: puedes ir de idea a prototipo compartible en minutos, no días.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/">TechCrunch</a> &bull; <a href="https://www.anthropic.com/news/claude-design-anthropic-labs">Anthropic</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 21% del batch YC W25 tiene codebases 90%+ generadas por AI</h3>
+      <p class="what">Datos de Y Combinator confirman que el 21% de su batch Winter 2025 reportó codebases con más del 90% de código generado por AI. El patrón dominante: founders técnicos usan AI para el 80-90% del código y se enfocan en arquitectura, revisión, y las partes que AI no resuelve bien.</p>
+      <p class="why">El modelo "arquitecto + AI" es el nuevo estándar; tu ventaja competitiva ya no es cuánto código escribes, sino qué tan bien diriges a los agentes.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/ai-mvp-builder-how-founders-ship-products-2026">NxCode</a> &bull; <a href="https://technijian.com/podcast/the-2026-founders-guide-to-ai-accelerated-mvp-development/">Technijian</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Meta y Microsoft anuncian recortes masivos: 20,000 empleos eliminados por "eficiencia AI"</h3>
+      <p class="what">Meta recortará ~8,000 empleos (10% de su plantilla) y no llenará 6,000 vacantes, mientras Microsoft ofrece buyouts a ~8,750 empleados (7% de su staff en EE.UU.). Ambas empresas citan "eficiencia" y redireccionan inversión a AI, con Meta destinando $115-135B en capex AI para 2026.</p>
+      <p class="why">La señal es clara: las big tech están reemplazando roles con AI internamente, lo que acelera la demanda de developers que sepan construir y orquestar sistemas AI.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html">CNBC</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza "ant" CLI: cliente de línea de comandos para la Claude API</h3>
+      <p class="what">Anthropic publicó <code>ant</code>, un CLI oficial que permite interactuar con la Claude API desde terminal usando flags tipados o YAML en vez de JSON manual. Incluye integración nativa con Claude Code, queries de transformación en respuestas, y versionado de recursos API en archivos YAML.</p>
+      <p class="why">Si automatizas pipelines con Claude API (testing, batch processing, CI/CD), <code>ant</code> elimina el boilerplate de curl y scripts custom.</p>
+      <p class="source"><a href="https://github.com/anthropics/anthropic-cli">GitHub - anthropic-cli</a> &bull; <a href="https://platform.claude.com/docs/en/api/sdks/cli">Claude API Docs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Memory para Managed Agents en public beta + Cowork con tareas recurrentes</h3>
+      <p class="what">Anthropic habilitó Memory para Claude Managed Agents en public beta, permitiendo agentes de larga duración con estado persistente entre sesiones. Además, Claude Cowork ahora soporta tareas recurrentes y on-demand, con una nueva sección "Customize" que agrupa skills, plugins y conectores.</p>
+      <p class="why">Si estás construyendo agentes que necesitan recordar contexto entre ejecuciones (onboarding, soporte, procesamiento de órdenes), esto te ahorra implementar tu propia capa de persistencia.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot - Anthropic Updates</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 SportsReflector: primer coach AI móvil con análisis de video en tiempo real y AR</h3>
+      <p class="what">SportsReflector debutó como el primer coach deportivo móvil con AI que combina análisis de video en tiempo real, overlays de AR en vivo, y coaching remoto. Funciona directamente desde el smartphone del atleta sin hardware adicional.</p>
+      <p class="why">Para quien construye en sports tech o marketplaces de coaching, esto demuestra que la combinación de computer vision + mobile + marketplace de coaches es viable hoy sin hardware custom.</p>
+      <p class="source"><a href="https://www.globenewswire.com/news-release/2026/04/21/3278180/0/en/SportsReflector-Debuts-First-Mobile-AI-Sports-Fitness-Coach-With-Real-Time-Video-Analysis-Live-AR-and-Remote-Coaching.html">GlobeNewsWire</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Muse Spark de Meta incluye AI health: análisis nutricional con fotos y guía de ejercicios</h3>
+      <p class="what">Muse Spark colabora con más de 1,000 médicos para entregar insights de salud interactivos. Analiza fotos de comida con desglose nutricional en overlays visuales y explica grupos musculares activados durante ejercicios específicos, todo integrado en WhatsApp, Instagram y Messenger.</p>
+      <p class="why">Para apps de wellness o marketplaces de nutrición, Meta está regalando features de health AI directamente en sus plataformas sociales; hay que competir con experiencia, no con features básicas.</p>
+      <p class="source"><a href="https://ai.meta.com/blog/introducing-muse-spark-msl/">Meta AI Blog</a> &bull; <a href="https://www.labellerr.com/blog/meta-muse-spark-multimodal-ai-model/">Labellerr</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 28/04/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
