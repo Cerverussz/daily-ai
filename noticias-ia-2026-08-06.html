@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 6 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>6 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta lanza Muse Code en beta: su terminal coding agent con sub-agentes persistentes</h3>
+      <p class="what">Meta entra a la guerra de coding agents con Muse Code, un agente terminal impulsado por Muse Spark 1.2 que coordina m&uacute;ltiples sub-agentes persistentes con aislamiento por worktree y un event log que permite reanudar tras crashes. Logra 59% en DeepSWE 1.1, superando a Grok Build 4.5 y Gemini 3.6 Flash.</p>
+      <p class="why">Competencia directa para Claude Code y Codex &mdash; m&aacute;s opciones de terminal agents significa mejor tooling para tu flujo diario, y el tier Contributor de Muse Spark sale 12x m&aacute;s barato que el est&aacute;ndar.</p>
+      <p class="source"><a href="https://venturebeat.com/orchestration/meta-enters-the-ai-coding-wars-with-muse-spark-1-2-and-muse-code-with-persistent-async-background-agents/">VentureBeat</a> &bull; <a href="https://www.developersdigest.tech/blog/meta-muse-code-spark-1-2-release">Developers Digest</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI lanza ChatGPT Work: agente que ejecuta workflows completos de principio a fin</h3>
+      <p class="what">ChatGPT Work, impulsado por GPT-5.6, puede tomar un workflow entero con un solo prompt &mdash; desde research de clientes hasta generar briefs, assets de marketing y adaptarlos a mercados diferentes &mdash; trabajando horas si es necesario, incluso cuando el usuario no est&aacute;. Disponible en Pro, Enterprise y Edu, con Plus y Business a d&iacute;as de distancia.</p>
+      <p class="why">Para founders que usan ChatGPT como herramienta diaria, Work convierte tareas multi-paso que consumen medio d&iacute;a en un solo prompt con entrega as&iacute;ncrona.</p>
+      <p class="source"><a href="https://the-decoder.com/openai-pairs-its-gpt-5-6-public-rollout-with-chatgpt-work-a-new-agent-that-handles-entire-workflows/">The Decoder</a> &bull; <a href="https://www.pymnts.com/news/artificial-intelligence/2026/openai-launches-chatgpt-agent-that-executes-complex-workflows/">PYMNTS</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cloudflare Wallets: identidad y pagos programables para agentes AI</h3>
+      <p class="what">Cloudflare lanz&oacute; Wallets, un sistema donde agentes AI reciben una identidad (handle cloudflare.pay), balance en stablecoins, y l&iacute;mites de gasto definidos por el due&ntilde;o. Los agentes pueden pagar APIs, datos y contenido aut&oacute;nomamente usando el protocolo x402 sin aprobaci&oacute;n por transacci&oacute;n.</p>
+      <p class="why">Si est&aacute;s construyendo un marketplace o SaaS con agentes, esto resuelve el problema de pagos m&aacute;quina-a-m&aacute;quina que hasta ahora requer&iacute;a hacks con API keys prepagadas.</p>
+      <p class="source"><a href="https://blog.cloudflare.com/wallets/">Cloudflare Blog</a> &bull; <a href="https://fortune.com/2026/08/04/cloudflare-ai-agents-wallets-id/">Fortune</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Liquid AI lanza LFM2.5-2.6B: agentes AI on-device a 220 tok/s en menos de 2.5 GB</h3>
+      <p class="what">Modelo de 2.6B par&aacute;metros con 128K de contexto, pre-entrenado en 34T tokens, dise&ntilde;ado espec&iacute;ficamente para tareas ag&eacute;nticas on-device. Corre a 220 tok/s en Apple M5 Max y 30 tok/s en smartphones, con pesos abiertos. Supera a Qwen3.5-9B (un modelo 4x m&aacute;s grande) en ToolSandbox con 77.83 vs 76.44.</p>
+      <p class="why">Un modelo de 2.6B que hace tool calling mejor que uno de 9B y corre en un tel&eacute;fono &mdash; esto habilita agentes offline reales en tu app Android o iOS sin depender de cloud.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/no-cloud-no-gpus-no-problem-liquid-ais-new-model-lfm2-5-2-6b-brings-powerful-ai-agents-to-devices-as-small-as-a-raspberry-pi/">VentureBeat</a> &bull; <a href="https://www.liquid.ai/blog/lfm2-5-2-6b">Liquid AI Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>MacPaw y Liquid AI: alianza para AI on-device nativo en macOS</h3>
+      <p class="what">MacPaw y Liquid AI anunciaron una alianza estrat&eacute;gica para co-desarrollar el stack de AI local en Mac, combinando Liquid Foundation Models optimizados para macOS con Elix (inferencia on-device) y Mnemos (memoria local) de MacPaw. Eney, el asistente AI de MacPaw, ser&aacute; el primer producto; eventualmente estar&aacute; disponible para developers v&iacute;a Setapp.</p>
+      <p class="why">Cuando est&eacute; en Setapp, los devs de apps Mac tendr&aacute;n inferencia on-device lista para integrar sin armar su propio stack de ML.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/05/macpaw-taps-liquid-ai-to-offer-on-device-inference-to-devs-building-for-its-app-store/">TechCrunch</a> &bull; <a href="https://www.liquid.ai/blog/macpaw-partners-liquid-ai-on-device-ai-mac-users">Liquid AI Blog</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Volta Infra: de 0 a un deal de $10B con Anthropic en 6 meses</h3>
+      <p class="what">Volta Infra Holdings, fundada en enero 2026 por ex-ejecutivos de Brookfield, cerr&oacute; un acuerdo de $10B a 6 a&ntilde;os con Anthropic para entregar compute desde un data center de 133MW en Noruega con chips Nvidia Vera Rubin. Inversores incluyen Nvidia, a16z y Altimeter, con una valuaci&oacute;n de $2.4B.</p>
+      <p class="why">Lecci&oacute;n para founders: en la era AI, la infraestructura de compute es un negocio de $10B que se puede construir en meses si tienes el equipo y el timing correctos.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/">TechCrunch</a> &bull; <a href="https://finance.yahoo.com/technology/ai/articles/anthropic-signs-10-billion-computing-180641716.html">Yahoo Finance</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Meta democratiza acceso a coding AI con tier Contributor 12x m&aacute;s barato</h3>
+      <p class="what">Junto con Muse Code, Meta introdujo un tier Contributor para Muse Spark 1.2 que cuesta 12 veces menos que el tier est&aacute;ndar, apuntando a developers individuales y equipos peque&ntilde;os que necesitan un coding agent de calidad sin presupuesto enterprise.</p>
+      <p class="why">Para solopreneurs y equipos peque&ntilde;os, un coding agent competitivo a fracci&oacute;n del costo reduce la barrera de entrada a development asistido por AI.</p>
+      <p class="source"><a href="https://www.developersdigest.tech/blog/meta-muse-code-spark-1-2-release">Developers Digest</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic forma equipo in-house para dise&ntilde;ar sus propios chips AI</h3>
+      <p class="what">Anthropic confirm&oacute; que est&aacute; ensamblando un equipo de dise&ntilde;o de chips custom para Claude, buscando ingenieros que co-dise&ntilde;en hardware y modelos en t&aacute;ndem para mayor velocidad y eficiencia. Reportes previos indican que Samsung es candidato para manufactura.</p>
+      <p class="why">Vertical integration hardware+modelo (como hizo Apple con sus chips) podr&iacute;a traducirse en menores costos de API y mejor latencia para quienes construimos sobre Claude.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/">TechCrunch</a> &bull; <a href="https://www.forbes.com/sites/jonmarkman/2026/08/06/anthropic-enters-the-ai-chip-race-with-in-house-chip-team/">Forbes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code agosto: entornos self-hosted, messaging cross-session, sin cap de subagentes</h3>
+      <p class="what">Claude Code se actualiz&oacute; con soporte para entornos self-hosted, mensajer&iacute;a entre sesiones, nuevos controles de plugins y sandbox, y la eliminaci&oacute;n del l&iacute;mite de sub-agentes. Tambi&eacute;n mejor&oacute; Remote Control, manejo de paste y estabilidad de sesiones.</p>
+      <p class="why">Sin cap de subagentes y entornos self-hosted significa que puedes correr Claude Code en tu infra privada con workflows paralelos sin l&iacute;mites artificiales.</p>
+      <p class="source"><a href="https://www.shakudo.io/blog/best-ai-coding-assistants">Shakudo</a> &bull; <a href="https://neuralcoretech.com/best-ai-coding-agents-august-2026/">NeuralCoreTech</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic: inference hooks en beta para compliance empresarial en tiempo real</h3>
+      <p class="what">Nuevo feature en beta para Enterprise: inference hooks permiten a equipos de compliance aplicar DLP (Data Loss Prevention) en tiempo real, inspeccionando prompts y tool calls antes de que lleguen al modelo, en chat, Claude Code, Cowork y m&aacute;s.</p>
+      <p class="why">Si est&aacute;s vendiendo a enterprise, Claude con inference hooks resuelve una de las objeciones m&aacute;s comunes: &ldquo;&iquest;c&oacute;mo controlamos lo que env&iacute;an los empleados al modelo?&rdquo;</p>
+      <p class="source"><a href="https://suprmind.ai/hub/claude/features/">Suprmind</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Apple avanza con Health+: servicio de coaching AI con LLMs integrado en Apple Watch</h3>
+      <p class="what">Apple contin&uacute;a desarrollando Health+, un servicio de coaching personalizado impulsado por LLMs que analizar&aacute; HRV, calidad de sue&ntilde;o, temperatura corporal y niveles de actividad para generar recomendaciones adaptativas en tiempo real. Se espera lanzamiento para finales de 2026.</p>
+      <p class="why">Cuando Health+ llegue, los 100M+ de Apple Watch se convierten en plataforma de coaching AI &mdash; oportunidad enorme para devs que construyan servicios complementarios en el ecosistema HealthKit.</p>
+      <p class="source"><a href="https://www.wareable.com/apple/apple-quartz-health-plus-ai-coaching-service-2026-launch-rumor">Wareable</a> &bull; <a href="https://apple.gadgethacks.com/news/apple-watch-2026-ai-health-coach-finally-transforms-fitness/">Gadget Hacks</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 06/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
