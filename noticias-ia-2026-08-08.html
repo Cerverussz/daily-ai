@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 8 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>8 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI pausa desarrollo de Astra: primer modelo en alcanzar umbral "Cr&iacute;tico" de ciberseguridad</h3>
+      <p class="what">OpenAI anunci&oacute; que su modelo no publicado Astra podr&iacute;a ser capaz de identificar y desarrollar exploits zero-day sin intervenci&oacute;n humana, alcanzando el umbral "Critical" de su Preparedness Framework. La compa&ntilde;&iacute;a paus&oacute; actividades internas que no cumplan controles de seguridad reforzados, incluyendo entornos aislados y monitoreo universal.</p>
+      <p class="why">Es la primera vez que un lab frena un modelo propio por capacidades ofensivas reales &mdash; si construyes productos con AI agente, la gobernanza de seguridad ya no es opcional.</p>
+      <p class="source"><a href="https://www.bloomberg.com/news/articles/2026-08-07/openai-pauses-some-work-on-new-astra-model-over-cyber-concerns">Bloomberg</a> &bull; <a href="https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>EU AI Act entra en fase de enforcement: multas de hasta 3% de facturaci&oacute;n global</h3>
+      <p class="what">Desde el 2 de agosto, la Comisi&oacute;n Europea puede investigar y sancionar proveedores de modelos GPAI y pr&aacute;cticas prohibidas de IA. Los chatbots deben identificarse como automatizados, los deepfakes necesitan etiqueta, y el contenido generado por IA requiere marcas legibles por m&aacute;quina (watermarks/metadata).</p>
+      <p class="why">Si tu producto usa modelos de IA y tiene usuarios en Europa, necesitas cumplir con transparencia de contenido generado ahora, no despu&eacute;s.</p>
+      <p class="source"><a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714">Comisi&oacute;n Europea</a> &bull; <a href="https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026">Cooley</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Demis Hassabis deja el cargo de CEO de Google DeepMind</h3>
+      <p class="what">Hassabis pas&oacute; a ser Chairman de DeepMind y Chief Scientist de Alphabet para enfocarse en la estrategia hacia AGI. Koray Kavukcuoglu (ex-CTO) asume como SVP de Google DeepMind, supervisando desarrollo de Gemini, investigaci&oacute;n frontier y el ecosistema de apps para developers.</p>
+      <p class="why">La reorganizaci&oacute;n se&ntilde;ala que Google prioriza ejecuci&oacute;n de producto (Gemini) sobre investigaci&oacute;n pura &mdash; espera movimientos m&aacute;s agresivos en APIs y herramientas para devs.</p>
+      <p class="source"><a href="https://fortune.com/2026/08/05/demis-hassabis-steps-down-google-deepmind-ai-shakeup/">Fortune</a> &bull; <a href="https://www.axios.com/2026/08/05/google-deepmind-demis-hassabis-ai">Axios</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 MiniMax H3 portado a Apple Silicon: generaci&oacute;n de video omni-modal local</h3>
+      <p class="what">El modelo omni-modal MiniMax-H3 fue portado a MLX para correr en Apple Silicon con cuantizaci&oacute;n de 4, 6 y 8 bits, ahorrando 25.3 GB de memoria. Genera clips de video de 15 segundos en 2K con audio est&eacute;reo nativo a partir de texto, im&aacute;genes o video.</p>
+      <p class="why">Generaci&oacute;n de video corriendo local en tu Mac abre la puerta a prototipar features multimedia sin costos de API &mdash; aunque a&uacute;n toma ~45 min por clip.</p>
+      <p class="source"><a href="https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/">Simon Willison</a> &bull; <a href="https://huggingface.co/pipenetwork/MiniMax-H3-MLX-4bit">Hugging Face</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI recorta precios de GPT-5.6 Luna hasta 80%: $0.20/M tokens de entrada</h3>
+      <p class="what">GPT-5.6 Luna baj&oacute; a $0.20/M input y $1.20/M output (antes $1/$6). GPT-5.6 Terra recibi&oacute; un 20% de reducci&oacute;n. Sol (flagship) mantiene precios pero lanz&oacute; modo Fast a 2.5x velocidad por el doble de costo.</p>
+      <p class="why">A 20 centavos por mill&oacute;n de tokens, correr agentes de alto volumen o pipelines de procesamiento masivo se vuelve viable econ&oacute;micamente para startups y productos en crecimiento.</p>
+      <p class="source"><a href="https://www.techspot.com/news/113329-openai-reaches-one-billion-active-users-cuts-gpt.html">TechSpot</a> &bull; <a href="https://www.forbes.com/sites/rachelwells/2026/07/31/openai-cuts-gpt-56-pricing-up-to-80-as-ai-costs-come-under-scrutiny/">Forbes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft Edge incorpora Aion-1.0: modelo de lenguaje on-device m&aacute;s eficiente que Phi-4-mini</h3>
+      <p class="what">Microsoft expandi&oacute; las capacidades de AI on-device en Edge con Aion-1.0-Instruct, un SLM local m&aacute;s peque&ntilde;o, r&aacute;pido y eficiente que Phi-4-mini. La tendencia general es clara: Apple, Google, Samsung y Microsoft mueven features inteligentes directamente al dispositivo.</p>
+      <p class="why">M&aacute;s inferencia on-device significa menos dependencia de APIs cloud para features b&aacute;sicas &mdash; clave para apps m&oacute;viles que necesitan funcionar offline o con baja latencia.</p>
+      <p class="source"><a href="https://www.thurrott.com/a-i/336953/build-2026-microsoft-brings-more-on-device-ai-to-edge">Thurrott</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Guerra de precios en coding AI: Copilot migra a cr&eacute;ditos, Cursor adquirido por SpaceX</h3>
+      <p class="what">GitHub Copilot migr&oacute; a pricing basado en cr&eacute;ditos de AI desde junio (Pro $10, Business $19, Enterprise $39 con cr&eacute;ditos incluidos). SpaceX adquiri&oacute; Cursor y Cognition rebrandeo Windsurf como Devin Desktop. La cuota de Copilot entre devs profesionales cay&oacute; de 67% a 51%.</p>
+      <p class="why">El mercado de coding AI se fragmenta y abarata &mdash; como founder t&eacute;cnico, puedes armar un stack de productividad (Cursor + Claude Code + Copilot) por menos de $60/mes con capacidad que hace un a&ntilde;o costaba el triple.</p>
+      <p class="source"><a href="https://scrimba.com/articles/best-ai-coding-assistants-2026/">Scrimba</a> &bull; <a href="https://spectrumailab.com/blog/ai-coding-tools-pricing-compared-2026/">SpectrumAI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Shopify lanza "Agentic Storefronts": compras conversacionales con AI</h3>
+      <p class="what">Shopify integra storefronts ag&eacute;nticos donde los compradores descubren productos a trav&eacute;s de canales AI y completan compras directamente en un entorno de chat, eliminando la navegaci&oacute;n tradicional por cat&aacute;logo.</p>
+      <p class="why">Si vendes en marketplaces o construyes e-commerce, los storefronts conversacionales cambian c&oacute;mo tu producto necesita presentarse &mdash; la metadata y descripciones optimizadas para AI se vuelven cr&iacute;ticas.</p>
+      <p class="source"><a href="https://blog.mean.ceo/shopify-news-august-2026/">Mean CEO</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code v2.1.224: self-hosted runners y mensajer&iacute;a cross-session</h3>
+      <p class="what">Anthropic lanz&oacute; el 7 de agosto la beta de entornos self-hosted para Claude Code. El comando <code>claude self-hosted-runner</code> convierte tus m&aacute;quinas o containers en ejecutores de sesiones web, m&oacute;vil y desktop. Incluye modo fijo y on-demand, m&aacute;s mensajer&iacute;a entre agentes en distintas m&aacute;quinas.</p>
+      <p class="why">Para equipos en Team/Enterprise, esto significa correr Claude Code en tu propia infra con control total de datos y seguridad &mdash; un game changer para adopci&oacute;n enterprise.</p>
+      <p class="source"><a href="https://claude.com/blog/run-claude-code-sessions-on-your-own-compute">Anthropic Blog</a> &bull; <a href="https://www.unite.ai/claude-code-sessions-can-now-run-on-infrastructure-your-team-controls/">Unite.AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Inference Hooks: Anthropic mete DLP inline en Claude Enterprise</h3>
+      <p class="what">Desde el 5 de agosto, Claude Enterprise permite rutear cada prompt del empleado por el servidor de seguridad de la organizaci&oacute;n (Netskope, Palo Alto, Zscaler) para un veredicto allow/deny antes de que el modelo lo vea. Cubre chat, Claude Code y Cowork con una sola configuraci&oacute;n.</p>
+      <p class="why">Resuelve el blocker #1 de adopci&oacute;n de AI en empresas grandes: el equipo de seguridad ahora puede aplicar las mismas pol&iacute;ticas DLP que ya usa en email y web.</p>
+      <p class="source"><a href="https://www.unite.ai/anthropic-puts-inline-data-loss-prevention-inside-claude-enterprise/">Unite.AI</a> &bull; <a href="https://thenextweb.com/news/anthropic-inference-hooks-dlp-claude-enterprise">TNW</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Tino Cu&eacute;llar se une a Anthropic como Chief Global Affairs Officer</h3>
+      <p class="what">Mariano-Florentino (Tino) Cu&eacute;llar se incorpor&oacute; a Anthropic el 4 de agosto como Chief Global Affairs Officer, reforzando la estrategia regulatoria y de pol&iacute;tica p&uacute;blica de la compa&ntilde;&iacute;a en un momento clave con el EU AI Act activo.</p>
+      <p class="why">Anthropic invierte en navegaci&oacute;n regulatoria justo cuando la regulaci&oacute;n se vuelve real &mdash; se&ntilde;al de que la plataforma apuesta por estabilidad a largo plazo para builders.</p>
+      <p class="source"><a href="https://www.anthropic.com/news">Anthropic Newsroom</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Technogym reporta ingresos r&eacute;cord impulsados por AI Checkup y coaching inteligente</h3>
+      <p class="what">Technogym report&oacute; ingresos de &euro;493M en H1 2026 (+7.4% YoY), con &euro;26M en capex destinados a integraci&oacute;n de AI incluyendo Technogym Checkup: evaluaci&oacute;n automatizada de condici&oacute;n f&iacute;sica con recomendaciones personalizadas de entrenamiento.</p>
+      <p class="why">El fitness equipment tradicional se convierte en plataforma de datos + AI &mdash; hay oportunidad para conectar estos ecosistemas con marketplaces de coaching y nutrici&oacute;n.</p>
+      <p class="source"><a href="https://www.fitgearsource.com/fitness-equipment-industry-weekly-news-august-8-2026/">FitGearSource</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 08/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
