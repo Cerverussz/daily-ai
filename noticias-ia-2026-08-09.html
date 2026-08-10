@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 9 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>9 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 NVIDIA open-sourcea NOOA: un agente AI es una sola clase Python</h3>
+      <p class="what">NVIDIA lanz&oacute; NOOA (NVIDIA Object-Oriented Agents), un framework open-source (Apache 2.0) donde un agente AI completo se define como una &uacute;nica clase Python: m&eacute;todos son acciones, campos son estado, docstrings son prompts y type annotations son contratos que el runtime valida. Logra 82.2% en SWE-bench Verified con menor costo de tokens que frameworks existentes.</p>
+      <p class="why">Si est&aacute;s construyendo agentes para tu producto, NOOA elimina el boilerplate de LangChain/CrewAI y te da persistencia en SQLite y modelos pluggables v&iacute;a LiteLLM out of the box.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/08/07/nvidia-ai-releases-nooa-an-object-oriented-python-framework/">MarkTechPost</a> &bull; <a href="https://thenewstack.io/nvidia-nooa-agent-framework/">The New Stack</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta lanza Muse Code: coding agent con sub-agentes paralelos en worktrees aislados</h3>
+      <p class="what">Meta debut&oacute; Muse Code, su primer coding agent en terminal, corriendo sobre Muse Spark 1.2. Su diferencial: ante tareas grandes, crea m&uacute;ltiples sub-agentes que trabajan simult&aacute;neamente en worktrees aislados de git, manteniendo la rama principal intacta. El tier contributor cuesta $0.10/$0.20 por mill&oacute;n de tokens (input/output).</p>
+      <p class="why">El precio del tier contributor est&aacute; por debajo de Sonnet 5, pero el trade-off es que entrenan con tu c&oacute;digo &mdash; eval&uacute;a si tu codebase lo permite antes de adoptarlo.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/">TechCrunch</a> &bull; <a href="https://www.cnbc.com/2026/08/05/meta-debuts-muse-code-to-take-on-anthropic-and-openai-.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot migra a Polaris: Microsoft reemplaza GPT-4 Turbo con modelo propio</h3>
+      <p class="what">Project Polaris, el modelo MoE in-house de Microsoft con sub-m&oacute;dulos especializados por lenguaje, se convierte en el motor default de GitHub Copilot en agosto 2026. Supera a GPT-4 Turbo en HumanEval y MBPP, especialmente en lenguajes con menos datos de entrenamiento como Rust y Haskell. Los equipos tienen 3 meses de fallback a GPT-4 Turbo.</p>
+      <p class="why">La fragmentaci&oacute;n de modelos en herramientas de coding se acelera &mdash; tu workflow ya no depende de un solo proveedor; elige por resultado en tu stack espec&iacute;fico, no por marca.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/317596/20260602/github-copilot-replaces-gpt-4-project-polaris-ships-multi-agent-vs-code-build.htm">TechTimes</a> &bull; <a href="https://windowsforum.com/threads/project-polaris-set-as-default-github-copilot-engine-in-august-2026.421826/">Windows Forum</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Alibaba lanza Qwen 3.8-Max: 2.4T params y open weights la pr&oacute;xima semana</h3>
+      <p class="what">Alibaba lanz&oacute; Qwen3.8-Max, un modelo MoE de 2.4T par&aacute;metros (95B activos) con 1M tokens de contexto. Rinde comparable a Fable 5 en benchmarks, y en una prueba interna pas&oacute; 16 d&iacute;as construyendo una herramienta de coding de forma aut&oacute;noma. Los pesos open-source se publican la semana del 10 de agosto en Hugging Face.</p>
+      <p class="why">A $2/$6 por mill&oacute;n de tokens y con open weights inminentes, es la primera vez que un modelo Max-class de Alibaba se libera &mdash; competencia directa para tus pipelines de backend.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/08/03/alibaba-ai-model-qwen-rival-anthropic.html">CNBC</a> &bull; <a href="https://dataconomy.com/2026/08/03/qwen3-8-max-ai-model/">Dataconomy</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI GPT-5.6: Luna gratis e ilimitado, Sol con slider de esfuerzo, precios rebajados</h3>
+      <p class="what">OpenAI hizo GPT-5.6 Luna el modelo default para usuarios Free y Go de ChatGPT sin l&iacute;mites de texto, y agreg&oacute; un slider de esfuerzo de razonamiento para usuarios Plus/Pro con Sol. Luna baj&oacute; 80% de precio y Terra 20% en API.</p>
+      <p class="why">Luna a precio rebajado es una opci&oacute;n seria para tareas de alto volumen en tu backend &mdash; compara rendimiento real contra Haiku 4.5 y Qwen3.8-Max antes de elegir.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/06/openai-brings-unlimited-chatgpt-text-chats-to-free-users/">TechCrunch</a> &bull; <a href="https://openai.com/index/gpt-5-6/">OpenAI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>EU AI Act: obligaciones de transparencia ya son ley desde el 2 de agosto</h3>
+      <p class="what">Desde el 2 de agosto, la UE exige disclosure en chatbots, marcado de contenido sint&eacute;tico y etiquetado de deepfakes (Art&iacute;culo 50). Las reglas de sistemas de alto riesgo se pospusieron a diciembre 2027 por el Digital Omnibus, invalidando mucha documentaci&oacute;n publicada antes de julio.</p>
+      <p class="why">Si tu producto tiene usuarios en la UE y usa AI generativa, necesitas disclosure visible ahora &mdash; no en 2027.</p>
+      <p class="source"><a href="https://www.helpnetsecurity.com/2026/08/04/eu-ai-act-enforcement-ai-models/">Help Net Security</a> &bull; <a href="https://www.technology.org/2026/07/17/eu-ai-act-what-actually-applies-on-2-august-2026/">Technology.org</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item">
+      <h3>Anthropic y Blackstone lanzan Ode: $1.5B para implementaci&oacute;n enterprise de AI</h3>
+      <p class="what">Ode with Anthropic es un joint venture de $1.5B con Blackstone, Goldman Sachs y otros, que coloca ingenieros AI especializados dentro de grandes empresas para construir soluciones custom con Claude. Arranca con 100 ingenieros, heredados de la adquisici&oacute;n de Fractional AI.</p>
+      <p class="why">La se&ntilde;al estrat&eacute;gica: Anthropic apuesta que el valor real est&aacute; en implementaci&oacute;n, no en modelos &mdash; si ofreces servicios de integraci&oacute;n AI, este es tu competidor directo.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/">TechCrunch</a> &bull; <a href="https://www.businesswire.com/news/home/20260715205134/en/Anthropic-Blackstone-and-Hellman-Friedman-Introduce-Ode-with-Anthropic-an-Enterprise-AI-Services-Firm">BusinessWire</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 AI agent funding alcanza $1.8B en julio-agosto: la infraestructura agente se consolida</h3>
+      <p class="what">La inversi&oacute;n en startups de agentes AI sum&oacute; ~$1.8B en una docena de deals entre julio y agosto 2026. Google lanz&oacute; agentes consumer que llaman a negocios reales para verificar inventario y completar compras. Assindo navega men&uacute;s IVR y colas de espera por ti.</p>
+      <p class="why">Los agentes ya no son demos &mdash; si tu marketplace o plataforma no tiene una API que agentes puedan consumir, est&aacute;s perdiendo un canal de adquisici&oacute;n emergente.</p>
+      <p class="source"><a href="https://www.aiapps.com/blog/august-2026-ai-mega-update-major-breakthroughs-launches/">AIApps</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Cowork se expande a m&oacute;vil y web: sesiones, archivos y tareas en background entre dispositivos</h3>
+      <p class="what">Claude Cowork ahora funciona en m&oacute;vil y web, permitiendo que sesiones y archivos sigan al usuario entre dispositivos. Incluye trabajo en background, tareas programadas, proyectos compartidos y aprobaciones desde el tel&eacute;fono.</p>
+      <p class="why">Si ya usas Claude Code en terminal, Cowork te deja supervisar y aprobar tareas de agentes desde el m&oacute;vil &mdash; util para deploys o tareas nocturnas.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot - Claude Updates</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: spend limits en gateway, workspace trust prompts y mejor manejo de fotos</h3>
+      <p class="what">Claude Code agreg&oacute; soporte de spend-limit en gateways para alertas de uso, prompts de confianza de workspace para claude agents, y mejor procesamiento de im&aacute;genes en conversaciones.</p>
+      <p class="why">Los spend limits de gateway son cr&iacute;ticos si corres Claude Code en CI/CD o equipos &mdash; ahora puedes poner topes sin infra custom.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot - Claude Code Updates</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Sonnet 5: precio promocional termina el 31 de agosto</h3>
+      <p class="what">El pricing promocional de Claude Sonnet 5 finaliza el 31 de agosto 2026, con precios est&aacute;ndar a partir del 1 de septiembre. Anthropic tambi&eacute;n lanz&oacute; anal&iacute;ticas de admin m&aacute;s ricas y entitlements por modelo en Claude Enterprise.</p>
+      <p class="why">Si tu producto depende de Sonnet 5 en API, revisa tu unit economics con los precios est&aacute;ndar antes de que cambie &mdash; tienes 3 semanas.</p>
+      <p class="source"><a href="https://blog.mean.ceo/anthropic-claude-news-august-2026/">Mean CEO Blog</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Technogym apuesta fuerte a AI: H1 2026 con &euro;493M en revenue y capex dirigido a integraci&oacute;n AI</h3>
+      <p class="what">Technogym report&oacute; ingresos de &euro;493M en H1 2026 (+7.4% YoY) con inversi&oacute;n significativa en integraci&oacute;n de AI en sus equipos y plataforma. La tendencia de 2026 en fitness es AI como backbone de programaci&oacute;n, personalizaci&oacute;n, comunicaci&oacute;n con miembros y staffing.</p>
+      <p class="why">El mercado de AI en fitness crece a $46B para 2034 &mdash; si construyes para este vertical, la oportunidad est&aacute; en coaching personalizado y reducci&oacute;n de churn con ML.</p>
+      <p class="source"><a href="https://www.fitgearsource.com/fitness-equipment-industry-weekly-news-august-8-2026/">FitGearSource</a> &bull; <a href="https://athletechnews.com/the-most-innovative-fitness-wellness-companies-of-2026/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 09/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
