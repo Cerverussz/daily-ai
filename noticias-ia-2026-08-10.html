@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 10 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>10 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta lanza Muse Glimmer 30B: modelo agentic open-source que corre en una sola GPU</h3>
+      <p class="what">Meta Superintelligence Labs lanz&oacute; Muse Glimmer, un modelo denso de 30B par&aacute;metros bajo Apache 2.0, destilado de Muse Spark y dise&ntilde;ado para tareas ag&eacute;nticas aut&oacute;nomas en hardware consumer. Con cuantizaci&oacute;n 4-bit cabe en menos de 20GB, soporta 131K de contexto, 100+ idiomas, y su arquitectura DFlash genera texto significativamente m&aacute;s r&aacute;pido que token-by-token manteniendo la misma calidad.</p>
+      <p class="why">Un modelo agentic que supera a Gemma4-31B y Qwen3.6-27B y corre local en tu m&aacute;quina de desarrollo: ideal para coding agents, evaluaci&oacute;n LLM-as-judge, y prototipos sin depender de APIs cloud.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/08/10/meta-ai-releases-muse-glimmer/">MarkTechPost</a> &bull; <a href="https://siliconangle.com/2026/08/10/meta-releases-open-source-muse-glimmer-model-30b-parameters/">SiliconANGLE</a> &bull; <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF">Hugging Face</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI recorta 80% el precio de GPT-5.6 Luna: $0.20/M tokens input</h3>
+      <p class="what">OpenAI redujo el precio de GPT-5.6 Luna a $0.20/M input y $1.20/M output (antes $1/$6), una ca&iacute;da del 80%. Tambi&eacute;n baj&oacute; GPT-5.6 Terra un 20% ($2/$12). El modelo Sol mantiene precios en $5/$30.</p>
+      <p class="why">A $0.20/M input, Luna es ahora viable para pipelines de alto volumen en tu backend: clasificaci&oacute;n, extracci&oacute;n de datos, y agentes internos donde antes el costo no cerraba.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/ai-price-wars-openai-cuts-gpt-5-6-luna-prices-by-80-as-model-competition-shifts-toward-cost/">VentureBeat</a> &bull; <a href="https://www.forbes.com/sites/rachelwells/2026/07/31/openai-cuts-gpt-56-pricing-up-to-80-as-ai-costs-come-under-scrutiny/">Forbes</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Claude Opus 5 ya es el default en Max: near-Fable 5 a mitad de precio</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Opus 5 el 24 de julio a $5/$25 por mill&oacute;n de tokens, con 1M de contexto y 128K de output m&aacute;ximo. Duplica el score de Opus 4.8 en Frontier-Bench, queda a 0.5% de Fable 5 en CursorBench 3.2, y triplica al siguiente modelo en ARC-AGI 3. Fast mode disponible a 2.5x velocidad por $10/$50.</p>
+      <p class="why">El mejor modelo para coding agente en producci&oacute;n al mismo precio que su predecesor; si est&aacute;s en Claude Max, ya lo tienes como default.</p>
+      <p class="source"><a href="https://coursiv.io/blog/claude-opus-5">Coursiv</a> &bull; <a href="https://platform.claude.com/docs/en/about-claude/pricing">Claude Pricing</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 On-device AI en Android alcanza sub-20ms: ExecuTorch lidera el edge</h3>
+      <p class="what">La inferencia on-device en m&oacute;viles Android ya logra latencias menores a 20ms para modelos de computer vision en producci&oacute;n. ExecuTorch de Meta se consolida como el framework l&iacute;der para deployar modelos PyTorch a m&oacute;vil y edge, con runtime m&iacute;nimo y aceleraci&oacute;n de hardware.</p>
+      <p class="why">Si desarrollas apps Android, puedes correr modelos de visi&oacute;n y NLP directamente en dispositivo con latencia imperceptible, sin roundtrip a cloud y sin costos de API.</p>
+      <p class="source"><a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms/">AlephZero Labs</a> &bull; <a href="https://thebackenddevelopers.substack.com/p/edge-ai-on-mobile-devices-in-2026">The Backend Developers</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude for Open Source: 6 meses gratis de Max 20x ($1,200) para maintainers</h3>
+      <p class="what">Anthropic otorga 6 meses de Claude Max 20x gratis a maintainers y contributors de open source. Requisitos: repo con 5,000+ stars o 1M+ npm downloads mensuales con actividad reciente, o aplicar por el Ecosystem Impact Track si mantienes paquetes cr&iacute;ticos menos visibles. Programa limitado a 10,000 recipientes.</p>
+      <p class="why">Si mantienes un proyecto open-source relevante, tienes acceso a la herramienta de coding m&aacute;s potente del mercado sin costo; si no calificas, es se&ntilde;al de hacia d&oacute;nde va la distribuci&oacute;n de herramientas AI.</p>
+      <p class="source"><a href="https://claude.com/contact-sales/claude-for-oss">Anthropic</a> &bull; <a href="https://alphasignal.ai/news/anthropic-gives-10-000-open-source-maintainers-1-200-of-free-claude-max">AlphaSignal</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 AI agents en producci&oacute;n: de demos a booking, IT ops y workflows enterprise</h3>
+      <p class="what">Los agentes AI ya pasaron la fase de demos y se usan para trabajo real: reservas de citas, gesti&oacute;n de infraestructura IT, y automatizaci&oacute;n de workflows enterprise multi-paso. La atenci&oacute;n del mercado migra de chat demos hacia herramientas que construyen m&aacute;s r&aacute;pido, venden mejor, y eliminan trabajo manual.</p>
+      <p class="why">Si est&aacute;s construyendo un marketplace o SaaS, el momento de integrar agentes AI en tus flujos operativos es ahora: los early adopters ya est&aacute;n reduciendo costos operativos reales.</p>
+      <p class="source"><a href="https://accent-soc.com/ai-products-august-2026-launch.html">Accent Soc</a> &bull; <a href="https://agentic.ai/news">Agentic.ai</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Sonnet 5: Anthropic hace permanente el pricing introductorio de $2/$10</h3>
+      <p class="what">Anthropic anunci&oacute; que el precio introductorio de Claude Sonnet 5 ($2/M input, $10/M output) se mantiene permanente. La subida a $3/$15 que estaba prevista para el 1 de septiembre queda cancelada.</p>
+      <p class="why">Si usas Sonnet 5 en producci&oacute;n, tu presupuesto de tokens ya no tiene fecha de vencimiento; esa certeza de costos es clave para planificar un producto con m&aacute;rgenes ajustados.</p>
+      <p class="source"><a href="https://x.com/claudeai/status/2086891169217122586">Claude en X</a> &bull; <a href="https://enterprisedna.co/resources/news/anthropic-claude-sonnet-5-pricing-deadline-cost-impact-2026/">Enterprise DNA</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Cowork se expande a m&oacute;vil y web: sesiones remotas sin dispositivo encendido</h3>
+      <p class="what">Claude Cowork, que lanz&oacute; como app de desktop en enero, ahora funciona en web y m&oacute;vil para suscriptores Max. Las sesiones corren en servidores de Anthropic: puedes iniciar una tarea desde el escritorio, monitorear desde el tel&eacute;fono, y el trabajo contin&uacute;a aunque cierres tu laptop.</p>
+      <p class="why">Poder aprobar y supervisar tareas de Cowork desde el m&oacute;vil cambia el workflow: delegas a Claude y revisas resultados entre reuniones.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/">TechCrunch</a> &bull; <a href="https://claude.com/blog/cowork-web-mobile">Anthropic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic dise&ntilde;a chips AI custom y negocia fabricaci&oacute;n con Samsung a 2nm</h3>
+      <p class="what">Anthropic est&aacute; armando un equipo dedicado al dise&ntilde;o de chips AI propios, con planes de co-dise&ntilde;ar hardware y modelos para mayor velocidad y eficiencia. Negocian con Samsung para fabricar en su proceso de 2 nan&oacute;metros. Contrataron a Clive Chan, segundo ingeniero del equipo de chips custom de OpenAI.</p>
+      <p class="why">Si dependes de la API de Claude para tu producto, chips propios significan menor latencia y potencialmente menores precios a mediano plazo.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/">TechCrunch</a> &bull; <a href="https://www.tomshardware.com/tech-industry/anthropic-to-build-its-own-co-designed-custom-ai-accelerator-for-inferencing-workloads-samsung-reported-to-be-partnering-with-the-claude-ai-maker-for-manufacturing">Tom's Hardware</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Oura Ring 5 con Health Radar: AI predictiva para salud cardiovascular y respiratoria</h3>
+      <p class="what">Oura lanz&oacute; Health Radar en su Ring 5, un sistema que monitorea continuamente se&ntilde;ales biom&eacute;tricas para detectar cambios cardiovasculares y respiratorios antes de que aparezcan s&iacute;ntomas. Incluye tracking de presi&oacute;n arterial v&iacute;a PPG nocturno y monitoreo respiratorio con ResMed. Adem&aacute;s, integra Counsel Health para acceso a m&eacute;dicos licenciados v&iacute;a AI dentro de la app.</p>
+      <p class="why">El modelo Oura demuestra c&oacute;mo un wearable pasa de tracker pasivo a plataforma de salud predictiva con AI; ese mismo patr&oacute;n aplica a cualquier marketplace de servicios de bienestar.</p>
+      <p class="source"><a href="https://ouraring.com/blog/introducing-health-radar/">Oura Blog</a> &bull; <a href="https://www.mobihealthnews.com/news/oura-unveils-ai-enabled-oura-ring-5-predictive-health-features">MobiHealthNews</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Technogym AI Checkup: evaluaci&oacute;n integral con AI que genera programas personalizados</h3>
+      <p class="what">Technogym Checkup eval&uacute;a en 15-20 minutos seis par&aacute;metros (VO2 max, fuerza, balance, flexibilidad, composici&oacute;n corporal y funci&oacute;n cognitiva) para calcular una "Wellness Age". Los datos alimentan directamente al AI Coach de Technogym, que genera programas de precisi&oacute;n calibrados a objetivos individuales.</p>
+      <p class="why">Es el blueprint para integrar AI en servicios presenciales de fitness: assessment automatizado &rarr; programa personalizado &rarr; retenci&oacute;n +18% seg&uacute;n datos del sector.</p>
+      <p class="source"><a href="https://athletechnews.com/how-technogym-is-using-ai-to-modernize-fitness-coach-checkup/">Athletech News</a> &bull; <a href="https://www.fittechglobal.com/fit-tech-news/Technogym-Checkup-set-to-uplevel-programmes-with-AI-personalisation/352788">FitTech Global</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 10/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
