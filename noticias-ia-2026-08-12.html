@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 12 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>12 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta lanza Muse Glimmer: modelo open-weight de 30B param para agentes AI locales</h3>
+      <p class="what">Meta publicó Muse Glimmer, un modelo de 29.6B parámetros bajo Apache 2.0 que corre en una sola GPU consumer o Mac con Apple Silicon. Incluye un encoder de visión de 1.8B params, contexto de 131K tokens, soporte para 100+ idiomas, y capacidad de planificar tareas, llamar herramientas, escribir código y recuperarse de errores de forma autónoma.</p>
+      <p class="why">Un modelo agéntico que cabe en hardware local cambia la ecuación para apps Android/desktop que necesitan AI offline sin depender de APIs cloud ni pagar por token.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/">TechCrunch</a> &bull; <a href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model">Meta AI Research</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 CopilotKit open-sources Channels SDK: lleva cualquier agente AI a Slack y Teams</h3>
+      <p class="what">CopilotKit lanzó Channels SDK (MIT), una librería que conecta cualquier agente AI (LangGraph, CrewAI, Mastra, Google ADK, o HTTP custom) a Slack y Microsoft Teams con UI nativa, streaming, tool calls y manejo de archivos. Discord y Google Chat están en el roadmap.</p>
+      <p class="why">Si estás construyendo un agente para tu producto o marketplace, esto elimina semanas de integración per-plataforma para distribuirlo donde ya están tus usuarios.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/08/04/copilotkit-open-sources-channels-sdk/">MarkTechPost</a> &bull; <a href="https://github.com/CopilotKit/channels-sdk">GitHub</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>L&amp;T lanza AgenticIQ: plataforma de agentes autónomos para manufactura e ingeniería</h3>
+      <p class="what">L&amp;T Technology Services presentó AgenticIQ, una plataforma end-to-end para workflows autónomos multi-agente enfocada en organizaciones de ingeniería y manufactura. Orquesta agentes que pueden tomar decisiones, ejecutar tareas y coordinarse entre sí.</p>
+      <p class="why">Señal de que los agentes AI están entrando en verticales industriales pesados, lo cual valida la oportunidad para builders que quieran crear plataformas agénticas en otros verticales.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/daily/2026-08-12">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GPT-5.6 Luna baja precios 80%: input a $0.20/M tokens, la guerra de precios se intensifica</h3>
+      <p class="what">OpenAI recortó el precio de GPT-5.6 Luna a $0.20/M input y $1.20/M output (antes $1/$6), con cached input a $0.02/M. Con contexto largo sube a $0.40/$1.80. ChatGPT ya supera los 1.000M de usuarios activos semanales.</p>
+      <p class="why">A estos precios, Luna compite directamente con modelos open-source en costo; si tu producto usa API de OpenAI, es momento de re-evaluar si el margen de tu feature de AI acaba de mejorar drásticamente.</p>
+      <p class="source"><a href="https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/">OpenAI</a> &bull; <a href="https://venturebeat.com/technology/ai-price-wars-openai-cuts-gpt-5-6-luna-prices-by-80-as-model-competition-shifts-toward-cost">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Nvidia forma alianza de $500B con Wall Street para financiar infraestructura AI</h3>
+      <p class="what">Nvidia se alió con Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs y KKR para movilizar $500B en financiamiento de infraestructura AI. Jensen Huang describió el AI compute como una "clase de activo invertible" y ofreció hasta $125B en respaldo.</p>
+      <p class="why">Más capital en datacenters = más capacidad disponible a menor costo a mediano plazo; si planeas escalar inference, la presión a la baja en precios de GPU cloud seguirá.</p>
+      <p class="source"><a href="https://www.cnn.com/2026/08/11/business/nvidia-wall-street-500-billion-financing-intl">CNN</a> &bull; <a href="https://fortune.com/2026/08/12/nvidia-private-capital-deal-circular-financing-ai-boom/">Fortune</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Lovable levanta $400M a $13.3B de valoración: el vibe coding escala a empresa</h3>
+      <p class="what">La startup sueca de "vibe coding" cerró una Serie C de $400M liderada por Menlo Ventures y el Scaleup Europe Fund de la UE, con participación de Tencent. Lovable permite crear apps y sitios web describiendo lo que quieres en lenguaje natural, y se ha convertido en una de las startups AI más observadas de Europa.</p>
+      <p class="why">La valoración de $13.3B para una herramienta que compite con tu IDE confirma que el mercado de "no-code AI-first" ya no es nicho; como founder técnico, tu ventaja es construir lo que estas herramientas no pueden: lógica de negocio compleja.</p>
+      <p class="source"><a href="https://www.bloomberg.com/news/articles/2026-08-12/ai-coding-startup-lovable-raises-400-million-at-13-3-billion-valuation">Bloomberg</a> &bull; <a href="https://lovable.dev/blog/series-b">Lovable Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 River AI recauda $1.1B para AI personal open-source que corre en tu hardware</h3>
+      <p class="what">Igor Babuschkin (ex-cofundador de xAI) levantó $1.1B liderado por General Catalyst con inversión estratégica de NVIDIA y AMD Ventures. River construirá servidores y un stack open-source para que individuos y empresas corran AI en su propia infraestructura, sin que sus datos salgan de sus máquinas.</p>
+      <p class="why">Si la tendencia es AI personal y on-premise, hay oportunidad para builders que creen herramientas, integraciones y servicios alrededor de ese stack abierto cuando salga.</p>
+      <p class="source"><a href="https://siliconangle.com/2026/08/11/personalized-ai-startup-river-ai-raises-1-1b-consortium-backed-nvidia-amd/">SiliconANGLE</a> &bull; <a href="https://techstartups.com/2026/08/11/former-xai-co-founder-igor-babuschkins-river-ai-raises-1-1-billion-to-build-your-own-personal-ai/">Tech Startups</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code añade self-hosted environments: ejecuta sesiones en tu propia infra</h3>
+      <p class="what">Claude Code v2.1.224 introduce self-hosted environments en beta pública para planes Team y Enterprise. Con el comando <code>claude self-hosted-runner</code>, tus máquinas o contenedores se convierten en el compute layer donde corren las sesiones, accediendo a servicios internos, DBs y herramientas custom sin exponerlas a internet.</p>
+      <p class="why">Para equipos con requisitos de compliance o que necesitan que el agente acceda a toolchains internas, esto elimina el blocker principal de adoptar Claude Code en producción.</p>
+      <p class="source"><a href="https://claude.com/blog/run-claude-code-sessions-on-your-own-compute">Anthropic</a> &bull; <a href="https://www.unite.ai/claude-code-sessions-can-now-run-on-infrastructure-your-team-controls/">Unite.AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic introduce watermarks invisibles en texto generado por Claude</h3>
+      <p class="what">Como parte de sus compromisos bajo el EU AI Act, Anthropic embebe marcas de agua invisibles en el texto que genera Claude. La watermark no altera el significado ni la legibilidad, pero persiste cuando se copia, pega, e incluso después de cierta edición.</p>
+      <p class="why">Si usas Claude para generar contenido en tu producto, considera que el texto ahora lleva una señal detectable de origen AI; relevante para cumplimiento regulatorio y para tus propias políticas de contenido.</p>
+      <p class="source"><a href="https://tech.yahoo.com/ai/claude/articles/anthropic-just-rolled-tool-thatll-040904467.html">Yahoo Tech</a> &bull; <a href="https://www.anthropic.com/news">Anthropic Newsroom</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cowork se expande a móvil y web: sesiones sincronizadas entre dispositivos</h3>
+      <p class="what">Claude expandió Cowork a móvil y web, permitiendo que sesiones y archivos te sigan entre dispositivos. Incluye trabajo en background, tareas programadas, proyectos compartidos y aprobaciones desde el celular.</p>
+      <p class="why">Poder aprobar acciones de tu agente desde el teléfono mientras haces otra cosa cierra el loop de los agentes de larga duración que necesitan supervisión humana intermitente.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot - Claude Updates</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Technogym reporta crecimiento del 7.4% en H1 2026 impulsado por AI</h3>
+      <p class="what">Technogym cerró el primer semestre con ingresos de &euro;493M (+7.4% YoY) y destinó &euro;26M de capex a integración de tecnología AI, incluyendo Technogym Checkup, su sistema de evaluación de salud automatizada con machine learning para gimnasios y centros de wellness.</p>
+      <p class="why">El fitness corporativo y las cadenas de gimnasios están comprando AI que mida y personalice; hay espacio para plataformas independientes que ofrezcan coaching AI a entrenadores y profesionales de salud sin atarse a hardware propietario.</p>
+      <p class="source"><a href="https://www.fitgearsource.com/fitness-equipment-industry-weekly-news-august-8-2026/">FitGear Source</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 12/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
