@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 13 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>13 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Mercury Spend: tarjetas de cr&eacute;dito virtuales para agentes AI</h3>
+      <p class="what">Mercury lanz&oacute; Mercury Spend, que permite a empresas emitir &ldquo;Agent Cards&rdquo; &mdash; tarjetas virtuales que un agente AI puede usar aut&oacute;nomamente para compras, con l&iacute;mites, pol&iacute;ticas auto-enforced y audit trail separado de cualquier humano. Las tarjetas son creadas por un humano pero operadas por el agente dentro de sus l&iacute;mites asignados.</p>
+      <p class="why">Si est&aacute;s construyendo agentes que necesitan ejecutar transacciones reales (compras de APIs, infra, ads), esto resuelve el problema de pagos aut&oacute;nomos con control real.</p>
+      <p class="source"><a href="https://mercury.com/blog/introducing-mercury-spend">Mercury Blog</a> &bull; <a href="https://www.pymnts.com/news/artificial-intelligence/2026/ai-agents-just-got-their-own-company-credit-cards/">PYMNTS</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI Presence: agentes de voz y chat enterprise en producci&oacute;n</h3>
+      <p class="what">OpenAI anunci&oacute; Presence, plataforma de agentes AI para workflows de atenci&oacute;n al cliente y operaciones internas. Ya potencia el soporte telef&oacute;nico de OpenAI en ingl&eacute;s, resolviendo el 75% de consultas sin intervenci&oacute;n humana, con verificaci&oacute;n de identidad y acciones sobre cuentas.</p>
+      <p class="why">Competencia directa para plataformas de customer support con AI; si vendes en un marketplace, este tipo de agentes de voz van a ser table stakes pronto.</p>
+      <p class="source"><a href="https://openai.com/index/introducing-openai-presence/">OpenAI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 tl;dv expone 181K reuniones por fallo de seguridad &mdash; alerta para devs</h3>
+      <p class="what">Un investigador descubri&oacute; que tl;dv, popular notetaker AI con millones de usuarios, dej&oacute; 181,874 registros de reuniones (incluyendo ~1,000 llamadas en vivo en cualquier momento) accesibles a cualquier usuario autenticado por falta de una regla de tenant boundary en Firestore. El bug fue reportado en enero y segu&iacute;a sin fix en agosto.</p>
+      <p class="why">Recordatorio cr&iacute;tico: si manejas datos multi-tenant en Firestore o cualquier DB, valida tenant isolation en cada query &mdash; un solo filtro faltante y expones todo.</p>
+      <p class="source"><a href="https://bobdahacker.com/blog/tldv-hack">bobdahacker</a> &bull; <a href="https://blog.netizen.net/2026/08/04/inside-the-tldv-flaw-that-exposed-live-government-and-corporate-meetings/">Netizen Blog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Pixel 11 con Tensor G6: Gemini Nano 3.5x m&aacute;s r&aacute;pido on-device</h3>
+      <p class="what">Google present&oacute; el Pixel 11 con el chip Tensor G6, cuyo TPU es 50% m&aacute;s potente y ejecuta Gemini Nano hasta 3.5x m&aacute;s r&aacute;pido con 3.5x menos energ&iacute;a. Nuevas features incluyen Magic Capture, traducci&oacute;n en tiempo real de video/audio, y sign-to-text (ASL a texto con Gemini).</p>
+      <p class="why">El benchmark real de on-device AI ya no es &ldquo;puede correr un modelo&rdquo; sino &ldquo;qu&eacute; tan r&aacute;pido y barato en bater&iacute;a&rdquo; &mdash; el G6 mueve esa l&iacute;nea significativamente para apps Android.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/12/pixel-11-has-few-hardware-changes-and-more-gemini/">TechCrunch</a> &bull; <a href="https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/">Google Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini alcanza 1,000 millones de usuarios mensuales &mdash; el producto m&aacute;s r&aacute;pido de Google</h3>
+      <p class="what">Sundar Pichai confirm&oacute; que Gemini super&oacute; los 1,000M de usuarios activos mensuales, pasando de 400M en mayo 2025 a 1B en agosto 2026. El 63% interact&uacute;a por voz y genera m&aacute;s de 150 millones de im&aacute;genes diarias.</p>
+      <p class="why">Con Gemini embebido en Android, Chrome, Search y Workspace, es la distribuci&oacute;n AI m&aacute;s masiva &mdash; si tu producto corre en Android, tus usuarios ya tienen h&aacute;bitos de AI formados.</p>
+      <p class="source"><a href="https://www.forbes.com/sites/antoniopequenoiv/2026/08/11/gemini-becomes-googles-fastest-growing-product-ever-after-hitting-1-billion-monthly-users/">Forbes</a> &bull; <a href="https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI GPT-5.6 Luna: ahora gratis en free tier, precio API baja 80%</h3>
+      <p class="what">OpenAI redujo el precio de GPT-5.6 Luna un 80% a $0.20/M input tokens y $1.20/M output. Luna es ahora el modelo default del tier gratuito de ChatGPT desde el 6 de agosto, con chat ilimitado y bot&oacute;n Think disponible para todos.</p>
+      <p class="why">A $0.20/M tokens de input, Luna compite directamente con modelos open-source en costo &mdash; ideal para pipelines de alto volumen donde antes usabas modelos locales por precio.</p>
+      <p class="source"><a href="https://www.forbes.com/sites/rachelwells/2026/07/31/openai-cuts-gpt-56-pricing-up-to-80-as-ai-costs-come-under-scrutiny/">Forbes</a> &bull; <a href="https://www.techspot.com/news/113329-openai-reaches-one-billion-active-users-cuts-gpt.html">TechSpot</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item">
+      <h3>Mirage lanza la primera &ldquo;AI news network&rdquo; sin humanos en c&aacute;mara, streaming 24/7 en X</h3>
+      <p class="what">Mirage (antes Captions) puso al aire lo que llama la primera red de noticias AI del mundo, transmitiendo ininterrumpidamente en X sin ning&uacute;n humano frente a c&aacute;mara. Todo el contenido es generado y presentado por AI en tiempo real.</p>
+      <p class="why">Independientemente de la calidad period&iacute;stica, demuestra que un equipo peque&ntilde;o puede operar un canal de contenido 24/7 con costo marginal cercano a cero &mdash; el modelo aplica a cualquier vertical de contenido.</p>
+      <p class="source"><a href="https://techstartups.com/2026/08/13/top-tech-news-today-august-13-2026-anthropic-deepmind-google-lenovo-microsoft-spacexai-more/">Tech Startups</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Copilot pierde market share: Cursor 18%, Claude Code 10% en Stack Overflow Survey</h3>
+      <p class="what">GitHub Copilot cay&oacute; de 67% a 51% de market share entre devs profesionales. Cursor debut&oacute; con 18% de adopci&oacute;n y Claude Code alcanz&oacute; 10% en su primera aparici&oacute;n en el Developer Survey. Cursor alcanz&oacute; $2B ARR y Claude Code creci&oacute; 6x.</p>
+      <p class="why">El stack ganador es Cursor para edici&oacute;n diaria + Claude Code para tareas complejas en terminal &mdash; si a&uacute;n no lo adoptaste, est&aacute;s cediendo velocidad.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/cursor-vs-claude-code-vs-github-copilot-2026-ultimate-comparison">NxCode</a> &bull; <a href="https://scrimba.com/articles/best-ai-coding-assistants-2026/">Scrimba</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic negocia compra de Decart AI por $6B &mdash; video generativo e infraestructura</h3>
+      <p class="what">Bloomberg report&oacute; que Anthropic est&aacute; en conversaciones para adquirir Decart AI, startup israel&iacute; especializada en video generativo en tiempo real, world models, y optimizaci&oacute;n de GPUs (plataforma DOS). Ser&iacute;a la mayor adquisici&oacute;n conocida de Anthropic, a&uacute;n en etapa temprana.</p>
+      <p class="why">Si se concreta, Anthropic ganar&iacute;a capacidades multimodales de video y eficiencia de compute que podr&iacute;an traducirse en modelos m&aacute;s baratos y r&aacute;pidos para la API.</p>
+      <p class="source"><a href="https://www.bloomberg.com/news/articles/2026-08-13/anthropic-said-in-talks-to-buy-ai-startup-decart-for-6-billion">Bloomberg</a> &bull; <a href="https://fortune.com/2026/08/13/anthropic-said-in-talks-to-buy-startup-decart-for-6-billion/">Fortune</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic logra su primer trimestre rentable: $10.9B en revenue Q2</h3>
+      <p class="what">Anthropic report&oacute; $10.9B en ingresos en Q2 2026 (m&aacute;s del doble que Q1) con una ganancia operativa proyectada de $559M. Es el primer trimestre rentable de la compa&ntilde;&iacute;a, que ya present&oacute; su S-1 confidencial para IPO.</p>
+      <p class="why">La rentabilidad valida que los AI labs pueden ser negocios sostenibles &mdash; y un Anthropic m&aacute;s fuerte financieramente significa m&aacute;s inversi&oacute;n en la plataforma Claude que usas.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/05/20/anthropic-revenue-explosive-growth-ipo-profitable-quarter.html">CNBC</a> &bull; <a href="https://aitoolsrecap.com/Blog/anthropic-first-profit-2026-revenue-breakdown">AI Tools Recap</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Sonnet 5: pricing promocional ($2/$10) termina el 31 de agosto</h3>
+      <p class="what">Anthropic confirm&oacute; que el precio introductorio de Claude Sonnet 5 ($2/M input, $10/M output) finaliza el 31 de agosto. A partir del 1 de septiembre, el precio est&aacute;ndar ser&aacute; $3/$15 por mill&oacute;n de tokens.</p>
+      <p class="why">Si tienes pipelines en producci&oacute;n con Sonnet 5, tienes 18 d&iacute;as para evaluar si el aumento de 50% en costos cambia tu unit economics o si necesitas migrar a otro modelo.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Pixel 11 sign-to-text: ASL a texto y conversaci&oacute;n con Gemini para personas sordas</h3>
+      <p class="what">Google introdujo en el Pixel 11 una funci&oacute;n que permite a personas sordas o con dificultades auditivas usar lenguaje de se&ntilde;as americano (ASL) para enviar textos, traducir, e interactuar con Gemini directamente desde el dispositivo.</p>
+      <p class="why">Es un caso real de AI on-device resolviendo un problema de accesibilidad concreto &mdash; y un patr&oacute;n replicable para cualquier app que quiera servir a audiencias con necesidades espec&iacute;ficas.</p>
+      <p class="source"><a href="https://blog.google/products-and-platforms/devices/pixel/pixel-11-features/">Google Blog</a> &bull; <a href="https://www.techrepublic.com/article/news-google-pixel-11-made-by-google-2026-takeaways/">TechRepublic</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 13/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
