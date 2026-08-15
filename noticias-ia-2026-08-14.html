@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 14 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>14 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales de IA en producción -->
+    <div class="section-title">1 &middot; Aplicaciones profesionales de IA en producción</div>
+
+    <div class="news-item hot">
+      <h3>🔥 NVIDIA NeMo Switchyard: routing open-source que baja costos 74% en agentes</h3>
+      <p class="what">NVIDIA lanzó NeMo Switchyard, una librería open-source que enruta cada paso de un workflow de agentes al modelo más eficiente disponible. En benchmarks con LangChain sobre 145 tareas multi-turno, redujo costos un 74% con solo 6 puntos menos de accuracy al combinar Nemotron 3.5 Lightning con Claude Opus 4.8.</p>
+      <p class="why">Si estás construyendo agentes en producción, esto te permite mezclar modelos baratos para tareas simples y frontier para las críticas — sin reescribir tu app.</p>
+      <p class="source"><a href="https://developer.nvidia.com/blog/route-ai-agent-workloads-across-models-with-nvidia-nemo-switchyard/">NVIDIA Developer Blog</a> &bull; <a href="https://venturebeat.com/orchestration/nvidias-switchyard-router-reshuffles-ai-models-mid-task-cutting-task-costs-to-a-third-in-its-own-tests">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Writer Palmyra X6: agentes enterprise a $2/M input tokens, 52% más barato</h3>
+      <p class="what">Writer lanzó Palmyra X6, su modelo flagship para agentes enterprise que opera a $2/$8 por millón de tokens (input/output), comparado con $15/$75 de Claude Opus 4.8. El harness completa tareas en 26 segundos promedio y puede trabajar sin supervisión hasta 8 horas.</p>
+      <p class="why">Demuestra que para workflows enterprise repetitivos no necesitas pagar frontier — un modelo especializado con buen orchestration puede ser 10x más barato.</p>
+      <p class="source"><a href="https://writer.com/blog/palmyra-x6-major-harness-release/">Writer Blog</a> &bull; <a href="https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Dev solo fine-tunea modelo de 941MB que supera al de 7B para shell commands</h3>
+      <p class="what">Un desarrollador independiente fine-tuneó Qwen2.5-Coder-1.5B con 125K pares lenguaje-natural/comando, logrando un modelo cuantizado de 941MB que corre en CPU a 0.59s por query y 1.6GB de RAM. Supera al modelo 7B sin tunear en InterCode-ALFA (0.620 vs 0.613).</p>
+      <p class="why">Caso real de que un solo dev con fine-tuning enfocado puede superar modelos 5x más grandes — patrón replicable para cualquier nicho vertical.</p>
+      <p class="source"><a href="https://buttondown.com/agent-k/archive/llm-daily-august-14-2026/">LLM Daily</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas con potencial práctico -->
+    <div class="section-title">2 &middot; Innovaciones técnicas con potencial práctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta Muse Glimmer: modelo agentic de 30B que corre en tu GPU</h3>
+      <p class="what">Meta lanzó Muse Glimmer, un modelo open-weight de 30B parámetros (Apache 2.0) diseñado para correr en una sola GPU de consumo. La versión cuantizada Q4 ocupa menos de 20GB y con DFlash speculative decoding logra 3.1x speedup en RTX 5090. Soporta tool calling, razonamiento multi-paso y 100+ idiomas.</p>
+      <p class="why">Agentes locales en tu máquina sin depender de APIs — ideal para coding assistants privados, pipelines de CI, o cualquier workflow donde no quieres enviar código a la nube.</p>
+      <p class="source"><a href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model">Meta AI Research</a> &bull; <a href="https://www.neowin.net/news/meta-releases-muse-glimmer-a-30b-open-agentic-ai-model-that-runs-locally-on-pcs/">Neowin</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>NVIDIA Nemotron 3.5 Lightning: 30B MoE con solo 3B parámetros activos</h3>
+      <p class="what">NVIDIA lanzó Nemotron 3.5 Lightning, un modelo MoE de 30B que activa solo 3B parámetros por inferencia, logrando 86% en PinchBench y siendo 30% más rápido que Qwen3.6 35B. Publicado con pesos, datos de entrenamiento y recetas bajo licencia OpenMDW-1.1.</p>
+      <p class="why">Modelo ligero y abierto diseñado específicamente para agentes always-on — combínalo con Switchyard para tener un stack de agentes enterprise completamente open-source.</p>
+      <p class="source"><a href="https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/">NVIDIA Blog</a> &bull; <a href="https://www.marktechpost.com/2026/08/11/nvidia-ai-releases-nemotron-3-5-lightning-and-nemo-switchyard/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI Ultrafast: GPT-5.6 Sol a 750 tokens/segundo con Cerebras</h3>
+      <p class="what">OpenAI presentó Ultrafast, un tier de API que ejecuta GPT-5.6 Sol hasta 14x más rápido que el modo estándar, alcanzando 750 tokens de output por segundo sobre hardware Cerebras. En GDP-Val logra 5.6x speedup sin pérdida de calidad. Aún sin precio ni fecha GA.</p>
+      <p class="why">Inferencia a velocidad real-time abre la puerta a agentes que responden como humanos en apps conversacionales — si el precio es competitivo, cambia las UX posibles.</p>
+      <p class="source"><a href="https://openai.com/index/previewing-ultrafast/">OpenAI Blog</a> &bull; <a href="https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai">Cerebras</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Gemini 3.7 Flash: modelo workhorse al 50% de descuento para coding y agentes</h3>
+      <p class="what">Google lanzó Gemini 3.7 Flash a $0.75/$3.75 por millón de tokens (input/output), la mitad del precio de 3.6 Flash, con mejoras en bug fix accuracy de 49% a 65.3%. El descuento aplica retroactivamente a 3.6 Flash y dura hasta fin de 2026.</p>
+      <p class="why">Si usas Gemini en Android Studio o como backend para agentes, los costos acaban de bajar a la mitad — y la mejora en coding lo hace más viable como modelo de producción.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/googles-gemini-3-7-flash-targets-coding-and-agents-with-a-50-introductory-price-cut">VentureBeat</a> &bull; <a href="https://www.techtimes.com/articles/324366/20260813/google-launches-gemini-37-flash-coding-gains-half-price-through-year-end.htm">TechTimes</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios y productos -->
+    <div class="section-title">3 &middot; Creación de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 SpaceX cierra la adquisición de Cursor por $60B — la mayor compra de una startup en la historia</h3>
+      <p class="what">SpaceX completó la adquisición de Anysphere (Cursor) por $60B en acciones, confirmada por filing SEC el 14 de agosto. Cursor operará como subsidiaria bajo la nueva división "SpaceXAI" con acceso al supercomputador Colossus, y ya lanzaron un beta de "Grok Bot" integrado.</p>
+      <p class="why">El mercado de AI coding tools se consolida rápido — si dependes de Cursor, prepárate para cambios en modelo de negocio y ecosistema; evalúa alternativas como Claude Code o Windsurf/Devin.</p>
+      <p class="source"><a href="https://cursor.com/blog/joining-spacex">Cursor Blog</a> &bull; <a href="https://www.bloomberg.com/news/articles/2026-08-14/spacex-completes-its-60-billion-cursor-acquisition">Bloomberg</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>DeepSeek sube precios de V4 Flash hasta 371% y adopta pricing peak/off-peak</h3>
+      <p class="what">DeepSeek anunció aumentos significativos en V4 Flash: output tokens pasan de $0.28 a $1.32/M en horas pico (371% más). Implementan modelo peak/off-peak efectivo el 16 de agosto, con horas pico 01:00–04:00 y 06:00–10:00 UTC.</p>
+      <p class="why">La era de modelos chinos ultrabaratos se acaba — si construiste tu stack sobre pricing de DeepSeek, es momento de evaluar alternativas o implementar routing inteligente como Switchyard.</p>
+      <p class="source"><a href="https://www.engadget.com/2236912/deepseek-ai-models-get-four-times-pricier/">Engadget</a> &bull; <a href="https://www.infoworld.com/article/4209439/deepseek-raises-some-v4-prices-by-more-than-10x-as-ai-demand-strains-capacity.html">InfoWorld</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y ecosistema Anthropic -->
+    <div class="section-title">4 &middot; Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>MCP 2026-07-28: core stateless, 950+ servers, 400M descargas SDK/mes</h3>
+      <p class="what">La nueva spec MCP mueve el protocolo a un core stateless (request/response), permitiendo deploy en serverless y edge. Añade OAuth/OIDC mejorado, extensiones versionadas para Apps y Tasks, UI embebida, y tunnels de red privada. Ya hay 950+ servers en el directorio de conectores.</p>
+      <p class="why">MCP stateless significa que puedes montar tus integraciones en Lambda/Cloud Run sin mantener conexiones persistentes — reduce complejidad y costo de infraestructura drásticamente.</p>
+      <p class="source"><a href="https://claude.com/blog/bringing-mcp-2026-07-28-to-claude">Claude Blog</a></p>
+    </div>
+
+    <!-- EJE 5: IA aplicada a sports tech, salud y bienestar -->
+    <div class="section-title">5 &middot; IA aplicada a sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Oura Ring 5: Health Radar con señales de presión arterial y AI predictiva</h3>
+      <p class="what">Oura despliega Health Radar en Ring 5 y Gen3+, con monitoreo de señales de presión arterial via PPG nocturno y detección de alteraciones respiratorias durante el sueño. Incluye integración con Counsel Health para acceso a proveedores médicos licenciados directamente desde la app.</p>
+      <p class="why">Si construyes en health/wellness tech, Oura está demostrando cómo convertir datos de wearable en un servicio médico — modelo replicable para marketplaces de salud.</p>
+      <p class="source"><a href="https://ouraring.com/blog/introducing-health-radar/">Oura Blog</a> &bull; <a href="https://www.mobihealthnews.com/news/oura-unveils-ai-enabled-oura-ring-5-predictive-health-features">MobiHealthNews</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Apple explora wearables sin pantalla para competir con Oura y Whoop</h3>
+      <p class="what">Según reportes, el equipo de diseño industrial de Apple lleva un año evaluando Apple Watch sin display, formatos circulares y bandas fitness screenless. La estrategia responde a la creciente popularidad de smart rings y trackers enfocados en AI coaching y tracking continuo.</p>
+      <p class="why">Apple validando el formato screenless + AI coaching confirma la dirección del mercado — oportunidad para devs construyendo apps de salud que prioricen datos y coaching sobre pantalla.</p>
+      <p class="source"><a href="https://www.macrumors.com/2026/08/09/apple-watch-rethink/">MacRumors</a> &bull; <a href="https://www.wareable.com/apple/apple-screenless-wearable-new-form-factor-development-gurman-report">Wareable</a></p>
+    </div>
+
+    <footer>
+      Generado el 15/08/2026 &middot; Filtrado para senior devs construyendo producto
+    </footer>
+  </div>
+</body>
+</html>
