@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 15 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>15 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Qwen 3.8 27B: el modelo open-source denso m&aacute;s capaz para agentes on-device</h3>
+      <p class="what">Alibaba lanz&oacute; Qwen3.8-27B el 14 de agosto bajo Apache 2.0: un modelo visi&oacute;n-lenguaje de 27B par&aacute;metros con 262K tokens de contexto, encoder de visi&oacute;n integrado, y capacidades de computer-use y browser-use. Salta de 13.3 a 42.2 en DeepSWE y de 63.9 a 84.3 en OSWorld-Verified vs su predecesor.</p>
+      <p class="why">Un modelo denso de 27B con visi&oacute;n y tool-use bajo Apache 2.0 es exactamente lo que necesitas para agentes on-device en Android o pipelines de procesamiento visual sin depender de APIs cloud.</p>
+      <p class="source"><a href="https://medium.com/@rosgluk/qwen-3-8-27b-is-coming-and-it-could-be-the-most-important-local-ai-release-of-2026-c1cf381d5292">Medium</a> &bull; <a href="https://lovableapp.org/blog/qwen3-8-27b">Lovable Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI Ultrafast: GPT-5.6 Sol a 750 tokens/segundo con Cerebras</h3>
+      <p class="what">OpenAI y Cerebras presentaron Ultrafast, un tier de API que ejecuta GPT-5.6 Sol hasta 14x m&aacute;s r&aacute;pido que el tier est&aacute;ndar, alcanzando 750 tokens de salida por segundo. Est&aacute; en preview limitado sin precio publicado a&uacute;n.</p>
+      <p class="why">Para agentes en el critical path de tu producto donde cada segundo cuenta, esto cambia la ecuaci&oacute;n &mdash; pero sin precio confirmado, es un watch-and-wait por ahora.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/324514/20260814/gpt-56-sol-now-runs-real-time-speed-openais-ultrafast-preview-offers-no-price-date.htm">TechTimes</a> &bull; <a href="https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai">Cerebras Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta Muse Glimmer: 30B param, agentes locales, Apache 2.0, corre en una sola GPU</h3>
+      <p class="what">Meta liber&oacute; Muse Glimmer, un modelo de 30B par&aacute;metros destilado de Muse, optimizado para workflows ag&eacute;nticos locales. Con cuantizaci&oacute;n a 4-bit cabe en 20GB de VRAM e incluye visi&oacute;n, coding, tool-calling y recuperaci&oacute;n aut&oacute;noma de fallos. Logra 75.5 en MCP Atlas y 51.2 en SWE-Bench Pro.</p>
+      <p class="why">Un modelo ag&eacute;ntico que corre en hardware consumer con Apache 2.0 es ideal para prototipar agentes locales en tu producto sin costos de inference cloud.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/meta-returns-to-open-source-with-muse-glimmer-an-apache-2-0-licensed-30b-parameter-ai-model-optimized-for-agents-available-now">VentureBeat</a> &bull; <a href="https://huggingface.co/blog/muse-glimmer">Hugging Face</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini 3.7 Flash: el workhorse de coding de Google a mitad de precio</h3>
+      <p class="what">Google lanz&oacute; Gemini 3.7 Flash el 13 de agosto, solo 3 semanas despu&eacute;s de 3.6 Flash. Sube de 49% a 65.3% en DeepSWE y mejora generaci&oacute;n de apps web funcionales. Precio introductorio: $0.75/M input, $3.75/M output &mdash; la mitad del modelo anterior.</p>
+      <p class="why">A ese precio y con las mejoras en coding, es una opci&oacute;n seria para tareas de generaci&oacute;n de c&oacute;digo de alto volumen en tu pipeline de desarrollo.</p>
+      <p class="source"><a href="https://9to5google.com/2026/08/13/gemini-3-7-flash-launch/">9to5Google</a> &bull; <a href="https://datanorth.ai/news/google-releases-gemini-3-7-flash">DataNorth</a></p>
+    </div>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 MAI-Code-1.1-Flash: Microsoft mete visi&oacute;n en su modelo de coding para Copilot, 73% m&aacute;s barato</h3>
+      <p class="what">Microsoft lanz&oacute; MAI-Code-1.1-Flash el 11 de agosto en GitHub Copilot, a&ntilde;adiendo soporte nativo de visi&oacute;n para entender im&aacute;genes junto con mejoras en calidad de c&oacute;digo, instrucci&oacute;n following y tool-use. Cuesta 73% menos que MAI-Code-1-Flash.</p>
+      <p class="why">Un modelo de coding con visi&oacute;n integrada a precio de Flash significa que Copilot ahora puede entender screenshots de bugs, mockups de UI y diagramas directamente &mdash; game changer para workflows de desarrollo.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-08-11-mai-code-1-1-flash-available-in-github-copilot/">GitHub Blog</a> &bull; <a href="https://microsoft.ai/news/introducingmai-code-1-flash/">Microsoft AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>NamoWork: plataforma con 500+ agentes AI especializados para equipos peque&ntilde;os</h3>
+      <p class="what">NamoWork agrega m&aacute;s de 500 agentes AI especializados (an&aacute;lisis competitivo, creaci&oacute;n de contenido, ops) con soporte multi-agente y ejecuci&oacute;n en la nube sobre frameworks como Claude Code. Apunta a indie hackers y equipos peque&ntilde;os.</p>
+      <p class="why">Si est&aacute;s construyendo como founder solo o equipo peque&ntilde;o, esto reduce el plumbing de orquestar m&uacute;ltiples agentes &mdash; te enfocas en tu l&oacute;gica de negocio.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 DeepSeek sube precios hasta 1,100% desde el 16 de agosto: fin del AI ultra-barato</h3>
+      <p class="what">DeepSeek implement&oacute; aumentos masivos con modelo peak/off-peak: V4-Flash pasa de $0.28 a $1.32/M output tokens en horas pico (4.7x), y V4-Pro de $0.87 a $3.96/M (4.5x). Los aumentos van de 50% a 1,100% seg&uacute;n modelo y tipo de token.</p>
+      <p class="why">Si tu producto depende de DeepSeek para inference barato, hoy es el d&iacute;a de recalcular unit economics y evaluar alternativas como Qwen 3.8 open-source o Gemini Flash.</p>
+      <p class="source"><a href="https://qz.com/deepseek-api-price-increase-v4-peak-off-peak-081326">Quartz</a> &bull; <a href="https://fortune.com/2026/08/13/deepseek-increases-prices-for-ai-services-by-multiple-times/">Fortune</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GPT-5.6 Luna es ahora el modelo gratuito de ChatGPT tras recorte de 80% en precio</h3>
+      <p class="what">OpenAI reemplaz&oacute; el modelo por defecto de ChatGPT Free con GPT-5.6 Luna, tras un recorte de precio del 80%. Gemini cruz&oacute; 1,000 millones de usuarios activos mensuales el 11 de agosto, intensificando la guerra por el tier gratuito.</p>
+      <p class="why">La competencia en el tier gratuito empuja la calidad base hacia arriba &mdash; los usuarios de tu producto esperan cada vez m&aacute;s inteligencia como commodity.</p>
+      <p class="source"><a href="https://aitoolsrecap.com/Blog/AINewsAugust2026.aspx">AI Tools Recap</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Code: subagent forking, cross-session mentions y soporte GitLab MR</h3>
+      <p class="what">Las &uacute;ltimas actualizaciones de Claude Code incluyen forking de subagentes que hereda contexto y prompt cache, menciones cross-session con SendMessage, soporte para merge requests de GitLab, y mejoras en self-hosted runners para planes Team y Enterprise.</p>
+      <p class="why">El subagent forking con herencia de cache significa workflows de coding m&aacute;s complejos sin perder contexto &mdash; ideal para refactors grandes o auditor&iacute;as de c&oacute;digo.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>MCP supera 950 servidores con nueva spec 2026-07-28: stateless core y OAuth enterprise</h3>
+      <p class="what">El directorio de conectores MCP de Claude lista m&aacute;s de 950 servidores. La nueva spec MCP 2026-07-28 trae un core stateless, autorizaci&oacute;n OAuth/OIDC reforzada, extensiones versionadas para Apps y Tasks, y soporte para UI embebida y t&uacute;neles de red privada.</p>
+      <p class="why">Si expones una API o servicio, implementar un MCP server ya no es opcional &mdash; es c&oacute;mo tus usuarios interactuar&aacute;n contigo v&iacute;a agentes AI.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot - Anthropic</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Technogym BioStrength: l&iacute;nea de fuerza con AI que ajusta carga, tempo y rango autom&aacute;ticamente</h3>
+      <p class="what">Technogym present&oacute; BioStrength el 13 de agosto, un ecosistema de m&aacute;quinas de fuerza con resistencia motorizada que reemplaza stacks de pesas tradicionales. El sistema ajusta carga, tempo y rango de movimiento autom&aacute;ticamente seg&uacute;n el perfil y rendimiento hist&oacute;rico de cada usuario, con anal&iacute;ticas cloud v&iacute;a Mywellness.</p>
+      <p class="why">Este es el modelo de negocio para marketplaces de fitness: hardware conectado + datos + personalizaci&oacute;n AI que aumenta retenci&oacute;n de miembros y crea lock-in para operadores de gimnasios.</p>
+      <p class="source"><a href="https://athletechnews.com/technogym-ai-ecosystem-personal-trainers-gyms/">Athletech News</a> &bull; <a href="https://www.technogym.com/en-INT/stories/hfa-show-2026/">Technogym</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 15/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
