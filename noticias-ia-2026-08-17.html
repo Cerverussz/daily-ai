@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 17 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>17 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Stripe adquiere OpenRouter por m&aacute;s de $7B: el routing de modelos AI se convierte en infraestructura de pagos</h3>
+      <p class="what">Stripe finaliz&oacute; la compra de OpenRouter, el gateway que conecta a 8 millones de developers con m&aacute;s de 400 modelos de AI (OpenAI, Anthropic, Google, Meta, DeepSeek). El precio representa un markup de 5.4x sobre la valuaci&oacute;n de $1.3B de su Serie B en mayo 2026.</p>
+      <p class="why">Si tu producto consume m&uacute;ltiples modelos de AI, Stripe est&aacute; apostando a ser el billing layer entre tu app y los proveedores &mdash; esto va a cambiar c&oacute;mo monetizas features de AI.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/">TechCrunch</a> &bull; <a href="https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion">Bloomberg</a> &bull; <a href="https://www.forbes.com/sites/sandycarter/2026/08/17/stripes-7-billon-openrouter-deal-could-create-ais-ledger/">Forbes</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta lanza Muse Code: agente de coding en terminal con sub-agentes paralelos</h3>
+      <p class="what">Meta Superintelligence Labs lanz&oacute; Muse Code en beta, un agente de coding en terminal que compite directamente con Claude Code y Copilot. Usa Muse Spark 1.2, soporta sub-agentes paralelos en worktrees aislados, sandbox de OS por defecto, y cuesta $1.25/$4.25 por mill&oacute;n de tokens &mdash; o $0.10/$0.20 si permites entrenar con tu c&oacute;digo.</p>
+      <p class="why">Un competidor serio a un tercio del precio de Claude Code &mdash; vale la pena probarlo para tareas de volumen alto donde el costo por token importa.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/">TechCrunch</a> &bull; <a href="https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2">Meta AI Research</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta open-sources Muse Glimmer: modelo ag&eacute;ntico de 30B que corre en una GPU consumer</h3>
+      <p class="what">Meta liber&oacute; Muse Glimmer bajo Apache 2.0, un modelo de 30B par&aacute;metros optimizado para agentes locales. Con cuantizaci&oacute;n a 4-bit cabe en 18-20 GB de VRAM, soporta 131K tokens de contexto, visi&oacute;n multimodal, y logra scores de referencia en MCP Atlas (75.5) y SWE-Bench Pro (51.2).</p>
+      <p class="why">Si quieres agentes AI corriendo localmente en tu m&aacute;quina de desarrollo o en edge devices sin depender de APIs cloud, este es el mejor modelo open-weight disponible hoy.</p>
+      <p class="source"><a href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model">Meta AI Research</a> &bull; <a href="https://venturebeat.com/technology/meta-returns-to-open-source-with-muse-glimmer-an-apache-2-0-licensed-30b-parameter-ai-model-optimized-for-agents-available-now">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic activa watermarking invisible en todos los outputs de Claude</h3>
+      <p class="what">Anthropic implement&oacute; marcas de agua imperceptibles usando SynthID Text (de Google DeepMind) en todas las respuestas de Claude &mdash; API, Claude Code, Cowork y Tag. Las marcas sobreviven copy-paste, no afectan calidad ni velocidad, y una API de detecci&oacute;n viene en camino.</p>
+      <p class="why">Si generas contenido con Claude para tu producto, necesitas saber que ahora lleva watermark detectable &mdash; esto cambia c&oacute;mo manejas atribuci&oacute;n y compliance.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-text-watermark">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Opus 5 es default en Claude Code Max con 89.1% en Terminal-Bench</h3>
+      <p class="what">Claude Code ahora usa Sonnet 5 en planes Pro y Opus 5 en Max por defecto. Opus 5, lanzado el 24 de julio, alcanz&oacute; 89.1% en Terminal-Bench 2.1 a esfuerzo m&aacute;ximo, consolid&aacute;ndose como el modelo de coding m&aacute;s capaz en tareas complejas de terminal.</p>
+      <p class="why">Si ya pagas Max, tu Claude Code ahora usa el mejor modelo de coding disponible sin cambiar configuraci&oacute;n &mdash; reevalua si vale el upgrade desde Pro.</p>
+      <p class="source"><a href="https://www.morphllm.com/best-ai-coding-agents-2026">Morph LLM Leaderboard</a> &bull; <a href="https://www.morphllm.com/ai-coding-agent">Morph AI</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 EU AI Act: enforcement completo arranc&oacute; el 2 de agosto &mdash; transparencia obligatoria</h3>
+      <p class="what">Desde el 2 de agosto, la UE exige que chatbots se identifiquen como automatizados, deepfakes lleven etiqueta, y contenido generado por AI tenga marcas legibles por m&aacute;quinas. La AI Office ya puede solicitar documentaci&oacute;n t&eacute;cnica, evaluar modelos e imponer multas por incumplimiento.</p>
+      <p class="why">Si tu producto usa AI y tiene usuarios en Europa, necesitas implementar transparencia ahora &mdash; no en 2027, ahora.</p>
+      <p class="source"><a href="https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august">European Commission</a> &bull; <a href="https://www.helpnetsecurity.com/2026/08/04/eu-ai-act-enforcement-ai-models/">Help Net Security</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>AI automation startup Relay cierra: equipo se une a Google Chrome</h3>
+      <p class="what">Relay, startup de automatizaci&oacute;n con AI, cerr&oacute; operaciones y su equipo fue absorbido por el equipo de Chrome de Google. Es una se&ntilde;al de consolidaci&oacute;n en el espacio de AI agents para workflows.</p>
+      <p class="why">El mercado de agentes de automatizaci&oacute;n se est&aacute; consolidando r&aacute;pido &mdash; los acqui-hires muestran que el talento vale m&aacute;s que el producto cuando no hay moat t&eacute;cnico.</p>
+      <p class="source"><a href="https://techstartups.com/2026/08/17/top-tech-news-today-august-17-2026-ge-microsoft-nvidia-open-stripe-unitree-more/">Tech Startups</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code: auto mode es default desde el 14 de agosto</h3>
+      <p class="what">Desde el 14 de agosto, nuevas sesiones en Pro, Max y Team arrancan en auto mode &mdash; Claude Code ejecuta acciones sin pedir aprobaci&oacute;n salvo que sean irreversibles, destructivas, o fuera del entorno. Enterprise y API mantienen el modo anterior como opt-in.</p>
+      <p class="why">Menos fricci&oacute;n en tu workflow diario, pero revisa tus deny rules antes de dejar que el agente opere sin supervisi&oacute;n.</p>
+      <p class="source"><a href="https://claude.com/blog/auto-mode-default-in-claude-code">Anthropic Blog</a> &bull; <a href="https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: self-hosted runners y cross-session messaging</h3>
+      <p class="what">Claude Code a&ntilde;adi&oacute; self-hosted environments que convierten tus m&aacute;quinas o containers en runners para sesiones web/m&oacute;vil/desktop (Team y Enterprise). Tambi&eacute;n activ&oacute; messaging entre sesiones en macOS y Linux, permitiendo pasar contexto sin re-explicar.</p>
+      <p class="why">Self-hosted runners eliminan la dependencia de infra cloud de Anthropic para equipos con requisitos de seguridad o compliance estrictos.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> &bull; <a href="https://code.claude.com/docs/en/whats-new">Claude Code Docs</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Wearables AI son tendencia #1 en fitness 2026: $44B en juego</h3>
+      <p class="what">El American College of Sports Medicine declar&oacute; wearable tech como tendencia #1 de fitness 2026, con casi la mitad de adultos en EE.UU. usando un dispositivo. La industria de $44B se mueve hacia coaching AI personalizado basado en HRV, sue&ntilde;o y datos circadianos para predecir fatiga antes de que aparezcan s&iacute;ntomas.</p>
+      <p class="why">Si construyes un marketplace de servicios de salud o coaching deportivo, la integraci&oacute;n con wearable data es ahora un requisito, no un diferenciador.</p>
+      <p class="source"><a href="https://insider.fitt.co/report/health-wellness-2026-halftime-report/">Fitt Insider</a> &bull; <a href="https://athletechnews.com/ces-2026-ai-powered-health-fitness-wearables/">Athletech News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>NeuraLight despliega biomarcadores cerebrales en iniciativa global de salud cerebral</h3>
+      <p class="what">Una iniciativa internacional de salud cerebral adopt&oacute; los biomarcadores de NeuraLight para cuantificar cambios en funci&oacute;n cerebral usando AI y an&aacute;lisis de movimientos oculares, sin hardware invasivo. Es el primer despliegue a escala de neurobiomarkers digitales.</p>
+      <p class="why">AI + biomarcadores digitales no invasivos es un vertical emergente donde hay poca competencia y alta demanda cl&iacute;nica.</p>
+      <p class="source"><a href="https://stockstoday.com/neurotech-meets-the-gym-a-week-of-wearables-ai-coaches-and-stair-climbing-science/">Stocks Today</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 17/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
