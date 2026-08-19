@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 18 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>18 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta lanza Muse Code: agente de coding en terminal que compite directo con Claude Code</h3>
+      <p class="what">Meta lanz&oacute; Muse Code en beta, un agente de coding terminal basado en su modelo Muse Spark 1.2. Su diferencial: crea m&uacute;ltiples sub-agentes que trabajan en paralelo en worktrees aislados para tareas grandes, manteniendo tu rama principal intacta. A $1.25/$4.25 por mill&oacute;n de tokens (o $0.10/$0.20 si permites entrenamiento con tu c&oacute;digo).</p>
+      <p class="why">Otro competidor serio en coding agents baja los precios del mercado; el tier con entrenamiento opt-in a $0.10/M es interesante para proyectos no sensibles donde el costo importa m&aacute;s que la privacidad.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/">TechCrunch</a> &bull; <a href="https://devops.com/meta-launches-ai-coding-agent-to-challenge-openai-and-anthropic/">DevOps.com</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cloudflare lanza Kitesurf: un browser construido exclusivamente para agentes AI</h3>
+      <p class="what">Kitesurf corre en V8 isolates sobre Cloudflare Workers, sin Chromium debajo. Usa 3-7x menos CPU y memoria que un browser completo para tareas ag&eacute;nticas (screenshots, extracci&oacute;n HTML). Compatible con Puppeteer, Playwright, CDP y MCP. Gratis en beta.</p>
+      <p class="why">Si est&aacute;s construyendo agentes que navegan la web, esto elimina el overhead de mantener instancias Chromium y te da escalabilidad serverless desde d&iacute;a uno.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/">TechCrunch</a> &bull; <a href="https://developers.cloudflare.com/changelog/post/2026-08-06-kitesurf/">Cloudflare Changelog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Egnyte lanza AI Workflow Builder con Agent Marketplace para industrias reguladas</h3>
+      <p class="what">Egnyte present&oacute; tres herramientas: Bulk Extraction para metadata autom&aacute;tica, Agent Builder para crear agentes AI con lenguaje natural, y Workflow Builder visual con l&oacute;gica condicional y checkpoints humanos. Todo opera dentro de su capa de gobernanza existente.</p>
+      <p class="why">El patr&oacute;n de agent marketplace + gobernanza integrada es replicable: si tu producto toca datos regulados, este es el blueprint de c&oacute;mo a&ntilde;adir AI sin romper compliance.</p>
+      <p class="source"><a href="https://www.egnyte.com/press-releases/egnyte-launches-ai-powered-workflow-automation-with-built-in-governance-to-help-organizations-scale-efficiently-and-securely">Egnyte</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 SpaceX cierra la adquisici&oacute;n de Cursor por $60B y crea divisi&oacute;n SpaceXAI</h3>
+      <p class="what">SpaceX finaliz&oacute; la compra de Anysphere (Cursor) el 14 de agosto en una transacci&oacute;n all-stock de $60B, la adquisici&oacute;n de startup m&aacute;s grande de la historia. Cursor opera como subsidiaria bajo &ldquo;SpaceXAI&rdquo; con acceso al supercomputador Colossus y ya lanzaron una beta de &ldquo;Grok Bot&rdquo;.</p>
+      <p class="why">Tu editor de c&oacute;digo AI favorito ahora pertenece al ecosistema Musk; si depend&iacute;as de Cursor, eval&uacute;a qu&eacute; pasa con tu data y pricing cuando la integraci&oacute;n con xAI avance.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/">TechCrunch</a> &bull; <a href="https://www.bloomberg.com/news/articles/2026-08-14/spacex-completes-its-60-billion-cursor-acquisition">Bloomberg</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google A2A Protocol se muda a la Agentic AI Foundation con 250+ miembros</h3>
+      <p class="what">El protocolo Agent2Agent (A2A) de Google, est&aacute;ndar para que agentes AI se descubran y deleguen tareas entre s&iacute;, pasa a ser proyecto hosted de la Agentic AI Foundation. La fundaci&oacute;n creci&oacute; de 40 a 250+ miembros incluyendo Google, Microsoft, Amazon, Anthropic, OpenAI y Shopify.</p>
+      <p class="why">A2A + MCP son los dos est&aacute;ndares que definen c&oacute;mo se comunican agentes AI; si construyes agentes, deber&iacute;as soportar ambos para no quedar aislado.</p>
+      <p class="source"><a href="https://www.axios.com/2026/08/17/a2a-agentic-ai-foundation-open-ai-standards">Axios</a> &bull; <a href="https://techstrong.ai/articles/google-moves-a2a-under-agentic-ai-foundation/">Techstrong.ai</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 x402 madura como protocolo de pagos aut&oacute;nomos para agentes AI</h3>
+      <p class="what">El protocolo x402, que permite a agentes AI pagar por APIs y servicios con stablecoins directamente via HTTP headers, lanz&oacute; v2 con soporte multi-chain y session tokens. Ya opera en Base y Solana con USDC, habilitando micropagos que eran inviables con tarjetas: billing por query, pay-per-article, y mercados agent-to-agent.</p>
+      <p class="why">Si tu marketplace o API quiere ser consumible por agentes aut&oacute;nomos, x402 es el rail de pagos que est&aacute; ganando tracci&oacute;n real, no solo demos.</p>
+      <p class="source"><a href="https://zuplo.com/blog/mcp-api-payments-with-x402">Zuplo</a> &bull; <a href="https://www.allium.so/blog/x402-explained-the-internet-native-payments-standard-for-apis-data-and-agent-commerce/">Allium</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Venice AI cruza $100M ARR con modelo privacy-first y acceso sin censura</h3>
+      <p class="what">Venice AI alcanz&oacute; $100M en revenue anualizado el 17 de agosto, subiendo desde $70M apenas un mes antes. La plataforma privacy-first procesa 1.7M llamadas API diarias y acaba de lanzar una feature de generaci&oacute;n de im&aacute;genes desde bocetos (Doodle). En julio levant&oacute; $65M Serie A a valuaci&oacute;n de $1B.</p>
+      <p class="why">De $70M a $100M en un mes demuestra que el nicho &ldquo;AI sin censura + privacidad real&rdquo; tiene demanda masiva; hay mercado para alternativas que no filtren todo.</p>
+      <p class="source"><a href="https://invezz.com/news/2026/08/18/will-vvv-token-rally-as-venice-ai-revenue-tops-100-million/">Invezz</a> &bull; <a href="https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Reddit experimenta con convertir posts de texto en videos narrados por AI</h3>
+      <p class="what">Reddit comenz&oacute; un test limitado que convierte threads de texto en clips cortos con voces AI que narran el post y top comments, con texto sincronizado en pantalla. Los posts originales no se modifican; los videos enlazan de vuelta al thread. Etiquetados como &ldquo;Real conversation voiced by AI&rdquo;.</p>
+      <p class="why">Es un caso pr&aacute;ctico de c&oacute;mo monetizar UGC existente con AI generativa; el mismo patr&oacute;n aplica a cualquier plataforma con contenido textual acumulado.</p>
+      <p class="source"><a href="https://dataconomy.com/2026/08/18/reddit-tests-ai-voiced-videos-based-on-user-posts/">Dataconomy</a> &bull; <a href="https://www.androidheadlines.com/2026/08/reddit-is-turning-posts-into-videos-and-audio-in-new-experiment.html">Android Headlines</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Sonnet 5: precio promocional termina el 31 de agosto &mdash; planifica tus costos</h3>
+      <p class="what">El pricing promocional de Claude Sonnet 5 ($2/$10 por mill&oacute;n de tokens) expira el 31 de agosto. A partir del 1 de septiembre los precios suben a $3/$15. Anthropic tambi&eacute;n extendi&oacute; el boost temporal de 50% en l&iacute;mites de uso de Claude Code hasta el 19 de agosto.</p>
+      <p class="why">Si tu producto usa Sonnet 5 en producci&oacute;n, tienes dos semanas para ajustar tus proyecciones de costo o evaluar si Haiku 4.5 cubre tus casos de uso m&aacute;s voluminosos.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot</a> &bull; <a href="https://explainx.ai/blog/claude-usage-limits-2026-timeline-explained">ExplainX</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: mejoras en UI, rendimiento cloud y Compliance API para Enterprise</h3>
+      <p class="what">Claude Code recibi&oacute; spellcheck opcional en prompts, mejor legibilidad en terminal, rendimiento mejorado en sesiones cloud background, y remote control m&aacute;s estable. Adem&aacute;s, Anthropic expandi&oacute; su Compliance API para cubrir Cowork y Claude Code en desktop, web, mobile y CLI.</p>
+      <p class="why">Las mejoras de rendimiento cloud importan si usas Claude Code en CI/CD o como agente aut&oacute;nomo; la Compliance API abre la puerta a clientes enterprise que necesitan audit trail.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> &bull; <a href="https://claudelog.com/claude-news/">ClaudeLog</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Wellness startups captan $3.6B en H1 2026; wearables con AI coaching son tendencia #1</h3>
+      <p class="what">Las startups de wellness levantaron m&aacute;s de $3.6B en el primer semestre de 2026, un 33% m&aacute;s que todo 2025. El American College of Sports Medicine nombr&oacute; wearables como tendencia fitness #1 del a&ntilde;o, con casi la mitad de adultos en EE.UU. usando uno. El tema com&uacute;n: plataformas que recolectan datos biom&eacute;tricos y coachean con AI.</p>
+      <p class="why">El stack ganador en wellness es wearable + datos + AI coaching personalizado; si tu marketplace conecta profesionales de salud, integrar datos de wearables es el diferenciador que los inversores est&aacute;n financiando.</p>
+      <p class="source"><a href="https://insider.fitt.co/report/health-wellness-2026-halftime-report/">Fitt Insider</a> &bull; <a href="https://www.under30ceo.com/wellness-startups-funding-rebound-2026/">Under30CEO</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 18/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
