@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 19 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>19 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Warp lanza Factories: infraestructura cloud para software factories con coding agents</h3>
+      <p class="what">Warp abri&oacute; beta cerrada de Factories el 18 de agosto, un sistema que permite montar pipelines donde agentes de c&oacute;digo triagean un ticket, escriben spec, implementan, revisan y verifican autom&aacute;ticamente. Funciona con cualquier modelo (Claude Code, Codex, etc.) y se conecta a Slack, Linear, Jira, GitHub y m&aacute;s en menos de 5 minutos.</p>
+      <p class="why">Si ya usas coding agents en tu workflow, esto te da el control plane para escalarlos a todo tu equipo sin armar infra propia.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development/">TechCrunch</a> &bull; <a href="https://www.warp.dev/blog/open-infrastructure-for-building-a-software-factory">Warp Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 ElevenLabs MCP hosted en Claude: crea y gestiona voice agents desde el chat</h3>
+      <p class="what">ElevenLabs lanz&oacute; su MCP hosted el 17 de agosto, integrado directamente en Claude v&iacute;a OAuth. Permite crear, actualizar, duplicar y monitorear agentes de voz en producci&oacute;n desde la conversaci&oacute;n, incluyendo estimaci&oacute;n de costos por modelo antes de hacer cambios.</p>
+      <p class="why">Si est&aacute;s construyendo un producto con voice AI, ahora puedes iterar sobre tus agentes de voz sin salir de Claude &mdash; un workflow MCP que conecta dos herramientas que ya usas.</p>
+      <p class="source"><a href="https://elevenlabs.io/blog/elevenlabs-mcp-in-claude">ElevenLabs Blog</a> &bull; <a href="https://thenewstack.io/elevenlabs-mcp-voice-agents/">The New Stack</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Kimi K3 open-weight llega al #1 de WebDev Arena: 2.8T params, licencia MIT modificada</h3>
+      <p class="what">El modelo de Moonshot AI con 2.8T par&aacute;metros (104B activos por token) y 1M de contexto alcanz&oacute; 1,678 Elo en WebDev Arena, convirti&eacute;ndose en el primer modelo open-weight en liderar ese leaderboard. Disponible a $3/$15 por mill&oacute;n de tokens con soporte para vLLM y self-hosting.</p>
+      <p class="why">Un modelo open-weight que compite con los frontier en coding y web dev cambia el c&aacute;lculo de costo para tu backend de AI &mdash; puedes self-hostear o usar API a fracci&oacute;n del precio.</p>
+      <p class="source"><a href="https://thenewstack.io/kimi-k3-open-weight-coding/">The New Stack</a> &bull; <a href="https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation">Interconnects</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI pausa desarrollo de Astra: primer modelo cerca del umbral cr&iacute;tico de ciberseguridad</h3>
+      <p class="what">OpenAI detuvo partes del desarrollo de Astra, su pr&oacute;ximo modelo mayor, porque testing interno revel&oacute; capacidades de descubrir zero-day exploits sin intervenci&oacute;n humana. No es cancelaci&oacute;n sino pausa mientras reescriben su Preparedness Framework y a&ntilde;aden sandboxing y monitoreo en 30 minutos.</p>
+      <p class="why">La primera vez que un lab de AI frena un modelo por capacidad ofensiva real marca un punto de inflexi&oacute;n en c&oacute;mo se van a regular y desplegar modelos frontier.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/">TechCrunch</a> &bull; <a href="https://www.forbes.com/sites/jonmarkman/2026/08/09/openai-pauses-astra-after-it-nears-first-ever-critical-cyber-risk/">Forbes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cerebras presenta CS-4: inferencia AI hasta 30x m&aacute;s r&aacute;pida que GPUs</h3>
+      <p class="what">Cerebras present&oacute; el CS-4 el 18 de agosto, un sistema rack-scale con 750 PFLOPS basado en tres Wafer Scale Engine 3 Turbo y la nueva arquitectura modular Nexus. Ofrece 2x el rendimiento del CS-3 y 10x m&aacute;s throughput por watt, con latencia wafer-to-wafer de 2 microsegundos.</p>
+      <p class="why">Para cualquiera que corra inferencia a escala (agentes, RAG, batch processing), la competencia real a GPUs de Nvidia empieza a materializarse en hardware disponible este trimestre.</p>
+      <p class="source"><a href="https://www.cerebras.ai/blog/introducing-cerebras-cs-4">Cerebras Blog</a> &bull; <a href="https://www.hpcwire.com/off-the-wire/cerebras-introduces-cs-4-with-750-pflops-of-ai-compute/">HPCwire</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Vulnerabilidad cr&iacute;tica en Ray (CVE-2025-62593): CISA da 3 d&iacute;as para parchear</h3>
+      <p class="what">CISA a&ntilde;adi&oacute; al cat&aacute;logo KEV una falla RCE (CVSS 9.4) en Ray, el framework de AI que usan Amazon, Apple y OpenAI para escalar ML. El exploit combina DNS rebinding con endpoints HTTP desprotegidos para ejecutar c&oacute;digo arbitrario en la m&aacute;quina del desarrollador con solo visitar una web maliciosa.</p>
+      <p class="why">Si usas Ray en tu pipeline de ML o data processing, actualiza a 2.52.0 hoy &mdash; deadline de CISA es el 20 de agosto y ya hay explotaci&oacute;n activa.</p>
+      <p class="source"><a href="https://thehackernews.com/2026/08/cisa-flags-actively-exploited-ray-flaw.html">The Hacker News</a> &bull; <a href="https://cybersecuritynews.com/ray-project-ray-code-injection/">CyberSecurity News</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Revise lanza editor de documentos AI-native con tracked changes, gratis</h3>
+      <p class="what">Revise lanz&oacute; un word processor que integra AI (GPT, Claude, Gemini) directamente en el motor de edici&oacute;n con cambios rastreados visualmente como diffs, compatible con DOCX. Modelo freemium en browser, enfocado en comunicaciones profesionales, proposals y documentaci&oacute;n.</p>
+      <p class="why">Es un buen ejemplo de producto AI-native que resuelve el problema real de confianza: en vez de reemplazar al humano, muestra exactamente qu&eacute; cambi&oacute; la AI para que revises antes de aceptar.</p>
+      <p class="source"><a href="https://revise.io/">Revise.io</a> &bull; <a href="https://aithority.com/machine-learning/revise-launches-ai-document-editor-with-reviewable-tracked-changes/">AIthority</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Oleada de productos AI-native el 19 de agosto: SDR, QA y web builders con agentes</h3>
+      <p class="what">Tres lanzamientos del mismo d&iacute;a: Clara AI SDR convierte visitantes web en pipeline calificado con agentes, Superflow AI usa agentes para QA de sitios web antes del lanzamiento, y Framer AI Agents dise&ntilde;a y publica sitios profesionales con AI. Cada uno reemplaza un workflow manual completo.</p>
+      <p class="why">La tendencia es clara: los nuevos productos no agregan AI a un flujo existente, sino que construyen el flujo entero alrededor de agentes &mdash; esa es la arquitectura que escala.</p>
+      <p class="source"><a href="https://aiweekly.co/ai-news-today">AI Weekly</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Compliance API de Claude se extiende a Cowork y Claude Code</h3>
+      <p class="what">Anthropic expandi&oacute; su Compliance API en beta para cubrir sesiones de Cowork (desktop, web, mobile) y Claude Code (CLI, desktop). Los equipos de seguridad pueden extraer transcripts consolidados con prompts, respuestas y actividad de herramientas en un solo registro por sesi&oacute;n.</p>
+      <p class="why">Si est&aacute;s evaluando Claude para un equipo enterprise, la cobertura de compliance en Code y Cowork elimina uno de los principales blockers de adopci&oacute;n.</p>
+      <p class="source"><a href="https://claude.com/blog/compliance-api-cowork-and-claude-code">Claude Blog</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: promoci&oacute;n de +50% en l&iacute;mites extendida hasta el 31 de agosto</h3>
+      <p class="what">Anthropic extendi&oacute; la promoci&oacute;n que aumenta los l&iacute;mites semanales de uso de Claude Code en un 50% para planes Pro, Max, Team y Enterprise legacy. Aplica en CLI, extensiones de IDE, desktop y web.</p>
+      <p class="why">Si est&aacute;s usando Claude Code como tu herramienta principal de desarrollo, tienes hasta fin de mes para aprovechar el headroom extra sin costo adicional.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Wellness startups captan $3.6B en H1 2026: wearables + AI coaching dominan</h3>
+      <p class="what">Las startups de wellness recaudaron m&aacute;s de $3.6B en el primer semestre de 2026, un 33% m&aacute;s que 2025. El tema com&uacute;n: plataformas que combinan datos de wearables con coaching personalizado por AI. ACSM nombr&oacute; wearable tech como tendencia #1 de fitness 2026, con casi la mitad de adultos en EE.UU. usando un dispositivo.</p>
+      <p class="why">El stack wearable + AI coach es el patr&oacute;n que funciona en fitness &mdash; si construyes un marketplace de servicios profesionales de salud, la integraci&oacute;n con datos de wearables ya no es nice-to-have.</p>
+      <p class="source"><a href="https://www.under30ceo.com/wellness-startups-funding-rebound-2026/">Under30CEO</a> &bull; <a href="https://insider.fitt.co/report/health-wellness-2026-halftime-report/">Fitt Insider</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 19/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
