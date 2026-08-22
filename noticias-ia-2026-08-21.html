@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 21 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>21 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI baja 20%+ el precio de GPT-5.6 Sol para competir con Claude Opus 5</h3>
+      <p class="what">OpenAI redujo el pricing de su modelo frontier GPT-5.6 Sol a $4/M input y $20/M output (antes $5/$30), efectivo como promocional hasta noviembre 21. El recorte aplica a la API y créditos en ChatGPT Work y Codex, no a suscripciones consumer.</p>
+      <p class="why">Si estás evaluando modelos para tu backend de agentes, esta ventana de 3 meses es ideal para testear Sol vs Opus 5 en producción con costos reducidos.</p>
+      <p class="source"><a href="https://www.investing.com/news/stock-market-news/openai-cuts-developer-pricing-for-frontier-gpt56-sol-model-by-more-than-20-4872186">Reuters/Investing</a> &bull; <a href="https://openai.com/index/gpt-5-6/">OpenAI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Harvey lanza Tenet: modelo open-weight legal que compite con frontiers a fracción del costo</h3>
+      <p class="what">Harvey publicó Tenet, su primer modelo post-trained sobre Kimi K3, especializado en tareas legales de largo horizonte. Logra resultados competitivos contra Claude, GPT y Gemini en benchmarks legales, usando datos sintéticos, datasets públicos y expertos humanos.</p>
+      <p class="why">El playbook de Harvey (tomar modelo open-source + post-training vertical + datos propios = producto competitivo) es exactamente replicable para cualquier marketplace de servicios profesionales.</p>
+      <p class="source"><a href="https://www.harvey.ai/blog/post-training-update-harvey-tenet">Harvey Blog</a> &bull; <a href="https://www.artificiallawyer.com/2026/08/21/harvey-tenet-nashville-legal-innovators/">Artificial Lawyer</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Nevada aprueba 8,000 robotaxis de Tesla, Uber y Waymo en Las Vegas</h3>
+      <p class="what">El regulador de transporte de Nevada aprobó por unanimidad permisos para que Tesla, Uber y Waymo operen servicios pagados de robotaxi en Clark County. Waymo ya abrió su nuevo modelo Ojai (con Gemini AI integrado) a riders en LA, Phoenix y SF.</p>
+      <p class="why">La escala de 8K vehículos autónomos en una sola zona demuestra que la infraestructura AI+hardware ya pasó de piloto a operación real; las plataformas de movilidad son el siguiente marketplace a disrumpir.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/">TechCrunch</a> &bull; <a href="https://lasvegassun.com/news/2026/aug/21/nevada-open-roads-for-tesla-waymo-and-ubers-aviari/">Las Vegas Sun</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cloudflare Kitesurf: browser para AI agents que usa 7x menos memoria que Chromium</h3>
+      <p class="what">Cloudflare lanzó Kitesurf en beta, un browser construido desde cero con WebAssembly sobre Workers, usando el CSS parser de Firefox y el engine JS Boa en Rust. Se activa con un parámetro <code>browser=kitesurf</code> en tu código Puppeteer/Playwright existente, compatible con CDP.</p>
+      <p class="why">Si tus agentes hacen scraping o interactúan con web, esto reduce dramáticamente el costo de infra por sesión de browser sin cambiar tu código.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/">TechCrunch</a> &bull; <a href="https://developers.cloudflare.com/changelog/post/2026-08-06-kitesurf/">Cloudflare Changelog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Vendo (YC S26): deja que tus usuarios construyan features sobre tu producto con agentes</h3>
+      <p class="what">Vendo es una capa de personalización open-source que permite a los usuarios de tu SaaS crear sus propias features, automatizaciones e integraciones usando tu API existente, todo renderizado en tu tema y ejecutado en sandboxes seguros. Incluye un agente listo para producción con UI generation y knowledge base.</p>
+      <p class="why">Si construyes un marketplace o SaaS, esto resuelve el problema del backlog infinito de features: tus usuarios se las construyen solos, sobre tu API, sin tocar tu código.</p>
+      <p class="source"><a href="https://www.ycombinator.com/companies/vendo">Y Combinator</a> &bull; <a href="https://startupcorners.com/digest/product-digest-2026-08-21">Startup Corners</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini reemplaza a Google Assistant en Android; Gemini Spark corre agentes persistentes en cloud</h3>
+      <p class="what">Google confirmó que Gemini está reemplazando completamente a Google Assistant en phones y smart devices durante 2026. Además, Gemini Spark permite correr agentes personales en VMs cloud que no mueren al cerrar tu dispositivo.</p>
+      <p class="why">Para Android devs: la superficie de integración cambia de Assistant APIs a Gemini; si tu app expone acciones por voz, necesitas migrar.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 La guerra de precios AI se intensifica: GPT-5.6 Luna a $0.20/M tokens</h3>
+      <p class="what">Con el recorte del 80% a Luna ($0.20/M input) y ahora el 20%+ a Sol, OpenAI comprime márgenes agresivamente. ChatGPT alcanzó ~1B usuarios activos semanales. La presión viene de DeepSeek y modelos chinos que compiten en costo.</p>
+      <p class="why">Para founders técnicos, el costo de AI como ingrediente de producto sigue cayendo; el moat ya no está en acceder al modelo sino en el dato vertical y la UX.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/ai-price-wars-openai-cuts-gpt-5-6-luna-prices-by-80-as-model-competition-shifts-toward-cost">VentureBeat</a> &bull; <a href="https://www.cnbc.com/2026/07/30/open-ai-price-cut-gpt.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Enterprise AI agents se triplican: promedio de 13 agentes por organización</h3>
+      <p class="what">El número promedio de AI agents desplegados por organización creció de 5 (inicios 2025) a 13 (abril 2026). Salesforce reporta que 7 de cada 10 sesiones de customer service se manejan autónomamente entre las organizaciones de su dataset.</p>
+      <p class="why">La adopción enterprise de agentes ya no es early-adopter; si tu producto no tiene un agent story, estás fuera de la conversación de compra.</p>
+      <p class="source"><a href="https://solutionsreview.com/ai-news-for-the-week-of-august-21-updates-from-illumio-pluralsight-snowflake-more/">Solutions Review</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Academy: Anthropic abre hub de aprendizaje gratuito con 18 cursos</h3>
+      <p class="what">Lanzado el 20 de agosto, Claude Academy ofrece ~18 cursos desde AI fluency no-técnica hasta Claude API y Claude Code, con badges y recomendaciones personalizadas. Usa el 4D AI Fluency Framework que Anthropic enseña internamente a sus empleados.</p>
+      <p class="why">Contenido oficial y estructurado para onboardear a tu equipo en Claude Code y la API sin armar tu propio material de training.</p>
+      <p class="source"><a href="https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai">Claude Blog</a> &bull; <a href="https://explainx.ai/blog/claude-academy-launch-4d-ai-fluency-framework-august-2026">explainx.ai</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic activa watermarks invisibles en todo el output de Claude globalmente</h3>
+      <p class="what">Desde el 2 de agosto, todo texto y archivo generado por Claude lleva watermark invisible para cumplir con el EU AI Act (Art. 50). Usa el estándar C2PA para archivos. El watermark no identifica al usuario, sobrevive ediciones ligeras, y se elimina solo con reescritura completa.</p>
+      <p class="why">Si integras Claude en tu producto, tus usuarios recibirán contenido watermarked por defecto; evalúa si eso afecta tu caso de uso o si necesitas comunicarlo.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/">TechCrunch</a> &bull; <a href="https://www.anthropic.com/news/claude-text-watermark">Anthropic</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Wellness startups levantan $3.6B en H1 2026; inversores quieren AI + datos, no hardware</h3>
+      <p class="what">El funding de fitness/wellness en H1 2026 va un tercio arriba vs 2025, liderado por Whoop ($575M Serie G), Temple ($54M seed para wearable de salud cerebral), y Eight Sleep ($50M Serie D). El patrón: wearables que recolectan datos biométricos + AI que los convierte en coaching personalizado.</p>
+      <p class="why">El modelo ganador en wellness tech es device + datos + AI coaching; si construyes en este espacio, la oportunidad está en la capa de inteligencia sobre los datos, no en el hardware.</p>
+      <p class="source"><a href="https://news.crunchbase.com/health-wellness-biotech/fitness-startup-funding-rebounding-ai-data-h1-2026/">Crunchbase</a> &bull; <a href="https://athletechnews.com/fitness-wellness-startups-have-raised-3-6-billion-crunchbase/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 21/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
