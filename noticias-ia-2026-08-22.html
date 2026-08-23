@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 22 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>22 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Slack Code: agentes de coding AI integrados en canales de equipo</h3>
+      <p class="what">Slack lanz&oacute; Slack Code el 21 de agosto, un producto que integra agentes de coding (Claude Code, Devin, Copilot, Vercel) directamente en canales dedicados de Slack. El equipo ve la conversaci&oacute;n, revisa diffs en tiempo real, da feedback que el agente incorpora, y aprueba antes de hacer merge.</p>
+      <p class="why">Convierte el coding con agentes de una actividad solitaria en terminal a un flujo de equipo observable &mdash; ideal si lideras un equipo peque&ntilde;o y necesitas visibilidad sin micromanagement.</p>
+      <p class="source"><a href="https://slack.com/blog/news/slack-code-channels-for-agents">Slack Blog</a> &bull; <a href="https://dataconomy.com/2026/08/21/slack-launches-code-for-ai-coding-collaboration/">Dataconomy</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Firecrawl Developer Index: 70M+ repos indexados para coding agents</h3>
+      <p class="what">Firecrawl lanz&oacute; Developer Index el 20 de agosto, un &iacute;ndice especializado de 70M+ artefactos (READMEs, docs, issues, PRs, OpenAPI specs) con b&uacute;squeda sem&aacute;ntica y filtros por metadata, actualizado diariamente. Logra 0.63 recall@10 en DevDex, su benchmark abierto de 1,179 queries reales de developers.</p>
+      <p class="why">Si tu coding agent pierde tiempo buscando docs o issues relevantes, este &iacute;ndice le da contexto preciso de fuentes primarias en lugar de p&aacute;ginas web gen&eacute;ricas.</p>
+      <p class="source"><a href="https://www.firecrawl.dev/blog/developer-index-launch">Firecrawl Blog</a> &bull; <a href="https://www.firecrawl.dev/developer-index">Developer Index</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cloudflare Kitesurf + x402: browser y pagos aut&oacute;nomos para agentes AI</h3>
+      <p class="what">Cloudflare lanz&oacute; Kitesurf, un browser sin Chromium construido en V8 isolates que usa 3-7x menos memoria y CPU, compatible con Puppeteer/Playwright. En paralelo, activ&oacute; Cloudflare Wallets con el protocolo x402 para que agentes AI paguen por APIs y servicios aut&oacute;nomamente con l&iacute;mites de gasto.</p>
+      <p class="why">Si est&aacute;s construyendo agentes que necesitan navegar web o consumir APIs de pago, esta infra elimina dos problemas que antes resolv&iacute;as a mano: browser headless costoso y pagos machine-to-machine.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/">TechCrunch</a> &bull; <a href="https://crypto.news/cloudflare-opens-ai-wallet-handles-for-x402-payments/">Crypto News</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Antigravity escapa de su IDE: extensiones para VS Code y JetBrains</h3>
+      <p class="what">Google lanz&oacute; extensiones de Antigravity para VS Code, JetBrains, Visual Studio y Zed, permitiendo delegar tareas multi-paso al agente desde un panel lateral sin migrar el proyecto al IDE propio de Antigravity. El agente usa Gemini 3.5 Flash y es gratuito.</p>
+      <p class="why">Otro competidor serio en tu IDE existente &mdash; la guerra de coding agents ahora se pelea dentro de VS Code, no en IDEs propietarios separados.</p>
+      <p class="source"><a href="https://thenewstack.io/google-antigravity-ide-extensions/">The New Stack</a> &bull; <a href="https://antigravity.google/product/antigravity-ide">Google Antigravity</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini 3.7 Flash: coding y agentes con 50% de descuento introductorio</h3>
+      <p class="what">Google lanz&oacute; Gemini 3.7 Flash el 13 de agosto con foco en coding, razonamiento y workflows ag&eacute;nticos. Precio introductorio de $0.75/$3.75 por mill&oacute;n de tokens (input/output) hasta diciembre 2026 &mdash; la mitad del precio de Gemini 3.6 Flash. Cached input a $0.075/M.</p>
+      <p class="why">A esos precios con caching, es una opci&oacute;n competitiva para pipelines de alto volumen donde no necesitas el modelo m&aacute;s capaz sino el m&aacute;s eficiente.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/googles-gemini-3-7-flash-targets-coding-and-agents-with-a-50-introductory-price-cut">VentureBeat</a> &bull; <a href="https://9to5google.com/2026/08/13/gemini-3-7-flash-launch/">9to5Google</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>CellCog August Rankings: Claude Code #1 en profundidad de coding</h3>
+      <p class="what">Los rankings de agosto de CellCog posicionan a Claude Code primero en pure coding depth (hooks, subagents, dynamic workflows), Codex CLI primero en autonom&iacute;a cloud, y Cursor primero en flujo in-editor. Meta Muse Code entra como nuevo competidor con subagentes paralelos y worktree isolation.</p>
+      <p class="why">El landscape se fragment&oacute;: la mejor opci&oacute;n depende de tu flujo &mdash; terminal profundo (Claude Code), PRs aut&oacute;nomos (Codex CLI), o edici&oacute;n visual (Cursor).</p>
+      <p class="source"><a href="https://cellcog.ai/blog/best-ai-agent-harnesses/">CellCog</a> &bull; <a href="https://www.morphllm.com/ai-coding-agent">MorphLLM</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GPT-5.6 Luna gratis e ilimitado para chat + precio API ca&iacute;do 80%</h3>
+      <p class="what">OpenAI hizo GPT-5.6 Luna el modelo default para usuarios gratuitos con chats de texto ilimitados y bot&oacute;n Think. En API, Luna baj&oacute; a $0.20/M input tokens &mdash; una ca&iacute;da del 80% vs precios anteriores. Sol se retun&oacute; para Plus/Pro con 68% menos errores factuales vs GPT-5.5.</p>
+      <p class="why">Un modelo competente a $0.20/M tokens cambia la econom&iacute;a de cualquier feature de AI en tu producto &mdash; lo que antes era premium ahora puede ser gratuito para tus usuarios.</p>
+      <p class="source"><a href="https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/">OpenAI Blog</a> &bull; <a href="https://www.unite.ai/openai-gives-free-chatgpt-users-unlimited-text-chats-on-gpt-5-6-luna/">Unite.AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>AI escribe la mitad de los issues en Linear, pero los equipos a&uacute;n no env&iacute;an m&aacute;s r&aacute;pido</h3>
+      <p class="what">Datos de agosto muestran que AI ahora redacta casi la mitad de todos los issues en Linear. Los equipos triplicaron PRs, pero el tiempo total de desarrollo subi&oacute; en lugar de bajar. M&aacute;s output no se traduce autom&aacute;ticamente en m&aacute;s velocidad de entrega.</p>
+      <p class="why">Validaci&oacute;n de que automatizar la producci&oacute;n de c&oacute;digo sin redise&ntilde;ar el proceso de review y merge crea un cuello de botella nuevo &mdash; antes de a&ntilde;adir m&aacute;s AI, optimiza tu pipeline de integraci&oacute;n.</p>
+      <p class="source"><a href="https://aitoolsrecap.com/Blog/ai-news-august-21-2026">AIToolsRecap</a> &bull; <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Code: mejoras en sessions cloud, code review y estabilidad</h3>
+      <p class="what">Las &uacute;ltimas versiones de Claude Code mejoran el rendimiento de sesiones cloud en background, fiabilidad de remote control y VS Code, revisi&oacute;n de c&oacute;digo, y a&ntilde;aden spellcheck opcional en el prompt. Tambi&eacute;n reducen event-loop stalls y corrigen bugs de permisos y slash commands.</p>
+      <p class="why">Las mejoras en background sessions y estabilidad hacen que Claude Code sea m&aacute;s viable para tareas aut&oacute;nomas de larga duraci&oacute;n como CI fixes o refactors nocturnos.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> &bull; <a href="https://www.gradually.ai/en/changelogs/claude-code/">Gradually.ai</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic activa watermark invisible en toda la salida de Claude (EU AI Act)</h3>
+      <p class="what">Desde el 2 de agosto, Anthropic marca con watermark invisible todo el texto y archivos generados por Claude para cumplir con las reglas de transparencia del EU AI Act. La marca se aplica globalmente, no solo para usuarios europeos.</p>
+      <p class="why">Si tu producto genera contenido con Claude para usuarios finales, ten en cuenta que ese contenido es ahora detectable como generado por AI &mdash; impacta c&oacute;mo presentas contenido AI-generated en tu plataforma.</p>
+      <p class="source"><a href="https://www.euronews.com/next/2026/08/11/eu-compliance-delivered-globally-anthropic-to-watermark-claudes-output-worldwide">Euronews</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Wellness startups captan $3.6B en H1 2026: inversores priorizan AI + wearables</h3>
+      <p class="what">Startups de wellness recaudaron m&aacute;s de $3.6B en el primer semestre de 2026, un tercio m&aacute;s que 2025. Los checks m&aacute;s grandes van a plataformas que combinan wearables + AI coaching: Whoop ($575M Serie G), Eight Sleep ($50M Serie D), y Temple ($54M seed para wearable de salud cerebral).</p>
+      <p class="why">El pitch que funciona en este vertical no es el hardware &mdash; es el dispositivo que recolecta datos de salud y usa AI para convertirlos en coaching personalizado; si est&aacute;s en sports tech, el valor est&aacute; en el software layer.</p>
+      <p class="source"><a href="https://news.crunchbase.com/health-wellness-biotech/fitness-startup-funding-rebounding-ai-data-h1-2026/">Crunchbase</a> &bull; <a href="https://www.under30ceo.com/wellness-startups-funding-rebound-2026/">Under30CEO</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 22/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
