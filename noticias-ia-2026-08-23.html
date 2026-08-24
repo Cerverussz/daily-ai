@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 23 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>23 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI recorta hasta 33% el precio de GPT-5.6 Sol: output a $20/M tokens</h3>
+      <p class="what">OpenAI baj&oacute; el precio de su modelo frontier Sol el 21 de agosto: input de $5 a $4/M tokens (-20%) y output de $30 a $20/M tokens (-33%), v&aacute;lido por 3 meses hasta noviembre 21. Con estos precios, Sol queda m&aacute;s barato que Claude Opus 5 tanto en input como en output.</p>
+      <p class="why">Si est&aacute;s eligiendo modelo para tu producto, es buen momento para benchmarkear Sol contra Opus 5 en tus casos de uso reales &mdash; la ventana de precio promocional es una oportunidad concreta para reducir costos de inferencia.</p>
+      <p class="source"><a href="https://winbuzzer.com/2026/08/23/openai-cuts-gpt-5-6-sol-api-prices-by-up-to-33-percent-through-november-21-xcxwbn/">WinBuzzer</a> &bull; <a href="https://startupfortune.com/openai-cuts-gpt-56-sol-api-prices-after-holding-the-line-for-months/">Startup Fortune</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Pinecone Nexus GA: knowledge engine para agentes que supera modelos frontier en tareas enterprise</h3>
+      <p class="what">Pinecone lanz&oacute; Nexus en GA, un motor que compila datos propietarios de una empresa en conocimiento estructurado que agentes consumen con una sola llamada v&iacute;a KnowQL. En el benchmark &tau;-Knowledge de Sierra, un agente con Nexus super&oacute; a agentes con GPT-5.6 Sol, Opus 5 y Gemini, reduciendo adem&aacute;s el costo por tarea un 74%.</p>
+      <p class="why">Si tu producto necesita RAG sobre datos de clientes, Nexus elimina la necesidad de armar tu propio pipeline de retrieval y se despliega en tu propia nube sin que Pinecone acceda a los datos.</p>
+      <p class="source"><a href="https://www.unite.ai/pinecones-nexus-knowledge-engine-for-ai-agents-reaches-general-availability/">Unite.AI</a> &bull; <a href="https://www.pinecone.io/blog/knowledge-infrastructure-for-agents/">Pinecone Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>AWS Bedrock AgentCore: runtime instances y pol&iacute;ticas temporales para agentes en producci&oacute;n</h3>
+      <p class="what">AWS lanz&oacute; runtime instances en AgentCore, permitiendo correr agentes en EC2 propio sin gestionar infraestructura, m&aacute;s nuevas pol&iacute;ticas temporales y rate limiting para controlar autorizaci&oacute;n stateful de agentes. Tambi&eacute;n expandieron memory, policy y harness a GovCloud.</p>
+      <p class="why">Si ya usas AWS y est&aacute;s construyendo agentes que necesitan estado persistente y control de acceso granular, esto te ahorra armar el plumbing de gobernanza desde cero.</p>
+      <p class="source"><a href="https://aws.amazon.com/about-aws/whats-new/2026/08/aws-bedrock-agentcore-runtime-instances-generally-available/">AWS</a> &bull; <a href="https://aws.amazon.com/about-aws/whats-new/2026/08/temporal-policies-agentcore/">AWS Policies</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 A2A de Google se une a la Agentic AI Foundation junto a MCP: un solo gobierno para protocolos de agentes</h3>
+      <p class="what">El 20 de agosto, el protocolo Agent-to-Agent (A2A) de Google se uni&oacute; oficialmente a la AAIF de la Linux Foundation, quedando bajo la misma gobernanza neutral que MCP de Anthropic. La AAIF ya cuenta con 250+ miembros incluyendo AWS, Microsoft, OpenAI, Cloudflare y Bloomberg.</p>
+      <p class="why">Con A2A (agente-a-agente) y MCP (agente-a-herramienta) bajo un mismo techo, ahora hay un est&aacute;ndar claro para conectar tus servicios al ecosistema de agentes sin apostar por un solo vendor.</p>
+      <p class="source"><a href="https://www.forbes.com/sites/janakirammsv/2026/08/19/agent2agent-joins-the-agentic-ai-foundation-alongside-mcp/">Forbes</a> &bull; <a href="https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/">Google Developers</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GLM-5.3 de Z.ai: modelo de coding que encontr&oacute; 1,097+ bugs cr&iacute;ticos en software real sin que lo planearan</h3>
+      <p class="what">Z.ai lanz&oacute; GLM-5.3, un modelo de 743B par&aacute;metros (MoE) cuyo post-training desarroll&oacute; capacidad de exploit-chain reasoning no intencional, encontrando 2,436 vulnerabilidades en 269 proyectos open-source incluyendo Linux y WebKit. Z.ai retuvo los weights abiertos mientras completa una revisi&oacute;n de seguridad.</p>
+      <p class="why">Demuestra que los modelos de coding ya son herramientas serias de security research &mdash; y que el post-training puede producir capacidades emergentes que requieren gobernanza antes del release.</p>
+      <p class="source"><a href="https://www.techtimes.com/articles/324426/20260814/glm-53-post-training-produced-exploit-chains-zai-never-planned-finds-1097-critical-bugs.htm">TechTimes</a> &bull; <a href="https://www.digitalapplied.com/blog/glm-5-3-ai-security-research-cvd-ledger-2026">Digital Applied</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Spotify lanza Xirp en beta p&uacute;blica: orquestador que corre 50+ sesiones de Claude Code, Codex y Gemini CLI en paralelo</h3>
+      <p class="what">Spotify abri&oacute; Xirp al p&uacute;blico tras 36,000+ sesiones internas con 1,300 ingenieros. Es una app macOS que orquesta m&uacute;ltiples agentes de coding en worktrees Git aislados, permite cambiar de modelo mid-task y guarda contexto en el Spotify Portal para que otros devs lo retomen.</p>
+      <p class="why">Si usas m&uacute;ltiples AI coding tools, Xirp elimina el lock-in de modelo y muestra c&oacute;mo escalar agentes de coding en un equipo real &mdash; el patr&oacute;n de meta-harness va a ser el est&aacute;ndar.</p>
+      <p class="source"><a href="https://portal.spotify.com/blog/introducing-xirp">Spotify Portal</a> &bull; <a href="https://fourweekmba.com/ai-spotify-xirp-meta-harness-coding-agents/">FourWeekMBA</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Grok 4.6 de SpaceXAI: modelo frontier para agentes de larga duraci&oacute;n a $2/M input tokens</h3>
+      <p class="what">SpaceXAI lanz&oacute; Grok 4.6 con 500K de contexto, optimizado para agentes que mantienen proyectos desde investigaci&oacute;n hasta implementaci&oacute;n. Disponible en Cursor, Grok Build y API a $2/$6 por mill&oacute;n de tokens input/output, significativamente m&aacute;s barato que Sol o Opus 5.</p>
+      <p class="why">A ese precio, es viable correr agentes aut&oacute;nomos de larga duraci&oacute;n para tareas como generar features completas o auditar repos, sin que la factura de API sea un blocker.</p>
+      <p class="source"><a href="https://www.unite.ai/spacexai-launches-grok-4-6-for-long-running-agents/">Unite.AI</a> &bull; <a href="https://www.marktechpost.com/2026/08/12/spacexai-releases-grok-4-6/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>El ecosistema agente madura: de demos a workflows reales en producci&oacute;n</h3>
+      <p class="what">Seg&uacute;n m&uacute;ltiples reportes de esta semana, los agentes AI ya superaron la fase demo y se usan para trabajo real: booking de citas, gesti&oacute;n de IT, automatizaci&oacute;n enterprise. Productos como Vendo, Shape y Checksum AI est&aacute;n rearquitecturando c&oacute;mo se construye y extiende software.</p>
+      <p class="why">La oportunidad para founders t&eacute;cnicos est&aacute; en los verticales donde nadie ha armado el workflow ag&eacute;ntico todav&iacute;a &mdash; servicios profesionales, salud, log&iacute;stica local.</p>
+      <p class="source"><a href="https://blog.mean.ceo/ai-product-launches-news-august-2026/">Mean CEO</a> &bull; <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic activa watermarks invisibles en todo el output de Claude a nivel global</h3>
+      <p class="what">Desde el 2 de agosto, todos los modelos nuevos de Claude incrustan una marca de agua imperceptible en texto generado y metadatos C2PA en archivos (SVG, PNG, JPG). La marca viaja al copiar/pegar y aplica globalmente para cumplir el Art&iacute;culo 50 del EU AI Act, con multas de hasta &euro;15M por incumplimiento.</p>
+      <p class="why">Si tu producto genera contenido con Claude, necesitas saber que ese output ahora es rastreable &mdash; considera c&oacute;mo esto impacta tu UX y tus t&eacute;rminos de servicio.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/">TechCrunch</a> &bull; <a href="https://www.forbes.com/sites/anishasircar/2026/08/13/claude-will-now-leave-a-watermark-on-everything-it-writes-what-does-that-mean/">Forbes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Academy: hub gratuito con 355 recursos, cursos y certificaciones para dominar Claude</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Academy el 20 de agosto con 22 cursos estructurados, tutoriales y casos de uso basados en c&oacute;mo Anthropic entrena a sus propios empleados (framework 4D). Acceso sin login, badges para LinkedIn, y recomendaciones personalizadas v&iacute;a Claude.</p>
+      <p class="why">Si tu equipo usa Claude en producci&oacute;n, Academy es el recurso oficial para nivelar prompting y mejores pr&aacute;cticas sin armar tu propio training interno.</p>
+      <p class="source"><a href="https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai">Claude Blog</a> &bull; <a href="https://www.superhuman.ai/p/anthropic-launches-the-claude-academy-with-355-resources">Superhuman</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 TheBean.ai lanza AI personal trainer que unifica wearables, nutrici&oacute;n y recuperaci&oacute;n en un solo sistema</h3>
+      <p class="what">TheBean.ai lanz&oacute; su plataforma de coaching fitness con IA el 15 de agosto, integrando historial de entrenamiento, datos de wearables, m&eacute;tricas de recuperaci&oacute;n y nutrici&oacute;n en un sistema unificado que genera planes adaptativos. Va m&aacute;s all&aacute; de planes gen&eacute;ricos al ajustar diariamente seg&uacute;n progreso real del usuario.</p>
+      <p class="why">Para founders en fitness tech, este es el modelo a seguir (o competir): la diferenciaci&oacute;n ya no es el plan de entrenamiento sino la integraci&oacute;n de datos multi-fuente con coaching adaptativo.</p>
+      <p class="source"><a href="https://www.webanditnews.com/2026/08/15/thebean-ai-launches-ai-personal-trainer-to-make-personalized-fitness-coaching-accessible-to-everyone/">Web And IT News</a> &bull; <a href="https://www.openpr.com/news/4604741/thebean-ai-launches-ai-personal-trainer-to-make-personalized">OpenPR</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 23/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
