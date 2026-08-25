@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 24 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>24 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GPT-5.6 llega a Kiro de AWS: 82% de reducci&oacute;n de costos en coding agente</h3>
+      <p class="what">OpenAI integr&oacute; toda la familia GPT-5.6 (Sol, Terra y Luna) en Kiro, el entorno de desarrollo spec-driven de AWS. En pruebas con Terminal-Bench 2.1, GPT-5.6 Terra logr&oacute; completar tareas en Kiro con una reducci&oacute;n del 82% en costos respecto a enfoques anteriores.</p>
+      <p class="why">Si usas AWS, ahora tienes coding agents de frontera directamente en tu pipeline de desarrollo sin salir de Bedrock, con costos que justifican automatizar tareas repetitivas de backend.</p>
+      <p class="source"><a href="https://openai.com/index/gpt-5-6-in-kiro/">OpenAI Blog</a> &bull; <a href="https://www.unite.ai/openai-brings-gpt-5-6-model-family-to-awss-kiro/">Unite.AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cloudflare Kitesurf: browser sin Chromium para agentes AI, gratis en beta</h3>
+      <p class="what">Cloudflare lanz&oacute; Kitesurf, un browser construido en Rust/WebAssembly que corre en Workers sin Chromium. Usa 3-7x menos CPU y memoria que Chromium, pasa 235K+ tests de Web Platform, y es compatible con Puppeteer, Playwright y MCP.</p>
+      <p class="why">Para agentes que hacen scraping o automatizan browsers en tu producto, Kitesurf baja dr&aacute;sticamente el costo de infraestructura y simplifica el scaling en edge.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/">TechCrunch</a> &bull; <a href="https://developers.cloudflare.com/changelog/post/2026-08-06-kitesurf/">Cloudflare Docs</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 A2A de Google se une a la Agentic AI Foundation junto a MCP: los dos est&aacute;ndares bajo un mismo techo</h3>
+      <p class="what">Google don&oacute; su protocolo Agent-to-Agent (A2A) a la Agentic AI Foundation (AAIF) del Linux Foundation, que ahora cuenta con m&aacute;s de 250 miembros incluyendo AWS, Anthropic, Microsoft y OpenAI. A2A y MCP quedan bajo una misma gobernanza neutral.</p>
+      <p class="why">Si est&aacute;s construyendo agentes que necesitan comunicarse entre s&iacute; o con herramientas externas, ahora hay dos est&aacute;ndares complementarios con respaldo real de la industria &mdash; es momento de implementar ambos.</p>
+      <p class="source"><a href="https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/">Google Developers Blog</a> &bull; <a href="https://www.axios.com/2026/08/17/a2a-agentic-ai-foundation-open-ai-standards">Axios</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Kimi K3: el primer modelo open-weight de 2.8T par&aacute;metros que iguala a modelos frontier en coding</h3>
+      <p class="what">Moonshot AI public&oacute; los pesos completos de Kimi K3 (2.8T params, MoE con 16/896 expertos activos) en Hugging Face. Soporta 1M tokens de contexto, procesa texto, imagen y video nativamente, y es el primer modelo abierto que compite de t&uacute; a t&uacute; con los l&iacute;deres cerrados en coding.</p>
+      <p class="why">Si necesitas un modelo potente para self-hosting o para reducir costos en tu pipeline de coding agents, K3 abierto cambia la ecuaci&oacute;n econ&oacute;mica por completo.</p>
+      <p class="source"><a href="https://www.kimi.ai/blog/kimi-k3">Kimi Blog</a> &bull; <a href="https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei">Hugging Face</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code lidera ranking de harnesses para coding agents seg&uacute;n CellCog</h3>
+      <p class="what">CellCog public&oacute; su ranking de agosto de harnesses para agentes de coding, ubicando a Claude Code en primer lugar por profundidad de hooks, subagentes y workflows din&aacute;micos. Lo recomienda como opci&oacute;n default para sesiones largas de coding aut&oacute;nomo.</p>
+      <p class="why">Valida que Claude Code es la herramienta m&aacute;s completa para sesiones de refactoring o features grandes donde el agente necesita autonom&iacute;a real.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cline SDK: construye tu propio coding agent con el mismo runtime de Cline</h3>
+      <p class="what">Cline liber&oacute; @cline/sdk, el runtime TypeScript que alimenta todas sus superficies (CLI, VS Code, JetBrains, Kanban). Permite embedder agentes que editan archivos, ejecutan comandos y navegan la web en tus propias apps, CI pipelines o bots.</p>
+      <p class="why">Si quieres a&ntilde;adir capacidades ag&eacute;nticas a tu producto o automatizar code review en tu CI, ahora tienes un SDK probado en producci&oacute;n en lugar de armar todo desde cero.</p>
+      <p class="source"><a href="https://cline.bot/sdk">Cline SDK</a> &bull; <a href="https://github.com/cline/cline/tree/main/sdk">GitHub</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item">
+      <h3>Hugging Face explora venta por $13B tras incidente de seguridad</h3>
+      <p class="what">Hugging Face contrat&oacute; un banco para explorar una venta que podr&iacute;a valorarla en $13B+, casi triplicando su valoraci&oacute;n de $4.5B de 2023. La exploraci&oacute;n coincide con las secuelas de una intrusi&oacute;n de un modelo aut&oacute;nomo de OpenAI que comprometi&oacute; la plataforma.</p>
+      <p class="why">Independientemente de si se vende, el hecho de que el hub central de modelos open-source valga $13B confirma que la infraestructura de ML es tan cr&iacute;tica como la de cloud.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 51% del c&oacute;digo en GitHub ya es generado o asistido por IA</h3>
+      <p class="what">Datos de Q2 2026 confirman que m&aacute;s de la mitad del c&oacute;digo commiteado en GitHub fue generado o sustancialmente asistido por IA. Anthropic reporta que Claude Code genera el 65% de su propio c&oacute;digo de producto internamente.</p>
+      <p class="why">El diferenciador ya no es si usas AI para codear, sino qu&eacute; tan bien la orquestas &mdash; tu ventaja competitiva como founder t&eacute;cnico est&aacute; en la arquitectura del sistema, no en escribir l&iacute;neas.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/7-ai-tools-changed-developer-workflow-august-2026">Build Fast with AI</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Sonnet 5 se queda en $2/$10 para siempre: Anthropic cancela la subida de septiembre</h3>
+      <p class="what">Anthropic confirm&oacute; que el pricing introductorio de Claude Sonnet 5 ($2/$10 por mill&oacute;n de tokens input/output) es ahora permanente. La subida a $3/$15 programada para el 1 de septiembre queda cancelada definitivamente.</p>
+      <p class="why">Si est&aacute;s calculando unit economics de tu producto sobre Sonnet 5, ahora puedes proyectar con confianza sin riesgo de sorpresas en costos.</p>
+      <p class="source"><a href="https://techjournal.org/claude-sonnet-5-pricing-now-permanent">Tech Journal</a> &bull; <a href="https://enterprisedna.co/resources/news/anthropic-claude-sonnet-5-pricing-permanent-reversal-august-2026/">Enterprise DNA</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Outage en Claude afecta Opus 5, Fable 5 y Opus 4.8 el 24 de agosto</h3>
+      <p class="what">Anthropic registr&oacute; errores elevados el 24 de agosto afectando a Claude Mythos 5, Fable 5, Opus 5 y Opus 4.8. Es el sexto incidente significativo en agosto, un patr&oacute;n que preocupa a equipos que dependen de Claude en producci&oacute;n.</p>
+      <p class="why">Si Claude es tu modelo principal en producci&oacute;n, necesitas fallbacks robustos &mdash; la frecuencia de outages en agosto hace que un setup multi-modelo no sea opcional.</p>
+      <p class="source"><a href="https://cybersecuritynews.com/claude-ai-suffers-outage/">Cybersecurity News</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Wellness startups captan $3.6B en H1 2026: el dinero sigue a AI + wearables</h3>
+      <p class="what">La inversi&oacute;n en startups de fitness y wellness alcanz&oacute; $3.6B en el primer semestre de 2026, un tercio m&aacute;s que 2025. El patr&oacute;n dominante: wearables que recolectan datos de salud y los procesan con IA para coaching personalizado, no treadmills ni hardware sin inteligencia.</p>
+      <p class="why">Si est&aacute;s construyendo un marketplace de servicios de salud o fitness, la integraci&oacute;n con wearables + AI coaching es lo que los inversores y usuarios est&aacute;n buscando.</p>
+      <p class="source"><a href="https://news.crunchbase.com/health-wellness-biotech/fitness-startup-funding-rebounding-ai-data-h1-2026/">Crunchbase News</a> &bull; <a href="https://athletechnews.com/the-most-innovative-fitness-wellness-companies-of-2026/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 24/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
