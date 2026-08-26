@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 25 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>25 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 NVIDIA Groq 3 LPX entra en producci&oacute;n: inferencia agente ultrafast con 500MB de SRAM on-die</h3>
+      <p class="what">NVIDIA anunci&oacute; el 24 de agosto que su acelerador de inferencia Groq 3 LPX est&aacute; en producci&oacute;n completa. Fabricado por Samsung, integra 500MB de SRAM directamente en el chip, eliminando cuellos de botella de memoria y alcanzando 3,400 tokens/segundo de salida con Gemma 4 31B en contexto de 100K tokens.</p>
+      <p class="why">Si est&aacute;s construyendo agentes aut&oacute;nomos que necesitan respuestas en tiempo real, esta es la infraestructura que baja la latencia de inferencia a nivel de producci&oacute;n seria.</p>
+      <p class="source"><a href="https://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai">NVIDIA Newsroom</a> &bull; <a href="https://siliconangle.com/2026/08/24/nvidias-dedicated-inference-accelerator-groq-3-lpx-enters-full-production-to-supercharge-ai-agents/">SiliconANGLE</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cloudflare lanza Kitesurf: un browser hecho para agentes AI que usa 3-7x menos recursos que Chromium</h3>
+      <p class="what">Kitesurf es un browser construido desde cero en Rust + WebAssembly que corre en Workers de Cloudflare. Es stateless, pasa 235K+ Web Platform Tests, y expone Chrome DevTools Protocol compatible con Puppeteer, Playwright y MCP. Ya disponible gratis en beta.</p>
+      <p class="why">Si tus agentes navegan la web (scraping, testing, workflows), cambiar de Chromium headless a Kitesurf reduce costos de compute dr&aacute;sticamente con un cambio de un par&aacute;metro.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/">TechCrunch</a> &bull; <a href="https://developers.cloudflare.com/changelog/post/2026-08-06-kitesurf/">Cloudflare Docs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI recorta 20% el precio de GPT-5.6 Sol para desarrolladores</h3>
+      <p class="what">GPT-5.6 Sol baja a $4/M input y $20/M output tokens (antes $5/$30) por los pr&oacute;ximos 3 meses. Esto se suma al recorte de 80% en GPT-5.6 Luna de julio, que qued&oacute; en $0.20/M input. La presi&oacute;n competitiva de Anthropic y modelos chinos acelera la guerra de precios.</p>
+      <p class="why">M&aacute;s opciones baratas para tu backend &mdash; eval&uacute;a si Luna a $0.20/M sirve para tus tareas de alto volumen antes de pagar por Sol.</p>
+      <p class="source"><a href="https://www.business-standard.com/technology/tech-news/openai-cuts-developer-pricing-for-gpt-5-6-sol-model-by-more-than-20-126082200107_1.html">Business Standard</a> &bull; <a href="https://www.cnbc.com/2026/07/30/open-ai-price-cut-gpt.html">CNBC</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones tecnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Grok 4.6: modelo frontier de xAI para agentes de larga duraci&oacute;n a $2/M input</h3>
+      <p class="what">SpaceXAI lanz&oacute; Grok 4.6 con contexto de 500K tokens, esfuerzo de razonamiento configurable, y dise&ntilde;o espec&iacute;fico para tareas multi-paso sostenidas. Ya disponible en Cursor, GitHub Copilot, y su API a $2/$6 por mill&oacute;n de tokens.</p>
+      <p class="why">A $2/M input con 500K de contexto, es una alternativa seria para agentes coding en tu IDE &mdash; especialmente si usas Cursor o Copilot.</p>
+      <p class="source"><a href="https://www.unite.ai/spacexai-launches-grok-4-6-for-long-running-agents/">Unite.AI</a> &bull; <a href="https://www.marktechpost.com/2026/08/12/spacexai-releases-grok-4-6/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google Cloud publica framework de seguridad para agentes aut&oacute;nomos</h3>
+      <p class="what">El 24 de agosto, Google Cloud public&oacute; un post vinculado a su State of AI Infrastructure report donde posiciona la seguridad de agentes como el principal bloqueante para escalar. Recomienda Secure AI Frameworks, governance a nivel plataforma, provenance por tarea, y human-in-the-loop.</p>
+      <p class="why">Si est&aacute;s desplegando agentes en producci&oacute;n, este framework te da un checklist real de seguridad antes de que algo salga mal.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/2026-august">AI Agent Store</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Encuesta Coddy: 80% de devs dicen que su uso de AI coding se siente m&aacute;s como dependencia que ventaja</h3>
+      <p class="what">El Coddy Developer Survey revela que 4 de 5 desarrolladores perciben su relaci&oacute;n con herramientas AI como dependencia. El 43% sigue codeando con AI fuera de horario sin poder parar, y el 39% reporta dificultad para desconectarse mentalmente.</p>
+      <p class="why">Dato para calibrar tu propio uso &mdash; si sientes que no puedes escribir c&oacute;digo sin tu asistente AI, no est&aacute;s solo, pero conviene mantener el skill de pensar sin muletas.</p>
+      <p class="source"><a href="https://aiweekly.co/ai-news-today">AI Weekly</a></p>
+    </div>
+
+    <!-- EJE 3: Creacion de negocios y productos -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code lidera ranking de harnesses para coding agente en agosto 2026</h3>
+      <p class="what">CellCog public&oacute; su ranking de agosto de AI agent harnesses y posiciona a Claude Code primero por profundidad de hooks, subagentes, y workflows din&aacute;micos. El reciente movimiento a Opus 5 trajo calidad near-flagship a mitad de precio, con control de modelo por sub-agente.</p>
+      <p class="why">Si est&aacute;s construyendo producto como founder t&eacute;cnico solo o en equipo peque&ntilde;o, Claude Code con Opus 5 es probablemente tu mejor relaci&oacute;n costo-output para sesiones largas de desarrollo.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/2026-august">AI Agent Store</a> &bull; <a href="https://www.aitechboss.com/claude-opus-5-review-2026/">AI Tech Boss</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Lovable alcanza 2.7M b&uacute;squedas mensuales con +1925% de crecimiento</h3>
+      <p class="what">Lovable, la plataforma que permite crear apps funcionales desde prompts en lenguaje natural, sigue su tracci&oacute;n explosiva en agosto 2026. Representa la tendencia de herramientas que permiten a founders no-code/low-code lanzar MVPs en horas en lugar de semanas.</p>
+      <p class="why">Competencia directa si est&aacute;s en el espacio de herramientas para builders &mdash; y validaci&oacute;n de que el mercado de &ldquo;idea a producto sin equipo&rdquo; tiene demanda real y creciente.</p>
+      <p class="source"><a href="https://explodingtopics.com/startups/ai">Exploding Topics</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y ecosistema Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic congela el precio de Sonnet 5: $2/$10 por mill&oacute;n de tokens es permanente</h3>
+      <p class="what">El 10 de agosto, Anthropic cancel&oacute; la subida de precio de Sonnet 5 prevista para septiembre 1. El pricing introductorio de $2/M input y $10/M output se mantiene indefinidamente, evitando un aumento efectivo de hasta 50% que combinaba el nuevo tokenizer con la subida de tarifa.</p>
+      <p class="why">Buena noticia para tu bill &mdash; si usas Sonnet 5 en producci&oacute;n, tu costo se queda donde est&aacute; sin sorpresas en septiembre.</p>
+      <p class="source"><a href="https://explainx.ai/blog/anthropic-sonnet-5-permanent-pricing-august-2026">ExplainX</a> &bull; <a href="https://techjournal.org/claude-sonnet-5-pricing-now-permanent">Tech Journal</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude agrega memoria compartida entre Chat y Cowork</h3>
+      <p class="what">Claude ahora mantiene memoria persistente entre conversaciones de chat y sesiones de Claude Cowork. Los usuarios pueden ver, editar, eliminar, pausar o resetear las memorias guardadas, permitiendo continuidad real entre tareas.</p>
+      <p class="why">Menos repetir contexto cada vez que abres una sesi&oacute;n nueva &mdash; especialmente &uacute;til si alternas entre chat r&aacute;pido y sesiones de coding profundo.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot - Claude Updates</a></p>
+    </div>
+
+    <!-- EJE 5: IA en sports tech, salud y bienestar -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 WHOOP agrega telemedicina on-demand y AI Coach con memoria personalizada</h3>
+      <p class="what">WHOOP integr&oacute; consultas m&eacute;dicas en video on-demand con doctores licenciados directamente en la app, junto con nuevas features de AI: &ldquo;My Memory&rdquo; para ajustar coaching seg&uacute;n circunstancias de vida, y &ldquo;Proactive Check-Ins&rdquo; que recomiendan ajustes de sue&ntilde;o y entrenamiento seg&uacute;n eventos pr&oacute;ximos. Tambi&eacute;n puedes crear rutinas de entrenamiento desde prompts de texto o screenshots.</p>
+      <p class="why">Modelo de referencia si est&aacute;s construyendo un marketplace de servicios profesionales de salud &mdash; combinar wearable data + AI coaching + acceso a profesionales en una sola app es el patr&oacute;n a seguir.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/05/08/whoop-on-demand-clinician-access.html">CNBC</a> &bull; <a href="https://www.whoop.com/us/en/thelocker/2026-whats-new/">WHOOP</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; 25 de agosto de 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
