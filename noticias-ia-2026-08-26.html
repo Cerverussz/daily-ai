@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 26 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>26 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 IBM lanza Granite 4.2 open-weight: modelos con RL ag&eacute;ntico y 512K de contexto</h3>
+      <p class="what">IBM liber&oacute; Granite 4.2 (3B, 8B, 30B) bajo Apache 2.0 con reasoning nativo y capacidades ag&eacute;nticas entrenadas con reinforcement learning en sandboxes reales (editar c&oacute;digo, usar terminal, hacer web search). Entrenado en ~15T tokens con contexto de 512K.</p>
+      <p class="why">Modelos open-weight con capacidades de agente listas para producci&oacute;n, sin restricciones de licencia &mdash; ideales para integrar en tu backend o pipeline de automatizaci&oacute;n.</p>
+      <p class="source"><a href="https://research.ibm.com/blog/introducing-granite-4-2">IBM Research</a> &bull; <a href="https://www.marktechpost.com/2026/08/25/ibm-releases-granite-4-2-bringing-native-reasoning-and-agentic-rl-to-open-enterprise-models/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cloudflare integra GLM-5.3-Flash en Workers AI el mismo d&iacute;a de su lanzamiento</h3>
+      <p class="what">Cloudflare a&ntilde;adi&oacute; GLM-5.3-Flash a Workers AI el 26 de agosto, el mismo d&iacute;a que Z.ai lo open-source&oacute;. Junto con DeepSeek V4 Flash y Gemma 4 26B ya disponibles, Workers AI se consolida como el cat&aacute;logo m&aacute;s r&aacute;pido para desplegar modelos open-source en edge.</p>
+      <p class="why">Si usas Workers para tu API, ahora puedes a&ntilde;adir inference multimodal con 1M de contexto sin montar infra propia.</p>
+      <p class="source"><a href="https://developers.cloudflare.com/changelog/post/2026-08-26-glm-5.3-flash-workers-ai/">Cloudflare Changelog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Alibaba lanza Qwen3.8-Flash-Next: preview de la arquitectura Qwen4 con N-gram embedding</h3>
+      <p class="what">Modelo MoE multimodal de 125B params con solo 6B activos por token. Introduce una capa de N-gram embedding de 51B params que almacena frases comunes como entradas independientes y puede residir en RAM del sistema en vez de GPU. Entrenado con 1/9 de los recursos de Qwen3.7-Plus.</p>
+      <p class="why">La t&eacute;cnica de N-gram embedding podr&iacute;a reducir dr&aacute;sticamente el costo de inference on-device &mdash; vale seguirle la pista para apps Android con AI local.</p>
+      <p class="source"><a href="https://the-decoder.com/alibaba-releases-qwen3-8-flash-next-targeting-ultimate-cost-efficiency/">The Decoder</a> &bull; <a href="https://www.marktechpost.com/2026/08/26/alibabas-qwen-team-releases-qwen3-8-flash-next-a-125b-multimodal-moe-with-6b-active-parameters-previewing-the-qwen4-architecture/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Z.ai open-sourcea GLM-5.3-Flash: el &ldquo;Ox Alpha&rdquo; era un modelo de 320B multimodal</h3>
+      <p class="what">Z.ai revel&oacute; que el modelo an&oacute;nimo &ldquo;Ox Alpha&rdquo; que lleva una semana corriendo en OpenRouter es GLM-5.3-Flash: 320B total, 18B activos, 1M tokens de contexto, nativo multimodal, bajo licencia MIT. Corre &iacute;ntegramente en chips AI fabricados en China.</p>
+      <p class="why">A $0.075/M input tokens, es el modelo multimodal con mejor ratio calidad/precio para tareas de alto volumen como extracci&oacute;n de datos o clasificaci&oacute;n de im&aacute;genes.</p>
+      <p class="source"><a href="https://siliconangle.com/2026/08/26/z-ai-open-sources-ox-alpha-model-as-glm-5-3-flash/">SiliconANGLE</a> &bull; <a href="https://venturebeat.com/orchestration/glm-5-3-flash-will-likely-handle-45-of-your-ai-workloads">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot migra a Polaris: Microsoft reemplaza GPT-4 Turbo con modelo propio</h3>
+      <p class="what">Desde agosto, Copilot migra autom&aacute;ticamente a Project Polaris, un MoE in-house de Microsoft con sub-m&oacute;dulos especializados por lenguaje. Corre en chips Maia propios, supera a GPT-4 Turbo en HumanEval/MBPP, y ofrece 100K l&iacute;neas de contexto para Pro. Enterprises tienen 3 meses para hacer opt-out.</p>
+      <p class="why">Si usas Copilot, tu modelo de coding cambi&oacute; sin que lo pidieras &mdash; vale testear si la calidad en tu stack espec&iacute;fico mejora o empeora antes de que cierre la ventana de fallback.</p>
+      <p class="source"><a href="https://blog.vibecoder.me/github-copilot-project-polaris-multi-agent-vscode">Vibe Coder Blog</a> &bull; <a href="https://letsdatascience.com/blog/microsoft-project-polaris-replaces-gpt4-github-copilot">Let's Data Science</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Headlong: harness open-source que mantiene agentes AI debuggeando c&oacute;digo a $1-2/hora</h3>
+      <p class="what">Laude Institute open-source&oacute; Headlong, un harness de menos de 10K l&iacute;neas de Bash que mantiene un LLM en un loop continuo de inner-monologue auto-guiado. Las demos muestran un agente llamado Audel debuggeando c&oacute;digo aut&oacute;nomamente por $1-2 la hora.</p>
+      <p class="why">Si est&aacute;s buscando un runner ligero para agentes de coding que puedas hostear t&uacute; mismo sin vendor lock-in, esto es lo m&aacute;s lean que hay.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cloudflare Kitesurf: un browser dise&ntilde;ado para agentes AI, no para humanos</h3>
+      <p class="what">Browser en Rust/WASM que corre en Workers, usa 3-7x menos CPU y memoria que Chromium eliminando todo lo que un agente no necesita (tabs, temas, rendering pixel-perfect). Soporta Chrome DevTools Protocol, as&iacute; que herramientas existentes funcionan cambiando un par&aacute;metro. Ser&aacute; open-source.</p>
+      <p class="why">Si construyes agentes que scrapean o interact&uacute;an con web, esto baja el costo de infraestructura de browser automation dram&aacute;ticamente.</p>
+      <p class="source"><a href="https://blog.cloudflare.com/kitesurf/">Cloudflare Blog</a> &bull; <a href="https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic lleva a GA: Computer Use, Browser Use, Skills API y Files API</h3>
+      <p class="what">Cuatro herramientas salen de beta en la Claude Platform. Computer Use permite a agentes operar software visual (click, type, scroll). Browser Use da a Claude una vista estructurada de p&aacute;ginas via accessibility tree. Skills API simplifica subir expertise reutilizable. Files API ofrece 5x m&aacute;s storage y expiraci&oacute;n autom&aacute;tica.</p>
+      <p class="why">Browser Use cambia el juego: en vez de screenshots + coordenadas, tu agente navega webs con la precisi&oacute;n del accessibility tree &mdash; menos tokens, menos errores, m&aacute;s confiable para producci&oacute;n.</p>
+      <p class="source"><a href="https://claude.com/blog/computer-use-skills-api-files-api">Anthropic Blog</a> &bull; <a href="https://www.nxcode.io/resources/news/claude-platform-agent-tools-ga-browser-skills-files-2026">NxCode</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Sonnet 5 congela precio introductorio: $2/$10 por MTok es permanente</h3>
+      <p class="what">Anthropic cancel&oacute; la subida de precio programada para septiembre 1. El pricing de $2/M input y $10/M output que era &ldquo;introductorio&rdquo; ahora es el precio est&aacute;ndar definitivo de Sonnet 5.</p>
+      <p class="why">Si estabas calculando costos de producci&oacute;n asumiendo $3/$15 en septiembre, tu margen acaba de mejorar un 33% sin cambiar una l&iacute;nea de c&oacute;digo.</p>
+      <p class="source"><a href="https://explainx.ai/blog/anthropic-sonnet-5-permanent-pricing-august-2026">ExplainX</a> &bull; <a href="https://platform.claude.com/docs/en/about-claude/pricing">Claude Platform Docs</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Technogym lanza BioStrength: m&aacute;quinas de fuerza con AI adaptativa integrada</h3>
+      <p class="what">L&iacute;nea de equipos de strength training con motor de resistencia que reemplaza el stack de pesas tradicional. AI ajusta autom&aacute;ticamente carga, tempo, rango de movimiento y protocolos (pir&aacute;mides, drop sets, super slow) bas&aacute;ndose en el perfil y rendimiento hist&oacute;rico de cada usuario al hacer login.</p>
+      <p class="why">Es el modelo a seguir para marketplaces de fitness: hardware + AI + perfil de usuario = retenci&oacute;n; la oportunidad est&aacute; en replicar esta personalizaci&oacute;n en software para entrenadores independientes.</p>
+      <p class="source"><a href="https://athletechnews.com/technogym-ai-ecosystem-personal-trainers-gyms/">Athletech News</a> &bull; <a href="https://www.technogym.com/en-INT/biostrength-2026-update/">Technogym</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 26/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
