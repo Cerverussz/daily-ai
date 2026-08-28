@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 27 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>27 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cloudflare lanza Kitesurf: browser sin Chromium construido para agentes AI</h3>
+      <p class="what">Kitesurf es un browser stateless que corre sobre Workers y V8 isolates, usando 3-7x menos CPU y memoria que Chromium. Pasa +235K tests de la Web Platform, es compatible con Puppeteer, Playwright y MCP, y está gratis en beta.</p>
+      <p class="why">Si tu producto tiene agentes que navegan la web (scraping, automatización, testing), esto reduce drásticamente el costo de infra vs. correr instancias de Chromium headless.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/">TechCrunch</a> &bull; <a href="https://developers.cloudflare.com/changelog/post/2026-08-06-kitesurf/">Cloudflare Docs</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 DeepSeek V4-Flash-Vision-Exp: multimodal a precio de texto</h3>
+      <p class="what">DeepSeek lanzó V4-Flash-Vision-Exp el 21 de agosto, integrando comprensión de imágenes, screenshots y diagramas en la arquitectura ultra-rápida de V4-Flash. Rinde cerca de Opus 4.8 en benchmarks de agentes multimodales, al mismo precio que el modelo de solo texto.</p>
+      <p class="why">Para agentes que necesitan interpretar UI, gráficas o documentos escaneados, ahora hay una opción open-source competitiva sin multiplicar tu bill de API.</p>
+      <p class="source"><a href="https://seekingalpha.com/news/4635820-deepseek-says-new-ai-model-v4-flash-vision-exp-comes-close-to-anthropics-opus-48">Seeking Alpha</a> &bull; <a href="https://emergent.sh/news/deepseek-v4-flash-vision-exp-officially">Emergent</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>AWS Web Search en Bedrock AgentCore ya está en GA</h3>
+      <p class="what">AWS lanzó Web Search como herramienta managed en Amazon Bedrock AgentCore, permitiendo a agentes AI buscar en la web con citas sin que los datos salgan de la cuenta AWS del cliente. Disponible en general availability desde el 21 de agosto.</p>
+      <p class="why">Si ya estás en el ecosistema AWS, tus agentes ahora pueden hacer búsquedas web sin integrar APIs de terceros ni preocuparte por data residency.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini 3.7 Flash: el workhorse de Google para coding y agentes a mitad de precio</h3>
+      <p class="what">Google lanzó Gemini 3.7 Flash el 13 de agosto con 65.3% en DeepSWE v1.1 (vs 49% de 3.6 Flash). Disponible en Google AI Studio, Android Studio, Antigravity y la Gemini Enterprise Agent Platform, a precio introductorio de $0.75/$3.75 por 1M tokens hasta fin de 2026.</p>
+      <p class="why">Para tu backend de agentes o features de AI en Android, 3.7 Flash ofrece la mejor relación calidad/precio del mercado en este momento.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/">Google Blog</a> &bull; <a href="https://9to5google.com/2026/08/13/gemini-3-7-flash-launch/">9to5Google</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>MCP 2026-07-28: el protocolo se vuelve stateless y modular</h3>
+      <p class="what">La nueva spec de Model Context Protocol elimina el handshake initialize/initialized, haciendo cada request auto-descriptivo. Agrega Multi Round-Trip Requests, extensions formales (Tasks, Subscriptions), y depreca Sampling, Roots y el transporte HTTP+SSE legacy con 12 meses de transición.</p>
+      <p class="why">Si expones herramientas via MCP, esta versión simplifica tu implementación y te prepara para el mundo de agentes stateless que viene.</p>
+      <p class="source"><a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/">MCP Blog</a> &bull; <a href="https://developers.googleblog.com/scaling-ai-agent-infrastructure-with-the-mcp-stateless-updates/">Google Developers</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Hugging Face + NVIDIA lanzan Open Data for Agents: 50K+ trayectorias de tareas</h3>
+      <p class="what">Dataset curado de más de 50,000 trayectorias de tareas para estandarizar el entrenamiento de agentes AI autónomos. En benchmarks iniciales, mejora el rendimiento de agentes entrenados con él en un 40%.</p>
+      <p class="why">Si estás fine-tuneando agentes propios, ahora hay un dataset abierto de referencia en lugar de tener que generar datos sintéticos desde cero.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 El 88.3% de devs usan AI regularmente: el nuevo baseline para equipos de producto</h3>
+      <p class="what">El 2026 Engineering Benchmarks Report, analizando 8.1 millones de PRs en 4,800 equipos, sitúa el uso regular de AI en 88.3%, subiendo desde 72% en 2024. El 51% del código en GitHub ya es generado o asistido por AI.</p>
+      <p class="why">Si estás construyendo producto y tu equipo no tiene AI coding tools integrados, ya no estás en desventaja: estás fuera del estándar de la industria.</p>
+      <p class="source"><a href="https://www.buildfastwithai.com/blogs/7-ai-tools-changed-developer-workflow-augustt-2026">BuildFastWithAI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Sinch Agent Tools: APIs de comunicación listas para AI coding assistants</h3>
+      <p class="what">Sinch lanzó Agent Tools, un suite de integraciones para VS Code, JetBrains, GitHub Copilot, Claude Code y Cursor que da acceso estructurado a sus APIs de SMS, voz, verificación y email directamente desde el IDE y asistentes de coding AI.</p>
+      <p class="why">Si tu marketplace o app necesita comunicaciones (SMS, verificación, voz), ahora puedes integrar Sinch sin salir de tu AI coding assistant.</p>
+      <p class="source"><a href="https://www.group.sinch.com/media/press-releases-and-news/2026/sinch-launches-agent-tools-for-developers-and-ai-coding-assistants/">Sinch Group</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic abre 10,000 seats gratuitos de Claude para científicos</h3>
+      <p class="what">Anunciado el 27 de agosto: seats estándar gratis y premium a $15/mes (5x más uso) para investigadores principales en universidades e instituciones sin fines de lucro. Cubre ciencias naturales, matemáticas, CS e ingeniería, con planes de expandir más allá de los 10K iniciales.</p>
+      <p class="why">Si colaboras con universidades o tu producto tiene componente de investigación, tus partners académicos ahora tienen acceso enterprise a Claude sin costo.</p>
+      <p class="source"><a href="https://www.unite.ai/anthropic-opens-10000-free-and-discounted-claude-seats-for-scientists/">Unite.AI</a> &bull; <a href="https://www.explainx.ai/blog/claude-team-plan-for-scientists-10000-seats-august-2026">ExplainX</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: restricted mode, cross-session messaging y SendFeedback</h3>
+      <p class="what">Claude Code sumó --restricted (desactiva herramientas que ejecutan código, limita file tools al working directory), messaging entre sesiones independientes vía ListAgents/SendMessage, y un tool SendFeedback que drafea reportes de bugs para tu revisión.</p>
+      <p class="why">Restricted mode es clave si usas Claude Code en CI/CD o entornos shared donde no quieres que el agente ejecute comandos arbitrarios.</p>
+      <p class="source"><a href="https://www.gradually.ai/en/changelogs/claude-code/">Claude Code Changelog</a> &bull; <a href="https://xenospectrum.com/en/claude-code-cross-session-messaging/">XenoSpectrum</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Developer Platform: budgets de sesión, geo-pinning y mid-conversation tool changes</h3>
+      <p class="what">La plataforma de desarrollo de Claude agregó controles de presupuesto por sesión para Managed Agents, geo-pinning de inferencia para data residency, y la capacidad beta de agregar o remover tools entre turnos de una conversación sin perder el prompt cache.</p>
+      <p class="why">Mid-conversation tool changes resuelve el dolor de tener que reiniciar sesiones de agentes cuando necesitas cambiar las herramientas disponibles dinámicamente.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple Workout Buddy: coaching AI en tiempo real en el Apple Watch</h3>
+      <p class="what">Parte de watchOS 26, Workout Buddy usa Apple Intelligence para analizar tu historial de fitness, HRV y frecuencia cardíaca, dando feedback hablado en tiempo real durante running, cycling, HIIT y strength training. La voz está modelada sobre los trainers de Fitness+.</p>
+      <p class="why">Apple convierte health data del Watch en coaching contextual on-device; si construyes en el espacio de fitness/wellness, este es el benchmark de UX a superar.</p>
+      <p class="source"><a href="https://insider.fitt.co/apple-launches-ai-workout-buddy/">Fitt Insider</a> &bull; <a href="https://apple.gadgethacks.com/news/apple-watch-2026-ai-health-coach-finally-transforms-fitness/">Gadget Hacks</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 27/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
