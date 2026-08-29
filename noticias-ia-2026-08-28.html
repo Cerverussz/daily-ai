@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 28 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>28 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Salesforce y Anthropic lanzan Claudeforce: Claude como AI CRO con 37 skills de ventas</h3>
+      <p class="what">Salesforce y Anthropic anunciaron Claudeforce, una integración profunda que trae un plugin con 37 skills prebuilt de ventas (meeting prep, deal health, pipeline review) directamente dentro de Claude. Los sellers pueden razonar sobre contexto de revenue en vivo, automatizar updates de pipeline y tomar acciones gobernadas desde Claude, todo dentro del Trust Boundary de Salesforce.</p>
+      <p class="why">Primer ejemplo real de un CRM enterprise exponiendo su lógica de negocio como skills de un LLM — el patrón a seguir si construyes un SaaS vertical con AI.</p>
+      <p class="source"><a href="https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/">Salesforce</a> &bull; <a href="https://finance.yahoo.com/technology/ai/articles/salesforce-anthropic-announce-claudeforce-1-202100634.html">Yahoo Finance</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 AccuKnox lanza AgentZ: plataforma completa para construir, gobernar y desplegar agentes AI</h3>
+      <p class="what">AgentZ es una plataforma model-agnostic que unifica agentes, sandboxes, workflows, RBAC, inyección de credenciales en runtime y audit traces en un solo stack. Soporta deploy SaaS, on-prem o air-gapped, eliminando la necesidad de armar governance a mano.</p>
+      <p class="why">Si estás construyendo agentes internos para tu producto, esto te ahorra semanas de plumbing en permisos, sandboxing y auditoría que los equipos de seguridad exigen.</p>
+      <p class="source"><a href="https://www.globenewswire.com/news-release/2026/08/27/3351759/0/en/accuknox-launches-agentz-to-help-enterprises-build-run-and-govern-ai-agents-at-scale.html">GlobeNewsWire</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cashfree lanza Relay: Super Agent AI para automatizar operaciones de pago en SMBs</h3>
+      <p class="what">Cashfree Payments lanzó Relay a GA después de un beta desde mayo 2026. Es un agente AI que automatiza operaciones de pago completas para pequeños y medianos negocios — reconciliación, seguimiento y gestión de transacciones sin intervención manual.</p>
+      <p class="why">Patrón claro para founders en fintech/marketplaces: un agente vertical que resuelve un workflow completo de pagos, no solo un chatbot encima de docs.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Gemini 3.7 Flash: modelo workhorse de Google para coding y agentes a mitad de precio</h3>
+      <p class="what">Google lanzó Gemini 3.7 Flash con mejoras masivas en agentes (AutomationBench: 17% → 30.4%) y coding (DeepSWE: 49% → 65.3%) respecto a 3.6 Flash, solo 3 semanas después. Precio promocional: $0.75/M input, $3.75/M output hasta diciembre 2026.</p>
+      <p class="why">A ese precio y rendimiento en agentes, es la opción más competitiva para pipelines de alto volumen donde no necesitas el razonamiento profundo de Opus o Sol.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/">Google Blog</a> &bull; <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/">DeepMind</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI recorta GPT-5.6 Sol &gt;20%: guerra de precios en modelos frontier</h3>
+      <p class="what">OpenAI bajó Sol de $5→$4/M input y $30→$20/M output hasta noviembre 2026, aplicable a API pay-as-you-go y Codex credits. La movida responde directamente a Gemini 3.7 Flash y a la presión de Anthropic en cuentas enterprise.</p>
+      <p class="why">Si usas modelos frontier en producción, es momento de re-evaluar costos — la guerra de precios entre OpenAI, Google y Anthropic beneficia directamente a founders que operan con márgenes ajustados.</p>
+      <p class="source"><a href="https://openai.com/index/gpt-5-6/">OpenAI</a> &bull; <a href="https://enterprisedna.co/resources/news/openai-gpt-56-sol-price-cut-20-percent-frontier-model-august-2026/">Enterprise DNA</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Forcepoint demuestra prompt injection operacional en emails con texto invisible</h3>
+      <p class="what">Forcepoint X-Labs documentó ataques reales de prompt injection donde instrucciones ocultas en emails (CSS zero-font, texto white-on-white) manipulan resumidores AI para cambiar fechas de facturas y omitir nombres. En 10 de 10 intentos, el LLM produjo un resumen manipulado.</p>
+      <p class="why">Si tu producto procesa contenido de terceros con LLMs (emails, docs, scraping), esto ya no es teórico — necesitas sanitización del DOM antes de pasar contenido al modelo.</p>
+      <p class="source"><a href="https://www.forcepoint.com/blog/x-labs/html-payload-hijacks-email-summarizer">Forcepoint Blog</a> &bull; <a href="https://www.darkreading.com/cyber-risk/hidden-prompts-trick-ai-false-email-summaries">Dark Reading</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Copilot cae al 51% de market share; Claude Code y Cursor suben al 18% cada uno</h3>
+      <p class="what">Según el Stack Overflow Developer Survey 2026, GitHub Copilot cayó del 67% al 51% de share entre developers profesionales. Claude Code y Cursor pasaron de casi cero a 18% cada uno. En la encuesta de JetBrains, 46% de developers senior elegirían Claude Code como su herramienta diaria.</p>
+      <p class="why">El stack ganador de 2026 es dual: Cursor para edición diaria + Claude Code para tareas complejas en terminal — si solo usas uno, estás dejando productividad sobre la mesa.</p>
+      <p class="source"><a href="https://pasqualepillitteri.it/en/news/3392/github-copilot-cursor-claude-code-ai-coding-showdown-2026">Pasquale Pillitteri</a> &bull; <a href="https://tech-insider.org/ie/github-copilot-market-share-2026/">Tech Insider</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Temporal: 80.8% de developers ya usan agentes AI diariamente</h3>
+      <p class="what">El reporte State of Development 2026 de Temporal revela que 80.8% de developers encuestados usan agentes AI a diario o más, un salto desde 47.3% un año antes. Los agentes pasaron de experimento a herramienta de producción estándar en la mayoría de organizaciones de ingeniería.</p>
+      <p class="why">Si tu producto o marketplace aún no tiene un flujo agente, estás construyendo para el 19% que no los usa — el mercado ya se movió.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google Expert Intelligence: tus libros de Play Books ahora disponibles en Gemini Notebook</h3>
+      <p class="what">Google lanzó Expert Intelligence, una feature que permite importar ebooks comprados en Google Play Books directamente a Gemini Notebook para hacer preguntas, generar resúmenes, infografías, quizzes y audio overviews grounded en el contenido del libro. La feature se expandirá a Gemini App y AI Mode.</p>
+      <p class="why">El patrón de "trae tu propia fuente experta + AI grounded" es replicable: si tu producto maneja contenido profesional, esta es la UX a copiar.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/products/gemini-notebook/expert-intelligence-leading-sources/">Google Blog</a> &bull; <a href="https://9to5google.com/2026/08/27/gemini-notebook-play-books/">9to5Google</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code: cross-session messaging, restricted mode y auto mode por defecto</h3>
+      <p class="what">Claude Code v2.1.224 introdujo cross-session messaging: sesiones separadas en diferentes terminales pueden descubrirse y pasarse decisiones o hallazgos automáticamente. También se agregó restricted mode para control granular, usage credits para Enterprise, y auto mode como permission mode por defecto.</p>
+      <p class="why">Cross-session messaging convierte a Claude Code en un sistema multi-agente real — puedes tener un agente haciendo refactor mientras otro corre tests, y se coordinan solos.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/whats-new/2026-w32">Claude Code Docs</a> &bull; <a href="https://www.developersdigest.tech/blog/claude-code-cross-session-messaging-2026">Developers Digest</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic activa watermarking global en texto de Claude para cumplir EU AI Act</h3>
+      <p class="what">Desde el 2 de agosto, todos los modelos nuevos de Claude incluyen marcas de agua invisibles en texto generado, cumpliendo el Artículo 50 del EU AI Act. La marca sobrevive copy-paste y se aplica globalmente, no solo en Europa. Anthropic publicará herramientas de detección.</p>
+      <p class="why">Si usas Claude en producción para generar contenido visible al usuario, necesitas saber que ahora lleva watermark — relevante para compliance y para cómo presentas contenido AI-generated.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-text-watermark">Anthropic</a> &bull; <a href="https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Sports y wellness como activos "AI-proof": inversiones récord en experiencias físicas</h3>
+      <p class="what">La venta de los Lakers por $12.5B y la ronda de $3B de MARI (Ari Emanuel) para tenis y endurance events reflejan una tesis de inversión: activos de experiencia física son los que AI no puede replicar. El wellness IRL se consolida como asset class defensible, con plataformas como Playlist (Mindbody+ClassPass+EGYM) integrando AI para ops pero apostando por la experiencia presencial.</p>
+      <p class="why">Para founders en marketplaces de servicios profesionales: la oportunidad no es reemplazar lo presencial con AI, sino usar AI para hacer la experiencia presencial más eficiente y accesible.</p>
+      <p class="source"><a href="https://insider.fitt.co/the-rise-of-ai-proof-assets-sports-wellness/">Fitt Insider</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 28/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
