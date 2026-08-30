@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 29 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>29 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Salesforce y Anthropic lanzan Claudeforce: Claude como cerebro del CRM con 37 skills de ventas</h3>
+      <p class="what">Salesforce y Anthropic anunciaron Claudeforce el 26 de agosto: Claude se integra como modelo de razonamiento dentro de Salesforce, y Salesforce se convierte en plugin de Claude con 37 skills prebuilt de ventas que automatizan pipeline, actualizaciones y acciones gobernadas. Ambas empresas se adoptan mutuamente como clientes estrat&eacute;gicos.</p>
+      <p class="why">Es el patr&oacute;n a seguir si construyes un SaaS vertical: exponer tu producto como plugin de un LLM con skills especializados es la nueva integraci&oacute;n nativa.</p>
+      <p class="source"><a href="https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/">Salesforce</a> &bull; <a href="https://finance.yahoo.com/technology/ai/articles/salesforce-anthropic-announce-claudeforce-1-202100634.html">Yahoo Finance</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; AccuKnox lanza AgentZ: plataforma completa para llevar agentes AI a producci&oacute;n</h3>
+      <p class="what">AgentZ (lanzado el 27 de agosto) es model-agnostic y empaqueta agentes, sandboxes, workflows, RBAC, inyecci&oacute;n de credenciales en runtime y audit traces en una sola plataforma. Soporta deploy en SaaS, on-prem o air-gapped.</p>
+      <p class="why">Si est&aacute;s armando la infra de gobernanza para tus agentes a mano, esto te ahorra meses de plumbing en seguridad y compliance.</p>
+      <p class="source"><a href="https://www.globenewswire.com/news-release/2026/08/27/3351759/0/en/accuknox-launches-agentz-to-help-enterprises-build-run-and-govern-ai-agents-at-scale.html">GlobeNewsWire</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>AWS Web Search en Bedrock AgentCore llega a GA</h3>
+      <p class="what">Desde el 21 de agosto, los agentes en Amazon Bedrock pueden buscar en la web en tiempo real como herramienta server-side nativa, con citas incluidas y sin que los datos salgan de la cuenta AWS del cliente.</p>
+      <p class="why">Si tu backend ya corre en AWS, ahora puedes darle a tus agentes acceso a informaci&oacute;n actualizada sin montar scrapers ni APIs de b&uacute;squeda externas.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; NVIDIA Nemotron 3.5 Lightning: agentes always-on que corren en una laptop</h3>
+      <p class="what">Modelo MoE de 30B par&aacute;metros con solo 3B activos por forward pass, optimizado para agentes de larga duraci&oacute;n con baja latencia. Incluye quantizaci&oacute;n NVFP4, speculative decoding, y hasta 4x velocidad de output vs modelos similares. Viene con NeMo Switchyard, un router open-source que enruta cada paso del workflow al mejor modelo.</p>
+      <p class="why">Un modelo de agentes que corre en GPU de laptop cambia la ecuaci&oacute;n para features de AI offline en tu app, especialmente si combinas con edge computing en Android.</p>
+      <p class="source"><a href="https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/">NVIDIA Blog</a> &bull; <a href="https://www.cnbc.com/2026/08/11/nvidia-releases-nemotron-3point5-lightning-open-source-ai-model-.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Meta Muse Glimmer: 30B open-source multimodal para agentes on-device</h3>
+      <p class="what">Modelo de 30B params destilado de Muse Spark, bajo Apache 2.0, con visi&oacute;n integrada (2B ViT encoder + 28B decoder). Corre en un solo GPU de consumo (24GB VRAM) e incluye build ExecuTorch para ejecuci&oacute;n on-device. Lidera benchmarks agentic: MCP Atlas 75.5, SWE-Bench Pro 51.2.</p>
+      <p class="why">Un modelo multimodal con tool-use y recovery de fallos que corre local y es Apache 2.0 es exactamente lo que necesitas para features de AI embebida en tu producto sin depender de cloud.</p>
+      <p class="source"><a href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model">Meta Research</a> &bull; <a href="https://www.infoq.com/news/2026/08/meta-muse-glimmer/">InfoQ</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>A2A de Google se une al Agentic AI Foundation junto a MCP: los est&aacute;ndares de agentes bajo un mismo techo</h3>
+      <p class="what">El 20 de agosto, el protocolo Agent-to-Agent (A2A) de Google se uni&oacute; a la Agentic AI Foundation de la Linux Foundation, la misma entidad que gobierna MCP de Anthropic. AAIF ya tiene 250+ miembros incluyendo Google, Microsoft, Amazon, OpenAI y Anthropic.</p>
+      <p class="why">MCP conecta agentes con herramientas (vertical), A2A conecta agentes entre s&iacute; (horizontal); ambos bajo gobernanza neutral significa que puedes apostar por estos est&aacute;ndares sin lock-in.</p>
+      <p class="source"><a href="https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/">Google Developers</a> &bull; <a href="https://www.axios.com/2026/08/17/a2a-agentic-ai-foundation-open-ai-standards">Axios</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Construct Computer lidera Product Hunt: AI coworker con desktop cloud completo</h3>
+      <p class="what">Lanz&oacute; el 29 de agosto con 313+ upvotes. Cada agente AI recibe su propio desktop cloud con browser, terminal, archivos, email y calendario, con memoria persistente entre sesiones. Funciona como un coworker que opera tu computador por ti.</p>
+      <p class="why">La tendencia de agentes con entorno completo (no solo chat) est&aacute; madurando; si construyes herramientas de productividad, este es el benchmark de UX a superar.</p>
+      <p class="source"><a href="https://www.producthunt.com/products/construct-computer">Product Hunt</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cashfree Relay pasa a GA: super-agente AI que automatiza pagos para pymes</h3>
+      <p class="what">Tras beta desde mayo, Cashfree lanz&oacute; Relay a disponibilidad general: un agente AI que automatiza operaciones de pago completas para peque&ntilde;os y medianos negocios, desde conciliaci&oacute;n hasta seguimiento de transacciones.</p>
+      <p class="why">Ejemplo concreto de c&oacute;mo un agente AI vertical en fintech pasa de demo a producto real en producci&oacute;n sirviendo a pymes.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Claude Sonnet 5 congela precio en $2/$10 permanentemente (pero ojo con el tokenizer)</h3>
+      <p class="what">Anthropic confirm&oacute; que el precio introductorio de Sonnet 5 ($2/$10 por mill&oacute;n de tokens) es ahora el precio est&aacute;ndar; la subida a $3/$15 del 1 de septiembre fue cancelada. Sin embargo, el nuevo tokenizer genera ~30% m&aacute;s tokens, lo que puede significar un aumento efectivo de costo en algunos workloads.</p>
+      <p class="why">Buena noticia para tu presupuesto de API, pero haz benchmark real de tu consumo de tokens con el nuevo tokenizer antes de asumir que pagas lo mismo.</p>
+      <p class="source"><a href="https://explainx.ai/blog/anthropic-sonnet-5-permanent-pricing-august-2026">ExplainX</a> &bull; <a href="https://enterprisedna.co/resources/news/anthropic-claude-sonnet-5-pricing-permanent-reversal-august-2026/">Enterprise DNA</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: restricted mode, cross-session messaging y self-hosted runners</h3>
+      <p class="what">Claude Code v2.1.224+ (agosto) trae restricted mode para entornos controlados, cross-session messaging (sesiones de Claude Code que se comunican entre s&iacute; via ListAgents/SendMessage), y self-hosted runners. La v2.1.251 expandi&oacute; messaging a Bedrock, Vertex y Foundry.</p>
+      <p class="why">Cross-session messaging habilita workflows multi-agente reales donde un agente delega subtareas a otro, algo que antes requer&iacute;a orquestaci&oacute;n externa.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/whats-new/2026-w32">Claude Code Docs</a> &bull; <a href="https://www.digitalapplied.com/blog/claude-code-self-hosted-runners-cross-session-agent-messaging">Digital Applied</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Technogym BioStrength: equipos de fuerza con AI que se auto-ajustan por usuario</h3>
+      <p class="what">Technogym lanz&oacute; BioStrength, una l&iacute;nea de equipos de fuerza donde un sistema motorizado reemplaza las pesas tradicionales y la AI ajusta autom&aacute;ticamente carga, posici&oacute;n de asiento y rango de movimiento seg&uacute;n el perfil y rendimiento hist&oacute;rico de cada usuario. Promete 30% mejores resultados en el mismo tiempo.</p>
+      <p class="why">El patr&oacute;n de personalizaci&oacute;n autom&aacute;tica por perfil de usuario es directamente replicable en cualquier marketplace de servicios de fitness o coaching.</p>
+      <p class="source"><a href="https://athletechnews.com/technogym-ai-ecosystem-personal-trainers-gyms/">Athletech News</a> &bull; <a href="https://www.technogym.com/en-INT/biostrength-2026-update/">Technogym</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Digital health en r&eacute;cord: $7.4B en H1 2026, wearables AI-driven dominan</h3>
+      <p class="what">Startups de salud digital recaudaron $7.4B en 244 deals en H1 2026 (superando H1 2025 por $1B). La ventaja competitiva se mueve hacia workflows cl&iacute;nicos complejos orquestados por AI, no tareas individuales. Lanzamientos clave de agosto: EEG headbands, smart rings con AI, y el Pixel Watch 5 de Google.</p>
+      <p class="why">Si apuntas a health/wellness tech, el capital est&aacute; ah&iacute;, pero los inversores ahora exigen outcomes medibles y orquestaci&oacute;n cl&iacute;nica, no features de AI aislados.</p>
+      <p class="source"><a href="https://openloophealth.com/blog/digital-health-trends-and-news-august-2026">Open Loop Health</a> &bull; <a href="https://stockstoday.com/neurotech-meets-the-gym-a-week-of-wearables-ai-coaches-and-stair-climbing-science/">Stocks Today</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 29/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
