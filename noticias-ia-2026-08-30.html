@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 30 de Agosto 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>30 de agosto de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI lanza WebMCP: agentes de ChatGPT ahora interactuan directamente con websites</h3>
+      <p class="what">OpenAI introdujo "Site Tools", su implementacion de WebMCP, que permite a agentes de ChatGPT descubrir y ejecutar funciones JavaScript estructuradas en sitios web compatibles. Shopify ya tiene millones de storefronts habilitados, y Expedia, Instacart y Target estan experimentando con el estandar.</p>
+      <p class="why">Si tienes un marketplace o plataforma web, habilitar WebMCP convierte tu sitio en una herramienta que los agentes AI pueden usar directamente, abriendo un nuevo canal de adquisicion.</p>
+      <p class="source"><a href="https://www.vktr.com/ai-platforms/openai-adds-webmcp-to-chatgpts-browser/">VKTR</a> &bull; <a href="https://www.searchenginejournal.com/chatgpt-adds-webmcp-support/587237/">Search Engine Journal</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI corta acceso de modelos a Cursor tras adquisicion por SpaceX</h3>
+      <p class="what">OpenAI anuncio que terminara el contrato que provee modelos AI a Cursor el 12 de noviembre, tras la adquisicion de $60B de Cursor por SpaceX. Anthropic respondio el mismo dia comprometiendo mas compute de Claude para Cursor post-SpaceX.</p>
+      <p class="why">OpenAI solo representaba ~5% del trafico de Cursor, pero la movida confirma que tu stack de coding AI debe ser multi-modelo; depender de un solo proveedor es riesgo de negocio real.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html">CNBC</a> &bull; <a href="https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/">OpenAI Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>McKinsey: 32% de organizaciones ya saltean comprar software porque lo construyen con AI</h3>
+      <p class="what">El reporte "State of AI 2026" de McKinsey revela que un tercio de las organizaciones encuestadas han dejado de comprar al menos un producto de software porque pueden construirlo internamente con herramientas de coding agente. El 40% de empresas con +$1B de revenue estan escalando agentes AI.</p>
+      <p class="why">La ventana para SaaS vertical comoditizable se esta cerrando; si tu producto no tiene un moat real mas alla del CRUD, tus clientes enterprise van a reemplazarte con un agente interno.</p>
+      <p class="source"><a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai">McKinsey</a> &bull; <a href="https://www.theregister.com/ai-and-ml/2026/08/25/mckinsey-says-enterprise-ai-is-finally-on-the-road-to-roi/5292388">The Register</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones tecnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Grok 4.6 de xAI: modelo frontier a mitad de precio, optimizado para agentes de larga duracion</h3>
+      <p class="what">xAI lanzo Grok 4.6 con 500K de contexto, construido para tareas agente multi-paso que requieren auto-verificacion. A $2/$6 por millon de tokens (input/output), cuesta aproximadamente la mitad que modelos frontier comparables. Ya disponible en Cursor, API y OpenRouter.</p>
+      <p class="why">Otro modelo frontier viable para tus pipelines de agentes en produccion, y a este precio puedes correr tareas de larga duracion sin que el costo se dispare.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/spacexai-debuts-grok-4-6-overtaking-kimi-k3s-performance-and-matching-gpt-5-6-sol-for-worlds-third-best-on-artificial-analysis">VentureBeat</a> &bull; <a href="https://dev.to/jamilxt/grok-46-released-benchmarks-pricing-and-what-it-means-for-agent-builders-28ob">DEV Community</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>NVIDIA Vera Rubin en produccion: hasta 10x mas throughput agente que Blackwell</h3>
+      <p class="what">NVIDIA confirmo que los sistemas Vera Rubin (GPU R100 con 288 GB HBM4, 22 TB/s de ancho de banda) estan en produccion completa y llegando a partners. Optimizados para inferencia FP4/FP6, contexto largo y tareas multi-modales, prometen hasta 30x mas trabajo por watt para agentes AI.</p>
+      <p class="why">Esto acelera la disponibilidad de inferencia barata para agentes; el costo por request de tus features AI en produccion seguira bajando en los proximos trimestres.</p>
+      <p class="source"><a href="https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory">NVIDIA Newsroom</a> &bull; <a href="https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/">NVIDIA Developer Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 On-device AI cruza el umbral de sub-20ms en Android: edge AI es produccion-ready</h3>
+      <p class="what">Benchmarks recientes confirman inferencia sub-20ms para modelos de computer vision en dispositivos moviles con NPUs estandar. Qualcomm Snapdragon Reality Elite ofrece 48 TOPS y puede correr LLMs y modelos de vision directamente on-device.</p>
+      <p class="why">Para apps Android que necesitan AI en tiempo real (camara, AR, coaching deportivo), ya no hay excusa tecnica para depender del cloud; la latencia y privacidad del edge son superiores.</p>
+      <p class="source"><a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms">AlephZero Labs</a> &bull; <a href="https://dev.to/anna_medley_8d99d5e4ef102/the-rise-of-on-device-ai-how-android-developers-can-build-smarter-apps-in-2026-17ci">DEV Community</a></p>
+    </div>
+
+    <!-- EJE 3: Creacion de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Replit Agent Market: el app store para agentes AI ya opera con pagos reales</h3>
+      <p class="what">Replit Agent Market funciona como un app store donde agentes AI corren como aplicaciones completas con su propio compute, memoria e integraciones. Soporta compras directas, suscripciones y pagos one-time, creando un marketplace real para builders de agentes.</p>
+      <p class="why">Si estas construyendo agentes AI, ahora hay un canal de distribucion y monetizacion listo para usar sin tener que armar tu propia infra de pagos y hosting.</p>
+      <p class="source"><a href="https://www.digitalapplied.com/blog/ai-agent-marketplaces-2026-discovery-distribution">Digital Applied</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 WebMCP Challenge de OpenAI: $3K por ganador para habilitar sitios web para agentes</h3>
+      <p class="what">OpenAI lanzo un challenge de 10 dias (cierra 3 de septiembre) con premios de $3,000 por ganador mas prizes de Shopify, Google Chrome, Netlify, Cloudflare y Vercel. El objetivo: crear sitios WebMCP-enabled que agentes AI puedan usar nativamente.</p>
+      <p class="why">Es una senal clara de hacia donde va la web; los founders que habiliten sus productos para agentes primero capturan el trafico que los agentes van a dirigir.</p>
+      <p class="source"><a href="https://www.netlify.com/blog/compete-openai-webmcp-challenge/">Netlify Blog</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claudeforce: Salesforce integra Claude como motor de razonamiento default en todo su ecosistema</h3>
+      <p class="what">Salesforce y Anthropic anunciaron Claudeforce, que opera en tres direcciones: Salesforce dentro de Claude (37 skills prebuilt de ventas), Claude dentro de Agentforce, y Claude dentro de Slack. Salesforce gastara ~$300M en tokens de Anthropic solo en 2026.</p>
+      <p class="why">Es el caso de uso enterprise mas grande de Claude hasta ahora; si construyes sobre el ecosistema Salesforce, tus integraciones ahora pueden aprovechar Claude nativamente.</p>
+      <p class="source"><a href="https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/">Salesforce</a> &bull; <a href="https://finance.yahoo.com/technology/ai/articles/salesforce-claudeforce-deal-anthropic-signals-102859998.html">Yahoo Finance</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: promo del 50% termina el 14 de sept, reemplazada por +25% permanente</h3>
+      <p class="what">Anthropic anuncio que la promocion actual de +50% en limites semanales de Claude Code termina el 14 de septiembre. Sera reemplazada por un incremento permanente del 25% en todos los planes (Pro, Max, Team, Enterprise). Para usuarios Max, esto implica un recorte neto de ~17% vs la capacidad actual.</p>
+      <p class="why">Si dependes de Claude Code para tu flujo diario, planifica: despues del 14 de sept tendras menos capacidad semanal que hoy, especialmente en Max.</p>
+      <p class="source"><a href="https://www.explainx.ai/blog/anthropic-claude-code-limits-17-percent-cut-september-2026-august-2026">ExplainX</a> &bull; <a href="https://aicatchup.com/news/claude-code-weekly-limits-50-percent-promo">AI Catchup</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code agrega /design, output conciso y Remote Control desde el telefono</h3>
+      <p class="what">Las actualizaciones recientes de Claude Code incluyen /design para crear mockups UI editables desde la CLI, modo "Concise" que elimina texto innecesario, y la capacidad de iniciar sesiones remotas desde el telefono via device cards en Remote Control.</p>
+      <p class="why">El combo /design + implementacion en el mismo flujo es exactamente lo que necesitas para iterar rapido en UI sin salir del terminal.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/whats-new">Claude Code Docs</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Wearables 2026: de tracking pasivo a coaching activo con AI on-device</h3>
+      <p class="what">El ACSM nombro wearable tech como tendencia #1 global de fitness para 2026, con casi la mitad de adultos en EE.UU. usando un dispositivo. La mayor evolucion: los dispositivos ya no solo registran datos, sino que dan instrucciones personalizadas en tiempo real basadas en recovery, sueno y readiness fisiologico.</p>
+      <p class="why">Si construyes una plataforma de coaching o fitness, la integracion con wearables que proveen datos continuos y coaching AI es ahora el estandar esperado, no un diferenciador.</p>
+      <p class="source"><a href="https://athletechnews.com/ces-2026-ai-powered-health-fitness-wearables/">Athletech News</a> &bull; <a href="https://thewellproven.com/fitness-wearables-2026/">The Well Proven</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 30/08/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
