@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 1 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>1 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic lanza Claude Fable 5.1 y Mythos 5.1: m&aacute;s baratos y con watermarking integrado</h3>
+      <p class="what">Anthropic lanz&oacute; sus dos nuevos modelos frontier: Fable 5.1 (disponible para todos) y Mythos 5.1 (acceso restringido para ciberseguridad e investigaci&oacute;n). Ambos tienen 1M de contexto, 128K de output m&aacute;ximo, y thinking adaptativo siempre activo. Fable 5.1 reduce costos hasta 45% en tareas ag&eacute;nticas gracias a un recorte del 75% en cache reads.</p>
+      <p class="why">Menos costo por token en flujos agente significa que tus pipelines de coding asistido y automatizaci&oacute;n se vuelven viables en volumen sin cambiar de proveedor.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads">VentureBeat</a> &bull; <a href="https://tech-ish.com/2026/09/01/anthropic-releases-claude-fable-5-1-and-mythos-5-1-here-is-what-changed/">Tech-ish</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claudeforce: Salesforce + Anthropic lanzan beta abierta en septiembre</h3>
+      <p class="what">Salesforce y Anthropic anunciaron Claudeforce, un plugin con 37 skills prebuilds de ventas que permite a sellers razonar sobre datos de pipeline en vivo, automatizar updates de CRM y tomar acciones gobernadas directamente desde Claude. La beta abierta arranca este mes.</p>
+      <p class="why">Si tu producto vende a equipos de ventas o se integra con Salesforce, Claudeforce se convierte en un canal de distribuci&oacute;n que tus usuarios ya van a tener activo.</p>
+      <p class="source"><a href="https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/">Salesforce</a> &bull; <a href="https://www.anthropic.com/news/salesforce-anthropic-expanded-partnership">Anthropic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>MCP supera 400 millones de descargas mensuales de SDK</h3>
+      <p class="what">El Model Context Protocol de Anthropic alcanz&oacute; 400M de descargas mensuales, 4x respecto a inicios de a&ntilde;o. La spec MCP 2026-07-28 introdujo un core stateless dise&ntilde;ado para escala enterprise, y el 45% de implementaciones ya est&aacute;n en producci&oacute;n.</p>
+      <p class="why">MCP ya no es experimental; si tu servicio no expone un servidor MCP, est&aacute;s fuera del ecosistema de agentes que tus usuarios empiezan a usar como interfaz principal.</p>
+      <p class="source"><a href="https://eu.36kr.com/en/p/3916379879861638">36Kr</a> &bull; <a href="https://affinco.com/mcp-adoption-statistics/">Affinco</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Qwen3.8-Flash-Next: Alibaba preview de la arquitectura Qwen4, 125B params con solo 6B activos</h3>
+      <p class="what">Alibaba liber&oacute; Qwen3.8-Flash-Next (open-weight, Apache 2.0), un modelo experimental MoE de 125B par&aacute;metros que solo activa 6B por token. Usa una arquitectura h&iacute;brida nueva: Gated DeltaNet + Sparse Attention + Gated Residual, con contexto nativo de 262K extensible a 1M. Es el preview de lo que ser&aacute; Qwen4.</p>
+      <p class="why">6B activos con rendimiento competitivo significa que puedes correr inference en hardware modesto o reducir dr&aacute;sticamente costos de GPU en tu backend.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/08/26/alibabas-qwen-team-releases-qwen3-8-flash-next-a-125b-multimodal-moe-with-6b-active-parameters-previewing-the-qwen4-architecture/">MarkTechPost</a> &bull; <a href="https://www.unite.ai/qwen3-8-flash-next-previews-qwen4-architecture-with-6b-active-parameters/">Unite.AI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Nvidia invierte $3.5B en MediaTek: chips AI custom para edge, PCs y autos</h3>
+      <p class="what">Nvidia invirti&oacute; $3.5B en MediaTek v&iacute;a bonos convertibles para que adopte NVLink Fusion, permitiendo a hyperscalers construir chips AI custom integrados con la infra de Nvidia. La alianza tambi&eacute;n cubre chips para PCs (RTX/DGX Spark) y plataformas automotrices con Dimensity Auto.</p>
+      <p class="why">MediaTek domina el mercado de chips m&oacute;viles; esta alianza acelera que AI de alta capacidad llegue a dispositivos Android de gama media, no solo flagships.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/">TechCrunch</a> &bull; <a href="https://www.cnbc.com/2026/09/01/nvidia-deal-mediatek-shares.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>NoRA: LoRA normalizado que mejora fine-tuning sin costos extra</h3>
+      <p class="what">Un nuevo paper (arXiv 2608.31036) introduce Normalized Low-Rank Adaptation, que estabiliza el entrenamiento de LoRA normalizando las matrices de down-projection. Reporta convergencia m&aacute;s r&aacute;pida, mejor estabilidad y menos olvido catastr&oacute;fico en pretraining, SFT y RL, sin par&aacute;metros extra ni overhead en inference.</p>
+      <p class="why">Si haces fine-tuning de modelos para tu producto, NoRA es un drop-in replacement de LoRA que mejora resultados sin cambiar tu pipeline.</p>
+      <p class="source"><a href="https://arxiv.org/abs/2608.31036">arXiv</a></p>
+    </div>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item">
+      <h3>Pent&aacute;gono expande GenAI.mil: ChatGPT, Grok y Gemini para 3M de usuarios</h3>
+      <p class="what">El Departamento de Defensa agreg&oacute; ChatGPT Mil (OpenAI) y Grok for Government (xAI/Starshield) a GenAI.mil, junto a Google Gemini. La plataforma ya tiene 1.7M de usuarios &uacute;nicos y maneja informaci&oacute;n CUI a Impact Level 5, con datos aislados que no entrenan modelos comerciales.</p>
+      <p class="why">Es la mayor implementaci&oacute;n multi-modelo de AI enterprise del mundo; el patr&oacute;n de portal multi-LLM con governance centralizada es replicable para cualquier plataforma B2B.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/">TechCrunch</a> &bull; <a href="https://fortune.com/2026/09/01/pentagon-chatgpt-grok-government-military-ai-members-pete-hegseth-defense-department/">Fortune</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 ConscioussAI: agente aut&oacute;nomo que controla tu tel&eacute;fono y PC</h3>
+      <p class="what">ConscioussAI v2026.1.33 Beta es un agente AI de nivel sistema para macOS, Windows, iOS y Android que controla apps, navega workflows, usa el browser y entiende el contexto de pantalla. Incluye SOL, una capa de mensajer&iacute;a SMS para dar instrucciones sin abrir otra app.</p>
+      <p class="why">Un agente cross-platform que opera sobre el OS es la interfaz que puede reemplazar la navegaci&oacute;n manual de tu marketplace o app; prep&aacute;rate para que tus usuarios interact&uacute;en v&iacute;a agente, no v&iacute;a UI.</p>
+      <p class="source"><a href="https://www.conscioussai.com/">ConscioussAI</a> &bull; <a href="https://startupcorners.com/digest/product-digest-2026-09-01">StartupCorners</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Almanac (YC S26): el agente AI con cerebro organizacional completo</h3>
+      <p class="what">Almanac, reci&eacute;n salido de YC Summer 2026, es un agente construido sobre Hermes que ingiere Gmail, Calendar, GitHub, Slack, docs y notas de reuniones para crear una wiki auto-actualizada de toda tu empresa. Tiene terminal, browser y puede ejecutar acciones reales en tus cuentas.</p>
+      <p class="why">Resolver&oacute;n de contexto organizacional persistente es el diferencial; si est&aacute;s construyendo un producto B2B, este es el patr&oacute;n de agente que tus clientes van a esperar.</p>
+      <p class="source"><a href="https://news.ycombinator.com/item?id=49511007">Hacker News</a> &bull; <a href="https://www.ycombinator.com/companies/almanac">Y Combinator</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 John Ternus es CEO de Apple: anticipa &ldquo;huge launch&rdquo; la pr&oacute;xima semana</h3>
+      <p class="what">John Ternus asumi&oacute; como CEO de Apple el 1 de septiembre, reemplazando a Tim Cook tras 15 a&ntilde;os. Con 25 a&ntilde;os en Apple liderando hardware (iPhone, iPad, AirPods, Mac), su primer memo interno promete un &ldquo;gran lanzamiento la pr&oacute;xima semana&rdquo;.</p>
+      <p class="why">Un CEO de hardware en Apple probablemente acelera la estrategia de AI on-device; lo que Apple lance en chips y modelos edge define qu&eacute; puedes hacer en iOS/Android a mediano plazo.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/01/john-ternus-hypes-huge-launch-next-week-in-first-memo-as-apple-ceo/">TechCrunch</a> &bull; <a href="https://9to5mac.com/2026/09/01/apple-leadership-page-updated-as-john-ternus-becomes-the-new-ceo/">9to5Mac</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Healthcare AI lidera lanzamientos de producto en septiembre 2026</h3>
+      <p class="what">El vertical de healthcare AI domina los lanzamientos de startups en septiembre: remote care, operaciones de proveedores, herramientas hospitalarias, soporte pedi&aacute;trico y testing en casa. Los wearables de fitness evolucionaron de tracking pasivo a coaching AI activo con programaci&oacute;n adaptativa basada en HRV, sue&ntilde;o y fatiga.</p>
+      <p class="why">Si apuntas al cruce de sports tech y AI, el mercado ya se movi&oacute; de &ldquo;registrar datos&rdquo; a &ldquo;prescribir acciones&rdquo;; ese es el feature que diferencia.</p>
+      <p class="source"><a href="https://www.sensai.fit/blog/best-ai-workout-app">SensAI</a> &bull; <a href="https://bodymotionlab.com/blog/ai-workout-programming-wearables-2026">Body Motion Lab</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 01/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
