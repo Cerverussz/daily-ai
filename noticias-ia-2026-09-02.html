@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 2 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>2 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Fable 5.1 y Mythos 5.1: nuevo SOTA en coding con 75% menos en cache reads</h3>
+      <p class="what">Anthropic lanz&oacute; Fable 5.1 y Mythos 5.1 el 1 de septiembre &mdash; mismo modelo, distintos niveles de safeguards. Fable 5.1 lidera SWE-bench Pro con 81.2%, sube Terminal-Bench de 42% a 55.8%, y reduce costos hasta 45% en trabajo ag&eacute;ntico gracias a un recorte de 75% en cache reads. 1M tokens de contexto, 128K de output.</p>
+      <p class="why">Si usas Claude Code o la API para tu producto, Fable 5.1 te da mejor rendimiento en coding complejo pagando menos &mdash; la actualizaci&oacute;n es inmediata sin cambiar c&oacute;digo.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads">VentureBeat</a> &bull; <a href="https://www.macrumors.com/2026/09/01/anthropic-claude-fable-5-1/">MacRumors</a> &bull; <a href="https://simonwillison.net/2026/Sep/1/claude-fable-5-1/">Simon Willison</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Enterprise Frontier Safeguards: logs en tu cloud, detecci&oacute;n de misuso sin ver tu data</h3>
+      <p class="what">EFS combina zero data retention con detecci&oacute;n automatizada de misuso, almacenando logs de actividad en AWS S3, Azure Blob o GCS del cliente bajo sus propias llaves de encripci&oacute;n. Solo resultados de detecci&oacute;n viajan de Anthropic al cliente, sin revisi&oacute;n humana del contenido.</p>
+      <p class="why">Si est&aacute;s integrando Claude en un producto B2B donde compliance importa (fintech, salud, legal), EFS elimina la objeci&oacute;n principal de tus enterprise buyers.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/enterprise-frontier-safeguards">Anthropic</a> &bull; <a href="https://www.marktechpost.com/2026/09/02/anthropic-enterprise-frontier-safeguards-efs/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Sonnet 5 se queda en $2/$10 por mill&oacute;n de tokens &mdash; definitivamente</h3>
+      <p class="what">La subida de precio programada para el 1 de septiembre ($3/$15) fue cancelada permanentemente. Anthropic confirm&oacute; que el pricing introductorio de Sonnet 5 ($2/M input, $10/M output) es ahora el precio est&aacute;ndar.</p>
+      <p class="why">Buena noticia para quienes usan Sonnet como modelo de producci&oacute;n: tu costo por request no va a cambiar, puedes planificar unit economics con confianza.</p>
+      <p class="source"><a href="https://enterprisedna.co/resources/news/anthropic-claude-sonnet-5-pricing-permanent-reversal-august-2026/">Enterprise DNA</a> &bull; <a href="https://techjournal.org/claude-sonnet-5-pricing-now-permanent">TechJournal</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>OpenAI presenta Astra: primer modelo que cruza el umbral "Cr&iacute;tico" en ciberseguridad</h3>
+      <p class="what">Astra es el primer LLM que supera el threshold "Critical" del Preparedness Framework de OpenAI &mdash; puede descubrir y explotar zero-days aut&oacute;nomamente. El acceso a capacidades cyber avanzadas ser&aacute; restringido inicialmente a testers aprobados v&iacute;a Daybreak Blue.</p>
+      <p class="why">Marca un punto de inflexi&oacute;n: los modelos ahora son capaces de encontrar vulnerabilidades reales sin gu&iacute;a humana, lo que cambia el panorama de seguridad para cualquier producto que exponga APIs.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/">TechCrunch</a> &bull; <a href="https://openai.com/index/pacing-model-development-cyber-capabilities/">OpenAI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Kilo Code para JetBrains: multi-agent control room open-source</h3>
+      <p class="what">Kilo Code se reconstruy&oacute; como plugin nativo de Kotlin para JetBrains, permitiendo correr m&uacute;ltiples agentes de coding en paralelo, cada uno con su propio git worktree aislado, run configurations y tracking de PRs desde un solo IDE. Soporta 500+ modelos con BYOK.</p>
+      <p class="why">Si desarrollas Android en Android Studio o IntelliJ, esto es una alternativa open-source seria a Cursor con soporte nativo de multi-agente que no existe en ning&uacute;n otro plugin.</p>
+      <p class="source"><a href="https://blog.kilo.ai/p/kilo-for-jetbrains-a-multi-agent-control-room">Kilo Blog</a> &bull; <a href="https://kilo.ai/jetbrains">kilo.ai</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Android September Drop llega sin Gemini Intelligence: el 12GB RAM barrier</h3>
+      <p class="what">Google lanz&oacute; la actualizaci&oacute;n de septiembre para Android con mejoras en Find Hub y Messages, pero Gemini Intelligence &mdash; el suite ag&eacute;ntico que automatiza tareas across apps &mdash; est&aacute; ausente. Requiere 12GB de RAM, dejando fuera a la mayor&iacute;a de dispositivos del mercado.</p>
+      <p class="why">Si planeas integrar features de Gemini Intelligence en tu app Android, ten en cuenta que el addressable market real es solo flagships recientes &mdash; planifica fallbacks para el resto.</p>
+      <p class="source"><a href="https://www.forbes.com/sites/jaymcgregor/2026/09/02/google-android-september-drop-free-upgrade-gemini-intelligence-2026/">Forbes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>ExecuTorch cruza el umbral de producci&oacute;n: sub-20ms de inferencia on-device en Android</h3>
+      <p class="what">El framework de Meta para AI on-device alcanza latencias por debajo de 20ms en modelos de computer vision en Snapdragon 8 Elite. Modelos de 1-5GB logran calidad equivalente a GPT-3.5 corriendo completamente offline, con un footprint base de 50KB.</p>
+      <p class="why">Si necesitas AI offline en tu app m&oacute;vil (clasificaci&oacute;n de im&aacute;genes, procesamiento de texto, features de privacidad), ExecuTorch ya es production-ready con n&uacute;meros reales.</p>
+      <p class="source"><a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms">AlephZero Labs</a> &bull; <a href="https://pytorch.org/projects/executorch/">PyTorch</a></p>
+    </div>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item">
+      <h3>CrowdStrike SafeMind: sistema dual de AI ofensivo-defensivo con NVIDIA Nemotron</h3>
+      <p class="what">Presentado en Fal.Con 2026, SafeMind usa dos modelos: Red Tempest (ofensivo, entrenado en 15 a&ntilde;os de datos de incidentes) ataca un digital twin del entorno, mientras Blue Solano (defensivo) parchea las vulnerabilidades encontradas. Ciclo continuo hasta cerrar todos los vectores de ataque.</p>
+      <p class="why">El patr&oacute;n de "AI ofensiva vs defensiva en loop cerrado" es una arquitectura que aplica m&aacute;s all&aacute; de cybersec &mdash; testing automatizado adversarial para cualquier sistema cr&iacute;tico.</p>
+      <p class="source"><a href="https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-frontier-models-for-cybersecurity-with-nvidia/">CrowdStrike</a> &bull; <a href="https://qz.com/crowdstrike-nvidia-safemind-ai-cybersecurity-090226">Quartz</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Almanac (YC S26): asistente AI con contexto total de tu empresa</h3>
+      <p class="what">Almanac, respaldado por Y Combinator Summer 2026, es un asistente AI construido sobre Hermes que aprende todo sobre tu empresa &mdash; documentos, procesos, personas &mdash; y responde preguntas con contexto organizacional completo. Apunta a reemplazar el knowledge management fragmentado.</p>
+      <p class="why">El patr&oacute;n de "RAG empresarial que realmente funciona" sigue siendo una de las oportunidades m&aacute;s claras para founders t&eacute;cnicos &mdash; Almanac valida que el mercado existe, pero cada vertical necesita el suyo.</p>
+      <p class="source"><a href="https://startupcorners.com/digest/product-digest-2026-09-01">StartupCorners</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 ConscioussAI: agente aut&oacute;nomo que opera tu tel&eacute;fono y computadora</h3>
+      <p class="what">ConscioussAI lanz&oacute; su beta multiplataforma (Android, iOS, macOS, Windows) &mdash; un agente que controla apps, navega workflows, usa el browser, entiende contexto de pantalla, y ejecuta tareas programadas. Funciona v&iacute;a mensajes de texto con su asistente SOL.</p>
+      <p class="why">La carrera por el "AI OS layer" que controla tu dispositivo aut&oacute;nomamente se est&aacute; acelerando &mdash; si construyes apps Android, prep&aacute;rate para que agentes de terceros interactuen con tu UI.</p>
+      <p class="source"><a href="https://www.conscioussai.com/">ConscioussAI</a> &bull; <a href="https://startupcorners.com/digest/product-digest-2026-09-01">StartupCorners</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Wearables como plataforma de coaching AI: el ecosistema converge en 2026</h3>
+      <p class="what">ACSM nombr&oacute; a los wearables como tendencia #1 en fitness 2026, con ~50% de adultos en EE.UU. usando uno. La nueva generaci&oacute;n integra coaching adaptativo con AI, predicci&oacute;n de fatiga antes de s&iacute;ntomas, nutrici&oacute;n personalizada y protocolos de recuperaci&oacute;n basados en datos biom&eacute;tricos en tiempo real.</p>
+      <p class="why">Si est&aacute;s construyendo un marketplace de servicios de salud o fitness, la integraci&oacute;n con data de wearables es ahora table stakes, no un diferenciador.</p>
+      <p class="source"><a href="https://www.webpronews.com/2026-fitness-wearables-ai-coaching-stress-metrics-and-vr-trends/">WebProNews</a> &bull; <a href="https://bodymotionlab.com/blog/ai-workout-programming-wearables-2026">Body Motion Lab</a></p>
+    </div>
+
+    <footer>
+      <p>Generado el 03/09/2026 &middot; Filtrado para senior devs construyendo producto</p>
+    </footer>
+  </div>
+</body>
+</html>
