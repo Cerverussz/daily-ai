@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 3 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>3 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GPT-6 Astra: OpenAI lanza su modelo m&aacute;s potente y dice que podr&iacute;a ser AGI</h3>
+      <p class="what">OpenAI lanz&oacute; GPT-6 Astra el 3 de septiembre como preview limitado para partners, con disponibilidad p&uacute;blica el 5 de septiembre. Satura FrontierMath Tier 4 (98%), ARC-AGI-3 (99.9%) y ExploitBench (100%), siendo SOTA en coding, ciberseguridad, ciencia y uso de computadora. Entrenado con 100K+ GPUs en Stargate Texas.</p>
+      <p class="why">A $10/$50 por mill&oacute;n de tokens es caro para alto volumen, pero si tu producto necesita razonamiento de nivel experto o agentes aut&oacute;nomos complejos, este es el nuevo techo contra el que medir.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html">CNBC</a> &bull; <a href="https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman">Axios</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Qwen3.8-Flash-Next: modelo open-weight de 125B params (6B activos) a $0.15/M tokens</h3>
+      <p class="what">Alibaba lanz&oacute; este MoE open-weight como preview de la arquitectura Qwen4. Activa solo 6B par&aacute;metros por token de 125B totales, con una tabla N-gram de 51B que se puede offloadear a RAM. Rinde cerca del flagship a 1/12 del costo, con pesos libres en Hugging Face.</p>
+      <p class="why">Para pipelines de alto volumen en tu backend (clasificaci&oacute;n, extracci&oacute;n, RAG), self-hostear esto en tu propia infra es ahora una opci&oacute;n real y barata.</p>
+      <p class="source"><a href="https://the-decoder.com/alibaba-releases-qwen3-8-flash-next-targeting-ultimate-cost-efficiency/">The Decoder</a> &bull; <a href="https://www.eesel.ai/blog/qwen38-flash-next">Eesel AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>ChatGPT Health se conecta a Epic: acceso read-only a 325M de historiales cl&iacute;nicos</h3>
+      <p class="what">OpenAI integr&oacute; ChatGPT for Healthcare con Epic, el sistema EHR usado por 325 millones de pacientes en EE.UU. Los cl&iacute;nicos pueden consultar notas, labs, medicaciones y seguimientos directamente desde ChatGPT, con conexi&oacute;n read-only que no modifica registros.</p>
+      <p class="why">Para cualquiera construyendo en health-tech, esto valida que LLMs en producci&oacute;n con datos m&eacute;dicos reales ya es mainstream, no experimental.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/01/chatgpt-health-adds-epic-integration-for-clinicians-to-import-patient-data/">TechCrunch</a> &bull; <a href="https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/">OpenAI</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Fable 5.1: mejor razonamiento, sesi&oacute;nes de horas y cache reads 75% m&aacute;s baratos</h3>
+      <p class="what">Anthropic lanz&oacute; Fable 5.1 el 1 de septiembre, enfocado en tareas largas y complejas: puede manejar features completos en un codebase, code review y optimizaci&oacute;n de performance en sesiones de horas. Reduce cache reads a 1/4 del precio de otros modelos Claude, con menos respuestas confidencialmente incorrectas.</p>
+      <p class="why">Si usas Claude Code o la API para desarrollo, el ahorro en cache reads hace viable dejar agentes corriendo en tareas largas sin que el costo se dispare.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads">VentureBeat</a> &bull; <a href="https://www.macrumors.com/2026/09/01/anthropic-claude-fable-5-1/">MacRumors</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 ConscioussAI: agente aut&oacute;nomo que controla tu tel&eacute;fono y computadora</h3>
+      <p class="what">ConscioussAI v2026.1.33 Beta opera en Android, iOS, macOS y Windows. El agente entiende el contexto de pantalla, controla apps, navega browsers y ejecuta workflows multi-paso. Incluye SOL, una capa de texto donde le env&iacute;as instrucciones por SMS sin abrir otra app.</p>
+      <p class="why">Para founders de marketplaces o apps m&oacute;viles, esto anticipa c&oacute;mo tus usuarios interactuar&aacute;n con tu producto: a trav&eacute;s de agentes, no de tu UI directamente.</p>
+      <p class="source"><a href="https://www.conscioussai.com/">ConscioussAI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GPT-Live: voz full-duplex con sub-300ms de latencia en producci&oacute;n</h3>
+      <p class="what">El modelo de voz nativo de OpenAI elimina el detector de turnos del pipeline de audio, permitiendo escuchar y hablar simult&aacute;neamente. Cuando necesita razonamiento profundo, consulta GPT-5.5 sin interrumpir la conversaci&oacute;n. Mediciones independientes: ~1.1s para responder, 314ms bajo 10% packet loss.</p>
+      <p class="why">Si tu producto tiene un componente de voz (coaching, soporte, onboarding), esto establece el nuevo est&aacute;ndar de latencia que tus usuarios esperar&aacute;n.</p>
+      <p class="source"><a href="https://openai.com/index/introducing-gpt-live/">OpenAI</a> &bull; <a href="https://www.agora.io/en/blog/openai-didnt-publish-gpt-lives-latency-so-we-measured-it/">Agora</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Almanac (YC S26): asistente AI que aprende todo sobre tu empresa</h3>
+      <p class="what">Construido sobre Hermes, Almanac indexa el contexto organizacional completo de tu empresa y responde preguntas con conocimiento de procesos, personas, documentos y decisiones internas. Lanzado en la batch S26 de Y Combinator.</p>
+      <p class="why">El patr&oacute;n de &ldquo;AI con contexto total de empresa&rdquo; es el que m&aacute;s r&aacute;pido convierte: si puedes replicarlo para un vertical espec&iacute;fico, tienes producto.</p>
+      <p class="source"><a href="https://startupcorners.com/digest/product-digest-2026-09-01">StartupCorners</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 ThunderPhone: agentes AI telef&oacute;nicos desde $0.02/minuto</h3>
+      <p class="what">Plataforma para construir agentes de voz AI confiables para llamadas telef&oacute;nicas, con pricing que empieza en dos centavos por minuto. Enfocado en founders y equipos peque&ntilde;os que necesitan atenci&oacute;n telef&oacute;nica automatizada sin infraestructura compleja.</p>
+      <p class="why">Para un marketplace de servicios profesionales, automatizar confirmaciones, recordatorios y seguimiento por tel&eacute;fono a este precio cambia la ecuaci&oacute;n de soporte completamente.</p>
+      <p class="source"><a href="https://startupcorners.com/digest/product-digest-2026-09-01">StartupCorners</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Make.com lanza Maia: construye automaciones AI conversando</h3>
+      <p class="what">Maia es la nueva interfaz conversacional de Make.com para crear automaciones y agentes AI sin necesidad de armar escenarios manualmente. Junto con Make Grid para gestionar automaciones a escala organizacional y un Marketplace renovado de apps.</p>
+      <p class="why">Si tu stack incluye integraciones entre servicios, poder armar y modificar automaciones hablando en vez de drag-and-drop reduce el tiempo de iteraci&oacute;n dr&aacute;sticamente.</p>
+      <p class="source"><a href="https://blog.mean.ceo/make-news-september-2026/">Mean CEO Blog</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code: panel de diff fullscreen y mejoras en model switching</h3>
+      <p class="what">Claude Code a&ntilde;ade un panel de diff que se abre junto a la conversaci&oacute;n en modo fullscreen mostrando cambios uncommitted en tiempo real (toggle con /diff). Tambi&eacute;n mejora prompt caching, auto-compact, workflows de review, y a&ntilde;ade diagn&oacute;stico de cache misses en /cost.</p>
+      <p class="why">El diff panel en vivo es lo que faltaba para confiar en ediciones grandes sin tener que saltar al terminal a revisar; acelera el loop de feedback.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> &bull; <a href="https://dev.classmethod.jp/en/articles/20260904-cc-updates-v2-1-260/">DevelopersIO</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Enterprise Frontier Safeguards: logs en tu cloud, no en el de Anthropic</h3>
+      <p class="what">EFS combina zero data retention con detecci&oacute;n de misuse almacenando datos de monitoreo en la infraestructura cloud del cliente (AWS, GCP, Azure). Desarrollado con 100+ clientes de finanzas, salud, manufactura y sector p&uacute;blico. Disponible para Claude Code, Enterprise, Platform y Bedrock.</p>
+      <p class="why">Si tu empresa necesita usar Claude pero compliance bloquea porque los datos salen de tu infra, EFS elimina ese blocker sin perder safeguards.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/enterprise-frontier-safeguards">Anthropic</a> &bull; <a href="https://www.marktechpost.com/2026/09/02/anthropic-enterprise-frontier-safeguards-efs/">MarkTechPost</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>ChatGPT + Epic redefine el acceso a datos m&eacute;dicos para cl&iacute;nicos</h3>
+      <p class="what">La integraci&oacute;n permite a m&eacute;dicos preguntar qu&eacute; cambi&oacute; desde la &uacute;ltima visita, ver labs recientes, rastrear cambios de medicaci&oacute;n e identificar seguimientos pendientes, todo dentro del workflow cl&iacute;nico existente. Tambi&eacute;n puede embeberse directamente en el layout del EHR.</p>
+      <p class="why">El patr&oacute;n &ldquo;AI como capa de consulta sobre datos existentes de salud&rdquo; es replicable para plataformas de coaching deportivo o nutrici&oacute;n con data hist&oacute;rica de usuarios.</p>
+      <p class="source"><a href="https://www.pymnts.com/news/artificial-intelligence/2026/openai-brings-epic-health-records-to-chatgpt-for-clinicians/">PYMNTS</a> &bull; <a href="https://www.fiercehealthcare.com/ai-and-machine-learning/chatgpt-healthcare-unveils-new-integrations-epic-ehr-public-health-data">Fierce Healthcare</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 03/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
