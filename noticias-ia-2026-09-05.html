@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 5 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>5 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GPT-6 Astra llega a la API: computer use nativo, 1M tokens de contexto, y escrutinio inmediato</h3>
+      <p class="what">OpenAI lanz&oacute; GPT-6 Astra el 3 de septiembre con 1,050K tokens de contexto, 128K de output, y capacidad nativa de computer use (navega browsers, spreadsheets y apps de escritorio). Sin embargo, en benchmarks independientes ARC-AGI-3 scor&oacute; 62.7% vs el 99.9% que OpenAI anunci&oacute;, generando debate sobre las m&eacute;tricas.</p>
+      <p class="why">A $10/$50 por mill&oacute;n de tokens (2.5x m&aacute;s que Sol), el computer use nativo es interesante para automatizaci&oacute;n, pero la discrepancia en benchmarks sugiere evaluar con tus propios casos antes de migrar.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra">VentureBeat</a> &bull; <a href="https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Ship.com lanza Ship MCP: 35+ capacidades de shipping como tools nativos de Claude</h3>
+      <p class="what">Ship.com lanz&oacute; Ship MCP, un conector MCP que expone m&aacute;s de 35 operaciones de env&iacute;o (rating, etiquetado, tracking) directamente en Claude Desktop y CLI. En la primera semana de beta, m&aacute;s del 30% de &oacute;rdenes se procesaron v&iacute;a Ship AI, con batches de 20 &oacute;rdenes en menos de un minuto.</p>
+      <p class="why">Ejemplo concreto de c&oacute;mo MCP convierte cualquier servicio en una herramienta de agentes &mdash; si tu marketplace maneja env&iacute;os, este patr&oacute;n de integraci&oacute;n es el que deber&iacute;as replicar.</p>
+      <p class="source"><a href="https://finance.yahoo.com/technology/ai/articles/ship-com-introduces-ai-shipping-155900490.html">Yahoo Finance</a> &bull; <a href="https://www.sdcexec.com/software-technology/ai-ar/news/22973081/shipcom-shipcom-launches-ai-shipping-manager-for-ecommerce-sellers">Supply &amp; Demand Chain</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>McKinsey: 32% de empresas ya construyen software interno con AI coding en vez de comprar SaaS</h3>
+      <p class="what">El reporte State of AI 2026 de McKinsey (1,719 respuestas, 97 pa&iacute;ses) revela que casi un tercio de organizaciones ha dejado de comprar al menos un producto de software porque pueden construirlo internamente con herramientas de coding agente. Entre los "high performers" (6% que atribuyen &ge;5% de EBIT a IA), casi la mitad lo hace.</p>
+      <p class="why">La amenaza build-vs-buy ya es real &mdash; si vendes SaaS vertical, tus clientes est&aacute;n evaluando si un agente de coding puede reemplazarte.</p>
+      <p class="source"><a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai">McKinsey</a> &bull; <a href="https://finance.yahoo.com/technology/ai/articles/build-vs-buy-shift-32-113806700.html">Yahoo Finance</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Fable 5.1: duplica rendimiento en coding y recorta 75% el costo de cache reads</h3>
+      <p class="what">Anthropic lanz&oacute; Fable 5.1 el 1 de septiembre con always-on adaptive thinking (sin opt-in), scoring 55.8% en Terminal-Bench 4.0 (vs 42% de Fable 5). Cache reads bajan de $1 a $0.25/M tokens, recortando hasta 45% el costo en workloads ag&eacute;nticos que leen codebases grandes. Falsos positivos de seguridad bajan 60%.</p>
+      <p class="why">Si usas Fable para agentes de coding en producci&oacute;n, el recorte de cache reads es dinero real ahorrado cada d&iacute;a, y el thinking adaptativo mejora calidad sin configuraci&oacute;n extra.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads">VentureBeat</a> &bull; <a href="https://www.datacamp.com/blog/claude-fable-5-1">DataCamp</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code v2.1.261: /skill-doctor, Remote Control robusto, y 67 cambios</h3>
+      <p class="what">La actualizaci&oacute;n del 4 de septiembre trae /skill-doctor para diagnosticar problemas en skills, mejor recuperaci&oacute;n de sesiones Remote Control cuando el servidor cae, l&iacute;mites mayores de output en comandos inline, y mejoras en VS Code. Son 46 fixes, 9 features nuevas, 7 mejoras de rendimiento y 3 de seguridad.</p>
+      <p class="why">Si usas Claude Code en producci&oacute;n o en equipo, Remote Control m&aacute;s estable y /skill-doctor reducen fricci&oacute;n real en tu workflow diario.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> &bull; <a href="https://dev.classmethod.jp/en/articles/20260905-cc-updates-v2-1-261/">DevelopersIO</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 On-device AI en Android 2026: Gemini Nano + LiteRT 2.x ya son stack de producci&oacute;n</h3>
+      <p class="what">El stack de inferencia on-device en Android se consolid&oacute;: LiteRT 2.x como runtime, MediaPipe Tasks para visi&oacute;n/audio, y Gemini Nano v&iacute;a ML Kit (actualizado por el OS, sin bundlear modelos). Con Snapdragon 8 Elite alcanzando paridad con Apple en TOPS, correr LLMs cuantizados localmente es viable en flagship.</p>
+      <p class="why">Si desarrollas Android, ya puedes ofrecer features de AI offline sin cloud &mdash; el stack est&aacute; maduro y la fragmentaci&oacute;n de hardware se redujo lo suficiente para producir.</p>
+      <p class="source"><a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms">AlephZero Labs</a> &bull; <a href="https://www.forasoft.com/blog/article/neural-networks-on-android-369">Fora Soft</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Sonnet 5 mantiene $2/$10 permanente &mdash; Anthropic cancel&oacute; el aumento de septiembre</h3>
+      <p class="what">Anthropic confirm&oacute; que el pricing introductorio de Claude Sonnet 5 ($2/M input, $10/M output) es ahora permanente. El aumento programado a $3/$15 para septiembre 1 fue cancelado oficialmente el 10 de agosto. Es el modelo m&aacute;s econ&oacute;mico de la familia Claude 5 para producci&oacute;n.</p>
+      <p class="why">Si est&aacute;s presupuestando tu stack de AI para Q4, puedes contar con Sonnet 5 a $2/$10 sin riesgo de sorpresas de pricing.</p>
+      <p class="source"><a href="https://tokencost.app/blog/claude-sonnet-5-price-increase-september-2026">TokenCost</a> &bull; <a href="https://techjournal.org/claude-sonnet-5-pricing-now-permanent">Tech Journal</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI Defense Factory: agentes de seguridad continuos + $1B para infraestructura cr&iacute;tica</h3>
+      <p class="what">OpenAI lanz&oacute; Defense Factory, un sistema agent-first que conecta herramientas de seguridad existentes para encontrar vulnerabilidades, validarlas y preparar fixes para revisi&oacute;n humana de forma continua. Adem&aacute;s, comprometi&oacute; $1B v&iacute;a Daybreak para subsidiar acceso a modelos cyber a utilities, gobierno local, y proyectos open-source.</p>
+      <p class="why">El patr&oacute;n de "agente que audita c&oacute;digo continuamente" es replicable &mdash; si tienes un producto en producci&oacute;n, este tipo de pipeline de seguridad automatizado deber&iacute;a estar en tu roadmap.</p>
+      <p class="source"><a href="https://openai.com/the-defense-factory/">OpenAI</a> &bull; <a href="https://www.helpnetsecurity.com/2026/09/04/openai-daybreak-frontline-defenders-access/">Help Net Security</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 D-Robotics en IFA 2026: chips Sunrise AI alimentan robots consumer ya en producci&oacute;n masiva</h3>
+      <p class="what">D-Robotics mostr&oacute; su familia de chips Sunrise (5-560 TOPS INT8) alimentando tres robots consumer: TCL hey AiMe (compa&ntilde;ero, 20+ sensores), Vbot SuperDog (cuadr&uacute;pedo, en producci&oacute;n desde mayo), y xLean TR1 (limpieza, $2M en Kickstarter). M&aacute;s de 100K developers y 500+ startups ya usan la plataforma.</p>
+      <p class="why">Hardware de AI para consumer robotics con ecosistema real de developers &mdash; si est&aacute;s explorando edge AI o productos f&iacute;sicos, Sunrise es una plataforma a evaluar.</p>
+      <p class="source"><a href="https://www.roboticstomorrow.com/news/2026/09/04/d-robotics-at-ifa-2026-the-computing-platform-powering-the-next-generation-of-home-robots/27050">RoboticsTomorrow</a> &bull; <a href="https://www.therundown.ai/news/ifa-2026-household-robots-thin-laptops-local-ai">The Rundown AI</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Enterprise Frontier Safeguards (EFS): zero data retention con monitoring en la nube del cliente</h3>
+      <p class="what">Anthropic anunci&oacute; EFS el 1 de septiembre, resolviendo la tensi&oacute;n entre privacidad y detecci&oacute;n de misuse. Los logs de actividad van a S3/Azure Blob/GCS del cliente con sus propias llaves de encriptaci&oacute;n; Anthropic solo opera la l&oacute;gica de detecci&oacute;n sin acceso humano al contenido. Desarrollado con 100+ clientes enterprise.</p>
+      <p class="why">Si est&aacute;s integrando Claude en un producto para fintech, salud o enterprise, EFS elimina la objeci&oacute;n m&aacute;s com&uacute;n de compliance.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/enterprise-frontier-safeguards">Anthropic</a> &bull; <a href="https://www.marktechpost.com/2026/09/02/anthropic-enterprise-frontier-safeguards-efs/">MarkTechPost</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Wearables 2026: el salto de tracking pasivo a coaching AI predictivo ya es mainstream</h3>
+      <p class="what">Seg&uacute;n ACSM, wearable tech es la tendencia #1 de fitness 2026. Los dispositivos ahora predicen eventos cardiovasculares 6-12h antes, generan planes de nutrici&oacute;n con datos de quema cal&oacute;rica en tiempo real, y ajustan entrenamientos seg&uacute;n recuperaci&oacute;n y HRV. Garmin Training Readiness, Whoop Coach y SensAI lideran la transici&oacute;n.</p>
+      <p class="why">Si construyes en el espacio de sports tech o wellness marketplaces, el dato de wearables + coaching AI es la feature que los usuarios ya esperan &mdash; no es diferenciador, es table stakes.</p>
+      <p class="source"><a href="https://bodymotionlab.com/blog/ai-workout-programming-wearables-2026">Body Motion Lab</a> &bull; <a href="https://thewellproven.com/fitness-wearables-2026/">The Well Proven</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 05/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
