@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 8 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>8 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot App: agentes AI paralelos especializados por rol</h3>
+      <p class="what">GitHub lanzó la Copilot App con sesiones de agentes paralelos: cada agente corre en su propio Git worktree aislado y puede especializarse en implementación, testing o documentación simultáneamente. Los devs pueden asignar tareas a múltiples sesiones y monitorear progreso desde una vista unificada.</p>
+      <p class="why">Esto cambia el modelo mental de "un asistente" a "un equipo de agentes orquestado" — si construyes producto solo o en equipo pequeño, multiplica tu capacidad de shipping.</p>
+      <p class="source"><a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/">GitHub Blog</a> &bull; <a href="https://alphasignal.ai/news/github-copilot-app-lets-developers-run-and-control-multiple-ai-agents-at-once">AlphaSignal</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenHands 1.0: agente autónomo de coding open-source, production-ready</h3>
+      <p class="what">OpenHands alcanzó su versión 1.0 con sandboxing Docker production-ready, políticas de seguridad built-in, sistema de plugins y 68% en SWE-bench Verified. Costo por tarea resuelta self-hosted: $0.20-$1.05 a precios de H100.</p>
+      <p class="why">Primera vez que un agente open-source compite en serio con los comerciales — ideal si necesitas automatizar refactors o integraciones sin pagar por seat de herramientas propietarias.</p>
+      <p class="source"><a href="https://dev.to/jamilxt/openhands-just-hit-10-heres-how-to-run-it-on-your-own-machine-without-handing-over-the-keys-5666">DEV Community</a> &bull; <a href="https://theaiagentindex.com/agents/openhands">AI Agent Index</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Qualcomm y Amazon firman deal de $60B para co-diseñar chips de inferencia AI</h3>
+      <p class="what">Qualcomm y AWS anunciaron una colaboración multi-generacional para diseñar silicio custom de inferencia AI y conectividad óptica de hasta 1.6 Tbps. Amazon emitió warrants por $4B en acciones de Qualcomm; los ingresos arrancan en diciembre 2026.</p>
+      <p class="why">Más competencia en silicio de inferencia significa que los costos de API van a seguir bajando — bueno para cualquiera que construya sobre modelos cloud.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html">CNBC</a> &bull; <a href="https://www.techtimes.com/articles/326993/20260908/qualcomm-wins-first-western-hyperscaler-aws-deal-pays-60b-inference-silicon.htm">TechTimes</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Fable 5.1 y Mythos 5.1: nuevo SOTA en coding, hasta 45% más barato</h3>
+      <p class="what">Anthropic lanzó Fable 5.1 y Mythos 5.1 (modelos idénticos con distintos niveles de safeguards). Fable 5.1 más que duplica a Fable 5 en research científico agéntico, casi lo duplica en workflows de negocio, y supera a Opus 5 en todas las categorías publicadas. Usuarios de Claude Code ven ~60% menos falsos positivos de seguridad.</p>
+      <p class="why">Más capaz Y más barato es raro — si usas Claude Code a diario, el upgrade es inmediato: menos interrupciones por falsos positivos y mejor razonamiento en tareas largas.</p>
+      <p class="source"><a href="https://www.anthropic.com/claude-fable-and-mythos-5-1">Anthropic</a> &bull; <a href="https://www.vellum.ai/blog/claude-fable-5-1-mythos-5-1-benchmarks-explained">Vellum</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Nuevo chip acerca AI eficiente a móviles y laptops</h3>
+      <p class="what">Un nuevo diseño de chip presentado en septiembre permite ejecutar modelos AI localmente en teléfonos y laptops con consumo energético drásticamente menor. El enfoque híbrido (inferencia local + escalado a cloud cuando es necesario) se consolida como el stack dominante en mobile.</p>
+      <p class="why">Si desarrollas para Android, el on-device AI va de "nice-to-have" a feature competitivo real — menos latencia, menos costos de API, y funciona offline.</p>
+      <p class="source"><a href="https://techxplore.com/news/2026-09-powerful-ai-edge.html">TechXplore</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Multistack: terminal open-source para orquestar agentes de coding en paralelo</h3>
+      <p class="what">Multistack es un entorno de terminal open-source diseñado para correr múltiples agentes de coding en paralelo, cada uno con su espacio de trabajo aislado. Complementa herramientas como Claude Code y OpenHands al dar una capa de orquestación sobre ellas.</p>
+      <p class="why">Si ya usas agentes de coding, esto resuelve el problema de coordinar varios simultáneamente sin pisar trabajo entre sí.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/daily/2026-09-08">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 ThunderPhone: AI phone agents a $0.02/minuto, listo para producción</h3>
+      <p class="what">ThunderPhone lanzó una plataforma para construir agentes AI de voz confiables con precios desde dos centavos por minuto. Apunta a reemplazar IVRs tradicionales y call centers para startups y SMBs que no pueden pagar soluciones enterprise.</p>
+      <p class="why">A ese precio, cualquier marketplace o SaaS puede tener atención telefónica AI 24/7 sin contratar un equipo de soporte — el ROI es inmediato para founders bootstrapping.</p>
+      <p class="source"><a href="https://startupcorners.com/digest/product-digest-2026-09-04">StartupCorners</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Almanac (YC S26): AI que aprende todo sobre tu empresa y responde con contexto completo</h3>
+      <p class="what">Almanac, del batch S26 de Y Combinator, es un asistente AI que ingesta toda la información de tu empresa (docs, Slack, repos, wikis) y responde preguntas con contexto organizacional completo. Elimina el problema de "la AI no sabe cómo hacemos las cosas aquí".</p>
+      <p class="why">El knowledge management interno es uno de los problemas más costosos de escalar un equipo — si funciona bien, es el tipo de herramienta que pagas desde el día uno.</p>
+      <p class="source"><a href="https://blog.mean.ceo/ai-product-launches-news-september-2026/">MEAN CEO Blog</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Enterprise Frontier Safeguards (EFS): zero retention + detección de misuse</h3>
+      <p class="what">EFS resuelve el dilema enterprise: logs de actividad van a S3/Azure Blob/GCS del cliente bajo sus llaves de encripción, mientras Anthropic opera la lógica de detección sin acceso humano al contenido. Desarrollado con 100+ clientes en finanzas, salud, manufactura y gobierno.</p>
+      <p class="why">Si construyes sobre Claude para clientes regulados (salud, finanzas), EFS elimina el blocker principal de compliance que te frenaba en ventas enterprise.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/enterprise-frontier-safeguards">Anthropic</a> &bull; <a href="https://www.marktechpost.com/2026/09/02/anthropic-enterprise-frontier-safeguards-efs/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google invierte $40B y Amazon $25B en Anthropic en la misma semana</h3>
+      <p class="what">Google comprometió hasta $40B a una valuación de $350B con 5GW de capacidad Cloud a 5 años. Amazon duplicó su apuesta con $25B y capacidad Trainium equivalente. Anthropic consolida su posición como la empresa de AI con más respaldo de infraestructura cloud.</p>
+      <p class="why">Más capital + más compute = más modelos y precios más competitivos a mediano plazo — apostar tu stack en Claude tiene menos riesgo de plataforma que nunca.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Seguridad y geopolítica AI -->
+    <div class="section-title">Seguridad AI y contexto global</div>
+
+    <div class="news-item">
+      <h3>NSA, CISA y FBI alertan: 6 empresas chinas destilaron modelos US a escala industrial</h3>
+      <p class="what">Advisory conjunto nombra a DeepSeek, Moonshot AI, Alibaba, MiniMax, StepFun y Z.AI por extraer capacidades de Claude, GPT, Gemini y Grok mediante cuentas fraudulentas, suscripciones masivas y proxy routing desde finales de 2024. El costo reportado de $5.6M de DeepSeek R1 excluye los datos obtenidos por destilación maliciosa.</p>
+      <p class="why">Si usas modelos open-source chinos en producción, ahora hay un riesgo regulatorio concreto que considerar en tu stack — además de preguntas sobre la procedencia de las capacidades.</p>
+      <p class="source"><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-251a">CISA</a> &bull; <a href="https://www.unite.ai/nsa-cisa-fbi-warn-china-based-ai-firms-distill-us-frontier-models/">Unite.AI</a></p>
+    </div>
+
+    <!-- EJE 5b: Sports tech -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 AI basketball trainers y plataformas de entrenamiento conectado dominan septiembre</h3>
+      <p class="what">Las tendencias deportivas de septiembre 2026 están dominadas por entrenadores AI de basketball, plataformas de actividades recreativas AI-driven, y ecosistemas de apps de entrenamiento conectado. La tecnología inteligente pasa de ser complemento a ser central en cómo entrenan los atletas.</p>
+      <p class="why">Para quien construye en sports tech: el mercado ya validó que los usuarios pagan por coaching AI personalizado — la oportunidad está en verticales deportivos aún sin plataforma dominante.</p>
+      <p class="source"><a href="https://www.trendhunter.com/slideshow/september-2026-sports">Trend Hunter</a> &bull; <a href="https://athletechnews.com/connected-health-fitness-summit-2026-where-the-industry-defines-whats-next/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 08/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
