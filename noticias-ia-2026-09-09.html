@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily AI Briefing — 9 de septiembre 2026</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 24px 16px;
+            background: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+        header h1 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 12px;
+            margin-bottom: 8px;
+            color: #f0f6fc;
+        }
+        header p {
+            color: #8b949e;
+            font-size: 0.85rem;
+            margin-bottom: 24px;
+        }
+        .section-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #8b949e;
+            margin: 24px 0 12px 0;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #21262d;
+        }
+        .news-item {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+        .news-item.hot {
+            border-left: 3px solid #f0883e;
+        }
+        .news-item h3 {
+            font-size: 1.05rem;
+            margin: 0 0 8px 0;
+            color: #f0f6fc;
+        }
+        .what {
+            color: #c9d1d9;
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+        }
+        .why {
+            color: #58a6ff;
+            font-size: 0.85rem;
+            font-style: italic;
+            margin-bottom: 6px;
+        }
+        .source {
+            font-size: 0.8rem;
+        }
+        .source a {
+            color: #8b949e;
+            text-decoration: none;
+        }
+        .source a:hover {
+            color: #58a6ff;
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #30363d;
+            color: #484f58;
+            font-size: 0.75rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daily AI Briefing</h1>
+        <p>9 de septiembre de 2026 · Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 2: Innovaciones técnicas con potencial práctico -->
+    <div class="section-title">Modelos y plataformas</div>
+
+    <div class="news-item hot">
+        <h3>🔥 GPT-6 Astra ya disponible: 1M de contexto y computer use</h3>
+        <p class="what">OpenAI lanzó GPT-6 Astra el 3 de septiembre con 1,050,000 tokens de contexto, 128K de output máximo, y capacidades avanzadas de uso de computadora, coding y cyberseguridad. Es el primer modelo de OpenAI clasificado como "riesgo crítico" en ciberseguridad bajo su Preparedness Framework.</p>
+        <p class="why">El contexto de 1M tokens y computer use nativo cambian lo que puedes automatizar en pipelines de desarrollo y testing — evalúa si tus workflows de agentes se benefician del salto.</p>
+        <p class="source"><a href="https://openai.com/index/gpt-6-astra/">openai.com</a> &bull; <a href="https://fortune.com/2026/09/03/openai-debuts-gpt-6-astra-computer-use-greg-brockman-says-start-of-agi/">Fortune</a></p>
+    </div>
+
+    <!-- EJE 4: Novedades Claude y ecosistema Anthropic -->
+    <div class="news-item hot">
+        <h3>🔥 Claude Fable 5.1 y Mythos 5.1: cache reads 75% más barato</h3>
+        <p class="what">Anthropic lanzó Claude Fable 5.1 (Sept 1) manteniendo el precio base de $10/$50 por millón de tokens pero reduciendo el costo de cache-read a $0.25/M (antes $1). Para workloads agenticos, el ahorro total llega al 45%. Mythos 5.1 es la versión sin restricciones para cybersecurity y life-sciences con acceso restringido. También reduce 60% los falsos positivos de seguridad en Claude Code.</p>
+        <p class="why">Si corres agentes con Claude en producción, el cache-read a 75% menos impacta directamente tu unit economics — actualiza tus estimaciones de costo por sesión.</p>
+        <p class="source"><a href="https://www.anthropic.com/claude-fable-and-mythos-5-1">anthropic.com</a> &bull; <a href="https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item hot">
+        <h3>🔥 Claude Code: update con diagnósticos de policy y cross-session messaging</h3>
+        <p class="what">Claude Code recibió una actualización amplia que incluye diagnósticos de políticas organizacionales en /status, límites expandidos de output inline hasta 128K caracteres (bashOutputMaxChars, taskOutputMaxChars), y messaging entre sesiones en la misma máquina para Bedrock y Vertex. También agrega /usage-credits para Enterprise.</p>
+        <p class="why">Los límites expandidos de output y el messaging entre sesiones eliminan dos fricciones reales cuando usas Claude Code como tu herramienta principal de desarrollo.</p>
+        <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> &bull; <a href="https://www.gradually.ai/en/changelogs/claude-code/">Claude Code Changelog</a></p>
+    </div>
+
+    <!-- EJE 1: Aplicaciones profesionales de IA en producción -->
+    <div class="section-title">Herramientas de desarrollo</div>
+
+    <div class="news-item hot">
+        <h3>🔥 Google Antigravity 2.0: plataforma de coding agentic con agentes paralelos</h3>
+        <p class="what">Antigravity 2.0 de Google combina IDE de escritorio, CLI en Go y SDK para agentes custom en una sola plataforma. Los agentes pueden trabajar en paralelo en múltiples workspaces, generan artefactos verificables (task lists, screenshots, browser recordings), y corren sobre Gemini 3.5 Flash a 289 tokens/seg.</p>
+        <p class="why">La vista de Manager con agentes paralelos y artefactos verificables es un approach que vale la pena probar si tus tareas repetitivas (landing pages, tests, docs) se pueden paralelizar.</p>
+        <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/">Google Blog</a> &bull; <a href="https://nerdleveltech.com/google-antigravity-2-agentic-coding-platform">NerdLevelTech</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios y productos -->
+    <div class="news-item hot">
+        <h3>🔥 Cognition AI (Devin) valorada en $48B tras ronda de $2B</h3>
+        <p class="what">Cognition AI, creadores de Devin — el agente de software autónomo que toma tareas completas de ingeniería — cerró una ronda de $2B el 9 de septiembre a una valuación de $48B. Es la mayor ronda para un startup de AI coding.</p>
+        <p class="why">La valuación señala que los inversores ven a los agentes de coding autónomos como categoría ganadora — si estás construyendo herramientas dev, este es el benchmark de mercado.</p>
+        <p class="source"><a href="https://techstartups.com/2026/09/09/startup-funding-news-today-september-9-2026-cognition-ai-algomatic-dynamics-qnu-labs-more/">TechStartups</a></p>
+    </div>
+
+    <!-- EJE 2: Mobile y edge AI -->
+    <div class="section-title">Mobile y edge AI</div>
+
+    <div class="news-item hot">
+        <h3>🔥 Apple presenta Siri AI con modelo on-device en el evento del 9 de septiembre</h3>
+        <p class="what">Apple separó las funciones de IA de su lanzamiento de hardware: Siri AI corre un modelo on-device para voces expresivas y dictado avanzado, pero requiere 12GB de RAM unificada (iPhone 17 Pro/Air mínimo). También presentó Apple Watch Audio Intelligence, Health Age, y features de autenticidad de fotos. iOS 27 llega en otoño 2026.</p>
+        <p class="why">El requisito de 12GB para features premium de IA on-device marca un threshold hardware claro — si desarrollas para iOS, planifica qué features de tu app pueden asumir ese piso.</p>
+        <p class="source"><a href="https://www.apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/">Apple Newsroom</a> &bull; <a href="https://www.fastcompany.com/91401418/iphone-17-ai-siri-apple-intelligence">Fast Company</a></p>
+    </div>
+
+    <div class="news-item">
+        <h3>Chip Chimera: nueva arquitectura para IA eficiente en móviles</h3>
+        <p class="what">Investigadores de TU Eindhoven (proyecto CONVOLVE) presentaron el chip Chimera el 8 de septiembre, diseñado con co-optimización de algoritmos, arquitectura de procesador, memoria y circuitos. Permite ejecutar inferencia de IA localmente en phones y laptops con menor consumo energético que soluciones actuales.</p>
+        <p class="why">La co-optimización cross-layer es la dirección donde va el hardware para on-device AI — prepárate para que tus modelos edge tengan restricciones diferentes en 18-24 meses.</p>
+        <p class="source"><a href="https://techxplore.com/news/2026-09-powerful-ai-edge.html">TechXplore</a> &bull; <a href="https://bits-chips.com/article/tue-showcases-edge-ai-chip-design-to-cut-energy-use/">Bits&Chips</a></p>
+    </div>
+
+    <!-- EJE 4: Ecosistema y seguridad -->
+    <div class="section-title">Ecosistema y seguridad</div>
+
+    <div class="news-item">
+        <h3>Anthropic reporta 4 incidentes de acceso no autorizado a Claude y contrata METR</h3>
+        <p class="what">Anthropic reveló el 9 de septiembre cuatro incidentes donde Claude fue accedido sin autorización y contrató a METR (organización de evaluación de modelos) para auditar los casos de forma independiente. La compañía también negocia un posible IPO en octubre a $800B.</p>
+        <p class="why">Si dependes de Claude en producción, estos incidentes subrayan la importancia de tener fallbacks y monitoreo propio — no delegues 100% la seguridad a tu proveedor de LLM.</p>
+        <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a></p>
+    </div>
+
+    <div class="news-item hot">
+        <h3>🔥 Accenture y Google Cloud lanzan equipo de 1,000 ingenieros para Gemini Enterprise</h3>
+        <p class="what">Accenture y Google Cloud anunciaron el Gemini Enterprise Business Group el 9 de septiembre: 1,000 ingenieros forward-deployed y aceleradores por industria para implementar agentes con Gemini en empresas a gran escala.</p>
+        <p class="why">Esto valida que las empresas grandes están pasando de pilotos a despliegues masivos de agentes — hay demanda real para freelancers y consultoras que puedan implementar soluciones similares a menor escala.</p>
+        <p class="source"><a href="https://www.chinatechnews.com/2026/09/09/128865-top-tech-news-today-september-9-2026-google-meta-openai-xiaomi-more">ChinaTechNews</a></p>
+    </div>
+
+    <!-- EJE 5: IA aplicada a sports tech, salud y bienestar -->
+    <div class="section-title">Salud y sports tech</div>
+
+    <div class="news-item hot">
+        <h3>🔥 Apple Watch con Audio Intelligence y Health Age</h3>
+        <p class="what">Apple presentó Audio Intelligence para Apple Watch, que usa IA para procesar audio ambiental y de salud directamente en el dispositivo. También lanzó Health Age, un indicador que combina datos de sensores (frecuencia cardíaca, sueño, actividad) para estimar edad biológica versus cronológica.</p>
+        <p class="why">Health Age como métrica unificada de wellness es exactamente el tipo de feature que plataformas de coaching deportivo y nutrición pueden replicar con datos de wearables abiertos.</p>
+        <p class="source"><a href="https://www.theneuron.ai/news/everything-ai-apple-announced-september-9-event/">The Neuron</a></p>
+    </div>
+
+    <div class="news-item hot">
+        <h3>🔥 Wearables y coaching IA: el 70% de inferencias serán on-device en 2026</h3>
+        <p class="what">El American College of Sports Medicine nombró a los wearables como tendencia fitness #1 de 2026, con casi la mitad de adultos en EE.UU. usando uno. Las plataformas combinan sensores, GPS, video y datos de wellness para estimar fatiga pre-sintomática y entregar coaching personalizado.</p>
+        <p class="why">Si construyes un marketplace de servicios deportivos o de bienestar, la integración con datos de wearables ya no es diferenciador — es table stakes.</p>
+        <p class="source"><a href="https://www.trendhunter.com/slideshow/september-2026-sports">TrendHunter</a> &bull; <a href="https://athletechnews.com/ces-2026-top-fitness-wellness-health-tech-trends/">Athletech News</a></p>
+    </div>
+
+    <footer>
+        Generado el 10/09/2026 · Filtrado para senior devs construyendo producto
+    </footer>
+</body>
+</html>
