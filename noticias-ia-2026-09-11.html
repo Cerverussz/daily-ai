@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 11 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>11 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI lanza Agents API en beta p&uacute;blica: la infra de Codex para todos</h3>
+      <p class="what">OpenAI liber&oacute; su Agents API el 10 de septiembre, exponiendo la misma infraestructura que potencia Codex. Gestiona sesiones de agentes de larga duraci&oacute;n, coordinaci&oacute;n de herramientas v&iacute;a MCP, orquestaci&oacute;n de sub-agentes, y ejecuci&oacute;n en sandboxes hosted o en entornos propios (Cloudflare, Vercel, E2B, Modal, DigitalOcean), sin costo adicional por API &mdash; solo pagas modelo y herramientas.</p>
+      <p class="why">Es la alternativa m&aacute;s production-ready para orquestaci&oacute;n de agentes sin armar tu propia capa de sesi&oacute;n y tools desde cero.</p>
+      <p class="source"><a href="https://openai.com/index/introducing-the-agents-api/">OpenAI</a> &bull; <a href="https://www.marktechpost.com/2026/09/10/openai-launches-the-agents-api-in-public-beta-putting-the-codex-harness-behind-one-api-call/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cisco despliega agentes AI personalizados para 90,000 empleados</h3>
+      <p class="what">Cisco expandi&oacute; su programa &ldquo;MyAgent&rdquo; a toda su fuerza laboral global. Cada agente usa el rol, contexto de equipo y actividad reciente del empleado para surfacear informaci&oacute;n relevante y automatizar tareas rutinarias.</p>
+      <p class="why">Es uno de los despliegues enterprise m&aacute;s grandes de agentes AI role-specific &mdash; valida el modelo de agentes contextuales como herramienta real de productividad, no como piloto.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple presenta iPhone 18 Pro con A20 Pro: AI on-device se duplica</h3>
+      <p class="what">Apple anunci&oacute; el iPhone 18 Pro con el chip A20 Pro en proceso de 2nm. Incluye un Neural Engine de 32 cores (doble vs A19 Pro), 50% m&aacute;s ancho de banda de memoria, soporte para FP8, y GPU 40% m&aacute;s r&aacute;pida.</p>
+      <p class="why">Duplicar el compute de inferencia on-device abre nuevas categor&iacute;as de features AI que antes requer&iacute;an cloud &mdash; m&aacute;s privacidad, menos latencia, y cero costo por request.</p>
+      <p class="source"><a href="https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/">Apple Newsroom</a> &bull; <a href="https://www.macrumors.com/2026/09/09/apple-unveils-a20-pro-as-first-2nm-smartphone-chip/">MacRumors</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Android AppFunctions: tu app como servidor MCP para agentes AI</h3>
+      <p class="what">La API AppFunctions de Google (librer&iacute;a Jetpack, ahora en preview experimental) permite que apps Android expongan sus capacidades como servidores MCP on-device. Asistentes como Gemini pueden invocar acciones de tu app directamente, con permisos estructurados y controles de seguridad.</p>
+      <p class="why">Si desarrollas apps Android, esta es la nueva superficie de integraci&oacute;n: las apps que expongan AppFunctions ser&aacute;n descubribles y accionables por agentes AI; las que no, ser&aacute;n invisibles.</p>
+      <p class="source"><a href="https://developer.android.com/ai/appfunctions">Android Developers</a> &bull; <a href="https://developer.android.com/blog/posts/top-ai-on-android-updates-for-building-intelligent-experiences-from-google-i-o-26">Google I/O &rsquo;26 Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot Workspace a&ntilde;ade coordinaci&oacute;n multi-agente</h3>
+      <p class="what">Copilot Workspace ahora soporta m&uacute;ltiples agentes especializados trabajando simult&aacute;neamente en distintas partes del codebase, con agentes separados para implementaci&oacute;n, testing y documentaci&oacute;n coordinados v&iacute;a contexto compartido.</p>
+      <p class="why">Multi-agente dentro del IDE compite directamente con el modelo ag&eacute;ntico de Claude Code &mdash; como dev solo o en equipo peque&ntilde;o, las opciones para manejar codebases complejas se multiplican.</p>
+      <p class="source"><a href="https://www.shakudo.io/blog/best-ai-coding-assistants">Shakudo</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Mireye (YC S26): infraestructura de location intelligence para agentes AI</h3>
+      <p class="what">Mireye, del batch Summer 2026 de Y Combinator, provee infraestructura de ubicaci&oacute;n para agentes AI que toman decisiones sobre lugares f&iacute;sicos en EE.UU. Indexa 366 campos por ubicaci&oacute;n y ya se usa en screening de riesgo para seguros, proptech y selecci&oacute;n de almacenes para rob&oacute;tica.</p>
+      <p class="why">Ejemplo concreto de infra para la econom&iacute;a de agentes &mdash; si construyes marketplaces o features location-aware, este es el tipo de capa de datos estructurados que los agentes necesitan para operar en el mundo f&iacute;sico.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>California firma Adam&rsquo;s Law: reglas estrictas para chatbots AI con menores</h3>
+      <p class="what">El gobernador Newsom firm&oacute; la SB 1119 el 10 de septiembre, obligando a operadores de chatbots AI a detectar ideaci&oacute;n suicida en menores, notificar a padres, mantener protocolos de crisis, y pasar auditor&iacute;as independientes anuales. California es el primer estado con estos requisitos.</p>
+      <p class="why">Si construyes cualquier producto AI consumer-facing que pueda ser usado por menores, esta ley crea obligaciones concretas de compliance que probablemente se replicar&aacute;n en otros estados.</p>
+      <p class="source"><a href="https://sd18.senate.ca.gov/news/governor-newsom-signs-adams-law">Senado de California</a> &bull; <a href="https://www.techspot.com/news/113820-california-bans-addictive-social-media-features-children-under.html">TechSpot</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code recibe actualizaci&oacute;n amplia: plugins, workflows y telem&eacute;trica</h3>
+      <p class="what">Claude Code lanz&oacute; una actualizaci&oacute;n que incluye evaluaciones de plugins, cambio de estilo de output, controles avanzados de workflows y telemetr&iacute;a, y numerosas mejoras de fiabilidad, terminal, prompt-cache y sesi&oacute;n. Los endpoints de user-management de la Admin API para Claude Enterprise salieron de beta.</p>
+      <p class="why">Plugin evals y controles de workflow mueven a Claude Code de asistente de coding a plataforma configurable de desarrollo &mdash; relevante si tu equipo lo est&aacute; estandarizando.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot &mdash; Claude Code</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude">Releasebot &mdash; Claude</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic publica 4&ordm; informe de amenazas: sistemas multi-agente usados en ciberataques</h3>
+      <p class="what">Anthropic revel&oacute; 8 meses de usos maliciosos disrupted de Claude (dic 2025 &ndash; ago 2026) en 7 &aacute;reas. Hallazgo clave: sistemas multi-agente se usaron para ejecutar partes de ciberataques aut&oacute;nomamente. La mayor campa&ntilde;a de destilaci&oacute;n fue atribuida a Alibaba (151M+ intercambios desde 3,500 cuentas fraudulentas destilando Opus 4.6/4.7).</p>
+      <p class="why">Los hallazgos de destilaci&oacute;n y ciberataques aut&oacute;nomos son un wake-up call &mdash; el robo de modelos y el uso adversarial son riesgos operacionales reales para cualquiera que construya sobre APIs de AI.</p>
+      <p class="source"><a href="https://www.anthropic.com/threat-intelligence-report-september-2026">Anthropic</a> &bull; <a href="https://www.unite.ai/anthropic-details-disrupted-claude-misuse-across-seven-harm-areas/">Unite.AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Sam Altman abierto a frenar el desarrollo de AI de frontera</h3>
+      <p class="what">En una reuni&oacute;n interna el 11 de septiembre, Altman dijo a empleados de OpenAI que la compa&ntilde;&iacute;a est&aacute; abierta a desacelerar el desarrollo de AI de frontera, esperando que otros labs sigan. Esto tras una brecha de contenci&oacute;n y una pausa de dos semanas en entrenamiento a mediados de 2026.</p>
+      <p class="why">Una posible desaceleraci&oacute;n coordinada de la industria afectar&iacute;a directamente el ritmo de nuevos modelos, capacidades de API y la din&aacute;mica competitiva sobre la que los founders t&eacute;cnicos construyen.</p>
+      <p class="source"><a href="https://www.bloomberg.com/news/articles/2026-09-11/openai-is-open-to-slowing-cutting-edge-ai-ceo-sam-altman-tells-staff">Bloomberg</a> &bull; <a href="https://tech.yahoo.com/ai/articles/sam-altman-says-openai-open-111520650.html">Yahoo Tech</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Sports Tech: ligas europeas autorizar&aacute;n wearables en competici&oacute;n, analytics AI se democratiza</h3>
+      <p class="what">Ligas europeas se preparan para autorizar wearables durante competici&oacute;n en 2026, habilitando monitoreo biom&eacute;trico en tiempo real. El an&aacute;lisis de video con AI se vuelve accesible m&aacute;s all&aacute; de las grandes franquicias, y FIFA anunci&oacute; pricing din&aacute;mico para el Mundial 2026.</p>
+      <p class="why">La convergencia de on-device AI, wearables y deportes crea un mercado real para plataformas de health/performance &mdash; especialmente conforme el analytics avanzado se vuelve accesible para organizaciones peque&ntilde;as y coaches independientes.</p>
+      <p class="source"><a href="https://wsc-sports.com/blog/industry-insights/ai-sports-revolution-12-innovations-changing-everything/">WSC Sports</a> &bull; <a href="https://www.ibtimes.com/why-2026-marks-turning-point-ai-sports-beyond-3797829">IBTimes</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 11/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
