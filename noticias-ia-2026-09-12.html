@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 12 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>12 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic lanza Commerce Blueprint: agentes de compra con Visa, Mastercard y Shopify</h3>
+      <p class="what">Anthropic public&oacute; un blueprint open-source con c&oacute;digo prearmado para dos tipos de agentes de comercio: shopper agents (buscan productos, arman carrito, completan checkout) y merchant agents (cat&aacute;logo, inventario, operaciones de venta). Shopify y Priceline ya corren agentes en producci&oacute;n con carritos 35% m&aacute;s grandes y 60% m&aacute;s conversiones.</p>
+      <p class="why">Si tienes un marketplace o e-commerce, este blueprint te da la arquitectura lista para que un agente AI compre por tu usuario &mdash; el canal de venta del futuro ya tiene SDK.</p>
+      <p class="source"><a href="https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-built-the-shopping-brain-and-skipped-the-wallet/">PYMNTS</a> &bull; <a href="https://www.digitalcommerce360.com/2026/09/02/anthropic-debuts-claude-features-focused-on-agentic-commerce/amp/">Digital Commerce 360</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitSpawn: vulnerabilidad en .git/config afecta 7 coding agents incluyendo Claude Code, Codex y Cursor</h3>
+      <p class="what">Manifold Security revel&oacute; que un atacante puede inyectar c&oacute;digo malicioso via core.fsmonitor en .git/config, que se ejecuta cuando el agente hace git status &mdash; fuera del sandbox, sin prompt de aprobaci&oacute;n. Afecta a Claude Code, OpenAI Codex, Cursor, Goose, Hermes Agent, Qwen Code y Grok Build. Cuatro de los siete segu&iacute;an sin parche al 1 de septiembre.</p>
+      <p class="why">Si usas coding agents en repos que no controlas (open source, PRs externos), actualiza ya: Claude Code 2.1.196+, Codex CLI 0.131.0+, Cursor 3.0.0+.</p>
+      <p class="source"><a href="https://thehackernews.com/2026/09/malicious-git-configs-can-make-claude.html">The Hacker News</a> &bull; <a href="https://cymulate.com/blog/the-race-to-ship-ai-tools-left-security-behind-part-1-sandbox-escape/">Cymulate</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 DeepSeek V4.1 Flash: supera a V4 Pro con solo 8B par&aacute;metros activos a $0.30/M tokens</h3>
+      <p class="what">DeepSeek lanz&oacute; V4.1 Flash, un modelo MoE de 552B par&aacute;metros con 8B activos en input y 16B en output. M&uacute;ltiples evaluadores independientes confirman que supera a V4-Pro en rendimiento, costo y latencia. Desde el 14 de septiembre, requests a V4-Pro via API ser&aacute;n servidos por V4.1-Flash autom&aacute;ticamente.</p>
+      <p class="why">A $0.30 input / $1.20 output por mill&oacute;n de tokens, es el modelo m&aacute;s eficiente para pipelines de alto volumen en tu backend &mdash; ideal para RAG, clasificaci&oacute;n y agentes.</p>
+      <p class="source"><a href="https://siliconangle.com/2026/09/10/deepseek-releases-v4-1-flash-says-it-outperforms-flagship-v4-pro/">SiliconANGLE</a> &bull; <a href="https://pub.towardsai.net/deepseek-v4-1-flash-review-46d782c27897">Towards AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Devin Voice: coding por voz full-duplex con el nuevo modelo SWE-2</h3>
+      <p class="what">Cognition lanz&oacute; Devin Voice, un modo de voz full-duplex donde puedes hablar con Devin mientras &eacute;l escucha, responde, levanta entornos, modifica c&oacute;digo y corre tests en paralelo. Usa GPT-Live para la voz y su nuevo modelo SWE-2 de 2.8T par&aacute;metros entrenado con RL.</p>
+      <p class="why">La interfaz de voz para coding agents cambia el flujo de trabajo: puedes discutir arquitectura con Devin mientras &eacute;l ejecuta, sin tocar el teclado.</p>
+      <p class="source"><a href="https://www.aiposthub.com/cognition-devin-voice-swe-2-deep-dive-2026/">AI Post Hub</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google AppFunctions: apps Android como servidores MCP para agentes AI</h3>
+      <p class="what">Google abri&oacute; AppFunctions en preview: un API de plataforma + librer&iacute;a Jetpack que permite a apps Android funcionar como servidores MCP on-device. Gemini ya puede automatizar tareas cross-app (calendario, notas, tareas) en m&uacute;ltiples fabricantes. Hay un Early Access Program abierto.</p>
+      <p class="why">Si desarrollas apps Android, exponer tus funciones via AppFunctions hace tu app descubrible por Gemini y otros agentes AI &mdash; es el MCP del m&oacute;vil.</p>
+      <p class="source"><a href="https://developer.android.com/ai/appfunctions">Android Developers</a> &bull; <a href="https://www.infoq.com/news/2026/03/android-appfunctions-agents/">InfoQ</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot recorta cr&eacute;ditos AI hasta 44% &mdash; hora de evaluar alternativas</h3>
+      <p class="what">Desde el 1 de septiembre, GitHub Copilot Business baj&oacute; de 3,000 a 1,900 cr&eacute;ditos AI/mes (-36.7%) y Enterprise de 7,000 a 3,900 (-44.3%), sin cambio en precio. Adem&aacute;s, todos los seats nuevos requieren pago por adelantado antes de dar acceso.</p>
+      <p class="why">Si tu equipo depende de Copilot, haz las cuentas: a $20/mes, Cursor, Claude Code y Kiro Pro ofrecen el mismo precio con modelos m&aacute;s potentes y sin l&iacute;mites de cr&eacute;ditos tan agresivos.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/">GitHub Blog</a> &bull; <a href="https://www.gapvelocity.ai/blog/github-copilots-new-usage-based-billing-what-changed-why-developers-are-upset-and-what-it-means">GapVelocity</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Keiki: un agente customer-facing, deploy en todos los canales desde un workflow</h3>
+      <p class="what">Keiki permite construir un solo agente AI orientado al cliente y desplegarlo en web, WhatsApp, SMS, email y m&aacute;s desde un &uacute;nico flujo de trabajo. La infraestructura de deployment multi-canal para agentes AI ya es una categor&iacute;a mainstream.</p>
+      <p class="why">Para founders construyendo un marketplace o SaaS con soporte AI, esto elimina el problema de mantener integraciones separadas por canal.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/daily/2026-09-01">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Dario Amodei publica ensayo pidiendo frenar el desarrollo de IA &mdash; OpenAI se suma</h3>
+      <p class="what">El 12 de septiembre, el CEO de Anthropic public&oacute; un ensayo de 3,800 palabras advirtiendo que enjambres de agentes AI rogue podr&iacute;an tomar control de internet en seis meses. Propone revisores independientes, coordinaci&oacute;n entre labs y cooperaci&oacute;n internacional. Sam Altman (OpenAI) r&aacute;pidamente respald&oacute; la postura.</p>
+      <p class="why">Cuando los dos CEOs de labs rivales piden frenar al mismo tiempo, presta atenci&oacute;n: regulaci&oacute;n m&aacute;s estricta viene en camino y afectar&aacute; qu&eacute; puedes deployar.</p>
+      <p class="source"><a href="https://www.axios.com/2026/09/12/anthropic-ai-amodei-pacing">Axios</a> &bull; <a href="https://www.cnn.com/2026/09/12/tech/anthropic-ceo-essay-ai">CNN</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code v2.1.269: plugin evals con 6 graders, output-style switching y fixes masivos</h3>
+      <p class="what">La actualizaci&oacute;n del 11 de septiembre a&ntilde;ade <code>claude plugin eval</code>: corre el eval suite de un plugin, genera reportes JSON+HTML, y compara con un baseline sin plugin. Tambi&eacute;n llega <code>/output-style</code> para cambiar estilos de output en CLI, VS Code, web y Slack.</p>
+      <p class="why">Si est&aacute;s creando plugins para Claude Code, ahora puedes validar calidad autom&aacute;ticamente antes de publicar &mdash; eval-driven development para skills de AI.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/09/11/anthropic-adds-plugin-evals-to-claude-code-6-grader-types-a-no-plugin-baseline-and-a-ci-gate-for-skills/">MarkTechPost</a> &bull; <a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic en camino a IPO: $30B+ run rate, Google $40B y Amazon $25B de respaldo</h3>
+      <p class="what">Google comprometi&oacute; hasta $40B a valuaci&oacute;n de $350B con 5GW de Cloud por 5 a&ntilde;os; Amazon duplic&oacute; con $25B. Con revenue run rate de $30B+ (1,400% YoY), se habla de IPO en octubre a $800B.</p>
+      <p class="why">Anthropic consolid&aacute;ndose como infraestructura enterprise significa que apostar tu stack en Claude tiene respaldo de largo plazo.</p>
+      <p class="source"><a href="https://blog.mean.ceo/anthropic-claude-news-september-2026/">Mean CEO</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>AI en fitness: entrenadores aut&oacute;nomos y coaching personalizado en auge ($10.68B en 2025)</h3>
+      <p class="what">El mercado de AI en fitness y wellness alcanz&oacute; $10.68B en 2025 con proyecci&oacute;n a $57.8B para 2035 (19.3% CAGR). Las tendencias de septiembre incluyen AI Basketball Trainers, plataformas de actividades recreativas con AI, y soluciones de scorecard por voz. Whoop Coach, con OpenAI integrado, lidera coaching conversacional personalizado.</p>
+      <p class="why">El vertical de sports tech + AI est&aacute; maduro para un marketplace de coaching: la demanda existe, los modelos son accesibles, y los incumbentes a&uacute;n no dominan.</p>
+      <p class="source"><a href="https://www.trendhunter.com/slideshow/september-2026-sports">Trend Hunter</a> &bull; <a href="https://www.insightaceanalytic.com/report/ai-in-fitness-and-wellness-market/2744">InsightAce</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 12/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
