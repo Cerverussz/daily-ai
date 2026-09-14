@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 13 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>13 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <h2 class="section-title">Industria &amp; Estrategia</h2>
+
+    <div class="news-item">
+      <h3>Dario Amodei pide frenar el desarrollo de IA: "We Must Pace the Frontier"</h3>
+      <p class="what">El CEO de Anthropic publicó un ensayo de 3,800 palabras argumentando que la industria debe reducir deliberadamente el ritmo de mejora de modelos frontier. Sam Altman (OpenAI), Elon Musk (xAI) y Demis Hassabis (DeepMind) expresaron su apoyo en menos de 24 horas.</p>
+      <p class="why">Si los labs cumplen y coordinan un freno real, la ventana para construir productos sobre modelos actuales se extiende — menos presión de obsolescencia para tu stack de IA.</p>
+      <p class="source"><a href="https://www.axios.com/2026/09/12/anthropic-ai-amodei-pacing">Axios</a> · <a href="https://slashdot.org/story/26/09/12/1738240/anthropic-ceo-dario-amodei-calls-for-ai-slowdown">Slashdot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI descarta IPO en 2026: Altman lo califica de "ill-advised"</h3>
+      <p class="what">Sam Altman confirmó que OpenAI no saldrá a bolsa este año, citando riesgos de seguridad crecientes y apuntando a 2027. Mencionó un posible pacto entre labs para desacelerar el desarrollo de IA frontier.</p>
+      <p class="why">La señal más clara de que los labs empiezan a priorizar consolidación sobre velocidad — relevante si dependes de sus APIs para tu producto.</p>
+      <p class="source"><a href="https://fortune.com/2026/09/12/sam-altman-openai-ipo-delay-ill-advised-moment-safety-concerns/">Fortune</a> · <a href="https://www.bloomberg.com/news/articles/2026-09-12/openai-ipo-won-t-happen-until-2027-sam-altman-tells-fortune">Bloomberg</a></p>
+    </div>
+
+    <h2 class="section-title">Aplicaciones Profesionales &amp; Agentes</h2>
+
+    <div class="news-item hot">
+      <h3>🔥 Salesforce lanza 7 agentes de IA "job-ready" con nombres propios</h3>
+      <p class="what">Agentforce 360 presenta a Hunter (ventas B2B), Casey (customer service), Carter (e-commerce), Paige (IT/HR), Marshall (supply chain), Piper (pipeline inbound) y Fin (CX). Hunter ya genera el 60% del pipeline de ventas en un piloto. Incluyen un nuevo runtime de "horizonte largo" que permite a los agentes perseguir objetivos durante días o semanas.</p>
+      <p class="why">El runtime de horizonte largo es el cambio real: agentes que mantienen contexto por días cambian cómo se diseñan workflows en marketplaces y plataformas de servicios.</p>
+      <p class="source"><a href="https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/">Salesforce</a> · <a href="https://siliconangle.com/2026/09/11/salesforce-introduces-new-ai-agents-to-automate-sales-support-tasks/">SiliconANGLE</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic publica Commerce Agents: blueprint open-source para shopping y merchants</h3>
+      <p class="what">Blueprint Apache 2.0 con dos agentes de referencia: uno de compra (búsqueda, comparación, carrito) y uno merchant (inventario, pricing, marketing). Cubre retail, travel, telecom y entretenimiento. Corre sobre Claude API, Bedrock, Vertex AI o Foundry. Visa, Mastercard y Shopify son launch partners.</p>
+      <p class="why">Si construyes un marketplace o plataforma de e-commerce, esto es un acelerador directo — un agente de compra funcional en días, no meses, con arquitectura single-loop probada en producción.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/09/03/anthropic-released-claude-commerce-agents-an-apache-2-0-blueprint-for-shopping-and-merchant-agents-across-retail-travel-telecom-and-entertainment/">MarkTechPost</a> · <a href="https://byteiota.com/claude-commerce-agents-ship-ai-shopping-in-days-open-source/">ByteIota</a></p>
+    </div>
+
+    <h2 class="section-title">Startups &amp; Founders</h2>
+
+    <div class="news-item hot">
+      <h3>🔥 YC S26 Demo Day: TechCrunch destaca las 9 startups más hot del batch</h3>
+      <p class="what">El batch S26 (~470 founders) pivotea fuerte hacia deep tech: Lamb Labs hardcodea pesos de modelos AI directo en silicio, Atomarine pone data centers en barcazas marítimas, e Isengard (drones de ataque jet-powered) ya genera $10M en revenue. Las valuaciones están más aterrizadas que en batches recientes.</p>
+      <p class="why">La señal para founders técnicos: los VCs premian startups que resuelven cuellos de botella de infraestructura (energía, chips, compute) sobre wrappers de API.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/13/the-9-buzziest-startups-from-y-combinators-latest-demo-day-according-to-vcs/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 SmallBiz.ai lanza plataforma de workflows de IA para 500 tipos de negocios</h3>
+      <p class="what">Nueva plataforma que permite a pequeños negocios implementar workflows de IA para ventas, reducción de costos y operaciones. Cubre cientos de flujos prediseñados adaptados a verticales específicas.</p>
+      <p class="why">Modelo replicable: en vez de un SaaS genérico, verticalizar workflows de IA por tipo de negocio es un playbook que funciona para founders indie.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <h2 class="section-title">Ecosistema Claude &amp; Anthropic</h2>
+
+    <div class="news-item">
+      <h3>Claude Code: plugin eval, output styles y soporte multi-plugin por directorio</h3>
+      <p class="what">Las últimas actualizaciones de Claude Code incluyen <code>claude plugin eval</code> para correr suites de evaluación con resultados scored (JSON + HTML), <code>/output-style</code> para cambiar estilos de output incluso en sesiones headless, y soporte para apuntar <code>--plugin-dir</code> a una carpeta de plugins que se cargan automáticamente.</p>
+      <p class="why">Plugin eval cambia el juego para quienes construyen extensiones de Claude Code — ahora puedes testear tu plugin con resultados reproducibles antes de publicar.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/changelog">Claude Code Docs</a> · <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic publica Threat Intelligence Report: agentes como vector de ataque</h3>
+      <p class="what">Reporte de 36,000 palabras cubriendo 39 casos de misuso entre dic 2025 y ago 2026 en 7 áreas. El hallazgo clave: el robo de API keys de modelos frontier es ahora un mercado criminal en sí mismo, y los ataques ya explotan cadenas de agentes, no solo prompts individuales.</p>
+      <p class="why">Si expones agentes de IA en tu producto, la seguridad de API keys y la validación de cadenas de acción ya no son nice-to-have.</p>
+      <p class="source"><a href="https://www.cyberkendra.com/2026/09/anthropic-threat-report-says-ai-now.html">Cyber Kendra</a> · <a href="https://d3security.com/blog/anthropic-threat-report-september-2026-soc-takeaways/">D3 Security</a></p>
+    </div>
+
+    <h2 class="section-title">IA on-device &amp; Mobile</h2>
+
+    <div class="news-item hot">
+      <h3>🔥 On-device AI en Android cruza el umbral de sub-20ms de latencia</h3>
+      <p class="what">Benchmarks reales muestran inferencia de modelos de computer vision por debajo de 20ms en dispositivos Android flagship con Snapdragon 8 Elite. ExecuTorch de Meta se consolida como el framework líder para deploy de modelos PyTorch en mobile, con técnicas como KV-cache quantization y 4-bit group-wise para LLMs on-device.</p>
+      <p class="why">Sub-20ms abre la puerta a features de IA en tiempo real en apps Android sin depender de cloud — búsqueda visual, AR, y procesamiento de imágenes en tu app.</p>
+      <p class="source"><a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms">AlephZero Labs</a> · <a href="https://www.forasoft.com/blog/article/neural-networks-on-android-369">Fora Soft</a></p>
+    </div>
+
+    <h2 class="section-title">AI Coding &amp; Developer Tools</h2>
+
+    <div class="news-item hot">
+      <h3>🔥 El mercado de AI coding se consolida en 3 categorías claras</h3>
+      <p class="what">El ecosistema se divide en: plugins IDE (GitHub Copilot), IDEs standalone (Cursor, Kiro de AWS), y agentes de terminal (Claude Code). Amazon Q Developer cierra registros y se apaga en abril 2027, Google sunset Gemini Code Assist individual, y Copilot migra a billing por AI-credits. El uso regular de AI coding alcanza el 88.3% entre devs.</p>
+      <p class="why">La consolidación fuerza a elegir: si tu workflow depende de una herramienta que está sunset, migra ahora mientras hay opciones abiertas.</p>
+      <p class="source"><a href="https://www.shakudo.io/blog/best-ai-coding-assistants">Shakudo</a> · <a href="https://www.cortex.io/post/the-engineering-leaders-guide-to-ai-tools-for-developers-in-2026">Cortex</a></p>
+    </div>
+
+    <h2 class="section-title">AI + Sports Tech &amp; Salud</h2>
+
+    <div class="news-item">
+      <h3>Wearables AI predicen fatiga y enfermedad antes de los síntomas</h3>
+      <p class="what">Los wearables de 2026 ya estiman fatiga y riesgo de enfermedad por adelantado usando variabilidad de frecuencia cardíaca circadiana y datos de fases de sueño. El mercado de AI en fitness y wellness alcanza $10.68B y crece al 19.3% CAGR. ACSM nombra wearable tech como tendencia #1 en fitness mundial.</p>
+      <p class="why">Para builders en sports tech: la data biométrica predictiva es el diferenciador — coaching que anticipa, no solo reacciona.</p>
+      <p class="source"><a href="https://athletechnews.com/ces-2026-top-fitness-wellness-health-tech-trends/">Athletech News</a> · <a href="https://www.insightaceanalytic.com/report/ai-in-fitness-and-wellness-market/2744">InsightAce</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>SportsPro AI + Tech London: la industria deportiva se reúne en torno a IA</h3>
+      <p class="what">El evento SportsPro AI + Tech (29-30 sept, Londres) reúne a la industria del deporte para explorar la influencia de IA en performance, fan engagement y operaciones. Exoesqueletos como el Sidekick de Dephy ($4,500) prometen mejoras reales en rendimiento atlético y rehabilitación.</p>
+      <p class="why">Si estás en el cruce de IA y deporte, este es el evento donde se definen los deals — wearables + coaching IA + marketplace de servicios es la intersección con más tracción.</p>
+      <p class="source"><a href="https://ai.sportspro.com/">SportsPro</a> · <a href="https://athletechnews.com/best-new-fitness-wellness-product-launches-spring-summer-2026/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Daily AI Briefing para senior devs construyendo producto</p>
+      <p>13 de septiembre de 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
