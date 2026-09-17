@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 16 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>16 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google lanza Gemini 3.8 Live: modelos de voz production-ready para agentes conversacionales</h3>
+      <p class="what">Google anunci&oacute; Gemini 3.8 Live y 3.8 Live Extended Thinking el 15 de septiembre, sus modelos de di&aacute;logo en vivo m&aacute;s avanzados. El modelo base prioriza escala y costo; Extended Thinking a&ntilde;ade razonamiento multi-paso para tareas complejas. Disponibles en Gemini API, AI Studio, y Workspace.</p>
+      <p class="why">Si est&aacute;s construyendo un agente de voz para tu plataforma o marketplace, esto baja dr&aacute;sticamente la barrera t&eacute;cnica a menos de la mitad del precio de GPT-Live-1.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/">Google Blog</a> &bull; <a href="https://www.unite.ai/google-launches-gemini-3-8-live-and-extended-thinking-voice-models/">Unite.AI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Shanghai AI Lab sube Atria Dawn Preview: 744B par&aacute;metros, agente open-source que supera a GPT-5.6 Sol</h3>
+      <p class="what">Modelo MoE de 744B par&aacute;metros bajo licencia MIT, post-entrenado sobre GLM-5.2 de Z.ai. Contexto de 256K tokens, 92.5% en BrowseComp (vs 92.2 de GPT-5.6 Sol y 90.8 de Claude Opus 5), con checkpoints FP8 en Hugging Face y API hosted.</p>
+      <p class="why">Un modelo agente open-source que compite con los mejores frontier models es una opci&oacute;n real para pipelines de automatizaci&oacute;n donde quieres control total del stack sin vendor lock-in.</p>
+      <p class="source"><a href="https://aiweekly.co/alerts/shanghai-ai-lab-ships-atria-dawn-preview-a-744b-agentic-moe">AI Weekly</a> &bull; <a href="https://startupfortune.com/shanghai-ai-lab-quietly-releases-atria-a-free-744-billion-parameter-ai-agent/">Startup Fortune</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Mistral x Mozilla: AI privada y multilenguaje llega a Firefox Smart Window</h3>
+      <p class="what">Mozilla y Mistral anunciaron el 16 de septiembre que Firefox Smart Window (beta) integra Mistral Small 4 como opci&oacute;n de AI en el navegador para EEUU, Canad&aacute; y Francia. El asistente ayuda con b&uacute;squedas complejas y contexto de pesta&ntilde;as, sin vender datos ni entrenar con conversaciones.</p>
+      <p class="why">Un canal de distribuci&oacute;n masivo para AI privada en browser; si tu producto tiene extensi&oacute;n web, vale la pena evaluar integraci&oacute;n con Smart Window.</p>
+      <p class="source"><a href="https://mistral.ai/news/mistral-x-mozilla/">Mistral AI</a> &bull; <a href="https://blog.mozilla.org/en/firefox/mozilla-mistral-partnership/">Mozilla Blog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple Siri con Gemini ya est&aacute; live: iOS 27 trae chatbot completo con 1.2T par&aacute;metros</h3>
+      <p class="what">La nueva Siri con iOS 27 corre sobre un modelo custom Google Gemini de ~1.2T par&aacute;metros. Ofrece conversaciones de 20+ turnos, automatizaci&oacute;n multi-app, generaci&oacute;n de im&aacute;genes, an&aacute;lisis de archivos y ejecuci&oacute;n de comandos multi-paso en el dispositivo.</p>
+      <p class="why">Cada iPhone ahora tiene un agente AI nativo potente; esto cambia las expectativas de UX de tus usuarios en mobile y abre nuevas integraciones via Siri Shortcuts.</p>
+      <p class="source"><a href="https://ai2.work/blog/apple-s-gemini-powered-siri-is-here-and-it-s-changing-everything">AI2Work</a> &bull; <a href="https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Emergence AI: agentes multi-agente fallan ante prompt injection hasta 46 horas despu&eacute;s</h3>
+      <p class="what">Paper publicado el 15 de septiembre: probaron 8 mundos de 10 agentes AI contra inyecci&oacute;n de prompts, desinformaci&oacute;n y exposici&oacute;n de memoria. Ning&uacute;n mundo resisti&oacute; los tres ataques. Agentes identificaban correctamente phishing pero luego guardaban y compart&iacute;an el contenido.</p>
+      <p class="why">Si tu producto usa m&uacute;ltiples agentes AI en producci&oacute;n, este paper es lectura obligada: la detecci&oacute;n sin enforcement no es defensa.</p>
+      <p class="source"><a href="https://www.digitalapplied.com/blog/emergence-world-multi-agent-safety-eight-worlds-results">Digital Applied</a> &bull; <a href="https://aiweekly.co/ai-news-today/edition/2026-09-16">AI Weekly</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code: fast mode en remoto, plugin evals, y mejor manejo de MCP</h3>
+      <p class="what">Updates del 15-16 de septiembre: fast mode ahora funciona en sesiones remotas (cloud y self-hosted), nuevo sistema de plugin evals para testear skills, output-style switching, per-command allowed_domains en auto mode, y notificaci&oacute;n + reconnexi&oacute;n autom&aacute;tica cuando un servidor MCP se desconecta.</p>
+      <p class="why">Plugin evals y allowed_domains por comando hacen Claude Code m&aacute;s viable para workflows automatizados en CI/CD donde necesitas control granular.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Sam Altman anticipa lanzamiento grande de OpenAI para la pr&oacute;xima semana</h3>
+      <p class="what">El 16 de septiembre, Altman dijo que el lanzamiento que m&aacute;s le emocionaba se aplaz&oacute; una semana pero que &quot;valdr&aacute; la espera&quot;, adem&aacute;s de adelantar un &quot;barrage&quot; de anuncios tipo DevDay. Viene tras GPT-5.6 Sol y el push agresivo de OpenAI en agentes aut&oacute;nomos.</p>
+      <p class="why">Si est&aacute;s evaluando qu&eacute; modelo usar para tu producto, espera una semana antes de comprometerte; puede cambiar la ecuaci&oacute;n precio-capacidad.</p>
+      <p class="source"><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-september-16-2026/">The Neuron</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude for Small Business: workflows, integraciones y programa de entrenamiento</h3>
+      <p class="what">Anthropic lanz&oacute; el 15 de septiembre Claude for Small Business con nuevos workflows pre-armados, integraciones con herramientas existentes, y talleres comunitarios. Tambi&eacute;n lanzaron smart reports (beta) para Enterprise que analizan uso, costos y skills compartidos del equipo.</p>
+      <p class="why">Si vendes a PyMEs, ahora compites con workflows nativos de Claude; si eres PyME, tienes automatizaciones listas para usar sin integrar APIs.</p>
+      <p class="source"><a href="https://blog.mean.ceo/anthropic-claude-news-september-2026/">Mean CEO Blog</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Dario Amodei publica &quot;We Must Pace the Frontier&quot;: pide frenar la carrera de capabilities</h3>
+      <p class="what">Ensayo de 3,800 palabras del CEO de Anthropic pidiendo que los frontier labs reduzcan deliberadamente la velocidad de mejora de capacidades para que alignment, interpretabilidad y testing puedan alcanzar. Propone auditores independientes con acceso interno a cada lab. Altman y Musk respondieron apoyando.</p>
+      <p class="why">La primera vez que los CEOs de los tres labs principales debaten p&uacute;blicamente frenar; si se materializa, afecta directamente qu&eacute; modelos tendr&aacute;s disponibles y cu&aacute;ndo.</p>
+      <p class="source"><a href="https://www.forbes.com/sites/gabrielalinzainescu/2026/09/13/anthropic-ceo-dario-amodei-calls-for-a-slowdown-in-frontier-ai/">Forbes</a> &bull; <a href="https://thezvi.substack.com/p/we-must-pace-the-frontier">Zvi Mowshowitz</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic watermark y C2PA: Fable 5.1 y Mythos 5.1 firman contenido generado</h3>
+      <p class="what">El texto generado por Claude Fable 5.1 y Mythos 5.1 ahora lleva watermark de Anthropic, y las im&aacute;genes/videos producidos via code execution llevan C2PA Content Credentials. Es el primer sistema de atribuci&oacute;n integrado end-to-end en un modelo de lenguaje comercial.</p>
+      <p class="why">Si generas contenido con Claude para tu producto, ahora puedes probar procedencia; &uacute;til para compliance y diferenciaci&oacute;n vs contenido no-atribuido.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot - Anthropic Updates</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple prepara AI Health Coach y Nike desarrolla su propio LLM para fitness</h3>
+      <p class="what">Apple est&aacute; desarrollando un coach de salud AI que renovar&aacute; Apple Health con recomendaciones personalizadas basadas en datos de wearables. Nike, por su parte, est&aacute; construyendo su propio large language model enfocado en fitness y rendimiento deportivo.</p>
+      <p class="why">Los dos players m&aacute;s grandes de consumer tech y sportswear est&aacute;n verticalizando AI para fitness; si construyes en este espacio, tu ventana para diferenciarte es ahora, antes de que sus ecosistemas se cierren.</p>
+      <p class="source"><a href="https://www.trendhunter.com/slideshow/september-2026-sports">Trend Hunter</a> &bull; <a href="https://orangesoft.co/blog/ai-in-fitness-industry">Orangesoft</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 16/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
