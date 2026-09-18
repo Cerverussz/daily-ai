@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 17 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>17 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI lanza Sponsored Agents: ChatGPT se convierte en plataforma publicitaria conversacional</h3>
+      <p class="what">OpenAI anunci&oacute; Sponsored Agents, unidades publicitarias donde el usuario abre una conversaci&oacute;n directa con un agente AI de la marca dentro de ChatGPT. Ya integra Shopify (merchants crean campa&ntilde;as desde la app), HubSpot (conecta CRM a ads), y Wayfair como piloto.</p>
+      <p class="why">Si vendes en un marketplace o tienes un SaaS, este es el nuevo canal de adquisici&oacute;n: tu producto necesita un agente conversacional listo para cuando ChatGPT lo ofrezca a usuarios relevantes.</p>
+      <p class="source"><a href="https://openai.com/index/reimagining-advertising-with-ai/">OpenAI</a> &bull; <a href="https://searchengineland.com/openai-is-turning-chatgpt-ads-into-conversations-488949">Search Engine Land</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 DeskcommCRM: CRM open-source con agentes AI + WhatsApp, trending en GitHub</h3>
+      <p class="what">CRM self-hosted (MIT) con agentes AI nativos que responden WhatsApp, califican leads y mueven el pipeline autom&aacute;ticamente. Incluye soporte MCP, multi-tenancy, y un one-command deploy en VPS via HostGator.</p>
+      <p class="why">Si est&aacute;s construyendo un marketplace de servicios donde la venta es por chat, esto es una base production-ready que te ahorra meses de desarrollo.</p>
+      <p class="source"><a href="https://github.com/melgarafael/DeskcommCRM">GitHub</a> &bull; <a href="https://aitoolly.com/ai-news/2026-09-17">AIToolly</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>MCP Apps ya es oficial: servidores MCP ahora devuelven UIs interactivas</h3>
+      <p class="what">El protocolo MCP formaliz&oacute; MCP Apps en su spec 2026-07-28: los servidores pueden retornar interfaces HTML interactivas renderizadas en iframe sandboxed. Funciona en Claude, ChatGPT, VS Code y Goose, con partners como Figma, Slack, Salesforce y Asana.</p>
+      <p class="why">Si expones tu servicio via MCP, ahora puedes entregar dashboards y formularios interactivos directamente dentro del chat del usuario, no solo texto.</p>
+      <p class="source"><a href="https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/">MCP Blog</a> &bull; <a href="https://blog.scottlogic.com/2026/09/16/mcp-apps-your-ui-their-chat.html">Scott Logic</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Arm CSS for Mobile 2: arquitectura AI-native dise&ntilde;ada para agentes on-device</h3>
+      <p class="what">Arm present&oacute; CSS for Mobile 2 con CPU C2-Ultra, GPU Mali G2-Ultra NX con aceleradores neuronales dedicados integrados en el pipeline gr&aacute;fico, y hasta 4x mejor rendimiento por watt en neural graphics. Dise&ntilde;ado espec&iacute;ficamente para que agentes AI mantengan contexto y coordinen modelos dentro de los l&iacute;mites t&eacute;rmicos de un smartphone.</p>
+      <p class="why">El hardware m&oacute;vil de 2027 va a poder correr agentes AI persistentes on-device; es hora de dise&ntilde;ar tu app Android pensando en esa capacidad.</p>
+      <p class="source"><a href="https://newsroom.arm.com/news/arm-css-for-mobile-2-agentic-ai-mobile-graphics">Arm Newsroom</a> &bull; <a href="https://androguru.com/2026/09/arm-unveils-ai-native-mobile-platform-with-powerful-new-cpu-and-gpu-architecture/">Androguru</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google Gemini 3.8 Flash Cyber: modelo frontier para seguridad, supera a Claude y GPT en vulnerabilidades</h3>
+      <p class="what">Google lanz&oacute; Gemini 3.8 Flash Cyber con 86.2% en CyberGym y 2.6x m&aacute;s patches correctos de Chrome que los rivales. Disponible para investigadores de seguridad, operadores de infraestructura cr&iacute;tica, y maintainers de software via el Fairwind Program.</p>
+      <p class="why">Si mantienes c&oacute;digo C/C++ o necesitas auditor&iacute;a de seguridad automatizada en tu pipeline, este modelo especializado supera a los generalistas.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/">Google Blog</a> &bull; <a href="https://tech-insider.org/gemini-3-8-flash-cyber-launch-2026/">Tech Insider</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Snap lanza Specs Intelligence: asistente AI anticipatorio para AR glasses y m&oacute;vil</h3>
+      <p class="what">Specs Intelligence es un servicio AI standalone que se conecta a tus cuentas (Google, etc.) y anticipa lo que necesitas: preguntas antes de una reuni&oacute;n, planes de viaje, recordatorios contextuales. Funciona independiente de Snapchat, disponible en iOS con preview y pronto en Mac.</p>
+      <p class="why">El patr&oacute;n de "AI que organiza contexto de m&uacute;ltiples fuentes y anticipa necesidades" es replicable como feature diferenciador en cualquier app de productividad.</p>
+      <p class="source"><a href="https://www.engadget.com/2260736/snap-introduces-a-standalone-ai-assistant-specs-intelligence/">Engadget</a> &bull; <a href="https://www.techrepublic.com/article/news-snap-specs-intelligence-anticipatory-ai/">TechRepublic</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 "Model Fatigue" en enterprise: Anthropic, OpenAI, Meta y Google lanzaron productos en la misma semana</h3>
+      <p class="what">Reportes indican que compradores enterprise est&aacute;n experimentando "model fatigue" tras una semana donde los 4 grandes lanzaron productos simult&aacute;neamente. Las empresas luchan por evaluar y elegir entre ofertas que se actualizan m&aacute;s r&aacute;pido de lo que pueden integrar.</p>
+      <p class="why">Oportunidad para founders: herramientas de evaluaci&oacute;n, abstracci&oacute;n y switching entre modelos son ahora infraestructura cr&iacute;tica que el mercado pide.</p>
+      <p class="source"><a href="https://aiweekly.co/ai-news-today">AI Weekly</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 YC S26: Mireye y Hebbian Robotics entre los lanzamientos destacados</h3>
+      <p class="what">Mireye (YC S26) ofrece una API &uacute;nica con MCP server para dar a agentes AI datos de localizaci&oacute;n y enriquecimiento de cualquier direcci&oacute;n en EE.UU. Hebbian Robotics lanz&oacute; HFlow, un SDK que convierte grabaciones de robots multimodales en datasets estandarizados.</p>
+      <p class="why">Mireye es un ejemplo perfecto de c&oacute;mo construir un negocio API-first expuesto via MCP: los agentes AI son tu canal de distribuci&oacute;n.</p>
+      <p class="source"><a href="https://startupcorners.com/digest/product-digest-2026-09-01">StartupCorners</a> &bull; <a href="https://explodingtopics.com/startups/ai">Exploding Topics</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic revela que Claude lidera el 26% de su propia I+D de modelos</h3>
+      <p class="what">Anthropic anunci&oacute; el 17 de septiembre que Claude completa end-to-end el 26% de las tareas de R&D de modelos bajo supervisi&oacute;n humana, y colabora en el 90%. En febrero ese n&uacute;mero era 0%. El anuncio llega mientras Dario Amodei pide desacelerar el desarrollo por seguridad.</p>
+      <p class="why">La recursividad de AI construyendo AI acelera el ciclo de mejora; espera que los modelos mejoren cada vez m&aacute;s r&aacute;pido, lo que reduce la ventana para diferenciarte solo por tecnolog&iacute;a.</p>
+      <p class="source"><a href="https://www.usnews.com/news/business/articles/2026-09-17/anthropic-says-its-model-claude-is-helping-to-build-the-next-version-of-itself">US News</a> &bull; <a href="https://techxplore.com/news/2026-09-anthropic-claude-version.html">TechXplore</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: mejoras de UX, MCP y estabilidad publicadas el 17 de septiembre</h3>
+      <p class="what">Nueva versi&oacute;n con mejoras en /diff (renderizado instant&aacute;neo), soporte de teclado mejorado para SSH y terminales como Alacritty, Monitor con deadline m&aacute;ximo de 30 min, y fixes para plugins, artifacts y workflows en la nube.</p>
+      <p class="why">Las mejoras de SSH y terminal hacen Claude Code m&aacute;s viable como herramienta de desarrollo remoto en tus pipelines de CI/CD.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a> &bull; <a href="https://code.claude.com/docs/en/whats-new">Claude Code Docs</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 IFA 2026: wearables pasan de tracking pasivo a coaching AI predictivo</h3>
+      <p class="what">IFA 2026 consolid&oacute; el cambio de paradigma: los wearables ya no solo registran m&eacute;tricas sino que predicen fatiga, riesgo de lesi&oacute;n y deuda de sue&ntilde;o, programando entrenamientos basados en readiness. Smart rings, sensores AI y plataformas de nutrici&oacute;n convergen en un ecosistema unificado.</p>
+      <p class="why">Si est&aacute;s construyendo una plataforma de coaching o marketplace deportivo, la integraci&oacute;n con datos de wearables via APIs abiertas es ahora el diferenciador, no la captura manual.</p>
+      <p class="source"><a href="https://gadgetsandwearables.com/2026/09/06/best-fitness-health-tech-ifa-2026/">Gadgets &amp; Wearables</a> &bull; <a href="https://bodymotionlab.com/blog/ai-workout-programming-wearables-2026">Body Motion Lab</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 17/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
