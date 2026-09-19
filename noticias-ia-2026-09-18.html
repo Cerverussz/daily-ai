@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 18 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>18 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; OpenAI lanza Astra for Law: GPT-6 especializado para el sector legal</h3>
+      <p class="what">OpenAI present&oacute; Astra for Law, una configuraci&oacute;n de GPT-6 Astra con un &iacute;ndice de b&uacute;squeda legal que cubre jurisprudencia, estatutos y regulaciones de EE.UU. en m&aacute;s de 230 millones de URLs. Incluye 26 plugins de ecosistema (Thomson Reuters, Harvey, iManage) y logra 40% m&aacute;s precisi&oacute;n y 54% m&aacute;s pasajes relevantes que GPT-6 con b&uacute;squeda web gen&eacute;rica.</p>
+      <p class="why">Es el primer caso serio de un frontier model configurado como producto vertical completo &mdash; el patr&oacute;n "modelo + datos de dominio + plugins de ecosistema" es replicable para cualquier marketplace de servicios profesionales.</p>
+      <p class="source"><a href="https://openai.com/index/astra-for-law/">OpenAI</a> &bull; <a href="https://www.artificiallawyer.com/2026/09/18/openai-launches-astra-for-law/">Artificial Lawyer</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; GitHub HydraFusion: orquestaci&oacute;n multi-modelo en Copilot CLI con 67% menos costo</h3>
+      <p class="what">GitHub lanz&oacute; HydraFusion como research preview en Copilot CLI. El sistema rutea cada request por uno de tres patrones (Single, Cascade o Critique) usando m&uacute;ltiples modelos en un solo turno, que se revisan y critican entre s&iacute; antes de fusionar el resultado.</p>
+      <p class="why">Si est&aacute;s pagando por un solo modelo frontier en tu pipeline de coding, HydraFusion demuestra que la orquestaci&oacute;n multi-modelo ya compite en calidad a fracci&oacute;n del costo.</p>
+      <p class="source"><a href="https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/">GitHub Blog</a> &bull; <a href="https://www.infoq.com/news/2026/09/github-hydrafusion/">InfoQ</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenText + Cohere North: plataforma agentic AI para datos empresariales privados</h3>
+      <p class="what">OpenText y Cohere formaron una alianza estrat&eacute;gica que combina la capa de gesti&oacute;n de datos de OpenText con Cohere North, una plataforma de AI ag&eacute;ntica desplegable de forma privada con su propia suite de modelos enterprise.</p>
+      <p class="why">Para quienes construyen sobre datos sensibles de clientes (salud, legal, finanzas), tener agentes que corren enteramente on-premise sin exponer datos a terceros ya es un producto empaquetado, no un proyecto de infra.</p>
+      <p class="source"><a href="https://www.artificialintelligence-news.com/">AI News</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Devin factoriza RSA-260 con GPUs: showcase extremo de agentes de coding</h3>
+      <p class="what">El ingeniero de Cognition Eric Lu anunci&oacute; la factorizaci&oacute;n de RSA-260, el n&uacute;mero RSA challenge m&aacute;s grande factorizado p&uacute;blicamente, usando una implementaci&oacute;n GPU desarrollada y operada con Devin. Devin Desktop (el rebrand de Windsurf) unifica agentes locales y cloud en un solo IDE con soporte del Agent Client Protocol (ACP).</p>
+      <p class="why">M&aacute;s all&aacute; del hito cripto, demuestra que los agentes de coding ya operan a nivel de investigaci&oacute;n computacional seria, no solo autocomplete.</p>
+      <p class="source"><a href="https://devin.ai/blog/windsurf-is-now-devin-desktop">Devin Blog</a> &bull; <a href="https://apidog.com/blog/whats-new-in-devin-2026/">Apidog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Z.ai GLM-5.3-Flash: open-weight con 320B params corriendo en 100K aceleradores chinos</h3>
+      <p class="what">Z.ai report&oacute; que su modelo flagship open-weight GLM-5.3-Flash (320B params, 18B activos, 1M tokens de contexto) ya opera en m&aacute;s de 100,000 aceleradores chinos con throughput triplicado en dos semanas. Representa competencia real a Nvidia en costo por token de inferencia.</p>
+      <p class="why">La paridad de costo en hardware no-Nvidia para modelos open-weight significa que las opciones de self-hosting se multiplican, especialmente para startups fuera del ecosistema US cloud.</p>
+      <p class="source"><a href="https://llm-stats.com/llm-updates">LLM Stats</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft Agent Framework: nueva versi&oacute;n con abstracciones de vector store unificadas</h3>
+      <p class="what">Microsoft Agent Framework lanz&oacute; la versi&oacute;n 1.18.0 con abstracciones compartidas de vector store que soportan Azure AI Search, Redis, Qdrant y PostgreSQL, m&aacute;s mejoras en AG-UI y componentes core. El framework soporta Python y .NET para construir y orquestar agentes multi-paso.</p>
+      <p class="why">Si ya usas PostgreSQL o Redis, ahora tienes RAG y agentes con vector search sin agregar otra dependencia de infra.</p>
+      <p class="source"><a href="https://github.com/microsoft/agent-framework/releases/tag/python-1.18.0">GitHub Releases</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Lovable supera $500M ARR: +100K proyectos diarios como MVP builder</h3>
+      <p class="what">Lovable, la plataforma que convierte descripciones en lenguaje natural en apps full-stack editables, ya genera $500M ARR con casi 8M de usuarios y m&aacute;s de 100K proyectos nuevos por d&iacute;a. Levant&oacute; $330M en Serie B con NVIDIA, Salesforce y Databricks Ventures a una valuaci&oacute;n de $6.6B.</p>
+      <p class="why">La brecha entre "tener una idea" y "tener un MVP deployado" ya se mide en horas, no semanas &mdash; el diferencial competitivo se mueve a distribuci&oacute;n y dominio de nicho.</p>
+      <p class="source"><a href="https://lovable.dev/blog/series-b">Lovable</a> &bull; <a href="https://sacra.com/c/lovable/">Sacra</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Labs AI negocian organismo estilo FINRA para testear modelos antes del release</h3>
+      <p class="what">El jefe de pol&iacute;tica de OpenAI confirm&oacute; que los tres laboratorios m&aacute;s grandes llevan semanas trabajando en un organismo tipo FINRA para testear modelos antes de su lanzamiento p&uacute;blico. El CEO de Cohere lo llam&oacute; un "c&aacute;rtel", reflejando la tensi&oacute;n entre seguridad coordinada y competencia abierta.</p>
+      <p class="why">Si construyes producto sobre estos modelos, un ente regulador de pre-release cambiar&iacute;a el ritmo de actualizaciones y la previsibilidad de tu stack &mdash; algo a monitorear.</p>
+      <p class="source"><a href="https://blog.buildfastwithai.com/ai-news-today-september-18-2026">Build Fast with AI</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Anthropic revela: Claude ya lidera el 26% de su propia I+D</h3>
+      <p class="what">Anthropic anunci&oacute; que Claude lidera el 26% del trabajo de investigaci&oacute;n y desarrollo que construye la pr&oacute;xima versi&oacute;n de s&iacute; mismo, completando la mayor&iacute;a de tareas "end-to-end desde un prompt de alto nivel" bajo supervisi&oacute;n humana. M&aacute;s del 90% de la I+D de Anthropic involucra a Claude como colaborador, con 30,000 agentes corriendo simult&aacute;neamente.</p>
+      <p class="why">Esto confirma que el loop de auto-mejora de modelos ya es real en producci&oacute;n, no te&oacute;rico &mdash; el ritmo de mejora de Claude se acelera exponencialmente.</p>
+      <p class="source"><a href="https://vinnews.com/2026/09/18/anthropic-says-its-model-claude-is-helping-to-build-the-next-version-of-itself/">VINnews</a> &bull; <a href="https://spectrumlocalnews.com/us/snplus/business/2026/09/18/anthropic-claude-helping-to-build-next-version">Spectrum News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5.1: cache reads 75% m&aacute;s baratos ($0.25/M tokens)</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Fable 5.1 y Mythos 5.1 (mismo modelo, distintas configuraciones de safeguards). El cambio clave: el costo de cache reads baja 75% a $0.25 por mill&oacute;n de tokens, haciendo mucho m&aacute;s viable los agentes de larga duraci&oacute;n con contexto persistente.</p>
+      <p class="why">Si tu producto usa agentes que re-leen documentos grandes o mantienen contexto largo, el ahorro en cache reads cambia la econom&iacute;a de tu unit economics por completo.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads">VentureBeat</a> &bull; <a href="https://platform.claude.com/docs/en/models/mythos-5-1/overview">Claude Platform Docs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Sonnet 5 mantiene precio introductorio: $2/$10 por MTok permanente</h3>
+      <p class="what">La subida de precio programada de Claude Sonnet 5 a $3/$15 por mill&oacute;n de tokens para septiembre 1 no se ejecut&oacute;. El precio introductorio de $2 input / $10 output se mantiene como precio est&aacute;ndar.</p>
+      <p class="why">Buena noticia para cualquier producto en producci&oacute;n con Sonnet &mdash; tus proyecciones de costo no necesitan ajuste.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>&#x1F525; Google Health Coach con Gemini sale de preview: coaching AI personalizado a $9.99/mes</h3>
+      <p class="what">El health coach con Gemini de Fitbit/Google sali&oacute; de preview p&uacute;blico (500K+ testers) a producci&oacute;n como parte de Google Health Premium. Incluye planes adaptativos de fitness, res&uacute;menes de historial cl&iacute;nico y an&aacute;lisis predictivo de sue&ntilde;o, recuperaci&oacute;n y readiness.</p>
+      <p class="why">Google empaqueta AI + wearable data + coaching como servicio a $10/mes &mdash; es el template para cualquier marketplace de salud o fitness que quiera monetizar con AI personalizada.</p>
+      <p class="source"><a href="https://research.google/blog/how-we-are-building-the-personal-health-coach/">Google Research</a> &bull; <a href="https://www.mobihealthnews.com/news/google-debuts-gemini-powered-ai-health-coach-fitbit-and-pixel-watch-users">MobiHealthNews</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 18/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
