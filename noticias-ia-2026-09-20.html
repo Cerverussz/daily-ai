@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 20 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>20 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Plugin4Shell: vulnerabilidad zero-click RCE afecta a Claude Code, Codex, Copilot y Gemini CLI</h3>
+      <p class="what">Investigadores de AIR Security divulgaron Plugin4Shell el 18 de septiembre, un fallo que permite a atacantes intercambiar c&oacute;digo malicioso en plugins ya aprobados, evadiendo las verificaciones SHA-pinning mediante nombres de branch que imitan hashes de commits. Claude Code (v2.1.179) y Codex (v0.146.0) ya est&aacute;n parchados; Copilot y Gemini CLI siguen expuestos.</p>
+      <p class="why">Si usas plugins en tu agente de coding, actualiza inmediatamente &mdash; los plugins heredan permisos del developer incluyendo claves SSH, credenciales cloud y acceso a repos internos.</p>
+      <p class="source"><a href="https://www.helpnetsecurity.com/2026/09/18/plugin4shell-ai-coding-agents-vulnerability/">Help Net Security</a> &bull; <a href="https://cybersecuritynews.com/plugin4shell-zero-click-rce/">Cybersecurity News</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; CXMT anuncia producci&oacute;n masiva de DRAM LPDDR5X de 5&ordf; generaci&oacute;n</h3>
+      <p class="what">La china ChangXin Memory Technologies (CXMT) present&oacute; en el World Manufacturing Convention dos chips LPDDR5X de 24Gb con su plataforma G5, que usa cuadruple-patterning a 11.95nm. Ya alcanza el 10% del mercado global de DRAM y sus chips est&aacute;n integrados en smartphones flagship chinos.</p>
+      <p class="why">M&aacute;s DRAM asequible significa dispositivos m&oacute;viles con m&aacute;s RAM para inferencia on-device &mdash; directamente relevante si est&aacute;s construyendo features de AI local en Android.</p>
+      <p class="source"><a href="https://www.benzinga.com/markets/tech/26/09/61886650/cxmt-advanced-dram-mass-production-samsung-sk-hynix-micron">Benzinga</a> &bull; <a href="https://en.sedaily.com/international/2026/09/20/chinas-cxmt-starts-mass-production-on-5th-generation-dram">Seoul Economic Daily</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Claude Code sube al #1 en ranking de herramientas AI para devs (septiembre 2026)</h3>
+      <p class="what">Seg&uacute;n el power ranking de LogRocket de septiembre, Claude Code escal&oacute; al primer puesto tras integrar Fable 5.1 (1762 Elo, el score m&aacute;s alto de cualquier modelo en cualquier herramienta). Empata con OpenAI Codex en Terminal-Bench 4.0 (57.9% vs 58.2%, dentro del margen de error).</p>
+      <p class="why">El patr&oacute;n enterprise dominante ya es claro: Copilot como autocomplete base para todos + Claude Code para trabajo ag&eacute;ntico de alto impacto en terminal.</p>
+      <p class="source"><a href="https://blog.logrocket.com/ai-dev-tool-power-rankings/">LogRocket Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Fable 5.1 y Mythos 5.1: cache reads 75% m&aacute;s baratos, costo ag&eacute;ntico baja ~45%</h3>
+      <p class="what">Anthropic lanz&oacute; Fable 5.1 el 1 de septiembre con mejoras significativas en investigaci&oacute;n cient&iacute;fica y trabajo ag&eacute;ntico de larga duraci&oacute;n. Mismo pricing base ($10/$50 por MTok) pero cache reads bajan de $1 a $0.25/MTok, reduciendo hasta 45% el costo de workloads ag&eacute;nticos.</p>
+      <p class="why">Si ejecutas pipelines ag&eacute;nticos con contexto largo (RAG, code review automatizado), la reducci&oacute;n de cache es un cambio real en tu unit economics.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads">VentureBeat</a> &bull; <a href="https://www.datacamp.com/blog/claude-fable-5-1">DataCamp</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>On-device AI en Android cruza umbral cr&iacute;tico: inferencia sub-20ms en producci&oacute;n</h3>
+      <p class="what">Con LiteRT 2.x, MediaPipe Tasks y Gemini Nano v&iacute;a ML Kit, la inferencia on-device en Android alcanza consistentemente menos de 20ms para modelos de visi&oacute;n en producci&oacute;n. NPUs de Snapdragon, Tensor y MediaTek hacen INT8 varias veces m&aacute;s r&aacute;pido que solo CPU.</p>
+      <p class="why">Sub-20ms significa que puedes agregar features de AI en tiempo real (detecci&oacute;n de objetos, pose estimation) a tu app Android sin que el usuario perciba latencia.</p>
+      <p class="source"><a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms">AlephZero Labs</a> &bull; <a href="https://www.forasoft.com/blog/article/neural-networks-on-android-369">Fora Soft</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Cognition (Devin) alcanza $47B de valoraci&oacute;n con $900M de run-rate y factoriz&oacute; RSA-260</h3>
+      <p class="what">Bloomberg report&oacute; que Cognition est&aacute; cerrando ronda a $47B, casi el doble de hace 3 meses, con ingresos anualizados de $900M. En septiembre, un ingeniero de Cognition factoriz&oacute; RSA-260 (el mayor n&uacute;mero factorizado con algoritmo de prop&oacute;sito general) usando m&uacute;ltiples agentes Devin y ~4,900 GPU-days.</p>
+      <p class="why">Devin Desktop (ex-Windsurf) absorbi&oacute; el IDE y ahora es un command center de agentes &mdash; la consolidaci&oacute;n del mercado de AI coding se est&aacute; acelerando.</p>
+      <p class="source"><a href="https://cognition.com/blog/factoring-rsa-260">Cognition Blog</a> &bull; <a href="https://valueaddvc.com/blog/how-does-cognition-make-money-devin-pricing-windsurf-enterprise-and-the-492m-arr-breakdown">ValueAddVC</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>SpaceX cerr&oacute; la adquisici&oacute;n de Cursor por $60B: acceso a la mayor flota GPU del mundo</h3>
+      <p class="what">SpaceX complet&oacute; la compra de Cursor el 14 de agosto por $60B en acciones. Cursor ahora tiene acceso a la mayor flota de GPUs del mundo, lo que le permite entrenar modelos m&aacute;s fuertes y ofrecer precios m&aacute;s bajos a desarrolladores.</p>
+      <p class="why">El mercado de AI coding se est&aacute; polarizando entre Cursor-SpaceX, Devin-Cognition y Claude Code-Anthropic &mdash; elige tu stack considerando qui&eacute;n controlar&aacute; la infraestructura.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/">TechCrunch</a> &bull; <a href="https://finance.yahoo.com/technology/ai/articles/spacex-closes-60bn-acquisition-ai-085713131.html">Yahoo Finance</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Claude ya lidera el 26% del I+D de Anthropic y ayuda a construir su siguiente versi&oacute;n</h3>
+      <p class="what">Anthropic anunci&oacute; el 18 de septiembre que Claude lidera el 26% de su investigaci&oacute;n y desarrollo, completando tareas end-to-end desde prompts de alto nivel bajo supervisi&oacute;n humana. El 90% del I+D se hace en &ldquo;colaboraci&oacute;n&rdquo; con Claude, y hay ~30,000 agentes haciendo trabajo de investigaci&oacute;n e ingenier&iacute;a.</p>
+      <p class="why">Esto demuestra que los agentes AI ya son productivos en I+D real &mdash; si no est&aacute;s delegando tareas de engineering a agentes en tu propio equipo, est&aacute;s perdiendo velocidad.</p>
+      <p class="source"><a href="https://spectrumlocalnews.com/us/snplus/business/2026/09/18/anthropic-claude-helping-to-build-next-version">Spectrum News</a> &bull; <a href="https://www.usnews.com/news/business/articles/2026-09-17/anthropic-says-its-model-claude-is-helping-to-build-the-next-version-of-itself">US News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Sonnet 5 mantiene pricing introductorio: $2/$10 por MTok (no subi&oacute; en septiembre)</h3>
+      <p class="what">Anthropic confirm&oacute; que el pricing introductorio de Claude Sonnet 5 ($2 input / $10 output por MTok) se convierte en precio est&aacute;ndar. La subida a $3/$15 programada para el 1 de septiembre no se aplic&oacute;.</p>
+      <p class="why">Si est&aacute;s usando Sonnet 5 en producci&oacute;n para tu producto, tu costo se mantiene &mdash; buena se&ntilde;al de estabilidad para planificar unit economics a mediano plazo.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot - Claude Updates</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Apple prepara Health+ con AI Coach para iOS 27: coaching personalizado con datos de Apple Watch</h3>
+      <p class="what">Apple est&aacute; por lanzar su servicio Health+ (proyecto interno &ldquo;Mulberry&rdquo;), un coach de salud con IA que analiza frecuencia card&iacute;aca, sue&ntilde;o, actividad y otros indicadores del Apple Watch para dar recomendaciones personalizadas de fitness, nutrici&oacute;n y bienestar mental. Se espera su debut con iOS 27 y watchOS 27 este oto&ntilde;o.</p>
+      <p class="why">Apple entrando al coaching AI con datos de wearable valida el mercado entero de AI + wellness &mdash; si construyes en este espacio, prep&aacute;rate para competir o complementar su ecosistema.</p>
+      <p class="source"><a href="https://9to5mac.com/2026/08/29/apple-health-revamp-ai-coach-new-apple-watch-next-month/">9to5Mac</a> &bull; <a href="https://www.wareable.com/apple/apple-quartz-health-plus-ai-coaching-service-2026-launch-rumor">Wareable</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>EE.UU. propone mecanismo de notificaci&oacute;n AI entre presidentes en negociaciones con China</h3>
+      <p class="what">El secretario del Tesoro Scott Bessent y el vicepremier chino He Lifeng concluyeron conversaciones en Nueva York el 20 de septiembre, con EE.UU. proponiendo un mecanismo de notificaci&oacute;n de seguridad AI para la cumbre Trump-Xi de esta semana, enfocado en seguridad nacional.</p>
+      <p class="why">La regulaci&oacute;n bilateral AI est&aacute; tomando forma concreta &mdash; si tu producto opera en ambos mercados, las reglas del juego est&aacute;n a punto de cambiar.</p>
+      <p class="source"><a href="https://www.cnn.com/2026/09/20/business/us-china-trade-talks-ai-intl-hnk">CNN</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 20/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
