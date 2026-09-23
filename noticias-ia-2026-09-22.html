@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 22 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>22 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GPT-6 Sol y Luna en API: OpenAI recorta precios 50% y pone presion a todo el stack</h3>
+      <p class="what">OpenAI lanzo GPT-6 Sol ($2/$10 por MTok) y Luna ($0.10/$0.50), dos modelos debajo de Astra con la mitad de costo que sus predecesores GPT-5.6. Sol hace "la mitad de errores" que 5.6 Sol, y Luna marca 66.6% en DeepSWE v1.1 a un 93% menos de costo que Opus 5.</p>
+      <p class="why">Si usas modelos en produccion para tareas de volumen (clasificacion, extraccion, agentes ligeros), Luna a $0.10/MTok input cambia la ecuacion de costo por completo.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/">TechCrunch</a> &bull; <a href="https://venturebeat.com/technology/openai-releases-gpt-6-sol-and-luna-models-slashing-api-costs-50-or-more">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Bancos alertan: los shopping bots de IA superan las protecciones al consumidor</h3>
+      <p class="what">NatWest, Bank of America, ING, Capital One y Commonwealth Bank publicaron un informe conjunto advirtiendo que los agentes AI de compras avanzan mas rapido que los estandares de la industria y las protecciones contra fraude. John Lewis reporta que busquedas desde agentes AI subieron de 0.3% a 2.5% en un a&ntilde;o.</p>
+      <p class="why">Si construyes un marketplace o plataforma de e-commerce, necesitas pensar en autenticacion y verificacion de agentes AI como canal de compra, no solo usuarios humanos.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/09/22/banks-warn-ai-shopping-bots-raise-scam-fraud-data-privacy-risks.html">CNBC</a> &bull; <a href="https://www.androidheadlines.com/2026/09/banks-warn-ai-shopping-bots-scam-privacy-risks.html">Android Headlines</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones tecnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Opus 5.5: rendimiento de Fable 5.1 a 40% menos costo, output 30% mas rapido</h3>
+      <p class="what">Anthropic lanzo Claude Opus 5.5 con precio de $4/$20 por MTok (20% menos que Opus 5), cache reads a $0.20 (60% menos), y contexto de 1M tokens. Supera a GPT-6 Astra en FrontierCode a ~20% del costo por tarea, e iguala en Terminal Bench 4.0 al 40% del costo. Incluye modo "Responsive" y preserved thinking anti-destilacion.</p>
+      <p class="why">Para coding agentico en produccion, Opus 5.5 ofrece el mejor balance rendimiento/costo del mercado hoy; el cache a $0.20/MTok lo hace viable para agentes de larga duracion.</p>
+      <p class="source"><a href="https://www.anthropic.com/claude-opus-5-5">Anthropic</a> &bull; <a href="https://venturebeat.com/technology/anthropic-releases-claude-opus-5-5-beating-fable-5-1-on-key-agentic-benchmarks-at-60-cheaper-api-price">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Opus 5.5 disponible en GitHub Copilot desde el dia 1</h3>
+      <p class="what">GitHub habilito Claude Opus 5.5 en Copilot el mismo dia del lanzamiento, consolidando la tendencia multi-modelo en IDEs. Los desarrolladores pueden alternar entre GPT-6 Astra, Opus 5.5, y Fable 5.1 segun la tarea.</p>
+      <p class="why">El IDE multi-modelo ya no es experimental; si tu workflow de desarrollo no aprovecha routing entre modelos por complejidad de tarea, estas pagando de mas.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot/">GitHub Changelog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI cortara acceso de sus modelos a Cursor tras adquisicion de SpaceX</h3>
+      <p class="what">Tras la adquisicion de Cursor por SpaceX ($60B), OpenAI anuncio que dejara de proveer modelos a Cursor con fecha limite el 12 de noviembre de 2026. Cursor ya opera bajo SpaceXAI y agrego Origin como hosting de codigo y agentes cloud de larga duracion.</p>
+      <p class="why">El lock-in de modelos por rivalidad corporativa es real; diversificar proveedores de LLM en tu stack no es paranoia, es gestion de riesgo basica.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html">CNBC</a> &bull; <a href="https://cursor.com/blog/joining-spacex">Cursor Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Rankings AI Coding sep 2026: Claude Code y Codex empatan #1 en Terminal-Bench 4.0</h3>
+      <p class="what">En el refresh de septiembre, Fable 5.1 en Claude Code (57.9%) y GPT-6 Astra en Codex (58.2%) comparten la cima de Terminal-Bench 4.0. Devin sube a #4 tras absorber Windsurf y convertirse en Devin Desktop con el modelo SWE-2 de Cognition.</p>
+      <p class="why">El mercado de coding agents se esta consolidando rapido; la combinacion Claude Code (terminal) + Copilot (IDE) sigue siendo el stack dominante para senior devs.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/cursor-vs-claude-code-vs-github-copilot-2026-ultimate-comparison">NxCode</a> &bull; <a href="https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/">MightyBot</a></p>
+    </div>
+
+    <!-- EJE 3: Creacion de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Guerra de precios en modelos frontier: el costo de construir con AI cae en picada</h3>
+      <p class="what">En un solo dia, Opus 5.5 bajo a $4/$20 y Sol a $2/$10 por MTok, mientras Luna quedo en $0.10/$0.50. OpenAI confirmo que los precios de Sol y Luna son permanentes, no promocionales. El costo por tarea completada en coding agentico bajo ~80% en 6 meses.</p>
+      <p class="why">Para founders tecnicos, el costo de AI en tu producto ya no es un factor limitante; la diferenciacion ahora esta en el workflow y la UX, no en poder pagar la API.</p>
+      <p class="source"><a href="https://en.cryptonomist.ch/2026/09/23/openai-gpt-6-pricing/">Cryptonomist</a> &bull; <a href="https://www.marktechpost.com/2026/09/22/openai-releases-gpt-6-sol-and-luna-50-cheaper-api-pricing-and-benchmarks/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Baselayer levanta $35M Serie A para verificacion AI de negocios y deteccion de fraude</h3>
+      <p class="what">Baselayer, startup que usa AI para ayudar a instituciones financieras a verificar negocios y evaluar riesgo de fraude, cerro una Serie A de $35M liderada por M13. El producto ya esta en produccion con bancos reales.</p>
+      <p class="why">Ejemplo concreto de AI B2B vertical que resuelve un dolor real (KYB/fraude) con producto en produccion, no solo un paper o demo.</p>
+      <p class="source"><a href="https://blog.mean.ceo/ai-product-launches-news-september-2026/">Mean CEO Blog</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude esta ayudando a construir la siguiente version de si mismo</h3>
+      <p class="what">Anthropic revelo que Claude lidera el 26% de la investigacion y desarrollo de modelos de la compa&ntilde;ia, aunque sigue bajo supervision humana. El modelo no trabaja de forma completamente autonoma, pero ya participa activamente en su propia evolucion.</p>
+      <p class="why">Esto marca un punto de inflexion donde los modelos aceleran su propio desarrollo; la velocidad de mejora va a seguir acelerandose.</p>
+      <p class="source"><a href="https://www.usnews.com/news/business/articles/2026-09-17/anthropic-says-its-model-claude-is-helping-to-build-the-next-version-of-itself">US News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic, OpenAI y DeepSeek informaran al Consejo de Seguridad de la ONU sobre riesgos de AI</h3>
+      <p class="what">Francia convoco una sesion del Consejo de Seguridad de la ONU donde Sam Altman, Dario Amodei, y representantes de DeepSeek y Moonshot presentaran sobre riesgos de AI. Es la primera vez que labs chinos y americanos de AI frontera se sientan juntos en el Consejo.</p>
+      <p class="why">La regulacion global de AI se esta acelerando; como builder, vale la pena seguir que "red lines" proponen porque van a definir que puedes y que no puedes hacer con agentes autonomos.</p>
+      <p class="source"><a href="https://qz.com/deepseek-openai-anthropic-un-security-council-ai-risks-092226">Quartz</a> &bull; <a href="https://decrypt.co/379008/un-security-council-ai-risks-anthropic-openai-deepseek">Decrypt</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Wearables AI son tendencia #1 en fitness 2026: clubs con AI ven +18% en renovaciones</h3>
+      <p class="what">El American College of Sports Medicine confirmo wearable tech como tendencia #1 mundial de fitness 2026, con casi la mitad de adultos en EE.UU. usando uno. Clubs y gyms que implementaron personalizacion con AI reportan un aumento del 18% en renovaciones de membresias.</p>
+      <p class="why">Para quien construye en sports tech o wellness, la data de wearables + personalizacion AI no es un nice-to-have sino el diferenciador que mueve metricas de retencion.</p>
+      <p class="source"><a href="https://www.goldsgym.com/blog/2026-fitness-trends/">Gold's Gym</a> &bull; <a href="https://athletechnews.com/best-new-fitness-wellness-product-launches-spring-summer-2026/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 22/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
