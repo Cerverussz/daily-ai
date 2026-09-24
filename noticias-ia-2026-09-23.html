@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 23 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>23 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Qualcomm lanza Snapdragon 8 Elite Gen 6: chips 2nm dise&ntilde;ados para agentes AI on-device</h3>
+      <p class="what">Qualcomm present&oacute; dos chips flagship en TSMC 2nm: el Extreme puede correr modelos MoE de 30B par&aacute;metros directamente en el tel&eacute;fono, con una nueva arquitectura de cach&eacute; (FlexCache) optimizada para loops de orquestaci&oacute;n de agentes aut&oacute;nomos. Son los primeros chips m&oacute;viles en superar 5 GHz de CPU.</p>
+      <p class="why">Si est&aacute;s construyendo features agentes en tu app Android, esto significa que puedes correr modelos serios on-device sin cloud &mdash; latencia cero, costo por request cero.</p>
+      <p class="source"><a href="https://www.unite.ai/qualcomm-unveils-two-flagship-snapdragon-chips-built-for-agentic-ai/">Unite.AI</a> &bull; <a href="https://www.cnbc.com/2026/09/22/qualcomm-releases-android-chip-built-for-ai-amid-memory-shortage.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Xiaomi open-sources MiMo-V2.6: modelo de 1T params bajo licencia MIT</h3>
+      <p class="what">Xiaomi liber&oacute; MiMo-V2.6-Pro con 1.02 trillones de par&aacute;metros (42B activos por token), contexto de 1M tokens, e input multimodal (texto, imagen, video, audio). Lidera el &iacute;ndice de inteligencia de Artificial Analysis con 46 puntos, el m&aacute;s alto entre modelos open-weight.</p>
+      <p class="why">Un modelo frontier open-source y MIT de un fabricante de tel&eacute;fonos &mdash; la combinaci&oacute;n de hardware propio + modelo abierto crea oportunidades para integraciones profundas en Android.</p>
+      <p class="source"><a href="https://www.unite.ai/xiaomis-new-flagship-model-leads-open-weight-rankings-with-a-score-of-46/">Unite.AI</a> &bull; <a href="https://thenextweb.com/news/xiaomi-mimo-v2-6-open-weight-model-anthropic-distillation">The Next Web</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cisco Talos revela CLOSEDQUORUM: primer malware aut&oacute;nomo multi-modelo AI sin operador humano</h3>
+      <p class="what">Cisco Talos divulg&oacute; el primer implante C2 completamente aut&oacute;nomo que ejecuta m&uacute;ltiples modelos AI y opera sin intervenci&oacute;n humana. El malware toma decisiones de ataque, se adapta a defensas y persiste de forma aut&oacute;noma.</p>
+      <p class="why">Si tu producto maneja datos sensibles o tiene APIs expuestas, el threat model acaba de cambiar: los atacantes ahora son agentes AI que no duermen.</p>
+      <p class="source"><a href="https://blog.buildfastwithai.com/ai-news-today-september-23-2026">Build Fast with AI</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Guerra de precios: GPT-6 Sol/Luna y Opus 5.5 recortan costos 40-50% en el mismo d&iacute;a</h3>
+      <p class="what">OpenAI lanz&oacute; GPT-6 Sol ($2/$10 por M tokens) y Luna ($0.10/$0.50), 50% m&aacute;s baratos que GPT-5.6. Horas despu&eacute;s, Anthropic respondi&oacute; con Opus 5.5 a $4/$20, 40% menos que Opus 5. Ambos atribuyen las reducciones a mejoras en caching e inferencia.</p>
+      <p class="why">El costo de correr tu producto con modelos frontier se redujo a la mitad en un d&iacute;a &mdash; si ten&iacute;as features de AI pospuestos por m&aacute;rgenes, es hora de recalcular.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/openai-releases-gpt-6-sol-and-luna-models-slashing-api-costs-50-or-more">VentureBeat</a> &bull; <a href="https://www.technology.org/2026/09/23/anthropic-claude-opus-5-5-launch-pricing-benchmarks/">Technology.org</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Grok 4.7 disponible en Cursor: 2.1T params optimizado para coding largo</h3>
+      <p class="what">xAI lanz&oacute; Grok 4.7 con 2.1 trillones de par&aacute;metros (40% m&aacute;s que 4.6), contexto de 500K tokens, y 71% en DeepSWE v1.1. Disponible en Cursor, Grok Build y la API de xAI a $2/$6 por M tokens, mismo precio que su predecesor.</p>
+      <p class="why">Otra opci&oacute;n competitiva en tu IDE: si usas Cursor, puedes probar Grok 4.7 para tareas de coding largos al mismo costo que antes.</p>
+      <p class="source"><a href="https://sqmagazine.co.uk/xai-launches-grok-4-7-coding-model/">SQ Magazine</a> &bull; <a href="https://ccleaks.com/news/cursor-grok-4-7-sep-2026">CCLeaks</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cognition SWE-2 gratis en Devin Desktop/CLI hasta octubre 10</h3>
+      <p class="what">Cognition lanz&oacute; SWE-2, post-entrenado desde Kimi K3 (2.8T params), con 83.75% en SWE-bench independiente. Est&aacute; disponible gratis con Devin Pro ($20/mes) en Desktop y CLI hasta el 10 de octubre, compitiendo directamente con Claude Fable en FrontierCode a 64% menos costo.</p>
+      <p class="why">Ventana de un mes para evaluar un coding agent frontier sin costo adicional &mdash; ideal para comparar contra Claude Code en tu workflow real.</p>
+      <p class="source"><a href="https://www.mindstudio.ai/blog/cognition-swe-2-coding-model">MindStudio</a> &bull; <a href="https://cellcog.ai/blog/cognition-swe-2/">CellCog</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Los modelos frontier ahora cuestan lo que costaban los tier-2 hace 6 meses</h3>
+      <p class="what">Con Luna a $0.10/M input, Sol a $2/M, y Opus 5.5 a $4/M (cache hits a $0.20/M), el costo de inteligencia frontier para un SaaS o marketplace cay&oacute; a niveles donde features de AI dejan de ser un centro de costo y se vuelven commodity.</p>
+      <p class="why">Si est&aacute;s construyendo un producto tech, la ecuaci&oacute;n unit economics de features AI-powered cambi&oacute; fundamentalmente hoy.</p>
+      <p class="source"><a href="https://qz.com/openai-gpt-6-sol-luna-api-price-cut-092326">Quartz</a> &bull; <a href="https://shattered.io/claude-opus-5-5-launch-pricing-2026/">Shattered</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Opus 5.5: rendimiento de Fable a 40% menos costo</h3>
+      <p class="what">Anthropic lanz&oacute; Opus 5.5 el 22 de septiembre: 30% m&aacute;s r&aacute;pido que Opus 5, usa menos tokens por tarea, contexto de 1M tokens y 128K de output m&aacute;ximo. Pricing: $4/$20 por M tokens, con cache hits a solo $0.20/M (5% del precio est&aacute;ndar).</p>
+      <p class="why">El pricing de cache hace que agentes de larga duraci&oacute;n con contexto persistente sean econ&oacute;micamente viables en producci&oacute;n.</p>
+      <p class="source"><a href="https://artificialanalysis.ai/models/releases/claude-opus-5-5">Artificial Analysis</a> &bull; <a href="https://uk.finance.yahoo.com/news/anthropic-launches-claude-telling-world-160928480.html">Yahoo Finance</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude descubre aut&oacute;nomamente un sistema enzim&aacute;tico tipo CRISPR en bacter&oacute;fagos</h3>
+      <p class="what">En una campa&ntilde;a aut&oacute;noma de 21.5 horas (949 sesiones de agente, 215M tokens), Claude encontr&oacute; un sistema enzim&aacute;tico no descrito previamente (ART) en DNA de bacter&oacute;fagos, buscando entre 1.9 mil millones de clusters de prote&iacute;nas. Feng Zhang (MIT/Broad Institute, pionero de CRISPR) lo llam&oacute; "genuinamente intrigante".</p>
+      <p class="why">La demostraci&oacute;n m&aacute;s concreta hasta ahora de agentes AI haciendo descubrimiento cient&iacute;fico real, no solo asistencia.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system">Anthropic</a> &bull; <a href="https://www.aljazeera.com/economy/2026/9/24/ai-model-claude-discovers-crispr-like-enzyme-system-anthropic-says">Al Jazeera</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude ya hace el 26% del I+D de Anthropic: AI construyendo AI</h3>
+      <p class="what">Anthropic revel&oacute; que Claude lidera el 26% de su investigaci&oacute;n y desarrollo de modelos, completando la mayor&iacute;a de tareas end-to-end desde prompts de alto nivel bajo supervisi&oacute;n humana. Anthropic tambi&eacute;n fusion&oacute; Cowork y chat en una sola app con Docs y Slides integrados.</p>
+      <p class="why">El loop recursivo de AI mejorando AI est&aacute; acelerando; la velocidad de iteraci&oacute;n de Anthropic ahora depende parcialmente de su propio modelo.</p>
+      <p class="source"><a href="https://spectrumlocalnews.com/us/snplus/business/2026/09/18/anthropic-claude-helping-to-build-next-version">Spectrum News</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple recorta su AI health coach (Project Mulberry): oportunidad abierta para builders</h3>
+      <p class="what">Apple escal&oacute; hacia abajo su ambicioso servicio de coaching AI "Mulberry", que integrar&iacute;a datos de Apple Watch, labs externos y surveys para generar reportes de salud personalizados. En lugar de un producto dedicado, repartir&aacute; features sueltos en la app Health existente.</p>
+      <p class="why">Apple dej&oacute; un hueco claro en AI + salud personalizada &mdash; si est&aacute;s construyendo en el espacio de health/wellness con wearables, el incumbent m&aacute;s grande acaba de retroceder.</p>
+      <p class="source"><a href="https://www.pymnts.com/apple/2026/apple-scales-back-ai-health-coach-plans">PYMNTS</a> &bull; <a href="https://9to5mac.com/2026/08/29/apple-health-revamp-ai-coach-new-apple-watch-next-month/">9to5Mac</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 23/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
