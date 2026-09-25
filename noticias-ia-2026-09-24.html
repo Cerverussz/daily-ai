@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 24 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>24 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Amazon abre Seller Central a agentes AI externos, empezando con Claude</h3>
+      <p class="what">En su conferencia Accelerate, Amazon anunci&oacute; que sus APIs de Seller Central ahora permiten a agentes AI externos gestionar inventario, precios, listings y anal&iacute;tica sin abrir Seller Central. El Seller Assistant ahora corre workflows ag&eacute;nticos 24/7 con memoria persistente, y lanza con integraci&oacute;n en Claude de Anthropic y Amazon Quick.</p>
+      <p class="why">Si construyes un marketplace o vendes en Amazon, esto es infraestructura: tus agentes AI ahora pueden operar tu tienda completa sin intervenci&oacute;n humana.</p>
+      <p class="source"><a href="https://www.geekwire.com/2026/amazon-opens-its-seller-tools-to-outside-ai-agents-starting-with-anthropics-claude/">GeekWire</a> &bull; <a href="https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Dataiku lanza Agent Management: torre de control para gobernar agentes AI multi-plataforma</h3>
+      <p class="what">Dataiku present&oacute; Agent Management, un producto standalone que inventar&iacute;a todos los agentes AI de una empresa (incluyendo los de otras plataformas), rastrea KPIs de negocio, detecta drift y estratifica agentes por riesgo. Disponibilidad general en octubre 2026.</p>
+      <p class="why">El problema ya no es construir agentes sino gobernarlos; si tienes m&aacute;s de 5 agentes en producci&oacute;n, necesitas algo as&iacute;.</p>
+      <p class="source"><a href="https://siliconangle.com/2026/09/24/dataiku-debuts-cross-platform-agent-management-expands-cobuild-building-agent/">SiliconANGLE</a> &bull; <a href="https://www.dataiku.com/product/agent-management">Dataiku</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>OpenAI lanza GPT-6 Sol y Luna: misma familia Astra a mitad de precio</h3>
+      <p class="what">GPT-6 Sol ($2/$10 por mill&oacute;n de tokens) y Luna ($0.10/$0.50) llegaron el 22 de septiembre como versiones m&aacute;s accesibles de la familia GPT-6 Astra. Sol comete &ldquo;la mitad de errores&rdquo; que GPT-5.6 Sol con mejoras notables en coding y computer use.</p>
+      <p class="why">Luna a $0.10/M input es ideal para pipelines de alto volumen en tu backend; Sol compite directamente con Opus 5.5 en la franja de modelos de trabajo diario.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/">TechCrunch</a> &bull; <a href="https://venturebeat.com/technology/openai-releases-gpt-6-sol-and-luna-models-slashing-api-costs-50-or-more/">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google ADK para Kotlin 1.0 GA: agentes AI on-device en Android listos para producci&oacute;n</h3>
+      <p class="what">Google lanz&oacute; la versi&oacute;n 1.0 del Agent Development Kit para Kotlin con paridad completa respecto a Python y Java. Soporta agentes on-device con LiteRT-LM y ML Kit, orquestaci&oacute;n h&iacute;brida cloud v&iacute;a Firebase AI Logic, y persistencia de estado con Room y AppSearch.</p>
+      <p class="why">Es el framework production-ready que faltaba para construir agentes AI nativos en Android sin depender de cloud, con APIs idiom&aacute;ticas de Kotlin.</p>
+      <p class="source"><a href="https://developers.googleblog.com/announcing-adk-for-kotlin-10-building-production-ready-ai-agents-in-kotlin-android-and-beyond/">Google Developers Blog</a> &bull; <a href="https://www.infoq.com/news/2026/09/google-adk-1-0-released/">InfoQ</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>DeepMind confirma que Gemini 4 llegar&aacute; &ldquo;mucho antes&rdquo; de fin de a&ntilde;o</h3>
+      <p class="what">En el AI Agenda Live Summit, el nuevo jefe de DeepMind Koray Kavukcuoglu confirm&oacute; que planean lanzar una primera versi&oacute;n post-training de Gemini 4 lo antes posible, porque ya ven resultados prometedores internamente. No dio fecha exacta.</p>
+      <p class="why">Si est&aacute;s evaluando modelos para tu producto, Gemini 4 entrar&aacute; pronto a competir con Opus 5.5 y GPT-6; vale la pena no hacer lock-in con un solo proveedor.</p>
+      <p class="source"><a href="https://9to5google.com/2026/09/24/google-says-gemini-4-release-is-coming-as-soon-as-possible/">9to5Google</a> &bull; <a href="https://dataconomy.com/2026/09/25/deepmind-says-gemini-4-is-coming-much-earlier-than-expected/">Dataconomy</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Ando sale de stealth: messaging donde agentes AI son miembros del equipo</h3>
+      <p class="what">Ando emergi&oacute; el 24 de septiembre con $20M de Accel, Index Ventures y Emergence Capital. Es una plataforma de mensajer&iacute;a de equipo agent-native donde agentes AI (Claude, Codex, Grokbot) participan como miembros con identidad, permisos y contexto compartido en canales y threads.</p>
+      <p class="why">Si est&aacute;s construyendo con agentes AI, Ando resuelve el problema de coordinaci&oacute;n humano-agente que hoy hackeas con Slack bots; ya opera en 15 pa&iacute;ses.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together/">TechCrunch</a> &bull; <a href="https://kingy.ai/news/ando-ai-native-slack-alternative/">Kingy AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google, OpenAI y Anthropic crean organismo de est&aacute;ndares de seguridad AI</h3>
+      <p class="what">Las tres grandes de AI frontera est&aacute;n formando la Frontier AI Standards Agency, un autorregulador modelado sobre FINRA de Wall Street. Han invitado a Sriram Krishnan (ex asesor de AI de la Casa Blanca) como CEO, con foco en testing pre-despliegue, reporte de incidentes y certificaci&oacute;n de auditores.</p>
+      <p class="why">Autorregulaci&oacute;n coordinada entre los tres grandes significa que las reglas de compliance para productos con AI vendr&aacute;n de aqu&iacute;, no del gobierno.</p>
+      <p class="source"><a href="https://www.bankinfosecurity.com/google-openai-anthropic-plan-frontier-ai-standards-body-a-32926">BankInfoSecurity</a> &bull; <a href="https://aiweekly.co/alerts/google-openai-anthropic-court-sriram-krishnan-for-ai-safety-body">AI Weekly</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Opus 5.5: flagship 40% m&aacute;s barato con 1M de contexto y thinking adaptativo</h3>
+      <p class="what">Anthropic lanz&oacute; Opus 5.5 el 22 de septiembre con rendimiento nivel Fable 5.1, contexto de 1M tokens, thinking adaptativo always-on, y un modo &ldquo;Responsive&rdquo; que responde antes de razonar. Precios: $4/$20 por mill&oacute;n (20% menos que Opus 5), cache reads a 5% del input rate (60% de recorte).</p>
+      <p class="why">El recorte de 60% en cache reads es enorme si usas agentes de larga duraci&oacute;n o pipelines con contexto pesado.</p>
+      <p class="source"><a href="https://9to5mac.com/2026/09/22/anthropic-upgrades-claude-with-new-opus-5-5-model-details-here/">9to5Mac</a> &bull; <a href="https://finance.yahoo.com/technology/ai/articles/anthropic-claude-5-5-release-185148663.html">Yahoo Finance</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude unifica Cowork, Chat y Design, y lanza Docs y Slides en beta</h3>
+      <p class="what">Desde el 16 de septiembre, Claude fusiona chat y Cowork en una sola interfaz donde el modelo decide cu&aacute;ndo escalar a modo ag&eacute;ntico. Adem&aacute;s lanza Claude Docs (co-escritura de documentos) y Claude Slides (presentaciones exportables a PDF/PowerPoint), ambos en beta para Pro y Max.</p>
+      <p class="why">Ya no necesitas decidir si algo va en chat o en un workspace: Claude escala autom&aacute;ticamente, y Docs/Slides compiten con Google Workspace para trabajo r&aacute;pido.</p>
+      <p class="source"><a href="https://thenextweb.com/news/anthropic-claude-cowork-merge-docs-slides">The Next Web</a> &bull; <a href="https://fourweekmba.com/ai-claude-cowork-merge-docs-slides-analysis/">FourWeekMBA</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic elige Nasdaq para su IPO, con mira en octubre 2026</h3>
+      <p class="what">Anthropic formaliz&oacute; su elecci&oacute;n de Nasdaq para su IPO anticipado, con Morgan Stanley, Goldman Sachs y JPMorgan como book runners. La valoraci&oacute;n podr&iacute;a superar los $2 trillones, respaldada por una l&iacute;nea de cr&eacute;dito de $15B en preparaci&oacute;n.</p>
+      <p class="why">Un Anthropic p&uacute;blico significa m&aacute;s presi&oacute;n por monetizar y m&aacute;s estabilidad como proveedor; buen momento para apostar por el ecosistema Claude a largo plazo.</p>
+      <p class="source"><a href="https://www.bloomberg.com/news/articles/2026-09-13/anthropic-said-to-choose-nasdaq-for-much-anticipated-ipo-listing">Bloomberg</a> &bull; <a href="https://qz.com/anthropic-nasdaq-ipo-listing-091426">Quartz</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Xiaomi integra AI Health Assistant en Mi Fitness: coaching personalizado en tu mu&ntilde;eca</h3>
+      <p class="what">Xiaomi est&aacute; construyendo un asistente de salud con IA directamente en Mi Fitness, con res&uacute;menes de salud diarios, planes personalizados, coaching de sue&ntilde;o y recomendaciones de entrenamiento adaptativas basadas en datos de wearables.</p>
+      <p class="why">El patr&oacute;n es claro: el coaching personalizado por AI ya no es feature premium, es baseline; si construyes en health/fitness, tu competencia es el wearable del usuario.</p>
+      <p class="source"><a href="https://gadgetsandwearables.com/2026/09/21/xiaomi-ai-health-assistant/">Gadgets &amp; Wearables</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 24/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
