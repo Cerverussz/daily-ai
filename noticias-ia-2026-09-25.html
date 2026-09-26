@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 25 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>25 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Amazon bloquea al agente AI Muse de Meta en su marketplace</h3>
+      <p class="what">Amazon impidi&oacute; que Muse, el agente personal de Meta (lanzado este mes para compras, reservas y formularios), acceda a su plataforma de e-commerce. El motivo: Muse no se identificaba como agente en las peticiones HTTP, violando los t&eacute;rminos de servicio, y acced&iacute;a a datos de cuenta de clientes sin autorizaci&oacute;n.</p>
+      <p class="why">Si est&aacute;s construyendo un marketplace, este caso define el est&aacute;ndar emergente: tus ToS necesitan reglas expl&iacute;citas para agentes AI, y tu API necesita un mecanismo de identificaci&oacute;n de agentes vs. humanos.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/21/metas-ai-agent-has-been-blocked-from-using-amazon-com/">TechCrunch</a> &bull; <a href="https://www.bloomberg.com/news/articles/2026-09-21/amazon-blocks-meta-s-muse-ai-agent-from-its-retail-site">Bloomberg</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Dataiku lanza Agent Management: gobernanza cross-platform para agentes AI empresariales</h3>
+      <p class="what">Producto standalone presentado el 24 de septiembre que descubre e inventar&iacute;a cada agente AI que corre en una empresa, sin importar la plataforma (Copilot Studio, Salesforce Agentforce, Bedrock, Vertex, Databricks, n8n). Mide rendimiento t&eacute;cnico y de negocio, y flagea agentes de alto riesgo. GA en octubre.</p>
+      <p class="why">Si desplegaste agentes en m&uacute;ltiples plataformas y no sabes cu&aacute;ntos corren ni qu&eacute; datos acceden, esto es el primer producto serio de observabilidad cross-platform para agentes.</p>
+      <p class="source"><a href="https://www.helpnetsecurity.com/2026/09/25/dataiku-agent-management/">Help Net Security</a> &bull; <a href="https://aithority.com/machine-learning/dataiku-launches-agent-management-to-track-and-manage-performance-of-ai-agents-built-and-running-on-leading-platforms/">AIthority</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Ando: chat de equipo AI-native con $20M de funding donde agentes son miembros de primera clase</h3>
+      <p class="what">Ando sali&oacute; de stealth el 24 de septiembre con un chat de equipo donde agentes AI tienen identidad, inbox, permisos y acceso a conversaciones. Los agentes siguen canales, retienen contexto, y participan en discusiones en vivo sin esperar a ser tagueados. Soporta Codex y Claude como agentes integrados.</p>
+      <p class="why">Es el primer producto que trata agentes como compa&ntilde;eros de equipo nativos en vez de bolted-on sobre Slack &mdash; si coordinas agentes en tu workflow de desarrollo, vale la pena probarlo.</p>
+      <p class="source"><a href="https://kingy.ai/news/ando-ai-native-slack-alternative/">Kingy AI</a> &bull; <a href="https://superpowerdaily.com/posts/ando-launches-team-messaging-for-people-and-ai-agents-with-20-million-in-funding">Superpower Daily</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Google lanza Gemini 3.8 Live con Live Avatar: agentes de video en 97 idiomas a $1/M tokens</h3>
+      <p class="what">GA desde el 24 de septiembre en Gemini Enterprise. Genera video a 24fps de un avatar animado con lip-sync preciso y expresiones faciales sincronizadas con el habla, en una sola pasada junto al modelo de voz. Endpoints en US y EU.</p>
+      <p class="why">Si tu producto necesita soporte al cliente visual o tutoriales interactivos, esto baja la barrera de crear agentes con cara a costo marginal.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/">Google Blog</a> &bull; <a href="https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-8-live-with-live-avatar-is-now-generally-available">Google Cloud</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Alibaba lanza Qwen-Audio 3.1: 5 modelos de voz y recorta APIs de audio hasta 95%</h3>
+      <p class="what">Presentado en la Apsara Conference el 23 de septiembre. Incluye ASR, TTS, Realtime, m&aacute;s TTS-Next (voz + efectos + audio ambiente en una sola pasada) y ASR-Next (multi-speaker con timestamps, detecci&oacute;n de emoci&oacute;n, reconocimiento de sonido ambiental). Reconocimiento de voz baja 95%, TTS 70%, Realtime 85%.</p>
+      <p class="why">Si pagas Deepgram, ElevenLabs u OpenAI ASR, rehace tus n&uacute;meros de costo por hora antes de renovar &mdash; Qwen est&aacute; poniendo el piso de precios.</p>
+      <p class="source"><a href="https://aiweekly.co/alerts/alibaba-ships-qwen-audio-31-stack-cuts-voice-apis-up-to-95">AI Weekly</a> &bull; <a href="https://alphasignal.ai/news/alibaba-s-qwen-audio-3-1-slashes-voice-api-prices-by-up-to-95">AlphaSignal</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Grok 4.7 de xAI llega a Cursor y la API: mejor en tareas largas de coding</h3>
+      <p class="what">Lanzado el 21 de septiembre. Trabaja m&aacute;s tiempo en tareas dif&iacute;ciles, verifica su propio trabajo con m&aacute;s cuidado, y mantiene los mismos precios base que Grok 4.6 ($2/$6 por M tokens). Disponible en Cursor, Grok Build y la xAI API.</p>
+      <p class="why">A $2/M input es la opci&oacute;n m&aacute;s barata de modelo frontier para tareas de coding de larga duraci&oacute;n en tu pipeline de desarrollo.</p>
+      <p class="source"><a href="https://llm-stats.com/blog/research/grok-4-7-launch">LLM Stats</a> &bull; <a href="https://kingy.ai/blog/grok-4-7-release-features-pricing-access/">Kingy AI</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cursor Projects: agente coordinador que delega a subagentes en la nube para workloads de semanas</h3>
+      <p class="what">Cursor Projects (beta desde sept. 10) introduce un agente coordinador que planifica trabajo grande (features, migraciones, apps completas), delega a subagentes cloud en paralelo, y entrega PRs terminados. Los subagentes pueden lanzar sus propios hijos, comparten contexto persistente, y siguen trabajando cuando cierras el laptop.</p>
+      <p class="why">Si eres founder t&eacute;cnico construyendo solo o en equipo peque&ntilde;o, esto es literalmente multiplicar tu capacidad de ejecuci&oacute;n &mdash; defines la feature y el coordinador la implementa.</p>
+      <p class="source"><a href="https://www.eesel.ai/blog/cursor-projects">eesel AI</a> &bull; <a href="https://pondero.ai/news/2026-09-11-cursor-projects/">Pondero</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Legisladores de EE.UU. presentan ley para prohibir superinteligencia artificial</h3>
+      <p class="what">El senador Bernie Sanders y el representante Greg Casar presentaron el 23 de septiembre el Ban Artificial Superintelligence Act, que prohibir&iacute;a permanentemente sistemas AI que excedan el rendimiento cognitivo humano en la mayor&iacute;a de dominios, y crear&iacute;a un Departamento de Inteligencia Artificial a nivel de gabinete.</p>
+      <p class="why">M&aacute;s all&aacute; de si pasa, marca la direcci&oacute;n regulatoria y podr&iacute;a afectar qu&eacute; modelos puedes usar en producci&oacute;n en EE.UU. a mediano plazo.</p>
+      <p class="source"><a href="https://aiweekly.co/ai-news-today/edition/2026-09-25">AI Weekly</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Opus 5.5 GA: rinde como Fable 5.1, cuesta 40% menos que Opus 5</h3>
+      <p class="what">Lanzado el 22 de septiembre. 1M tokens de contexto, 128K de output m&aacute;ximo, corte de conocimiento junio 2026. Input $4/M, output $20/M, cache reads $0.20/M (20% menos en I/O, 60% menos en cache vs Opus 5). Output 30% m&aacute;s r&aacute;pido. Adaptive thinking siempre habilitado. Disponible en API, Bedrock, Google Cloud y Microsoft Foundry.</p>
+      <p class="why">Si usas Opus 5, la migraci&oacute;n es directa con mejor rendimiento y costos menores &mdash; el ratio calidad/precio en coding y agentes de larga duraci&oacute;n mejor&oacute; sustancialmente.</p>
+      <p class="source"><a href="https://www.requesty.ai/blog/claude-opus-5-5-explained">Requesty</a> &bull; <a href="https://emergent.sh/news/opus-5-5-release-date">Emergent</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude contribuye al 26% del I+D de modelos de Anthropic</h3>
+      <p class="what">Anthropic revel&oacute; que Claude lidera el 26% de la investigaci&oacute;n y desarrollo de modelos de la compa&ntilde;&iacute;a, completando la mayor&iacute;a de tareas end-to-end desde un prompt de alto nivel bajo supervisi&oacute;n humana. Es el primer caso p&uacute;blico de un AI lab usando su modelo para construir la siguiente versi&oacute;n de s&iacute; mismo a esta escala.</p>
+      <p class="why">Se&ntilde;al clara de que los ciclos de desarrollo de modelos se est&aacute;n acelerando exponencialmente &mdash; espera releases m&aacute;s frecuentes y cambios de API m&aacute;s r&aacute;pidos.</p>
+      <p class="source"><a href="https://spectrumlocalnews.com/us/snplus/business/2026/09/18/anthropic-claude-helping-to-build-next-version">Spectrum News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: ronda de fixes de usabilidad, MCP y terminal</h3>
+      <p class="what">Actualizaci&oacute;n de septiembre con mejor soporte de mouse en fullscreen, controles MCP m&aacute;s robustos, di&aacute;logos m&aacute;s limpios, y archivado de sesiones en VS Code. Tambi&eacute;n lanz&oacute; smart reports en beta para Enterprise que analizan uso del equipo, costos y skills reutilizables.</p>
+      <p class="why">Si usas Claude Code en tu workflow diario, los fixes de MCP y terminal mejoran la experiencia en sesiones largas de coding.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Wearables 2026: de tracking pasivo a coaching activo con AI</h3>
+      <p class="what">El mayor cambio en wearables de fitness en 2026 es la transici&oacute;n de registrar lo que pas&oacute; a decirte qu&eacute; hacer basado en recuperaci&oacute;n, sue&ntilde;o y readiness fisiol&oacute;gica. Nike desarrolla su propio LLM para fitness, y Apple prepara un health coach AI que renovar&aacute; Apple Health. ACSM lo nombra tendencia #1 del a&ntilde;o.</p>
+      <p class="why">La capa de coaching AI sobre datos de wearables es una oportunidad de producto clara &mdash; si tu app de fitness solo muestra datos sin dar recomendaciones adaptativas, est&aacute;s detr&aacute;s.</p>
+      <p class="source"><a href="https://thewellproven.com/fitness-wearables-2026/">The Well Proven</a> &bull; <a href="https://orangesoft.co/blog/ai-in-fitness-industry">Orangesoft</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 25/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
