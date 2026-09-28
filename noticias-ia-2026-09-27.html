@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 27 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>27 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google prueba compras directas en Gemini vía Flipkart con Universal Commerce Protocol</h3>
+      <p class="what">Google está testeando un botón "Buy" dentro de Gemini y AI Mode que permite a usuarios en India comprar productos de Flipkart (Walmart) sin salir de la interfaz AI. Usa el Universal Commerce Protocol (UCP), un estándar abierto co-desarrollado con Shopify para que agentes AI puedan descubrir productos, armar carritos y completar checkouts.</p>
+      <p class="why">Si construyes un marketplace, UCP es el protocolo que va a definir cómo los agentes AI compran en tu plataforma — intégralo antes de que tus competidores lo hagan.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft renueva Copilot con "Code": genera apps y dashboards con lenguaje natural</h3>
+      <p class="what">Microsoft presentó "Code", una herramienta dentro de Copilot que permite crear aplicaciones, dashboards y software usando prompts en lenguaje natural, con la misma tecnología de GitHub Copilot. También integra Word, Excel y PowerPoint directamente en Copilot, más controles de costos AI para empresas.</p>
+      <p class="why">La línea entre "usar una herramienta de código" y "generar software desde chat" se sigue borrando — vale la pena evaluar si tus usuarios internos pueden automatizar más con esto.</p>
+      <p class="source"><a href="https://www.bnnbloomberg.ca/business/company-news/2026/09/25/microsoft-revamps-copilot-with-code-generation-agentic-ai-tools/">Bloomberg</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Archipelo lanza Salmon EVI: verificación criptográfica de ejecución para agentes AI</h3>
+      <p class="what">Salmon EVI es el primer protocolo criptográfico diseñado para registrar cada acción de un agente AI como evento firmado y encadenado, creando un log inmutable de lo que el agente realmente hizo. Es model-agnostic y opera como sidecar junto al runtime del agente.</p>
+      <p class="why">Si estás desplegando agentes autónomos en producción, esto resuelve el problema de auditoría y confianza que reguladores y clientes enterprise van a exigir.</p>
+      <p class="source"><a href="https://forkast.news/archipelo-just-shipped-the-first-execution-verification-layer-for-ai-agents-and-the-agent-stack-needed-it/">Forkast</a> &bull; <a href="https://www.globenewswire.com/news-release/2026/09/25/3369087/0/en/salmon-introduces-execution-verification-infrastructure-evi-for-securing-ai-agents-and-autonomous-systems.html">GlobeNewsWire</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Claude Opus 5.5 y GPT-6 Sol/Luna: guerra de precios en modelos frontier</h3>
+      <p class="what">Anthropic lanzó Opus 5.5 el 22 de septiembre (40% más barato que Opus 5, 30% más rápido, $4/$20 por millón de tokens) y OpenAI respondió el mismo día con GPT-6 Sol ($2/$10) y Luna ($0.10/$0.50). Ambos priorizan velocidad, menor costo y mejor rendimiento agéntico.</p>
+      <p class="why">Los costos de inference cayeron a la mitad en una semana — si estás pagando tarifas del mes pasado, renegocia o migra modelos ahora.</p>
+      <p class="source"><a href="https://9to5mac.com/2026/09/22/anthropic-upgrades-claude-with-new-opus-5-5-model-details-here/">9to5Mac</a> &bull; <a href="https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 MediaTek Dimensity 9600 Pro: primer SoC 2nm con LLMs de 30B parámetros on-device</h3>
+      <p class="what">MediaTek lanzó el Dimensity 9600 Pro, el primer chipset smartphone en proceso TSMC 2nm, con un Agentic AI Engine dual-NPU que soporta modelos de hasta 30B parámetros directamente en el dispositivo. El NPU reduce consumo un 40% para AI always-on y soporta LPDDR6 + UFS 5.0.</p>
+      <p class="why">LLMs de 30B en el teléfono cambian la ecuación: features de AI que hoy requieren llamadas a API podrán correr offline en tu app Android para Q1 2027.</p>
+      <p class="source"><a href="https://www.mediatek.com/press-room/mediatek-dimensity-9600-pro-sets-new-standard-for-flagship-smartphone-chips">MediaTek</a> &bull; <a href="https://hothardware.com/news/mediatek-dimensity-9600-pro-30b-ai-up-to-185fps-gaming">HotHardware</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Ando recauda $20M para un Slack killer donde agentes AI son miembros del equipo</h3>
+      <p class="what">Sara Du lanzó Ando, una plataforma de mensajería diseñada desde cero para que agentes AI sean participantes de primera clase con identidad, permisos y contexto compartido en cada canal y thread. Los equipos conectan sus propios agentes (Claude, Codex, Grokbot) vía la plataforma. Seed de $20M liderado por Accel e Index Ventures.</p>
+      <p class="why">El patrón es claro: las herramientas de productividad se están rediseñando con agentes AI como ciudadanos nativos — si tu producto tiene colaboración, necesitas pensar en este paradigma.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Starnet: runtime open-source de escritorio para desplegar y visualizar agentes AI</h3>
+      <p class="what">Starnet, de androoAGI, es un runtime local-first que permite desplegar agentes AI reales en un entorno de escritorio con interfaz pixel-art. Opera con bring-your-own-API-key, prioriza ejecución local y privacidad, y permite observar agentes cooperando en workflows complejos en tiempo real.</p>
+      <p class="why">La tendencia de agentes está pasando de frameworks experimentales a runtimes desplegables — útil para prototipar workflows agénticos antes de llevarlos a producción.</p>
+      <p class="source"><a href="https://github.com/kouweizhu/agents-radar/issues/206">GitHub Trending</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic lanza Claude Marketplace con 2,000+ plugins, conectores y partners</h3>
+      <p class="what">Claude Marketplace es un catálogo centralizado dentro de la plataforma de Anthropic con tres secciones: conectores/plugins (Atlassian, Google, Microsoft, Notion, Salesforce), agentes/productos (CrowdStrike, Cursor, Harvey, Lovable, Snowflake), y partners de servicio. Un portal de submission abrió el 25 de septiembre para que builders publiquen sus herramientas.</p>
+      <p class="why">Si vendes software B2B o tienes un SaaS, publicar tu integración en el Marketplace te pone frente a los equipos que ya usan Claude como interfaz principal de trabajo.</p>
+      <p class="source"><a href="https://www.ghacks.net/2026/09/27/anthropic-launches-claude-marketplace-with-more-than-2000-connectors-and-plugins/">gHacks</a> &bull; <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-turns-claude-into-an-ai-marketplace-with-2-000-plus-plugins-and-connectors/">BleepingComputer</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Opus 5.5: thinking siempre activo, modo "Responsive" y nuevo estilo de output</h3>
+      <p class="what">Opus 5.5 introduce thinking siempre activo (sin toggle), un modo "Responsive" que emite una primera oración antes de razonar o usar herramientas, y un nuevo estilo conversacional que elimina "Claude-ismos" (openers entusiastas, emojis, wrap-ups). Cache reads bajan 60% a $0.20/M tokens.</p>
+      <p class="why">El modo Responsive mejora la percepción de velocidad en productos que usan streaming, y el cache más barato reduce costos en pipelines con mucho contexto reutilizado.</p>
+      <p class="source"><a href="https://9to5mac.com/2026/09/22/anthropic-upgrades-claude-with-new-opus-5-5-model-details-here/">9to5Mac</a> &bull; <a href="https://emergent.sh/news/opus-5-5-release-date">Emergent</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Peas and Pans: meal planning white-label para coaches de nutrición</h3>
+      <p class="what">Peas and Pans es una herramienta que permite a coaches y nutricionistas crear planes alimenticios personalizados con su propia marca y entregárselos a sus clientes como producto propio. Lanzado esta semana en Product Hunt con tracción inmediata.</p>
+      <p class="why">Es el modelo white-label aplicado a wellness — si estás construyendo un marketplace de servicios profesionales de salud, este tipo de herramienta es lo que tus proveedores necesitan.</p>
+      <p class="source"><a href="https://startupcorners.com/digest/product-digest-2026-09-28">Startup Corners</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>QueroCura: plataforma de salud conectada que une pacientes con proveedores</h3>
+      <p class="what">QueroCura es una plataforma que busca integrar la experiencia de salud conectando pacientes con proveedores en un flujo unificado, desde la búsqueda hasta el seguimiento. Lanzada esta semana con 18 upvotes en Product Hunt.</p>
+      <p class="why">El modelo de marketplace de servicios de salud sigue creciendo — otro data point de que conectar pacientes con profesionales de forma inteligente es un vertical con demanda real.</p>
+      <p class="source"><a href="https://startupcorners.com/digest/product-digest-2026-09-28">Startup Corners</a></p>
+    </div>
+
+    <footer>
+      <p>Generado el 27/09/2026 &middot; Filtrado para senior devs construyendo producto</p>
+    </footer>
+  </div>
+</body>
+</html>
