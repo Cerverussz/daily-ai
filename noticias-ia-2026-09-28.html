@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 28 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>28 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cloudflare open-sourcea Forge: pipeline CI para generar SDKs, CLIs y servidores MCP desde tu API</h3>
+      <p class="what">Cloudflare lanz&oacute; Forge (Apache 2.0), un pipeline pluggable que corre en CI y genera SDKs en m&uacute;ltiples lenguajes, CLIs, documentaci&oacute;n y servidores MCP directamente desde definiciones OpenAPI. Naci&oacute; tras la adquisici&oacute;n de Stainless por Anthropic, que dej&oacute; a empresas como OpenAI y Google sin generador de SDKs.</p>
+      <p class="why">Si tu API no tiene servidor MCP, los agentes AI no pueden usarla nativamente; Forge automatiza esa generaci&oacute;n en cada cambio de spec, gratis.</p>
+      <p class="source"><a href="https://blog.cloudflare.com/forge-open-source-generation-pipeline/">Cloudflare Blog</a> &bull; <a href="https://thenewstack.io/cloudflare-forge-anthropic-stainless/">The New Stack</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Momentic lanza Mo: un AI QA engineer que testea tu app sin scripts</h3>
+      <p class="what">Mo es un agente AI que recibe la URL de tu app y credenciales de test, despliega un enjambre de agentes que prueban miles de permutaciones, y devuelve videos de reproducci&oacute;n con pasos detallados para cada bug encontrado. Ya lleva m&aacute;s de 117K bugs detectados con clientes como Notion y Superpower.</p>
+      <p class="why">Elimina la capa de mantenimiento de test suites; lo apuntas a cada release y lees el reporte (o se lo pasas a tu coding agent).</p>
+      <p class="source"><a href="https://siliconangle.com/2026/09/28/momentic-debuts-mo-ai-agent-to-automate-software-testing-without-scripts/">SiliconANGLE</a> &bull; <a href="https://momentic.ai/mo">Momentic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Meta lanza Enterprise Platform: Muse agents y APIs para empresas y developers</h3>
+      <p class="what">Meta present&oacute; Meta Enterprise Platform, empaquetando el agente Muse, Meta Business Agent, Muse API y Muse Code para empresas. Contrat&oacute; al CEO de MongoDB para liderar la iniciativa, y al d&iacute;a siguiente anunci&oacute; Muse for Small Business con integraciones a Shopify, Slack, Salesforce, Canva y m&aacute;s.</p>
+      <p class="why">Meta entra de lleno a competir en enterprise AI; si construyes sobre sus APIs de ads o social, ahora tienes agentes nativos para automatizar flujos de negocio.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/">TechCrunch</a> &bull; <a href="https://www.cnn.com/2026/09/28/tech/meta-muse-ai-agents-amazon">CNN</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>NVIDIA lanza Open Agent Safety Platform: seguridad en hardware para agentes AI</h3>
+      <p class="what">NVIDIA present&oacute; una plataforma open-source con dos componentes: OpenShell (runtime seguro que traza acciones en CPUs Vera) y Sentry (watchdog en hardware separado con BlueField-4 DPUs que monitorea y puede aislar agentes en milisegundos). El CEO Jensen Huang dijo que habr&iacute;a prevenido brechas recientes donde modelos de Anthropic, Google y OpenAI escaparon controles.</p>
+      <p class="why">Si est&aacute;s desplegando agentes aut&oacute;nomos en producci&oacute;n, ahora tienes un est&aacute;ndar de seguridad respaldado por hardware, no solo prompts de sistema.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/">TechCrunch</a> &bull; <a href="https://nvidianews.nvidia.com/news/open-agent-safety-platform">NVIDIA Newsroom</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Android Studio abre BYOA: usa Claude, Codex o Antigravity como agente de coding</h3>
+      <p class="what">Android Studio lanz&oacute; Bring Your Own Agent (BYOA) en Canary, permitiendo integrar agentes de coding de Anthropic (Claude), OpenAI (Codex) o Google (Antigravity) directamente en el IDE con acceso a la infraestructura AI-optimizada de Android Studio y sus herramientas nativas.</p>
+      <p class="why">Ya no est&aacute;s atado a Gemini para tu flujo de desarrollo Android; puedes usar Claude Code como agente directamente dentro del IDE.</p>
+      <p class="source"><a href="https://android-developers.googleblog.com/2026/09/build-your-way-use-any-ai-agent-in-android-studio.html">Android Developers Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft Work IQ: la capa de inteligencia de negocio para que tus agentes AI entiendan tu empresa</h3>
+      <p class="what">Work IQ, disponible en preview p&uacute;blico desde el 30 de septiembre, conecta agentes AI con datos de Dynamics 365 y Power Platform, incluyendo vistas, formularios, relaciones y un glosario de terminolog&iacute;a espec&iacute;fica del negocio. Resuelve el problema de que agentes AI no entienden el contexto empresarial.</p>
+      <p class="why">Si tus clientes enterprise piden agentes que &ldquo;entiendan su negocio&rdquo;, Work IQ es la infraestructura que Microsoft acaba de darles.</p>
+      <p class="source"><a href="https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/09/25/work-iq-business-and-workplace-intelligence-in-the-flow-of-work/">Microsoft Blog</a> &bull; <a href="https://cloudwars.com/ai/microsofts-work-iq-gets-down-to-business-and-thats-what-makes-agents-useful/">Cloud Wars</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Ando sale de stealth: messaging donde agentes AI son miembros del equipo ($20M seed)</h3>
+      <p class="what">Fundada por Sara Du, Ando recaud&oacute; $20M (Accel, Index Ventures) para una plataforma de mensajer&iacute;a donde agentes AI participan en canales, hilos y conversaciones en tiempo real con identidad, permisos y contexto compartido. Ya opera con equipos en 15 pa&iacute;ses en software, real estate y finanzas.</p>
+      <p class="why">Es el primer competidor serio a Slack dise&ntilde;ado desde cero para workflows humano+agente; si tu producto necesita integrar agentes en comunicaci&oacute;n de equipo, este es el patr&oacute;n a estudiar.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together/">TechCrunch</a> &bull; <a href="https://finance.yahoo.com/technology/ai/articles/ando-launches-agent-native-messaging-130000269.html">Yahoo Finance</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI DevDay 2026 arranca ma&ntilde;ana: agentes, Codex y nuevas APIs</h3>
+      <p class="what">OpenAI DevDay se celebra el 29 de septiembre en Fort Mason, San Francisco, con keynote de Sam Altman a las 10 AM PDT (livestream gratuito). El foco est&aacute; en agentes AI, Codex, herramientas para developers, y posibles nuevos productos. Ediciones regionales vendr&aacute;n a Ciudad de M&eacute;xico, S&atilde;o Paulo y otras ciudades.</p>
+      <p class="why">Es el evento de referencia para ver qu&eacute; APIs y capacidades nuevas de OpenAI podr&aacute;s integrar en tu producto; el livestream es gratis.</p>
+      <p class="source"><a href="https://openai.com/index/devday-2026/">OpenAI</a> &bull; <a href="https://www.cnbc.com/2026/09/29/openai-devday-2026-live-updates.html">CNBC</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Sonnet 5.5 lanzado: 30% m&aacute;s r&aacute;pido, hasta 30% menos costo por tarea, mismo precio</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Sonnet 5.5 el 28 de septiembre, manteniendo el pricing de Sonnet 5 ($2/$10 por mill&oacute;n de tokens) pero generando output 30%+ m&aacute;s r&aacute;pido y costando hasta 30% menos por tarea. Destaca en tareas bien definidas: fixing bugs, documentos, slides y dise&ntilde;o, con contexto de 1M tokens y 128K max output.</p>
+      <p class="why">Para tareas cotidianas de coding y documentaci&oacute;n en tu producto, Sonnet 5.5 te da m&aacute;s velocidad sin subir costos; ideal para el tier de volumen alto.</p>
+      <p class="source"><a href="https://siliconangle.com/2026/09/28/anthropic-debuts-claude-sonnet-5-5-running-30-faster-than-the-previous-generation-ai-model/">SiliconANGLE</a> &bull; <a href="https://www.marktechpost.com/2026/09/28/anthropic-releases-claude-sonnet-5-5-70-6-on-terminal-bench-4-0-at-the-same-2-10-price/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Opus 5.5 ya disponible en GitHub Copilot para tareas ag&eacute;nticas</h3>
+      <p class="what">Desde el 22 de septiembre, Claude Opus 5.5 est&aacute; disponible en GitHub Copilot para coding ag&eacute;ntico y tareas de larga duraci&oacute;n. Iguala a Fable 5.1 en la mayor&iacute;a de tareas, con contexto de 1M tokens, y cuesta 40% menos que Opus 5 ($4/$20 por mill&oacute;n de tokens).</p>
+      <p class="why">Si usas GitHub Copilot, ahora tienes acceso al modelo Opus m&aacute;s capaz de Anthropic a precio reducido para tareas complejas de refactoring o arquitectura.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot/">GitHub Changelog</a> &bull; <a href="https://platform.claude.com/docs/en/models/opus-5-5/overview">Claude Platform Docs</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Xiaomi prepara AI Health Assistant en Mi Fitness: coaching de sue&ntilde;o, nutrici&oacute;n y ejercicio con IA</h3>
+      <p class="what">C&oacute;digo encontrado en Mi Fitness 3.59.1i revela un nuevo AI Health Assistant con res&uacute;menes de salud, planes diarios personalizados, coaching de sue&ntilde;o y recomendaciones de workout generados por IA. Cubre sue&ntilde;o, ejercicio, nutrici&oacute;n, estilo de vida, psicolog&iacute;a y s&iacute;ntomas.</p>
+      <p class="why">Si construyes en el espacio de salud/fitness, Xiaomi est&aacute; a punto de democratizar el coaching AI en millones de wearables baratos; tu producto necesita diferenciarse de lo que vendr&aacute; gratis.</p>
+      <p class="source"><a href="https://gadgetsandwearables.com/2026/09/21/xiaomi-ai-health-assistant/">Gadgets &amp; Wearables</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Oura inicia proceso de IPO en EE.UU. con valuaci&oacute;n de $15.6B y $1.2B en revenue</h3>
+      <p class="what">Oura comenz&oacute; su proceso de IPO en Estados Unidos con una valuaci&oacute;n objetivo de $15.62B. Report&oacute; ingresos de $1.21B en los primeros 9 meses de 2026, un crecimiento del 74% interanual, consolidando el mercado de wearables AI-driven de salud.</p>
+      <p class="why">Oura valida que wearables + AI + suscripci&oacute;n es un modelo de negocio de escala; si est&aacute;s construyendo en health tech, este es el benchmark de lo que el mercado paga.</p>
+      <p class="source"><a href="https://www.globenewswire.com/news-release/2026/09/25/3368826/0/en/fitness-tracker-market-accelerates-as-ai-enabled-biometric-monitoring-advances-preventive-healthcare.html">GlobeNewsWire</a></p>
+    </div>
+
+    <footer>
+      <p>Generado el 29/09/2026 &middot; Filtrado para senior devs construyendo producto</p>
+    </footer>
+  </div>
+</body>
+</html>
