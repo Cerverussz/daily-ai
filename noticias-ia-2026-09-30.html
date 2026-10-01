@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 30 de Septiembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>30 de septiembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI lanza Dots: agentes persistentes con su propia VM y navegador en la nube</h3>
+      <p class="what">En DevDay 2026, OpenAI presentó Dots: agentes siempre activos basados en GPT-6 Astra que corren en su propia máquina virtual con navegador dedicado. Se conectan a más de 4,000 apps via plugins y mantienen memoria compartida entre ChatGPT, Slack, Teams y voz.</p>
+      <p class="why">Es la primera implementación masiva de agentes autónomos con compute dedicado; si construyes un producto B2B, tus usuarios van a esperar que tu servicio sea accesible para estos agentes.</p>
+      <p class="source"><a href="https://betanews.com/article/openai-dots-agents-chatgpt/">BetaNews</a> &bull; <a href="https://www.business-standard.com/technology/tech-news/openai-devday-2026-dots-gpt-6-1-sol-codex-developer-tools-126093000396_1.html">Business Standard</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 DoorDash lanza agente AI para pedir comida por texto dentro de Apple Messages</h3>
+      <p class="what">DoorDash presentó un agente conversacional que permite ordenar comida vía iMessage sin abrir la app. Reconoce tu historial de pedidos, sugiere restaurantes locales, envía fotos de comida recomendada y completa el checkout con tu método de pago guardado. Ya está en piloto con 20,000 usuarios en EE.UU.</p>
+      <p class="why">Es el caso de uso más claro de agentes AI en marketplaces de servicios: interfaz conversacional que elimina fricción y vive donde ya está el usuario.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/30/doordash-launches-an-ai-agent-you-can-text-to-order-food/">TechCrunch</a> &bull; <a href="https://www.bloomberg.com/news/articles/2026-09-30/doordash-unveils-text-to-order-ai-agent-that-works-with-apple-s-imessage">Bloomberg</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cloudflare lanza Monetization Gateway: cobra a agentes AI por acceso con stablecoins</h3>
+      <p class="what">Cloudflare reveló que más del 50% del tráfico en su red ya no es humano y lanzó dos productos beta: un gateway de monetización que permite cobrar a agentes AI por cada recurso accedido (páginas, APIs, datasets, llamadas MCP) usando USDC. Implementa HTTP 402 como estándar de pago máquina-a-máquina.</p>
+      <p class="why">Si tienes una API o un servicio detrás de Cloudflare, ahora puedes monetizar el tráfico de agentes sin fricción; es infraestructura nueva para modelos de negocio agent-first.</p>
+      <p class="source"><a href="https://fortune.com/2026/09/30/cloudflare-tool-businesses-ai-agents-stablecoins/">Fortune</a> &bull; <a href="https://blog.cloudflare.com/monetization-gateway-beta/">Cloudflare Blog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Google lanza Gemini 4 Argon: 1M tokens de output y líder en contexto largo</h3>
+      <p class="what">Google DeepMind presentó Gemini 4 Argon, su modelo frontier de nueva generación optimizado para coding de largo aliento, trabajo empresarial con conocimiento y ciberdefensa. Tiene un límite de 1 millón de tokens de output y logra 99.7% en GraphWalks (128K tokens) y 84.2% en tests de 256K-1M tokens, superando a GPT-6 Astra (71.8%) y Claude Opus 5.5 (66.8%).</p>
+      <p class="why">La ventaja en contexto largo lo hace interesante para pipelines de análisis de código completo o procesamiento de repositorios enteros en un solo paso.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html">CNBC</a> &bull; <a href="https://toolscout.ai/news/gemini-4-argon">ToolScout</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GPT-6.1 Sol: rendimiento cercano a Astra al 20% del costo</h3>
+      <p class="what">OpenAI lanzó GPT-6.1 Sol en DevDay con $2/M input y $10/M output, y cached input a $0.10 (95% de descuento). Tiene 1.05M tokens de contexto y 128K de output. Artificial Analysis lo puntúa en 52 de su Intelligence Index (un punto bajo Astra) a $0.72 por tarea vs $3.26 de Astra.</p>
+      <p class="why">Relación costo-rendimiento brutal para agentes y pipelines de alto volumen; si tu producto corre muchas llamadas a LLM, Sol cambia la economía.</p>
+      <p class="source"><a href="https://www.business-standard.com/technology/tech-news/openai-devday-2026-dots-gpt-6-1-sol-codex-developer-tools-126093000396_1.html">Business Standard</a> &bull; <a href="https://bool.dev/news/detail/openai-devday26">Bool.dev</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code v2.1.280: Opus 5.5 como default con 1M tokens de contexto</h3>
+      <p class="what">Anthropic actualizó Claude Code (v2.1.280, 22 de septiembre) haciendo de Claude Opus 5.5 el modelo Opus por defecto, con contexto de 1M tokens. Claude Code lidera los rankings de LogRocket como mejor herramienta AI dev de septiembre 2026 tras ganar acceso a Fable 5.1.</p>
+      <p class="why">Si usas Claude Code diariamente, el upgrade a Opus 5.5 con 1M de contexto mejora significativamente tareas que abarcan múltiples archivos o repos grandes.</p>
+      <p class="source"><a href="https://www.morphllm.com/best-ai-coding-agents-2026">Morph LLM</a> &bull; <a href="https://scrimba.com/articles/best-ai-coding-assistants-2026/">Scrimba</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Ando recauda $20M para ser el Slack de equipos humanos + agentes AI</h3>
+      <p class="what">Ando (fundada por Sara Du) salió de stealth con $20M de Accel, Index Ventures y Emergence Capital. Es una plataforma de mensajería donde agentes AI tienen identidad propia, bandeja de entrada, permisos y etiqueta. Se integra con agentes de Codex, Claude, Grokbot y Devin.</p>
+      <p class="why">Si estás construyendo agentes para equipos, Ando define cómo se ve la capa de comunicación agent-native; es la infraestructura que faltaba entre tus agentes y los usuarios finales.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together/">TechCrunch</a> &bull; <a href="https://www.globenewswire.com/news-release/2026/09/24/3368344/0/en/ando-launches-agent-native-messaging-platform-announces-20-million-seed.html">GlobeNewsWire</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Robinhood anuncia agentes AI que analizan mercados y ejecutan trades</h3>
+      <p class="what">Robinhood presentó Robinhood Agents, capaces de analizar mercados, construir estrategias de trading y ejecutar operaciones en nombre de los usuarios. Es uno de los primeros casos de agentes autónomos con capacidad de ejecución financiera real en una plataforma retail.</p>
+      <p class="why">El patrón de "agente que actúa en nombre del usuario dentro de una plataforma" es replicable en cualquier marketplace de servicios profesionales.</p>
+      <p class="source"><a href="https://techstartups.com/2026/09/30/top-tech-news-today-september-30-2026-deepseek-anthropic-google-meta-openai-robinhood-more/">TechStartups</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude for Government llega a disponibilidad general</h3>
+      <p class="what">Anthropic lanzó Claude for Government en GA el 30 de septiembre, abriendo acceso completo a su plataforma para agencias gubernamentales. Además, anunció memoria integrada para Claude Managed Agents, permitiendo a agentes de larga duración mantener contexto persistente entre sesiones.</p>
+      <p class="why">La memoria persistente en Managed Agents simplifica construir workflows automatizados que corren por horas o días sin perder estado.</p>
+      <p class="source"><a href="https://claude.com/blog-category/announcements">Anthropic Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic depreca Claude Sonnet 4.5: retiro en noviembre 2026</h3>
+      <p class="what">Anthropic notificó a desarrolladores que Claude Sonnet 4.5 (claude-sonnet-4-5-20250929) será retirado el 30 de noviembre de 2026. El reemplazo recomendado es claude-sonnet-5-5.</p>
+      <p class="why">Si tu producto depende de Sonnet 4.5 en producción, tienes dos meses para migrar a Sonnet 5.5 y validar que tus prompts sigan funcionando.</p>
+      <p class="source"><a href="https://platform.claude.com/docs/en/about-claude/model-deprecations">Claude Platform Docs</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OxeFit usa AI para personalizar entrenamiento en tiempo real midiendo fuerza y rango de movimiento</h3>
+      <p class="what">OxeFit, nombrada entre las empresas más innovadoras de fitness 2026, utiliza datos etiquetados con AI para medir fuerza, rango de movimiento y balance, personalizando entrenamientos en tiempo real. Daxko aceleró su estrategia AI-first con predicción de churn y outreach automatizado personalizado.</p>
+      <p class="why">El stack de AI aplicado a fitness ya incluye sensores + ML en tiempo real + retención predictiva; es el blueprint para cualquier plataforma de coaching o wellness.</p>
+      <p class="source"><a href="https://athletechnews.com/the-most-innovative-fitness-wellness-companies-of-2026/">Athletech News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Snapkin lanza tracker de calorías que funciona fotografiando tu plato</h3>
+      <p class="what">Snapkin se lanzó como un calorie tracker que usa visión AI para analizar fotos de comida y estimar valores nutricionales automáticamente, eliminando el logging manual que causa abandono en apps de nutrición.</p>
+      <p class="why">Computer vision + nutrición es un vertical donde un indie dev puede competir; el modelo de "foto → datos estructurados" es replicable en otros dominios de salud.</p>
+      <p class="source"><a href="https://insider.fitt.co/">Fitt Insider</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 30/09/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
