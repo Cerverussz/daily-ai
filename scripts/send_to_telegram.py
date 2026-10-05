@@ -71,7 +71,7 @@ def build_summary(html_path: Path) -> str:
             lines.append(f"\n<b>— {current_section} —</b>")
             continue
 
-        headline_tag = element.find("h2")
+        headline_tag = element.find("h3") or element.find("h2")
         if not headline_tag:
             continue
         headline = headline_tag.get_text(" ", strip=True)
