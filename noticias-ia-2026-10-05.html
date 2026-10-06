@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 5 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>5 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Reflection AI lanza Beam: modelo open-weight de 501B par&aacute;metros para coding y agentes</h3>
+      <p class="what">Reflection AI, startup respaldada por Nvidia y fundada por ex-investigadores de Google DeepMind, lanz&oacute; Beam: un modelo Mixture-of-Experts de 501B par&aacute;metros totales (23B activos) entrenado en 23.8 trillones de tokens con RL en 10,500 GPUs GB300. Compite con GLM-5.2 usando 3-4x menos compute en inferencia, con foco espec&iacute;fico en coding y tareas ag&eacute;nticas.</p>
+      <p class="why">Un modelo open-weight competitivo en coding con solo 23B params activos significa que puedes correrlo en tu propia infra a una fracci&oacute;n del costo de modelos cerrados equivalentes.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/">TechCrunch</a> &bull; <a href="https://www.marktechpost.com/2026/10/05/reflection-ai-introduces-beam-a-501b-open-weight-moe-model-with-23b-active-parameters-for-coding-and-agentic-workloads/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>AWS refuerza infraestructura para AI ag&eacute;ntica: deployment cuantizado con Unsloth y capa sem&aacute;ntica Stardog</h3>
+      <p class="what">AWS y Unsloth publicaron 4 patrones de deployment para LLMs cuantizados en EC2, SageMaker, EKS y ECS, recortando memoria un 75% y costos de inferencia hasta 80%. Por otro lado, AWS y Stardog lanzaron una capa sem&aacute;ntica para agentes AI que permite consultar Aurora y Redshift sin ETL, corriendo sobre Bedrock AgentCore.</p>
+      <p class="why">Dos piezas de infra que bajan directamente el costo de poner modelos en producci&oacute;n y de conectar agentes a tus bases de datos reales sin pipelines de datos extra.</p>
+      <p class="source"><a href="https://artificialintelligenceherald.com/ai-news-today">AI Herald</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Strata: motor open-source corre modelos de 125B par&aacute;metros en GPU gamer de 12GB</h3>
+      <p class="what">Strata es un motor de inferencia MIT-licensed que ejecuta Qwen3.8-Flash-Next (125B params) en una sola GPU de consumo con 12GB de VRAM y 32GB de RAM. Distribuye trabajo entre GPU, RAM, CPU y SSD, logrando 53-94 tokens/segundo en una RTX 5070 con instalaci&oacute;n de un solo script y APIs compatibles con OpenAI y Anthropic.</p>
+      <p class="why">Si los benchmarks se reproducen externamente, correr un modelo de 125B en hardware de menos de $1,000 cambia el c&aacute;lculo local-vs-API para cualquier equipo con datos sensibles.</p>
+      <p class="source"><a href="https://www.opensourceforu.com/2026/10/open-source-tool-runs-ai-locally/">Open Source For You</a> &bull; <a href="https://stratallm.org/">Strata</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google LiteRT-LM: Gemma 4 corre on-device en Android, iOS y web con 2.2x de speedup</h3>
+      <p class="what">LiteRT-LM es el runtime optimizado de Google para ejecutar Gemma 4 directamente en dispositivos m&oacute;viles. Soporta Multi-Token Prediction (2.2x m&aacute;s r&aacute;pido), Thinking Mode y Constrained Decoding, con variantes de 2B (607MB en iOS) y 4B par&aacute;metros. Incluye nuevas APIs nativas en Swift y WebGPU para browsers.</p>
+      <p class="why">Gemma 4 E2B corriendo en 607MB de RAM significa que puedes agregar AI on-device a tu app Android sin excluir dispositivos de gama media.</p>
+      <p class="source"><a href="https://developers.googleblog.com/blazing-fast-on-device-genai-with-litert-lm/">Google Developers Blog</a> &bull; <a href="https://www.infoq.com/news/2026/06/google-litertlm-gemma4/">InfoQ</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI expande ChatGPT como plataforma abierta: developers pueden lanzar experiencias nativas para 1.2B usuarios</h3>
+      <p class="what">OpenAI anunci&oacute; que ChatGPT se convierte en una superficie compartida donde developers pueden crear experiencias nativas directamente accesibles a sus 1.2 mil millones de usuarios semanales. Tambi&eacute;n introdujo agentes capaces de asumir responsabilidades continuas, no solo responder prompts puntuales.</p>
+      <p class="why">1.2B de usuarios semanales es distribuci&oacute;n gratuita para tu producto si construyes una integraci&oacute;n nativa &mdash; vale evaluar si tu servicio tiene un caso de uso conversacional.</p>
+      <p class="source"><a href="https://openai.com/index/devday-2026-recap/">OpenAI DevDay 2026</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios y productos -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 TikTok lanza Agentic Commerce: Shopping Assistant AI, Buy Direct y red publicitaria de 400K apps</h3>
+      <p class="what">TikTok present&oacute; un suite de herramientas de comercio impulsadas por AI que incluyen Buy Direct (compra sin salir de la app), un Shopping Assistant conversacional, y TikTok Ad Network (TTAN) que extiende campa&ntilde;as a casi 400,000 apps. El sistema combina descubrimiento social con AI ag&eacute;ntica para completar compras.</p>
+      <p class="why">Si vendes productos o servicios online, este es el modelo a estudiar: descubrimiento social + agente AI que cierra la venta, todo en una sola superficie.</p>
+      <p class="source"><a href="https://techstartups.com/2026/10/05/top-tech-news-today-october-5-2026-deutsche-telekom-foxconn-google-openai-schneider-electric-more">TechStartups</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y ecosistema Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code Mods: plugins TypeScript que convierten al agente en plataforma extensible</h3>
+      <p class="what">Anthropic lanz&oacute; &ldquo;Mods&rdquo; para Claude Code: funciones TypeScript que se enganchan al pipeline de ejecuci&oacute;n del agente y pueden reescribir prompts, interceptar tool calls, aprobar/denegar permisos, redactar secretos, y reemplazar componentes de UI. Anthropic ya convirti&oacute; 3 features internos (diff pane, agents.md loader, telemetr&iacute;a) en mods, se&ntilde;alando que el sistema es load-bearing.</p>
+      <p class="why">Esto convierte a Claude Code de herramienta a plataforma &mdash; si tienes un workflow espec&iacute;fico para tu proyecto, ahora puedes codificarlo como un mod reutilizable.</p>
+      <p class="source"><a href="https://postcutoff.com/e/2026-10-01-claude-code-mods/">Post-Cutoff</a> &bull; <a href="https://dev.to/bobbyhalljr/anthropic-launched-mods-for-claude-code-lets-build-a-tiny-one-in-typescript-152h">DEV Community</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Sonnet 5.5 GA: nuevo modelo frontier disponible en todas las plataformas</h3>
+      <p class="what">Claude Sonnet 5.5 est&aacute; disponible en la API de Claude, Amazon Bedrock, Google Cloud y Microsoft Foundry. Sonnet 4.5 fue deprecado el 30 de septiembre con retiro programado para noviembre 30. Adicionalmente, la API de Models ahora incluye un campo &ldquo;line&rdquo; para agrupar modelos sin parsear IDs.</p>
+      <p class="why">Si a&uacute;n usas Sonnet 4.5 en producci&oacute;n, tienes hasta noviembre para migrar &mdash; el campo &ldquo;line&rdquo; facilita manejar modelos program&aacute;ticamente.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot - Claude Updates</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code v2.1.290: managed agents, metadata de plugins y nuevos atajos</h3>
+      <p class="what">La &uacute;ltima versi&oacute;n de Claude Code trae onboarding para managed agents, metadata m&aacute;s rica para plugins y hooks, nuevos atajos de sesi&oacute;n y logs, y mejoras en el flujo de trabajo de VS Code. Tambi&eacute;n refuerza permisos, gateways y el modo auto.</p>
+      <p class="why">Los managed agents y el onboarding mejorado reducen la fricci&oacute;n para equipos que quieren adoptar Claude Code como herramienta est&aacute;ndar de desarrollo.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot - Claude Code Updates</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud y bienestar -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 URUNN: app de running con AI co-fundada por el campe&oacute;n ol&iacute;mpico Mo Farah</h3>
+      <p class="what">URUNN es una nueva app de running que usa un avatar AI para crear planes de entrenamiento personalizados y responder preguntas de rendimiento en tiempo real mientras corres. Co-fundada por Mo Farah, se diferencia de apps tradicionales al combinar coaching conversacional con adaptaci&oacute;n din&aacute;mica basada en datos de actividad.</p>
+      <p class="why">El modelo de &ldquo;celebridad + AI coaching personalizado&rdquo; es replicable en cualquier vertical deportivo &mdash; un patr&oacute;n a considerar si est&aacute;s construyendo en sports tech.</p>
+      <p class="source"><a href="https://athletechnews.com/ces-2026-best-fitness-health-wellness-tech/">Athletech News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Apple Health+ con coaching AI sigue en camino para 2026</h3>
+      <p class="what">El servicio de suscripci&oacute;n Apple Health+ avanza seg&uacute;n reportes recientes. Analizar&aacute; datos de Apple Watch, iPhone y otras fuentes para ofrecer consejos personalizados de nutrici&oacute;n, actividad y rutinas de bienestar, con ajustes din&aacute;micos basados en el historial de salud del usuario.</p>
+      <p class="why">Cuando Apple lance esto, redefinir&aacute; las expectativas de los usuarios sobre coaching personalizado &mdash; cualquier app de salud necesitar&aacute; igualar ese nivel de integraci&oacute;n de datos.</p>
+      <p class="source"><a href="https://www.wareable.com/apple/apple-quartz-health-plus-ai-coaching-service-2026-launch-rumor">Wareable</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 05/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
