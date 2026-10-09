@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 8 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>8 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 NVIDIA y Microsoft reinventan Windows para IA personal: RTX Spark y contenedores MXC</h3>
+      <p class="what">En un evento conjunto en San Francisco, Jensen Huang y Satya Nadella presentaron RTX Spark &mdash; laptops y desktops con GPU Blackwell + CPU Grace, hasta 128GB de memoria unificada y 1 petaflop de rendimiento AI. Microsoft lanz&oacute; MXC (Microsoft Execution Containers) en GA: infraestructura a nivel de OS para que agentes AI corran en segundo plano con seguridad y gobernanza integradas.</p>
+      <p class="why">Esto cambia la ecuaci&oacute;n costo vs. privacidad para cualquier producto que procese datos sensibles: modelos locales con capacidad real, no demos.</p>
+      <p class="source"><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Microsoft-Reinvent-Windows-PCs-for-the-Age-of-Personal-AI/default.aspx">NVIDIA Press Release</a> &bull; <a href="https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Pwn2Own Ireland: hackean OpenAI Codex y LiteLLM con zero-days &mdash; alerta para devs</h3>
+      <p class="what">En la nueva categor&iacute;a de infraestructura AI de Pwn2Own Ireland 2026, investigadores explotaron 98 zero-days en 3 d&iacute;as ($1.2M+ en premios). Ikotas Labs comprometi&oacute; OpenAI Codex con una sola inyecci&oacute;n de argumentos en comandos git ($40K), y LiteLLM fue vulnerado dos veces mediante validaci&oacute;n de input deficiente + inyecci&oacute;n de c&oacute;digo.</p>
+      <p class="why">Si usas AI coding agents o gateways LLM en producci&oacute;n, estos exploits demuestran que la superficie de ataque es real y necesitas auditar c&oacute;mo pasan argumentos a herramientas externas.</p>
+      <p class="source"><a href="https://dailysecurityreview.com/cyber-security/pwn2own-ireland-2026-day-one-32-zero-days-388500-in-payouts/">Daily Security Review</a> &bull; <a href="https://dev.to/coridev/one-argument-injection-bug-took-down-openai-codex-at-pwn2own-heres-the-detection-gap-1if1">DEV Community</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI lanza Decisions API en beta p&uacute;blica sobre GPT-6 Luna</h3>
+      <p class="what">La Decisions API sale de limited preview y est&aacute; disponible para todos los developers. Retorna respuestas tipadas: probabilidades (0-1), selecci&oacute;n entre opciones con scores de confianza, o puntuaci&oacute;n en escalas ordenadas &mdash; hasta 200 preguntas por request. Input a $0.10/M tokens, output gratis, con Zero Data Retention y HIPAA.</p>
+      <p class="why">Un endpoint dedicado a decisiones estructuradas es exactamente lo que necesitas para moderar contenido, clasificar tickets o hacer scoring en tu marketplace sin parsear texto libre.</p>
+      <p class="source"><a href="https://www.unite.ai/openai-releases-decisions-api-in-public-beta-powered-by-gpt-6-luna/">Unite.AI</a> &bull; <a href="https://openrouter.ai/openai/gpt-6-luna-decisions">OpenRouter</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Mistral Large 4 en preview p&uacute;blica: open-weight con 1T par&aacute;metros</h3>
+      <p class="what">Mistral abri&oacute; la preview p&uacute;blica de Large 4 el 6 de octubre: modelo MoE de 1.05T par&aacute;metros totales (49B activos), con encoder de visi&oacute;n de 1.6B, soporte para 160+ idiomas y contexto de hasta 1M tokens. Los pesos open-weight se publicar&aacute;n antes de fin de octubre.</p>
+      <p class="why">Otro modelo frontier open-weight con multimodalidad nativa; ideal para self-hosting si necesitas control total de datos en tu backend.</p>
+      <p class="source"><a href="https://letsdatascience.com/news/mistral-debuts-large-4-open-weight-model-preview-cbf9e0b5">Let's Data Science</a> &bull; <a href="https://openrouter.ai/mistralai/mistral-large-4-0">OpenRouter</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot y VS Code a&ntilde;adir&aacute;n soporte para modelos locales v&iacute;a RTX Spark</h3>
+      <p class="what">Como parte del anuncio de Windows Hybrid Intelligence, Microsoft confirm&oacute; soporte experimental en GitHub Copilot, Copilot CLI y VS Code para rutear workloads entre modelos locales y cloud. Disponible m&aacute;s adelante en octubre.</p>
+      <p class="why">Coding assistants con modelos locales significa autocompletado sin latencia de red y sin enviar tu c&oacute;digo propietario a la nube &mdash; game changer para equipos con IP sensible.</p>
+      <p class="source"><a href="https://news.microsoft.com/source/emea/2026/10/building-windows-for-hybrid-intelligence/">Microsoft Source</a> &bull; <a href="https://www.geekwire.com/2026/microsoft-plays-the-windows-card-in-the-ai-game-with-help-from-nvidia/">GeekWire</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI simplifica rate limits de API: de 5 tiers a 3</h3>
+      <p class="what">OpenAI redujo su estructura de rate limits de cinco tiers de pago a tres: Build, Launch y Grow. El cambio busca simplificar el escalado para developers que integran la API en producci&oacute;n.</p>
+      <p class="why">Menos fricci&oacute;n al escalar tu producto si dependes de OpenAI &mdash; revisa en qu&eacute; tier quedaste y si tus l&iacute;mites cambiaron.</p>
+      <p class="source"><a href="https://releasebot.io/updates/openai">Releasebot - OpenAI Updates</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 TechCrunch Disrupt 2026: founders debaten modelo abierto vs cerrado y defensibilidad con IA</h3>
+      <p class="what">A una semana de Disrupt 2026 (13-15 octubre, San Francisco), TechCrunch public&oacute; la agenda del Builders Stage: sesiones sobre c&oacute;mo founders eval&uacute;an nuevos modelos, manejan costo y reliability a escala, y arquitectan productos que sobrevivan cuando el foundation model lab env&iacute;a tu roadmap como feature.</p>
+      <p class="why">La pregunta central para cualquier founder t&eacute;cnico hoy: &iquest;c&oacute;mo construyes defensibilidad cuando tu ventaja t&eacute;cnica puede ser commoditizada en el pr&oacute;ximo release de un modelo?</p>
+      <p class="source"><a href="https://techcrunch.com/2026/10/05/open-or-closed-ai-how-founders-are-choosing-what-to-build-on-at-techcrunch-disrupt-2026/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Haiku 5.5 lanzado: 75% m&aacute;s barato con 1M tokens de contexto</h3>
+      <p class="what">Anthropic lanz&oacute; Haiku 5.5 el 7 de octubre: $0.10/$0.50 por mill&oacute;n de tokens (prompts &lt;100K), contexto de 1M tokens, hasta 128K de output, y thinking adaptativo con par&aacute;metro de esfuerzo. Disponible en Claude API, Amazon Bedrock, Google Cloud y Microsoft Foundry. Tambi&eacute;n redujeron el precio de cache-read para Sonnet 5.5 a la mitad.</p>
+      <p class="why">A ese precio, Haiku 5.5 es el modelo ideal para subagentes de alto volumen, clasificaci&oacute;n y summarization en tu pipeline de producci&oacute;n.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot - Claude Updates</a> &bull; <a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform Release Notes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic a&ntilde;ade cr&eacute;ditos API mensuales a planes Max y Team</h3>
+      <p class="what">Los planes Max y Team ahora incluyen cr&eacute;ditos mensuales de API para construir y ejecutar apps y agentes propios en la Claude Platform. Adem&aacute;s, los MCP tunnels migraron de la Admin API a la Claude API (/v1/tunnels), y el Models API ahora reporta si un modelo soporta thinking.</p>
+      <p class="why">Cr&eacute;ditos incluidos baja la barrera para prototipar r&aacute;pido contra la API sin gestionar billing separado desde el d&iacute;a uno.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot - Anthropic Updates</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code: plugins del marketplace y mejoras de estabilidad</h3>
+      <p class="what">Claude Code actualiz&oacute; Haiku 5.5 como modelo default, a&ntilde;adi&oacute; el flag --marketplace para instalar plugins, y una variable de entorno para configurar retry en errores 529. Tambi&eacute;n corrigieron un memory leak en conexiones HTTP MCP.</p>
+      <p class="why">El marketplace de plugins abre la puerta a extender Claude Code con herramientas de terceros sin configurar MCP servers manualmente.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Wellhub lanza AI wellness coach en beta para empleados</h3>
+      <p class="what">La plataforma corporativa de wellness (antes Gympass) lanz&oacute; un coach AI integrado que crea planes personalizados cruzando fitness, mindfulness, terapia, nutrici&oacute;n y sue&ntilde;o. El coach recomienda rutinas y navega la red de proveedores de Wellhub seg&uacute;n los objetivos del usuario.</p>
+      <p class="why">Un ejemplo concreto de AI como capa de personalizaci&oacute;n sobre un marketplace de servicios de salud &mdash; el patr&oacute;n es replicable en cualquier vertical de servicios profesionales.</p>
+      <p class="source"><a href="https://wellhub.com/en-us/blog/press-releases/wellness-season-2026-ai-coach-international-access/">Wellhub</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Apple Health+ con coaching AI sigue en desarrollo para iOS 27</h3>
+      <p class="what">Seg&uacute;n Bloomberg, el servicio de suscripci&oacute;n Health+ de Apple sigue en camino para 2026 con iOS 27. Funcionar&iacute;a como coach digital que analiza datos de Apple Watch, iPhone y otras fuentes para dar consejos personalizados de nutrici&oacute;n, ejercicio y h&aacute;bitos diarios.</p>
+      <p class="why">Cuando Apple entre al coaching AI de salud, validar&aacute; el mercado y subir&aacute; las expectativas de UX para cualquier competidor en el espacio.</p>
+      <p class="source"><a href="https://www.wareable.com/apple/apple-quartz-health-plus-ai-coaching-service-2026-launch-rumor">Wareable</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 08/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
