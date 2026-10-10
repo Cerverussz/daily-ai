@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 9 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>9 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Harness adquiere assets de Augment Code: nace Cosmos, el agente aut&oacute;nomo de desarrollo</h3>
+      <p class="what">Harness anunci&oacute; la adquisici&oacute;n de Cosmos, Auggie CLI y el Code Context Engine de Augment Code. Cosmos se convierte en el &ldquo;Software Factory Agent&rdquo; de Harness: planifica cambios, escribe c&oacute;digo y tests en VMs aisladas, y abre PRs listas para revisi&oacute;n humana, integr&aacute;ndose con los agentes de delivery, seguridad y costos de Harness.</p>
+      <p class="why">Si ya usas CI/CD de Harness, ahora tienes un agente de coding integrado en tu pipeline &mdash; el ciclo completo de &ldquo;c&oacute;digo a producci&oacute;n&rdquo; se reduce a revisar PRs.</p>
+      <p class="source"><a href="https://www.harness.io/press-and-news/harness-acquires-augment-code">Harness</a> &bull; <a href="https://pulse2.com/harness-acquires-select-augment-code-assets/">Pulse 2.0</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Atlassian + OpenAI: GPT-6 llega a Rovo con agentes para gesti&oacute;n de proyectos</h3>
+      <p class="what">Atlassian y OpenAI expandieron su alianza para integrar modelos GPT-6 en Rovo y los agentes de Atlassian. Rovo combina estos modelos con el Teamwork Graph (personas, proyectos, docs, decisiones) para generar evaluaciones de launch-readiness cruzando tickets de Jira, p&aacute;ginas de Confluence y discusiones.</p>
+      <p class="why">Para equipos que ya viven en Jira/Confluence, esto convierte contexto de proyecto disperso en insights accionables sin salir de la plataforma.</p>
+      <p class="source"><a href="https://openai.com/index/atlassian-partnership/">OpenAI</a> &bull; <a href="https://www.channelinsider.com/channel-business/news-openai-atlassian-partnership-gpt-6-rovo/">Channel Insider</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI Decisions API en beta p&uacute;blica: clasificaci&oacute;n a $0.10/M tokens</h3>
+      <p class="what">La Decisions API (/v1/decisions) sali&oacute; de preview limitado a beta p&uacute;blica. En vez de generar texto, responde preguntas definidas por el developer sobre inputs de texto o imagen, retornando predicados, opciones y scores. Corre sobre GPT-6 Luna, es hasta 10x m&aacute;s r&aacute;pida que la Responses API y no cobra output tokens.</p>
+      <p class="why">A $0.10/M tokens sin cargo de output, es ideal para clasificaci&oacute;n, moderaci&oacute;n y routing en marketplaces con alto volumen de contenido.</p>
+      <p class="source"><a href="https://letsdatascience.com/news/openai-opens-decisions-api-public-beta-b69a1e40">LetsDatasScience</a> &bull; <a href="https://www.eesel.ai/blog/openai-decisions-api">Eesel AI</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 EmbeddingGemma 2: embeddings multimodales on-device en 567 MB de RAM</h3>
+      <p class="what">Google lanz&oacute; EmbeddingGemma 2, modelo open-source (Apache 2.0) de 740M par&aacute;metros que mapea texto, c&oacute;digo, im&aacute;genes, video y audio a un espacio de 768 dimensiones compartido. Corre en un Pixel 11 Pro con ~567 MB de RAM (191 MB solo texto) y soporta contexto de 8K tokens &mdash; 4x m&aacute;s que su predecesor.</p>
+      <p class="why">Un modelo de embeddings multimodal que corre on-device abre la puerta a b&uacute;squeda sem&aacute;ntica offline en apps Android sin depender de APIs cloud.</p>
+      <p class="source"><a href="https://yourstory.com/ai-story/embeddinggemma-2-google-tiny-ai-multimodal-search">YourStory</a> &bull; <a href="https://officechai.com/ai/google-launches-embeddinggemma-2-for-multimodal-on-device-embeddings/">OfficeChai</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Mistral lanza Le Chonk (Large 4): 1T par&aacute;metros open-weight con visi&oacute;n y razonamiento</h3>
+      <p class="what">Mistral present&oacute; su modelo m&aacute;s grande: una arquitectura MoE de 1 bill&oacute;n de par&aacute;metros (~49B activos) con encoder de visi&oacute;n de 1.6B params y ventana de contexto de 1M tokens. Est&aacute; en developer preview con disponibilidad completa prometida para finales de octubre.</p>
+      <p class="why">Otro contendiente open-weight serio para self-hosting: si tu caso de uso necesita multimodalidad sin vendor lock-in, ahora hay m&aacute;s opciones competitivas.</p>
+      <p class="source"><a href="https://tech.eu/2026/10/06/mistral-unveils-le-chonk-says-outperforms-any-open-weight-model-developed-in-the-us-or-europe/">Tech.eu</a> &bull; <a href="https://ecosistemastartup.com/mistral-lanza-le-chonk-1t-parametros-y-pesos-abiertos/">Ecosistema Startup</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI Intelligent UI: ChatGPT pasa de chatbot a interfaz visual interactiva</h3>
+      <p class="what">OpenAI lanz&oacute; Intelligent UI con GPT-6, permitiendo que las respuestas de ChatGPT incluyan botones interactivos, calculadoras, gr&aacute;ficos editables, diagramas y mapas en vez de solo texto. Los usuarios pueden reducir los elementos visuales si prefieren respuestas tradicionales.</p>
+      <p class="why">Marca la direcci&oacute;n de las interfaces AI: de texto plano a UIs generativas &mdash; si construyes un producto con chat, esto es a lo que tus usuarios se van a acostumbrar.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/">TechCrunch</a> &bull; <a href="https://gizmodo.com/openai-wants-chatgpt-to-stop-looking-like-a-chatbot-2000823211">Gizmodo</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Personal Agent Protocol: Sierra y Meta publican est&aacute;ndar abierto para agentes personales</h3>
+      <p class="what">Sierra y Meta anunciaron el Personal Agent Protocol (PAP), un est&aacute;ndar abierto para que agentes AI personales interact&uacute;en con negocios de forma segura. Usa OAuth para sesi&oacute;n, los consumidores controlan qu&eacute; acceso da su agente, y los negocios definen l&iacute;mites. Shopify, Stripe, Walmart y Genesys ya son partners; spec v0.1 sale a finales de octubre.</p>
+      <p class="why">Si tienes un marketplace o plataforma de servicios, este protocolo definir&aacute; c&oacute;mo los agentes AI de tus usuarios interactuar&aacute;n con tu negocio &mdash; vale la pena seguirlo de cerca.</p>
+      <p class="source"><a href="https://yourstory.com/ai-story/ai-agents-common-language-meta-walmart-stripe">YourStory</a> &bull; <a href="https://ecosistemastartup.com/personal-agent-protocol-el-estandar-abierto-de-sierra-y-meta/">Ecosistema Startup</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google lanza agente Gemini universal para Workspace: un solo agente para Gmail, Drive, Docs y Calendar</h3>
+      <p class="what">Google present&oacute; un agente Gemini unificado que opera dentro de Gmail, Drive, Docs y Calendar, capaz de responder preguntas, escribir y ejecutar c&oacute;digo, crear documentos y coordinar sub-agentes. Es parte de la consolidaci&oacute;n de herramientas dev bajo la marca Antigravity.</p>
+      <p class="why">La batalla por ser el &ldquo;agente de productividad&rdquo; se intensifica &mdash; ahora tanto Google como Anthropic ofrecen integraciones nativas con Workspace.</p>
+      <p class="source"><a href="https://tech-insider.org/google-gemini-agent-launch-workplace-ai-2026/">Tech Insider</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Haiku 5.5: 75% m&aacute;s barato que Haiku 4.5, con effort controls</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Haiku 5.5 a $0.10/$0.50 por mill&oacute;n de tokens (input/output) para prompts de hasta 100K tokens &mdash; ~10x m&aacute;s barato que Haiku 4.5. Es el primer modelo Haiku con ajuste de esfuerzo (effort setting), permitiendo a devs intercambiar costo por rendimiento. Disponible en Claude Platform, AWS, GCP y Azure.</p>
+      <p class="why">A ese precio, es viable usar Haiku 5.5 para sub-agentes, clasificaci&oacute;n masiva y procesamiento de alto volumen donde antes ten&iacute;as que sacrificar calidad.</p>
+      <p class="source"><a href="https://yourstory.com/ai-story/claude-haiku-5-5-anthropic-small-ai-model">YourStory</a> &bull; <a href="https://letsdatascience.com/news/anthropic-releases-claude-haiku-55-with-lower-prices-and-eff-f698c663">LetsDataScience</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude para Google Workspace entra en beta p&uacute;blica: edita Docs, Sheets y Slides</h3>
+      <p class="what">Anthropic abri&oacute; la beta p&uacute;blica de Claude para Google Workspace en planes Pro, Max, Team y Enterprise. Incluye un add-on con sidebar en Docs, Sheets y Slides, m&aacute;s conectores que permiten crear y editar archivos Google desde el chat de Claude. Los controles enterprise (CMEK, auditor&iacute;a OpenTelemetry) se mantienen.</p>
+      <p class="why">Si tu equipo usa Google Workspace, Claude ahora puede editar tus docs directamente &mdash; un paso concreto hacia tener AI integrada en tu flujo de trabajo diario.</p>
+      <p class="source"><a href="https://www.reworked.co/digital-workplace/anthropic-opens-claude-for-google-workspace-in-beta/">Reworked</a> &bull; <a href="https://alternativeto.net/news/2026/10/claude-now-integrates-with-google-workspace-to-edit-your-google-docs-sheets-and-slides-docs/">AlternativeTo</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Peri: wearable + IA para monitoreo predictivo de perimenopause</h3>
+      <p class="what">Fast Company destac&oacute; a Peri como una de las 5 innovaciones clave en wellness tech para 2026. Es un wearable con plataforma AI que trackea s&iacute;ntomas de perimenopause usando datos biom&eacute;tricos continuos, ofreciendo insights predictivos y recomendaciones personalizadas de salud hormonal.</p>
+      <p class="why">Ejemplo claro de producto vertical donde wearable + AI resuelve un problema de salud espec&iacute;fico con datos reales &mdash; patr&oacute;n replicable en otros nichos de health tech.</p>
+      <p class="source"><a href="https://www.fastcompany.com/91612662/wellness-fitness-next-big-things-in-tech-2026">Fast Company</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 09/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
