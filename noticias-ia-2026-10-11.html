@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 11 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>11 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Personal Agent Protocol: Meta, Sierra, Walmart, Stripe y Shopify crean est&aacute;ndar abierto para agentes AI</h3>
+      <p class="what">Meta y la startup Sierra publicaron el Personal Agent Protocol (PAP), un est&aacute;ndar abierto basado en OAuth con tres niveles de acceso (guest, read-only, write) que define c&oacute;mo los agentes AI personales se autentican e interact&uacute;an con negocios. Walmart, Shopify, Stripe y Genesys son partners fundadores; la spec v0.1 llega este mes.</p>
+      <p class="why">Si construyes un marketplace o plataforma, implementar PAP temprano significa que los agentes AI de tus usuarios podr&aacute;n operar en tu servicio desde el d&iacute;a uno del est&aacute;ndar.</p>
+      <p class="source"><a href="https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/">Channel Insider</a> &bull; <a href="https://yourstory.com/ai-story/ai-agents-common-language-meta-walmart-stripe">YourStory</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cisco integra Claude en Webex via Managed Agents: IA en reuniones, espacios y llamadas</h3>
+      <p class="what">En WebexOne 2026, Cisco anunci&oacute; que Claude, a trav&eacute;s de Managed Agents de Anthropic, se integrar&aacute; en Webex pudiendo unirse a espacios, reuniones y llamadas, captando el contexto de la conversaci&oacute;n para completar tareas derivadas. Tambi&eacute;n incorporan agentes de OpenAI y soporte MCP nativo.</p>
+      <p class="why">Es la primera integraci&oacute;n enterprise seria de agentes AI en comunicaciones unificadas &mdash; se&ntilde;al clara de que MCP y Managed Agents est&aacute;n entrando en producci&oacute;n corporativa.</p>
+      <p class="source"><a href="https://siliconangle.com/?p=849734">SiliconANGLE</a> &bull; <a href="https://uctoday.com/webexone-2026-amit-barave-on-claude-agents-the-new-webex">UC Today</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI lanza GPT-6 con Intelligent UI a todos los tiers de ChatGPT</h3>
+      <p class="what">OpenAI despleg&oacute; GPT-6 con Intelligent UI, que permite a ChatGPT responder con elementos interactivos: gr&aacute;ficos, formularios, calculadoras, comparativas side-by-side y botones accionables, no solo texto. El modelo elige autom&aacute;ticamente el formato y puede hacer streaming parcial mientras sigue pensando. Los tiers pagados usan GPT-6 Sol; Free y Go usan GPT-6 Luna.</p>
+      <p class="why">Eleva el est&aacute;ndar de UX en chatbots AI &mdash; si tu producto usa un chat con LLM, los usuarios ya esperan respuestas interactivas, no solo texto plano.</p>
+      <p class="source"><a href="https://www.ghacks.net/2026/10/08/openai-brings-gpt-6-to-all-chatgpt-users-adding-intelligent-ui-with-interactive-answers/">gHacks</a> &bull; <a href="https://www.unite.ai/openai-brings-gpt-6-with-intelligent-ui-to-all-chatgpt-tiers/">Unite.AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Mistral Large 4: el modelo abierto m&aacute;s capaz fuera de China llega en preview</h3>
+      <p class="what">Mistral lanz&oacute; Large 4 en preview, describiendo al modelo como el sistema abierto m&aacute;s capaz fuera de China. Se posiciona como alternativa open-source de alto rendimiento para empresas que necesitan soberan&iacute;a de datos o deployment on-premise.</p>
+      <p class="why">Otra opci&oacute;n viable para self-hosting en tu infra si necesitas control total sobre los datos de tu plataforma.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/10/06/mistral-ai-model-le-chonk.html">CNBC</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google LiteRT-LM corre Gemma 4 localmente en Android, iOS y web</h3>
+      <p class="what">Google lanz&oacute; LiteRT-LM, un runtime que ejecuta Gemma 4 directamente en dispositivo. Soporta Android, iOS y web con inferencia local, permitiendo agentes AI que funcionan sin conexi&oacute;n a internet y sin costos de API por request.</p>
+      <p class="why">Para cualquier app Android que quiera AI offline (coaching, b&uacute;squeda local, asistentes), esto elimina la dependencia del cloud y reduce costos a cero por inferencia.</p>
+      <p class="source"><a href="https://denebrixai.com/blog/on-device-ai-news/">DenebrixAI</a> &bull; <a href="https://techgenyz.com/on-device-ai/">TechGenyz</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Persona: el fundador de Cal AI (19 a&ntilde;os) lanza agente AI personal con wearable de $179 y levanta $10M</h3>
+      <p class="what">Zach Yadegari, cofundador de Cal AI, lanz&oacute; Persona, un agente AI personal que incluye un wearable tipo banda por $179 que no escucha constantemente. Vine Ventures lider&oacute; la ronda de $10M con participaci&oacute;n de Z Fellows y Collective Global. El diferenciador es la integraci&oacute;n hardware+software con privacidad por dise&ntilde;o.</p>
+      <p class="why">Caso real de founder joven iterando r&aacute;pido: de app de calor&iacute;as a agente personal con hardware propio, demostrando que el ciclo producto-mercado se comprime con AI.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/10/08/cal-ais-19-year-old-founder-just-raised-10m-for-his-new-ai-startup/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Edge IoT supera la etapa piloto: 78% de deployments ya est&aacute;n en producci&oacute;n</h3>
+      <p class="what">Un estudio de Omdia con 570 decision-makers de IoT encontr&oacute; que el 78% de los deployments de edge computing han superado la fase piloto y est&aacute;n en producci&oacute;n. La combinaci&oacute;n de AI + edge est&aacute; generando valor real en manufactura, log&iacute;stica y retail.</p>
+      <p class="why">Edge AI ya no es experimental &mdash; si est&aacute;s evaluando procesar datos localmente en tu producto (wearables, POS, dispositivos IoT), el mercado ya valid&oacute; que funciona.</p>
+      <p class="source"><a href="https://electronicsmedia.info/2026/10/07/edge-computing-for-iot">Electronics Media</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Dashboards y Claude Motion lanzan en beta: datos en vivo y animaciones desde prompts</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Dashboards (beta, planes pagados), que conecta a BigQuery, Snowflake, Databricks y Salesforce para crear dashboards interactivos en vivo desde un prompt. Tambi&eacute;n lanz&oacute; Claude Motion (beta, Team y Enterprise), que genera animaciones exportables a MP4 a partir de texto, c&oacute;digo y gr&aacute;ficos.</p>
+      <p class="why">Dashboards convierte a Claude en una herramienta de BI instant&aacute;nea &mdash; ideal para founders que necesitan visualizar m&eacute;tricas sin montar Metabase o Looker.</p>
+      <p class="source"><a href="https://www.unite.ai/anthropic-launches-claude-dashboards-and-motion-takes-docs-out-of-beta/">Unite.AI</a> &bull; <a href="https://www.xda-developers.com/claude-can-now-turn-your-data-into-a-live-interactive-dashboard/">XDA Developers</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Haiku 5.5: 75% m&aacute;s barato que Haiku 4.5, con 1M tokens de contexto y control de esfuerzo</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Haiku 5.5, completando la familia 5.5. Precio: $0.10/$0.50 por mill&oacute;n de tokens (input/output hasta 100K), 75% menos que Haiku 4.5. Incluye ventana de 1M tokens, 128K de output m&aacute;ximo, y par&aacute;metro de esfuerzo adaptativo (low a max) para controlar profundidad de razonamiento.</p>
+      <p class="why">A $0.10/M input, Haiku 5.5 es el modelo m&aacute;s econ&oacute;mico para clasificaci&oacute;n, sub-agentes y tareas de alto volumen en tu pipeline de producci&oacute;n.</p>
+      <p class="source"><a href="https://9to5mac.com/2026/10/07/anthropic-upgrades-claude-with-new-haiku-5-5-model-details-here/">9to5Mac</a> &bull; <a href="https://computingforgeeks.com/claude-haiku-5-5-released-features-benchmarks/">Computing for Geeks</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic baja 50% el precio de cache reads en Sonnet 5.5 y saca Docs, Slides y Design de beta</h3>
+      <p class="what">Anthropic redujo el costo de prompt cache reads en Claude Sonnet 5.5 de $0.20 a $0.10 por mill&oacute;n de tokens, igualando a OpenAI. Adem&aacute;s, Claude Docs, Slides y Design salen de beta y est&aacute;n disponibles en todos los planes, incluido el gratuito.</p>
+      <p class="why">Si usas Sonnet 5.5 con caching en tu API (system prompts largos, RAG), tu factura de cache reads se reduce a la mitad sin cambiar una l&iacute;nea de c&oacute;digo.</p>
+      <p class="source"><a href="https://www.remio.ai/post/anthropic-cuts-claude-sonnet-5-5-cache-pricing-matching-openai-at-0-10">Remio</a> &bull; <a href="https://smartscope.blog/en/blog/claude-sonnet-5-5-cache-read-price-cut-2026/">SmartScope</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Oura lanza su mayor actualizaci&oacute;n de software con coaching proactivo via Counsel Health</h3>
+      <p class="what">Oura liber&oacute; su mayor release de software, que a&ntilde;ade insights proactivos a trav&eacute;s de una alianza con Counsel Health. El sistema analiza datos del anillo (sue&ntilde;o, HRV, actividad, temperatura) y genera recomendaciones personalizadas de bienestar antes de que el usuario las pida.</p>
+      <p class="why">El modelo de wearable + AI proactiva es el patr&oacute;n que deber&iacute;a replicar cualquier plataforma de coaching deportivo o wellness que quiera retener usuarios.</p>
+      <p class="source"><a href="https://www.fastcompany.com/91612662/wellness-fitness-next-big-things-in-tech-2026">Fast Company</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 11/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
