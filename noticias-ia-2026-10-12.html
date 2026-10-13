@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 12 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>12 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft Execution Containers (MXC) llega a GA: sandbox para agentes AI en Windows, macOS y Linux</h3>
+      <p class="what">Microsoft lanzó la disponibilidad general de MXC, una capa de contención por pol&iacute;ticas que limita lo que los agentes AI pueden hacer en el sistema operativo. Soporta contenedores de proceso (Windows/macOS/Linux), de sesi&oacute;n y WSL (Windows 11), con OpenAI Codex, GitHub Copilot, Replit y NVIDIA OpenShell ya integrados.</p>
+      <p class="why">Si est&aacute;s construyendo agentes que ejecutan c&oacute;digo o acceden al filesystem de tus usuarios, MXC resuelve el sandboxing que antes ten&iacute;as que implementar t&uacute; mismo.</p>
+      <p class="source"><a href="https://www.thestack.technology/microsoft-takes-mxc-its-agent-management-layer-ga/">The Stack</a> &bull; <a href="https://windowsreport.com/microsoft-execution-containers-mxc-is-now-generally-available-on-windows-11/">Windows Report</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 NVIDIA RTX Spark: laptops con 1 PFLOP de AI y 128GB de memoria unificada desde noviembre</h3>
+      <p class="what">NVIDIA abri&oacute; pre-&oacute;rdenes para laptops RTX Spark con GPU Blackwell + CPU Grace. Acer, ASUS, Dell, HP, Lenovo y MSI fabricar&aacute;n equipos, y la herramienta NVIDIA PAIR (open-source) sali&oacute; de beta para distribuir workloads AI entre PCs locales con soporte llama.cpp.</p>
+      <p class="why">Un petaflop local cambia la ecuaci&oacute;n de costos para fine-tuning, inferencia y testing de modelos sin depender de cloud.</p>
+      <p class="source"><a href="https://blogs.nvidia.com/blog/local-ai-rtx-sp">NVIDIA Blog</a> &bull; <a href="https://blockchain.news/news/nvidia-rtx-spark-software-ecosystem-updates-october-2026">Blockchain News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Nous Research lanza Hermes Enterprise: agentes AI para workflows corporativos</h3>
+      <p class="what">Nous Research (valorada en $1.5B tras su Serie B de $90M) lanz&oacute; la versi&oacute;n enterprise de Hermes con templates pre-construidos para ventas, soporte e integraciones con SAP y Odoo. El modelo base es open-source (MIT) con arquitectura agent-first y memoria persistente entre sesiones.</p>
+      <p class="why">Un framework de agentes open-source con wrapper enterprise es exactamente lo que necesitas si quieres construir sobre c&oacute;digo que puedes auditar sin vendor lock-in.</p>
+      <p class="source"><a href="https://mezha.net/eng/?p=3729422">Mezha Media</a> &bull; <a href="https://emergent.sh/news/nous-research-hits-15b-valuation-launches">Emergent</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google AISeal: enclave de seguridad para AI on-device en Android</h3>
+      <p class="what">Google anunci&oacute; AISeal, una arquitectura de enclave basada en Android Virtualization Framework y pKVM que a&iacute;sla datos personales del contexto AI en almacenamiento encriptado local. MediaTek Dimensity 9600 Pro y Qualcomm Snapdragon ya soportan la arquitectura; AppSearch es la implementaci&oacute;n de referencia.</p>
+      <p class="why">Si desarrollas apps Android que procesan datos sensibles con AI on-device, AISeal te da aislamiento a nivel de hardware sin tener que construir tu propio sandbox.</p>
+      <p class="source"><a href="https://blog.google/security/enabling-the-next-gen-enclave-architecture-for-on-device-ai-on-android">Google Security Blog</a> &bull; <a href="https://www.privacyguides.org/news/2026/10/09/android-on-device-ai-gets-a-security-bump-with-next-gen-enclaves/">Privacy Guides</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Qualcomm en India Mobile Congress: agentes AI on-device como futuro del m&oacute;vil</h3>
+      <p class="what">En el India Mobile Congress 2026, Qualcomm present&oacute; sus chips Snapdragon 8 Elite Extreme Gen 6 con demos de agentes que completan tareas multi-paso (como armar itinerarios desde un email) procesando todo en el dispositivo. Tambi&eacute;n mostraron un espejo inteligente corriendo modelos open-weight directamente en el NPU.</p>
+      <p class="why">Los agentes on-device abren un nuevo paradigma para apps m&oacute;viles: tareas complejas sin latencia de red ni costo de API por request.</p>
+      <p class="source"><a href="https://businesstoday.in/amp/technology/news/story/from-reactive-to-proactive-ai-qualcomms-sumit-sonal-lays-out-vision-for-on-device-agentic-ai-in-india-561025-2026-10-12">Business Today</a> &bull; <a href="https://sammyguru.com/qualcomm-agentic-ai-snapdragon-imc-2026/">SammyGuru</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Sakana AI presenta MASS: un solo modelo de 27B como solver, optimizador y evaluador</h3>
+      <p class="what">Sakana AI public&oacute; MASS, un m&eacute;todo que reutiliza un &uacute;nico modelo open-weights de 27B par&aacute;metros para resolver, optimizar workflows y evaluar resultados simult&aacute;neamente. Reportan mejoras en MLR-Bench y DSBench frente a pipelines multi-modelo.</p>
+      <p class="why">Reducir tres modelos a uno baja dr&aacute;sticamente el costo de inferencia en pipelines de agentes &mdash; especialmente relevante si self-hosteas.</p>
+      <p class="source"><a href="https://aiweekly.co/ai-news-today/edition/2026-10-12">AI Weekly</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot app de escritorio en preview: desarrollo ag&eacute;ntico fuera del IDE</h3>
+      <p class="what">Microsoft anunci&oacute; la preview de la app de escritorio de GitHub Copilot, que lleva capacidades de desarrollo ag&eacute;ntico m&aacute;s all&aacute; del editor. Forma parte del ecosistema RTX Spark, optimizada para ejecuci&oacute;n local con soporte MXC para sandboxing seguro.</p>
+      <p class="why">Una app standalone de Copilot con ejecuci&oacute;n local compite directamente con Claude Code en el espacio de coding agents &mdash; m&aacute;s opciones para tu stack de desarrollo.</p>
+      <p class="source"><a href="https://petri.com/surface-rtx-spark-dev-box-ai-development-windows-11/">Petri</a> &bull; <a href="https://blogs.nvidia.com/blog/local-ai-rtx-sp">NVIDIA Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>PEX lanza AI para automatizar workflows de equipos financieros</h3>
+      <p class="what">PEX present&oacute; su plataforma de AI dise&ntilde;ada espec&iacute;ficamente para equipos de finanzas, enfocada en ganarse la confianza del usuario automatizando un workflow repetitivo a la vez. El producto prioriza transparencia y explicabilidad sobre automatizaci&oacute;n agresiva.</p>
+      <p class="why">El patr&oacute;n &ldquo;un workflow a la vez&rdquo; es una lecci&oacute;n clave para cualquier founder: mejor automatizar algo peque&ntilde;o y bien que prometer una soluci&oacute;n end-to-end.</p>
+      <p class="source"><a href="https://manilatimes.net/2026/10/13/tmt-newswire/globenewswire/pex-launches-ai-built-to-earn-finance-teams-trust-one-workflow-at-a-time/2444686">Manila Times</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Haiku 5.5 disponible: el modelo m&aacute;s r&aacute;pido de Anthropic con thinking adaptativo</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Haiku 5.5 el 7 de octubre, completando la familia Claude 5.5. Es el primer Haiku con controles de esfuerzo y thinking adaptativo, a $0.10/M input y $0.50/M output con ventana de 1M tokens.</p>
+      <p class="why">A ese precio con 1M de contexto, Haiku 5.5 es ideal para clasificaci&oacute;n, routing y tareas de subagentes en tu backend sin reventar el presupuesto.</p>
+      <p class="source"><a href="https://platform.claude.com/docs/en/release-notes/overview">Anthropic Release Notes</a> &bull; <a href="https://blog.memoryplugin.com/claude-new-features-october-2026">Memory Plugin Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>MCP Tunnels en research preview: conecta Claude a servidores MCP privados</h3>
+      <p class="what">Anthropic abri&oacute; MCP Tunnels como research preview, permitiendo que Claude acceda a servidores MCP dentro de redes privadas mediante conexi&oacute;n outbound-only (sin abrir puertos en tu firewall). Disponible para planes Enterprise y tambi&eacute;n v&iacute;a API con un plugin oficial en el marketplace.</p>
+      <p class="why">Si tienes APIs internas o bases de datos detr&aacute;s de un firewall, MCP Tunnels elimina la necesidad de exponer endpoints p&uacute;blicos para que tus agentes AI los consuman.</p>
+      <p class="source"><a href="https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/overview.md">Anthropic Docs</a> &bull; <a href="https://claude.com/marketplace/plugins/mcp-tunnels">Claude Marketplace</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Models API ahora reporta capacidades de server tools por modelo</h3>
+      <p class="what">Anthropic agreg&oacute; el campo capabilities.server_tools a la Models API, permitiendo consultar program&aacute;ticamente qu&eacute; modelos soportan web search y code execution. Tambi&eacute;n se a&ntilde;adi&oacute; capabilities.thinking.types.disabled para verificar soporte de thinking.</p>
+      <p class="why">Si tu producto rutea entre modelos Claude din&aacute;micamente, ahora puedes validar capacidades en runtime en vez de hardcodear una tabla de features.</p>
+      <p class="source"><a href="https://platform.claude.com/docs/en/release-notes/overview">Anthropic Release Notes</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 ChatGPT Health con Peloton y Weight Watchers: datos de salud como contexto para AI</h3>
+      <p class="what">OpenAI consolida ChatGPT Health integrando datos de Apple Health, Peloton, MyFitnessPal, Weight Watchers e Instacart. Peloton usa contexto m&eacute;dico (planes de recuperaci&oacute;n, tendencias de colesterol) para personalizar recomendaciones de clases, desarrollado con input de m&aacute;s de 260 m&eacute;dicos.</p>
+      <p class="why">Este es el modelo a seguir para marketplaces de salud y fitness: integrar datos de m&uacute;ltiples fuentes y usar AI como capa de personalizaci&oacute;n sobre servicios existentes.</p>
+      <p class="source"><a href="https://athletechnews.com/chatgpt-health-debuts-with-peloton-weight-watchers-as-early-partners/">Athletech News</a> &bull; <a href="https://openai.com/blog/introducing-chatgpt-health">OpenAI Blog</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 12/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
