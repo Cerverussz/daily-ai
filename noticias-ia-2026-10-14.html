@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 14 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>14 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini 4 Argon llega a disponibilidad general para desarrolladores y empresas</h3>
+      <p class="what">Google lanzó Gemini 4 Argon en GA el 13-14 de octubre, su modelo flagship de razonamiento con ventana de contexto de 1M tokens y output largo de hasta 1M tokens. Disponible vía Gemini API, AI Studio y Google Cloud con precio introductorio de $2/M input y $10/M output hasta el 30 de noviembre.</p>
+      <p class="why">Si construyes agentes de larga duración o pipelines de migración de código, Argon compite directamente con Opus 5.5 a precio agresivo &mdash; eval&uacute;a antes de que termine el per&iacute;odo introductorio.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/">Google Blog</a> &bull; <a href="https://9to5google.com/2026/10/13/gemini-app-4-argon/">9to5Google</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI anuncia retiro de GPT-4o y GPT-4.1 de la API para enero 2027</h3>
+      <p class="what">OpenAI notific&oacute; el 14 de octubre que los modelos GPT-4o (snapshots 2024-08-06 y 2024-11-20) y GPT-4.1 ser&aacute;n retirados de la API el 14 de enero de 2027. GPT-6 Luna ($0.10/M input) es el reemplazo recomendado.</p>
+      <p class="why">Si tu producto depende de GPT-4o en backend, tienes 3 meses para migrar a Luna o evaluar alternativas &mdash; planifica tu sprint de migraci&oacute;n ahora.</p>
+      <p class="source"><a href="https://developers.openai.com/api/docs/deprecations">OpenAI Deprecations</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 JetBrains lanza Mellum 2.1: modelo open-source de 12B para coding agents</h3>
+      <p class="what">JetBrains liber&oacute; Mellum 2.1, un modelo MoE de 12B par&aacute;metros (2.5B activos) bajo licencia Apache 2.0, entrenado con RL en sandboxes reales para explorar c&oacute;digo, editar archivos y auto-verificar cambios. Reporta 47% en SWE-bench Verified y es compatible con vLLM, SGLang y Ollama.</p>
+      <p class="why">Un modelo de coding auto-hosteable con licencia permisiva y benchmark competitivo &mdash; ideal si quieres un coding agent privado sin depender de APIs cloud.</p>
+      <p class="source"><a href="https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/">JetBrains Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 NVIDIA DGX Spark 64GB: escritorio de 1 PetaFLOP para agentes AI locales por $4,999</h3>
+      <p class="what">NVIDIA anunci&oacute; la variante de 64GB del DGX Spark con Grace Blackwell, capaz de ejecutar modelos de hasta 100B par&aacute;metros localmente. Incluye DGX OS con Ollama, vLLM y NVIDIA Agent Toolkit, soporta clustering de dos unidades, y estar&aacute; disponible desde el 23 de octubre.</p>
+      <p class="why">Por primera vez tienes un desktop sub-$5K que corre agentes AI locales con modelos serios &mdash; perfecto para prototipar sin enviar datos a la nube.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/10/02/nvidia-announces-dgx-spark-64gb-a-1-petaflop-grace-blackwell-desktop-for-local-ai-agents-fine-tuning-and-inference/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code se consolida como #1 en el ranking de herramientas AI para desarrollo</h3>
+      <p class="what">El ranking de LogRocket de octubre 2026 posiciona a Claude Code en primer lugar entre herramientas AI para desarrollo, ejecutando Claude Opus 5.5 con el Elo m&aacute;s alto registrado en cualquier modelo en cualquier herramienta. Cursor ($20/mes) y GitHub Copilot ($10/mes) completan el podio.</p>
+      <p class="why">Si est&aacute;s eligiendo stack de coding, Claude Code para tareas complejas en terminal + Cursor para edici&oacute;n diaria sigue siendo la combinaci&oacute;n dominante en 2026.</p>
+      <p class="source"><a href="https://blog.logrocket.com/ai-dev-tool-power-rankings/">LogRocket Blog</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic abre portal de env&iacute;o de plugins para el directorio de Claude</h3>
+      <p class="what">Anthropic lanz&oacute; un portal donde desarrolladores pueden enviar plugins (MCP connectors y skills) al directorio oficial de Claude, con tracking del proceso de revisi&oacute;n y analytics de uso post-publicaci&oacute;n. Los plugins pasan por validaci&oacute;n automatizada y escaneo de seguridad antes de aprobarse.</p>
+      <p class="why">Si tienes un servicio o API, distribuirlo como plugin de Claude te pone frente a millones de usuarios &mdash; este es el App Store moment del ecosistema.</p>
+      <p class="source"><a href="https://cryptobriefing.com/claude-plugin-mcp-connector-submission-portal/">CryptoBriefing</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Haiku 5.5: reducci&oacute;n de 90% en precios de API</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Haiku 5.5 el 7 de octubre a $0.10/M input y $0.50/M output (hasta 100K tokens), una reducci&oacute;n del 90% vs Haiku 4.5. Incluye ventana de 1M tokens, thinking adaptativo con esfuerzo ajustable, y 128K de output m&aacute;ximo.</p>
+      <p class="why">A una d&eacute;cima del precio anterior, Haiku 5.5 hace viable usar Claude para clasificaci&oacute;n, res&uacute;menes y sub-agentes de alto volumen sin destruir tu presupuesto de API.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/anthropic-launches-claude-haiku-5-5-with-90-api-price-reduction-matching-gpt-6-luna/">VentureBeat</a> &bull; <a href="https://artificialanalysis.ai/articles/claude-haiku-5-5">Artificial Analysis</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenTelemetry llega a Claude Platform en public beta</h3>
+      <p class="what">Anthropic habilit&oacute; el 14 de octubre la exportaci&oacute;n de trazas OpenTelemetry para la API de Messages y sesiones de Managed Agents, con SDKs en Python, TypeScript, Go, Java, C#, PHP y Ruby. La configuraci&oacute;n se hace desde la Claude Console a&ntilde;adiendo un destino OTEL.</p>
+      <p class="why">Si corres Claude en producci&oacute;n, ahora puedes trazar requests en tu stack de observabilidad existente (Datadog, Grafana) sin instrumentaci&oacute;n custom.</p>
+      <p class="source"><a href="https://cryptobriefing.com/anthropic-claude-opentelemetry-observability-beta/">CryptoBriefing</a> &bull; <a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform Docs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Dynamic Workflows en Managed Agents: hasta 1,000 agentes por ejecuci&oacute;n</h3>
+      <p class="what">Anthropic lanz&oacute; Dynamic Workflows el 9 de octubre, permitiendo que un agente escriba y ejecute workflows que orquestan hasta 1,000 sub-agentes (64 concurrentes) en fases. En pruebas internas, un workflow encontr&oacute; 66 de 70 bugs plantados vs 14-27 de un agente individual.</p>
+      <p class="why">Para tareas complejas como auditor&iacute;as de c&oacute;digo o an&aacute;lisis masivo de datos, esto escala sin que tengas que construir tu propio orquestador.</p>
+      <p class="source"><a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform Docs</a> &bull; <a href="https://fourweekmba.com/ai-claude-managed-agents-adds-workflows-of-up-to-1000-agents/">FourWeekMBA</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health se asocia con atletas de &eacute;lite y lanza Fitbit Edge con AI coaching</h3>
+      <p class="what">Google anunci&oacute; partnerships con Stephen Curry (Performance Advisor), atletas ol&iacute;mpicos y expertos en wellness para refinar su coach AI powered by Gemini. Simult&aacute;neamente lanz&oacute; Fitbit Edge, el primer tracker reparable con bater&iacute;a reemplazable y 7 d&iacute;as de autonom&iacute;a.</p>
+      <p class="why">El modelo de atletas de &eacute;lite validando tech de salud + AI coaching accesible v&iacute;a wearable es el playbook a seguir si construyes una plataforma de servicios deportivos.</p>
+      <p class="source"><a href="https://blog.google/products-and-platforms/products/google-health/google-health-partnership-athletes-creators/">Google Blog</a> &bull; <a href="https://www.businesstoday.in/technology/news/story/googles-new-fitbit-edge-signals-a-shift-towards-ai-health-coaching-and-longer-lasting-wearables-561162-2026-10-13">BusinessToday</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 14/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
