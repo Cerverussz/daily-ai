@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 17 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>17 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 DeepSeek lanza V4.1-Flash-1017 y abre Search &amp; Fetch APIs para desarrolladores</h3>
+      <p class="what">DeepSeek publicó un nuevo checkpoint de su modelo Flash bajo licencia MIT con contexto de 1M tokens, logrando 77.0 en DeepSWE v1.1. Simultáneamente abrió sus APIs de Search y Fetch a todos los desarrolladores a $0.75 por cada 1,000 llamadas, con acceso gratuito vía server-side tools hasta el 1 de noviembre.</p>
+      <p class="why">Si construyes agentes que necesitan búsqueda web, ahora tienes modelo de coding + búsqueda detrás de una sola API key a precio agresivo.</p>
+      <p class="source"><a href="https://aiweekly.co/alerts/deepseek-opens-v41-flash-1017-weights-and-075-search-api">AI Weekly</a> &bull; <a href="https://api-docs.deepseek.com/updates/">DeepSeek Changelog</a> &bull; <a href="https://www.marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe-opens-search-api/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza trazas OpenTelemetry para agentes y la Messages API</h3>
+      <p class="what">La Claude Platform ahora exporta trazas OpenTelemetry desde Managed Agents, la Messages API y los Claude SDKs hacia cualquier backend compatible con OTLP. Las trazas cubren turnos del agente, llamadas al modelo, tool use y llamadas MCP, con latencia y conteo de tokens incluidos.</p>
+      <p class="why">Si corres agentes Claude en producción, esto te da observabilidad real sin armar instrumentación custom — conecta directo a Datadog, Grafana o Langfuse.</p>
+      <p class="source"><a href="https://devops.com/claude-platform-now-sends-agent-traces-straight-to-your-observability-stack">DevOps.com</a> &bull; <a href="https://openobserve.ai/blog/claude-agent-sdk-observability-opentelemetry/">OpenObserve</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google abre Harness&sup2; en open source: mejora agentes sin reentrenar el modelo</h3>
+      <p class="what">Google publicó Harness&sup2;, un framework Apache 2.0 que optimiza recursivamente el harness de ejecución de un agente AI (prompts, herramientas, flujo) sin tocar los pesos del modelo. Reporta +11.5 puntos en WorkBuddy-Bench con ejecutores OpenCode y Codex.</p>
+      <p class="why">Para quienes construyen agentes sobre modelos congelados (como API calls), esto sistematiza la optimización del "wrapper" que normalmente haces a mano.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/">MarkTechPost</a> &bull; <a href="https://wavect.io/blog/google-harness2-setup-cost-safety/">Wavect</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Reflection AI libera Beam bajo Apache 2.0: 501B params, 80.9% en SWE-bench Verified</h3>
+      <p class="what">Reflection AI publicó los pesos de Beam, un modelo MoE de 501B params (23B activos) con contexto de 1M tokens, bajo licencia Apache 2.0 en Hugging Face. Incluye Mirror CLI, el harness de agentes open-source usado durante su entrenamiento, con API gratuita en beta pública.</p>
+      <p class="why">Un modelo de coding competitivo con licencia Apache 2.0 sin restricciones de uso comercial — ideal para pipelines propietarios donde no quieres dependencia de proveedor.</p>
+      <p class="source"><a href="https://reflection.ai/blog/beam-is-available">Reflection AI</a> &bull; <a href="https://ai-tldr.dev/models/reflection-beam/">AI/TLDR</a> &bull; <a href="https://alphasignal.ai/news/reflection-ai-drops-beam-a-501b-open-weight-agent-model-for-coding">Alpha Signal</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Meta lanza Muse Spark Open: 816B params open-weight para coding y agentes</h3>
+      <p class="what">Meta liberó la versión open-weight de Muse Spark: un modelo MoE de 816B params totales (42B activos) con contexto de 1M tokens, multimodal (texto, imagen, video, audio). Pesos disponibles en Hugging Face en BF16 y NVFP4, con hosting en AWS, GCP y Azure.</p>
+      <p class="why">Es el modelo open-weight más grande de Meta hasta la fecha para tareas agénticas, aunque necesita hardware serio (1TB RAM para local) — útil como backend vía API hosted.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/">TechCrunch</a> &bull; <a href="https://dev.meta.ai/models/muse-spark-open">Meta AI</a> &bull; <a href="https://www.marktechpost.com/2026/10/15/meta-muse-spark-open-816b-open-weight-model/">MarkTechPost</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 NVIDIA lanza Nemotron 3.5 Super VL y Bolt: modelos abiertos del datacenter al edge</h3>
+      <p class="what">NVIDIA publicó Nemotron 3.5 Super VL (120B params, 12B activos), un modelo multimodal para agentes always-on con throughput hasta 5x mayor que competidores abiertos. También lanzó Bolt 74B-A9B (24GB) para desktop y Bolt E4B (4GB) para edge, con soporte para Ollama, llama.cpp y vLLM.</p>
+      <p class="why">Bolt E4B a 4GB abre la puerta a agentes AI en dispositivos móviles y edge sin cloud — relevante si estás explorando on-device features para tu app.</p>
+      <p class="source"><a href="https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/">NVIDIA Blog</a> &bull; <a href="https://www.unite.ai/nvidia-releases-open-nemotron-3-5-super-vl-and-bolt-edge-models/">Unite.AI</a> &bull; <a href="https://the-decoder.com/nvidias-nemotron-3-5-super-vl-is-an-open-model-built-to-run-enterprise-ai-agents-nonstop/">The Decoder</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini 4 Argon ya disponible en API: $2/M input tokens con contexto de 1M</h3>
+      <p class="what">Google hizo GA de Gemini 4 Argon con acceso expandido vía API, Antigravity CLI, app Gemini y AI Mode en Search. Precio introductorio de $2/M input y $10/M output hasta noviembre 30, con 95% de descuento en cached input. Modelo estable: <code>gemini-4-argon</code>.</p>
+      <p class="why">A $2/M input es competitivo para volumen alto; el descuento de 95% en cache lo hace especialmente atractivo para RAG y procesamiento repetitivo de documentos.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-availability">Google Blog</a> &bull; <a href="https://toolhalla.ai/blog/gemini-4-argon-api-price-context-2026">Toolhalla</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code Mods: sistema oficial de plugins para personalizar tu agente de coding</h3>
+      <p class="what">Anthropic lanzó el sistema de Mods para Claude Code: funciones TypeScript que pueden reescribir prompts, agregar UI custom, reemplazar features built-in o añadir funcionalidad nueva. Se instalan desde el directorio .claude o con /plugin en la CLI, y la v2.1.302 mejoró el arranque con múltiples plugins.</p>
+      <p class="why">Puedes construir mods específicos para tu codebase (linting rules, deploy shortcuts, context injection) — convierte Claude Code de herramienta genérica a asistente especializado para tu producto.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> &bull; <a href="https://tech-insider.org/claude-code-plugins-official-mods-cloud-sessions-2026/">Tech Insider</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 El stack de AI coding en octubre 2026: Claude Code #1 con 65% de uso según Stack Overflow</h3>
+      <p class="what">Según una encuesta de Stack Overflow de octubre 2026, Claude Code lidera con 65.5% de uso entre desarrolladores, seguido de Copilot (58.7%) y Codex (29.5%). El stack dominante combina Claude Code para terminal + Cursor para edición, con Grok 4.7 ahora disponible en todos los planes de Cursor.</p>
+      <p class="why">Si aún no integras un coding agent en tu workflow diario, estás dejando productividad en la mesa — el consenso del mercado ya eligió.</p>
+      <p class="source"><a href="https://dev.to/paullovelace/7-ai-coding-assistants-tested-honest-ranking-october-2026-2ehd">DEV Community</a> &bull; <a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM</a> &bull; <a href="https://blog.logrocket.com/ai-dev-tool-power-rankings/">LogRocket</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Haiku 5.5 lanzado: el modelo peque&ntilde;o m&aacute;s r&aacute;pido de Anthropic</h3>
+      <p class="what">Anthropic lanzó Claude Haiku 5.5, descrito como su modelo pequeño más rápido, barato y capaz hasta la fecha, orientado a trabajo de alto volumen. También agregó créditos API mensuales para suscriptores Max y Team que ejecutan apps y agentes en la Claude Platform.</p>
+      <p class="why">Para endpoints de alto tráfico en tu producto (clasificación, extracción, routing) donde la latencia y costo importan más que el razonamiento profundo.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot - Anthropic Updates</a> &bull; <a href="https://www.anthropic.com/">Anthropic</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Google lanza protecciones AI anti-scam en Android con Gemini Nano on-device</h3>
+      <p class="what">Google activó nuevas defensas AI contra mensajes fraudulentos y abuso de desvío de llamadas en Android, usando Gemini Nano para análisis on-device de links sospechosos en chats. Las verificaciones on-device están activas por defecto; las cloud-based son opt-in.</p>
+      <p class="why">Muestra el patrón que viene para apps móviles: AI on-device para features sensibles de privacidad, con cloud como fallback — aplicable a cualquier app que procese datos personales.</p>
+      <p class="source"><a href="https://www.bleepingcomputer.com/news/security/android-gets-ai-defenses-against-messaging-scams-fake-calls/">BleepingComputer</a> &bull; <a href="https://nokiapoweruser.com/google-android-ai-scam-protections-gemini-messages/">NokiaPowerUser</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 17/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
