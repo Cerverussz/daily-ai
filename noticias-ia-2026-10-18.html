@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 18 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>18 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta lanza Muse Spark Open: modelo open-weight de 816B par&aacute;metros bajo Apache-compatible</h3>
+      <p class="what">Meta liber&oacute; los pesos de Muse Spark Open el 15 de octubre: un modelo multimodal MoE de 816B par&aacute;metros totales (42B activos por token) con ventana de contexto de 1M tokens. Disponible en Hugging Face, Together AI, OpenRouter, Amazon SageMaker y Google Cloud Model Garden bajo licencia Muse Model License con uso comercial permitido.</p>
+      <p class="why">Un modelo open-weight de este calibre disponible para self-hosting cambia la ecuaci&oacute;n costo/control para cualquier producto que necesite capacidades multimodales sin depender de APIs propietarias.</p>
+      <p class="source"><a href="https://research.meta.ai/blog/muse-spark-open">Meta AI Research</a> &bull; <a href="https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/">TechCrunch</a> &bull; <a href="https://pytorch.org/blog/muse-spark-open/">PyTorch Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic abre OpenTelemetry para la Claude Platform en beta p&uacute;blica</h3>
+      <p class="what">Desde el 14 de octubre, los requests a la Messages API, Claude Managed Agents y los SDKs de Claude pueden exportar trazas OpenTelemetry est&aacute;ndar a tu stack de observabilidad. Compatible con Langfuse, Datadog, Grafana, Sentry, New Relic y cualquier endpoint OTLP/HTTP.</p>
+      <p class="why">Si corres agentes Claude en producci&oacute;n, ahora puedes debuggear fallos y medir latencia/tokens por turno con las mismas herramientas que ya usas para tu backend.</p>
+      <p class="source"><a href="https://platform.claude.com/docs/en/manage-claude/opentelemetry">Claude Platform Docs</a> &bull; <a href="https://www.unite.ai/anthropic-adds-opentelemetry-trace-export-to-the-claude-platform/">Unite.AI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta elimina lenguaje de scraping de sus t&eacute;rminos comerciales tras presi&oacute;n de la industria</h3>
+      <p class="what">Meta actualiz&oacute; sus t&eacute;rminos comerciales para remover cl&aacute;usulas que permit&iacute;an scrapear contenido de terceros (incluidos medios) para entrenar modelos de IA. El cambio lleg&oacute; tras rechazo masivo de publishers y desarrolladores.</p>
+      <p class="why">Buena se&ntilde;al regulatoria si publicas contenido en plataformas &mdash; tu contenido tiene m&aacute;s protecci&oacute;n contra uso no autorizado para training.</p>
+      <p class="source"><a href="https://aiweekly.co/ai-news-today">AI Weekly</a> &bull; <a href="https://aitoolly.com/ai-news/2026-10-18">AI Toolly</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini 4 Argon en GA: pricing introductorio de $2/$10 por mill&oacute;n de tokens hasta diciembre</h3>
+      <p class="what">Google abri&oacute; acceso general a Gemini 4 Argon el 13 de octubre, enfocado en coding complejo, migraciones y ciberseguridad defensiva. El pricing introductorio ($2 input, $10 output por 1M tokens) se duplica el 1 de diciembre. Cache impl&iacute;cito a $0.10/M.</p>
+      <p class="why">La ventana de precio hasta noviembre lo convierte en la opci&oacute;n m&aacute;s barata entre modelos frontier para tareas de coding pesado &mdash; ideal para probar pipelines de migraci&oacute;n o agentes antes de comprometerte.</p>
+      <p class="source"><a href="https://ai.google.dev/gemini-api/docs/pricing">Google AI Pricing</a> &bull; <a href="https://venturebeat.com/technology/google-makes-gemini-4-argon-broadly-available-with-limited-time-low-api-pricing-of-2-10-per-1m-token">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 JetBrains libera Mellum 2.1: modelo de coding de 12B params (2.5B activos) bajo Apache 2.0</h3>
+      <p class="what">JetBrains lanz&oacute; Mellum 2.1 el 8 de octubre, un MoE de 12B par&aacute;metros con 2.5B activos por token que alcanza 47% en SWE-bench Verified. Pesa 8.1 GB en Q4_K_M, cabe en una GPU de 12 GB, y funciona con Ollama, LM Studio, vLLM y SGLang.</p>
+      <p class="why">Un modelo de coding que cabe en hardware modesto, con licencia Apache 2.0 y scores competitivos &mdash; perfecto como subagente local para tu pipeline de desarrollo sin costos de API.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/10/08/jetbrains-releases-mellum2-1-a-12b-moe-open-model-for-coding-agents/">MarkTechPost</a> &bull; <a href="https://daily.dev/posts/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents-cpbr6alyw">Daily.dev</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Haiku 5.5 disponible: $0.10/M input con 1M de contexto</h3>
+      <p class="what">Anthropic lanz&oacute; Haiku 5.5 el 7 de octubre como modelo r&aacute;pido y econ&oacute;mico para alto volumen: clasificaci&oacute;n, res&uacute;menes, queries a DB y compactaci&oacute;n. Soporta thinking adaptativo, 1M tokens de contexto y hasta 128K de output.</p>
+      <p class="why">A $0.10/M input es el modelo m&aacute;s barato de la familia Claude 5 &mdash; ideal como subagente para tareas de triaje o clasificaci&oacute;n en tu producto sin reventar el budget.</p>
+      <p class="source"><a href="https://www.anthropic.com/claude-haiku-5-5">Anthropic</a> &bull; <a href="https://platform.claude.com/docs/en/models/haiku-5-5/overview">Claude Platform Docs</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI Dots en producci&oacute;n: agentes always-on con computadora cloud propia</h3>
+      <p class="what">Anunciados en DevDay (29 sept), los Dots de OpenAI ya est&aacute;n disponibles para suscriptores Pro y Business Premium. Cada Dot tiene su propia computadora cloud, navegador y acceso a +4,000 apps conectadas. Funciona v&iacute;a ChatGPT desktop, web, mobile, Slack y Teams.</p>
+      <p class="why">Es la primera implementaci&oacute;n seria de agentes persistentes de un proveedor grande &mdash; si tu producto compite con workflows manuales, este es el tipo de automatizaci&oacute;n que tus usuarios van a esperar.</p>
+      <p class="source"><a href="https://thenextweb.com/news/openai-dots-always-on-ai-agents-cloud-computers-devday">The Next Web</a> &bull; <a href="https://www.datacamp.com/blog/openai-dots">DataCamp</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>diagram-design: diagramas con calidad editorial para Claude Code y Cursor</h3>
+      <p class="what">Proyecto open-source trending en GitHub que lleva generaci&oacute;n de diagramas de calidad editorial a entornos de AI coding como Claude Code y Cursor. Permite generar diagramas de arquitectura y flujo directamente desde el IDE.</p>
+      <p class="why">Si documentas arquitectura como parte de tu flujo de desarrollo, esto elimina el paso manual de abrir Excalidraw o Mermaid por separado.</p>
+      <p class="source"><a href="https://aitoolly.com/ai-news/2026-10-15">AI Toolly</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Code 2.1.301: mejoras en cambio de modelo y rendering de subagentes</h3>
+      <p class="what">La &uacute;ltima versi&oacute;n de Claude Code (15 oct) ahora resume la conversaci&oacute;n antes de cambiar a un modelo con ventana de contexto menor, evitando p&eacute;rdida de contexto. Tambi&eacute;n acelera el rendering durante ejecuci&oacute;n de subagentes largos.</p>
+      <p class="why">Si usas Claude Code con m&uacute;ltiples modelos (Opus para tareas pesadas, Haiku para triaje), el cambio ya no pierde contexto &mdash; workflow m&aacute;s fluido.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> &bull; <a href="https://www.gradually.ai/en/changelogs/claude-code/">Gradually.ai</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic reporta $16.8B en ingresos del Q3 2026</h3>
+      <p class="what">Seg&uacute;n fuentes citadas por CNBC, Anthropic alcanz&oacute; $16.8B en ingresos en el tercer trimestre de 2026. Los inversores interpretaron la cifra como posible desaceleraci&oacute;n del crecimiento respecto a trimestres anteriores.</p>
+      <p class="why">Contexto relevante para evaluar la estabilidad de Anthropic como proveedor a largo plazo si est&aacute;s apostando tu stack a Claude.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/10/18/stock-market-today-live-updates.html">CNBC</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 SensAI lidera coaching fitness adaptativo leyendo HRV, sue&ntilde;o y FC en reposo via Apple Health</h3>
+      <p class="what">SensAI se posiciona como el coach de fitness AI m&aacute;s avanzado de 2026, ajustando planes de entrenamiento en tiempo real bas&aacute;ndose en variabilidad de frecuencia card&iacute;aca, calidad de sue&ntilde;o y frecuencia card&iacute;aca en reposo conectados directamente desde Apple Health.</p>
+      <p class="why">El diferenciador no es el modelo sino la integraci&oacute;n con datos reales del usuario &mdash; patr&oacute;n replicable para cualquier marketplace de servicios profesionales que quiera personalizar con datos de wearables.</p>
+      <p class="source"><a href="https://www.revavenues.ai/blogs/top-ai-fitness-coaching-apps-for-smarter-workouts-wellness-in-2026-revavenues">RevAvenues</a> &bull; <a href="https://askvora.com/blog/best-ai-fitness-coach-app-2026">Vora</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 18/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
