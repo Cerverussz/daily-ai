@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 20 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>20 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot suma Gemini 4 Argon y Claude Haiku 5.5 como modelos disponibles</h3>
+      <p class="what">GitHub a&ntilde;adi&oacute; Claude Haiku 5.5 el 7 de octubre (disponible en Pro, Pro+, Max, Business y Enterprise) y Gemini 4 Argon el 13 de octubre (Pro+, Max, Business y Enterprise). Haiku 5.5 rinde al nivel de Sonnet 5 en muchas tareas de coding usando menos tokens, mientras que Argon mostr&oacute; las mayores ganancias en Copilot CLI y tareas agente de larga duraci&oacute;n.</p>
+      <p class="why">Si pagas Copilot, ahora puedes elegir entre 3 proveedores de frontier models sin cambiar de IDE &mdash; elige por costo y tipo de tarea.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot">GitHub Blog</a> &bull; <a href="https://www.technobezz.com/news/github-copilot-adds-gemini-4-argon">Technobezz</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Notion Custom Agents corren 24/7 con schedules y triggers en Business y Enterprise</h3>
+      <p class="what">Los Custom Agents de Notion ahora ejecutan tareas multi-paso de forma aut&oacute;noma en tu workspace, activados por schedules o triggers. Operan sobre todas tus herramientas conectadas y usan cr&eacute;ditos de Notion (gratis en Business/Enterprise hasta agotar la cuota incluida).</p>
+      <p class="why">Para flujos de trabajo repetitivos dentro de Notion (reportes, triaje, actualizaciones), esto reemplaza automaciones que antes necesitaban Zapier + scripts custom.</p>
+      <p class="source"><a href="https://www.notion.com/product/ai">Notion AI</a> &bull; <a href="https://techcrunch.com/2025/09/18/notion-launches-agents-for-data-analysis-and-task-automation/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini 4 Argon GA: el frontier model de Google llega a la API a $2/$10 por M tokens</h3>
+      <p class="what">Google lanz&oacute; Gemini 4 Argon en disponibilidad general el 13 de octubre con 1M tokens de contexto, code execution, function calling, file search y URL context. El precio introductorio es $2/M input y $10/M output hasta el 30 de noviembre, cuando duplica a $4/$20.</p>
+      <p class="why">A $2/$10 es competitivo con Claude Sonnet 5.5 y m&aacute;s barato que Opus &mdash; vale probar en tus pipelines de agentes antes de que suba en diciembre.</p>
+      <p class="source"><a href="https://www.hpcwire.com/bigdatawire/2026/10/14/gemini-4-argon-arrives-with-big-claims-for-ai-agents-and-scientific-discovery/">HPCwire</a> &bull; <a href="https://dev.to/hassann/gemini-4-argon-is-out-5cpp">DEV Community</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code: auto model selection en modo cliente y sandbox con Linux namespaces</h3>
+      <p class="what">Las versiones recientes de Claude Code (2.1.302+) a&ntilde;adieron selecci&oacute;n autom&aacute;tica de modelo en modo cliente (elige el mejor modelo seg&uacute;n la tarea) y soporte de sandbox mediante Linux namespaces, adem&aacute;s de un hook <code>onFailure: "block"</code> para controlar fallos.</p>
+      <p class="why">La auto-selecci&oacute;n de modelo optimiza costo/calidad sin intervenci&oacute;n manual &mdash; especialmente &uacute;til si dejas agentes corriendo en background.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot - Claude Code</a> &bull; <a href="https://www.gradually.ai/en/changelogs/claude-code/">Gradually.ai</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cursor reestructura pricing: Plus a $8 (solo Grok) y Premium a $30</h3>
+      <p class="what">Cursor elimin&oacute; su plan de $20 y ahora ofrece Plus ($8/mes, limitado a modelos Grok) y Premium ($30/mes, acceso a Claude, GPT y Gemini 4 Argon con 52.8% en CursorBench). Es un cambio significativo en el mercado de AI coding assistants.</p>
+      <p class="why">Si usas Cursor, el tier de $8 con solo Grok puede no alcanzar para tareas complejas &mdash; eval&uacute;a si los $30 se justifican vs. Claude Code CLI que ya incluyes en tu plan Max.</p>
+      <p class="source"><a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM</a> &bull; <a href="https://www.developersdigest.tech/blog/ai-coding-tools-pricing-2026">Developers Digest</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OptimalFit: founders fitness lanzan app AI con agente personalizado Olli</h3>
+      <p class="what">Joel Freeman (trainer de BODi) y Megan Freeman (IFBB Bikini World Champion) lanzaron OptimalFit el 18 de octubre: una app AI de fitness y nutrici&oacute;n con un agente llamado Olli que se adapta a datos del usuario y sincroniza con Apple Health y Google Health. Suscripciones desde $19.95/mes.</p>
+      <p class="why">Caso real de founders con expertise de dominio construyendo un producto AI end-to-end &mdash; el agente personalizado es el diferenciador, no la marca.</p>
+      <p class="source"><a href="https://athletechnews.com/joel-megan-freeman-launch-all-in-one-ai-fitness-nutrition-app-optimalfit/">Athletech News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Contenido fitness generado por IA salta a 25% del total en plataformas de entrenamiento</h3>
+      <p class="what">El reporte 2026 de Hyperhuman revela que el 25.1% de los programas de entrenamiento en su plataforma fueron generados por IA, comparado con 0.3% en 2025. El modelo que funciona: "humano al frente, IA detr&aacute;s", donde entrenadores usan AI para escalar su contenido manteniendo su voz.</p>
+      <p class="why">Si construyes un marketplace de servicios profesionales, este patr&oacute;n de &ldquo;experto + AI generativa&rdquo; es el que ya est&aacute; escalando en producci&oacute;n.</p>
+      <p class="source"><a href="https://blog.hyperhuman.cc/2026-state-fitness-wellness-content-report/">Hyperhuman Report 2026</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Dashboards (beta): crea dashboards desde lenguaje natural conectados a tus datos</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Dashboards el 8 de octubre en beta para planes de pago. Se conecta a Snowflake, BigQuery, Databricks, Redshift, ClickHouse y Salesforce. Los dashboards se actualizan con los datos y cada n&uacute;mero es clickeable para ver la query que lo genera.</p>
+      <p class="why">Para founders con datos en warehouse, esto elimina la necesidad de Metabase o Looker para dashboards r&aacute;pidos de producto &mdash; pregunta en espa&ntilde;ol y obt&eacute;n el panel.</p>
+      <p class="source"><a href="https://thenewstack.io/claude-dashboards-data-motion/">The New Stack</a> &bull; <a href="https://www.thestar.com.my/tech/tech-news/2026/10/09/anthropic-launches-dashboard-animation-tools-for-claude">The Star</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Motion (beta): genera animaciones explicativas sin modelo de video</h3>
+      <p class="what">Tambi&eacute;n del 8 de octubre, Claude Motion genera animaciones a partir de prompts escribiendo c&oacute;digo (no usa un modelo generativo de video), lo que permite editar cada palabra, n&uacute;mero y timing. Exporta como MP4. Disponible en Team y Enterprise.</p>
+      <p class="why">Si necesitas explainers para tu producto o pitch deck, esto reemplaza After Effects para animaciones simples sin aprender la herramienta.</p>
+      <p class="source"><a href="https://fourweekmba.com/ai-anthropic-adds-claude-dashboards-and-motion-docs-exit-beta/">FourWeekMBA</a> &bull; <a href="https://pasqualepillitteri.it/en/news/21703/anthropic-launches-claude-dashboards-motion-beta">Pillitteri</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Haiku 5.5 GA: modelo r&aacute;pido con 1M tokens de contexto, default en la API</h3>
+      <p class="what">Desde el 7 de octubre, Haiku 5.5 es el tercer modelo de la familia Claude 5.5 y el Haiku default en la API. Con 1M tokens de contexto, est&aacute; posicionado para tareas de alto volumen donde velocidad y costo importan m&aacute;s que capacidad m&aacute;xima.</p>
+      <p class="why">Para clasificaci&oacute;n, routing, extracci&oacute;n o validaci&oacute;n en tu backend, Haiku 5.5 es el modelo a probar primero antes de escalar a Sonnet.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Docs, Slides y Design salen de beta &mdash; Sonnet 5.5 baja 50% el precio de prompt cache</h3>
+      <p class="what">Claude Docs, Slides y Design ahora est&aacute;n disponibles en todos los planes, incluyendo Free. En paralelo, Anthropic redujo el precio de prompt cache read en Sonnet 5.5 de $0.20 a $0.10 por mill&oacute;n de tokens, una rebaja del 50%.</p>
+      <p class="why">Cache read a $0.10/M tokens hace que agentes con system prompts largos sean significativamente m&aacute;s baratos en Sonnet 5.5.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot - Developer Platform</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Empress Health lanza companion AI para menopausia en World Menopause Day</h3>
+      <p class="what">Empress Health lanz&oacute; el 18 de octubre (World Menopause Day) una plataforma AI para mujeres en perimenopausia y menopausia (35-65 a&ntilde;os). Incluye tracking de s&iacute;ntomas, un chatbot &ldquo;Ask Empress&rdquo; basado en literatura m&eacute;dica publicada, y un reporte de consulta m&eacute;dica con 120 marcadores de salud.</p>
+      <p class="why">Ejemplo de producto AI vertical en salud femenina &mdash; nicho desatendido con alta disposici&oacute;n a pagar y potencial de suscripci&oacute;n recurrente.</p>
+      <p class="source"><a href="https://insider.fitt.co/?p=35669">Fitt Insider</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 20/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
