@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 22 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h2 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; font-weight: 600; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p class="date">22 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h2>🔥 DuckDB 2.0.0 LTS &ldquo;Cinnamon Teal&rdquo; llega con Agent Mode para coding agents</h2>
+      <p class="what">DuckDB lanz&oacute; su primera versi&oacute;n LTS con soporte hasta octubre 2027. Incluye Agent Mode que reduce un 59% el volumen de output que los modelos AI necesitan leer, adem&aacute;s de protocolo Quack para uso cliente-servidor, I/O as&iacute;ncrono para object storage, tipo VARIANT nativo y un parser SQL extensible basado en PEG.</p>
+      <p class="why">Si tu producto procesa datos o alimenta agentes AI con queries, Agent Mode cambia c&oacute;mo interact&uacute;as con DuckDB desde tu c&oacute;digo &mdash; menos tokens, menos costo, m&aacute;s velocidad.</p>
+      <p class="source"><a href="https://duckdb.org/2026/10/21/announcing-duckdb-200">DuckDB Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h2>AI descubre dos zero-days cr&iacute;ticos en PHP: parches de emergencia globales</h2>
+      <p class="what">Sistemas de an&aacute;lisis de c&oacute;digo potenciados por AI detectaron dos vulnerabilidades cr&iacute;ticas en PHP antes de que fueran explotadas. El descubrimiento provoc&oacute; parches de emergencia y ca&iacute;das temporales de sitios en todo el mundo.</p>
+      <p class="why">Demuestra que AI en seguridad ya no es experimental &mdash; si tu backend corre PHP, revisa los parches hoy; si no, mira c&oacute;mo integrar scanning AI en tu CI.</p>
+      <p class="source"><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-22-2026/">The Neuron</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h2>🔥 GitHub Copilot code autofix es GA y lanza HydraFusion Max con 4 modelos frontier</h2>
+      <p class="what">Copilot autofix (sugerencias autom&aacute;ticas de fix para vulnerabilidades) es ahora GA desde el 20 de octubre. Adem&aacute;s, el nuevo tier HydraFusion Max ruta entre Claude Opus 5.5, GPT-6 Astra, GPT-6.1 Sol y GPT-6 Luna autom&aacute;ticamente seg&uacute;n la tarea.</p>
+      <p class="why">Multi-model routing integrado en tu IDE es el siguiente paso natural; ya no necesitas elegir un solo modelo para todo tu flujo de desarrollo.</p>
+      <p class="source"><a href="https://tech-insider.org/github-copilot-4-ai-models-challenge-cursor-2026/">Tech Insider</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h2>Notion lanza agente de sexta generaci&oacute;n: tareas aut&oacute;nomas de m&aacute;s de 24 horas</h2>
+      <p class="what">El nuevo harness de agentes de Notion permite ejecutar tareas individuales que corren de forma aut&oacute;noma por m&aacute;s de 24 horas continuas. Es la sexta iteraci&oacute;n de su sistema de agentes internos.</p>
+      <p class="why">Agentes de larga duraci&oacute;n pasaron de demo a producto; si est&aacute;s dise&ntilde;ando workflows aut&oacute;nomos para tu plataforma, este es el benchmark de UX a superar.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <div class="news-item">
+      <h2>Agentic AI Foundation suma 4 proyectos en AGNTCon, incluyendo OpenEnv de Hugging Face</h2>
+      <p class="what">En AGNTCon (Oct 22), la Agentic AI Foundation adopt&oacute; cuatro nuevos proyectos open-source. Destaca OpenEnv de Hugging Face: entornos de entrenamiento por reinforcement learning para agentes AI.</p>
+      <p class="why">Entornos estandarizados de RL para agentes bajan la barrera de entrada si quieres fine-tunear agentes especializados para tu dominio.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h2>🔥 Claude Code 2.1.302: fork subagents activados por defecto</h2>
+      <p class="what">La &uacute;ltima versi&oacute;n de Claude Code (Oct 17) activa fork subagents por defecto, permitiendo que tareas de investigaci&oacute;n y refactoring pesado se deleguen a sub-agentes sin llenar el contexto principal. Codex 0.163 tambi&eacute;n envi&oacute; un comando daemon.</p>
+      <p class="why">Fork subagents cambian c&oacute;mo trabajas en tareas grandes &mdash; puedes paralelizar investigaci&oacute;n sin perder contexto en tu sesi&oacute;n principal.</p>
+      <p class="source"><a href="https://oday-bakkour.com/blog/series/ai-coding-news">AI Coding News</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h2>🔥 Kognitos lanza 61 &ldquo;AI Employees&rdquo; con 515 SOPs listos para producci&oacute;n</h2>
+      <p class="what">Kognitos anunci&oacute; AI Employees: 61 agentes role-based respaldados por 515 procedimientos operativos est&aacute;ndar, junto con Context Graphs expandidos que permiten a los agentes entender procesos empresariales complejos.</p>
+      <p class="why">Es el modelo de &ldquo;agentes pre-entrenados por rol&rdquo; que reduce el tiempo de implementaci&oacute;n &mdash; si construyes para enterprise, estudia c&oacute;mo empaquetan SOPs como producto.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <div class="news-item">
+      <h2>Conexiom abre early access a su Headless Platform con MCP server para automatizaci&oacute;n de &oacute;rdenes</h2>
+      <p class="what">Conexiom lanz&oacute; el 20 de octubre acceso temprano a su plataforma headless que expone un MCP server para que agentes AI procesen &oacute;rdenes de compra autom&aacute;ticamente sin intervenci&oacute;n humana.</p>
+      <p class="why">MCP como canal de integraci&oacute;n B2B ya es real &mdash; si tu marketplace procesa &oacute;rdenes, este es el patr&oacute;n a seguir.</p>
+      <p class="source"><a href="https://agentic.ai/news">Agentic AI News</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h2>Claude Code Review sale de preview: GA para Team y Enterprise, 3x m&aacute;s r&aacute;pido</h2>
+      <p class="what">Code Review dej&oacute; research preview y es ahora generally available para clientes Team y Enterprise. Las reviews terminan aproximadamente 3 veces m&aacute;s r&aacute;pido con hallazgos de bugs m&aacute;s claros y accionables.</p>
+      <p class="why">Si usas Claude Code en tu equipo, Code Review integrado elimina un paso manual del ciclo de PR.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot - Claude Updates</a></p>
+    </div>
+
+    <div class="news-item">
+      <h2>Claude Duet (research preview): agente proactivo para Pro y Max en EE.UU.</h2>
+      <p class="what">Anthropic lanz&oacute; Claude Duet en research preview, un agente que act&uacute;a proactivamente &mdash; anticipa necesidades y ejecuta tareas sin esperar instrucciones expl&iacute;citas. Disponible para suscriptores Pro y Max en Estados Unidos.</p>
+      <p class="why">Agentes proactivos son la siguiente frontera de UX en asistentes AI; vale la pena probarlo para entender el patr&oacute;n de interacci&oacute;n.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude">Releasebot - Claude Updates</a></p>
+    </div>
+
+    <div class="news-item">
+      <h2>Docs, Slides y Design gratis en todos los planes; Dashboards y Motion entran en beta</h2>
+      <p class="what">Claude Docs, Slides y Design salen de beta y est&aacute;n disponibles en todos los planes incluyendo Free. Claude Dashboards y Claude Motion entran en beta. Adem&aacute;s, la API subi&oacute; a versi&oacute;n 2026-10-21.</p>
+      <p class="why">Anthropic est&aacute; construyendo un suite completo de productividad &mdash; si dependes de su API, revisa los breaking changes de la nueva versi&oacute;n.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot - Claude Developer Platform</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h2>🔥 Google Fitbit Edge ($180) con AI health coach y OptimalFit lanza plataforma de fitness + nutrici&oacute;n AI</h2>
+      <p class="what">Google lanz&oacute; el Fitbit Edge ($179.99, sale el 27 de octubre) con AI coach v&iacute;a Google Health Premium, incluyendo tracking de presi&oacute;n arterial y resistencia insul&iacute;nica. Por separado, OptimalFit (Oct 18) combina entrenamientos personalizados, planificaci&oacute;n nutricional y food logging en una sola plataforma AI.</p>
+      <p class="why">AI coaching integrado en wearables ya es producto &mdash; si construyes en sports tech, el modelo de &ldquo;hardware + suscripci&oacute;n premium AI&rdquo; es el benchmark a competir o integrar.</p>
+      <p class="source"><a href="https://thenextweb.com/news/google-fitbit-edge-launch-price">The Next Web</a> &bull; <a href="https://www.trendhunter.com/trends/adaptive-ai-fitness-platforms">TrendHunter</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 22/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
