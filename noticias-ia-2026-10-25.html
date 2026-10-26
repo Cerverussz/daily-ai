@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 25 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>25 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Personal Agent Protocol: Meta, Walmart, Shopify y Stripe crean est&aacute;ndar abierto para agentes AI comerciales</h3>
+      <p class="what">Meta y Sierra publicaron el Personal Agent Protocol (PAP), un est&aacute;ndar abierto que define c&oacute;mo los agentes AI personales interact&uacute;an con negocios: autenticaci&oacute;n OAuth, niveles de acceso progresivos (guest &rarr; read-only &rarr; write), y control del usuario sobre permisos. Walmart, Shopify, Stripe e Instinct son partners fundadores, con spec v0.1 prevista para finales de octubre.</p>
+      <p class="why">Si tu marketplace o plataforma no tiene un endpoint para agentes AI, est&aacute;s quedando fuera del canal de compra que viene &mdash; PAP compite con ACP (OpenAI+Stripe), UCP (Google+Shopify) y Trusted Agent Protocol (Visa+Cloudflare).</p>
+      <p class="source"><a href="https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/">Channel Insider</a> &bull; <a href="https://yourstory.com/ai-story/ai-agents-common-language-meta-walmart-stripe">YourStory</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot integra Gemini 4 Argon para coding complejo y tareas largas</h3>
+      <p class="what">Desde el 13 de octubre, Gemini 4 Argon de Google est&aacute; disponible en GitHub Copilot para planes Pro+, Max, Business y Enterprise. Funciona en VS Code, JetBrains, Copilot CLI, el coding agent y Xcode, con 1M tokens de contexto y 65K de output m&aacute;ximo.</p>
+      <p class="why">M&aacute;s modelos en Copilot significa que puedes elegir el mejor motor seg&uacute;n la tarea sin cambiar de herramienta &mdash; Argon destaca en sesiones largas de agente.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot">GitHub Blog</a> &bull; <a href="https://www.technobezz.com/news/github-copilot-adds-gemini-4-argon">Technobezz</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 On-device AI en Android ya es production-ready: LiteRT 2.x con hybrid inference</h3>
+      <p class="what">El stack de AI on-device en Android madur&oacute; en 2026: LiteRT 2.x introduce la CompiledModel API para aceleraci&oacute;n NPU/GPU nativa, y el nuevo modo hybrid inference permite elegir entre on-device, cloud o forzar uno seg&uacute;n el caso de uso. Los benchmarks muestran latencias sub-20ms en visi&oacute;n por computadora en hardware de gama media.</p>
+      <p class="why">Puedes implementar features de AI offline en tu app Android sin depender de APIs cloud, reduciendo costos y latencia &mdash; la barrera t&eacute;cnica ya no es el runtime sino el tama&ntilde;o del modelo.</p>
+      <p class="source"><a href="https://www.forasoft.com/blog/article/neural-networks-on-android-369">Forasoft</a> &bull; <a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms">Aleph Zero Labs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Nanbeige4.2-3B: modelo open-source de 3B par&aacute;metros que supera a modelos 4x m&aacute;s grandes en coding ag&eacute;ntico</h3>
+      <p class="what">BOSS Zhipin public&oacute; Nanbeige4.2-3B (Apache-2.0), un modelo compacto de 3B par&aacute;metros no-embedding dise&ntilde;ado para tareas de agente: coding, oficina y uso de herramientas. Reporta 46.9% en SWE-bench Verified y 44.1% en SWE-bench Pro, superando a Qwen3.5-9B y Gemma4-12B en benchmarks ag&eacute;nticos.</p>
+      <p class="why">Un modelo de 3B que hace coding ag&eacute;ntico abre la puerta a subagentes locales baratos en tu pipeline de desarrollo &mdash; ideal para tareas repetitivas donde no necesitas un modelo frontier.</p>
+      <p class="source"><a href="https://arxiv.org/pdf/2607.22083">arXiv</a> &bull; <a href="https://runtimewire.com/article/boss-zhipin-nanbeige-3b-local-agent-model">RuntimeWire</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cuatro protocolos de comercio ag&eacute;ntico compiten por ser el est&aacute;ndar de compra AI</h3>
+      <p class="what">En menos de un mes se publicaron cuatro protocolos rivales: Personal Agent Protocol (Meta/Sierra), Agentic Commerce Protocol (OpenAI/Stripe), Universal Commerce Protocol (Google/Shopify), y Trusted Agent Protocol (Visa/Cloudflare). Cada uno define c&oacute;mo un agente AI navega, autentica y ejecuta transacciones en nombre del usuario.</p>
+      <p class="why">La fragmentaci&oacute;n actual es una oportunidad: el protocolo que gane ser&aacute; el MCP del comercio &mdash; si vendes online, implementar al menos uno ahora te posiciona antes de la consolidaci&oacute;n.</p>
+      <p class="source"><a href="https://www.trendingtopics.eu/personal-agent-protocol-meta-walmart-shopping-agents/">Trending Topics</a> &bull; <a href="https://constellationr.com/insights/news/meta-sierra-pitch-personal-agent-protocol-govern-how-personal-ai-agents-deal-business">Constellation Research</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios y productos -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI despliega anuncios visuales en ChatGPT: monetizaci&oacute;n con 1.2B usuarios semanales</h3>
+      <p class="what">OpenAI est&aacute; probando un formato de anuncios visuales dentro de la generaci&oacute;n de im&aacute;genes de ChatGPT para usuarios Free y Go en EE.UU. Los ads aparecen durante el proceso de generaci&oacute;n, etiquetados como patrocinados y separados del contenido org&aacute;nico. La plataforma ya soporta segmentaci&oacute;n por intenci&oacute;n, tema y geograf&iacute;a con pricing CPC/CPM/CPA.</p>
+      <p class="why">1.2B usuarios semanales con ads segmentados por intenci&oacute;n es un nuevo canal de adquisici&oacute;n para productos tech &mdash; monitorea los primeros benchmarks de CPA antes de que se sature.</p>
+      <p class="source"><a href="https://www.techjuice.pk/openai-visual-ads-chatgpt-image-generation/">TechJuice</a> &bull; <a href="https://www.coderhouse.com/en/articles/chatgpt-with-ads-openai-confirms-shift-to-advertising-2026">Coderhouse</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Haiku 5.5: 75% m&aacute;s barato con contexto de 1M tokens</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Haiku 5.5 el 7 de octubre: $0.10/M input y $0.50/M output para prompts &lt;100K tokens (vs $1/$5 de Haiku 4.5). Contexto nativo de 1M tokens (antes 200K) y output m&aacute;ximo de 128K. Tambi&eacute;n recort&oacute; el precio de cache-read de Sonnet 5.5 de $0.20 a $0.10/M tokens.</p>
+      <p class="why">A ese precio, Haiku 5.5 es viable para subagentes de alto volumen, summarization masiva, o browser-use automatizado sin quemar presupuesto.</p>
+      <p class="source"><a href="https://forklog.com/en/news/anthropic-unveils-claude-haiku-5-5-cutting-costs-by-75">Forklog</a> &bull; <a href="https://letsdatascience.com/news/anthropic-releases-claude-haiku-55-with-lower-prices-and-eff-f698c663">LetsDataScience</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code consolida plugins, mods y desktop en octubre</h3>
+      <p class="what">En octubre, Claude Code oficializ&oacute; el sistema de plugins (v2.1.302), introdujo Mods para personalizaci&oacute;n profunda del comportamiento, y lleg&oacute; a v2.1.307. La app de desktop ahora permite editar archivos en source view, incluye browser integrado y soporte para iOS Simulator (requiere Xcode).</p>
+      <p class="why">Plugins + mods convierten a Claude Code en una plataforma extensible &mdash; puedes automatizar workflows espec&iacute;ficos de tu proyecto sin salir del terminal o desktop.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> &bull; <a href="https://tech-insider.org/claude-code-plugins-official-mods-cloud-sessions-2026/">Tech Insider</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic abre oficina en Singapur y publica API 2026-10-21</h3>
+      <p class="what">Anthropic abri&oacute; oficina en Singapur y firm&oacute; un MoU con el gobierno singapurense. Tambi&eacute;n lanz&oacute; la versi&oacute;n 2026-10-21 de la Developer Platform con SDKs actualizados, y Claude Code Review pas&oacute; a GA para planes Team y Enterprise.</p>
+      <p class="why">La expansi&oacute;n a Singapur mejora la latencia para apps que sirven al sudeste asi&aacute;tico, y Code Review GA reduce fricci&oacute;n en equipos que ya usan Claude para desarrollo.</p>
+      <p class="source"><a href="https://www.anthropic.com/news">Anthropic Newsroom</a> &bull; <a href="https://releasebot.io/updates/anthropic">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OptimalFit lanza app de fitness y nutrici&oacute;n con agente AI personalizado &ldquo;Olli&rdquo;</h3>
+      <p class="what">OptimalFit, creada por el entrenador Joel Freeman y la campeona IFBB Megan Freeman, lanz&oacute; su app el 18 de octubre en EE.UU. y Canad&aacute;. Su n&uacute;cleo es Olli, un agente AI entrenado durante un a&ntilde;o con expertos en fitness y nutrici&oacute;n que se adapta a datos de peso, grasa corporal y entrenamientos sincronizados con Apple y Google Health.</p>
+      <p class="why">Es el modelo a seguir para marketplaces de servicios de salud: AI personalizada + integraci&oacute;n con wearables + expertise humano empaquetado como producto digital.</p>
+      <p class="source"><a href="https://athletechnews.com/joel-megan-freeman-launch-all-in-one-ai-fitness-nutrition-app-optimalfit/">Athletech News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Wearables AI: Suunto lanza AI Coach y Oura a&ntilde;ade VO2 max autom&aacute;tico</h3>
+      <p class="what">Suunto lanz&oacute; un AI Coach integrado en sus relojes deportivos que adapta entrenamientos en tiempo real. Por su parte, Oura a&ntilde;adi&oacute; estimaciones autom&aacute;ticas de VO2 max y una m&eacute;trica de Cardio Effort a sus anillos inteligentes, eliminando la necesidad de tests manuales de lab.</p>
+      <p class="why">La inteligencia se mueve del cloud al wearable &mdash; si construyes una plataforma de coaching o bienestar, estos datos est&aacute;n disponibles v&iacute;a API para personalizar tu producto.</p>
+      <p class="source"><a href="https://aiuniversejournal.org/projects/20-ai-sports-and-fitness/">AI Universe Journal</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 25/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
