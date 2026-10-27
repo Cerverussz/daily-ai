@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 26 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>26 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot Agentic Autofix llega a GA: corrige hasta 25 vulnerabilidades en un solo PR</h3>
+      <p class="what">GitHub lanz&oacute; en disponibilidad general (Oct 15) su Agentic Autofix para code scanning: escanea el c&oacute;digo, propone un fix, lo revalida con CodeQL y abre un pull request autom&aacute;ticamente. En modo batch puede resolver hasta 25 alertas de seguridad en un solo PR.</p>
+      <p class="why">Si tu marketplace o SaaS maneja datos sensibles, esto automatiza la remediaci&oacute;n de vulnerabilidades sin tocar tu pipeline manualmente.</p>
+      <p class="source"><a href="https://tech-insider.org/github-ai-autofix-ga-codeql-2-27-2026/">Tech Insider</a> &bull; <a href="https://byteiota.com/github-agentic-autofix-ga-fix-25-security-bugs-at-once/">ByteIota</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 NVIDIA Nemotron 3.5: modelos open-weight para agentes desde data center hasta edge (4GB)</h3>
+      <p class="what">NVIDIA lanz&oacute; tres modelos abiertos: Super VL (120B, enterprise), Bolt 74B (24GB, un solo GPU) y Bolt E4B (4GB, edge). El modelo E4B corre a ~15.5 tokens/s en Jetson Orin Nano, dise&ntilde;ado para voice assistants y agentes conversacionales en dispositivo.</p>
+      <p class="why">El E4B de 4GB abre la puerta a agentes AI embebidos en hardware barato &mdash; piensa kioscos, dispositivos IoT o features offline en tu app sin cloud.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/">TechCrunch</a> &bull; <a href="https://siliconangle.com/2026/10/15/nvidia-expands-nemotron-llm-family-with-hyper-efficient-models-for-agentic-systems/">SiliconANGLE</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini 4 Argon GA: el modelo de razonamiento largo de Google ya disponible en API</h3>
+      <p class="what">Google liber&oacute; Gemini 4 Argon (Oct 13) como su modelo flagship de razonamiento con 1M tokens de contexto. Destaca en software engineering complejo, matem&aacute;ticas y agentes multi-paso, aunque sus benchmarks en coding ag&eacute;ntico muestran resultados mixtos frente a competidores.</p>
+      <p class="why">Otro modelo frontier con 1M de contexto en la API &mdash; &uacute;til para evaluar contra Claude y GPT en tus pipelines de procesamiento de documentos largos.</p>
+      <p class="source"><a href="https://ai.google.dev/gemini-api/docs/models/gemini-4-argon">Google AI for Developers</a> &bull; <a href="https://winbuzzer.com/2026/10/14/google-releases-gemini-4-argon-for-longer-ai-work-xcxwbn/">WinBuzzer</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Copilot alcanza 50M de usuarios; Cursor integra Gemini 4 Argon con 52.8% en CursorBench</h3>
+      <p class="what">Microsoft report&oacute; 50M usuarios de Copilot en Q4, con suscripciones Pro+ creciendo 77% trimestre a trimestre. Cursor integr&oacute; Gemini 4 Argon el mismo d&iacute;a de su lanzamiento, reportando 52.8% en su benchmark interno. Earnings de Alphabet y Microsoft son el 28 de octubre.</p>
+      <p class="why">El mercado de AI coding se consolida r&aacute;pido &mdash; la integraci&oacute;n instant&aacute;nea de nuevos modelos es ahora table stakes para cualquier herramienta de desarrollo.</p>
+      <p class="source"><a href="https://tech-insider.org/big-tech-earnings-oct-28-29-copilot-kiro-gemini-code-assist-2026/">Tech Insider</a> &bull; <a href="https://www.secondtalent.com/resources/github-copilot-statistics/">Second Talent</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI publica resultados cient&iacute;ficos generados por sus modelos en matem&aacute;ticas y f&iacute;sica</h3>
+      <p class="what">OpenAI present&oacute; avances donde sus modelos contribuyeron a resultados en la conjetura de Kakeya, la Hip&oacute;tesis de Tiempo Exponencial y cromodin&aacute;mica cu&aacute;ntica. Es la primera vez que resultados generados por AI se presentan como contribuciones cient&iacute;ficas sustantivas.</p>
+      <p class="why">Se&ntilde;al clara de que los modelos frontier est&aacute;n pasando de asistentes a co-investigadores &mdash; relevante si est&aacute;s evaluando AI para an&aacute;lisis avanzado en tu dominio.</p>
+      <p class="source"><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-october-26-2026/">The Neuron</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>AMD cierra adquisici&oacute;n de World Labs por $8.2B: spatial AI llega al silicio</h3>
+      <p class="what">AMD complet&oacute; la adquisici&oacute;n all-stock de World Labs (fundada por Fei-Fei Li) para integrar inteligencia espacial 3D directamente en su stack de hardware. Los modelos Atlas y Marble generan y simulan entornos 3D interactivos desde texto e im&aacute;genes.</p>
+      <p class="why">Spatial AI optimizado en hardware AMD significar&aacute; simulaci&oacute;n 3D m&aacute;s accesible &mdash; relevante si tu producto toca AR, visualizaci&oacute;n o marketplaces con componente f&iacute;sico.</p>
+      <p class="source"><a href="https://hothardware.com/news/amd-buys-world-labs-8-billion-massive-ai-power-play">HotHardware</a> &bull; <a href="https://www.tweaktown.com/news/113821/amds-8-2-billion-world-labs-deal-is-a-direct-answer-to-nvidias-hugging-face-buy/index.html">TweakTown</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic se acerca a IPO: S-1 podr&iacute;a hacerse p&uacute;blico esta semana, valuaci&oacute;n ~$965B</h3>
+      <p class="what">Anthropic present&oacute; su S-1 confidencial a la SEC en junio con valuaci&oacute;n post-money de $965B. Reportes indican que el filing p&uacute;blico podr&iacute;a salir esta semana, adelant&aacute;ndose a OpenAI en la carrera al mercado p&uacute;blico.</p>
+      <p class="why">Si construyes sobre Claude, una Anthropic p&uacute;blica significa m&aacute;s capital para infraestructura y modelos &mdash; pero tambi&eacute;n presi&oacute;n de mercado que podr&iacute;a cambiar pricing.</p>
+      <p class="source"><a href="https://finance.yahoo.com/markets/stocks/articles/anthropic-files-public-163655473.html">Yahoo Finance</a> &bull; <a href="https://nasdaq.com/articles/anthropics-ipo-just-ahead-heres-what-you-need-know">Nasdaq</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Hone levanta $60M seed a $285M de valuaci&oacute;n &mdash; 5 meses despu&eacute;s de fundarse</h3>
+      <p class="what">La startup de agentes AI Hone cerr&oacute; una ronda seed de $60M en octubre 2026, solo cinco meses despu&eacute;s de su fundaci&oacute;n. Construyen agentes aut&oacute;nomos enfocados en tareas empresariales.</p>
+      <p class="why">La velocidad de fundraising en AI agents confirma que hay apetito de mercado real &mdash; si tienes un vertical sin resolver con agentes, el timing es ahora.</p>
+      <p class="source"><a href="https://www.productmarketfit.tech/p/the-angels-behind-2026s-hottest-ai">Product Market Fit</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Duet: agente proactivo de Anthropic con 6,000+ integraciones y compras aut&oacute;nomas</h3>
+      <p class="what">Anthropic abri&oacute; research preview (Oct 21) de Claude Duet, un agente proactivo que corre en su propia VM cloud con Opus 5.5. Monitorea apps conectadas, env&iacute;a briefings matutinos, ejecuta tareas en background, y puede hacer compras v&iacute;a Stripe Link y Shopify Shop Pay con aprobaci&oacute;n del usuario.</p>
+      <p class="why">Duet con 6K+ conectores es b&aacute;sicamente un marketplace de integraciones para agentes &mdash; si tu servicio no tiene conector MCP, eres invisible para esta capa.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/">TechCrunch</a> &bull; <a href="https://oodaloop.com/briefs/technology/anthropic-announces-claude-duet-a-proactive-autonomous-agent-app-for-ios-and-android/">OODAloop</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code v2.1.302: sistema de plugins oficial y fork subagents por defecto</h3>
+      <p class="what">Claude Code ship&oacute; la versi&oacute;n 2.1.302 en octubre con un sistema oficial de plugins y fork subagents habilitados por defecto. Esto permite extender Claude Code con herramientas custom sin workarounds.</p>
+      <p class="why">Plugins oficiales significan que puedes integrar tus herramientas de testing, deploy o linting directamente en tu flujo de Claude Code.</p>
+      <p class="source"><a href="https://oday-bakkour.com/blog/series/ai-coding-news">AI Coding News</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic en Google Cloud: API gestionada con IAM, billing por Marketplace y Fast mode</h3>
+      <p class="what">Anthropic lanz&oacute; acceso gestionado a la API de Claude a trav&eacute;s de Google Cloud, con integraci&oacute;n nativa de IAM, facturaci&oacute;n por Google Cloud Marketplace y soporte para Fast mode en Opus 5.5.</p>
+      <p class="why">Si ya est&aacute;s en GCP, ahora puedes consolidar billing y permisos de Claude junto al resto de tu infra sin intermediarios.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OptimalFit lanza plataforma AI all-in-one: workouts + nutrici&oacute;n adaptativa con agente AI</h3>
+      <p class="what">Los entrenadores Joel y Megan Freeman lanzaron OptimalFit (Oct 18), una app que combina entrenamientos y nutrici&oacute;n con un agente AI llamado Olli, entrenado durante un a&ntilde;o con expertos. Apunta a reemplazar m&uacute;ltiples apps de fitness con una sola plataforma, con planes de integraci&oacute;n con Peloton y BODi.</p>
+      <p class="why">El modelo de agente AI + marketplace de fitness integrado es exactamente el patr&oacute;n para marketplaces de servicios profesionales con coaching personalizado.</p>
+      <p class="source"><a href="https://athletechnews.com/joel-megan-freeman-launch-all-in-one-ai-fitness-nutrition-app-optimalfit/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 26/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
