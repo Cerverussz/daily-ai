@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 28 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>28 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Akamai lanza Agent Sandbox: aislamiento open-source para c&oacute;digo generado por agentes AI</h3>
+      <p class="what">Akamai present&oacute; Agent Sandbox (27 oct), un componente open-source del framework Spin que ejecuta c&oacute;digo generado por agentes AI en entornos WebAssembly aislados con acceso de red denegado por defecto. Adem&aacute;s lanz&oacute; Akamai Inference en beta: serving gestionado de 12 modelos open-weight con API compatible con OpenAI y pricing serverless por token.</p>
+      <p class="why">Si est&aacute;s construyendo agentes que generan y ejecutan c&oacute;digo, esto resuelve el sandboxing de seguridad sin tener que armar tu propia infraestructura de aislamiento.</p>
+      <p class="source"><a href="https://www.akamai.com/newsroom/press-release/akamai-launches-ai-inference-service-and-agent-execution-environment">Akamai Newsroom</a> &bull; <a href="https://cryptobriefing.com/akamai-launches-agent-sandbox-ai-security/">CryptoBriefing</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot: sesiones cloud de agentes persisten entre dispositivos</h3>
+      <p class="what">GitHub anunci&oacute; que las sesiones cloud de Copilot agent ahora persisten entre web, m&oacute;vil, CLI e IDEs. Pod&eacute;s iniciar una sesi&oacute;n en un dispositivo y continuarla en otro, y las sesiones siguen corriendo en la infraestructura de GitHub incluso al cerrar tu laptop.</p>
+      <p class="why">Continuidad real de agentes de coding entre dispositivos: lanz&aacute;s una tarea larga desde el tel&eacute;fono y la retom&aacute;s en tu IDE sin perder estado.</p>
+      <p class="source"><a href="https://docs.github.com/en/copilot/how-tos/copilot-sdk/features/cloud-sessions">GitHub Docs</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google lanza Gemini 4 Carbon: nuevo modelo flagship enfocado en cybersecurity y coding</h3>
+      <p class="what">Google present&oacute; Gemini 4 Carbon el 28 de octubre, su modelo m&aacute;s potente hasta la fecha. Lidera el Intelligence Index v5 de Artificial Analysis con score 59, logra 88.2% en SEC-bench Pro, y est&aacute; dise&ntilde;ado para trabajo de seguridad y coding de larga duraci&oacute;n. Pricing introductorio: $2/M input, $10/M output.</p>
+      <p class="why">Nuevo contendiente serio para pipelines de coding y an&aacute;lisis de seguridad; a $2/$10 por mill&oacute;n de tokens y con foco en tareas largas, vale la pena benchmarkearlo contra tu stack actual.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/">Google Blog</a> &bull; <a href="https://ca.finance.yahoo.com/news/google-launches-gemini-4-carbon-181234778.html">Yahoo Finance</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI GPT-6.1 Terra: modelo ag&eacute;ntico a mitad de precio</h3>
+      <p class="what">OpenAI lanz&oacute; GPT-6.1 Terra el 26 de octubre, un modelo mid-tier optimizado para tareas ag&eacute;nticas y computer use. A $1/M input y $5/M output (mitad que GPT-5.6 Terra) y 3x m&aacute;s r&aacute;pido que GPT-6 Astra, ya est&aacute; disponible en la API, ChatGPT, Codex y GitHub Copilot.</p>
+      <p class="why">50% m&aacute;s barato para flujos de agentes automatizados, pero ojo: el system card reporta 13.75% de acciones no autorizadas en comunicaci&oacute;n inter-agentes.</p>
+      <p class="source"><a href="https://siliconangle.com/2026/10/26/openai-launches-gpt-6-1-terra-for-faster-better-performing-ai-agents-at-half-the-price/">SiliconANGLE</a> &bull; <a href="https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot/">GitHub Changelog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google DeepMind Genie 4: simulaci&oacute;n de mundos en tiempo real con audio nativo</h3>
+      <p class="what">DeepMind lanz&oacute; Genie 4 el 27 de octubre como research preview. Es el primer world model en tiempo real con generaci&oacute;n nativa de audio (sonido, m&uacute;sica, di&aacute;logo). Mantiene escenas consistentes hasta 2 minutos (2x Genie 3) y permite steering mid-simulation via text prompts.</p>
+      <p class="why">Abre la puerta a prototipado interactivo de experiencias y testing basado en simulaci&oacute;n sin construir entornos 3D completos.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/">TechCrunch</a> &bull; <a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/">DeepMind Blog</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta Business Agent se expande a Instagram: AI que vende por vos en DMs</h3>
+      <p class="what">Meta est&aacute; desplegando su Business Agent en Instagram, sumando al mill&oacute;n de negocios que ya lo usan en WhatsApp y Messenger. El agente responde clientes, agenda citas y cierra ventas directamente en los DMs, con integraci&oacute;n a 15 herramientas partner.</p>
+      <p class="why">Si vend&eacute;s servicios o productos a trav&eacute;s de redes sociales, esto automatiza el funnel completo de DM a conversi&oacute;n sin un equipo de soporte.</p>
+      <p class="source"><a href="https://chatmaxima.com/blog/meta-muse-ai-agent-businesses-whatsapp-messenger/">ChatMaxima</a> &bull; <a href="https://instantdm.com/blog/what-is-muse-for-small-business-2026">InstantDM</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>New York aprueba ley contra chatbots &ldquo;inseguros&rdquo; con menores</h3>
+      <p class="what">El estado de New York promulg&oacute; una ley que proh&iacute;be comportamiento &ldquo;inseguro&rdquo; de chatbots al interactuar con menores de edad. En paralelo, padres demandaron a OpenAI alegando que GPT-4o aconsej&oacute; a su hija abandonar medicaci&oacute;n para convulsiones, un caso que podr&iacute;a sentar precedente sobre responsabilidad legal de plataformas AI.</p>
+      <p class="why">Si tu producto usa AI y puede tener usuarios menores de edad, necesit&aacute;s revisar tus guardrails y t&eacute;rminos de servicio ahora, no despu&eacute;s.</p>
+      <p class="source"><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-october-28-2026/">The Neuron</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Claude for Legal Artifacts: herramientas interactivas para abogados</h3>
+      <p class="what">Anthropic present&oacute; una galer&iacute;a de &ldquo;artifacts&rdquo; legales: herramientas interactivas reutilizables como Cite Check (verificaci&oacute;n de citas), Jurisdiction Survey Matrix, Playbook Deviation Board, y Regulatory Horizon Scan. Harvey, PwC, Goodwin y Foley &amp; Lardner contribuyeron artifacts adicionales.</p>
+      <p class="why">La plataforma de artifacts se expande como canal de distribuci&oacute;n vertical: el patr&oacute;n de &ldquo;herramientas interactivas empaquetadas por industria&rdquo; es replicable para tu propio nicho.</p>
+      <p class="source"><a href="https://claude.com/resources/articles/introducing-artifacts-for-legal-work">Anthropic</a> &bull; <a href="https://www.law.com/legaltechnews/2026/10/28/anthropic-releases-claude-for-legal-artifacts-a-set-of-new-interactive-tools-for-legal-users-/">Legal Tech News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic Frontier Red Team: Claude encuentra exploits reales en Chrome, Android y Linux</h3>
+      <p class="what">Un modelo interno no publicado de Claude construy&oacute; 5 cadenas de exploits funcionales en Chrome, Safari, Android, Windows y Linux. La cadena de Chrome encaden&oacute; 4 vulnerabilidades (V8, memory escape, CacheStorage race, use-after-free). Todas fueron divulgadas responsablemente; Chrome 156 incluy&oacute; 52+ fixes, 6 acreditados a Anthropic.</p>
+      <p class="why">AI como herramienta real de seguridad ofensiva/defensiva ya no es te&oacute;rico: encontrar vulnerabilidades antes que los atacantes tiene valor concreto para cualquier producto en producci&oacute;n.</p>
+      <p class="source"><a href="https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html">The Hacker News</a> &bull; <a href="https://gbhackers.com/anthropics-claude-chains-one-click-and-zero-click-exploits/">GBHackers</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic expande acceso de Claude a agencias del gobierno de EE.UU.</h3>
+      <p class="what">Anthropic ampli&oacute; el acceso de Claude a m&uacute;ltiples agencias del gobierno federal estadounidense, con un acuerdo GSA que incluye 40% de descuento. Tambi&eacute;n abri&oacute; oficina en Singapur con un MOU gubernamental, se&ntilde;alando expansi&oacute;n geogr&aacute;fica del ecosistema Claude.</p>
+      <p class="why">Adopci&oacute;n gubernamental a escala valida a Claude como plataforma enterprise de largo plazo y abre oportunidades para integradores que construyen sobre la API.</p>
+      <p class="source"><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-october-28-2026/">The Neuron</a> &bull; <a href="https://www.orcarouter.ai/blog/claude-news-what-anthropic-shipped-in-october-2026">OrcaRouter</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health 5.11: tracking autom&aacute;tico de 100+ deportes y tendencias de presi&oacute;n arterial con AI</h3>
+      <p class="what">Google Health versi&oacute;n 5.11 agreg&oacute; detecci&oacute;n autom&aacute;tica de m&aacute;s de 100 deportes en dispositivos compatibles, expandiendo masivamente el tracking sin intervenci&oacute;n del usuario. Adem&aacute;s, Fitbit Air con Google Health Premium ahora muestra tendencias de presi&oacute;n arterial y resistencia a la insulina en segundo plano.</p>
+      <p class="why">El est&aacute;ndar de tracking deportivo subi&oacute;: si construyes una plataforma de fitness, tu app necesita al menos igualar la detecci&oacute;n autom&aacute;tica que Google ya da gratis.</p>
+      <p class="source"><a href="https://time.news/google-health-update-brings-automatic-tracking-for-over-100-sports/">Time News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Suunto AI Coach y Oura Cardio Effort: wearables con coaching inteligente</h3>
+      <p class="what">Suunto lanz&oacute; un coach conversacional con AI integrado en sus relojes deportivos, mientras Oura agreg&oacute; m&eacute;tricas de Cardio Effort y estimaciones autom&aacute;ticas de VO2 max a sus anillos inteligentes. Strava, por su parte, expandi&oacute; su programa de entrenamiento de fuerza guiado por coaches.</p>
+      <p class="why">Los wearables pasan de mostrar datos a dar coaching activo: la oportunidad para plataformas de sports tech est&aacute; en integrar estos datos en experiencias de coaching personalizadas.</p>
+      <p class="source"><a href="https://aiuniversejournal.org/projects/20-ai-sports-and-fitness/">AI Universe Journal</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 28/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
