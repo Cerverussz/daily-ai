@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 29 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>29 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub lanza Copilot Fusion en Universe 2026: orquestador multi-modelo para todo el SDLC</h3>
+      <p class="what">Copilot Fusion es una capa de orquestaci&oacute;n que elige autom&aacute;ticamente entre m&uacute;ltiples modelos (Standard, High, Max) seg&uacute;n la tarea: razonamiento, generaci&oacute;n de c&oacute;digo, debugging o uso de herramientas. GitHub report&oacute; que agentes ya inician m&aacute;s del 40% de los pull requests en su plataforma, y Copilot Projects (preview p&uacute;blico) coordina m&uacute;ltiples agentes across repos.</p>
+      <p class="why">El modelo de pricing cambia a cr&eacute;ditos por uso (sin suscripci&oacute;n separada para Enterprise); si usas Copilot en tu equipo, esto baja costos y sube calidad sin cambiar de herramienta.</p>
+      <p class="source"><a href="https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/">GitHub Blog</a> &bull; <a href="https://thenextweb.com/news/github-universe-copilot-fusion-octoverse-agents">The Next Web</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 1Password for Agents: tus agentes AI se autentican sin ver tus passwords</h3>
+      <p class="what">1Password lanz&oacute; una plataforma que permite a agentes AI autenticarse en servicios web sin recibir las credenciales. El agente pide aprobaci&oacute;n al usuario en su dispositivo y 1Password llena el formulario directamente. Partners de lanzamiento incluyen Anthropic, OpenAI y Meta.</p>
+      <p class="why">Si est&aacute;s construyendo agentes aut&oacute;nomos que necesitan acceder a servicios terceros, esto resuelve el problema de seguridad de credenciales que antes requer&iacute;a hacks custom.</p>
+      <p class="source"><a href="https://thenextweb.com/news/1password-for-agents-ai-agent-logins">The Next Web</a> &bull; <a href="https://www.techrepublic.com/article/news-1password-claude-passwordless-sign-in-ai-agents/">TechRepublic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic reporta avances en descubrimiento de f&aacute;rmacos con Claude</h3>
+      <p class="what">En un reporte del 27 de octubre, Anthropic mostr&oacute; resultados de trabajo con seis organizaciones socias donde Claude gener&oacute; ~35,000 dise&ntilde;os de anticuerpos en sesiones aut&oacute;nomas de trabajo. Es la primera demostraci&oacute;n a escala de un LLM en drug discovery productivo.</p>
+      <p class="why">Valida que los LLMs pueden hacer trabajo cient&iacute;fico real en pipelines de producci&oacute;n, no solo prototipos de laboratorio.</p>
+      <p class="source"><a href="https://unite.ai/anthropic-reports-early-drug-development-progress-with-claude/">Unite.AI</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Mistral Large 4 libera open weights: 1 trill&oacute;n de par&aacute;metros, 52B activos</h3>
+      <p class="what">Mistral public&oacute; los pesos abiertos de Large 4 ("Le Chonk"), su modelo MoE de ~1.05T par&aacute;metros totales con 52B activos por token. Es nativo multimodal con contexto de 1M tokens, entrenado en ~4,000 GPUs Blackwell. Lidera benchmarks open-weight en coding ag&eacute;ntico y ciberseguridad.</p>
+      <p class="why">Un modelo de 1T par&aacute;metros open-weight con 52B activos compite con modelos propietarios en calidad, pero la licencia a&uacute;n no est&aacute; publicada &mdash; revisa los t&eacute;rminos antes de integrarlo en producci&oacute;n.</p>
+      <p class="source"><a href="https://thenextweb.com/news/mistral-large-4-open-weights-release">The Next Web</a> &bull; <a href="https://betanews.com/article/mistral-large-4-preview-open-weights/">BetaNews</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google lanza Gemini 4 Carbon: modelo frontier restringido para ciberdefensa</h3>
+      <p class="what">Google present&oacute; Gemini 4 Carbon, un modelo frontier dise&ntilde;ado espec&iacute;ficamente para trabajo de ciberseguridad sostenido. El acceso est&aacute; restringido a defensores verificados, no es de uso general.</p>
+      <p class="why">Se&ntilde;ala una tendencia clara: modelos especializados por dominio con acceso controlado, un patr&oacute;n que probablemente veremos en m&aacute;s verticales pronto.</p>
+      <p class="source"><a href="https://killtheai.com/news/top-10-ai-news-today-october-29-2026">KillTheAI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Nvidia Nemotron 3.5 Transcribe: mejor modelo open-weight para transcripci&oacute;n de audio</h3>
+      <p class="what">Nvidia lanz&oacute; Nemotron 3.5 Transcribe, capaz de procesar grabaciones de hasta una hora. Lidera el Open ASR Leaderboard de Hugging Face entre modelos de pesos abiertos.</p>
+      <p class="why">Si procesas audio en tu producto (entrevistas, llamadas, podcasts), un modelo open-weight de esta calidad elimina la dependencia de APIs propietarias de transcripci&oacute;n.</p>
+      <p class="source"><a href="https://benchlm.ai/model-updates">BenchLM</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google cierra Firebase Studio y Gemini Code Assist Standard/Enterprise</h3>
+      <p class="what">Google anunci&oacute; el sunset de Firebase Studio (cierra 22 de marzo 2027) y dej&oacute; de vender nuevas suscripciones de Gemini Code Assist Standard y Enterprise desde el 9 de octubre. La consolidaci&oacute;n empuja a desarrolladores hacia el ecosistema Gemini unificado.</p>
+      <p class="why">Si depend&iacute;as de Firebase Studio o Gemini Code Assist pagado, necesitas migrar ahora; la ventana de transici&oacute;n es limitada.</p>
+      <p class="source"><a href="https://dev.to/build_stacktoolscontact/ai-coding-tool-prices-october-2026-no-real-price-cuts-4-billing-toggle-traps-and-2-google-40ik">DEV Community</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub agentes: 40% de PRs ya son iniciados por c&oacute;digo, no por humanos</h3>
+      <p class="what">El informe Octoverse 2026 revel&oacute; que a septiembre, m&aacute;s del 40% de pull requests en GitHub son iniciados por agentes de coding. GitHub describe el SDLC como no-lineal: un cambio de c&oacute;digo, un pedido de un colega, o una m&eacute;trica de producci&oacute;n disparan trabajo en cualquier punto.</p>
+      <p class="why">El mercado de herramientas dev ya asumi&oacute; que los agentes son el canal principal de contribuci&oacute;n; si tu producto tiene un API o integraciones, necesita ser agent-friendly.</p>
+      <p class="source"><a href="https://dev.to/hiroki-ii-ai/ai-daily-digest-october-29-2026-github-rebuilds-the-sdlc-around-agents-chipmakers-buy-into-1m05">DEV Community</a> &bull; <a href="https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/">GitHub Blog</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Duet: el agente proactivo de Anthropic entra en research preview</h3>
+      <p class="what">Anunciado el 21 de octubre, Claude Duet es un agente que trabaja en background sobre tus tareas, usa apps conectadas y un browser cloud, y solo te notifica cuando necesita tu aprobaci&oacute;n. Disponible en waitlist para usuarios Pro y Max en iOS, Android y claude.ai.</p>
+      <p class="why">Es la visi&oacute;n de Anthropic compitiendo con Meta Muse y OpenAI Dots: agentes persistentes que ejecutan, no solo responden &mdash; cambia c&oacute;mo piensas la delegaci&oacute;n de tareas.</p>
+      <p class="source"><a href="https://hackernoon.com/what-is-claude-duet-inside-anthropics-always-on-ai-assistant">HackerNoon</a> &bull; <a href="https://cryptobriefing.com/?p=399613">CryptoBriefing</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Tag API en beta para Enterprise y User Profiles en la plataforma</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Tag API (23 de octubre) que permite a organizaciones Enterprise etiquetar y segmentar uso por equipos, y User Profiles (20 de octubre) para identificar cu&aacute;l de tus end-users genera cada request a la API.</p>
+      <p class="why">Si construyes un producto sobre la API de Claude, User Profiles te da analytics por usuario sin tener que instrumentar tu propio tracking.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot</a> &bull; <a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform Docs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic prepara IPO: filing publicado esta semana</h3>
+      <p class="what">Anthropic public&oacute; su filing de IPO, incluyendo detalles de ingresos, valoraci&oacute;n y riesgos. Es la primera vez que una empresa de frontier AI abre sus n&uacute;meros al p&uacute;blico de esta forma.</p>
+      <p class="why">Los n&uacute;meros del filing dan se&ntilde;ales reales sobre la salud econ&oacute;mica del modelo de negocio de API-first en IA, &uacute;til si est&aacute;s evaluando depender de Anthropic a largo plazo.</p>
+      <p class="source"><a href="https://www.bloomberg.com/anthropic">Bloomberg</a> &bull; <a href="https://trewknowledge.com/2026/10/30/ai-this-week-anthropic-goes-public-openai-goes-offline">TrewKnowledge</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OptimalFit lanza plataforma AI adaptativa de fitness con coach personalizado</h3>
+      <p class="what">OptimalFit lanz&oacute; en US y Canad&aacute; el 18 de octubre con Olli, un asistente AI que ajusta entrenamientos y planes nutricionales en tiempo real seg&uacute;n los objetivos cambiantes del usuario. Es un ejemplo directo de AI como servicio de coaching personalizado a escala.</p>
+      <p class="why">El patr&oacute;n de "AI coach adaptativo" es replicable en cualquier marketplace de servicios profesionales: nutrici&oacute;n, entrenamiento, tutor&iacute;a.</p>
+      <p class="source"><a href="https://www.trendhunter.com/trends/adaptive-ai-fitness-platforms">TrendHunter</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Oura agrega VO2 max autom&aacute;tico y Cardio Effort con AI a sus anillos</h3>
+      <p class="what">Desde el 21 de octubre, los anillos Oura estiman VO2 max autom&aacute;ticamente y miden esfuerzo card&iacute;aco con un nuevo metric llamado Cardio Effort, usando modelos ML sobre los datos de sus sensores.</p>
+      <p class="why">Muestra c&oacute;mo AI en wearables pasa de "mostrar datos" a "interpretar y recomendar", el salto que abre oportunidades para apps complementarias.</p>
+      <p class="source"><a href="https://aiuniversejournal.org/projects/20-ai-sports-and-fitness/">AI Universe Journal</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 29/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
