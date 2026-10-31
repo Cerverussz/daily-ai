@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 30 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>30 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; OpenAI lanza GPT-6.1 Terra: agentes de pantalla a $1/M tokens de input</h3>
+      <p class="what">OpenAI present&oacute; GPT-6.1 Terra, un modelo dise&ntilde;ado para operar computadoras como un empleado: llena formularios, navega interfaces y ejecuta tareas multi-paso con contexto de 1.05M tokens. Cuesta la mitad que GPT-6.1 Sol ($1/$5 por mill&oacute;n de tokens input/output) y ya est&aacute; disponible en la API, ChatGPT Work y Codex.</p>
+      <p class="why">Si est&aacute;s construyendo automatizaci&oacute;n de workflows o un marketplace con onboarding complejo, Terra hace viable escalar agentes de computer-use en producci&oacute;n sin que el costo por tarea se dispare.</p>
+      <p class="source"><a href="https://www.technology.org/2026/10/27/openai-gpt-6-1-terra-computer-use-pricing-terminal-bench/">Technology.org</a> &bull; <a href="https://gagadget.com/en/731866-openais-gpt-61-terra-cuts-api-prices-in-half-for-ai-agents/">Gagadget</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Mistral Large 4 &ldquo;Le Chonk&rdquo; libera pesos abiertos: 1T params en Hugging Face</h3>
+      <p class="what">Mistral public&oacute; los pesos de Large 4, su modelo MoE de ~1 trill&oacute;n de par&aacute;metros (~52B activos) con contexto de 1M tokens. Lidera Terminal-Bench 4.0 entre modelos open-weight con 41% y tiene capacidades multimodales completas.</p>
+      <p class="why">Es el modelo open-weight m&aacute;s potente disponible para self-hosting; si necesitas soberan&iacute;a de datos o quieres correr agentes de coding sin depender de APIs, esta es tu mejor opci&oacute;n hoy.</p>
+      <p class="source"><a href="https://mistral.ai/news/mistral-large-4-oss/">Mistral AI</a> &bull; <a href="https://siliconangle.com/2026/10/29/mistral-releases-open-weights-for-mistral-large-4-providing-sovereign-control-for-the-companys-le-chonk-ai-model/">SiliconANGLE</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Google Gemini 4 Carbon: modelo frontier enfocado en ciberdefensa</h3>
+      <p class="what">Google lanz&oacute; Gemini 4 Carbon, que lidera el Intelligence Index v5.0 de Artificial Analysis. Logra 88.2% en SEC-bench Pro (descubrimiento de vulnerabilidades) y 71% en CWE-bench (parcheo). Por ahora solo accesible para defensores de ciberseguridad verificados a trav&eacute;s del Fairwind Program.</p>
+      <p class="why">Aunque el acceso est&aacute; restringido hoy, marca la direcci&oacute;n de Google hacia modelos especializados por dominio &mdash; espera que el patr&oacute;n se repita para otros verticales.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/10/28/google-deepmind-gemini-4-carbon-frontier-model/">MarkTechPost</a> &bull; <a href="https://www.techzine.eu/news/security/145370/google-gemini-4-carbon-is-fully-committed-to-cyber-defense/">Techzine</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Android Dev Summit: AppFunctions en beta y Android Studio abre a 40+ agentes AI</h3>
+      <p class="what">En el Android Dev Summit 2026 (28-29 oct), Google llev&oacute; AppFunctions a beta: una API unificada de tool-calling que permite a apps Android exponer funciones que agentes on-device pueden descubrir y ejecutar v&iacute;a Android MCP. Adem&aacute;s, Android Studio Rabbit 2 ya soporta 40+ agentes de coding (Claude, Codex, Antigravity) a trav&eacute;s del Agent Client Protocol.</p>
+      <p class="why">AppFunctions es el momento de empezar a exponer las funciones clave de tu app Android para que agentes AI las invoquen &mdash; quien lo haga primero en su vertical captura el tr&aacute;fico agente.</p>
+      <p class="source"><a href="https://www.mobilemarketingreads.com/android-dev-summit-2026/">Mobile Marketing Reads</a> &bull; <a href="https://dev.to/paullovelace/android-studio-just-opened-to-40-ai-agents-claude-codex-and-antigravity-in-one-ide-explained-28gb">DEV Community</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Canva Craft: modelo de imagen propio con layers editables y API p&uacute;blica</h3>
+      <p class="what">Canva lanz&oacute; Craft, su primer modelo de generaci&oacute;n de im&aacute;genes in-house. Planifica layout antes de renderizar, genera a 2K en 30+ aspect ratios, y sus im&aacute;genes se convierten en capas editables via Magic Layers. Tambi&eacute;n abrieron API p&uacute;blica para integrarlo en plataformas de e-commerce y ad builders.</p>
+      <p class="why">La API de Craft abre la puerta a generar creativos de producto directamente desde tu marketplace o plataforma de ads, sin intermediarios.</p>
+      <p class="source"><a href="https://www.canva.com/newsroom/news/canva-craft/">Canva Newsroom</a> &bull; <a href="https://www.cmswire.com/digital-experience/canva-debuts-inhouse-ai-image-model-craft/">CMSWire</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Cursor lanza Origin App Marketplace: 20+ integraciones para equipos de desarrollo</h3>
+      <p class="what">Cursor abri&oacute; su Origin App Marketplace con m&aacute;s de 20 integraciones (Cloudflare, Linear, Sentry, Vercel, Buildkite) cubriendo deploy, CI, code review, seguridad y monitoreo. El marketplace acepta submissions p&uacute;blicas: cualquier equipo puede publicar una app para Origin.</p>
+      <p class="why">Si construyes herramientas de desarrollo, publicar en Origin te pone frente a la base de usuarios de Cursor &mdash; es un canal de distribuci&oacute;n nuevo y gratuito.</p>
+      <p class="source"><a href="https://cursor.com/es/changelog/origin-app-marketplace">Cursor Changelog</a> &bull; <a href="https://magica.com/news/cursor-origin-app-marketplace-public-submissions">Magica</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Harbor recauda $10M para asegurar agentes AI: nuevo modelo de negocio emergente</h3>
+      <p class="what">La startup Harbor sali&oacute; de stealth con $10M seed (Base10 Partners, 8vc, NFX) para ofrecer seguros contra fallos de agentes AI. Combina risk management con p&oacute;lizas: mide riesgos operacionales, de seguridad y regulatorios de agentes, y los asegura si causan p&eacute;rdidas.</p>
+      <p class="why">Si est&aacute;s desplegando agentes aut&oacute;nomos en producci&oacute;n, el seguro de agentes ser&aacute; un requisito para clientes enterprise &mdash; Harbor est&aacute; creando la categor&iacute;a.</p>
+      <p class="source"><a href="https://www.insurancebusinessmag.com/us/news/breaking-news/the-riskaverse-skydiver-building-insurance-for-ai-agents-595245.aspx">Insurance Business</a> &bull; <a href="https://dealroom.co/news/162200-harbor-lands-10m-seed-to-insure-the-ai-agent-liability-gap/">Dealroom</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Duet: agente proactivo que conecta 6,000+ apps y trabaja en segundo plano</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Duet en research preview, una app standalone que funciona como &ldquo;chief of staff digital&rdquo;. Corre sobre Opus 5.5, da briefings matutinos, monitorea apps conectadas (Gmail, Slack, Stripe, Shopify) y ejecuta tareas en background. Disponible en iOS, Android y web para suscriptores Pro y Max en EE.UU.</p>
+      <p class="why">Es la primera se&ntilde;al seria de Anthropic entrando al mercado de agentes aut&oacute;nomos de productividad &mdash; competencia directa para Meta Muse y OpenAI Dots.</p>
+      <p class="source"><a href="https://pulse2.com/anthropic-launches-claude-duet-as-proactive-ai-agent-for-work-and-small-businesses/">Pulse2</a> &bull; <a href="https://inc42.com/buzz/anthropic-takes-on-openai-meta-with-new-proactive-ai-agent-claude-duet/">Inc42</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code Review llega a GA: reviews de PR en 6-10 minutos</h3>
+      <p class="what">Anthropic sac&oacute; Code Review de research preview a disponibilidad general para organizaciones Team y Enterprise. Los reviews ahora toman 6-10 minutos (antes ~20), con tres niveles de profundidad configurables por repositorio (Quick, Standard, Deep).</p>
+      <p class="why">Si tu equipo ya usa Claude Code, activar Code Review automatizado en tus PRs reduce fricci&oacute;n sin a&ntilde;adir otra herramienta al stack.</p>
+      <p class="source"><a href="https://claude.com/blog/code-review-is-now-generally-available">Anthropic Blog</a> &bull; <a href="https://aicatchup.com/news/claude-code-review-general-availability">AI Catchup</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Docs, Slides y Design salen de beta en todos los planes (incluido Free)</h3>
+      <p class="what">Anthropic movi&oacute; Docs, Slides y Design a disponibilidad general en todos los planes de Claude, incluyendo el gratuito. Tambi&eacute;n lanzaron Claude Dashboards y Claude Motion en beta el mismo d&iacute;a.</p>
+      <p class="why">Docs y Slides gratis bajan la barrera para crear materiales de producto y pitch decks directamente con Claude, sin necesidad de plan pago.</p>
+      <p class="source"><a href="https://www.orcarouter.ai/blog/anthropic-launch-week-october-2026-what-shipped">Orca Router</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>&#128293; Suunto lanza AI Coach: coaching conversacional basado en tu historial de entrenamiento</h3>
+      <p class="what">Suunto present&oacute; AI Coach, un asistente conversacional dentro de la app que analiza tu historial de entrenamiento, recuperaci&oacute;n y rutas para dar recomendaciones personalizadas. Lleg&oacute; con el Race 3S e incluye 3 meses gratis para activaciones antes del 31 de diciembre.</p>
+      <p class="why">Es el patr&oacute;n que todo marketplace de servicios deportivos deber&iacute;a copiar: IA conversacional que personaliza sobre datos reales del usuario, no recomendaciones gen&eacute;ricas.</p>
+      <p class="source"><a href="https://www.suunto.com/News/why-we-built-suunto-ai-coach/">Suunto</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 30/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
