@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 31 de Octubre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>31 de octubre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI lanza GPT-6.1 Terra: agentes 3x m&aacute;s r&aacute;pidos a mitad de precio</h3>
+      <p class="what">OpenAI present&oacute; GPT-6.1 Terra el 26 de octubre, un modelo mid-tier optimizado para computer use y razonamiento visual. A $1/M input y $5/M output (50% menos que GPT-5.6 Terra), alcanza 50.3% en Terminal-Bench 4.0 y completa tareas 3x m&aacute;s r&aacute;pido que GPT-6 Astra y GPT-6.1 Sol.</p>
+      <p class="why">Si tienes agentes que navegan interfaces o automatizan flujos en tu producto, Terra ofrece la mejor relaci&oacute;n rendimiento/costo para tareas de computer use en producci&oacute;n.</p>
+      <p class="source"><a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/">BleepingComputer</a> &bull; <a href="https://www.neowin.net/news/openai-releases-gpt-61-terra-with-impressive-performance-at-massively-reduced-costs/">Neowin</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Canva lanza Craft, su primer modelo de imagen in-house con API abierta</h3>
+      <p class="what">Canva lanz&oacute; Craft el 22 de octubre, un modelo de generaci&oacute;n de im&aacute;genes entrenado sobre templates dise&ntilde;ados por humanos. A diferencia de otros modelos, Craft planifica la composici&oacute;n y tipograf&iacute;a antes de renderizar, logrando texto legible y layouts complejos. Disponible via Connect API como <code>craft_v1_2k</code>.</p>
+      <p class="why">Para founders que necesitan generar creativos para marketplace o landing pages, tener un modelo que entiende layout y tipograf&iacute;a reduce dr&aacute;sticamente el ciclo de dise&ntilde;o.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model">TechCrunch</a> &bull; <a href="https://www.canva.com/newsroom/news/canva-craft/">Canva Newsroom</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Pine Computer: un computador cloud dise&ntilde;ado para agentes AI, no para humanos</h3>
+      <p class="what">Pine AI lanz&oacute; Pine Computer en beta privada el 9 de octubre: un entorno cloud donde los agentes de software operan directamente sobre aplicaciones empresariales via SDK y API. Reporta 78.3% en SaaS-Bench v1.1, aunque en tareas completadas end-to-end queda en 27.4% (vs 31.1% de Claude Code).</p>
+      <p class="why">Si est&aacute;s construyendo agentes que necesitan interactuar con SaaS de terceros, Pine Computer abstrae la capa de infraestructura que normalmente tendr&iacute;as que armar a mano.</p>
+      <p class="source"><a href="https://techintelpro.com/news/ai/enterprise-ai/pine-ai-introduces-pine-computer-a-computer-built-for-ai">TechIntelPro</a> &bull; <a href="https://runtimewire.com/article/pine-ai-pine-computer-agents-cloud-computer">RuntimeWire</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Claude Code + Opus 5.5 lidera Terminal-Bench 4.0 con 64.8%</h3>
+      <p class="what">Seg&uacute;n el leaderboard actualizado de MorphLLM, Claude Code con Opus 5.5 encabeza Terminal-Bench 4.0 con 64.8%, seguido de Claude Code + Sonnet 5.5 con 61.8%. GPT-6.1 Terra debuta con 50.3%, confirmando que la combinaci&oacute;n Claude Code + modelos Anthropic sigue dominando en coding agente.</p>
+      <p class="why">Para tu stack de desarrollo con AI, la combinaci&oacute;n Claude Code para tareas complejas en terminal sigue siendo la referencia contra la que medir alternativas.</p>
+      <p class="source"><a href="https://www.morphllm.com/best-ai-coding-agents-2026">MorphLLM Leaderboard</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Mistral Large 4 Preview: modelo open-weight de 1T par&aacute;metros, pesos pendientes</h3>
+      <p class="what">Mistral lanz&oacute; el preview hosted de Large 4 el 6 de octubre: ~1.05T par&aacute;metros totales con ~49B activos por token (arquitectura MoE). Los pesos open-weight estaban prometidos para finales de octubre bajo una licencia custom (no Apache 2.0), pero al cierre de este briefing no se ha confirmado su publicaci&oacute;n.</p>
+      <p class="why">Cuando se liberen los pesos, ser&aacute; la opci&oacute;n open-weight m&aacute;s grande disponible para self-hosting &mdash; relevante si necesitas control total sobre el modelo en tu infraestructura.</p>
+      <p class="source"><a href="https://thenewstack.io/mistral-large-4-weights/">The New Stack</a> &bull; <a href="https://betanews.com/article/mistral-large-4-preview-open-weights/">BetaNews</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Moonshot retira Kimi K2 para nuevos usuarios a partir del 31 de octubre</h3>
+      <p class="what">Desde hoy, la serie Kimi K2 de Moonshot AI ya no est&aacute; disponible para nuevos registros en la API. Los usuarios existentes mantienen acceso hasta el retiro completo a finales de diciembre 2026. Moonshot empuja la migraci&oacute;n hacia Kimi K3.1 Pro, lanzado el 23 de octubre.</p>
+      <p class="why">Si usas Kimi K2 en alg&uacute;n pipeline, tienes dos meses para migrar a K3.1 Pro o evaluar alternativas antes del corte definitivo.</p>
+      <p class="source"><a href="https://github.com/diclogic/ai-daily-digest/issues/199">AI Daily Digest</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Synthesia Sessions: avatares AI interactivos para coaching y entrevistas en producci&oacute;n</h3>
+      <p class="what">Synthesia lanz&oacute; Sessions el 1 de octubre, pasando de video one-way a conversaciones bidireccionales con avatares AI. Los Roleplay Sessions simulan escenarios (ventas, soporte, onboarding) donde el avatar responde, hace pushback y eval&uacute;a con r&uacute;bricas espec&iacute;ficas. API de Interactive Avatar disponible para integraciones propias.</p>
+      <p class="why">Si tu producto incluye capacitaci&oacute;n o onboarding, la API de Synthesia te permite agregar coaching interactivo sin construir la capa de conversaci&oacute;n desde cero.</p>
+      <p class="source"><a href="https://www.synthesia.io/post/sessions-interactive-avatar-platform">Synthesia</a> &bull; <a href="https://techcrunch.com/2026/07/22/synthesias-ai-training-platform-is-moving-beyond-videos-into-live-coaching/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Luma lanza Variants: un anuncio se adapta autom&aacute;ticamente a cada formato y idioma</h3>
+      <p class="what">Luma present&oacute; Variants, una herramienta que toma un &uacute;nico anuncio en video y genera autom&aacute;ticamente versiones redimensionadas y traducidas para cada placement (Stories, Feed, TikTok, etc.). Apunta directamente al workflow de agencias y equipos peque&ntilde;os de marketing.</p>
+      <p class="why">Para founders que gastan en paid ads pero no tienen equipo de producci&oacute;n, esto elimina el cuello de botella de adaptar creativos a cada plataforma.</p>
+      <p class="source"><a href="https://blog.mean.ceo/ai-product-launches-news-october-2026/">AI Product Launches</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic a&ntilde;ade regla anti-clonaci&oacute;n de juegos en Claude Code</h3>
+      <p class="what">Anthropic agreg&oacute; dos oraciones al system prompt de Claude Code en Opus 5.5 que lo dirigen a no recrear juegos espec&iacute;ficos de otros desarrolladores. Addy Osmani (Anthropic) confirm&oacute; el cambio, que responde a semanas de Steam inundado de clones generados por AI. Los juegos originales y dise&ntilde;os propios siguen permitidos.</p>
+      <p class="why">Si usas Claude Code para game dev o prototipado r&aacute;pido, ten en cuenta que requests que parezcan clonaci&oacute;n pueden ser rechazados &mdash; Osmani invita a reportar falsos positivos.</p>
+      <p class="source"><a href="https://www.pcgamer.com/gaming-industry/anthropic-updates-claude-to-steer-it-away-from-letting-users-clone-games-following-weeks-of-steam-being-inundated-with-ai-slop/">PC Gamer</a> &bull; <a href="https://tech-insider.org/anthropic-claude-code-two-sentence-game-recreation-rule-indie-clones-2026/">Tech Insider</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic corta acceso a internet en evaluaciones internas tras incidentes de seguridad</h3>
+      <p class="what">Un reporte publicado el 9 de octubre revel&oacute; que agentes Claude alcanzaron sitios web reales durante pruebas de ciberseguridad debido a un error de configuraci&oacute;n de un partner externo. Un modelo interno escane&oacute; ~9,000 objetivos y comprometi&oacute; una organizaci&oacute;n usando credenciales expuestas y SQL injection. Anthropic cort&oacute; el acceso a internet en todas sus evaluaciones internas.</p>
+      <p class="why">Es un recordatorio cr&iacute;tico: si despliegas agentes AI con acceso a red en tu infraestructura, el sandboxing no es opcional &mdash; incluso Anthropic fall&oacute; en contener los suyos.</p>
+      <p class="source"><a href="https://www.searchenginejournal.com/anthropic-cuts-live-web-access-internal-tests/592534/">Search Engine Journal</a> &bull; <a href="https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html">The Hacker News</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OptimalFit: app AI de fitness y nutrici&oacute;n lanzada por ex-trainers de BODi</h3>
+      <p class="what">Joel y Megan Freeman (BODi, PNBA Olympia) lanzaron OptimalFit el 18 de octubre: una app que integra entrenamiento y nutrici&oacute;n con un asistente AI llamado Olli que ajusta planes basado en progreso y fotos. Disponible en iOS y Android en US y Canad&aacute; a $19.95/mes o $199/a&ntilde;o.</p>
+      <p class="why">Es un caso real de founders del fitness lanzando producto tech con AI como diferenciador &mdash; el patr&oacute;n es replicable para cualquier vertical de servicios profesionales.</p>
+      <p class="source"><a href="https://athletechnews.com/joel-megan-freeman-launch-all-in-one-ai-fitness-nutrition-app-optimalfit/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 31/10/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
