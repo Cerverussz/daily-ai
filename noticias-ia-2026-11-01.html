@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 1 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>1 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Vercel Labs lanza agent-desktop: computer-use open-source para agentes de coding</h3>
+      <p class="what">Vercel Labs public&oacute; agent-desktop, un CLI en Rust + librer&iacute;a C (Apache 2.0) que da a agentes de coding la capacidad de operar el sistema operativo completo en macOS, Windows y Linux. En vez de screenshots, lee el accessibility tree nativo (AX API, UI Automation, AT-SPI), lo que lo hace m&aacute;s r&aacute;pido y preciso.</p>
+      <p class="why">Si construyes agentes que necesitan interactuar con apps de escritorio o automatizar flujos fuera del browser, esto elimina la dependencia de APIs propietarias de computer-use.</p>
+      <p class="source"><a href="https://shiftdelete.net/en/vercel-agent-desktop-en">ShiftDelete</a> &bull; <a href="https://vercel.com/changelog">Vercel Changelog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI Decisions API llega a Vercel AI Gateway: respuestas estructuradas sin generaci&oacute;n</h3>
+      <p class="what">La Decisions API de OpenAI (endpoint /v1/decisions) ya est&aacute; disponible en Vercel AI Gateway. A diferencia de los modelos generativos, los modelos de decisi&oacute;n devuelven respuestas estructuradas directas sin generar texto, optimizados para clasificaci&oacute;n, routing y toma de decisiones en pipelines.</p>
+      <p class="why">Para tu backend de marketplace o app, esto simplifica enormemente los flujos de routing y clasificaci&oacute;n sin tener que parsear texto generado.</p>
+      <p class="source"><a href="https://vercel.com/changelog/openai-decisions-api-now-available-on-ai-gateway">Vercel Changelog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GPT-6.1 Terra disponible en API: el modelo de OpenAI para computer-use y razonamiento visual</h3>
+      <p class="what">GPT-6.1 Terra est&aacute; disponible v&iacute;a API con contexto de +1M tokens, optimizado para razonamiento visual, control preciso de computadora y escritura natural. Variante fast disponible para aplicaciones de baja latencia.</p>
+      <p class="why">Con +1M de contexto y computer-use nativo, es una opci&oacute;n seria para agentes que necesitan procesar documentos largos o automatizar tareas en desktop.</p>
+      <p class="source"><a href="https://vercel.com/ai-gateway/models/gpt-6.1-terra">Vercel AI Gateway</a> &bull; <a href="https://dev.to/devsignal/gpt-61-terra-claude-opus-55-pricing-and-the-infrastructure-week-ai-tooling-needed-36e1">DEV Community</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Google Gemini 4 Carbon: el modelo m&aacute;s fuerte de Google, enfocado en cybersecurity y tareas largas</h3>
+      <p class="what">Google anunci&oacute; Gemini 4 Carbon el 28 de octubre, posicion&aacute;ndolo como su modelo m&aacute;s capaz. Destaca en ciberseguridad y tareas de larga duraci&oacute;n, &aacute;reas donde los modelos anteriores ten&iacute;an limitaciones.</p>
+      <p class="why">Si manejas flujos de seguridad o an&aacute;lisis extendido en tu producto, vale la pena benchmarkearlo contra Opus 5.5 y Terra.</p>
+      <p class="source"><a href="https://aialvin.substack.com/p/ai-news-roundup-10-developments-to-141">AI Alvin</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 VoxNexus lanza VoxEdge: voice AI on-device para Android sin conexi&oacute;n</h3>
+      <p class="what">VoxNexus present&oacute; VoxEdge, una plataforma de voz AI que corre reconocimiento y s&iacute;ntesis de voz directamente en dispositivos Android sin necesitar internet. Dise&ntilde;ada para mercados con conectividad limitada.</p>
+      <p class="why">Para apps Android que necesitan voz offline (field workers, delivery, mercados emergentes), esto resuelve el problema de dependencia cloud que bloqueaba muchos casos de uso.</p>
+      <p class="source"><a href="https://wisevoter.com/world/2026/10/26/voxnexus-launches-on-device-voice-ai-android">Wisevoter</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot elimina Claude Opus 5, Opus 4.8 y GPT-5.6 Terra el 16 de noviembre</h3>
+      <p class="what">GitHub Copilot remover&aacute; tres modelos de su plataforma el 16 de noviembre: Claude Opus 5, Claude Opus 4.8 y GPT-5.6 Terra. Paralelamente, Copilot a&ntilde;adi&oacute; un plan Max y agentes de terceros (Claude, Codex) en public preview.</p>
+      <p class="why">Si tu workflow de coding depende de estos modelos en Copilot, tienes dos semanas para migrar; el plan Max con agentes de terceros podr&iacute;a compensar.</p>
+      <p class="source"><a href="https://devshot.co/blog/ai-coding-tool-changes-tracker">DevShot Tracker</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code lidera ranking de AI coding tools en noviembre 2026</h3>
+      <p class="what">Un ranking independiente de herramientas AI para coding posiciona a Claude Code como #1 overall en noviembre 2026. El mercado se consolida: Copilot 29%, Cursor y Claude Code empatados en 18% seg&uacute;n el JetBrains Developer Ecosystem Survey.</p>
+      <p class="why">La fragmentaci&oacute;n del mercado de AI coding tools sigue siendo una oportunidad para construir tooling especializado sobre estos modelos.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/best-ai-for-coding-2026-complete-ranking">NxCode</a> &bull; <a href="https://pasqualepillitteri.it/en/news/3392/github-copilot-cursor-claude-code-ai-coding-showdown-2026">Pillitteri</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Gemini Code Assist cierra para individuos; Google redirige a Antigravity CLI</h3>
+      <p class="what">Gemini Code Assist para individuos cerr&oacute; el 18 de junio, y las ventas de planes Standard/Enterprise pararon el 9 de octubre. Google movi&oacute; a usuarios del Gemini CLI consumer a Antigravity CLI, aunque sus propias p&aacute;ginas se contradicen sobre qui&eacute;n a&uacute;n tiene acceso.</p>
+      <p class="why">Si depend&iacute;as de herramientas gratuitas de Google para coding, es momento de consolidar tu stack en Cursor, Claude Code o Copilot.</p>
+      <p class="source"><a href="https://markaicode.com/findings/2026-11-02-ai-coding-tools-renamed-sold-closed/">MarkAICode</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic activa text watermarking en 4 modelos Claude a partir del 3 de noviembre</h3>
+      <p class="what">Anthropic aplicar&aacute; watermarks de texto a Claude Mythos 5, Opus 4.7, Opus 4.6 y Sonnet 4.6 desde el 3 de noviembre, cumpliendo con el EU AI Act. Claude Opus 5.5 ya lo ten&iacute;a. Amazon Bedrock podr&iacute;a tardar unos d&iacute;as m&aacute;s.</p>
+      <p class="why">Si tu producto genera texto con Claude para usuarios finales, ten en cuenta que el contenido ahora ser&aacute; trazable; rev&iacute;sa c&oacute;mo esto impacta tu UX y compliance.</p>
+      <p class="source"><a href="https://techweez.com/2026/11/02/anthropic-is-bringing-text-watermarking-to-more-claude-models/">TechWeez</a> &bull; <a href="https://fourweekmba.com/ai-anthropic-to-watermark-4-older-claude-models-for-eu-ai-act/">FourWeekMBA</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code recibe l&iacute;mites anti-clonaci&oacute;n de juegos; devs reportan falsos positivos</h3>
+      <p class="what">Anthropic agreg&oacute; instrucciones en el prompt de Opus 5.5 para evitar que Claude Code recree juegos espec&iacute;ficos de terceros, citando su pol&iacute;tica de IP. Algunos desarrolladores reportan que tareas leg&iacute;timas de reverse engineering tambi&eacute;n est&aacute;n siendo bloqueadas.</p>
+      <p class="why">Si usas Claude Code para analizar o refactorizar c&oacute;digo existente, monitorea si tus workflows se ven afectados por estos nuevos guardrails.</p>
+      <p class="source"><a href="https://tomshardware.com/tech-industry/artificial-intelligence/anthropic-confirms-new-claude-code-limits-to-prevent-game-cloning-users-report-opus-5-5-is-also-actively-blocking-reverse-engineering-tasks">Tom's Hardware</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic expande Claude a desarrollo farmac&eacute;utico con Bristol Myers Squibb</h3>
+      <p class="what">Anthropic est&aacute; expandiendo el uso de Claude en drug development con socios biotech, incluyendo una alianza con Bristol Myers Squibb para evaluar planes de estudios cl&iacute;nicos con AI.</p>
+      <p class="why">Muestra la expansi&oacute;n de Claude hacia verticales regulados de alto valor; un patr&oacute;n a seguir si construyes producto en salud o compliance.</p>
+      <p class="source"><a href="https://dataconomy.com/2026/11/02/anthropic-expands-claude-into-drug-development/">Dataconomy</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Temple headband abre pre-orders: wearable AI de $1,000 para monitoreo cerebrovascular</h3>
+      <p class="what">Temple, fundada por Deepinder Goyal (Zomato), abri&oacute; pre-orders el 1 de noviembre para un headband que mide flujo sangu&iacute;neo cerebral y frecuencia card&iacute;aca. El founder afirma mayor precisi&oacute;n que Apple Watch, aunque el estudio fue conducido por el fabricante y no ha sido revisado independientemente.</p>
+      <p class="why">Nuevo form factor en wearables de salud; si construyes en sports tech, este tipo de datos biom&eacute;tricos abre APIs para coaching personalizado m&aacute;s all&aacute; del heart rate b&aacute;sico.</p>
+      <p class="source"><a href="https://tech-insider.org/temple-heart-rate-wearable-goyal-claim-tested-2026/">Tech Insider</a> &bull; <a href="https://arynews.tv/new-temple-fitness-tracker-mounts-on-your-head-to-measure-brain-blood-flow/">ARY News</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>WHOOP y Oura lideran la transici&oacute;n a AI health insights como modelo de negocio</h3>
+      <p class="what">Seg&uacute;n un reporte de Sensor Tower (Nov 2), WHOOP y Oura est&aacute;n empujando insights personalizados v&iacute;a apps companion y suscripciones. Apple Watch Series 12 y Pixel Watch 5 tambi&eacute;n usan AI para interpretar datos, mientras Samsung y Ultrahuman ofrecen insights b&aacute;sicos sin suscripci&oacute;n obligatoria.</p>
+      <p class="why">El modelo de suscripci&oacute;n + AI insights est&aacute; ganando; si construyes en wellness, el valor ya no est&aacute; en el hardware sino en la capa de interpretaci&oacute;n inteligente.</p>
+      <p class="source"><a href="https://www.business-standard.com/amp/technology/tech-news/ai-health-insights-reshape-wearable-market-as-apps-drive-engagement-report-126110200859_1.html">Business Standard</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 01/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
