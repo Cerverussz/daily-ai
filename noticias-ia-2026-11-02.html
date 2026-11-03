@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 2 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>2 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Goldman Sachs restringe herramientas de AI coding: solo ingenieros pueden usar Claude Code y GitHub Copilot</h3>
+      <p class="what">Goldman Sachs prohibi&oacute; a la mayor&iacute;a de sus traders y banqueros el uso de herramientas avanzadas de AI coding como Claude Code y GitHub Copilot, limit&aacute;ndolas exclusivamente a ingenieros de software. La directiva interna, revisada por Bloomberg, busca controlar riesgos de seguridad y cumplimiento en el uso de AI generativa.</p>
+      <p class="why">Se&ntilde;al clara de que las empresas grandes est&aacute;n diferenciando entre AI para devs (productividad) y AI para el resto (riesgo) &mdash; si vendes herramientas AI B2B, tu pitch de seguridad y gobernanza importa tanto como las features.</p>
+      <p class="source"><a href="https://www.bloomberg.com/news/articles/2026-11-02/goldman-restricts-traders-and-bankers-from-using-some-ai-tools">Bloomberg</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Okta Agent SSO en GA: identidad de primera clase para agentes AI, gratis en planes SSO</h3>
+      <p class="what">Okta lanz&oacute; Agent SSO como generalmente disponible, implementando el est&aacute;ndar abierto Cross App Access para registrar agentes AI como identidades en Universal Directory con tokens de corta duraci&oacute;n. La capacidad viene incluida en los planes core de SSO sin costo adicional.</p>
+      <p class="why">Si est&aacute;s construyendo agentes que tocan datos de clientes en tu marketplace o plataforma, ahora tienes gobernanza de identidad enterprise-grade sin armarla a mano.</p>
+      <p class="source"><a href="https://www.okta.com/newsroom/press-releases/okta-brings-first-class-identity-to-ai-agents-with-agent-sso/">Okta</a> &bull; <a href="https://www.nasdaq.com/articles/okta-targets-ai-agent-confusion-identity-security-push">Nasdaq</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Make.com lanza AI Agents con integraci&oacute;n MCP para workflows aut&oacute;nomos</h3>
+      <p class="what">Make.com introdujo Make AI Agents, permitiendo construir workflows aut&oacute;nomos que se conectan a herramientas externas v&iacute;a Model Context Protocol (MCP). La integraci&oacute;n permite que los agentes ejecuten acciones multi-paso sin intervenci&oacute;n humana dentro del ecosistema de automatizaci&oacute;n visual de Make.</p>
+      <p class="why">Para founders t&eacute;cnicos que ya usan Make para automatizar ops, ahora pueden escalar a agentes aut&oacute;nomos sin migrar a infraestructura propia.</p>
+      <p class="source"><a href="https://www.shakudo.io/blog/top-9-workflow-automation-tools">Shakudo</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot depreca Claude Opus 5, Opus 4.8 y GPT-5.6 Terra el 16 de noviembre</h3>
+      <p class="what">GitHub anunci&oacute; que el 16 de noviembre retirar&aacute; Claude Opus 5, Claude Opus 4.8 y GPT-5.6 Terra de todas las superficies de Copilot: chat, edici&oacute;n inline, modo agente y autocompletado. Los reemplazos recomendados son Claude Opus 5.5 y GPT-6.1 Sol / GPT-6 Luna respectivamente.</p>
+      <p class="why">Si tienes model IDs hardcodeados en configs, scripts o definiciones de agentes de tu equipo, tienes 14 d&iacute;as para migrar o se rompe todo.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november">GitHub Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Google Gemini 4 Carbon anunciado: m&aacute;s potente que Argon, a&uacute;n en beta limitada</h3>
+      <p class="what">Google anunci&oacute; Gemini 4 Carbon el 28 de octubre, un modelo m&aacute;s potente que Gemini 4 Argon (GA desde el 13 de octubre). Carbon est&aacute; limitado a testers de confianza mientras Argon ya est&aacute; disponible para todos los desarrolladores.</p>
+      <p class="why">Si eval&uacute;as modelos para tu producto, Argon ya est&aacute; listo para producci&oacute;n; Carbon es el que hay que vigilar para cuando abra acceso general.</p>
+      <p class="source"><a href="https://www.nxcode.io/resources/news/best-ai-for-coding-2026-complete-ranking">NxCode</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Apple Intelligence llega a China en diciembre con iOS 27.3 usando modelos de Alibaba y Baidu</h3>
+      <p class="what">Apple confirm&oacute; que las primeras funciones de Apple Intelligence llegar&aacute;n a China con iOS 27.3 en diciembre, con pruebas para desarrolladores desde el 4 de noviembre. Los features incluyen Writing Tools, Genmoji y eliminaci&oacute;n de objetos en fotos, alimentados por Qwen de Alibaba y modelos de Baidu.</p>
+      <p class="why">Para devs mobile, confirma que Apple Intelligence ya no es solo mercado occidental &mdash; si tu app tiene audiencia en China, pronto podr&aacute;s aprovechar las APIs on-device tambi&eacute;n all&iacute;.</p>
+      <p class="source"><a href="https://www.mactrast.com/?p=173633">MacTrast</a> &bull; <a href="https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Copilot pierde terreno: Claude Code y Cursor alcanzan 18% cada uno en encuesta JetBrains 2026</h3>
+      <p class="what">La encuesta de JetBrains 2026 muestra que GitHub Copilot cay&oacute; de 67% a 29% entre desarrolladores profesionales, mientras Claude Code y Cursor subieron a 18% cada uno. Stack Overflow reporta una ca&iacute;da similar de Copilot a 51%. El mercado de AI coding se fragment&oacute; definitivamente.</p>
+      <p class="why">Si est&aacute;s eligiendo stack de desarrollo para tu equipo o producto, ya no hay un ganador &uacute;nico &mdash; la estrategia es combinar herramientas seg&uacute;n la tarea (Cursor para edici&oacute;n, Claude Code para terminal).</p>
+      <p class="source"><a href="https://pasqualepillitteri.it/en/news/3392/github-copilot-cursor-claude-code-ai-coding-showdown-2026">Pasquale Pillitteri</a> &bull; <a href="https://www.nxcode.io/resources/news/best-ai-for-coding-2026-complete-ranking">NxCode</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>SpaceX acuerda comprar Cursor por m&aacute;s de $50 mil millones</h3>
+      <p class="what">Seg&uacute;n reportes del New York Times, SpaceX lleg&oacute; a un acuerdo para adquirir Cursor (Anysphere) por m&aacute;s de $50B. La adquisici&oacute;n a&uacute;n no est&aacute; cerrada. Es la mayor transacci&oacute;n en la historia de herramientas de desarrollo.</p>
+      <p class="why">Ojo con el lock-in: si Cursor es tu herramienta principal, monitorea c&oacute;mo cambian los t&eacute;rminos de servicio y la integraci&oacute;n de modelos post-adquisici&oacute;n.</p>
+      <p class="source"><a href="https://markaicode.com/findings/2026-11-02-ai-coding-tools-renamed-sold-closed/">MarkAICode</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic activa text watermarking en Claude desde el 3 de noviembre</h3>
+      <p class="what">Desde el 3 de noviembre, Anthropic aplica marcas de agua invisibles en texto generado por Claude Mythos 5, Opus 4.7, Opus 4.6 y Sonnet 4.6 a trav&eacute;s de la Claude Platform API. Usa la t&eacute;cnica SynthID-Text de Google DeepMind. Una API de detecci&oacute;n est&aacute; anunciada pero a&uacute;n no disponible p&uacute;blicamente.</p>
+      <p class="why">Si tu producto genera contenido con Claude para usuarios finales, prep&aacute;rate para que ese contenido sea rastreable &mdash; rev&iacute;a tus t&eacute;rminos de servicio y c&oacute;mo comunicas el uso de AI.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-text-watermark">Anthropic</a> &bull; <a href="https://pasqualepillitteri.it/news/27784/claude-watermark-3-novembre-opus-4-7-sonnet-4-6">Pasquale Pillitteri</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Sonnet 4.5 se retira de la API el 30 de noviembre &mdash; migra a Sonnet 5.5</h3>
+      <p class="what">Anthropic marc&oacute; Claude Sonnet 4.5 (claude-sonnet-4-5-20250929) como deprecated desde septiembre, con retiro definitivo el 30 de noviembre. Despu&eacute;s de esa fecha, las peticiones a ese model ID fallar&aacute;n sin per&iacute;odo de gracia. El reemplazo oficial es Claude Sonnet 5.5.</p>
+      <p class="why">Si tienes Sonnet 4.5 hardcodeado en tu backend o pipelines, tienes 28 d&iacute;as para migrar a Sonnet 5.5 antes de que se rompa.</p>
+      <p class="source"><a href="https://kingy.ai/ai-launch-tracker/claude-sonnet-4-5-api-retirement-november-30-2026/">Kingy AI</a> &bull; <a href="https://www.layer3labs.io/guides/anthropic-model-deprecations">Layer3 Labs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic Message Threads en public beta en la Messages API</h3>
+      <p class="what">Los Message Threads de Anthropic entraron en beta p&uacute;blica, a&ntilde;adiendo un par&aacute;metro &uacute;nico thread a las peticiones de la Messages API. Permite conversaciones con tiempo m&aacute;s r&aacute;pido al primer token porque cada request solo env&iacute;a los mensajes nuevos en vez del historial completo.</p>
+      <p class="why">Si tu app tiene conversaciones largas con Claude, esto reduce latencia y costos de tokens de input significativamente sin cambiar tu flujo.</p>
+      <p class="source"><a href="https://platform.claude.com/docs/en/build-with-claude/message-threads.md">Claude Platform Docs</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Startup usa virus dise&ntilde;ados por AI para tratar infecciones resistentes a antibi&oacute;ticos en humanos</h3>
+      <p class="what">Radical Numerics, startup de California, administr&oacute; por primera vez un fago (virus que ataca bacterias) dise&ntilde;ado completamente por su modelo de AI Omnii-1 a un paciente humano con infecci&oacute;n resistente a antibi&oacute;ticos. El tratamiento se realiz&oacute; bajo uso compasivo supervisado por m&eacute;dicos.</p>
+      <p class="why">Es el primer caso real de AI dise&ntilde;ando tratamientos biol&oacute;gicos personalizados que llegan a un paciente &mdash; la intersecci&oacute;n AI + biotech pasa de papers a cl&iacute;nica.</p>
+      <p class="source"><a href="https://theweek.com/health/scientists-have-deployed-an-ai-designed-virus">The Week</a> &bull; <a href="https://www.eweek.com/news/ai-designed-viruses-to-kill-bacteria/">eWeek</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Tendencias de salud noviembre 2026: trackers de cortisol, ECG con AI y triage de salud mental</h3>
+      <p class="what">Trend Hunter destaca como tendencias de noviembre los trackers de cortisol en casa, wearables de ECG potenciados por AI, sistemas de triage r&aacute;pido de salud conductual, y mapeo de c&aacute;ncer asistido por AI. El enfoque com&uacute;n: llevar diagn&oacute;sticos que antes requer&iacute;an cl&iacute;nica al dispositivo personal del usuario.</p>
+      <p class="why">Si construyes en health/wellness tech, el patr&oacute;n es claro: AI + sensores personales = servicios que antes requer&iacute;an visita m&eacute;dica.</p>
+      <p class="source"><a href="https://www.trendhunter.com/slideshow/november-2026-health">Trend Hunter</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 02/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
