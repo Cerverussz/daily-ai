@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 3 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>3 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Menlo Ventures: gasto enterprise en IA llega a $177B &mdash; coding es la categor&iacute;a #1 con $34B (7.7x YoY)</h3>
+      <p class="what">El reporte anual State of Enterprise AI de Menlo Ventures (publicado el 3 de noviembre) revela que el gasto empresarial en IA alcanz&oacute; $176.8B, un crecimiento de 5.4x en un a&ntilde;o. Coding lidera con $34B (7.7x), seguido de chatbots enterprise ($25B). Anthropic, OpenAI y Google capturan el 69% del gasto total.</p>
+      <p class="why">Si est&aacute;s construyendo herramientas o servicios para desarrolladores, estos n&uacute;meros confirman que coding AI no es hype: es el segmento de mayor crecimiento en enterprise AI.</p>
+      <p class="source"><a href="https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/">Menlo Ventures</a> &bull; <a href="https://finance.yahoo.com/technology/ai/articles/menlo-ventures-2026-state-enterprise-140000395.html">Yahoo Finance</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Revolut recort&oacute; 90% sus costos de AI coding con modelos self-hosted en 56 GPUs B200</h3>
+      <p class="what">En una charla reciente en AI Engineer, Revolut revel&oacute; que migr&oacute; a 2,000 ingenieros de APIs metered a modelos open-source self-hosted (GLM), logrando ~60% reducci&oacute;n en tiempo de coding, 70% en lead time, y TTFT de 10s a 1.6s. El costo baj&oacute; a ~$0.30/M tokens.</p>
+      <p class="why">Es el caso m&aacute;s concreto de que self-hosting modelos de coding ya es viable a escala &mdash; si tu equipo gasta m&aacute;s de $5K/mes en APIs de coding, vale la pena hacer las cuentas.</p>
+      <p class="source"><a href="https://www.startuphub.ai/ai-news/artificial-intelligence/2026/revolut-says-self-hosted-ai-cut-coding-costs-90">StartupHub AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cycode lanza Citizen Developer Security: visibilidad sobre c&oacute;digo generado por IA en enterprise</h3>
+      <p class="what">Cycode anunci&oacute; Citizen Developer Security (private preview), un producto que da a equipos de seguridad visibilidad sobre los builders no-tradicionales y los coding agents que usan. Cubre detecci&oacute;n de agentes AI, an&aacute;lisis de c&oacute;digo generado, y pol&iacute;ticas de gobernanza.</p>
+      <p class="why">A medida que m&aacute;s gente en tu organizaci&oacute;n usa AI para generar c&oacute;digo, la superficie de ataque crece &mdash; este tipo de tooling se vuelve necesario.</p>
+      <p class="source"><a href="https://www.manilatimes.net/2026/11/04/tmt-newswire/globenewswire/cycode-solves-security-for-enterprises-newest-ai-builders-citizen-developers/2461875">Manila Times / GlobeNewsWire</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Recursive Flint: modelo de coding de 40B par&aacute;metros que corre en tu laptop, Apache 2.0</h3>
+      <p class="what">Recursive lanz&oacute; Flint, un modelo MoE de 40B params totales que activa solo 2.5B por token, corriendo a 125+ tokens/s en un MacBook M4 Pro. Es open-weight (Apache 2.0), compatible con Ollama, LM Studio y vLLM. Necesita ~48GB RAM para la versi&oacute;n cuantizada.</p>
+      <p class="why">Si quieres coding AI completamente offline y sin costos recurrentes para tu workflow diario, Flint es la opci&oacute;n m&aacute;s r&aacute;pida que puedes correr localmente hoy.</p>
+      <p class="source"><a href="https://www.analyticsinsight.net/news/recursive-flint-ai-free-40-billion-coding-model-runs-offline">Analytics Insight</a> &bull; <a href="https://www.eesel.ai/blog/recursive-flint-review">Eesel AI Review</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>JetBrains ThinkRail: IDE ag&eacute;ntico open-source con aislamiento por git worktree</h3>
+      <p class="what">JetBrains InnovationHub lanz&oacute; ThinkRail (Apache 2.0), un IDE que ejecuta el agente pi con cada tarea en su propio git worktree, branch y contexto de chat. Corre como app de escritorio o en browser, sin costo propio &mdash; pagas solo el modelo que conectes.</p>
+      <p class="why">El modelo de aislamiento por worktree es exactamente lo que necesitas cuando quieres que un agente trabaje en paralelo sin romper tu checkout principal.</p>
+      <p class="source"><a href="https://www.webreactiva.com/blog/thinkrail">Web Reactiva</a> &bull; <a href="https://aitoolly.com/ai-news/article/2026-10-31-jetbrains-unveils-thinkrail-on-github-trending-a-lightweight-ide-tailored-for-vibe-coding-with-pi">AItoolly</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 VoxEdge: voz AI offline en 36 idiomas para Android, sin cloud</h3>
+      <p class="what">VoxNexus lanz&oacute; VoxEdge, un stack completo de voz AI on-device para Android que cubre speech recognition (36 idiomas) y traducci&oacute;n (103 idiomas) sin conexi&oacute;n. Demostrado sobre el chipset MediaTek Dimensity 9600.</p>
+      <p class="why">Si est&aacute;s construyendo una app Android que necesita voz o traducci&oacute;n, esto elimina la dependencia de APIs cloud y sus costos por request.</p>
+      <p class="source"><a href="https://tech.africa/voxnexus-voxedge-offline-voice-ai">Tech Africa</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Klook lanza K.ai: agente AI que maneja back-office de merchants autom&aacute;ticamente</h3>
+      <p class="what">La plataforma de travel/experiences Klook lanz&oacute; K.ai, un agente AI que automatiza operaciones de back-office para sus merchants: gesti&oacute;n de inventario, pricing din&aacute;mico y respuestas a clientes. No es un chatbot &mdash; es un agente que ejecuta tareas operativas.</p>
+      <p class="why">Es un ejemplo concreto del patr&oacute;n &ldquo;agente AI como capa de operaciones para marketplace&rdquo; &mdash; el mismo approach aplica para cualquier plataforma con merchants.</p>
+      <p class="source"><a href="https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-november-4-2026/">Agile Brand Guide</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Profitmind Awase GA: matching de productos entre retailers sin barcode compartido</h3>
+      <p class="what">Profitmind lanz&oacute; Awase en general availability (3 de noviembre). Su modelo de AI identifica productos id&eacute;nticos entre cat&aacute;logos de distintos retailers incluso sin UPC/barcode com&uacute;n, usando matching sem&aacute;ntico de atributos, im&aacute;genes y descripciones.</p>
+      <p class="why">Si construyes un marketplace o agregador de productos, el matching entre cat&aacute;logos es uno de los problemas m&aacute;s costosos de resolver &mdash; esto lo convierte en API.</p>
+      <p class="source"><a href="https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-november-4-2026/">Agile Brand Guide</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Message Threads API en beta: 35% menos time-to-first-token para agentes</h3>
+      <p class="what">Desde el 2 de noviembre, la Messages API de Anthropic soporta threads en beta p&uacute;blico: los agentes env&iacute;an solo mensajes nuevos entre turnos en vez de reenviar todo el historial. Anthropic reporta ~35% de mejora en time-to-first-token.</p>
+      <p class="why">Si tu producto usa Claude como backend de agentes multi-turno, esto reduce latencia y costos de tokens sin cambiar tu l&oacute;gica &mdash; solo la forma en que env&iacute;as mensajes.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot - Anthropic Updates</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic dona Agent Skills al AAIF (Linux Foundation): MCP + Skills son est&aacute;ndar abierto</h3>
+      <p class="what">Anthropic don&oacute; el est&aacute;ndar Agent Skills al Agentic AI Foundation (bajo Linux Foundation), junto con el nombre, logo, GitHub org y dominio agentskills.io. M&aacute;s de 70 plataformas ya lo integran, incluyendo ChatGPT, Cursor, GitHub Copilot y VS Code. MCP ya hab&iacute;a sido donado anteriormente.</p>
+      <p class="why">MCP y Agent Skills ahora son gobernados por la industria, no por una empresa &mdash; es se&ntilde;al clara de que puedes apostar tu arquitectura de plugins en estos est&aacute;ndares.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation">Anthropic</a> &bull; <a href="https://www.orcarouter.ai/blog/anthropic-donates-agent-skills-to-aaif">Orca Router</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Wearables pivotan a AI health insights: WHOOP y Oura lideran modelo de suscripci&oacute;n AI</h3>
+      <p class="what">Seg&uacute;n un reporte de Sensor Tower (2 de noviembre), las marcas de wearables est&aacute;n migrando de tracking b&aacute;sico a insights de salud generados por AI como driver principal de engagement y retenci&oacute;n. WHOOP y Oura usan sus companion apps con AI para monetizar v&iacute;a suscripciones.</p>
+      <p class="why">El patr&oacute;n &ldquo;hardware barato + suscripci&oacute;n AI premium&rdquo; es replicable para cualquier vertical de servicios profesionales con datos recurrentes.</p>
+      <p class="source"><a href="https://business-standard.com/amp/technology/tech-news/ai-health-insights-reshape-wearable-market-as-apps-drive-engagement-report-126110200859_1.html">Business Standard</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 03/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
