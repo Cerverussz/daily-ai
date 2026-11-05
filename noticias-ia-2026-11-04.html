@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 4 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>4 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta adquiere Conductor: startup de AI coding que orquesta m&uacute;ltiples agentes simult&aacute;neamente</h3>
+      <p class="what">Meta confirm&oacute; la adquisici&oacute;n de Conductor, una startup que permite a ingenieros gestionar varios agentes de coding en paralelo. El equipo, liderado por Charlie Holtz, se integra al equipo de AI coding de Meta bajo Alexandr Wang y Nat Friedman, con planes de lanzar algo nuevo a principios de 2027.</p>
+      <p class="why">La carrera por herramientas de AI coding se intensifica &mdash; Meta quiere competir con GitHub Copilot y Codex, y si construyes developer tools, el espacio de orquestaci&oacute;n multi-agente es donde est&aacute; la demanda real.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/">TechCrunch</a> &bull; <a href="https://www.axios.com/2026/11/04/meta-acquires-ai-coding-startup-conductor">Axios</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI acuerda adquirir Pierre Computer para expandir Codex con Git hosting propio</h3>
+      <p class="what">OpenAI anunci&oacute; la adquisici&oacute;n de Pierre Computer Company, cuyas librer&iacute;as open-source Trees y Diffs ya potencian el file browsing y code review de Codex. El objetivo principal es integrar Code Storage, un sistema de almacenamiento Git que competir&iacute;a directamente con GitHub.</p>
+      <p class="why">OpenAI est&aacute; construyendo una plataforma de desarrollo completa alrededor de Codex &mdash; si dependes de GitHub para tu workflow, empieza a evaluar alternativas porque la fragmentaci&oacute;n del ecosistema de dev tools se acelera.</p>
+      <p class="source"><a href="https://axios.com/2026/11/04/openai-pierre-computer-github">Axios (exclusiva)</a> &bull; <a href="https://dev.to/paullovelace/openai-is-buying-pierre-the-git-tooling-behind-codexs-code-storage-explained-honestly-49l">DEV Community</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Ricursive lanza Ripple-65B Preview: open-weight coding SOTA por $32M de entrenamiento</h3>
+      <p class="what">Ricursive Intelligence public&oacute; Ripple-65B Preview, un modelo denso de 65B par&aacute;metros entrenado desde cero con 12T tokens bajo licencia Apache 2.0. Reporta 80.52 en TerminalBench 2.1 y 79.1 en SWE-bench Pro v2.0 Hard, posicion&aacute;ndose como el mejor modelo open-weight de coding de EE.UU. a una d&eacute;cima del costo del SOTA previo.</p>
+      <p class="why">Un modelo de coding competitivo que corre en un MacBook o DGX Spark y cuesta 10x menos de entrenar cambia la ecuaci&oacute;n para self-hosting y pipelines de coding en tu backend.</p>
+      <p class="source"><a href="https://tldr.tech/story/79fe1647-9179-444c-804f-84815ee3b913">TLDR</a> &bull; <a href="https://x.com/annadgoldie/status/2118052216363954481">Anna Goldie (CEO) en X</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Moonshot AI publica los pesos completos de Kimi K3.1 Pro: 2.8T par&aacute;metros en Hugging Face</h3>
+      <p class="what">Moonshot AI cumpli&oacute; su promesa y liber&oacute; los pesos de Kimi K3.1 Pro, un modelo MoE de 2.8 billones de par&aacute;metros (104B activos) con ventana de contexto de 1M tokens. Los pesos pesan ~1.56TB en formato MXFP4 y ya est&aacute;n disponibles en Ollama, Nebius y Databricks.</p>
+      <p class="why">Es el modelo open-weight m&aacute;s grande disponible hoy &mdash; si tienes infraestructura GPU seria, es una opci&oacute;n real para pipelines de procesamiento masivo sin depender de APIs propietarias.</p>
+      <p class="source"><a href="https://www.tokenpost.com/news/technology/49222">TokenPost</a> &bull; <a href="https://www.llms.blog/posts/kimi-k3-1-pro-open-weights-license-benchmarks">LLMs Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>ChatGPT ahora genera GIFs animados con el nuevo modelo Images 2.6</h3>
+      <p class="what">OpenAI empez&oacute; el rollout de generaci&oacute;n de GIFs animados en ChatGPT y Codex, usando el modelo Images 2.6 (a&uacute;n sin anuncio oficial separado). Los usuarios pueden crear GIFs desde texto o fotos, controlar velocidad de reproducci&oacute;n y editar frames individuales. Para desarrolladores, la API ofrece GPT-Image-2.6 en variantes &quot;Flare&quot; y &quot;Sunburst&quot;.</p>
+      <p class="why">Si tu producto genera contenido visual, GIFs animados v&iacute;a API abren un canal de engagement que antes requer&iacute;a pipelines de video dedicados.</p>
+      <p class="source"><a href="https://decrypt.co/382574/chatgpt-gif-maker-openai-unannounced-images-2-6-model">Decrypt</a> &bull; <a href="https://the-decoder.com/chatgpt-can-now-turn-text-prompts-and-photos-into-animated-gifs-with-openais-images-2-6-model">The Decoder</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 La guerra de dev tools se enciende: Meta y OpenAI compran startups de coding el mismo d&iacute;a</h3>
+      <p class="what">En una coincidencia reveladora, Meta (Conductor) y OpenAI (Pierre Computer) cerraron adquisiciones de startups de developer tools el 4 de noviembre. Ambas apuntan a construir plataformas integradas de AI coding: Meta busca orquestaci&oacute;n multi-agente, OpenAI quiere Git hosting dentro de Codex.</p>
+      <p class="why">El mercado de herramientas de desarrollo con AI est&aacute; en fase de consolidaci&oacute;n acelerada &mdash; si est&aacute;s construyendo en este espacio, el momento de diferenciarte con un nicho espec&iacute;fico es ahora, antes de que los incumbentes cierren las brechas.</p>
+      <p class="source"><a href="https://axios.com/2026/11/04/openai-pierre-computer-github">Axios</a> &bull; <a href="https://siliconangle.com/2026/11/04/meta-acquires-ai-coding-startup-conductor-whose-app-runs-several-coding-agents-at-once/">SiliconANGLE</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic revela $895B en compromisos de compute en filing de IPO enmendado</h3>
+      <p class="what">El S-1 enmendado de Anthropic (2 de noviembre) muestra $895.4B en compromisos de compra y leasing, casi todos en compute e infraestructura, con contratos a largo plazo con Amazon (m&iacute;nimo $110B hasta 2036), Microsoft y Google. Los ingresos de Q3 2026 alcanzaron ~$17B con revenue de 9 meses de $33.2B.</p>
+      <p class="why">La escala de inversi&oacute;n valida que la carrera por compute es existencial para los proveedores de AI &mdash; como developer, esto significa que la disponibilidad y precios de las APIs de Claude dependen de que estas apuestas funcionen.</p>
+      <p class="source"><a href="https://www.ghacks.net/2026/11/03/anthropics-revised-ipo-filing-reports-33-2-billion-in-nine-month-revenue-and-895-billion-in-compute-commitments/">gHacks</a> &bull; <a href="https://www.unite.ai/anthropic-details-long-term-compute-commitments-in-amended-ipo-filing/">Unite.AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza FlashProve: pruebas criptogr&aacute;ficas de que un modelo espec&iacute;fico gener&oacute; una respuesta</h3>
+      <p class="what">FlashProve es un prototipo open-source basado en zkSNARKs que permite verificar que una respuesta provino de un conjunto espec&iacute;fico de pesos de modelo, sin revelar los pesos. Demostrado con Llama 4 Maverick, genera proofs a 110 tokens/segundo en 1 GPU H100 y verifica en CPU en 17 segundos.</p>
+      <p class="why">Si construyes productos donde la procedencia del output de AI importa (legal, finanzas, salud), FlashProve es la primera herramienta pr&aacute;ctica para ofrecer garant&iacute;as criptogr&aacute;ficas a tus usuarios.</p>
+      <p class="source"><a href="https://www.marktechpost.com/2026/11/03/anthropic-flashprove-provable-inference-zksnark/">MarkTechPost</a> &bull; <a href="https://www.unite.ai/anthropic-releases-flashprove-for-cryptographic-ai-inference-proofs/">Unite.AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic extiende watermarking a modelos Claude anteriores por EU AI Act</h3>
+      <p class="what">Desde el 3 de noviembre, Anthropic aplica su watermark de texto a cuatro modelos anteriores: Mythos 5, Opus 4.7, Opus 4.6 y Sonnet 4.6, de forma global y sin opci&oacute;n de opt-out. La marca es invisible (no agrega caracteres ocultos) y no se puede rastrear a un usuario espec&iacute;fico.</p>
+      <p class="why">Si usas estos modelos en producci&oacute;n, el watermarking ya est&aacute; activo &mdash; verifica que tus pipelines de post-procesamiento de texto no se vean afectados, especialmente si haces hashing o comparaci&oacute;n exacta de outputs.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-text-watermark">Anthropic (oficial)</a> &bull; <a href="https://www.searchenginejournal.com/anthropic-claude-watermarks-eu-ai-act-code/585355/">Search Engine Journal</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Fitbit Edge llega a tiendas con Gemini AI Health Coach integrado a $179.99</h3>
+      <p class="what">Google lanz&oacute; el Fitbit Edge, un tracker con pantalla m&aacute;s grande que integra el Health Coach y Health Guardian potenciados por Gemini, disponibles via suscripci&oacute;n Google Health Premium ($9.99/mes). El coach ofrece recomendaciones personalizadas de entrenamiento, recuperaci&oacute;n y nutrici&oacute;n basadas en el historial completo de salud del usuario.</p>
+      <p class="why">El modelo de wearable + AI coach por suscripci&oacute;n es el playbook para cualquier marketplace de servicios de fitness &mdash; Google est&aacute; demostrando que el coaching personalizado escala cuando el hardware alimenta los datos.</p>
+      <p class="source"><a href="https://gcn.com/google-fitbit-edge-tracker-arrives-gemini/22949/">GCN</a> &bull; <a href="https://www.sensai.fit/blog/google-health-premium-fitbit-ai-coach-2026">SensAI</a></p>
+    </div>
+
+    <footer>
+      <p>Generado el 05/11/2026 &middot; Filtrado para senior devs construyendo producto</p>
+    </footer>
+  </div>
+</body>
+</html>
