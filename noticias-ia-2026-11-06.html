@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 6 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>6 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta adquiere Conductor: orquestaci&oacute;n de m&uacute;ltiples agentes AI de coding en paralelo</h3>
+      <p class="what">Meta compr&oacute; Conductor, una startup cuya plataforma permite ejecutar varios agentes de coding (Claude Code, Codex, Cursor) simult&aacute;neamente en copias aisladas del codebase, revisar y mergear sus outputs. M&aacute;s de 100,000 desarrolladores usaban el producto.</p>
+      <p class="why">La carrera por developer tools AI ya no es solo sobre el modelo &mdash; es sobre orquestaci&oacute;n; si est&aacute;s construyendo herramientas para devs, la capa de coordinaci&oacute;n multi-agente es donde est&aacute; el valor ahora.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/">TechCrunch</a> &bull; <a href="https://www.axios.com/2026/11/04/meta-acquires-ai-coding-startup-conductor">Axios</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Mistral lanza Managed Agents, SDK y workflow builder en public preview</h3>
+      <p class="what">Mistral abri&oacute; su plataforma Studio con agentes gestionados, un SDK en Python (<code>mistralai-agents</code>) y un constructor visual de workflows. Los agentes son durables, soportan pausas para aprobaci&oacute;n humana, y pueden correr self-hosted o en infraestructura de Mistral.</p>
+      <p class="why">Una alternativa seria a Anthropic Managed Agents con opci&oacute;n on-prem &mdash; ideal si necesitas agentes de larga duraci&oacute;n con control total sobre d&oacute;nde corren tus datos.</p>
+      <p class="source"><a href="https://mistral.ai/news/build-with-studio/">Mistral AI</a> &bull; <a href="https://docs.mistral.ai/studio/agents/introduction">Docs</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot llega a Xcode 27.3 como coding assistant nativo</h3>
+      <p class="what">GitHub Copilot entr&oacute; en public preview dentro del coding assistant integrado de Xcode 27.3 beta, soportando todos los planes de Copilot. Se configura desde Xcode &gt; Settings &gt; Intelligence, sin necesidad de extensiones externas.</p>
+      <p class="why">Si desarrollas para iOS/macOS, ahora tienes asistencia AI nativa en Xcode sin fricci&oacute;n de setup &mdash; baja la barrera para integrar AI en tu workflow de desarrollo Apple.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant/">GitHub Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Revolut recorta 90% sus costos de AI coding auto-hospedando GLM open-source</h3>
+      <p class="what">La fintech brit&aacute;nica migr&oacute; de Claude Code a GLM-5.3 de Z.ai (modelo open-weight) corriendo en 56 GPUs Nvidia B200 para ~2,000 ingenieros. Reportan $0.30/M tokens vs ~$3/M con APIs propietarias, m&aacute;s un 60% de mejora en tiempo de coding.</p>
+      <p class="why">El caso de Revolut es un playbook concreto para founders t&eacute;cnicos: cuando tu volumen de tokens justifica la infra, self-hosting de modelos abiertos puede ser 10x m&aacute;s barato que APIs comerciales.</p>
+      <p class="source"><a href="https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345">The Register</a> &bull; <a href="https://www.computing.co.uk/news/2026/ai/revolut-turns-to-self-hosted-ai-to-cut-coding-costs-tenfold-over-claude">Computing</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Extensi&oacute;n troyanizada de Claude Code en marketplace de Cursor expuso ~5,000 devs</h3>
+      <p class="what">Versiones 2.1.312 y 2.1.313 de la extensi&oacute;n anthropic.claude-code fueron comprometidas en el marketplace de Cursor durante ~11 horas. El payload intentaba instalar un backdoor SSH persistente en macOS y Windows.</p>
+      <p class="why">Si usas extensiones de terceros en tu IDE, esto es un recordatorio cr&iacute;tico de verificar publishers y versiones &mdash; el supply chain de developer tools es un vector de ataque activo.</p>
+      <p class="source"><a href="https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/">BleepingComputer</a> &bull; <a href="https://securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack">SecurityWeek</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Conductor Cloud cierra el 20 de noviembre: lecci&oacute;n sobre dependencia en herramientas AI</h3>
+      <p class="what">Tras la adquisici&oacute;n por Meta, Conductor Cloud pasar&aacute; a solo lectura el 13 de noviembre y cerrar&aacute; el 20. La versi&oacute;n local seguir&aacute; recibiendo actualizaciones cr&iacute;ticas hasta inicios de 2027, pero el producto cloud desaparece en dos semanas.</p>
+      <p class="why">Si tu producto depende de una herramienta AI de un startup, ten siempre un plan B &mdash; en este mercado las adquisiciones pueden dejar sin servicio a 100K usuarios de la noche a la ma&ntilde;ana.</p>
+      <p class="source"><a href="https://devops.com/meta-acquires-conductor-to-support-multi-agent-ai-coding">DevOps.com</a> &bull; <a href="https://siliconangle.com/2026/11/04/meta-acquires-ai-coding-startup-conductor-whose-app-runs-several-coding-agents-at-once/">SiliconANGLE</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Mistral apuesta por enterprise on-prem: agentes AI que corren en tu infraestructura</h3>
+      <p class="what">Adem&aacute;s del SDK cloud, Mistral habilit&oacute; <code>agents serve</code> para deployment self-hosted con trazabilidad integrada. Los agentes soportan sub-agentes, sandboxes aislados y skills que codifican procedimientos de equipo.</p>
+      <p class="why">Para founders construyendo productos B2B que manejan datos sensibles, tener agentes AI que corren 100% en tu infra sin enviar datos a terceros es un diferenciador real.</p>
+      <p class="source"><a href="https://docs.mistral.ai/studio/agents/introduction">Mistral Docs</a> &bull; <a href="https://alphasignal.ai/news/mistral-rebuilds-studio-into-a-full-enterprise-ai-agent-platform">Alpha Signal</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic presenta S-1 para IPO en Nasdaq bajo ticker ANT</h3>
+      <p class="what">Anthropic present&oacute; su Form S-1 ante la SEC para salir a bolsa en el Nasdaq Global Select Market. El filing reporta revenue de ~$16.3B en el primer semestre de 2026 y $895.4B en compromisos de c&oacute;mputo. Se espera un listing la semana del 16 de noviembre.</p>
+      <p class="why">El IPO de tu principal proveedor de AI significa m&aacute;s presi&oacute;n por monetizar &mdash; espera cambios en pricing y l&iacute;mites; diversifica tu stack de modelos.</p>
+      <p class="source"><a href="https://thenextweb.com/news/anthropic-ipo-filing-nasdaq-ant-s-1">The Next Web</a> &bull; <a href="https://mena.entrepreneur.com/business-news/anthropic-files-for-nasdaq-ipo">Entrepreneur</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Personal Finance: an&aacute;lisis de gastos conectando cuentas bancarias v&iacute;a Plaid</h3>
+      <p class="what">Anthropic lanz&oacute; una herramienta de finanzas personales en beta para suscriptores Pro, Max y Ultra en EE.UU. Se conecta a bancos v&iacute;a Plaid con acceso de solo lectura, ve hasta 2 a&ntilde;os de transacciones, y las conversaciones no se usan para entrenar modelos.</p>
+      <p class="why">Es la primera vez que un LLM mainstream se conecta directamente a datos financieros reales &mdash; un patr&oacute;n que pronto ver&aacute;s replicado en verticales como salud y fitness.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/">TechCrunch</a> &bull; <a href="https://plaid.com/blog/plaid-anthropic-financial-insights-in-claude/">Plaid Blog</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Apple Fitness+ lanza Gym Strength: planes progresivos adaptativos para gimnasio</h3>
+      <p class="what">Apple a&ntilde;adi&oacute; Gym Strength a Fitness+, con planes de 4 semanas que se adaptan seg&uacute;n las repeticiones y peso registrados cada semana. Funciona en gimnasios comerciales y con equipo m&iacute;nimo en casa, incluido en la suscripci&oacute;n existente.</p>
+      <p class="why">Apple entrando en coaching adaptativo de fuerza valida el mercado para cualquier startup construyendo features similares en plataformas deportivas o marketplaces de fitness.</p>
+      <p class="source"><a href="https://9to5mac.com/2026/11/03/apple-announces-fitness-gym-strength-program-with-personalized-workout-plans/">9to5Mac</a> &bull; <a href="https://insider.fitt.co/apple-fitness-adds-progressive-strength-coaching/">Fitt Insider</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Inversores fitness viran hacia AI y datos: Whoop y Oura como candidatos a IPO</h3>
+      <p class="what">Seg&uacute;n Crunchbase, el funding de startups fitness rebot&oacute; en H1 2026 pero con un giro claro: los inversores priorizan empresas que recopilan datos de salud continuos y usan AI para generar gu&iacute;a personalizada. Whoop, Oura y Spring Health se perfilan como candidatos a IPO.</p>
+      <p class="why">Si est&aacute;s construyendo un marketplace de servicios de salud o fitness, el diferenciador que buscan los inversores es la capa de datos + AI personalizada, no el inventario de servicios.</p>
+      <p class="source"><a href="https://news.crunchbase.com/health-wellness-biotech/fitness-startup-funding-rebounding-ai-data-h1-2026/">Crunchbase News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 06/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
