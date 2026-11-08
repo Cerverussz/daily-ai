@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 7 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>7 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Together Compiler: agentes AI que optimizan GPU kernels automáticamente</h3>
+      <p class="what">Together AI lanzó Together Compiler, un sistema donde agentes AI generan, benchmarkean y verifican optimizaciones de GPU kernels para modelos open-source. Los kernels compilados ya están activos por defecto en modelos serverless como GLM 5.3 y DeepSeek V4.1 Flash, con mejoras de +12% a +20% en tokens por segundo.</p>
+      <p class="why">Si sirves modelos open-source en producción, esto baja tu costo de inferencia sin tocar código — los kernels optimizados se aplican automáticamente en Together.</p>
+      <p class="source"><a href="https://thenewstack.io/together-compiler-gpu-optimization/">The New Stack</a> &bull; <a href="https://www.unite.ai/?p=502865">Unite.AI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot Projects: orquesta agentes de coding a través de múltiples repos</h3>
+      <p class="what">GitHub lanzó en preview público Copilot Projects, una feature que permite definir un objetivo, seleccionar varios repositorios, y dejar que la plataforma distribuya el trabajo entre agentes AI que operan en paralelo. Los resultados se consolidan con PRs listos para review.</p>
+      <p class="why">Para equipos que mantienen microservicios o monorepos con módulos separados, esto convierte cambios cross-repo de días en horas supervisadas.</p>
+      <p class="source"><a href="https://runtimewire.com/article/github-copilot-agent-orchestration-universe-2026">RuntimeWire</a> &bull; <a href="https://github.blog/tag/multi-agent-workflows/">GitHub Blog</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini Omni 1.2 Flash: generación de video vía API a US$0.07/segundo</h3>
+      <p class="what">Google lanzó Gemini Omni 1.2 Flash en GA, con generación de clips de hasta 15 segundos a 720p y upscaling a 1080p/4K. El precio bajó 30% vs Omni 1.1, a US$0.07 por segundo de video y US$1.50/M tokens de input. La migración automática desde 1.1 será el 3 de diciembre.</p>
+      <p class="why">A estos precios, integrar generación de video corto en tu producto pasa de experimento caro a feature viable en producción.</p>
+      <p class="source"><a href="https://runtimewire.com/article/google-gemini-omni-1-2-flash-15-second-clips">RuntimeWire</a> &bull; <a href="https://ecosistemastartup.com/gemini-omni-1-2-flash-clips-de-15s-a-us007-el-segundo/">Ecosistema Startup</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI Images 2.6: ChatGPT ahora genera GIFs animados</h3>
+      <p class="what">OpenAI desplegó Images 2.6 con soporte nativo para crear GIFs animados desde texto o fotos, disponible en todos los planes de ChatGPT (web, desktop y móvil). Los usuarios pueden ajustar velocidad, editar frames individuales y exportar directamente.</p>
+      <p class="why">Para marketing de producto o contenido en redes, generar GIFs animados sin herramientas externas elimina un paso más del workflow creativo.</p>
+      <p class="source"><a href="https://thenextweb.com/news/chatgpt-animated-gifs-images-2-6-openai">The Next Web</a> &bull; <a href="https://decrypt.co/382574/chatgpt-gif-maker-openai-unannounced-images-2-6-model">Decrypt</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Kimi K3.1 Pro: modelo open-weight de 2.8T parámetros enfocado en coding</h3>
+      <p class="what">Moonshot AI liberó los pesos de Kimi K3.1 Pro, un modelo MoE de 2.8 trillones de parámetros con ventana de contexto de 1M tokens, optimizado para coding, agentes y razonamiento. A US$2/M input y US$10/M output en API, compite en benchmarks con modelos cerrados top.</p>
+      <p class="why">Es el modelo open-weight más fuerte para coding de su clase — si necesitas self-hosting para datos sensibles o control total del pipeline, esta es tu mejor opción hoy.</p>
+      <p class="source"><a href="https://www.buildmvpfast.com/blog/kimi-k3-1-pro-open-model-coding-pricing-2026">BuildMVPFast</a> &bull; <a href="https://www.dsebastien.net/kimi-k3-1-pro/">DSébastien</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 MCPCore: crea y hostea servidores MCP sin código desde un canvas visual</h3>
+      <p class="what">MCPCore es una plataforma cloud no-code/low-code para construir, testear y deployar servidores MCP. Ofrece un canvas visual donde arrastras pasos (queries, HTTP requests, transforms, condiciones) y publicas endpoints HTTPS seguros compatibles con cualquier cliente MCP como Claude o Cursor.</p>
+      <p class="why">Si quieres exponer tu servicio o API como herramienta para agentes AI sin montar infra MCP desde cero, esto te ahorra semanas de setup.</p>
+      <p class="source"><a href="https://www.productcool.com/product/mcpcore-2">ProductCool</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Personal Finance: conecta tus cuentas bancarias vía Plaid</h3>
+      <p class="what">Anthropic lanzó Personal Finance en beta para suscriptores Pro, Max y Ultra en EE.UU. Claude se conecta a cuentas bancarias y tarjetas de crédito a través de Plaid en modo solo lectura, sin recibir contraseñas bancarias. Genera gráficos de gasto semanal, calendarios de vencimientos y dashboards financieros editables.</p>
+      <p class="why">Es el primer ejemplo mainstream de un LLM conectándose a datos financieros reales del usuario — señala hacia dónde van las integraciones de datos personales en productos AI.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/">TechCrunch</a> &bull; <a href="https://plaid.com/blog/plaid-anthropic-financial-insights-in-claude/">Plaid Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Message Threads API: beta pública para agentes de larga duración</h3>
+      <p class="what">La Messages API de Claude ahora soporta threads en beta pública: el estado de la conversación se mantiene en el servidor, y cada request subsiguiente solo envía mensajes nuevos. En conversaciones de 500K-1M tokens, el TTFT se reduce ~35%.</p>
+      <p class="why">Si construyes agentes que mantienen conversaciones largas, esto reduce latencia dramáticamente sin cambiar tu lógica — solo agregas un parámetro `thread`.</p>
+      <p class="source"><a href="https://claude.com/blog/message-threads">Anthropic</a> &bull; <a href="https://thenextweb.com/news/Anthropic-message-threads-beta-Claude-api-agents">The Next Web</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Enterprise: Security Center y IP Allowlist self-serve</h3>
+      <p class="what">Anthropic lanzó un Security Center que compara la configuración de tu organización contra las recomendaciones de seguridad, con reportes descargables para auditorías. Además, los admins Enterprise ahora pueden configurar IP allowlists directamente desde la consola sin contactar a Anthropic.</p>
+      <p class="why">Para equipos que necesitan compliance antes de aprobar Claude en producción, esto elimina fricción en el proceso de seguridad corporativa.</p>
+      <p class="source"><a href="https://claude.com/blog/claude-enterprise-security-updates">Anthropic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Aviso: Fast mode para Claude Opus 4.8 se elimina el 30 de noviembre</h3>
+      <p class="what">Anthropic anunció la deprecación de fast mode para Claude Opus 4.8, con fecha de eliminación el 30 de noviembre de 2026. Los usuarios deben migrar a Opus 5.5 para mantener el modo rápido.</p>
+      <p class="why">Si tu pipeline depende de Opus 4.8 con fast mode, tienes 3 semanas para testear la migración a Opus 5.5 y validar que los outputs sean equivalentes.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>AI fitness coaching de próxima generación: entender el cuerpo, no solo los datos</h3>
+      <p class="what">Brayden Chance argumenta que la próxima ola de AI fitness coaching se diferenciará por síntesis contextual: cruzar sueño con dolor muscular, carga reciente con tendencias a largo plazo, y adaptar recomendaciones al estado fisiológico real del usuario. El enfoque actual de "más datos = mejor" no es suficiente.</p>
+      <p class="why">Si estás construyendo en el vertical de fitness o coaching, el diferenciador no es más sensores sino mejor interpretación cruzada de los datos que ya tienes.</p>
+      <p class="source"><a href="https://ritzherald.com/brayden-chance-explores-why-ai-fitness-coaching-needs-to-understand-the-human-body">Ritz Herald</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 07/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
