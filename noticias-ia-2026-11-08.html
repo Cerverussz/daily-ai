@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 8 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>8 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI lanza GPT Image 2.6: GIFs animados, edici&oacute;n por selecci&oacute;n y 50% m&aacute;s r&aacute;pido en API</h3>
+      <p class="what">OpenAI lanz&oacute; ChatGPT Images 2.6 el 4 de noviembre con generaci&oacute;n de GIFs animados, im&aacute;genes hasta 4K, y edici&oacute;n puntual circulando zonas de la imagen. En la API llegan dos modelos nuevos &mdash; Flare (r&aacute;pido, ~6 segundos) y Sunburst (alta calidad con export SVG) &mdash; ambos 50% m&aacute;s r&aacute;pidos que la generaci&oacute;n anterior.</p>
+      <p class="why">Si tu producto genera contenido visual &mdash; thumbnails para marketplaces, assets para onboarding &mdash; Flare en API es la opci&oacute;n m&aacute;s r&aacute;pida y econ&oacute;mica para automatizar generaci&oacute;n a escala.</p>
+      <p class="source"><a href="https://betanews.com/article/chatgpt-images-gifs-faster-generation/">BetaNews</a> &bull; <a href="https://aiweekly.co/alerts/openai-ships-chatgpt-images-26-with-gifs-and-faster-api-models">AI Weekly</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 JetBrains lanza ThinkRail: IDE ag&eacute;ntico open-source con aislamiento por git worktree</h3>
+      <p class="what">JetBrains (v&iacute;a su Innovation Hub) public&oacute; ThinkRail bajo Apache 2.0, un IDE construido sobre el agente de coding &ldquo;pi&rdquo; donde cada tarea corre en su propio git worktree y branch. Soporta m&uacute;ltiples sesiones de agente en paralelo con desarrollo guiado por specs en Markdown.</p>
+      <p class="why">Si usas IntelliJ y quieres agentes de coding que no toquen tu checkout principal, ThinkRail resuelve exactamente ese problema sin vendor lock-in.</p>
+      <p class="source"><a href="https://dev.to/slabb/jetbrains-open-sourced-an-agentic-ide-where-agents-never-touch-your-checkout-22hc">DEV Community</a> &bull; <a href="https://devops.com/recursive-flint-puts-a-fast-agentic-coding-model-on-developers-laptops">DevOps.com</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Kimi K3.1 Pro: modelo open-weight de 2.8T par&aacute;metros con 1M de contexto para coding</h3>
+      <p class="what">Moonshot AI liber&oacute; Kimi K3.1 Pro, un modelo MoE con 2.8T par&aacute;metros totales (104B activos) y contexto de 1M tokens. Reporta 65.7% en Terminal-Bench 4.0, superando a GPT-6 Astra y acerc&aacute;ndose a Claude Opus 5.5 (66.4%). Incluye variante Highspeed para inferencia r&aacute;pida.</p>
+      <p class="why">Un modelo open-weight que compite con los mejores cerrados en coding agente &mdash; ideal para pipelines de desarrollo donde necesitas control total del modelo sin depender de APIs externas.</p>
+      <p class="source"><a href="https://www.unite.ai/moonshot-ai-releases-kimi-k3-1-pro-first-model-in-new-k3-1-series/">Unite.AI</a> &bull; <a href="https://www.datacamp.com/blog/kimi-k3-1-pro">DataCamp</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Recursive Flint: modelo de coding de 40B que corre en laptops a 100+ tokens/segundo</h3>
+      <p class="what">Recursive (fundada por Richard Socher) lanz&oacute; Flint bajo Apache 2.0, un modelo MoE de 40B par&aacute;metros (2.5B activos) dise&ntilde;ado para coding local. Corre offline en laptops con 48GB de RAM a m&aacute;s de 100 tokens/s, con 74.2% en SWE-bench Verified. Disponible en Ollama, LM Studio y llama.cpp.</p>
+      <p class="why">El primer modelo de coding local que realmente compite en benchmarks ag&eacute;nticos &mdash; perfecto para coding asistido sin env&iacute;ar tu c&oacute;digo a la nube.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/">TechCrunch</a> &bull; <a href="https://devops.com/recursive-flint-puts-a-fast-agentic-coding-model-on-developers-laptops">DevOps.com</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>METR confirma: el progreso de capacidades de Anthropic se duplic&oacute; gracias a AI en I+D</h3>
+      <p class="what">La organizaci&oacute;n independiente METR public&oacute; el 5 de noviembre su evaluaci&oacute;n de aceleraci&oacute;n en I+D de Anthropic. Estima que los benchmarks de capacidades mejoran ~1.9x m&aacute;s r&aacute;pido que antes de octubre 2025, y atribuye ~80% de esa aceleraci&oacute;n al uso de AI en el propio proceso de investigaci&oacute;n.</p>
+      <p class="why">Esto confirma que la velocidad de mejora de los modelos se est&aacute; acelerando &mdash; lo que construyas hoy sobre limitaciones actuales puede quedar obsoleto m&aacute;s r&aacute;pido de lo que planeas.</p>
+      <p class="source"><a href="https://www.fastcompany.com/91636791/anthropic-metr-ai-claude-acceleration">Fast Company</a> &bull; <a href="https://lesswrong.com/posts/N5AmYkRks5CqAxvBg/metr-independent-assessment-of-ai-r-and-d-acceleration-at">LessWrong</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI cierra ronda de $11B a valuaci&oacute;n de $1.25T &mdash; y anuncia Dots, agentes aut&oacute;nomos con computadora propia</h3>
+      <p class="what">OpenAI confirm&oacute; una ronda de $11 mil millones a $1.25 trillones de valuaci&oacute;n. En paralelo, Dots &mdash; anunciados en DevDay &mdash; son agentes siempre-activos con GPT-6 Astra que reciben su propia computadora cloud, navegador y acceso a 4,000+ apps para ejecutar tareas aut&oacute;nomas.</p>
+      <p class="why">Dots cambia el modelo mental: en vez de &ldquo;llama a una API&rdquo;, delegas tareas completas a un agente con su propio entorno &mdash; esto es la competencia directa para los workflows que est&aacute;s automatizando.</p>
+      <p class="source"><a href="https://openai.com/index/devday-2026-recap/">OpenAI DevDay Recap</a> &bull; <a href="https://learnrudi.com/insights/rudi-daily-ai-news-2026-11-07.html">Learn RUDI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Cerebral Valley AI Summit el 12 de noviembre: el evento de founders construyendo con AI</h3>
+      <p class="what">Newcomer organiza el Cerebral Valley AI Summit el pr&oacute;ximo jueves 12 de noviembre en San Francisco, con founders de la lista &ldquo;Emergent&rdquo; de startups AI. El foco est&aacute; en equipos peque&ntilde;os construyendo productos reales, no corporate AI.</p>
+      <p class="why">Si est&aacute;s buscando co-founders, early adopters o simplemente validar tu idea con otros builders, este es el evento de referencia esta semana.</p>
+      <p class="source"><a href="https://www.newcomer.co/p/emergent-2026">Newcomer</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude lanza Personal Finance: conecta tus cuentas bancarias y analiza tus gastos con AI</h3>
+      <p class="what">Anthropic lanz&oacute; Personal Finance el 5 de noviembre como beta para suscriptores Pro, Max y Ultra en EE.UU. Conecta cuentas bancarias, tarjetas y cr&eacute;ditos v&iacute;a Plaid (solo lectura) y permite preguntar sobre gastos, cobros duplicados, suscripciones y patrones financieros con hasta 2 a&ntilde;os de historial.</p>
+      <p class="why">Anthropic est&aacute; convirtiendo a Claude de herramienta de trabajo a asistente personal integral &mdash; esto redefine qu&eacute; significa &ldquo;stickiness&rdquo; para un producto AI.</p>
+      <p class="source"><a href="https://9to5mac.com/2026/11/05/anthropic-upgrades-claude-with-new-personal-finance-feature/">9to5Mac</a> &bull; <a href="https://www.androidauthority.com/claude-personal-finance-launch-3732213/">Android Authority</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Message Threads en la API de Claude: 35% menos latencia para agentes de larga duraci&oacute;n</h3>
+      <p class="what">Anthropic lanz&oacute; Message Threads en beta p&uacute;blica el 2 de noviembre. Los agentes env&iacute;an la conversaci&oacute;n completa solo una vez; en turnos posteriores solo mandan el mensaje nuevo + ID del &uacute;ltimo reply. El resultado: ~35% menos tiempo al primer token en conversaciones de 500K&ndash;1M tokens.</p>
+      <p class="why">Si tu producto usa Claude para agentes multi-turno, esto reduce latencia percibida sin cambiar una l&iacute;nea de l&oacute;gica &mdash; solo agrega el header de beta.</p>
+      <p class="source"><a href="https://claude.com/blog/message-threads">Blog de Claude</a> &bull; <a href="https://thenextweb.com/news/anthropic-message-threads-beta-claude-api-agents">The Next Web</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Code v2.1.319: tareas MCP en background, Monitor en Desktop y alerta de seguridad de email</h3>
+      <p class="what">Las versiones 2.1.317&ndash;2.1.319 de Claude Code (primera semana de noviembre) traen tareas MCP que se mueven autom&aacute;ticamente al background, un nuevo Monitor tool en Claude Desktop para observar comandos en ejecuci&oacute;n, y un prompt de seguridad que alerta antes de enviar tu email por herramientas web o shell.</p>
+      <p class="why">Cada release hace a Claude Code m&aacute;s viable como agente de desarrollo aut&oacute;nomo &mdash; las tareas MCP en background eliminan bloqueos en flujos de CI/CD.</p>
+      <p class="source"><a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Health (ex-Fitbit) expande coach AI con Gemini a iPhone, Apple Watch y 5 nuevos pa&iacute;ses</h3>
+      <p class="what">El coach de salud con Gemini de Fitbit (ahora rebrandeado como Google Health desde mayo 2026) se expandi&oacute; a iOS, Apple Watch y 5 mercados nuevos (UK, Canad&aacute;, Australia, Nueva Zelanda, Singapur). El asistente conversacional adapta entrenamientos y consejos de bienestar usando datos de wearables, equipamiento disponible y objetivos personales.</p>
+      <p class="why">Google est&aacute; construyendo el est&aacute;ndar de &ldquo;coach AI + wearable data&rdquo; &mdash; si est&aacute;s en sports tech, tu producto compite contra esto o se integra con Health Connect.</p>
+      <p class="source"><a href="https://www.techrepublic.com/article/news-fitbit-ai-coach-expands-ios-five-markets/">TechRepublic</a> &bull; <a href="https://www.eweek.com/news/fitbit-gemini-health-coach/">eWeek</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 08/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
