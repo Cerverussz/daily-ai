@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 9 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>9 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic lanza Claude Fable 5.2 y Mythos 5.2 antes de su IPO</h3>
+      <p class="what">Anthropic presentó el 9 de noviembre las versiones 5.2 de Fable y Mythos, sus modelos de nueva generación. Fable 5.2 es 30% más rápido que su predecesor a $8/$40 por millón de tokens input/output, con ventana de 1M tokens y adaptive thinking. Mythos 5.2 sigue siendo de acceso restringido para organizaciones verificadas.</p>
+      <p class="why">Si usas Claude en producción, Fable 5.2 baja latencia sin subir precio &mdash; evalúa migrar tus pipelines desde 5.1 esta semana.</p>
+      <p class="source"><a href="https://finance.yahoo.com/technology/article/anthropic-debuts-claude-fable-52-and-mythos-52-models-as-ipo-nears-190405087.html">Yahoo Finance</a> &bull; <a href="https://invezz.com/news/2026/11/10/anthropic-releases-new-cheaper-and-faster-claude-models-ahead-of-ipo/">Invezz</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic avanza hacia IPO: revenue de $17B en Q3 y $895B en compromisos de cómputo</h3>
+      <p class="what">La S-1 enmendada de Anthropic revela ~$17B de revenue en Q3 2026 y $895.4B en compromisos de cómputo. Más del 80% del revenue viene de clientes enterprise. La salida a bolsa se espera en Nasdaq con valuación por encima de $1T.</p>
+      <p class="why">El volumen enterprise confirma que Claude es infraestructura de producción, no un juguete &mdash; construir sobre su API es apostar a un proveedor que no va a desaparecer.</p>
+      <p class="source"><a href="https://www.bloomberg.com/anthropic">Bloomberg</a> &bull; <a href="https://letsdatascience.com/blog/anthropic-revenue-doubled-60-billion-ipo-october-2026">LetDataScience</a></p>
+    </div>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Meta adquiere Conductor: agentes de coding corriendo en paralelo</h3>
+      <p class="what">Meta compró Conductor, startup que permite correr múltiples agentes AI (Claude Code, Codex, Cursor) en copias separadas del codebase y luego revisar y mergear el output. El equipo se une a Meta Superintelligence Labs. El servicio cloud cierra el 20 de noviembre; la app desktop seguirá hasta inicios de 2027.</p>
+      <p class="why">La adquisición valida el patrón de multi-agent coding como el futuro del desarrollo &mdash; si estás armando workflows con un solo agente, ya estás atrasado.</p>
+      <p class="source"><a href="https://axios.com/2026/11/04/meta-acquires-ai-coding-startup-conductor">Axios</a> &bull; <a href="https://www.infoworld.com/article/4245065/meta-acquires-conductor-as-ai-coding-shifts-toward-multi-agent-development.html">InfoWorld</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI adquiere Pierre Computer para expandir Codex con Git nativo</h3>
+      <p class="what">OpenAI anunció la adquisición de Pierre Computer, creadores de Code Storage (backend Git distribuido) y las librerías open-source Trees y Diffs que Codex ya usa. Los proyectos open-source seguirán abiertos y los clientes existentes de Code Storage podrán seguir usándolo.</p>
+      <p class="why">OpenAI está construyendo su propia capa de code management &mdash; si tu producto depende de GitHub como única integración de Git, considera que Codex podría ofrecer una alternativa integrada pronto.</p>
+      <p class="source"><a href="https://openai.com/es-ES/index/openai-to-acquire-pierre/">OpenAI</a> &bull; <a href="https://letsdatascience.com/news/openai-to-acquire-pierre-maker-of-the-trees-and-diffs-librar-ffba09b1">LetsDataScience</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Goldman Sachs restringe Claude Code y herramientas de coding AI a equipos de ingeniería</h3>
+      <p class="what">Goldman Sachs limitó el uso de Claude Code, GitHub Copilot y herramientas similares exclusivamente a sus equipos de ingeniería. Traders y banqueros ya no pueden usar estas herramientas por preocupaciones de riesgo y compliance.</p>
+      <p class="why">Señal clara de que las empresas reguladas están segmentando el acceso a coding AI por rol &mdash; si vendes B2B, tu producto necesita controles de acceso granulares por equipo.</p>
+      <p class="source"><a href="https://dev.to/gksu_demirci_56f752953e7/weekly-ai-digest-november-9-2026-p6a">DEV Community - Weekly AI Digest</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Thinking Machines lanza Inkling 2 Small: MoE de 594B con pesos abiertos</h3>
+      <p class="what">Thinking Machines Lab lanzó Inkling 2 Small el 5 de noviembre: modelo MoE con 594B parámetros totales y 17B activos, con entrada de imagen y razonamiento variable. Precio en Tinker: $0.30/$1.00 por millón de tokens. Los pesos se liberarán bajo Apache 2.0 tras red-teaming externo.</p>
+      <p class="why">A 17B activos con benchmarks competitivos en coding, es candidato serio para self-hosting si necesitas un modelo capaz sin pagar APIs cloud.</p>
+      <p class="source"><a href="https://letsdatascience.com/news/thinking-machines-lab-releases-inkling-2-small-a-594b-moe-mo-2b2a96ce">LetsDataScience</a> &bull; <a href="https://www.vals.ai/models/thinkingmachines_inkling-2-small">Vals.ai</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft Foundry Local llega a Android: modelos AI on-device para devs</h3>
+      <p class="what">Microsoft lanzó Foundry Local para Android, permitiendo ejecutar modelos AI directamente en dispositivos móviles sin conexión cloud. Es parte de su push para llevar inferencia on-device al ecosistema de desarrollo móvil, complementando a Gemma 4 en AICore de Google.</p>
+      <p class="why">Otra opción para correr AI offline en tu app Android &mdash; ahora tienes Google AICore y Microsoft Foundry Local compitiendo por el on-device, lo que acelera la madurez del stack.</p>
+      <p class="source"><a href="https://www.c-sharpcorner.com/news/microsoft-unveils-foundry-local-on-android-bringing-true-ondevice-ai-to-mobile-developers">C# Corner</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI publica Pando: su backend Git interno diseñado para agentes</h3>
+      <p class="what">OpenAI publicó un post de ingeniería sobre Pando, su infraestructura Git interna optimizada para que agentes AI manejen código. La adquisición de Pierre Computer refuerza esta dirección, señalando que el version control para agentes es un problema de infraestructura que OpenAI está resolviendo internamente.</p>
+      <p class="why">Los agentes de coding necesitan primitivas de Git diferentes a las humanas &mdash; si estás construyendo tooling para agentes, este es el patrón de referencia.</p>
+      <p class="source"><a href="https://openai.com/es-ES/index/openai-to-acquire-pierre/">OpenAI Blog</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 ElevenLabs lanza ElevenAgents Campaign Manager: agentes de voz para outbound</h3>
+      <p class="what">ElevenLabs lanzó Campaign Manager dentro de su plataforma ElevenAgents, permitiendo crear y gestionar campañas de llamadas outbound impulsadas por agentes de voz AI. El sistema maneja el flujo completo desde la configuración hasta la ejecución de llamadas a escala.</p>
+      <p class="why">Si tu marketplace o SaaS necesita contactar usuarios por teléfono (onboarding, reactivación, soporte), esto elimina la necesidad de un call center humano para el primer contacto.</p>
+      <p class="source"><a href="https://futuretools.io/news">Future Tools</a> &bull; <a href="https://startupcorners.com/digest/product-digest-2026-11-09">Startup Corners</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Skyfall AI opera negocios reales con sistemas de agentes cooperativos</h3>
+      <p class="what">Skyfall AI, fundada por ex-Microsoft, ahora opera tres pequeños negocios adquiridos usando un sistema de agentes AI cooperativos que manejan pricing, marketing, soporte, finanzas y operaciones. El modelo arrancó con un test en RollerCoaster Tycoon y escaló a empresas reales con una inversión de $1M.</p>
+      <p class="why">Es el primer caso documentado de "AI como operador completo" de un negocio &mdash; la lección para founders es que los agentes ya pueden manejar operaciones de negocios pequeños end-to-end.</p>
+      <p class="source"><a href="https://www.gizmodo.com/this-startup-wants-to-buy-a-company-just-to-see-what-an-ai-ceo-does-with-it-2000789416">Gizmodo</a> &bull; <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-10-2026/">The Neuron</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 ABC Fitness adquiere FitMetrics: AI coaching escalable para entrenadores</h3>
+      <p class="what">ABC Fitness completó la adquisición de FitMetrics, plataforma de AI coaching que permite a entrenadores duplicar (y en algunos casos cuadruplicar) su capacidad de clientes. Se integra como add-on en ABC Trainerize, complementando su AI Churn Predictor y AI Workout Builder existentes.</p>
+      <p class="why">Este es el playbook para marketplaces de servicios profesionales: AI que escala la capacidad del proveedor sin reemplazarlo &mdash; aplica directamente a coaching deportivo, nutrición o cualquier servicio 1-a-1.</p>
+      <p class="source"><a href="https://athletechnews.com/abc-fitness-acquires-fitmetrics-expanding-ai-push-into-coaching/">Athletech News</a> &bull; <a href="https://www.trainerize.com/fitmetrics/">ABC Trainerize</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Peloton IQ expande coaching AI con corrección de forma en tiempo real y patents de workouts adaptativos</h3>
+      <p class="what">Peloton continúa expandiendo Peloton IQ, su sistema de AI coaching con visión por computadora que corrige forma en tiempo real y genera rutinas personalizadas. Nuevas patentes publicadas describen workouts que cambian mid-class basándose en el rendimiento del usuario, con cues generados por AI.</p>
+      <p class="why">La corrección de forma en tiempo real con computer vision es el tipo de feature que diferencia una app de fitness premium &mdash; si estás en sports tech, esto marca el estándar.</p>
+      <p class="source"><a href="https://athletechnews.com/peloton-patents-point-to-a-future-where-ai-workouts-adapt-in-real-time/">Athletech News</a> &bull; <a href="https://theclipout.com/peloton-iq-expands-ai-strategy-to-redefine-connected-fitness/">The Clip Out</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 09/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
