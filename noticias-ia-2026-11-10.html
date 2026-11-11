@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 10 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>10 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Fable 5.2 y Mythos 5.2: nuevos modelos frontier de Anthropic</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Fable 5.2 el 9 de noviembre, su modelo m&aacute;s capaz hasta la fecha con 1M tokens de contexto, 128K de output m&aacute;ximo y pensamiento adaptativo siempre activo. Mythos 5.2 es la misma arquitectura con restricciones de seguridad reducidas, disponible solo para organizaciones verificadas.</p>
+      <p class="why">A $8/$40 por mill&oacute;n de tokens con 1M de contexto nativo, Fable 5.2 es el modelo a evaluar si necesitas agentes de coding de larga duraci&oacute;n o procesamiento masivo de c&oacute;digo.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-fable-and-mythos-5-2">Anthropic</a> &bull; <a href="https://9to5mac.com/2026/11/09/anthropic-upgrades-claude-with-new-fable-5-2-model-details-here/">9to5Mac</a> &bull; <a href="https://platform.claude.com/docs/en/models/fable-5-2/overview">Docs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Meetings: Anthropic convierte reuniones en tareas ejecutables por agentes</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Meetings, que permite agregar a Claude como participante visible en videollamadas. El sistema transcribe, identifica action items y puede delegarlos a agentes Claude autom&aacute;ticamente. Disponible en beta para planes Team y Enterprise.</p>
+      <p class="why">Si tu equipo pierde horas en follow-ups post-reuni&oacute;n, esto automatiza el paso de "notas" a "ejecuci&oacute;n" sin herramientas intermedias.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Whiteboards y Sheets: colaboraci&oacute;n visual y datos con AI nativo</h3>
+      <p class="what">Junto a Meetings, Anthropic present&oacute; Whiteboards para diagramas colaborativos y Sheets para hojas de c&aacute;lculo editables con Claude integrado. Ambos productos convierten a Claude en una plataforma de productividad completa, no solo un chat.</p>
+      <p class="why">La estrategia de Anthropic de construir herramientas de trabajo alrededor de Claude significa que tus integraciones MCP ahora pueden conectar con m&aacute;s superficies de interacci&oacute;n.</p>
+      <p class="source"><a href="https://blockchain.news/news/anthropic-launches-claude-whiteboards-sheets-data">Blockchain.News</a> &bull; <a href="https://releasebot.io/updates/anthropic">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones tecnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google publica "Agent Distraction": c&oacute;digo muerto descarrila a tus agentes de coding</h3>
+      <p class="what">Ingenieros de Google documentaron c&oacute;mo TODOs obsoletos, c&oacute;digo muerto y patrones deprecated hacen que agentes de coding investiguen bugs ya resueltos o sigan caminos incorrectos. En sus logs internos, estas distracciones aumentaron los pasos un 70% y los tokens un 77%.</p>
+      <p class="why">Si usas Claude Code o Cursor en tu codebase, limpiar TODOs y c&oacute;digo muerto ya no es deuda t&eacute;cnica est&eacute;tica: tiene impacto directo en el costo y calidad de tus agentes.</p>
+      <p class="source"><a href="https://developers.googleblog.com/agent-distraction/">Google Developers Blog</a> &bull; <a href="https://thenewstack.io/coding-agents-developer-neglect/">The New Stack</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Grok 4.8 termina pre-entrenamiento: xAI entra en fase de RL</h3>
+      <p class="what">xAI confirm&oacute; que Grok 4.8 complet&oacute; su pre-entrenamiento y est&aacute; en reinforcement learning. Se espera un soft rollout a usuarios de Grok Bot esta semana antes de disponibilidad general.</p>
+      <p class="why">Otro competidor frontier entrando al mercado; relevante si est&aacute;s evaluando modelos para tu stack de agentes y quieres diversificar proveedores.</p>
+      <p class="source"><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-10-2026/">The Neuron</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>DeepMind usa AI para verificar formalmente la seguridad del protocolo Signal</h3>
+      <p class="what">Google DeepMind utiliz&oacute; un framework ag&eacute;ntico basado en AlphaProof Code para generar pruebas matem&aacute;ticas formales de propiedades clave de seguridad del c&oacute;digo de Signal. Es la primera verificaci&oacute;n formal asistida por AI de un protocolo criptogr&aacute;fico en producci&oacute;n masiva.</p>
+      <p class="why">La verificaci&oacute;n formal con AI de c&oacute;digo en producci&oacute;n real abre la puerta a validar autom&aacute;ticamente la seguridad de tus propios sistemas cr&iacute;ticos.</p>
+      <p class="source"><a href="https://riorundown.substack.com/p/ai-news-nov-10-2026-ai-security-and">Rio Rundown</a> &bull; <a href="https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-10">AI Frontier Daily</a></p>
+    </div>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 ChatGPT Enterprise llega a AWS Marketplace: compra con tu commit de cloud</h3>
+      <p class="what">OpenAI lanz&oacute; ChatGPT Enterprise en AWS Marketplace el 9 de noviembre, permitiendo a empresas comprarlo contra sus compromisos de gasto en AWS (EDP/PPA). Incluye acceso a ChatGPT for Healthcare y Financial Services para clientes elegibles.</p>
+      <p class="why">Si tu empresa ya tiene un commit con AWS, ahora puedes desplegar ChatGPT Enterprise sin presupuesto adicional; esto acelera la adopci&oacute;n enterprise de AI en tu organizaci&oacute;n.</p>
+      <p class="source"><a href="https://openai.com/index/chatgpt-enterprise-aws-marketplace/">OpenAI</a> &bull; <a href="https://www.siliconreport.com/openai-brings-chatgpt-enterprise-to-aws-marketplace">Silicon Report</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Fireworks AI sufre m&uacute;ltiples ciberataques: datos de clientes y modelos expuestos</h3>
+      <p class="what">La plataforma de inference Fireworks AI revel&oacute; que sufri&oacute; m&uacute;ltiples ciberataques que expusieron informaci&oacute;n de clientes y partes de modelos AI no finalizados. Es uno de los primeros incidentes p&uacute;blicos de seguridad en un proveedor de inference-as-a-service.</p>
+      <p class="why">Si usas proveedores de inference terceros, este es un recordatorio de evaluar su postura de seguridad y tener plan B; tus modelos fine-tuneados son propiedad intelectual en riesgo.</p>
+      <p class="source"><a href="https://riorundown.substack.com/p/ai-news-nov-10-2026-ai-security-and">Rio Rundown</a></p>
+    </div>
+
+    <!-- EJE 3: Creacion de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Harvard: AI dispar&oacute; la creaci&oacute;n de c&oacute;digo pero el impacto en software real es menor</h3>
+      <p class="what">Investigadores de Harvard encontraron que las herramientas AI aumentaron dr&aacute;sticamente la producci&oacute;n de c&oacute;digo, pero el impacto en software terminado y funcional es notablemente menor, sin efecto discernible (a&uacute;n) en el empleo de desarrolladores.</p>
+      <p class="why">Si est&aacute;s construyendo producto, m&aacute;s c&oacute;digo generado no significa m&aacute;s producto enviado; el cuello de botella sigue siendo dise&ntilde;o, arquitectura y decisi&oacute;n, exactamente donde un founder t&eacute;cnico agrega valor.</p>
+      <p class="source"><a href="https://www.ptechpartners.com/2026/11/10/ai-software-development-2027-more-code-and-faster-but-is-it-better/">Peterson Technology Partners</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Goldman Sachs restringe AI coding tools solo a ingenieros</h3>
+      <p class="what">Goldman Sachs limit&oacute; herramientas como Claude Code y GitHub Copilot exclusivamente a equipos de ingenier&iacute;a, retir&aacute;ndolas de banqueros y traders por preocupaciones de riesgo y productividad real.</p>
+      <p class="why">Se&ntilde;al de que enterprise est&aacute; madurando en c&oacute;mo adopta AI: no es "para todos", sino para quien puede validar el output; tu producto deber&iacute;a considerar permisos por rol.</p>
+      <p class="source"><a href="https://dev.to/magnus_ferm/dev-news-digest-11-nov-2026-0600-2ag7">DEV Community</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>AI reduce 46% el tiempo de revisi&oacute;n de ecocardiogramas por cardi&oacute;logos</h3>
+      <p class="what">Un estudio publicado encontr&oacute; que herramientas AI redujeron el tiempo que cardi&oacute;logos necesitan para revisar ecocardiogramas en un 46%, manteniendo precisi&oacute;n diagn&oacute;stica. Es una de las validaciones cl&iacute;nicas m&aacute;s contundentes de AI en cardiolog&iacute;a.</p>
+      <p class="why">Para builders en health-tech: la evidencia cl&iacute;nica de AI como copiloto m&eacute;dico se acumula; los marketplaces de servicios de salud que integren AI diagnostica tendr&aacute;n ventaja competitiva real.</p>
+      <p class="source"><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-10-2026/">The Neuron</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 10/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
