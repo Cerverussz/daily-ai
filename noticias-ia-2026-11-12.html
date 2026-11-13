@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 12 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>12 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 fakecloud: emulador AWS open-source en Rust, construido con enjambre de agentes AI</h3>
+      <p class="what">fakecloud es un emulador local de AWS escrito en Rust que corre como un solo binario sin Docker ni cuenta AWS. Cubre 100+ servicios con conformidad Smithy, arranca en ~500ms, y tiene test SDKs en 6 lenguajes. Fue construido masivamente con agentes AI, acumulando ~30K commits en sus primeras semanas.</p>
+      <p class="why">Si testeas contra AWS en CI o local, esto reemplaza LocalStack (que ahora requiere auth token) con zero config y zero costo.</p>
+      <p class="source"><a href="https://dev.to/vieiralucas/why-im-building-a-free-open-source-aws-emulator-5gfl">DEV Community</a> &bull; <a href="https://awesome.ecosyste.ms/projects/github.com%2Ffaiscadev%2Ffakecloud">Ecosyste.ms</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>NVIDIA dona OpenShell al CNCF: seguridad runtime para agentes AI como infraestructura abierta</h3>
+      <p class="what">NVIDIA transfiri&oacute; OpenShell, su runtime open-source de seguridad para agentes aut&oacute;nomos, al Cloud Native Computing Foundation como proyecto Sandbox. Usa Cedar como lenguaje de pol&iacute;ticas y controles a nivel de infraestructura (Landlock filesystem, network per-binary). Cisco, CrowdStrike, Google Cloud y Microsoft son partners.</p>
+      <p class="why">Si construyes agentes que ejecutan acciones en producci&oacute;n, ahora hay un est&aacute;ndar abierto para gobernarlos en vez de armar tu propia capa de permisos.</p>
+      <p class="source"><a href="https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/">NVIDIA Blog</a> &bull; <a href="https://nvidia.github.io/OpenShell-Research/dev-notes/posts/2026-11-09-donated-openshell-to-cncf/">NVIDIA Dev Notes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Amazon Bedrock AgentCore CLI llega a v1.0 estable</h3>
+      <p class="what">El CLI de AgentCore alcanz&oacute; su primera versi&oacute;n estable, permitiendo testear y desplegar agentes en Bedrock desde terminal con flujo reproducible. Incluye emulador local para desarrollo sin deploy a AWS.</p>
+      <p class="why">Para equipos que ya est&aacute;n en el ecosistema AWS, esto cierra el gap entre prototipo local y producci&oacute;n de agentes.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones tecnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Fable 5.2 y Mythos 5.2 disponibles con ventana de 1M tokens</h3>
+      <p class="what">Anthropic lanz&oacute; Claude Fable 5.2 y Mythos 5.2 (acceso restringido) el 9 de noviembre. Ambos soportan 1 mill&oacute;n de tokens de contexto. Fable 5.2 est&aacute; disponible en la API y Claude Code; Mythos 5.2 requiere acceso aprobado para trabajo t&eacute;cnico avanzado.</p>
+      <p class="why">1M de contexto nativo en Fable significa que puedes procesar codebases enteros o documentaci&oacute;n masiva en una sola llamada sin chunking.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot - Anthropic</a> &bull; <a href="https://claudelog.com/claude-news/">Claude Log</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Nuevos MCP servers: Basis y Cision para marketing conectado a agentes AI</h3>
+      <p class="what">Se lanzaron servidores MCP para Basis (programmatic advertising) y Cision (PR y media monitoring), permitiendo que agentes de Claude, ChatGPT o custom agents consulten y operen estas plataformas directamente.</p>
+      <p class="why">Cada nuevo MCP server es un canal m&aacute;s que tus agentes pueden usar sin integraci&oacute;n custom; si tu producto tiene API, exponerla via MCP es ahora table stakes.</p>
+      <p class="source"><a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-november-12-2026">AI Agents Directory</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Bug cr&iacute;tico en llm CLI (v0.37.2): API keys pod&iacute;an filtrarse a endpoints terceros</h3>
+      <p class="what">La herramienta de l&iacute;nea de comandos <code>llm</code> corrigi&oacute; en v0.37.2 un bug que pod&iacute;a enviar API keys a endpoints de terceros cuando se usaban custom endpoints. La actualizaci&oacute;n es urgente para cualquiera con configuraciones personalizadas.</p>
+      <p class="why">Si usas <code>llm</code> CLI con providers custom, actualiza inmediatamente; un leak de API keys puede costarte miles en minutos.</p>
+      <p class="source"><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/">The Neuron</a></p>
+    </div>
+
+    <!-- EJE 3: Creacion de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Breach en Fireworks AI expone datos de Notion, Cursor y otros clientes</h3>
+      <p class="what">Fireworks AI, proveedor de inferencia usado por Notion, Cursor y Harvey, sufri&oacute; dos brechas de seguridad en octubre. Se expusieron transcripciones de chat de Notion AI (feature Insights) de menos del 1% de workspaces, adem&aacute;s de datasets y model weights de otros clientes. Notion cort&oacute; conexi&oacute;n el 3 de noviembre.</p>
+      <p class="why">Lecci&oacute;n directa para founders: tu cadena de proveedores de inferencia AI es superficie de ataque; eval&uacute;a qu&eacute; datos env&iacute;as a terceros y ten un plan de corte.</p>
+      <p class="source"><a href="https://notion.com/help/security-incident-involving-a-third-party-ai-vendor">Notion Security Advisory</a> &bull; <a href="https://bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack">BleepingComputer</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic rumbo a IPO: roadshow activo, ticker ANT en Nasdaq</h3>
+      <p class="what">Anthropic inici&oacute; el roadshow de su IPO el 10 de noviembre, con rango estimado de $70-$78 por acci&oacute;n bajo el s&iacute;mbolo ANT en Nasdaq. El timing coincide con el lanzamiento agresivo de productos enterprise (Meetings, Sheets, Whiteboards).</p>
+      <p class="why">El IPO presionar&aacute; a Anthropic a monetizar m&aacute;s agresivamente; espera cambios en pricing de API y l&iacute;mites de planes en los pr&oacute;ximos meses.</p>
+      <p class="source"><a href="https://techbuzz.ai/articles/anthropic-launches-claude-meetings-days-before-ipo">TechBuzz AI</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic lanza Claude Meetings, Whiteboards y Sheets en beta</h3>
+      <p class="what">Anthropic lanz&oacute; tres productos el 10 de noviembre: Claude Meetings (asistente en videollamadas, arranca con Google Meet), Claude Whiteboards (canvas colaborativo que se construye en tiempo real durante reuniones), y Claude Sheets (hojas de c&aacute;lculo con f&oacute;rmulas, multi-tab, export a Excel). Claude Data e Interactive Connectors pasan a GA.</p>
+      <p class="why">Anthropic est&aacute; construyendo una suite de productividad completa; si vendes herramientas de productividad AI, tu competidor ahora es tambi&eacute;n Claude directamente.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/">TechCrunch</a> &bull; <a href="https://www.iclarified.com/103419/anthropic-launches-claude-sheets-and-whiteboards-previews-meetings">iClarified</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic depreca fast mode para Claude Opus 4.8 (retiro: 30 nov)</h3>
+      <p class="what">El fast mode de Opus 4.8 fue marcado como deprecated y se eliminar&aacute; el 30 de noviembre. Usuarios que depend&iacute;an de este modo para latencia baja deber&aacute;n migrar a Fable o ajustar su pipeline.</p>
+      <p class="why">Si tu producto usa Opus con fast mode en producci&oacute;n, tienes 18 d&iacute;as para migrar antes de que se rompa.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot - Anthropic</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google integra coach AI con Gemini en Fitbit Premium</h3>
+      <p class="what">Google expandi&oacute; su AI coach basado en Gemini dentro de Fitbit Premium, funcionando como entrenador personal, coach de sue&ntilde;o y asesor de bienestar en una sola app. Usa datos de wearable para personalizar recomendaciones en tiempo real.</p>
+      <p class="why">El patr&oacute;n wearable + LLM + datos personales es el blueprint para cualquier marketplace de coaching deportivo o bienestar que quiera escalar sin depender solo de humanos.</p>
+      <p class="source"><a href="https://ministryofsport.com/google-launches-gemini-powered-personal-health-coach-in-fitbit-ecosystem/">Ministry of Sport</a> &bull; <a href="https://getcoai.com/news/google-adds-gemini-ai-coach-to-fitbit-premium-this-october/">CO/AI</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Equipos NBA y Premier League adoptan AI conversacional para monitoreo de atletas</h3>
+      <p class="what">Varios equipos de la NBA y la Premier League est&aacute;n usando check-ins diarios con AI conversacional para recoger datos de dolor, sue&ntilde;o y estr&eacute;s de sus jugadores, automatizando el flujo que antes requer&iacute;a staff dedicado.</p>
+      <p class="why">Si construyes en sports tech, el entry point ya no es solo analytics de rendimiento sino la capa conversacional que captura datos subjetivos del atleta.</p>
+      <p class="source"><a href="https://metavert.io/industry/conversational-ai-for-sports-fitness">Metavert</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 12/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
