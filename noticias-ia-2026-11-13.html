@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News - 13 Nov 2026</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a2e;
+    --card-bg: #f8f9fa;
+    --card-border: #e2e8f0;
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
+    --muted: #64748b;
+    --fire: #ef4444;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f172a;
+      --fg: #e2e8f0;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --accent: #60a5fa;
+      --accent-light: #1e3a5f;
+      --muted: #94a3b8;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f172a;
+    --fg: #e2e8f0;
+    --card-bg: #1e293b;
+    --card-border: #334155;
+    --accent: #60a5fa;
+    --accent-light: #1e3a5f;
+    --muted: #94a3b8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+    padding: 16px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    padding: 24px 0 16px;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 24px;
+  }
+  header h1 { font-size: 1.5rem; font-weight: 700; }
+  header p { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+  .news-item {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 14px;
+  }
+  .news-item h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: var(--accent-light);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .news-item p { font-size: 0.92rem; margin-bottom: 6px; }
+  .why { color: var(--muted); font-style: italic; font-size: 0.88rem; }
+  .source { font-size: 0.82rem; margin-top: 6px; }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+  .fire { color: var(--fire); }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--card-border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Daily AI Briefing</h1>
+  <p>13 de noviembre de 2026 &middot; Noticias curadas para builders</p>
+</header>
+
+<article class="news-item">
+  <span class="tag">Agentes</span>
+  <h2><span class="fire">&#x1F525;</span> OpenAI lanza ChatGPT Wallet: agentes que compran por ti</h2>
+  <p><strong>Qu&eacute; es:</strong> ChatGPT Wallet permite a los agentes "dots" de OpenAI realizar compras en nombre del usuario con aprobaci&oacute;n por transacci&oacute;n, sin que el agente vea los datos de la tarjeta. Funciona con American Express, Mastercard y Visa, inicialmente para suscriptores Pro en EE.UU.</p>
+  <p class="why"><strong>Por qu&eacute; importa:</strong> Define el patr&oacute;n de "agente con billetera" que los marketplaces van a tener que integrar o bloquear &mdash; United Airlines ya bloquea checkouts de agentes.</p>
+  <p class="source"><a href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/" target="_blank">TechCrunch</a></p>
+</article>
+
+<article class="news-item">
+  <span class="tag">Anthropic</span>
+  <h2>Claude Meetings llega a Google Meet en beta</h2>
+  <p><strong>Qu&eacute; es:</strong> Anthropic lanza la beta de Claude Meetings para Google Meet, permitiendo que Claude se una a videollamadas y comience a ejecutar tareas mientras la reuni&oacute;n a&uacute;n est&aacute; en curso. Disponible para usuarios Team y Enterprise de pago.</p>
+  <p class="why"><strong>Por qu&eacute; importa:</strong> Un asistente que convierte discusiones en tareas accionables elimina el cuello de botella de "tomar notas y hacer follow-up" para equipos peque&ntilde;os.</p>
+  <p class="source"><a href="https://dataconomy.com/2026/11/13/anthropic-brings-claude-meetings-to-google-meet-in-beta" target="_blank">Dataconomy</a></p>
+</article>
+
+<article class="news-item">
+  <span class="tag">Anthropic</span>
+  <h2>Anthropic pilotea Managed Agents auto-hospedados para empresas</h2>
+  <p><strong>Qu&eacute; es:</strong> Anthropic comenz&oacute; un programa piloto de Claude Managed Agents en versi&oacute;n self-hosted, permitiendo a empresas ejecutar agentes de IA dentro de su propia infraestructura. Apunta a sectores con requisitos estrictos de compliance y datos.</p>
+  <p class="why"><strong>Por qu&eacute; importa:</strong> Abre la puerta a usar agentes Claude en producci&oacute;n sin enviar datos sensibles fuera de tu entorno &mdash; clave para cualquier producto B2B serio.</p>
+  <p class="source"><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-13-2026/" target="_blank">The Neuron</a></p>
+</article>
+
+<article class="news-item">
+  <span class="tag">Infra</span>
+  <h2><span class="fire">&#x1F525;</span> llama.cpp y ggml alcanzan v1.0.0: API estable para IA local</h2>
+  <p><strong>Qu&eacute; es:</strong> Tras 3.5 a&ntilde;os de desarrollo, llama.cpp (libllama) y ggml (libggml) llegan a v1.0.0 con versionado sem&aacute;ntico, eliminando 35 funciones deprecadas y corrigiendo vulnerabilidades de SSRF y CORS. Los breaking changes solo vendr&aacute;n en versiones major.</p>
+  <p class="why"><strong>Por qu&eacute; importa:</strong> Si est&aacute;s construyendo features de IA on-device o un backend con inferencia local, ahora tienes una base estable sobre la cual construir sin miedo a que se rompa en cada actualizaci&oacute;n.</p>
+  <p class="source"><a href="https://medium.com/data-science-in-your-pocket/llama-cpp-v1-0-0-local-ai-finally-gets-a-stable-foundation-8587fb5619ba" target="_blank">Medium</a> &middot; <a href="https://www.unite.ai/llama-cpp-v1-0-0-sets-api-stability-rules-for-local-ai-tools/" target="_blank">Unite.AI</a></p>
+</article>
+
+<article class="news-item">
+  <span class="tag">Modelos</span>
+  <h2>Claude Fable 5.2 y Mythos 5.2: nuevos modelos de Anthropic</h2>
+  <p><strong>Qu&eacute; es:</strong> Anthropic lanz&oacute; Claude Fable 5.2 (ya el modelo default en Claude Code v2.1.321) y Claude Mythos 5.2 con acceso restringido, ambos con ventanas de contexto de 1M tokens y pensamiento adaptativo. Mythos apunta a razonamiento complejo y tareas de agentes de larga duraci&oacute;n.</p>
+  <p class="why"><strong>Por qu&eacute; importa:</strong> Fable 5.2 como default en Claude Code significa mejor calidad de c&oacute;digo generado sin cambiar nada en tu workflow.</p>
+  <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform" target="_blank">Releasebot</a></p>
+</article>
+
+<article class="news-item">
+  <span class="tag">Marketplaces</span>
+  <h2><span class="fire">&#x1F525;</span> ElevenLabs lanza Marketplace de agentes de voz</h2>
+  <p><strong>Qu&eacute; es:</strong> ElevenLabs abri&oacute; su Marketplace, un directorio de agentes y apps de voz construidos sobre su plataforma, enfocado en healthcare, finanzas y retail. Permite a desarrolladores publicar y monetizar sus voice agents.</p>
+  <p class="why"><strong>Por qu&eacute; importa:</strong> Un marketplace de agentes de voz verticalizados es un modelo de negocio replicable &mdash; si est&aacute;s pensando en un marketplace de servicios profesionales, los voice agents son un canal nuevo.</p>
+  <p class="source"><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-13-2026/" target="_blank">The Neuron</a></p>
+</article>
+
+<article class="news-item">
+  <span class="tag">Dev Tools</span>
+  <h2>GitHub Copilot depreca modelos y agrega GPT-6.1 Terra y Gemini 4 Argon</h2>
+  <p><strong>Qu&eacute; es:</strong> Copilot retirar&aacute; Claude Opus 4.8, Claude Opus 5 y GPT-5.6 Terra el 16 de noviembre. Llegan GPT-6.1 Terra (para todos los planes pagos) y Gemini 4 Argon (Pro+ en adelante) a chat, agentes y completions.</p>
+  <p class="why"><strong>Por qu&eacute; importa:</strong> Si usas Copilot, revisa tu modelo configurado antes del 16 de noviembre para evitar ca&iacute;das silenciosas en calidad de sugerencias.</p>
+  <p class="source"><a href="https://tech-insider.org/github-copilot-4-ai-models-challenge-cursor-2026/" target="_blank">Tech Insider</a></p>
+</article>
+
+<article class="news-item">
+  <span class="tag">Edge AI</span>
+  <h2><span class="fire">&#x1F525;</span> Edge0 open-sourcea modelo on-device de 145B par&aacute;metros</h2>
+  <p><strong>Qu&eacute; es:</strong> Edge0 liber&oacute; Edge0-145B y Edge0-120B como open source, junto con un framework unificado de inferencia y herramientas de deployment para ejecuci&oacute;n local. Prometen capacidades de frontera corriendo completamente en tu hardware.</p>
+  <p class="why"><strong>Por qu&eacute; importa:</strong> Un modelo de 145B corriendo local abre posibilidades para features de IA offline en apps m&oacute;viles y de escritorio sin costos de API.</p>
+  <p class="source"><a href="https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer" target="_blank">Edge0.ai</a></p>
+</article>
+
+<article class="news-item">
+  <span class="tag">Agentes</span>
+  <h2><span class="fire">&#x1F525;</span> United Airlines bloquea compras de agentes IA; Delta las permite</h2>
+  <p><strong>Qu&eacute; es:</strong> United Airlines bloque&oacute; a agentes personales de IA para completar reservas en su sitio (pueden mostrar vuelos pero no pagar). Delta permite que agentes autenticados completen bookings, y American Airlines deja que algunos agentes compren a trav&eacute;s de partners.</p>
+  <p class="why"><strong>Por qu&eacute; importa:</strong> Los marketplaces y plataformas de servicios necesitan decidir ya si van a ser agent-friendly o agent-hostile &mdash; ambas posturas tienen consecuencias de negocio.</p>
+  <p class="source"><a href="https://www.pymnts.com/news/artificial-intelligence/2026/openai-gives-ai-agents-a-wallet-while-blocking-them-from-seeing-the-card/" target="_blank">PYMNTS</a></p>
+</article>
+
+<article class="news-item">
+  <span class="tag">Anthropic</span>
+  <h2>Anthropic en camino a IPO: roadshow iniciado con ticker ANT</h2>
+  <p><strong>Qu&eacute; es:</strong> Anthropic lanz&oacute; su roadshow para IPO el 10 de noviembre con 825M de acciones Clase A, precio esperado de $70-78 por acci&oacute;n, y listing en Nasdaq bajo el s&iacute;mbolo ANT. El S-1 incluye lenguaje de riesgo sobre auto-mejora recursiva de IA.</p>
+  <p class="why"><strong>Por qu&eacute; importa:</strong> Una Anthropic p&uacute;blica significa m&aacute;s presi&oacute;n por monetizar &mdash; espera cambios en pricing y l&iacute;mites de API en los pr&oacute;ximos meses.</p>
+  <p class="source"><a href="https://blog.mean.ceo/anthropic-claude-news-november-2026/" target="_blank">Mean CEO Blog</a></p>
+</article>
+
+<article class="news-item">
+  <span class="tag">Salud</span>
+  <h2>ChatGPT Health integra datos de Peloton y Weight Watchers</h2>
+  <p><strong>Qu&eacute; es:</strong> OpenAI est&aacute; lanzando ChatGPT Health con Peloton y Weight Watchers como partners iniciales, combinando datos de fitness y m&eacute;dicos en una experiencia unificada de IA. Apunta a recomendaciones personalizadas de salud y bienestar.</p>
+  <p class="why"><strong>Por qu&eacute; importa:</strong> La integraci&oacute;n de datos de wearables + historial m&eacute;dico en un solo agente es exactamente el patr&oacute;n que sports tech y wellness apps deber&iacute;an estar construyendo.</p>
+  <p class="source"><a href="https://athletechnews.com/category/tech/page/1/" target="_blank">Athletech News</a></p>
+</article>
+
+<article class="news-item">
+  <span class="tag">Creative AI</span>
+  <h2>World Labs abre Atlas: generaci&oacute;n de escenas 3D desde im&aacute;genes</h2>
+  <p><strong>Qu&eacute; es:</strong> World Labs abri&oacute; Atlas al p&uacute;blico general con herramientas para reconstruir escenas 3D a partir de im&aacute;genes y producir videos o assets 3D. Incluye apps listas y APIs para desarrolladores.</p>
+  <p class="why"><strong>Por qu&eacute; importa:</strong> Para founders construyendo productos con visualizaci&oacute;n 3D (real estate, e-commerce, gaming), esto reduce dr&aacute;sticamente el costo de crear assets.</p>
+  <p class="source"><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-13-2026/" target="_blank">The Neuron</a></p>
+</article>
+
+<footer>
+  Curado autom&aacute;ticamente &middot; Fuentes verificadas cuando fue posible &middot; Las opiniones en "Por qu&eacute; importa" son perspectiva editorial
+</footer>
+
+</body>
+</html>
