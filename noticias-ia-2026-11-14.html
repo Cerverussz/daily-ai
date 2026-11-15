@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 14 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #6c7bdd; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    .tag { display: inline-block; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; margin-left: 6px; vertical-align: middle; }
+    .tag-android { background: #1b3a1b; color: #4caf50; }
+    .tag-marketplace { background: #3a2e1b; color: #ff9800; }
+    .tag-founder { background: #1b2a3a; color: #42a5f5; }
+    footer { text-align: center; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>14 de Noviembre 2026 &mdash; Lo que importa si construyes producto con IA</p>
+    </header>
+
+    <h2 class="section-title">Aplicaciones profesionales &amp; herramientas</h2>
+
+    <div class="news-item hot">
+      <h3>Google AI Edge Gallery agrega speech offline en Android</h3>
+      <p class="what">Google lanza reconocimiento de voz y text-to-speech completamente on-device a traves de ML Kit GenAI Speech APIs, corriendo sobre AICore sin agregar peso al APK. Se pueden combinar con Gemini Nano y Gemma 4 para transcripcion en streaming y sintesis de baja latencia.</p>
+      <p class="why">Si construyes una app Android, ahora puedes tener voz completa sin servidor ni costos de API &mdash; game changer para apps de servicios y marketplaces.</p>
+      <p class="source"><a href="https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery/">Google Developers Blog</a> <span class="tag tag-android">Android</span> <span class="tag tag-marketplace">Marketplaces</span></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>OpenCode 2.3: subagentes en background por defecto</h3>
+      <p class="what">La nueva version del AI coding assistant open-source hace que los subagentes se lancen en segundo plano automaticamente, reportando cuando terminan. Esto acelera workflows de desarrollo complejos al paralelizar tareas.</p>
+      <p class="why">Para quienes usan coding assistants open-source como alternativa a Claude Code o Cursor, esto cierra la brecha en capacidad agentica.</p>
+      <p class="source"><a href="https://munderdiffl.in/blog/agent-tools-today-2026-11-14/">Agent Tools Today</a> <span class="tag tag-founder">Founders</span></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Salesforce lanza SOV-Transcribe-1 open-weight para transcripcion</h3>
+      <p class="what">Modelo de reconocimiento de voz con pesos abiertos bajo Apache 2.0, orientado a transcripcion no-streaming self-hosted. Permite a empresas correr transcripcion sin depender de APIs de terceros.</p>
+      <p class="why">Si manejas datos sensibles (salud, legal, finanzas), poder correr transcripcion in-house sin vendor lock-in es un diferenciador real.</p>
+      <p class="source"><a href="https://samonai.substack.com/p/ai-brief-november-14-2026">Sam on AI</a></p>
+    </div>
+
+    <h2 class="section-title">Innovaciones tecnicas</h2>
+
+    <div class="news-item hot">
+      <h3>Google Gemini 4 Carbon disponible para todos</h3>
+      <p class="what">Google completa el rollout de Gemini 4 Carbon al publico general desde el 10 de noviembre. Precio introductorio: $2/$10 por millon de tokens (input/output) hasta el 30 de noviembre, despues sube a $4/$20.</p>
+      <p class="why">Si estas evaluando modelos para produccion, Carbon llega con precios agresivos en su ventana introductoria &mdash; vale hacer benchmarks ahora.</p>
+      <p class="source"><a href="https://letsdatascience.com/news/google-rolls-out-gemini-4-carbon-to-general-public-9b41bcb4">Let's Data Science</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Thinking Machines Lab libera Inkling 2 Small (594B MoE) bajo Apache 2.0</h3>
+      <p class="what">Modelo Mixture-of-Experts de 594B parametros con pesos abiertos. Al ser MoE, el costo de inferencia es significativamente menor que un modelo denso equivalente, haciendolo viable para self-hosting en clusters modestos.</p>
+      <p class="why">Mas opciones open-weight de alta capacidad significan menos dependencia de APIs cerradas para builders que necesitan control total.</p>
+      <p class="source"><a href="https://riorundown.substack.com/p/ai-news-nov-14-2026-local-ai-ecosystem">Rio Rundown</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>AMD y Meta optimizan PyTorch y ROCm para Instinct MI350X</h3>
+      <p class="what">Colaboracion para soporte Day-0 de los GPUs MI350X en PyTorch, Triton y ROCm, incluyendo los modelos open-source Muse Spark de Meta. Busca romper el monopolio NVIDIA en training de modelos grandes.</p>
+      <p class="why">Mas competencia en GPUs significa que eventualmente entrenar y hacer fine-tuning sera mas barato y accesible.</p>
+      <p class="source"><a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-2026-11-14">AI Agents Directory</a></p>
+    </div>
+
+    <h2 class="section-title">Ecosistema Claude &amp; Anthropic</h2>
+
+    <div class="news-item">
+      <h3>Claude Meetings llega a Google Meet en beta</h3>
+      <p class="what">Los usuarios Team y Enterprise pueden agregar a Claude como participante en llamadas de Google Meet. Claude toma notas, responde preguntas y genera artefactos (planes, whiteboards, tareas) durante la reunion en tiempo real.</p>
+      <p class="why">Para equipos pequenos que usan Claude como hub de trabajo, esto elimina el paso manual de "resumir la reunion y crear tareas".</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>Self-hosted Claude Managed Agents disponible (12 Nov)</h3>
+      <p class="what">Anthropic lanza la opcion de hostear agentes Claude en tu propia infraestructura, manteniendo credenciales, historial de sesiones y control sobre donde van los requests. Compatible con el Agent SDK existente.</p>
+      <p class="why">Para founders que necesitan agentes en produccion pero no pueden enviar datos a terceros, esto abre la puerta sin sacrificar capacidad.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot - Claude Dev Platform</a> <span class="tag tag-founder">Founders</span></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Interactive Connectors GA: Adobe, Salesforce, HubSpot dentro de Claude</h3>
+      <p class="what">Los conectores interactivos salen de beta. Apps como Adobe, Atlassian, HubSpot, Salesforce, NetSuite y Workday pueden correr directamente dentro de conversaciones de Claude, sin cambiar de contexto.</p>
+      <p class="why">Si tu producto integra con alguno de estos servicios, tus usuarios podrian operar desde Claude &mdash; eso cambia donde ocurre el trabajo.</p>
+      <p class="source"><a href="https://www.reworked.co/digital-workplace/anthropic-turns-claude-into-an-ai-office-suite/">Reworked</a> <span class="tag tag-marketplace">Marketplaces</span></p>
+    </div>
+
+    <h2 class="section-title">Negocios &amp; productos con IA</h2>
+
+    <div class="news-item hot">
+      <h3>Tendencia: founders verticales ganan sobre plataformas horizontales</h3>
+      <p class="what">Multiples analistas coinciden en que las startups IA exitosas de 2026 construyen para nichos ultra-especificos (intake legal, procurement, admin medico, coaching deportivo) en lugar de "asistentes generales". Los productos ganadores resuelven un dolor de comprador real, no hacen demos impresionantes.</p>
+      <p class="why">Si estas eligiendo que construir, la leccion es clara: nicho profundo > plataforma amplia. El moat esta en entender el workflow del usuario, no en el modelo.</p>
+      <p class="source"><a href="https://blog.mean.ceo/ai-startup-trends-november-2026/">Mean CEO Blog</a> <span class="tag tag-founder">Founders</span></p>
+    </div>
+
+    <h2 class="section-title">IA en Sports Tech &amp; Salud</h2>
+
+    <div class="news-item hot">
+      <h3>QBod: coaching conectado de training, nutricion y recovery en una app</h3>
+      <p class="what">Lanzada el 13 de noviembre para iOS y Android, QBod ofrece coaching continuo por conversacion que integra entrenamiento, nutricion y recuperacion. Mide progreso contra los objetivos propios del usuario en lugar de dar puntuaciones genericas de salud.</p>
+      <p class="why">Ejemplo real de producto vertical IA+salud en produccion &mdash; buen caso de estudio para marketplaces de servicios profesionales deportivos.</p>
+      <p class="source"><a href="https://techstory.in/as-personal-ai-gains-ground-qbod-brings-connected-coaching-to-fitness/">TechStory</a> <span class="tag tag-android">Android</span> <span class="tag tag-marketplace">Marketplaces</span></p>
+    </div>
+
+    <footer>
+      <p>Curado con IA &bull; Filtrado para senior devs construyendo producto &bull; 14 Nov 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
