@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 15 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>15 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5.2 lanzado: 20% m&aacute;s barato, 30% m&aacute;s r&aacute;pido que Fable 5.1</h3>
+      <p class="what">Anthropic lanz&oacute; Fable 5.2 el 9 de noviembre a $8/$40 por mill&oacute;n de tokens (input/output), con contexto de 1M tokens, output m&aacute;ximo de 128K y thinking adaptativo siempre activo. Junto a &eacute;l lleg&oacute; Mythos 5.2, restringido a organizaciones verificadas para ciberseguridad y ciencias de la vida.</p>
+      <p class="why">Si usas Fable para tareas de coding complejas y de largo aliento, ahora pagas menos y recibes respuestas m&aacute;s r&aacute;pido sin cambiar nada en tu pipeline.</p>
+      <p class="source"><a href="https://thenewstack.io/anthropic-fable-coding-upgrade/">The New Stack</a> &bull; <a href="https://9to5mac.com/2026/11/09/anthropic-upgrades-claude-with-new-fable-5-2-model-details-here/">9to5Mac</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&128293; Anthropic convierte a Claude en suite de oficina: Meetings, Whiteboards, Sheets y Data</h3>
+      <p class="what">El 10 de noviembre Anthropic lanz&oacute; Claude Whiteboards y Sheets en beta, Claude Data (antes Dashboards) en GA, y Claude Meetings en beta para Team/Enterprise (solo Google Meet por ahora). Los interactive connectors permiten a partners embeber sus apps directamente dentro de Claude.</p>
+      <p class="why">Los connectors interactivos son la se&ntilde;al: si tu producto tiene un workflow que se beneficia de AI, embeberte dentro de Claude es un canal de distribuci&oacute;n nuevo y real.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/">TechCrunch</a> &bull; <a href="https://www.reworked.co/digital-workplace/anthropic-turns-claude-into-an-ai-office-suite/">Reworked</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&128293; Claude Managed Agents ahora self-hosted: corre agentes en tu propia infra</h3>
+      <p class="what">Desde el 12 de noviembre, Managed Agents tiene edici&oacute;n self-hosted que permite ejecutar agentes AI de larga duraci&oacute;n en la nube o on-premise del cliente, con estado persistente y sandboxing. Tambi&eacute;n lleg&oacute; Claude for Manufacturing con 17 skills y 4 conectores industriales.</p>
+      <p class="why">Si necesitas agentes con estado (onboarding, procesamiento de &oacute;rdenes, flujos multi-paso) y no quer&iacute;as depender de infra de Anthropic, ahora puedes correrlos donde quieras.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot</a> &bull; <a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform Docs</a></p>
+    </div>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>&128293; Poppy: Sierra y Meta publican protocolo abierto para agentes personales con 35+ partners</h3>
+      <p class="what">Sierra y Meta lanzaron el Personal Agent Protocol (Poppy), un est&aacute;ndar abierto (Apache 2.0) que define c&oacute;mo agentes AI descubren empresas, autentican usuarios v&iacute;a OAuth y operan dentro de scopes autorizados. Ya tienen 35+ design partners incluyendo OpenAI, Shopify, Stripe, Visa, Mastercard y Cloudflare.</p>
+      <p class="why">Si tu marketplace o SaaS expone servicios, implementar Poppy (un JSON en /.well-known/) te hace descubrible por la capa de agentes AI que viene.</p>
+      <p class="source"><a href="https://sierra.ai/blog/poppy">Sierra Blog</a> &bull; <a href="https://thefinrate.com/?p=95546">FinRate</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Alibaba lanza Qwen4-Max: nuevo flagship para competir con modelos frontera</h3>
+      <p class="what">Alibaba anunci&oacute; Qwen4-Max, su modelo m&aacute;s potente, con resultados destacados en benchmarks de coding. No es open-weight por ahora, aunque versiones m&aacute;s peque&ntilde;as de la serie se esperan pronto como open-source.</p>
+      <p class="why">M&aacute;s competencia en la capa de modelos significa mejores opciones y precios para tu stack de AI; vale la pena hacer benchmark cuando salgan las versiones abiertas.</p>
+      <p class="source"><a href="https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals">Bloomberg</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>&128293; Cursor se vende como parte del bundle X Subscription tras adquisici&oacute;n por SpaceX</h3>
+      <p class="what">Desde octubre 2026, nuevos clientes de Cursor lo compran como parte del X Subscription que incluye Grok y X Premium. El uso se cobra por consumo m&aacute;s all&aacute; del plan base, siguiendo el modelo de AI Credits que tambi&eacute;n adopt&oacute; GitHub Copilot.</p>
+      <p class="why">Los AI coding tools ahora cobran como cloud providers; controla tu consumo o te llega una factura sorpresa a fin de mes.</p>
+      <p class="source"><a href="https://dev.to/guarapay/your-ai-coding-tool-now-bills-like-a-cloud-provider-cursor-and-copilot-in-late-2026-1ccd">DEV Community</a> &bull; <a href="https://en.wikipedia.org/wiki/Cursor_(company)">Wikipedia</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot migra a AI Credits y suma Gemini 4 Argon</h3>
+      <p class="what">Desde junio 2026 Copilot reemplaz&oacute; premium requests por GitHub AI Credits. Ahora integra Gemini 4 Argon junto a GPT-6.1 Terra, ampliando las opciones de modelo seg&uacute;n tier (Pro+, Max, Business, Enterprise).</p>
+      <p class="why">Multi-modelo en Copilot significa que puedes elegir el mejor modelo por tarea sin salir de tu IDE, pero necesitas entender el costo por cr&eacute;dito de cada uno.</p>
+      <p class="source"><a href="https://tech-insider.org/github-copilot-4-ai-models-challenge-cursor-2026/">Tech Insider</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>&128293; Google FunctionGemma: agentes on-device con solo 270M par&aacute;metros</h3>
+      <p class="what">FunctionGemma es un modelo de 270M params (fine-tune de Gemma 3) que convierte lenguaje natural en function calls directamente en el dispositivo. Disponible en Google AI Edge Gallery para Android e iOS, con gu&iacute;a de fine-tuning para casos custom.</p>
+      <p class="why">270M params caben en cualquier tel&eacute;fono moderno; puedes construir features agentes offline en tu app Android sin API calls ni costos por request.</p>
+      <p class="source"><a href="https://developers.googleblog.com/en/on-device-function-calling-in-google-ai-edge-gallery/">Google Developers Blog</a> &bull; <a href="https://ai.google.dev/gemma/docs/mobile-actions">Google AI Gemma Docs</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>&128293; ElevenLabs lanza marketplace empresarial con custom models y programa de partners</h3>
+      <p class="what">En su summit de NYC, ElevenLabs present&oacute; un marketplace de apps pre-construidas para healthcare, finanzas, educaci&oacute;n y retail con partners como IBM, Salesforce y Twilio. Tambi&eacute;n anunci&oacute; custom models: fine-tuning de modelos de voz con datos de deployments en producci&oacute;n.</p>
+      <p class="why">El modelo es replicable: si tienes un producto vertical, puedes construir un marketplace de soluciones AI especializadas alrededor de tu dominio.</p>
+      <p class="source"><a href="https://thenextweb.com/news/elevenlabs-summit-nyc-elevenai-custom-models-partner-program">The Next Web</a> &bull; <a href="https://elevenlabs.io/blog/marketplace">ElevenLabs Blog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Kily: startup de Bengaluru construye agente aut&oacute;nomo para growth en marketplaces</h3>
+      <p class="what">Kily desarroll&oacute; un agente AI que configura, monitorea y optimiza operaciones de crecimiento en marketplaces de forma aut&oacute;noma, reemplazando tareas que antes requer&iacute;an equipos de growth dedicados.</p>
+      <p class="why">Caso de uso concreto de AI agents en marketplaces: automatizar growth ops es exactamente el tipo de producto que un founder t&eacute;cnico puede construir con las herramientas actuales.</p>
+      <p class="source"><a href="https://inc42.com/startups/ai-startups-to-watch-5-startups-that-caught-our-eye-in-november">Inc42</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Wearables compiten por AI health insights: Oura, WHOOP y Garmin lideran la carrera</h3>
+      <p class="what">Seg&uacute;n Sensor Tower, la competencia en wearables migr&oacute; del hardware a las companion apps con AI. Oura lidera con Health Radar (se&ntilde;ales de presi&oacute;n arterial + triage AI via Counsel Health), Garmin creci&oacute; 42% YoY en fitness, y WHOOP apuesta por suscripciones como modelo principal.</p>
+      <p class="why">La oportunidad no est&aacute; en hacer otro wearable sino en la capa de software: companion apps con AI que conviertan datos de sensores en insights accionables para nichos espec&iacute;ficos.</p>
+      <p class="source"><a href="https://athletechnews.com/wearable-makers-eye-healthcare-new-innovations-apple-watch-oura-whoop-garmin/">Athletech News</a> &bull; <a href="https://www.business-standard.com/technology/tech-news/ai-health-insights-reshape-wearable-market-as-apps-drive-engagement-report-126110200859_1.html">Business Standard</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 15/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
