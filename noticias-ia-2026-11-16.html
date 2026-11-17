@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 16 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>16 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <h2 class="section-title">Aplicaciones profesionales y herramientas</h2>
+
+    <div class="news-item hot">
+      <h3>🔥 Google AdMob lanza Agent Skills para Claude Code, Codex y Cursor</h3>
+      <p class="what">Google publicó Agent Skills que permiten a coding assistants (Claude Code, Codex, Cursor, Antigravity) integrar y validar ads de AdMob directamente en apps Android e iOS. Se instalan con un solo comando (<code>npx skills add google/skills/skills/ads</code>) e incluyen skills para banners, interstitials, rewarded ads y migración al SDK Next-Gen.</p>
+      <p class="why">Si monetizas una app móvil, tu coding agent ahora puede configurar ads correctamente sin que toques la documentación de AdMob.</p>
+      <p class="source"><a href="https://thenextweb.com/news/google-admob-ai-agents-claude-code-codex-ask-admob">TheNextWeb</a> · <a href="https://developers.google.com/admob/android/next-gen/agent-skills">Google Developers</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Tessl lanza Software Factory Platform &mdash; capa de governance para coding agents</h3>
+      <p class="what">Tessl (del fundador de Snyk) lanzó su plataforma agent-agnostic que gobierna lo que los coding agents envían a producción. Se basa en "loops" reutilizables (ticket-to-PR, code review, vulnerability remediation) con verifiers automatizados que validan contra reglas del repositorio.</p>
+      <p class="why">Si usas múltiples agentes de código, esto resuelve el problema real de quién valida lo que el agente genera antes de hacer merge.</p>
+      <p class="source"><a href="https://sdtimes.com/?p=61713">SD Times</a> · <a href="https://byteiota.com/?p=26795">ByteIota</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Nonprofits demandan a OpenAI, Anthropic, Google y Meta para congelar modelos de IA</h3>
+      <p class="what">Cuatro organizaciones sin fines de lucro, incluyendo Public Citizen, presentaron demanda en San Francisco pidiendo a un juez que congele el desarrollo de nuevos modelos frontier. Es la primera acción legal colectiva que busca frenar el avance de modelos simultáneamente contra los cuatro grandes.</p>
+      <p class="why">Independientemente del resultado legal, señala que la presión regulatoria sobre los modelos que usamos para construir producto va en aumento.</p>
+      <p class="source"><a href="https://techjournal.org/ai-model-freeze-lawsuit">Tech Journal</a> · <a href="https://letsdatascience.com/news/advocacy-groups-sue-anthropic-google-meta-openai-and-spacexs-41907f0f">LetsDataScience</a></p>
+    </div>
+
+    <h2 class="section-title">Innovaciones t&eacute;cnicas</h2>
+
+    <div class="news-item hot">
+      <h3>🔥 JetBrains lanza EAP de Air &mdash; agentes de Codex, Claude, Cursor y Copilot dentro del IDE</h3>
+      <p class="what">JetBrains abrió el Early Access Program de Air, que integra agentes de código de Codex, Claude, Cursor y Copilot directamente dentro de IntelliJ, Android Studio y otros IDEs de JetBrains. Permite orquestar agentes desde el mismo entorno sin saltar entre herramientas.</p>
+      <p class="why">Para devs Android en Android Studio, tener múltiples agentes de código accesibles nativamente en el IDE cambia el flujo de trabajo diario.</p>
+      <p class="source"><a href="https://blog.jetbrains.com/ai/">JetBrains Blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini Intelligence update: widgets por prompt y Device Assistance en Android 17</h3>
+      <p class="what">Google lanzó la actualización de noviembre de Gemini Intelligence para Pixel. "Create My Widget" genera widgets personalizados en home screen desde una descripción en lenguaje natural. Device Assistance ayuda a configurar el teléfono preguntándole al asistente, requiere Android 17.</p>
+      <p class="why">Los widgets generados por IA abren una nueva categoría de personalización en Android que los devs de apps deberían monitorear como oportunidad o amenaza.</p>
+      <p class="source"><a href="https://ai-tldr.dev/releases/google-gemini-intelligence-november-2026/">AI TLDR</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>El ecosistema de AI coding se reconfigura: AWS migra a Kiro, Google a Antigravity</h3>
+      <p class="what">AWS está migrando usuarios de Amazon Q Developer a Kiro (soporte de Q termina abril 2027). Google fusiona Gemini Code Assist individual en Antigravity, su plataforma agent-first gratuita. Sourcegraph Cody pasa a ser solo enterprise, apuntando individuales a Amp.</p>
+      <p class="why">Si dependes de alguna de estas herramientas, planifica la migración ahora — los deprecations vienen con timelines cortos.</p>
+      <p class="source"><a href="https://spacelift.io/blog/ai-coding-assistant-tools">Spacelift</a></p>
+    </div>
+
+    <h2 class="section-title">Ecosistema Claude / Anthropic</h2>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic se acerca al IPO: $61B en oferta, precio en el rango alto</h3>
+      <p class="what">Anthropic fijó el rango de su IPO en $70-$78 por acción (825M de acciones clase A), con un debut esperado para la semana del 16 de noviembre en NASDAQ bajo el símbolo ANT. Bloomberg reporta que están guiando inversores al rango alto. Nvidia, Google y Microsoft anclan con $26B en colocación privada.</p>
+      <p class="why">El IPO de Anthropic valida que el mercado de modelos frontier es un negocio real — y como usuario de Claude, la estabilidad financiera importa.</p>
+      <p class="source"><a href="https://bloomberg.com/news/articles/2026-11-17/anthropic-is-said-to-guide-ipo-price-to-top-of-range-or-above">Bloomberg</a> · <a href="https://www.renaissancecapital.com/IPO-Center/News/122657/anthropic-sets-terms-for-61-billion-ipo-targeting-a-1.2-trillion-market-cap">Renaissance Capital</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5.2 y Mythos 5.2 disponibles &mdash; 30% m&aacute;s r&aacute;pidos, 20% m&aacute;s baratos</h3>
+      <p class="what">Anthropic lanzó Fable 5.2 (disponible en todas las plataformas) y Mythos 5.2 (acceso limitado a organizaciones verificadas) con contexto de 1M tokens y adaptive thinking. Ambos modelos son 30% más rápidos y 20% más baratos que sus versiones 5.1, con mejoras mayores en coding y tareas complejas.</p>
+      <p class="why">Modelos más rápidos y baratos se traducen directamente en menores costos de API y mejor UX en tus productos que usan Claude.</p>
+      <p class="source"><a href="https://www.siliconreport.com/anthropic-releases-mythos-5-2-and-fable-5-2">Silicon Report</a> · <a href="https://www.thestar.com.my/tech/tech-news/2026/11/10/anthropic-unveils-new-fable-mythos-models-as-competition-heats-up-ahead-of-ipo">The Star</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Meetings, Whiteboards y Sheets &mdash; Anthropic entra al espacio de productividad</h3>
+      <p class="what">Anthropic lanzó tres productos de workplace: Claude Meetings (IA que participa en videollamadas y empieza a ejecutar tareas durante la reunión), Claude Whiteboards para colaboración visual, y Claude Sheets para datos estructurados. Incluyen nuevos controles de seguridad enterprise.</p>
+      <p class="why">Claude pasó de ser un chatbot a una suite de productividad completa — las integraciones MCP con estos productos pueden ser oportunidad para builders.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/">TechCrunch</a></p>
+    </div>
+
+    <h2 class="section-title">Negocio y Startups</h2>
+
+    <div class="news-item">
+      <h3>Nvidia cae tras nuevas restricciones de chips de IA por EE.UU. y aliados</h3>
+      <p class="what">Las acciones de Nvidia cayeron el 16 de noviembre tras el anuncio de nuevas restricciones de exportación de chips de IA y un acuerdo entre EE.UU. y aliados para proteger cadenas de suministro de IA frente a China. Varios analistas recortaron sus precios objetivo antes del reporte de earnings.</p>
+      <p class="why">Las restricciones de chips impactan el costo y disponibilidad de GPU — relevante si estás planeando infraestructura de inferencia propia.</p>
+      <p class="source"><a href="https://www.fool.com/coverage/stock-market-today/2026/11/16/stock-market-today-nov-16-nvidia-sinks-as-u-s-tightens-ai-chip-restrictions-and-analysts-slash-price-targets/">Motley Fool</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Tendencia: founders con equipos &lt;10 personas alcanzan valuaciones de $1B+ con AI-native</h3>
+      <p class="what">Múltiples reportes de noviembre confirman que startups AI-native con equipos pequeños están alcanzando valuaciones billonarias (TypeSafe AI a $7.5B, River AI a $5B). Los inversores priorizan evidencia de valor concreto sobre chatbot wrappers, favoreciendo vertical AI y agentes especializados.</p>
+      <p class="why">La ventana para lanzar productos AI-native verticales con equipos lean sigue abierta — el mercado premia ejecución específica sobre plataformas genéricas.</p>
+      <p class="source"><a href="https://inc42.com/startups/ai-startups-to-watch-5-startups-that-caught-our-eye-in-november/">Inc42</a> · <a href="https://mean.ceo/tpost/ai-startup-tools-news-november-2026">Mean CEO</a></p>
+    </div>
+
+    <h2 class="section-title">IA + Sports Tech y Salud</h2>
+
+    <div class="news-item">
+      <h3>ChatGPT Health integra Peloton y Weight Watchers &mdash; fitness data centralizada con IA</h3>
+      <p class="what">OpenAI lanzó ChatGPT Health que consolida datos de fitness y salud de múltiples fuentes (Peloton, Weight Watchers, wearables) en una sola experiencia conversacional con IA. El enfoque es personalización basada en datos reales del usuario, no recomendaciones genéricas.</p>
+      <p class="why">La centralización de datos de salud con IA crea un modelo replicable para cualquier marketplace de servicios profesionales de bienestar.</p>
+      <p class="source"><a href="https://athletechnews.com/tag/ai-2/page/3/">AthletechNews</a></p>
+    </div>
+
+    <footer>
+      <p>Generado autom&aacute;ticamente &mdash; Daily AI Briefing para senior devs construyendo producto</p>
+      <p>Fuentes verificadas al 16 de noviembre de 2026. Algunas noticias cubren la semana del 10-16 nov.</p>
+    </footer>
+  </div>
+</body>
+</html>
