@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 17 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>17 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cloudflare open-sourcea Kitesurf: un browser engine en Rust hecho para agentes de IA</h3>
+      <p class="what">Cloudflare liberó bajo Apache 2.0 Kitesurf, un motor de navegador ligero construido en Rust + WebAssembly, diseñado para que agentes de IA naveguen la web sin depender de Chromium. Usa el parser CSS Stylo de Firefox, Blitz para DOM/layout, y el engine JS Boa. Se puede correr localmente o deployar en Cloudflare Workers.</p>
+      <p class="why">Si tu producto tiene agentes que scrapean o interactúan con sitios web, esto elimina la dependencia de Puppeteer/Playwright y reduce drásticamente el overhead de un headless Chrome completo.</p>
+      <p class="source"><a href="https://blog.cloudflare.com/kitesurf-open-source/">Cloudflare Blog</a> &bull; <a href="https://phoronix.com/news/Cloudflare-Kitesurf-Open-Source">Phoronix</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Genpact lanza Onyx: plataforma enterprise para construir, gobernar y operar agentes de IA</h3>
+      <p class="what">Genpact presentó Onyx, una plataforma end-to-end para que empresas construyan, gobiernen y operen agentes de IA en flujos de trabajo reales. Incluye herramientas de monitoreo, compliance y orquestación multi-agente.</p>
+      <p class="why">Para founders técnicos vendiendo a enterprise, esto marca el estándar de governance que tus agentes necesitan cumplir para entrar en cuentas grandes.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Liquid AI lanza d1.2 y d1.2-ultra: modelos de decisión omnimodales con soporte de audio</h3>
+      <p class="what">Liquid AI liberó d1.2 (16 nov), modelos de decisión que ahora procesan texto, imágenes y audio. d1.2-ultra lidera el Decision Index v2.1 con score de 75. Diseñados para clasificación, routing, extracción de info y detección de objetos. Solo cobran input tokens: $0.02/M (d1.2) y $0.042/M (ultra).</p>
+      <p class="why">A ese pricing, son una opción real para pipelines de clasificación/routing antes de llamar a modelos grandes, especialmente si manejas contenido multimedia.</p>
+      <p class="source"><a href="https://liquid.ai/blog/d1-2">Liquid AI Blog</a> &bull; <a href="https://openrouter.ai/es/liquid/d1.2">OpenRouter</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft presentó 7 modelos MAI propios en Build 2026: reasoning, código, imagen y voz</h3>
+      <p class="what">Microsoft lanzó su familia MAI con 7 modelos: MAI-Thinking-1 (reasoning), MAI-Code-1-Flash (coding), MAI-Image-2.5, MAI-Transcribe-1.5, MAI-Voice-2 y variantes Flash. También presentó Frontier Tuning para que enterprises entrenen versiones custom con sus propios datos. Disponibles en Microsoft Foundry.</p>
+      <p class="why">Microsoft compitiendo directo con modelos propios baja precios para todos y abre opciones de fine-tuning enterprise que antes solo existían con OpenAI.</p>
+      <p class="source"><a href="https://www.windowscentral.com/software-apps/microsoft-launches-seven-in-house-ai-models-to-cut-developer-costs-and-reduce-reliance-on-openai">Windows Central</a> &bull; <a href="https://the-decoder.com/build-2026-microsoft-tops-google-in-image-generation-while-playing-catch-up-on-reasoning/">The Decoder</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 El mercado de AI coding tools se fragmenta: Cursor ahora es de SpaceX, Windsurf es Devin Desktop, y Kiro reemplaza a Amazon Q</h3>
+      <p class="what">En lo que va de Q4 2026, el landscape de coding assistants cambió radicalmente: SpaceX habría adquirido Anysphere (Cursor) por $60B, Cognition unificó Windsurf bajo Devin Desktop, Kiro reemplazó a Amazon Q Developer, y Google retiró Gemini Code Assist individual (reemplazado por Antigravity). GitHub Copilot migró a créditos de AI ($0.01/crédito) desde junio.</p>
+      <p class="why">Si dependes de un coding assistant, revisa tu vendor lock-in; los pricing models y owners están cambiando cada trimestre y tus costos pueden subir sin aviso.</p>
+      <p class="source"><a href="https://www.techbloat.com/ai-coding-assistants-compared-context-windows-cost-and-code-quality-november.html">TechBloat</a> &bull; <a href="https://dev.to/guarapay/your-ai-coding-tool-now-bills-like-a-cloud-provider-cursor-and-copilot-in-late-2026-1ccd">DEV Community</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 LowPropTax: founder solo construye herramienta de apelación de impuestos con IA</h3>
+      <p class="what">David Webb creó LowPropTax, una herramienta que usa IA para guiar a propietarios paso a paso en apelaciones de impuestos de propiedad. Es un producto one-person con modelo de negocio claro y problema real que afecta a millones.</p>
+      <p class="why">Ejemplo perfecto de micro-SaaS con IA: nicho regulatorio + workflow guiado + un solo founder. Replicable en cualquier trámite burocrático complejo.</p>
+      <p class="source"><a href="https://blog.mean.ceo/startup-founder-of-the-month-news-november-2026/">Mean CEO</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Rosetta.ai ayuda a 1,000+ tiendas de moda a duplicar ventas con recomendaciones IA</h3>
+      <p class="what">Startup de Taipei con $4.6M en funding total. Su motor de recomendación de productos con IA ya opera en más de 1,000 tiendas de moda, reportando duplicación de ventas para sus clientes. Modelo B2B SaaS enfocado en e-commerce vertical.</p>
+      <p class="why">Caso de estudio de cómo un equipo pequeño puede dominar un vertical de e-commerce con IA de recomendación sin necesitar modelos frontier.</p>
+      <p class="source"><a href="https://blog.mean.ceo/startup-launch-of-the-month-news-november-2026/">Mean CEO</a></p>
+    </div>
+
+    <!-- EJE 4: Ecosistema Claude/Anthropic -->
+    <div class="section-title">Ecosistema Claude / Anthropic</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Meetings llega en beta: IA que trabaja en tus tareas mientras sigues en la videollamada</h3>
+      <p class="what">Anthropic lanzó Claude Meetings en beta para planes Team y Enterprise. Claude entra a tus videollamadas y empieza a ejecutar tareas (crear docs, buscar datos, planificar) mientras la reunión sigue en curso. Disponible en Claude y Claude Desktop.</p>
+      <p class="why">Si tu equipo pierde horas en meetings, esto convierte discusiones en acciones inmediatas sin esperar a que alguien tome notas y las procese después.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Whiteboards, Sheets y Data ya disponibles en planes pagos</h3>
+      <p class="what">Anthropic expandió su suite de productividad: Whiteboards para brainstorming visual, Sheets para datos tabulares con IA, y Data (antes Dashboards) ahora en GA. Las tres herramientas usan los mismos límites de uso del plan existente.</p>
+      <p class="why">Claude se mueve de chatbot a suite de trabajo completa, compitiendo directo con Notion AI y Google Workspace para equipos que ya están en el ecosistema.</p>
+      <p class="source"><a href="https://www.reworked.co/digital-workplace/anthropic-turns-claude-into-an-ai-office-suite/">Reworked</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Fable 5.2 baja de precio: $8/$40 por millón de tokens (input/output)</h3>
+      <p class="what">Anthropic lanzó Claude Fable 5.2 (9 nov) con reducción de precios de $10/$50 a $8/$40 por millón de tokens. También salió Mythos 5.2, un modelo restringido a organizaciones verificadas que según Anthropic detecta 10.2% más vulnerabilidades que Opus 5.5. Fast mode disponible para Fable 5.2 en la API.</p>
+      <p class="why">Fable 5.2 más barato hace viable usarlo como modelo principal en pipelines de producción donde antes elegías alternativas open-source por costo.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech / Salud -->
+    <div class="section-title">IA + Sports Tech y Salud</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Samsung confirma lanzamiento de AI Glasses con Android XR y Gemini para noviembre 2026</h3>
+      <p class="what">Samsung confirmó a The Korea Herald que sus primeros lentes inteligentes sin pantalla con Android XR saldrán en noviembre 2026. Usan Gemini vía smartphone conectado, con cámara, micrófonos y speakers. Diseñados con Gentle Monster y Warby Parker, corren sobre Snapdragon AR1 Gen 1.</p>
+      <p class="why">Android XR como plataforma abre oportunidades para desarrolladores Android: apps de coaching, navegación fitness, o asistentes de campo que corran sobre estos dispositivos.</p>
+      <p class="source"><a href="https://letsdatascience.com/news/samsung-confirms-november-launch-window-for-ai-glasses-db47e242">Lets Data Science</a> &bull; <a href="https://digitaltrends.com/wearables/samsung-enters-the-ai-glasses-race-with-gemini-powered-intelligent-eyewear-and-android-xr-support">Digital Trends</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Samsung Galaxy Watch agrega detección de apnea del sueño con conteo de episodios por hora</h3>
+      <p class="what">La función actualizada de apnea del sueño en Galaxy Watch Ultra 2, Watch 9 y Galaxy Ring ahora cuenta disturbios respiratorios por hora y los clasifica como leves, ocasionales o frecuentes. Disponible primero en Corea, noviembre 2026.</p>
+      <p class="why">Wearables que pasan de "tracking pasivo" a "diagnóstico accionable" abren mercado para apps de salud que integren estos datos con coaching personalizado.</p>
+      <p class="source"><a href="https://the5krunner.com/2026/11/10/deep-dive-digest-31-introducing-quick-reads-for-the-time-crunched-athlete">The 5K Runner</a></p>
+    </div>
+
+    <footer>
+      <p>Generado autom&aacute;ticamente &bull; Fuentes verificadas al 17 de noviembre de 2026</p>
+      <p>Filtros: sin papers te&oacute;ricos, sin hype vac&iacute;o, sin rondas sin producto</p>
+    </footer>
+  </div>
+</body>
+</html>
