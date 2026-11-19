@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 18 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>18 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OpenAI lanza GPT-6.2 Astra y Sol: nuevos modelos en API con precios reducidos</h3>
+      <p class="what">OpenAI liberó GPT-6.2 Astra (tareas profesionales exigentes) y Sol (uso cotidiano y agentes multi-paso) en ChatGPT Work, Codex y la API. Astra baja 20% vs GPT-6 Astra a $8/$40 por millón de tokens; Sol se mantiene en $2/$10.</p>
+      <p class="why">Si usas la API de OpenAI en producción, Sol a $2/M input es competitivo para agentes de alto volumen, pero la recepción temprana de power users fue negativa &mdash; testea antes de migrar.</p>
+      <p class="source"><a href="https://www.ghacks.net/2026/11/18/openai-releases-gpt-6-2-astra-and-sol-with-lower-api-prices-and-ultrafast-for-pro-200/">gHacks</a> &bull; <a href="https://venturebeat.com/technology/essentially-unusable-openai-launches-gpt-6-2-astra-and-sol-to-negative-reception-from-ai-power-users">VentureBeat</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft Ignite 2026: Copilot SDK 2.0 GA y MAI Code 2 para desarrolladores</h3>
+      <p class="what">En Ignite (Nov 17-20), Microsoft lanzó Copilot SDK 2.0 con runtime nativo en Rust y soporte para 6 lenguajes, pensado para embeber agentes AI en apps enterprise. También presentó MAI Code 2, un modelo de coding propio que compite en rendimiento a menor costo.</p>
+      <p class="why">Copilot SDK 2.0 es relevante si construyes productos B2B que necesitan agentes integrados con seguridad enterprise &mdash; es el framework oficial de Microsoft para eso.</p>
+      <p class="source"><a href="https://news.microsoft.com/events/ignite/2026/book-of-news/">Microsoft Book of News</a> &bull; <a href="https://adtmag.com/articles/2026/11/18/microsoft-ignite-2026-maps-out-the-stack-for-building-and-running-enterprise-ai-agents.aspx">ADTmag</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>NVIDIA presenta Nemotron for Science en SC26: agentes AI para supercomputación</h3>
+      <p class="what">En SC26 (Chicago), Ian Buck presentó Nemotron for Science: modelo abierto + herramientas de post-training para crear agentes que planifican experimentos, ejecutan simulaciones y verifican resultados. Un agente reparó el 81% de setups rotos de GROMACS en una noche con un solo DGX Spark.</p>
+      <p class="why">Los agentes que orquestan herramientas de cómputo pesado son el patrón emergente &mdash; el mismo approach aplica para automatizar pipelines complejos en cualquier backend.</p>
+      <p class="source"><a href="https://blogs.nvidia.com/?p=100058">NVIDIA Blog</a> &bull; <a href="https://hpcwire.com/off-the-wire/nvidia-introduces-nemotron-for-science-to-accelerate-discoveries-with-agents">HPCwire</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub Copilot Fusion: routing inteligente a modelos locales desde VS Code</h3>
+      <p class="what">Copilot Fusion (anunciado en Universe, expandido en Ignite) ahora puede enrutar tareas de coding entre modelos cloud y modelos locales on-device. Balancea calidad, velocidad y costo por request con niveles Standard, High y Max. El routing local está en preview, opt-in en VS Code.</p>
+      <p class="why">Modelos locales para autocompletado + cloud para tareas complejas puede reducir costos ~50% y latencia en tu workflow diario de coding.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models/">GitHub Changelog</a> &bull; <a href="https://docs.github.com/en/copilot/concepts/models/copilot-fusion">GitHub Docs</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 LangChain levanta $300M a valuación de $3B: LangSmith supera 7,000 organizaciones</h3>
+      <p class="what">LangChain cerró su Serie C liderada por CapitalG (Alphabet), con GIC, DFJ Growth e IVP participando. La valuación sube 2.4x desde los $1.25B de su Serie B. LangSmith, su plataforma de gestión de agentes, ya tiene más de 7,000 empresas activas.</p>
+      <p class="why">Valida que la capa de orquestación de agentes es un negocio real &mdash; si construyes sobre LangChain, tu stack tiene respaldo financiero serio a largo plazo.</p>
+      <p class="source"><a href="https://ventureburn.com/langchain-raises-300-million-to-scale-ai-tooling-platform/">VentureBurn</a> &bull; <a href="https://fourweekmba.com/ai-langchain-valued-at-3b-in-capitalg-led-300m-round-up-2-4x/">FourWeekMBA</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>AI coding tools ahora facturan como cloud providers: créditos y consumo por uso</h3>
+      <p class="what">Tanto GitHub Copilot (AI Credits desde junio) como Cursor (pool semanal + top-offs) migraron a modelos de facturación basados en consumo, similar a cómo funcionan los cloud providers. Los modelos premium y third-party se cobran aparte del plan base.</p>
+      <p class="why">Tu presupuesto de herramientas de coding ahora es variable, no fijo &mdash; vale la pena trackear consumo real antes de que la factura sorprenda al equipo.</p>
+      <p class="source"><a href="https://dev.to/guarapay/your-ai-coding-tool-now-bills-like-a-cloud-provider-cursor-and-copilot-in-late-2026-1ccd">DEV Community</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Copilot Managed Runtime GA: Microsoft ofrece hosting gestionado para agentes</h3>
+      <p class="what">Anunciado en Ignite, Copilot Managed Runtime es un entorno gestionado por Microsoft para ejecutar apps y agentes construidos con Copilot Studio y otros frameworks. Incluye sandboxing, seguridad enterprise y arranque rápido sin gestionar infraestructura propia.</p>
+      <p class="why">Si estás construyendo un producto SaaS con agentes AI, ahora tienes una opción de hosting enterprise sin montar tu propia infra de ejecución de agentes.</p>
+      <p class="source"><a href="https://www.witivio.com/en/blog/microsoft-ignite-2026-announcements/">Witivio</a> &bull; <a href="https://www.epcgroup.net/insights/microsoft-ignite-2026-day-1-announcements">EPCGroup</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GPT-6.2 recibido con críticas: power users reportan regresiones vs GPT-6 Astra</h3>
+      <p class="what">A pocas horas del lanzamiento, VentureBeat reportó recepción negativa de usuarios avanzados, con algunos calificándolo de "esencialmente inutilizable". Los early testers señalan regresiones en seguimiento de instrucciones complejas respecto a GPT-6 Astra original.</p>
+      <p class="why">Lección recurrente para founders: nunca migres modelos en producción el día del launch &mdash; espera benchmarks independientes y prueba con tus propios prompts.</p>
+      <p class="source"><a href="https://venturebeat.com/technology/essentially-unusable-openai-launches-gpt-6-2-astra-and-sol-to-negative-reception-from-ai-power-users">VentureBeat</a> &bull; <a href="https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers">The Next Web</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic Self-Hosted Managed Agents: ejecuta agentes Claude dentro de tu perímetro</h3>
+      <p class="what">Desde el 12 de noviembre, Managed Agents puede correr completamente en tu infraestructura (cloud propia u on-premise). Solo las llamadas al modelo cruzan la frontera de red; harness, sandboxes, credenciales e historial quedan en tu lado.</p>
+      <p class="why">Si la barrera para usar agentes Claude en tu producto era compliance o data residency, esta opción elimina ese blocker.</p>
+      <p class="source"><a href="https://the-decoder.com/anthropic-adds-self-hosted-sandboxes-and-mcp-tunnels-to-claude-managed-agents/">The Decoder</a> &bull; <a href="https://claude.com/ja/resources/articles/self-hosted-claude-managed-agents">Anthropic</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Meetings, Whiteboards y Sheets: Anthropic entra en productividad empresarial</h3>
+      <p class="what">Anthropic lanzó tres productos workplace: Claude Meetings convierte reuniones en planes y tareas accionables, Whiteboards permite colaboración visual con AI, y Sheets ofrece hojas de cálculo inteligentes. Claude Data (antes Dashboards) también pasó a GA.</p>
+      <p class="why">Anthropic compite directo con Notion AI y Google Workspace AI &mdash; el ecosistema Claude se expande más allá del API y el chat.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Opus 5.5 es ahora el modelo default en planes Pro, Max, Ultra y Team</h3>
+      <p class="what">Anthropic estableció Opus 5.5 como modelo por defecto en Claude para planes pagados, junto con el lanzamiento de Fable 5.2 y Mythos 5.2. La IPO de Anthropic avanza con roadshow activo desde el 10 de noviembre, con rango de $70-$78 por acción bajo el ticker ANT.</p>
+      <p class="why">Si dependes del API de Claude, Opus 5.5 como default confirma que es el modelo estable de producción &mdash; planifica tu stack en torno a él.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot</a> &bull; <a href="https://claudelog.com/claude-news/">ClaudeLog</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>Noom Band y el shift a companion apps: AI redefine wellness corporativo</h3>
+      <p class="what">Noom anunció Noom Band (lanzamiento early 2027), un wearable enfocado en empleadores y planes de salud que trackea SpO2, actividad, sueño y HRV. Paralelamente, un reporte de Sensor Tower confirma que la competencia en wearables migra de hardware a companion apps con insights AI.</p>
+      <p class="why">El modelo B2B2C (vender a empleadores, no al consumidor) con AI como diferenciador es replicable para cualquier marketplace de servicios de salud o fitness.</p>
+      <p class="source"><a href="https://mobihealthnews.com/news/noom-unveils-noom-band-and-more-digital-health-news">MobiHealthNews</a> &bull; <a href="https://globenewswire.com/news-release/2026/11/17/3404798/28124/en/global-digital-fitness-market-report-2026-2035-size-trends-forecast-competitive-analysis-ai-wearables-and-subscriptions-drive-17-8-cagr-toward-243-billion.html">GlobeNewsWire</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 18/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
