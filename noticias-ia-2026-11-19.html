@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 19 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>19 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Replit lanza Missions: swarms de agentes AI para proyectos completos</h3>
+      <p class="what">Replit Missions permite definir un objetivo, presupuesto y criterios de aceptaci&oacute;n, y un enjambre de agentes coordina planificaci&oacute;n, c&oacute;digo, testing e iteraci&oacute;n durante horas o d&iacute;as. Los cambios llegan como pull requests y un agente-juez eval&uacute;a contra los criterios antes de marcar completado.</p>
+      <p class="why">Si est&aacute;s construyendo un producto solo o en equipo peque&ntilde;o, esto convierte tareas de semanas en delegaciones con presupuesto fijo &mdash; el modelo de &ldquo;contractor AI&rdquo; ya es funcional.</p>
+      <p class="source"><a href="https://replit.com/blog/introducing-replit-missions">Replit Blog</a> &bull; <a href="https://thenewstack.io/replit-missions-agent-swarms/">The New Stack</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Snap lanza Easy Lens CLI: crea AR Lenses desde Claude Code, Cursor o Codex</h3>
+      <p class="what">CLI gratuita que da acceso a +100 building blocks de AR y +50 generadores de assets con AI. Los devs pueden renderizar previews y enviar Lenses al tel&eacute;fono para testing, todo desde su coding assistant favorito.</p>
+      <p class="why">Snap abre su plataforma AR como canal de distribuci&oacute;n para devs &mdash; si tu producto toca experiencias visuales o marketplaces de servicios, AR Lenses ahora son un feature alcanzable sin Lens Studio.</p>
+      <p class="source"><a href="https://techcrunch.com/?p=3189677">TechCrunch</a> &bull; <a href="https://developers.snap.com/lens-studio/features/lens-studio-ai/developer-mode/with-claude-code">Snap Developers</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Microsoft preview: observabilidad unificada para agentes AI en Azure Monitor</h3>
+      <p class="what">Azure Monitor Application Insights ahora traza requests a trav&eacute;s de m&uacute;ltiples agentes, modelos y herramientas usando OpenTelemetry. Permite ver el flujo completo de un agente multi-paso en un solo trace distribuido.</p>
+      <p class="why">Si ya est&aacute;s en Azure, esto elimina la necesidad de armar observabilidad custom para tus agentes &mdash; el debugging de pipelines multi-agente deja de ser caja negra.</p>
+      <p class="source"><a href="https://riorundown.substack.com/p/ai-news-nov-19-2026-agentic-ai-infrastructure">Rio Rundown</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google lanza Gemini 4 Neon: modelo frontier para coding a $3/M input tokens</h3>
+      <p class="what">Gemini 4 Neon (GA el 18 de nov) se posiciona entre Hydrogen y Carbon con contexto de 1M tokens, optimizado para repo engineering, an&aacute;lisis multimodal y tareas cient&iacute;ficas. Disponible en AI Studio, Cursor, y GitHub Copilot Pro+/Max/Business/Enterprise.</p>
+      <p class="why">A $3/$15 por mill&oacute;n de tokens, Neon es competitivo para pipelines de coding agente y procesamiento de repos grandes &mdash; otra opci&oacute;n seria junto a Claude y DeepSeek.</p>
+      <p class="source"><a href="https://ashutoshai.com/ai-compass/2026/11/18/">AI Compass</a> &bull; <a href="https://ai.google.dev/gemini-api/docs/tools">Google AI Docs</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Gemini 4 Hydrogen ya disponible en Android Studio y Gemini API</h3>
+      <p class="what">Lanzado el 12 de noviembre, Hydrogen est&aacute; integrado en Android Studio, Google AI Studio, y la Gemini API. Dise&ntilde;ado para asistencia de c&oacute;digo r&aacute;pida y desarrollo mobile con AI nativa.</p>
+      <p class="why">Si desarrollas Android, Hydrogen en Android Studio es el coding assistant m&aacute;s integrado con el ecosistema Google &mdash; gratis en tier individual.</p>
+      <p class="source"><a href="https://cleverhack.com/ai-coding-landscape">AI Coding Landscape 2026</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>MAI Code 2 Flash de Microsoft disponible en GitHub Copilot Free</h3>
+      <p class="what">Microsoft lanz&oacute; MAI Code 2 Flash (17 nov) como modelo de coding disponible incluso en el tier gratuito de GitHub Copilot, con 2,000 completions mensuales gratis.</p>
+      <p class="why">Copilot Free con un modelo decente baja la barrera de entrada a cero para devs que est&aacute;n evaluando AI coding &mdash; la competencia por el tier gratuito se intensifica.</p>
+      <p class="source"><a href="https://scrimba.com/articles/best-ai-coding-assistants-2026/">Scrimba</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI usa Codex internamente como &ldquo;Software Factory&rdquo; aut&oacute;noma</h3>
+      <p class="what">OpenAI reorganiz&oacute; su desarrollo interno alrededor de Codex con agentes de larga duraci&oacute;n para coding, testing automatizado, code review y respuesta a incidentes. Su &ldquo;Perf Factory&rdquo; monitorea alertas, agrupa se&ntilde;ales duplicadas, y propone fixes autom&aacute;ticamente.</p>
+      <p class="why">El patr&oacute;n de &ldquo;f&aacute;brica de software agente&rdquo; es el blueprint al que convergen los equipos de producto &mdash; vale la pena estudiarlo para tu propia CI/CD.</p>
+      <p class="source"><a href="https://apidog.com/blog/openai-agentic-software-factory/">Apidog</a> &bull; <a href="https://www.zenml.io/llmops-database/building-an-agentic-software-factory-for-high-velocity-development">ZenML</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Replit Missions como servicio de desarrollo: el modelo &ldquo;contractor AI&rdquo; emerge</h3>
+      <p class="what">Con Missions, Replit introduce el concepto de delegar proyectos completos a agentes con presupuesto definido. En su demo interna, 32 agentes mejoraron Replit Slides en paralelo, resolviendo conflictos autom&aacute;ticamente entre branches.</p>
+      <p class="why">Para founders t&eacute;cnicos, esto cambia la ecuaci&oacute;n de &ldquo;cu&aacute;nto cuesta construir X&rdquo; &mdash; ahora puedes estimar en d&oacute;lares de compute, no en semanas de desarrollo.</p>
+      <p class="source"><a href="https://replit.com/missions">Replit Missions</a> &bull; <a href="https://ustechautomations.com/resources/blog/replit-missions-explained-what-it-changes">US Tech Automations</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Linked Billing en beta: apps pasan costos de Claude al cliente final</h3>
+      <p class="what">Nuevo sistema donde apps construidas sobre Claude pueden enrutar cargos de API directamente a la organizaci&oacute;n del cliente en Claude Platform. El cliente define l&iacute;mite de gasto y puede desvincularse en cualquier momento.</p>
+      <p class="why">Si vendes un producto SaaS sobre Claude, esto elimina el problema de margin stacking &mdash; tu cliente paga directo a Anthropic y t&uacute; cobras solo por tu valor agregado.</p>
+      <p class="source"><a href="https://claude.com/blog/linked-billing-on-claude-platform">Claude Blog</a> &bull; <a href="https://thenextweb.com/news/anthropic-linked-billing-claude-api-customers-pay">The Next Web</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5.2 y Mythos 5.2: nuevos modelos frontier de Anthropic</h3>
+      <p class="what">Lanzados el 9 de noviembre, generan outputs 30% m&aacute;s r&aacute;pido que sus predecesores con contexto de 1M tokens y adaptive thinking. Mythos 5.2 est&aacute; restringido a organizaciones verificadas por Anthropic.</p>
+      <p class="why">Fable 5.2 es el modelo a evaluar si buscas velocidad + calidad para tu producto &mdash; el 30% extra en throughput impacta directamente UX y costos de inference.</p>
+      <p class="source"><a href="https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html">CNBC</a> &bull; <a href="https://invezz.com/news/2026/11/10/anthropic-releases-new-cheaper-and-faster-claude-models-ahead-of-ipo/">Invezz</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Watermarking activo en Claude: texto generado lleva marca invisible (SynthID)</h3>
+      <p class="what">Anthropic aplica watermarking global usando SynthID-Text (de Google DeepMind) para cumplir con el EU AI Act. Seg&uacute;n Anthropic, no afecta creatividad ni legibilidad, aunque ha generado debate entre usuarios.</p>
+      <p class="why">Si tu producto genera texto con Claude para clientes, necesitas saber que ese texto ya lleva watermark &mdash; eval&uacute;a el impacto en tu caso de uso espec&iacute;fico.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/claude-text-watermark">Anthropic</a> &bull; <a href="https://www.inc.com/kevin-haynes/anthropics-new-ai-watermark-sparks-backlash-from-claude-subscribers/91391704">Inc</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 OptimalFit: plataforma AI de fitness con agente personalizado y nutrici&oacute;n por foto</h3>
+      <p class="what">Creada por los celebrity trainers Joel y Megan Freeman, combina un agente AI con an&aacute;lisis nutricional basado en fotos y gu&iacute;a de entrenamientos personalizada. Busca ser la &uacute;nica app de fitness que el usuario necesite.</p>
+      <p class="why">El patr&oacute;n de &ldquo;agente AI + datos visuales + coaching personalizado&rdquo; es replicable en cualquier marketplace de servicios profesionales de salud y bienestar.</p>
+      <p class="source"><a href="https://athletechnews.com/tag/ai-2/">Athletech News</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 19/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
