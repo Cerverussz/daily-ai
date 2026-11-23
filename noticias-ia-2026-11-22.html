@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 22 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 3rem; color: #555; font-size: 0.8rem; border-top: 1px solid #2a2a2a; padding-top: 1.5rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>22 de Noviembre 2026 &mdash; Noticias filtradas para builders &amp; senior devs</p>
+    </header>
+
+    <h2 class="section-title">1. Aplicaciones profesionales de IA</h2>
+
+    <div class="news-item hot">
+      <h3>🔥 Stripe publica benchmark de agentes de IA en integraciones de pago reales</h3>
+      <p class="what">Stripe evaluó 14 combinaciones de modelo+agente en 69 escenarios reales de pagos, suscripciones y marketplaces. El promedio fue 78.1% en criterios parciales, pero solo 29.4% cuando se exigen todos los criterios correctos — los agentes aceptan datos inexistentes y declaran éxito tras errores 400.</p>
+      <p class="why">Si estás construyendo un marketplace con pagos, esto confirma que los agentes aún necesitan guardrails serios en flujos financieros críticos.</p>
+      <p class="source"><a href="https://stripe.com/blog/can-ai-agents-build-real-stripe-integrations" target="_blank">stripe.com/blog</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google lanza Tool Retrieval para Gemini API — carga de herramientas on-demand</h3>
+      <p class="what">La nueva feature en preview permite a agentes con cientos de herramientas cargar schemas solo cuando los necesitan, usando <code>defer_loading: true</code>. Funciona server-side (Google hace el lookup) o client-side, y es compatible con MCP servers. Sin costo adicional.</p>
+      <p class="why">Si construyes agentes con muchas tools (MCP, APIs), esto reduce tokens y latencia dramáticamente — esencial para apps en producción.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/" target="_blank">blog.google</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Tether 0.4.0 lanza test harness para agentes de IA</h3>
+      <p class="what">El framework permite grabar y reproducir ejecuciones de agentes para hacer assertions sobre qué tools se llamaron, contenido final de archivos y si el agente respetó límites de pasos y costos. Funciona como tests de regresión para workflows agénticos.</p>
+      <p class="why">Testing de agentes en CI/CD es uno de los problemas abiertos más grandes — cualquier herramienta que lo resuelva vale la pena evaluarla.</p>
+      <p class="source"><a href="https://aiagentstore.ai/ai-agent-news/this-week" target="_blank">aiagentstore.ai</a></p>
+    </div>
+
+    <h2 class="section-title">2. Innovaciones técnicas</h2>
+
+    <div class="news-item hot">
+      <h3>🔥 On-device AI alcanza sub-20ms en visión computacional en móviles</h3>
+      <p class="what">Benchmarks recientes muestran que modelos de CV en producción logran latencias bajo 20ms en hardware móvil actual (Apple Neural Engine, Tensor, Snapdragon 8 Elite). El límite práctico sigue en ~500M parámetros para la mayoría de dispositivos.</p>
+      <p class="why">Si desarrollas features de cámara o AR en Android, el edge computing ya es viable para modelos ligeros sin depender del cloud.</p>
+      <p class="source"><a href="https://www.alephzerolabs.com/blog/on-device-ai-2026-sub-20ms" target="_blank">alephzerolabs.com</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Frost &amp; Sullivan publica Blue Book de on-device AI en China</h3>
+      <p class="what">El reporte documenta el shift de procesamiento AI desde cloud hacia una arquitectura distribuida cloud-edge-device. Destaca que el AI on-device ya maneja inferencia completa localmente, reduciendo latencia y dependencia del cloud.</p>
+      <p class="why">La tendencia cloud-to-edge es global — confirma que invertir en capacidades on-device no es nicho sino mainstream.</p>
+      <p class="source"><a href="https://www.openpr.com/news/4694875/frost-sullivan-releases-the-2026-blue-book-on-the-development" target="_blank">openpr.com</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenRouter retira 125 endpoints por fallas en Zero Data Retention</h3>
+      <p class="what">OpenRouter eliminó tres proveedores de inferencia y 125 endpoints que no cumplían con la política de Zero Data Retention (ZDR). Los usuarios que rutean requests por OpenRouter deben verificar que sus endpoints sigan activos.</p>
+      <p class="why">Si usas OpenRouter para rutear entre modelos, revisa tu configuración — un endpoint caído silenciosamente puede romper tu producto.</p>
+      <p class="source"><a href="https://riorundown.substack.com/p/ai-news-nov-22-2026-autonomous-systems" target="_blank">riorundown.substack.com</a></p>
+    </div>
+
+    <h2 class="section-title">3. Negocios y productos con IA</h2>
+
+    <div class="news-item hot">
+      <h3>🔥 Fitbit Air: Google apuesta por suscripción de AI health a $99/año</h3>
+      <p class="what">Google lanzó el Fitbit Air a $99 como hardware de entrada para una suscripción de salud AI de $99/año. El modelo de negocio invierte la ecuación: el wearable es el gancho, la suscripción AI es el producto real.</p>
+      <p class="why">Patrón replicable para cualquier founder: hardware barato + suscripción AI como core business — aplica a fitness, coaching, nutrición.</p>
+      <p class="source"><a href="https://insider.fitt.co/" target="_blank">insider.fitt.co</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Signal bloquea screenshots por amenaza de agentes AI en OS</h3>
+      <p class="what">Signal restringió capturas de pantalla en Android e iOS, calificando a los agentes AI embebidos en sistemas operativos como una "amenaza existencial" para la comunicación privada. La medida responde a la capacidad de agentes OS-level de leer contenido en pantalla.</p>
+      <p class="why">Si tu app maneja datos sensibles, considera que los agentes AI del OS pueden ver lo que el usuario ve — el modelo de seguridad está cambiando.</p>
+      <p class="source"><a href="https://riorundown.substack.com/p/ai-news-nov-22-2026-autonomous-systems" target="_blank">riorundown.substack.com</a></p>
+    </div>
+
+    <h2 class="section-title">4. Ecosistema Claude / Anthropic</h2>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic lanza Claude Meetings, Whiteboards y Sheets</h3>
+      <p class="what">Claude Meetings permite que Claude entre a videollamadas (Google Meet por ahora) y ejecute tareas mientras la reunión ocurre. Whiteboards es un canvas colaborativo que Claude puede convertir en docs o slides. Sheets es una hoja de cálculo que Claude construye y edita contigo. Todo en beta para planes Team/Enterprise.</p>
+      <p class="why">Anthropic pasa de ser un modelo API a una suite de productividad completa — si estás en el ecosistema Claude, estas herramientas cambian cómo colaboras.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/" target="_blank">techcrunch.com</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Claude Fable 5.2 y Mythos 5.2</h3>
+      <p class="what">Los nuevos modelos ofrecen mejoras en coding, razonamiento, visión, ciberseguridad y capacidades científicas. Fable 5.2 es el modelo rápido; Mythos 5.2 el de alta capacidad. Managed Agents self-hosted disponible desde el 12 de noviembre.</p>
+      <p class="why">Nuevos modelos + self-hosted agents significa que puedes correr agentes Claude en tu propia infra — clave para productos con requisitos de compliance.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform" target="_blank">releasebot.io</a></p>
+    </div>
+
+    <h2 class="section-title">5. IA + Sports Tech / Salud</h2>
+
+    <div class="news-item">
+      <h3>Tom Health: AI para soporte continuo de pacientes entre visitas médicas</h3>
+      <p class="what">Lumeris lanzó Tom Health, una nueva empresa que construye herramientas AI para organizaciones de atención primaria. El foco es dar soporte continuo a pacientes entre visitas, no reemplazar al médico.</p>
+      <p class="why">El patrón "AI entre touchpoints humanos" es aplicable a cualquier marketplace de servicios profesionales — coaching, nutrición, terapia.</p>
+      <p class="source"><a href="https://www.healthitanswers.net/health-it-business-news-november-19-2026/" target="_blank">healthitanswers.net</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Bodø/Glimt (fútbol noruego) se alía con AWS para estrategia de datos e IA</h3>
+      <p class="what">El club noruego firmó con AWS como proveedor cloud estratégico para fortalecer su estrategia de datos e inteligencia artificial, cubriendo rendimiento deportivo y operaciones del club.</p>
+      <p class="why">Los clubs deportivos medianos están adoptando cloud+AI como ventaja competitiva — oportunidad para builders en sports analytics.</p>
+      <p class="source"><a href="https://www.sportspro.com/technology/" target="_blank">sportspro.com</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para senior devs construyendo productos reales</p>
+      <p>Excluido: papers sin aplicación, hype sin sustancia, rondas sin producto</p>
+    </footer>
+  </div>
+</body>
+</html>
