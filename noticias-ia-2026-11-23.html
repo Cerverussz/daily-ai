@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 23 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>23 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Ship: Anthropic automatiza el pipeline completo de code review y aprobaci&oacute;n</h3>
+      <p class="what">Nueva suite beta compuesta por Code Review (ya GA), PR Steward y Claude Approvals. Los agentes revisan PRs, aplican correcciones y gestionan aprobaciones autom&aacute;ticamente. Disponible para Team y Enterprise en repositorios GitHub, con modo observe-only recomendado para empezar.</p>
+      <p class="why">Si mantienes un producto como founder t&eacute;cnico o en equipo peque&ntilde;o, esto elimina el bottleneck de code review que retrasa tu shipping.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/">TechCrunch</a> &bull; <a href="https://9to5mac.com/2026/11/23/anthropic-launches-new-claude-ship-feature-for-builders">9to5Mac</a> &bull; <a href="https://siliconangle.com/2026/11/23/anthropics-claude-ship-automates-the-final-stage-of-the-software-development-pipeline">SiliconANGLE</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Gemini 4 Neon: modelo mid-tier a $3/$15M tokens con 1M de contexto</h3>
+      <p class="what">Nuevo modelo posicionado entre Carbon (pesado, largo plazo) y Hydrogen (r&aacute;pido, diario). Google afirma rendimiento comparable a Carbon a 3x la velocidad, con 4 niveles de razonamiento y 1M tokens de contexto. Disponible en Gemini API, Google AI Studio y Antigravity.</p>
+      <p class="why">A $3/$15 por mill&oacute;n de tokens, es la opci&oacute;n m&aacute;s agresiva en precio para pipelines de coding y agentes que necesitan contexto largo sin costo de Opus o Carbon.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/">Google Blog</a> &bull; <a href="https://digitaltrends.com/computing/google-says-gemini-4-neon-can-hang-with-claude-opus-5-5-and-gpt-6-2-sol-for-less">Digital Trends</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot a&ntilde;ade Gemini 4 Neon y depreca modelos antiguos</h3>
+      <p class="what">Copilot incorpor&oacute; Gemini 4 Neon (Nov 18) y Claude Fable 5.2 + Gemini 4 Carbon (Nov 9). El 16 de noviembre deprec&oacute; Claude Opus 4.8, Claude Opus 5 y GPT-5.6 Terra, recomendando migrar a Opus 5.5 o GPT-6.1 Sol.</p>
+      <p class="why">La rotaci&oacute;n de modelos en Copilot es cada vez m&aacute;s r&aacute;pida; revisa qu&eacute; modelo tienes activo para no quedarte en uno deprecado.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9">GitHub Changelog</a> &bull; <a href="https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november">Deprecation Notice</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5.2: modelo especializado en razonamiento profundo y tareas ag&eacute;nticas largas</h3>
+      <p class="what">Anthropic lanz&oacute; Fable 5.2 (claude-fable-5-2), dise&ntilde;ado para razonamiento demandante y trabajo ag&eacute;ntico de horizonte largo. Mythos 5.2 ofrece capacidades equivalentes solo para organizaciones con verificaci&oacute;n de Anthropic.</p>
+      <p class="why">Si tu producto depende de agentes AI multi-paso (procesamiento de &oacute;rdenes, onboarding autom&aacute;tico), Fable 5.2 es el modelo optimizado para esas cadenas largas.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Anthropic Platform Release Notes</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Antigravity CLI reemplaza Gemini Code Assist y compite con Claude Code</h3>
+      <p class="what">Google reemplaz&oacute; Gemini Code Assist por Antigravity CLI. Con Gemini 4 Neon, Antigravity obtiene 59 en el &iacute;ndice independiente de Artificial Analysis vs 58 de Claude Code. Gemini Code Assist para individuales se cerr&oacute; en junio 2026.</p>
+      <p class="why">Ahora hay tres opciones serias de AI coding en terminal (Claude Code, Copilot CLI, Antigravity); la competencia baja precios y sube calidad para tu workflow diario.</p>
+      <p class="source"><a href="https://www.morphllm.com/best-ai-coding-agents-2026">Morphllm Benchmark</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Interactive Tools: preview p&uacute;blica para integrar herramientas en Claude</h3>
+      <p class="what">Anthropic abri&oacute; la preview p&uacute;blica de Interactive Tools, permitiendo a desarrolladores construir integraciones interactivas para Claude con documentaci&oacute;n disponible desde el d&iacute;a 1. Los usuarios pueden usar herramientas externas directamente desde la conversaci&oacute;n.</p>
+      <p class="why">Si tu producto tiene API, exponerla como Interactive Tool pone tu servicio frente a millones de usuarios de Claude como canal de distribuci&oacute;n.</p>
+      <p class="source"><a href="https://support.claude.com/en/articles/12138966-release-notes">Claude Release Notes</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Solo founder lanza 20+ apps en 6 meses con AI: las lecciones del postmortem</h3>
+      <p class="what">MRVL Technologies public&oacute; su postmortem de lanzar 20+ apps iOS y Android como solo founder usando herramientas AI. Las apps con sprints enfocados se lanzaron limpias; las que recibieron atenci&oacute;n fragmentada siguen sin terminar. Incluye teleprompter, plataforma de gesti&oacute;n para iglesias y herramienta NFC.</p>
+      <p class="why">La lecci&oacute;n central de 2026: construir es barato, distribuir no &mdash; el cuello de botella ya no es c&oacute;digo sino encontrar usuarios.</p>
+      <p class="source"><a href="https://www.producthunt.com/p/introduce-yourself/i-ve-shipped-20-apps-in-6-months-as-a-solo-founder-here-s-what-actually-worked-and-what-didn-t">Product Hunt</a> &bull; <a href="https://dev.to/supamrvl/ive-shipped-17-ios-apps-in-the-last-6-months-as-a-solo-founder-heres-what-ive-learned-47do">DEV.to</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Meetings: Claude entra a tus videollamadas de Google Meet</h3>
+      <p class="what">Claude puede unirse a Google Meet como participante visible, tomar notas y construir artefactos mientras la reuni&oacute;n avanza. Lanzado en beta para suscriptores Team y Enterprise.</p>
+      <p class="why">Convierte reuniones en documentaci&oacute;n accionable autom&aacute;ticamente &mdash; ya no necesitas que alguien &ldquo;pase las notas&rdquo; despu&eacute;s.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/">TechCrunch</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Duet: agente proactivo que trabaja en paralelo contigo</h3>
+      <p class="what">Research preview para Pro y Max donde Claude funciona como agente proactivo en una app dedicada &mdash; inicia trabajo por su cuenta mientras t&uacute; haces otras cosas, en lugar de esperar instrucciones.</p>
+      <p class="why">Pasa de &ldquo;pedirle a Claude&rdquo; a &ldquo;Claude trabaja junto a ti&rdquo;; para un founder t&eacute;cnico, es como tener un junior dev que nunca para.</p>
+      <p class="source"><a href="https://medium.com/@nevadayorkie/claude-ai-in-november-2026-fable-5-2-claude-duet-why-more-users-need-claude-pro-bfabae89cefb">Medium</a> &bull; <a href="https://support.claude.com/en/articles/12138966-release-notes">Claude Release Notes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Enterprise Frontier Safeguards llega a beta abierta</h3>
+      <p class="what">Anthropic puso EFS en beta abierta el 23 de noviembre. El sistema combina zero data retention con detecci&oacute;n automatizada de misuse, manteniendo logs en la nube del cliente. Soportado en Claude Code, Claude Enterprise, Bedrock y Foundry. Sin costo adicional de Anthropic.</p>
+      <p class="why">Si tu empresa usa Claude en producci&oacute;n y necesita compliance, EFS elimina la fricci&oacute;n de &ldquo;nuestros datos pasan por terceros&rdquo;.</p>
+      <p class="source"><a href="https://www.anthropic.com/news/enterprise-frontier-safeguards">Anthropic</a> &bull; <a href="https://www.helpnetsecurity.com/2026/09/02/anthropic-enterprise-frontier-safeguards/">HelpNet Security</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 WearOptimo levanta A$7.75M para sensores AI sub-d&eacute;rmicos en deporte elite</h3>
+      <p class="what">Startup australiana de medtech que desarrolla microwearables con electrodos microsc&oacute;picos bajo la piel para medir hidrataci&oacute;n y estr&eacute;s t&eacute;rmico en tiempo real. Foco inicial: elite sport, defensa y seguridad industrial. Los sensores capturan se&ntilde;ales fisiol&oacute;gicas que wearables convencionales no pueden detectar.</p>
+      <p class="why">Se&ntilde;ala hacia d&oacute;nde va sports tech: datos fisiol&oacute;gicos profundos + AI para interpretarlos, abriendo oportunidades para plataformas de coaching basadas en datos reales.</p>
+      <p class="source"><a href="https://www.prnewswire.com/news-releases/wearoptimo-secures-7-75-m-in-funding-to-advance-next-generation-wearable-health-technology-302948838.html">PRNewswire</a> &bull; <a href="https://techstartups.com/2026/11/24/australian-medtech-startup-wearoptimo-raises-a7-75m-to-develop-ai-powered-wearable-sensors-that-go-beneath-the-skin/">Tech Startups</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 23/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
