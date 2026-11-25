@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 24 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>24 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Anthropic lanza Claude Ship: agentes AI que revisan, reparan y aprueban código</h3>
+      <p class="what">Claude Ship es una nueva suite de agentes que maneja todo lo que pasa después de escribir código: review automatizado de PRs, corrección de bugs detectados y aprobación bajo reglas definidas por el equipo. Disponible para repositorios GitHub en planes Team y Enterprise.</p>
+      <p class="why">Si ya usas Claude Code para escribir, Ship cierra el loop: tu pipeline de PR puede correr sin intervención humana para cambios rutinarios.</p>
+      <p class="source"><a href="https://dataconomy.com/2026/11/25/anthropic-launches-claude-ship-for-ai-code-reviews-and/">Dataconomy</a> &bull; <a href="https://aitoolly.com/ai-news/article/2026-11-24-anthropic-launches-claude-ship-to-let-ai-agents-review-fix-and-approve-code-changes">AIToolly</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 CodeFleet: gestiona Claude Code, Codex y Grok en paralelo desde un solo escritorio</h3>
+      <p class="what">App de escritorio que ejecuta múltiples agentes de coding (Claude Code, OpenAI Codex, Grok, OpenCode) simultáneamente, cada uno en su propio git worktree aislado. Routing inteligente que asigna el modelo óptimo por tarea. Gratuita, sin cuenta requerida.</p>
+      <p class="why">Para founders técnicos que ya usan varios AI coding tools, esto elimina el context-switching y te deja comparar outputs en tiempo real.</p>
+      <p class="source"><a href="https://www.producthunt.com/products/codefleet">Product Hunt</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Amazon negocia adquirir Decart AI por ~$7B para optimizar cargas en Trainium</h3>
+      <p class="what">Amazon está en conversaciones avanzadas para comprar Decart AI, startup que desarrolla software para hacer más eficiente el entrenamiento e inferencia de modelos. Sus productos incluyen generación de video en tiempo real (Lucy) y entornos simulados (Oasis).</p>
+      <p class="why">Si dependes de AWS para inferencia, la tecnología de Decart integrada en Trainium podría bajar tus costos de GPU significativamente.</p>
+      <p class="source"><a href="https://www.techrepublic.com/article/news-amazon-decart-ai-acquisition-talks/">TechRepublic</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones técnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Google Gemini 4 Neon: modelo mid-tier a $3/$15 por M tokens con 1M de contexto</h3>
+      <p class="what">Google lanzó Gemini 4 Neon el 18 de noviembre, posicionado entre Carbon (tareas complejas) y Hydrogen (uso diario). Ocupa el #3 en el Artificial Analysis Intelligence Index con score de 61. Disponible en Gemini API, AI Studio y Google Antigravity.</p>
+      <p class="why">A $3/$15 compite directamente con GPT-6.2 Sol ($2/$10) y Opus 5.5 ($5/$25); vale la pena benchmarkear para tu caso de uso específico.</p>
+      <p class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/">Google Blog</a> &bull; <a href="https://9to5google.com/2026/11/18/gemini-4-neon/">9to5Google</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>OpenAI GPT-6.2 Sol y Astra: nuevos modelos llegan a ChatGPT y API</h3>
+      <p class="what">OpenAI lanzó GPT-6.2 Astra (flagship para proyectos complejos) y Sol (eficiente para trabajo diario) el 17 de noviembre. Sol alcanza casi el mismo rendimiento que Astra a un quinto del costo ($2/$10 por M tokens) con 1.05M tokens de contexto.</p>
+      <p class="why">Sol a $2/M input es el modelo frontier más barato del mercado ahora mismo; ideal para pipelines de alto volumen donde antes usabas modelos open-source.</p>
+      <p class="source"><a href="https://openai.com/ta-IN/index/introducing-gpt-6-2-astra-sol/">OpenAI</a> &bull; <a href="https://www.digitaltrends.com/computing/openai-gpt-6-2-astra-sol-launch/">Digital Trends</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 PrismML Ternary Bonsai 2.5 27B: coding agéntico open-source para correr local</h3>
+      <p class="what">PrismML lanzó Ternary Bonsai 2.5, modelo de 27B parámetros bajo Apache 2.0 optimizado para agentic coding, razonamiento multimodal y tool-use de largo horizonte. Con ~8.5 GB de pesos, corre en hardware consumer manteniendo 98% del rendimiento del modelo base.</p>
+      <p class="why">Un modelo de coding que corre en tu laptop sin API keys es game-changer para prototipar offline o en contextos donde no puedes enviar código a la nube.</p>
+      <p class="source"><a href="https://www.morningstar.com/news/pr-newswire/20261124sf05981/prismml-launches-ternary-bonsai-25-27b-for-agentic-coding-and-private-knowledge-work">Morningstar/PR Newswire</a> &bull; <a href="https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf">HuggingFace</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 GitHub amplía Copilot Fusion y añade GPT-6.2 a Copilot</h3>
+      <p class="what">GitHub integró los modelos GPT-6.2 Astra y Sol en Copilot y amplió la disponibilidad de Copilot Fusion, que lidera Terminal-Bench 4.1 con 71.2%. Fusion combina múltiples modelos para resolver tareas de coding más complejas que un solo modelo.</p>
+      <p class="why">Copilot Fusion superando a Claude Code en benchmarks de terminal significa que la competencia de AI coding tools está más reñida que nunca; prueba ambos antes de elegir.</p>
+      <p class="source"><a href="https://www.morphllm.com/best-ai-coding-agents-2026">Morph AI Leaderboard</a></p>
+    </div>
+
+    <!-- EJE 3: Creación de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 HeroUI Pro 1.0: componentes premium React + AI tooling para lanzar más rápido</h3>
+      <p class="what">HeroUI Pro 1.0 lanzó en Product Hunt con componentes UI premium, templates completos y herramientas de AI integradas para React. Diseñado para que equipos pequeños puedan tener UI production-ready sin diseñador dedicado.</p>
+      <p class="why">Componentes React + AI para generar layouts reduce el tiempo de UI de semanas a horas; exactamente lo que necesitas cuando estás solo construyendo tu MVP.</p>
+      <p class="source"><a href="https://startupcorners.com/digest/product-digest-2026-11-25">Startup Corners</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Startups verticales agénticas dominan el funding: legal, finanzas y salud lideran</h3>
+      <p class="what">Los datos de Q4 2026 muestran que las startups ganadoras construyen herramientas agénticas verticales que completan trabajo real dentro de flujos confiables, especialmente en sectores regulados. Las startups AI capturan ~40% del venture capital total en 2026.</p>
+      <p class="why">El playbook está claro: elige un vertical regulado, construye un agente que complete tareas end-to-end (no solo chatbot), y véndelo como workflow, no como AI.</p>
+      <p class="source"><a href="https://blog.mean.ceo/ai-startup-trends-november-2026/">AI Startup Trends Nov 2026</a> &bull; <a href="https://www.newcomer.co/emergent-2026">Newcomer</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic se prepara para cotizar en Nasdaq bajo ticker ANT a $70-$78/acción</h3>
+      <p class="what">Anthropic lanzó su roadshow de IPO ofreciendo 825M acciones a $70-$78 en Nasdaq. La S-1 enmendada incluye advertencia de que Claude podría "inminentemente alcanzar" el umbral de auto-mejora recursiva. Se espera que el trading comience alrededor del 19 de noviembre.</p>
+      <p class="why">Si dependes del ecosistema Claude para tu producto, una Anthropic pública significa más presión por revenue y potenciales cambios en pricing; monitorea.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic">Releasebot</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Meetings, Whiteboards y Sheets: Anthropic lanza suite de oficina con AI</h3>
+      <p class="what">Anthropic presentó herramientas de productividad empresarial: Meetings (AI en videollamadas que ejecuta tareas mientras hablas), Whiteboards (colaboración visual) y Sheets (hojas de cálculo con AI). En beta para planes Team y Enterprise.</p>
+      <p class="why">Anthropic está expandiendo agresivamente más allá de coding; si construyes sobre su API, estas herramientas competirán con features de tus propios productos.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/">TechCrunch</a> &bull; <a href="https://letsdatascience.com/news/anthropic-unveils-claude-sheets-and-office-tools-cb71635a">Let's Data Science</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item">
+      <h3>NHS escala trial de screening de cáncer de mama con AI a 700K mujeres</h3>
+      <p class="what">El programa EDITH del NHS británico, respaldado con £11M del gobierno, está reclutando activamente a 700K mujeres para el mayor trial de AI en detección temprana de cáncer de mama. Investigación de Google/Imperial College muestra que AI como "segundo lector" reduce 40% la carga de trabajo de radiólogos.</p>
+      <p class="why">AI como segundo lector en screening médico es el caso de uso de salud más maduro y validado; el modelo se replica directamente a otras especialidades.</p>
+      <p class="source"><a href="https://www.gov.uk/government/news/ai-to-be-trialled-at-unprecedented-scale-across-nhs-screening">UK Gov</a> &bull; <a href="https://blog.google/innovation-and-ai/technology/health/google-ai-breast-cancer-detection/">Google Blog</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 24/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
