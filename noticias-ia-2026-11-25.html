@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 25 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>25 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Walmart lanza Agent Gateway: infraestructura MCP para que agentes AI compren por ti</h3>
+      <p class="what">Walmart abre su Agent Gateway en beta, construido sobre el Model Context Protocol de Anthropic. Permite que agentes externos (como Meta Muse) busquen productos, agreguen al carrito, compren y rastreen pedidos. Incluye Agent Profiles con l&iacute;mites de gasto y aprobaciones, sin exponer datos de pago al agente.</p>
+      <p class="why">Este es el primer retailer masivo que trata agentes AI como canal de ventas con API real; si construyes un marketplace, tu siguiente competidor no es otra app sino un agente que compra directo.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/">TechCrunch</a> &bull; <a href="https://www.axios.com/2026/10/21/walmart-amazon-agents-muse">Axios</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google Workspace MCP Servers ya disponibles: agentes AI conectados a Gmail, Drive, Docs y Calendar</h3>
+      <p class="what">Google public&oacute; servidores MCP remotos para Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat y People, con soporte nativo en Antigravity 2.0, Antigravity IDE y CLI. Cualquier agente compatible con MCP ahora puede leer, crear y editar contenido en Workspace con OAuth por superficie.</p>
+      <p class="why">Ya puedes construir agentes que automaticen flujos reales de trabajo (email + docs + calendar) sin scraping ni APIs propietarias fragmentadas.</p>
+      <p class="source"><a href="https://developers.google.com/workspace/guides/configure-mcp-servers">Google Developers</a> &bull; <a href="https://codelabs.developers.google.com/google-workspace-mcp-antigravity">Google Codelabs</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item">
+      <h3>Claude Fable 5.2 y Mythos 5.2: mismo modelo, dos niveles de acceso</h3>
+      <p class="what">Anthropic lanz&oacute; Fable 5.2 y Mythos 5.2 el 9 de noviembre. Son el mismo modelo base: Fable tiene safeguards para acceso amplio en todos los planes pagos; Mythos quita esas restricciones para organizaciones verificadas. Ambos son 30% m&aacute;s r&aacute;pidos que sus predecesores 5.1.</p>
+      <p class="why">Fable 5.2 a $8/M input es el nuevo modelo frontera accesible para agentes en producci&oacute;n; eval&uacute;a si reemplaza tu modelo actual en pipelines de alto volumen.</p>
+      <p class="source"><a href="https://anthropic.com/claude/mythos">Anthropic</a> &bull; <a href="https://sdtimes.com/ai/anthropic-introduces-claude-fable-5-2-mythos-5-2/">SD Times</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot agrega Gemini 4 Argon y expande a m&uacute;ltiples modelos frontera</h3>
+      <p class="what">Copilot ya ofrece el modelo Gemini 4 Argon de Google como opci&oacute;n GA desde octubre. Junto con modelos de Anthropic y OpenAI, ahora compites con Cursor ofreciendo selecci&oacute;n multi-modelo. Copilot migr&oacute; a billing por AI Credits desde junio 2026.</p>
+      <p class="why">La guerra de coding assistants se decidi&oacute; en flexibilidad de modelo, no en IDE; si tu workflow ya vive en VS Code, Copilot cerr&oacute; la brecha con Cursor.</p>
+      <p class="source"><a href="https://tech-insider.org/github-copilot-4-ai-models-challenge-cursor-2026/">Tech Insider</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Google lanza Antigravity: IDE nativo de AI construido desde cero</h3>
+      <p class="what">Presentado en Google I/O 2026, Antigravity es un IDE completamente nuevo dise&ntilde;ado para AI-first development, no un plugin sobre editores existentes. Incluye integraci&oacute;n nativa con MCP, Workspace y los modelos Gemini, y Google est&aacute; migrando desarrolladores de Firebase Studio hacia &eacute;l.</p>
+      <p class="why">Si dependes de Android Studio + Gemini, observa la convergencia; Antigravity podr&iacute;a ser el IDE principal para Android en 2027.</p>
+      <p class="source"><a href="https://www.gizmotimes.com/ai/cursor-vs-github-copilot-vs-gemini-code-assist-ai-coding/51026">GizmoTimes</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Ex-fundadores de xAI lanzan Epochal: AI que predice eventos futuros con archivo web de 30 a&ntilde;os</h3>
+      <p class="what">Tres ex-xAI (Guodong Zhang, Zihang Dai, Manuel Kroiss) fundaron Epochal, cuyo primer producto es un "portal temporal" para agentes AI que navega versiones archivadas de la web. El dataset cubre trillones de p&aacute;ginas en 30 a&ntilde;os de historia web.</p>
+      <p class="why">Si construyes agentes que necesitan contexto hist&oacute;rico (trends, pricing, cambios de mercado), este tipo de data temporal es el moat que falta en la mayor&iacute;a de RAG pipelines.</p>
+      <p class="source"><a href="https://bloomberg.com/news/articles/2026-11-24/xai-founders-unveil-new-ai-startup-to-predict-future-events">Bloomberg</a> &bull; <a href="https://qz.com/epochal-xai-founders-predictive-ai-startup-112426">Quartz</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Dreamteam levanta $53M para CRM AI-native que compite con Salesforce y HubSpot</h3>
+      <p class="what">Fundada por alumni de Freshworks, Dreamteam construye un CRM completamente AI-native (no features de AI sobre legacy). La ronda es para escalar go-to-market contra incumbentes que a&uacute;n integran AI como add-on sobre arquitecturas de hace 15 a&ntilde;os.</p>
+      <p class="why">El patr&oacute;n "reescribir la categor&iacute;a desde cero con AI" sigue siendo la mayor oportunidad para founders t&eacute;cnicos en SaaS vertical.</p>
+      <p class="source"><a href="https://techcrunch.com/category/startups/">TechCrunch</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Anthropic lanza Claude Meetings, Whiteboards y Sheets: suite de productividad AI</h3>
+      <p class="what">Desde el 10 de noviembre, Claude puede unirse a videollamadas de Google Meet como participante activo (Meetings), co-crear en pizarras compartidas (Whiteboards) y construir hojas de c&aacute;lculo contigo (Sheets). Claude Data (antes Dashboards) pas&oacute; a GA el mismo d&iacute;a.</p>
+      <p class="why">Anthropic dej&oacute; de ser solo API/chat; ahora compite directo con Google Workspace y Microsoft 365 como plataforma de trabajo.</p>
+      <p class="source"><a href="https://techcrunch.com/?p=3186876">TechCrunch</a> &bull; <a href="https://betanews.com/article/claude-meetings-whiteboards-sheets-anthropic/">BetaNews</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Claude Code Review llega a 30K+ cambios merged por d&iacute;a: equipos de agentes revisando PRs</h3>
+      <p class="what">El sistema de code review de Anthropic despacha m&uacute;ltiples agentes en paralelo para analizar cada PR, cada uno buscando un tipo diferente de issue, con un paso de verificaci&oacute;n posterior. Disponible para Team y Enterprise en GitHub, facturado por tokens (~$15-25 promedio por review).</p>
+      <p class="why">A $20 por PR review automatizado con verificaci&oacute;n multi-agente, el ROI es claro si tu equipo pierde horas en reviews manuales de PRs grandes.</p>
+      <p class="source"><a href="https://claude.com/blog/code-review">Anthropic Blog</a> &bull; <a href="https://code.claude.com/docs/en/code-review">Claude Code Docs</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic anuncia retiro de Claude Sonnet 4.5 para el 30 de noviembre</h3>
+      <p class="what">Claude Sonnet 4.5 ser&aacute; retirado el 30 de noviembre de 2026, y Opus 4.5 el 22 de enero de 2027. Self-hosted Managed Agents est&aacute;n disponibles desde el 12 de noviembre, y Enterprise Frontier Safeguards entr&oacute; en beta.</p>
+      <p class="why">Si tu producci&oacute;n usa Sonnet 4.5, tienes 5 d&iacute;as para migrar; prioriza testear Fable 5.2 como reemplazo con mejor relaci&oacute;n costo-rendimiento.</p>
+      <p class="source"><a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot</a> &bull; <a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform Docs</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 ABC Fitness adquiere FitMetrics: AI coaching que duplica la capacidad de entrenadores personales</h3>
+      <p class="what">ABC Fitness (40K+ gimnasios via Trainerize) adquiri&oacute; FitMetrics, plataforma de AI coaching que automatiza check-ins y comunicaci&oacute;n con clientes. Los coaches reportan duplicar y hasta cuadruplicar su capacidad de atenci&oacute;n. Tras adquirir Replify en julio, ABC ahora tiene agentes AI para prospectos, miembros y coaching.</p>
+      <p class="why">El modelo "AI como multiplicador del profesional, no reemplazo" es el que funciona en servicios; si construyes un marketplace de coaches o trainers, esta es la arquitectura a seguir.</p>
+      <p class="source"><a href="https://athletechnews.com/abc-fitness-acquires-fitmetrics-expanding-ai-push-into-coaching/">Athletech News</a> &bull; <a href="https://abcfitness.com/?p=30295">ABC Fitness</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 25/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
