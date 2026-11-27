@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily AI Briefing - 26 de Noviembre 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 740px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; color: #ffffff; margin-bottom: 0.3rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .section-title { font-size: 1.1rem; color: #7c8aff; text-transform: uppercase; letter-spacing: 1px; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #1e1e3a; }
+    .news-item { background: #1a1a1a; border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; border-left: 3px solid #333; }
+    .news-item.hot { border-left-color: #ff6b35; }
+    .news-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; }
+    .news-item .what { color: #ccc; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-item .why { color: #7c8aff; font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+    .news-item .source { font-size: 0.8rem; }
+    .news-item .source a { color: #5a6abf; text-decoration: none; }
+    .news-item .source a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #2a2a2a; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily AI Briefing</h1>
+      <p>26 de noviembre de 2026 &mdash; Noticias filtradas para senior devs que construyen producto</p>
+    </header>
+
+    <!-- EJE 1: Aplicaciones profesionales -->
+    <div class="section-title">Aplicaciones profesionales de IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft Ignite 2026: Copilot Workspaces, Autopilot y Agent 365 GA</h3>
+      <p class="what">Microsoft present&oacute; Copilot como el &ldquo;sistema operativo del trabajo&rdquo;. Copilot Workspaces es un espacio compartido donde empleados y agentes AI colaboran en proyectos. Autopilot maneja tareas recurrentes sin instrucciones paso a paso. Agent 365 llega a GA con gobernanza, identidad (Entra Agent Identity) y controles de costos para agentes enterprise.</p>
+      <p class="why">Si construyes productos B2B o marketplaces, el patr&oacute;n de &ldquo;agente con identidad y permisos propios&rdquo; ya es infraestructura est&aacute;ndar de Microsoft &mdash; tu arquitectura de agentes deber&iacute;a contemplar lo mismo.</p>
+      <p class="source"><a href="https://www.techrepublic.com/article/news-microsoft-ignite-2026-announcements/">TechRepublic</a> &bull; <a href="https://aiweekly.co/alerts/microsoft-ignite-opens-agent-365-azure-catalyst-and-entra-agent-identity-ga-for">AI Weekly</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 LangSmith Tool Gateway en beta p&uacute;blica: control centralizado para herramientas de agentes</h3>
+      <p class="what">LangChain lanz&oacute; Tool Gateway el 19 de noviembre, una capa managed que se interpone entre tus agentes y los servidores MCP que consumen. Centraliza credenciales, identidad del caller, pol&iacute;ticas de acceso, flujos de aprobaci&oacute;n y trazas de auditor&iacute;a. Compatible con LangChain, Claude Code, Cursor y Deep Agents.</p>
+      <p class="why">Si ya tienes agentes en producci&oacute;n llamando tools via MCP, esto resuelve el problema de gobernar qui&eacute;n llama qu&eacute; con qu&eacute; credenciales, sin construirlo t&uacute; mismo.</p>
+      <p class="source"><a href="https://langchain.com/blog/langsmith-tool-gateway">LangChain Blog</a> &bull; <a href="https://www.unite.ai/?p=526485">Unite.AI</a></p>
+    </div>
+
+    <div class="news-item hot">
+      <h3>🔥 Cloudflare AI Search: haz tu sitio buscable por agentes AI con un toggle</h3>
+      <p class="what">Cloudflare agreg&oacute; una opci&oacute;n en su dashboard que autom&aacute;ticamente crea una instancia de AI Search, rastrea e indexa tu sitio, y expone una API de b&uacute;squeda + endpoint MCP bajo tu dominio. Los agentes AI pueden descubrir y consultar tu contenido directamente.</p>
+      <p class="why">Si tienes un marketplace o plataforma con contenido p&uacute;blico, activar esto es la diferencia entre que los agentes AI de tus usuarios encuentren tu inventario o no.</p>
+      <p class="source"><a href="https://blog.cloudflare.com/ai-search-easier">Cloudflare Blog</a> &bull; <a href="https://developers.cloudflare.com/ai-search/">Cloudflare Docs</a></p>
+    </div>
+
+    <!-- EJE 2: Innovaciones t&eacute;cnicas -->
+    <div class="section-title">Innovaciones t&eacute;cnicas con potencial pr&aacute;ctico</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Microsoft Foundry Local llega a Android: inferencia AI on-device sin cloud</h3>
+      <p class="what">Azure AI Foundry Local permite ejecutar modelos de lenguaje directamente en dispositivos Android sin roundtrips al cloud. PhonePe ya lo usa en producci&oacute;n en su app. No requiere GPUs dedicadas &mdash; funciona en el hardware est&aacute;ndar del dispositivo.</p>
+      <p class="why">Una alternativa real a Gemini Nano para on-device AI en Android, con la ventaja de usar modelos que ya conoces del ecosistema Azure.</p>
+      <p class="source"><a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/unlocking-efficient-and-secure-ai-for-android-with-foundry-local/4476547">Microsoft Tech Community</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Azure Catalyst unifica agent tooling de Azure y GitHub en un solo lugar</h3>
+      <p class="what">Anunciado en Ignite 2026, Azure Catalyst es un nuevo hub para descubrir, planificar y modernizar agentes AI. Integra las herramientas de agentes de Azure y GitHub en un solo entorno conectado, con Cobalt 200 VMs que prometen hasta 50% m&aacute;s rendimiento.</p>
+      <p class="why">Si tu stack de agentes vive entre Azure y GitHub, dejas de saltar entre portales para gestionar deployments y recursos.</p>
+      <p class="source"><a href="https://www.constellationr.com/insights/news/ignite-2026-microsoft-makes-case-be-your-work-operating-system-intelligence-layer">Constellation Research</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>GitHub Copilot: el code review se cobrar&aacute; a la organizaci&oacute;n desde el 30 de diciembre</h3>
+      <p class="what">A partir del 30 de diciembre de 2026, el uso de Copilot Code Review se cargar&aacute; a la organizaci&oacute;n si no ha configurado una preferencia de billing. Todos los planes ya operan con AI Credits basados en consumo por modelo y tokens desde junio.</p>
+      <p class="why">Si lideras un equipo, revisa tu config de billing de Copilot antes de fin de a&ntilde;o para evitar cargos inesperados en la org.</p>
+      <p class="source"><a href="https://github.blog/changelog/2026/04/27/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a> &bull; <a href="https://docs.github.com/en/copilot/reference/copilot-billing">GitHub Docs</a></p>
+    </div>
+
+    <!-- EJE 3: Creaci&oacute;n de negocios -->
+    <div class="section-title">Creaci&oacute;n de negocios y productos con IA</div>
+
+    <div class="news-item hot">
+      <h3>🔥 Character.AI en bancarrota: 21M de cuentas y sus chats en limbo legal</h3>
+      <p class="what">Character.AI (Chapter 11 desde octubre) espera cerrar su venta supervisada por el tribunal a finales de noviembre. Disney ofert&oacute; $20M por IP y tecnolog&iacute;a, pero excluy&oacute; los datos de chat. La plataforma con 21M+ cuentas de EE.UU. y sus historiales es un activo separado que a&uacute;n no tiene comprador confirmado. 40 fiscales generales intervinieron para proteger datos de menores.</p>
+      <p class="why">Lecci&oacute;n directa para founders: tu pol&iacute;tica de datos de usuario no es solo compliance, es riesgo existencial &mdash; define desde d&iacute;a uno qu&eacute; pasa con los datos si tu empresa cierra.</p>
+      <p class="source"><a href="https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/">TechCrunch</a> &bull; <a href="https://news.bloomberglaw.com/ip-law/character-ais-bankruptcy-chat-data-sale-is-privacy-nightmare">Bloomberg Law</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Vercel Workflow SDK 5: ejecuci&oacute;n durable lista para producci&oacute;n</h3>
+      <p class="what">Vercel consolid&oacute; Workflow SDK 5 como su soluci&oacute;n de ejecuci&oacute;n durable. Inputs, outputs y payloads se cifran con AES-256-GCM con clave &uacute;nica por ejecuci&oacute;n. Ahora disponible en todas las regiones de Vercel Functions, no solo iad1.</p>
+      <p class="why">Si necesitas orquestar flujos multi-paso con agentes AI en tu producto (ej. procesamiento de &oacute;rdenes, onboarding), esto te da durabilidad sin montar tu propia infra de colas.</p>
+      <p class="source"><a href="https://vercel.com/blog/workflow-sdk-5">Vercel Blog</a></p>
+    </div>
+
+    <!-- EJE 4: Claude y Anthropic -->
+    <div class="section-title">Claude y ecosistema Anthropic</div>
+
+    <div class="news-item">
+      <h3>Claude Sonnet 4.5 se retira de la API el 30 de noviembre</h3>
+      <p class="what">Anthropic confirma que Claude Sonnet 4.5 deja de estar disponible en la API el 30 de noviembre de 2026. Opus 4.5 se retira el 22 de enero de 2027. Los modelos actuales son Fable 5.2, Opus 5.5, Sonnet 5.5 y Haiku 5.5.</p>
+      <p class="why">Si tu producto a&uacute;n apunta a Sonnet 4.5, tienes 4 d&iacute;as para migrar a Sonnet 5.5 antes de que tu integraci&oacute;n se rompa.</p>
+      <p class="source"><a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform Release Notes</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Anthropic prueba un checkpoint m&aacute;s potente bajo Opus 5.5</h3>
+      <p class="what">Usuarios reportan que requests a Opus 5.5 producen resultados notablemente superiores al nivel habitual, sugiriendo que Anthropic est&aacute; ruteando tr&aacute;fico a un checkpoint m&aacute;s nuevo (posiblemente Opus 5.6 o Fable 5.5). Anthropic no ha confirmado nada oficialmente.</p>
+      <p class="why">Si usas Opus 5.5 en producci&oacute;n y notas mejoras inconsistentes, es probable un A/B test &mdash; no cambies tu eval pipeline a&uacute;n.</p>
+      <p class="source"><a href="https://testingcatalog.com/anthropic-tests-new-model-opus-5-5-routing-opus-5-6-fable-5-5">TestingCatalog</a></p>
+    </div>
+
+    <div class="news-item">
+      <h3>Claude Meetings, Sheets y Personal Finance llegan en beta</h3>
+      <p class="what">Claude Meetings (beta para Team y Enterprise) permite que Claude participe en reuniones. Claude Sheets ofrece hojas de c&aacute;lculo integradas. Claude Personal Finance lleg&oacute; en beta para suscriptores Pro, Max y Ultra en EE.UU. Claude Data sali&oacute; de beta.</p>
+      <p class="why">Anthropic est&aacute; construyendo un ecosistema de productividad completo alrededor de Claude &mdash; m&aacute;s superficie donde integrar tu producto via MCP.</p>
+      <p class="source"><a href="https://www.geeky-gadgets.com/anthropic-claude-november-2026-features/">Geeky Gadgets</a> &bull; <a href="https://releasebot.io/updates/anthropic/claude-developer-platform">Releasebot</a></p>
+    </div>
+
+    <!-- EJE 5: Sports tech, salud -->
+    <div class="section-title">IA en sports tech, salud y bienestar</div>
+
+    <div class="news-item hot">
+      <h3>🔥 ABC Fitness adquiere FitMetrics: AI coaching tools para entrenadores personales</h3>
+      <p class="what">ABC Fitness compr&oacute; FitMetrics para integrar herramientas de coaching con AI en su plataforma de gesti&oacute;n de gimnasios. Mientras tanto, Neko Health expande sus cl&iacute;nicas de body-scan AI a m&aacute;s ciudades de EE.UU., y la adopci&oacute;n de AI en la industria deportiva alcanza el 82%.</p>
+      <p class="why">El mercado de fitness tech se consolida r&aacute;pido &mdash; si est&aacute;s construyendo en este vertical, la ventana para herramientas independientes se cierra a medida que las plataformas grandes adquieren features.</p>
+      <p class="source"><a href="https://athletechnews.com/tag/ai-2/">Athletech News</a> &bull; <a href="https://www.sportspro.com/technology/">SportsPro</a></p>
+    </div>
+
+    <footer>
+      <p>Curado por AI &mdash; Filtrado para devs que construyen producto &mdash; 26/11/2026</p>
+    </footer>
+  </div>
+</body>
+</html>
